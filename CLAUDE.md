@@ -52,7 +52,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 
 ## Recurring commitments
 - FrostCast records **Wednesdays 9pm**, weekly, does not stop for other projects
-- Etsy posts **five new designs every Monday morning** (military puzzles + landscape wall art focus)
+- Etsy posts new designs Monday and Wednesday: 3 physical (puzzle/canvas) on Monday, 2 digital printables on Wednesday
 
 ## Current state — August 2026
 - Second Brain rebuilt on GitHub after the Drive/Google Docs conversion failure. Phase 1 in progress.
