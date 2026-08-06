@@ -25,7 +25,7 @@ Not a quality problem — POD quality is table stakes, everyone's baseline is si
 ## Active Plan (locked in 7/24)
 1. **Reviews**: include a polite ask-for-review note in every shipped order going forward (not incentivized — Etsy prohibits that). Goal: bury the 1-star under volume of good reviews.
 2. **Focus**: prioritize new military puzzle designs and landscape wall art/canvas designs over other themes. Don't abandon the full range, but stop spreading effort evenly.
-3. **Cadence**: ~60 designs already finished and ready to post. Post 5 new (military-focused) designs every Monday morning — steady algorithm visibility without burning through the backlog too fast.
+3. **Cadence**: ~60 designs already finished and ready to post. Monday = 3 new physical listings (puzzle/canvas, military + landscape focus). Wednesday = 2 new digital printable listings.
 4. **Pricing**: hold at current levels. Margin is already thin because Zac's COGS are higher than dropship-only competitors; cutting price further would go negative.
 
 ## Related Skills
