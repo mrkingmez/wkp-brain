@@ -20,7 +20,11 @@ Movies and shows in the nerd-verse. Tone benchmark is the Spider-Noir review: gr
 FROSTCAST
 Weekly podcast, Wednesdays 9pm. News, trailers, books, games in the same space.
 
-Currently at **episode 106** (recording Wednesday, August 5, 2026). Episode 100 was recorded live in Worcester, MA — the first time Zac and Matt saw each other in person in over 20 years. Worth referencing in show framing/promo where relevant.
+Currently at **episode 106** (recorded Wednesday, August 5, 2026). Episode 100 was recorded live in Worcester, MA — the first time Zac and Matt saw each other in person in over 20 years. Worth referencing in show framing/promo where relevant.
+
+Recording is every Wednesday 9-11pm, scheduled on the Winter Wolf's Den calendar through episode 114 (Sep 30, 2026). This line should be bumped by 1 automatically the Thursday after each scheduled Wednesday slot, assuming the recording happened as planned — flag it here and to Zac if a week's recording didn't happen on schedule instead of silently bumping the count.
+
+**Source video location convention:** every episode's raw download lives at `L:\Winter Wolfs Den review show\Frost-Cast\EP <number>\`, confirmed consistent back through EP 1. When Zac says an episode is downloaded, look in that episode's folder for the video file — no need to ask for the full path.
 
 **Cold open:** a new cold open replaces the current one starting around **episode 110** (roughly early September 2026). This is the FrostCast cold open — distinct from the Den Files cold open template, do not confuse the two.
 
@@ -57,10 +61,12 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 - 5 to 7 clips per source video
 
 ## Related Skills
+- wwd-video-transcriber (`skills/wwd-video-transcriber/` in this repo) — turns a downloaded episode video into a diarized, speaker-labeled transcript. Requires one-time setup (Python/ffmpeg/torch — done on the Main Desktop machine as of Aug 2026) and voiceprint enrollment for Matt/Zac/Gabby (not yet done — currently runs with everyone labeled Guest/Unknown until enrolled). Standing rule: the output transcript always saves into the same EP folder as the source video, never a separate outputs/transcripts location — overrides the skill's own doc default.
 - wwd-video-upload-package — full upload package from a transcript: SEO title, description, chapters, backend tags, hashtags, Facebook and Instagram posts with Adobe Firefly image prompts, end screens and cards, posting schedule. Bakes in TubeBuddy SEO compliance targeting 75-85%+. Trigger on "full run" or "full upload package."
 - wwd-shorts-clip-factory — cuts actual clip files with ffmpeg plus per-clip captions and staggered posting schedule: YouTube first, Instagram +45 minutes, Facebook +90 minutes, one clip per day. Requires local file and ffmpeg access, so Cowork rather than chat.
 
 ## Working Notes
+- **"The episode is downloaded" trigger:** when Zac says this, locate the video in `L:\Winter Wolfs Den review show\Frost-Cast\EP <next episode number>\` (using the tracked episode count above), run wwd-video-transcriber's extract + transcribe steps automatically, then read the finished transcript and hand back chapter-break timecodes. There is no separate automated chapters tool yet — chapter breaks are identified by reading the transcript directly and judging topic shifts, not a deterministic script. If a dedicated wwd-frostcast-chapters skill shows up later, prefer it over manual reading.
 - This is a two-person show. Anything affecting format, schedule, or branding is a joint decision with Matt, not a solo call.
 - FrostCast is weekly and recurring. It does not stop for other projects.
 - Den Files episodes require real historical research, not summary. Sourcing matters the same way it does for Watershed.
