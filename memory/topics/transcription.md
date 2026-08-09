@@ -54,9 +54,21 @@ Zac for the token or pass `--hf-token` — it's already set in his environment.
 Docs updated to match: `SKILL.md`, `references/setup-guide.md`, and the EP106
 resume command in `TASKS.md`.
 
-## EP106 still has no transcript [2026-08-06]
-Every blocker was cleared — script bugs fixed permanently in
-`D:\WKP\skills\wwd-video-transcriber\scripts\transcribe.py`, all HF licenses
-accepted, CUDA live — but the final launch kept getting rejected before
-execution after 24+ hours and dozens of tool calls in one session. Fix is a
-fresh session, not more retries in the stuck one. Nothing was lost.
+## torchcodec is broken in this environment — bypass it, don't fix it [2026-08-09]
+pyannote's speaker-embedding step (`Inference.__call__`) decodes audio via
+torchcodec, and torchcodec's precompiled DLLs fail to load against this
+machine's torch 2.11.0+cu128 build regardless of installed ffmpeg version.
+`_load_wav_dict()` in `transcribe.py` now reads the WAV clip directly with
+Python's stdlib `wave` module and hands pyannote a
+`{'waveform': tensor, 'sample_rate': int}` dict instead of a file path —
+`Audio.__call__` skips the torchcodec path entirely when given a dict. Don't
+waste a run trying to fix the torchcodec install itself; the warning at
+startup ("torchcodec is not installed correctly") is not benign, it will kill
+the run at the mapping step. A retry after this kind of crash re-does the full
+Whisper + diarization pass from scratch — no checkpointing across runs.
+
+## EP106 transcript done [2026-08-09]
+1,406 lines, full 83-minute episode, saved to
+`L:\Winter Wolfs Den review show\Frost-Cast\EP 106\...transcript.txt`.
+Speakers still came back Guest/Unknown [1]/[2]/[3] — [[voiceprints]] enrollment
+is still the blocker for named speakers, unchanged from the 2026-08-06 note.

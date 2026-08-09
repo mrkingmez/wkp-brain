@@ -131,7 +131,7 @@ def main():
 
         clip_path = _extract_cluster_audio(args.audio, cluster_segments, cluster)
         try:
-            cluster_embedding = embed_model(clip_path)
+            cluster_embedding = embed_model(_load_wav_dict(clip_path))
         finally:
             if os.path.exists(clip_path):
                 os.remove(clip_path)
@@ -178,6 +178,27 @@ def _has_cuda():
         return torch.cuda.is_available()
     except Exception:
         return False
+
+
+def _load_wav_dict(wav_path):
+    """Reads a PCM WAV file directly and returns pyannote's expected
+    {'waveform', 'sample_rate'} dict, bypassing torchcodec entirely (it's
+    broken in this environment - see setup-guide.md troubleshooting)."""
+    import wave
+    import torch
+
+    with wave.open(wav_path, "rb") as wf:
+        sample_rate = wf.getframerate()
+        n_channels = wf.getnchannels()
+        raw = wf.readframes(wf.getnframes())
+
+    samples = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    if n_channels > 1:
+        samples = samples.reshape(-1, n_channels).T
+    else:
+        samples = samples.reshape(1, -1)
+
+    return {"waveform": torch.from_numpy(samples), "sample_rate": sample_rate}
 
 
 def _extract_cluster_audio(source_wav, segments, cluster_name):
