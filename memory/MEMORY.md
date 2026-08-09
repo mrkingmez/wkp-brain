@@ -12,3 +12,4 @@ learnings go here.
 - [Video transcription](topics/transcription.md) — WWD transcriber pipeline: GPU/CUDA setup, gated Hugging Face models, output path rule, memory pressure while gaming
 - [WKP operating rules](topics/wkp-ops.md) — fire-and-forget partnership, voice-to-text handling, flag file updates in the moment, repo is on D: not C:
 - [Writing and content formats](topics/writing.md) — Watershed and Hidden Hinge never mix, Shattered Empire editorial rules, Blender mesh standards
+- [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy, seven products finished with zero listings
