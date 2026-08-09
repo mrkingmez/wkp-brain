@@ -82,3 +82,25 @@ junction pointing here. Always write to `memory/`.
 Full protocol: `.claude/commands/mem.md`, also `/mem show` and `/mem forget`.
 
 Memory lives in git. Prompt Zac to commit and push before a work session ends.
+
+## FrostCast Transcription Workflow
+
+When Zac says an episode is downloaded, run the whole chain without asking for
+details:
+
+1. Find the episode file under the FrostCast path in LOCAL-PATHS.md
+2. Launch `skills\wwd-video-transcriber\scripts\transcribe.py` against it,
+   detached, on the GPU
+3. Save the transcript as `.txt` in the same folder as the video
+4. Return chapter timecodes when it finishes
+
+Do not ask which file or where to put the output. The episode number comes from
+the WWD calendar, so check there rather than asking.
+
+**Status:** EP106 has no transcript yet. Every blocker is cleared (script bugs
+fixed, Hugging Face licenses accepted, CUDA verified on the RTX 5060) — the
+original session went bad before it could run. It needs one clean launch.
+
+**Voiceprints are not enrolled.** `voiceprints/` is empty, so speakers come back
+as Guest/Unknown and need mapping by hand. Enrolling Matt, Zac, and Gabby
+requires a clean solo audio clip of each.
