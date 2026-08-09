@@ -73,6 +73,7 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 - FrostCast has been inactive on the audio/podcast side for ~18 months even while the show continued — relaunch strategy is a "We're Back" episode cross-posted to YouTube and audio simultaneously.
 
 ## Open
+[EP 106 transcript blocked mid-run — see TASKS.md for full status and the exact resume command. Everything is debugged and working (script, HF licenses, GPU/CUDA); it just needs the actual run repeated after Zac's computer restart.]
 [FILL IN — new FrostCast cold open: written? recorded? needs building before ep 110]
 [FILL IN — Den Files topic queue beyond episode 1, once selected from the pipeline candidates above]
 [FILL IN — podcast host platform decision, flagged as open in TASKS.md]
