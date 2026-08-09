@@ -60,3 +60,25 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 - Kingdom Planners: seven finished products, zero listings, shop not yet created. The pipeline is far ahead of the storefront.
 - Den Files episode 1 (Fire in the Sky) targeted for release ~August 2026.
 - CySA+ exam targeted end of August 2026.
+
+## Memory
+
+There is a memory system in this repo at `memory/`.
+
+- **Session start:** read `memory/MEMORY.md`, then follow pointers relevant to
+  the work at hand. Do not recite it back unless asked.
+- **During the session:** when something worth keeping is learned, append it to
+  `memory/topics/<topic>.md` and add a pointer line to `memory/MEMORY.md`.
+- **When stuck:** grep `memory/MEMORY.md` and follow pointers to past learnings
+  before troubleshooting from scratch.
+
+**Routing rule.** Decisions go in a CLAUDE.md. Machine-specific paths go in
+LOCAL-PATHS.md. Learnings go in memory. Anything Zac decided on purpose must be
+written to the right file and flagged out loud the same turn it comes up.
+
+**Never write memory to `C:\Users\...\.claude\projects\`.** That path is a
+junction pointing here. Always write to `memory/`.
+
+Full protocol: `.claude/commands/mem.md`, also `/mem show` and `/mem forget`.
+
+Memory lives in git. Prompt Zac to commit and push before a work session ends.
