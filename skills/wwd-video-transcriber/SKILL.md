@@ -89,8 +89,10 @@ Write the final transcript as elapsed-timestamped lines matching WWD convention:
 [00:01:12] Gabby/Oracle: Actually, real quick, breaking news on that...
 ```
 
-Save to `/mnt/user-data/outputs/transcripts/<video-name>_transcript.txt` (Claude
-Code) or the equivalent Cowork outputs location. This exact format is what
+Save to `<video's containing folder>\<video-name>_transcript.txt` — the same
+folder the source video lives in. Never a temp folder, scratchpad, or a separate
+outputs directory. This applies to every venture and every video, no exceptions.
+This exact format is what
 wwd-frostcast-chapters, wwd-video-upload-package, and wwd-shorts-clip-factory
 already expect — no reformatting should be needed to hand it straight to those
 skills next.
