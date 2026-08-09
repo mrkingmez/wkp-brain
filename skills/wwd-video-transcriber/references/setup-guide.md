@@ -23,7 +23,8 @@ account and explicitly accepting the model's terms.
    (a dependency of the diarization pipeline).
 4. Generate an access token: Settings > Access Tokens > New token (read access
    is enough).
-5. Keep that token handy — it gets passed to `transcribe.py --hf-token`.
+5. Set it as a Windows environment variable named `HF_TOKEN` — `transcribe.py`
+   reads it from there automatically.
 
 ## 3. Enroll the three core voices
 
@@ -50,7 +51,6 @@ change, etc.) — otherwise this is truly one-time.
 bash scripts/extract_audio.sh /path/to/episode.mp4 /tmp/episode_audio.wav
 python scripts/transcribe.py \
   --audio /tmp/episode_audio.wav \
-  --hf-token hf_xxxxxxxxxxxx \
   --output /mnt/user-data/outputs/transcripts/episode_transcript.txt
 ```
 

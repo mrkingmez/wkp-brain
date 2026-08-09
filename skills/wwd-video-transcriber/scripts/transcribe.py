@@ -14,10 +14,12 @@ Main WWD transcription pipeline:
      and wwd-shorts-clip-factory
 
 Usage:
-    python transcribe.py --audio /path/to/audio.wav --hf-token <token> \
+    python transcribe.py --audio /path/to/audio.wav \
         --output /mnt/user-data/outputs/transcripts/episode_transcript.txt
 
 Requires voiceprints already enrolled via enroll_voices.py.
+Requires the HF_TOKEN environment variable to be set (Hugging Face token
+with the pyannote gated model licenses accepted).
 """
 
 import argparse
@@ -59,7 +61,6 @@ def fmt_timestamp(seconds):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--audio", required=True, help="Path to extracted WAV audio")
-    parser.add_argument("--hf-token", required=True, help="Hugging Face token for pyannote diarization")
     parser.add_argument("--output", required=True, help="Path to write the final transcript")
     parser.add_argument(
         "--voiceprints-dir",
@@ -67,6 +68,13 @@ def main():
     )
     parser.add_argument("--model", default="large-v3", help="Whisper model size")
     args = parser.parse_args()
+
+    hf_token = os.environ.get("HF_TOKEN")
+    if not hf_token:
+        print("HF_TOKEN environment variable is not set.")
+        print("Set it to a Hugging Face token with the pyannote gated model")
+        print("licenses accepted (see references/setup-guide.md), then re-run.")
+        sys.exit(1)
 
     if not os.path.isfile(args.audio):
         print(f"Audio file not found: {args.audio}")
@@ -100,13 +108,13 @@ def main():
     result = whisperx.align(result["segments"], align_model, metadata, audio, device)
 
     print("Running diarization (clustering speakers)...")
-    diarize_pipeline = DiarizationPipeline(token=args.hf_token, device=device)
+    diarize_pipeline = DiarizationPipeline(token=hf_token, device=device)
     diarize_segments = diarize_pipeline(args.audio)
     result = whisperx.assign_word_speakers(diarize_segments, result)
 
     print("Mapping diarized clusters to enrolled voices...")
     from pyannote.audio import Model
-    embed_model = Inference(Model.from_pretrained("pyannote/embedding", token=args.hf_token), window="whole")
+    embed_model = Inference(Model.from_pretrained("pyannote/embedding", token=hf_token), window="whole")
     cluster_labels = {}  # SPEAKER_00 -> "matt" / "zac" / "gabby" / None
 
     diarized_speakers = sorted(set(

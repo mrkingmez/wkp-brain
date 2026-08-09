@@ -46,6 +46,14 @@ rather than a script bug.
 Enrolling Matt, Zac, and Gabby requires a clean solo audio clip of each. Until
 then, speaker mapping has to be done by hand after transcription.
 
+## HF token comes from the environment, not a CLI flag [2026-08-08]
+`transcribe.py` no longer takes `--hf-token`. It reads the `HF_TOKEN` Windows
+environment variable directly and exits early with a clear message if it's
+unset (checked at the top of `main()`, before any model loading). Don't ask
+Zac for the token or pass `--hf-token` — it's already set in his environment.
+Docs updated to match: `SKILL.md`, `references/setup-guide.md`, and the EP106
+resume command in `TASKS.md`.
+
 ## EP106 still has no transcript [2026-08-06]
 Every blocker was cleared — script bugs fixed permanently in
 `D:\WKP\skills\wwd-video-transcriber\scripts\transcribe.py`, all HF licenses

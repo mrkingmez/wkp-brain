@@ -63,7 +63,7 @@ which is what the transcription/diarization models expect.
 
 ## Step 3 — Transcribe + diarize + map speakers
 
-`python scripts/transcribe.py --audio <output.wav> --hf-token <token>`
+`python scripts/transcribe.py --audio <output.wav>`
 
 This does four things in one pass:
 - Runs Whisper for word-level transcription
