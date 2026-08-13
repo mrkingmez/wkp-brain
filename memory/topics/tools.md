@@ -55,3 +55,20 @@ output than a generic summary request.
 ## Some skills require Cowork, not chat [2026-07]
 `wwd-shorts-clip-factory` and `wwd-video-transcriber` need real local filesystem
 and ffmpeg access. They will not run in plain claude.ai chat.
+
+## wwd-weekly-planner's transcript handoffs aren't all installed [2026-08-10]
+The skill's "When a transcript arrives" section names four handoff skills
+(`wwd-video-upload-package`, `wwd-frostcast-chapters`, `wwd-shorts-clip-factory`,
+`wwd-video-transcriber`) but only `wwd-weekly-planner` and `wwd-video-transcriber`
+actually exist under `C:\Users\kingz\.claude\skills\` on this machine — confirmed
+by listing the folder. Don't assume a referenced handoff skill exists; check the
+skills directory (or the `/skills` listing) before invoking one. When one is
+missing, say so plainly and do the work directly instead of pretending the
+handoff happened — this is what happened with The Last House upload package.
+
+## Higgsfield account is on the free plan, 0 credits by default [2026-08-10]
+`balance` came back `{"credits":0,"subscription_plan_type":"free"}`. This blocks
+both weekly social-image generation and the FrostCast cold open Warden character
+art. Check balance before attempting generation rather than assuming credits are
+available — Zac is doing a cost analysis before topping up, so don't spend/trigger
+a purchase without asking first.

@@ -104,6 +104,9 @@ Deadline
 Status
 Notes
 EP 106 transcript | — | Done | Transcript generated 2026-08-09, saved to `L:\Winter Wolfs Den review show\Frost-Cast\EP 106\Spider-man DOMINATES the Box Office  _ FrostCast Episode 106_transcript.txt` (1,406 lines, full 83-min episode). Speakers came back as Guest/Unknown [1]/[2]/[3] — voiceprints still aren't enrolled, so needs hand-mapping to Matt/Zac/Gabby before downstream use. Fixed a real bug along the way: pyannote's speaker-embedding step was crashing on a broken torchcodec install; `transcribe.py` now reads WAV clips directly instead of routing through torchcodec, permanent fix. Chapter timecodes pulled from the transcript and given to Zac in-session (not saved to a file yet).
+Week of 8/10 weekly build package | — | Done | `wwd-weekly-planner` run 2026-08-10. Priority call: Last House Tue (decay window, edited), Point Break Thu (evergreen debut, edit still open — due night of 8/11). Full package (social copy, 2 polls, short-form bank, growth notes, cold open check-in) saved to `L:\Winter Wolfs Den review show\2026-08-10 Week of Aug 10\04 Upload Packages\WWD_Weekly_Package_2026-08-10.docx`. Higgsfield credits were at 0, so this week's 7 images shipped as Firefly prompts instead of generated art — see doc Section 5.
+The Last House upload package | — | Done | Built from transcript by hand since `wwd-video-upload-package` skill isn't installed on this machine — title/description/tags/thumbnail concepts/pinned comment saved to `L:\Winter Wolfs Den review show\2026-08-10 Week of Aug 10\04 Upload Packages\The Last House - Upload Package.txt`.
+Cold open — Warden character designs | — | Blocked | Blocked on Higgsfield credits (balance confirmed at 0, free plan, checked 2026-08-10). Zac needs to run a cost analysis before topping up. Nothing can generate — including this week's weekly images — until credits are back.
 Story Behind the Story — Fire in the Sky
 —
 Not Started
