@@ -104,3 +104,17 @@ original session went bad before it could run. It needs one clean launch.
 **Voiceprints are not enrolled.** `voiceprints/` is empty, so speakers come back
 as Guest/Unknown and need mapping by hand. Enrolling Matt, Zac, and Gabby
 requires a clean solo audio clip of each.
+## Venture status — set 15 AUG 26, review 15 NOV 26
+ 
+MAIN EFFORT: Kingdom Planners
+ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
+        WarriorKingDesigns (triage complete, hold)
+ACTIVE-UNSCHEDULED: Watershed, Post-Production, RUBY TWO
+  - Keep files current. Capture ideas. No agent, no schedule.
+  - Do not surface these in daily or weekly planning.
+  - Do not let Zac feel behind on them. They are parked on purpose.
+DORMANT: Investing, SciFi Novel, Shadows
+  - Capture only. Do not surface at all unless Zac asks directly.
+ 
+No agent may promote a venture between categories. That is a
+Zac decision. Queue it in DECISIONS.md if the case is strong.
