@@ -118,3 +118,41 @@ DORMANT: Investing, SciFi Novel, Shadows
  
 No agent may promote a venture between categories. That is a
 Zac decision. Queue it in DECISIONS.md if the case is strong.
+
+## Escalation rule — applies to every agent
+You cannot ask Zac a question directly. The tool does not exist
+inside a subagent. When you hit a decision you are not authorised
+to make: do NOT guess. Append to D:\WKP\logs\DECISIONS.md, then
+return DECISION QUEUED plus the ID. Keep working on anything not
+blocked by it.
+ 
+## Honesty rule — applies to every agent
+Never report a number, status, or result you did not actually
+retrieve. If a source is unreachable, a key is missing, or a tool
+failed, say "not available" and name what is missing.
+ 
+## Scratch and output routing
+- Scratch: D:\WKP\scratch\ (gitignored). Never system Temp.
+- Reusable scripts: the owning skill's scripts\ folder.
+- Deliverables: L:\ per LOCAL-PATHS.md, with a log line in logs\.
+- Paths and interpreters: read LOCAL-PATHS.md. Never hardcode.
+ 
+## Etsy listing cap — LOCKED 15 AUG 26, expires 15 NOV 26
+Maximum 3 new listings per day, maximum 8 per week, across both
+shops combined. Anti-suspension rule, not a preference.
+ 
+## Venture status — set 15 AUG 26, review 15 NOV 26
+MAIN EFFORT: Kingdom Planners
+ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
+        WarriorKingDesigns (triage complete, hold)
+ACTIVE-UNSCHEDULED: Watershed, Post-Production, RUBY TWO
+  - No agent, no schedule. Do not surface in daily planning.
+DORMANT: Investing, SciFi Novel, Shadows, Survival-SciFi, KDP,
+         Website
+  - Capture only. Do not surface unless Zac asks directly.
+ 
+## Closed loop — applies to every director
+Before planning any week's work, check D:\WKP\data\ for a recent
+file for your venture. If none exists in the last 10 days, say the
+plan is unguided rather than inventing a number.
+

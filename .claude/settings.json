@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Agent",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(git pull)",
+      "Bash(git push)",
+      "Bash(git log:*)",
+      "Bash(git commit:*)",
+      "Bash(dir:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Read(//D:/WKP/**/.env)"
+    ],
+    "additionalDirectories": [
+      "L:\\",
+      "E:\\Puzzle Art",
+      "C:\\Tools\\PCHealth"
+    ]
+  }
+}
