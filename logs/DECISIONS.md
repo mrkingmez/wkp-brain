@@ -1,24 +1,46 @@
-\# Decision Queue
+# Decision Queue
 
 Agents append. Zac clears. Nothing else writes.
 
-&#x20;
+## [ID] YYYY-MM-DD | VENTURE | one-line summary
 
-\## \[ID] YYYY-MM-DD | VENTURE | one-line summary
+**Blocked:** what cannot proceed
 
-\*\*Blocked:\*\* what cannot proceed
+**Options:** A / B / C
 
-\*\*Options:\*\* A / B / C
+**Recommendation:** which and why
 
-\*\*Recommendation:\*\* which and why
+**Status:** OPEN | DECIDED: <answer>
 
-\*\*Status:\*\* OPEN | DECIDED: <answer>
+---
 
-&#x20;
+## [WWD-2026-08-20-01] 2026-08-20 | WWD | No devils-advocate agent exists to review WWD packages before ship
 
-\---
+**Blocked:** WWD director protocol requires handing every draft to a
+devils-advocate agent with the format spec path before anything ships. That
+agent type does not exist in this environment's available roster (only claude,
+claude-code-guide, Explore, general-purpose, Plan, statusline-setup,
+wwd-director). Not a one-off, this will recur on every future WWD package,
+review, and script unless resolved.
 
-(no open decisions)
+**Options:**
+A. Build a proper devils-advocate agent definition (.claude/agents/) so future
+   runs get a real, purpose-built adversarial reviewer.
+B. Standardize on using general-purpose with an explicit adversarial-review
+   prompt as the permanent substitute, and update WWD/CLAUDE.md's hard rule to
+   say so plainly instead of naming an agent that doesn't exist.
+C. Leave it ad hoc, each director run decides in the moment (current state,
+   not sustainable, inconsistent review quality).
 
+**Recommendation:** A. This session's stand-in (general-purpose, briefed
+adversarially) caught four real issues (em dashes in internal notes, an
+unverifiable host attribution, two chapter-title inconsistencies, one
+cherry-picked stat), so the review step has proven value. A dedicated agent
+definition would make that review consistent run to run instead of depending
+on how well each director happens to brief a generic substitute.
 
+**Status:** OPEN
 
+---
+
+(no other open decisions)
