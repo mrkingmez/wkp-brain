@@ -23,11 +23,14 @@ Audio		 L:\Winter Wolfs Den review show\Frost-Cast\Raw Audio
 ## Writing
 MY Writing  L:\03 My writing
 
-##Cyber Security
+## Cyber Security
 Cyber Secuirty   D:\WKP-Guides\
 
+## Kingdom Planners
+Kingdom Planners D:\05 Kingdom Planners
+
  
-### Tools
+## Tools
 python           C:\Users\kingz\AppData\Local\Programs\
                  Python\Python312\python.exe
 ffmpeg           FILL - run: where ffmpeg
