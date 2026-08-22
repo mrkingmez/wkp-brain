@@ -2,7 +2,7 @@
 
 Agents append. Zac clears. Nothing else writes.
 
-## [ID] YYYY-MM-DD | VENTURE | one-line summary
+
 
 **Blocked:** what cannot proceed
 
@@ -39,8 +39,16 @@ cherry-picked stat), so the review step has proven value. A dedicated agent
 definition would make that review consistent run to run instead of depending
 on how well each director happens to brief a generic substitute.
 
-**Status:** OPEN
+**Status:** DECIDED: Option A. devils-advocate.md created in .claude/agents/ 20 AUG. Needs its two exit tests run before trusting.
 
 ---
 
-(no other open decisions)
+## [SYS-01] 2026-08-19 | SYSTEM | Agent files arriving HTML-escaped
+**Issue:** All 4 agent .md files written with &#x20; instead of
+spaces and backslash-escaped markdown (\#, \*, \-). Fixed manually
+in VS Code. wwd-director hit this twice.
+**Suspected cause:** content copied from rendered view rather than
+raw code block.
+**Next time:** use the code block copy button, then verify with
+`type <file>` before trusting it.
+**Status:** OPEN - watch for recurrence
