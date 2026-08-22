@@ -156,3 +156,8 @@ Before planning any week's work, check D:\WKP\data\ for a recent
 file for your venture. If none exists in the last 10 days, say the
 plan is unguided rather than inventing a number.
 
+## Etsy data — manual, not exported
+Etsy provides NO traffic CSV export. Views, favorites, and visits
+live only in D:\WKP\data\etsy-manual-YYYY-MM-DD.md, typed by hand
+each Friday. Do not look for an Etsy traffic CSV. Do not report a
+view or favorite count that is not in that file.
