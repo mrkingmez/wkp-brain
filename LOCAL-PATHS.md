@@ -34,7 +34,7 @@ Kingdom Planners D:\05 Kingdom Planners
 python           C:\Users\kingz\AppData\Local\Programs\
                  Python\Python312\python.exe
 ffmpeg           FILL - run: where ffmpeg
-pc health suite  C:\Tools\PCHealth
+pc health suite  D:\Tools\PCHealth
  
 ### Deliverables and media
 deliverables     L:\
