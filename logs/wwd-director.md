@@ -46,3 +46,35 @@ Not done: shorts clips themselves aren't cut (wwd-shorts-clip-factory requires
 local ffmpeg access, separate task). Card/end-screen destination links are
 placeholders pending real channel data. Host attributions on shorts candidates
 need audio confirmation before crediting Winter Wolf or KingZ by name.
+
+## 2026-08-24 | DEN FILES | EP1 B-Roll -> USE prep | elapsed not tracked
+
+Two-part session. First: recovered a lost list of not-yet-downloaded YouTube/
+Spotify clips (Zac's cmd window closed mid-copy) by cross-referencing
+DenFiles_Ep1_EditingScript_v3.docx's Production Reference source list against
+what's actually in B-Roll. Saved to B-Roll\VIDEO_AUDIO_NEEDED.txt so it
+survives this time. Outstanding: Larry King Live 1993 (YouTube + Spreaker
+backup), JRE #1597 full ep (Spotify - likely undownloadable, DRM), 3 JRE
+YouTube clips, KJZZ 2025 50-year interview, Klass audiobook (archive.org).
+
+Second: converted all 26 images in B-Roll to 1920x1080 PNGs in USE, numbered
+1.png-26.png in script order (cold open through outro). Attempted the Adobe
+connection first; it caps batch jobs at ~20 files and has no programmatic
+upload path for local (non-Adobe-hosted) files, so switched to a local
+Pillow script (scratch\broll_resize_ep1.py) with Zac's OK. Two movie posters
+(fire-in-the-sky-dvd-movie-cover.webp, UFO_listing.png) pillarboxed at full
+height with black bars per Zac's spec; everything else fill-cropped to
+1920x1080. Visually verified all 3 identified before running: UFO_listing.png
+turned out to be a newspaper TV-listing clipping, not a poster - Zac chose to
+keep it in the poster/pillarbox group anyway. images (3).jpg is a second,
+previously-unflagged Fire in the Sky poster - Zac chose full-frame treatment
+for it, not pillarbox. All 3 graphic abduction-scene film stills went in per
+script's "single still only" note - editor picks one at cut time, not
+enforced here. unnamed (1).webp (unrelated trail-sign photo) and
+Logging_Crew_1970s_NARA.jpg (mislabeled, shows two men by a lake, not a
+logging crew) went in per Zac's call despite flagging them as likely
+mismatches.
+
+Not done: still-outstanding photos from STILL_PHOTOS_NEEDED.txt (period
+Snowflake storefronts, Nov 1975 newspaper front pages, two frame-grabs from
+the film itself) remain unfilled - unchanged by this session.

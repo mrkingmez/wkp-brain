@@ -24,6 +24,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 | RUBY TWO (WWII short film) | ./RUBY-TWO/ | 8 |
 | Cyber Security (day job practice) | ./Cyber-Security/ | 9 |
 | Investing challenge | ./Investing/ | 10 |
+| KDP Publishing (math mystery + puzzle books) | ./KDP/ | 1b |
 
 ## Standing rules
 
@@ -104,20 +105,6 @@ original session went bad before it could run. It needs one clean launch.
 **Voiceprints are not enrolled.** `voiceprints/` is empty, so speakers come back
 as Guest/Unknown and need mapping by hand. Enrolling Matt, Zac, and Gabby
 requires a clean solo audio clip of each.
-## Venture status — set 15 AUG 26, review 15 NOV 26
- 
-MAIN EFFORT: Kingdom Planners
-ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
-        WarriorKingDesigns (triage complete, hold)
-ACTIVE-UNSCHEDULED: Watershed, Post-Production, RUBY TWO
-  - Keep files current. Capture ideas. No agent, no schedule.
-  - Do not surface these in daily or weekly planning.
-  - Do not let Zac feel behind on them. They are parked on purpose.
-DORMANT: Investing, SciFi Novel, Shadows
-  - Capture only. Do not surface at all unless Zac asks directly.
- 
-No agent may promote a venture between categories. That is a
-Zac decision. Queue it in DECISIONS.md if the case is strong.
 
 ## Escalation rule — applies to every agent
 You cannot ask Zac a question directly. The tool does not exist
@@ -141,15 +128,20 @@ failed, say "not available" and name what is missing.
 Maximum 3 new listings per day, maximum 8 per week, across both
 shops combined. Anti-suspension rule, not a preference.
  
-## Venture status — set 15 AUG 26, review 15 NOV 26
+## Venture status — set 15 AUG 26, amended 24 AUG 26, review 15 NOV 26
 MAIN EFFORT: Kingdom Planners
+PRIORITY 1B: KDP Publishing (math mystery / puzzle books) — added 24 AUG 26,
+  Zac's direct call, not an agent promotion. Goal is reaching real profit
+  soon; treat as second only to Kingdom Planners in the daily/weekly rundown.
 ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
         WarriorKingDesigns (triage complete, hold)
 ACTIVE-UNSCHEDULED: Watershed, Post-Production, RUBY TWO
   - No agent, no schedule. Do not surface in daily planning.
-DORMANT: Investing, SciFi Novel, Shadows, Survival-SciFi, KDP,
-         Website
+DORMANT: Investing, SciFi Novel, Shadows, Survival-SciFi, Website
   - Capture only. Do not surface unless Zac asks directly.
+
+No agent may promote a venture between categories. That is a
+Zac decision. Queue it in DECISIONS.md if the case is strong.
  
 ## Closed loop — applies to every director
 Before planning any week's work, check D:\WKP\data\ for a recent

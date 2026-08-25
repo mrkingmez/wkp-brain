@@ -73,3 +73,10 @@ WWII daylight-bombing-mission short film, 15-20 minute target runtime. Has a ful
 
 **Needs:** a CLAUDE.md once active production starts; the Production Bible itself is already a strong reference document.
 
+---
+
+## 10. KDP Publishing — Math Mystery & Puzzle Books
+New venture, added 2026-08-24, priority 1b (right behind Kingdom Planners). Uses two BowesPaz/Toolshelf apps on Elite tier (paid access via Zac's wife's business account): **Genten Royalty** generates math-mystery whodunnit workbooks for grades 1-6 (story + suspects + varied math clue sheets + elimination mechanic); **Shigai Royalty** generates murder-mystery-themed Sudoku puzzle books, not yet explored. Market research supports the niche: comparable traditionally-published format ("Critical Thinking Detective Math") rates 4.9★ in the homeschool market, and KDP math workbooks are a recognized profitable-but-competitive catalog-of-many-titles niche rather than a single-breakout-title play.
+
+**Has a CLAUDE.md.** Zero books published yet — this is a from-scratch build. Needs a real hands-on session with Genten Royalty before the active plan gets locked.
+

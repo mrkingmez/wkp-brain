@@ -98,6 +98,52 @@ Launch wall art line
 Not Started
 Expanding beyond puzzles
 
+🟠 KDP Publishing — Math Mystery & Puzzle Books (priority 1b, set 8/24)
+Task
+Deadline
+Status
+Notes
+Full market research (naming/description/pricing)
+—
+Done
+Opus research pass 8/24 — see `KDP\Launch-Guide.md`. Name locked: "Math Case Files." Pricing locked: launch $10.99, never below $9.99. Full comp table + trademark check in the guide's appendix.
+Build Launch Guide + Tracker + kdp-director agent
+—
+Done
+`KDP\Launch-Guide.md` / `.docx`, `KDP\Tracker.csv`, `.claude\agents\kdp-director.md` all built 8/24. jarvis routing updated.
+Run Genten Royalty hands-on with Zac
+—
+Not Started
+Day 1 priority — confirms real page count/export format/option set, which every pricing and bundling number in the Launch Guide currently assumes from one 15-page sample
+Run KDP Niche Finder (free BowesPaz tool)
+—
+Not Started
+Pick 2-3 low-competition grade/theme combos before generating anything
+Verify Genten's content-ownership/commercial-use terms
+—
+Not Started
+Confirm generated content is actually clear to publish commercially, before publishing anything
+Pick pen name / imprint for Math Case Files
+—
+Not Started
+Single KDP account (zac@warriorkingproductions.com), multiple pen names — confirmed safe, no second account needed
+Build cover template
+—
+Not Started
+Needed before first submission
+Generate + publish Book 1 (6-8 bundled cases)
+—
+Not Started
+Not a single case — bundle for print-cost/royalty reasons, see Launch Guide Section 1
+Start Sunday KDP data pull
+—
+Not Started
+No API exists — manual dashboard pull every Sunday into `data\kdp-manual-YYYY-MM-DD.md` + `KDP\Tracker.csv`, once a title is live
+Explore Shigai Royalty (murder-mystery Sudoku)
+—
+Not Started
+Second product line on the same Elite account — scope after Genten's first batch
+
 The Winter Wolf's Den / FrostCast
 Task
 Deadline

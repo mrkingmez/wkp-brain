@@ -66,6 +66,18 @@ skills directory (or the `/skills` listing) before invoking one. When one is
 missing, say so plainly and do the work directly instead of pretending the
 handoff happened — this is what happened with The Last House upload package.
 
+## Adobe MCP connection can't batch-process local files [2026-08-24]
+The Adobe for Creativity tools (Photoshop/Lightroom image ops) require a
+presigned URL or an Adobe-hosted asset — there is no programmatic upload path
+for a genuine local file (`L:\...`, `D:\...`). The only route in is
+`asset_add_file`, an interactive file picker Zac has to click through once per
+file. Adobe's own docs also cap batch jobs around ~20 files regardless. For
+"resize/convert N local images" tasks past a handful of files, skip the Adobe
+connection entirely and use a local Pillow script instead — see the
+wwd-broll-prep skill. Only worth routing through Adobe when Zac specifically
+wants Photoshop's cloud tools touching each file and is fine clicking the
+picker per image.
+
 ## Higgsfield account is on the free plan, 0 credits by default [2026-08-10]
 `balance` came back `{"credits":0,"subscription_plan_type":"free"}`. This blocks
 both weekly social-image generation and the FrostCast cold open Warden character
