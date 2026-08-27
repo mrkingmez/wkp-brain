@@ -17,4 +17,4 @@ Weekly summary. Which listing is carrying the shop, which is flat.
 
 ## Escalation
 Nothing to escalate here by default - this is a reporting skill,
-not a decision-making one.
+not a decision-making one
