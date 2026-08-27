@@ -17,6 +17,17 @@ description: Builds the eight-image photo set for a Kingdom Planners
 7. "Works in Excel and Google Sheets" - done, permanent, never changes.
 8. Veteran credential card - done, permanent, never changes.
 
+## Watermarking previews (optional, not automatic)
+
+scripts\watermark.py tiles a rotated, translucent shop name across a
+preview image. Whether to watermark KP screenshots is still Zac's
+open call - the tab and calculator shots are his own product, not
+art, so the theft risk is different from WKD's printables. Run it
+only when asked. Do not apply it by default to every image.
+
+Usage:
+python scripts\watermark.py --input "path\to\screenshot.png" --text "Kingdom Planners" --out "path\to\preview.jpg"
+
 ## Rules
 Images 2-5 are real screenshots of the actual working file, not
 staged. If the spreadsheet isn't finished, this skill cannot run yet.
