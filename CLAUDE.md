@@ -59,7 +59,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 - Second Brain rebuilt on GitHub after the Drive/Google Docs conversion failure. Phase 1 in progress.
 - FrostCast at episode 106. New cold open targeted for ~episode 110.
 - Kingdom Planners: seven finished products, zero listings, shop not yet created. The pipeline is far ahead of the storefront.
-- Den Files episode 1 (Fire in the Sky) targeted for release ~August 2026.
+- Den Files episode 1 (Fire in the Sky) targeted for release 1 October 2026 (locked 26 Aug 26).
 - CySA+ exam targeted end of August 2026.
 
 ## Memory
@@ -98,9 +98,9 @@ details:
 Do not ask which file or where to put the output. The episode number comes from
 the WWD calendar, so check there rather than asking.
 
-**Status:** EP106 has no transcript yet. Every blocker is cleared (script bugs
-fixed, Hugging Face licenses accepted, CUDA verified on the RTX 5060) — the
-original session went bad before it could run. It needs one clean launch.
+**Status:** EP106 transcript generated 2026-08-09 (see TASKS.md). Speakers
+came back as Guest/Unknown — voiceprints still aren't enrolled, so it needs
+hand-mapping to Matt/Zac/Gabby before downstream use.
 
 **Voiceprints are not enrolled.** `voiceprints/` is empty, so speakers come back
 as Guest/Unknown and need mapping by hand. Enrolling Matt, Zac, and Gabby

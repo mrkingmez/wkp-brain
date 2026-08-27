@@ -41,6 +41,13 @@ on how well each director happens to brief a generic substitute.
 
 **Status:** DECIDED: Option A. devils-advocate.md created in .claude/agents/ 20 AUG. Needs its two exit tests run before trusting.
 
+**Update 2026-08-26 (jarvis):** devils-advocate.md existed but was never
+registering in the agent roster — file was missing its opening `---`
+frontmatter fence (started straight at `name:` instead of `---` then
+`name:`), so every session silently fell back to the general-purpose
+stand-in. Fixed (added the fence). Still needs the two exit tests run
+before trusting it as the real reviewer.
+
 ---
 
 ## [SYS-01] 2026-08-19 | SYSTEM | Agent files arriving HTML-escaped

@@ -39,7 +39,7 @@ For example, November military month in honor of veterans.
 DEN FILES
 Internal name for the series pitched externally as "Story Behind the Story." Deep dive into the true events that inspired a movie versus what the movie actually showed.
 
-Episode 1 — Fire in the Sky (Travis Walton case), script already drafted in this folder. Key angle: Travis Walton has said publicly his actual abduction experience was more like a healing encounter — beings noticed he was hurt and were trying to help him — but the 1993 movie reframed it as straight horror, which reportedly upset him. The hook: contrast what Walton actually described versus the horror treatment Hollywood gave it. Structure: lead with the real account, then show how/where the film diverged. Targeted for release ~August 2026.
+Episode 1 — Fire in the Sky (Travis Walton case), script already drafted in this folder. Key angle: Travis Walton has said publicly his actual abduction experience was more like a healing encounter — beings noticed he was hurt and were trying to help him — but the 1993 movie reframed it as straight horror, which reportedly upset him. The hook: contrast what Walton actually described versus the horror treatment Hollywood gave it. Structure: lead with the real account, then show how/where the film diverged. Targeted for release 1 October 2026 (locked 26 Aug 26).
 
 The cold open template from the Episode 1 script is reused every Den Files episode; keep it consistent. (Again — this is the Den Files cold open, not the FrostCast one.)
 

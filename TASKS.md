@@ -155,9 +155,9 @@ The Last House upload package | — | Done | Built from transcript by hand since
 EP 103 upload package | — | Done | Built by hand from FROSTCAST.md format spec (`wwd-video-upload-package` skill still not installed on this machine). SEO title, 18-chapter description, backend tags, hashtags, thumbnail concept, 6 scored shorts candidates (4 elite ships, 2 held for re-cut), FB/IG posts w/ Firefly prompts, end screens/cards, posting schedule — saved to `L:\Winter Wolfs Den review show\Frost-Cast\EP 103\FrostCast Episode 103 - Upload Package.txt`. Reviewed by a general-purpose agent standing in for the unavailable devils-advocate agent type (verdict: SHIP WITH FIXES, 4 issues found and fixed — see logs\wwd-director.md 2026-08-20 entry). Open flags: shorts clips not yet cut, end-screen/card links are placeholders pending real channel data, shorts host attributions need audio confirmation before crediting Winter Wolf or KingZ by name (voiceprints still not enrolled). Devils-advocate agent gap queued as decision WWD-2026-08-20-01.
 Cold open — Warden character designs | — | Blocked | Blocked on Higgsfield credits (balance confirmed at 0, free plan, checked 2026-08-10). Zac needs to run a cost analysis before topping up. Nothing can generate — including this week's weekly images — until credits are back.
 Story Behind the Story — Fire in the Sky
-—
+2026-10-01
 Not Started
-First episode of new series
+First episode of new series. Release date locked 2026-08-26.
 Next FrostCast episode prep
 Wed 9pm (weekly)
 Not Started

@@ -1,3 +1,4 @@
+---
 name: devils-advocate
 description: Adversarial reviewer for creative and commercial work.
   Argues the case against a draft, script, hook, listing, chapter,
