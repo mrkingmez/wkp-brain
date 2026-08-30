@@ -78,3 +78,198 @@ mismatches.
 Not done: still-outstanding photos from STILL_PHOTOS_NEEDED.txt (period
 Snowflake storefronts, Nov 1975 newspaper front pages, two frame-grabs from
 the film itself) remain unfilled - unchanged by this session.
+
+## 2026-08-26/27 | FROSTCAST | EP 109 transcription - killed after stall, not completed
+
+Zac said EP109 was downloaded Wednesday night (8/26). Ran the standing
+transcription workflow: found the file at `L:\Winter Wolfs Den review show\
+Frost-Cast\EP 109\NOOO!! RIP Dolly Parton and Tim Curry _ WB merger puts DCU
+on HOLD _ FrostCast Episode 109.mp4` (91:36 runtime), launched
+transcribe.py detached on GPU at 10:51:47 PM.
+
+Whisper transcribe+align completed cleanly in 22m 39s (10:52:43 PM ->
+11:15:22 PM) - slower than EP106's observed 10-20x realtime speedup (this
+ran ~4x realtime), possibly episode-length or VRAM-pressure related, not
+investigated further since the real problem was downstream.
+
+Diarization stage started 11:15:22 PM and never completed. A live-monitoring
+subagent tracked it for ~4.5 hours via repeated CPU-time-delta and GPU-util
+checks - every check through ~1:53 AM showed CPU time climbing at a steady
+~101-102% of wall-clock (genuine active computation, not a freeze), which
+was traced to a real root cause: pyannote's installed pipeline
+(speaker_diarization.py, pyannote-audio 4.0.7) defaults both
+`embedding_batch_size` and `segmentation_batch_size` to 1, forcing fully
+serial GPU calls across the entire 91-minute file instead of batched
+parallel ones. RAM/paging was checked and ruled out (12GB+ free system-wide,
+process working set only 551MB). Windows Event Viewer and the full
+transcription log were checked and showed no errors, exceptions, or silent
+retry loops.
+
+A hard timebox was set from that diagnosis: kill at 4 hours on the
+diarization stage (3:15 AM) if still incomplete, then retry with a short
+test clip first to isolate whether it's audio-length-driven, with the real
+fix being to expose `embedding_batch_size`/`segmentation_batch_size` as
+parameters in transcribe.py (not currently wired up) - VRAM headroom on this
+8GB RTX 5060 permitting.
+
+The monitoring subagent hit a Claude session limit around 1:53 AM and died
+before it could execute that plan. Main session picked it up after the
+session limit reset (~3:30 AM), found the process (PID 27736) still alive
+at 3:32 AM - 17 minutes past the 3:15 AM deadline - and ran one final
+CPU-delta check before acting: over a fresh 20-second window, CPU time
+was essentially flat (+0.015s), a sharp break from the ~101-102%/wall-clock
+pace that had held for the entire prior 4.5 hours. GPU still showed 100%
+util/7.6GB VRAM at that same moment, which is ambiguous on its own but the
+CPU evidence was the deciding signal. Killed PID 27736 at 3:33 AM per the
+pre-agreed plan.
+
+No transcript was produced. The .mp4 source file is untouched. Not
+retried yet - queued as decision WWD-2026-08-27-01 since the fix
+(exposing batch-size params) is a script change and the retry approach
+(short test clip first) needs a call on priority, and Zac was asleep at
+that hour to weigh in.
+
+## 2026-08-27 07:15-07:37 | FROSTCAST | EP 109 transcriber fix + retry | elapsed ~22 min end to end
+
+**Status:** DONE
+
+**Trigger:** Zac decided WWD-2026-08-27-01 as Option C overnight (fix
+transcribe.py to expose the batch-size params, then retry EP109) - work
+picked up on session resume, no live back-and-forth needed.
+
+**Classification:** FrostCast (standing transcription workflow, not a
+full work up - transcript already existed as the deliverable target,
+no chapters/upload-package chain requested).
+
+**Actions taken:**
+- Read `skills\wwd-video-transcriber\scripts\transcribe.py` and the
+  installed pyannote 4.0.7 source directly to confirm the fix approach
+  before writing any code.
+- Confirmed via source inspection that whisperx's `DiarizationPipeline`
+  wrapper loads the underlying pyannote `Pipeline` through
+  `Pipeline.from_pretrained()`, which only accepts hyperparameters baked
+  into the model's own `config.yaml` - it does not pass through
+  arbitrary constructor kwargs. So `embedding_batch_size` and
+  `segmentation_batch_size` can't be set at construction time from our
+  script; they have to be set as attributes on the loaded pipeline
+  object afterward. `embedding_batch_size` is a plain settable
+  attribute; `segmentation_batch_size` has a property setter that
+  forwards to the underlying `Inference` object's `.batch_size`. Both
+  confirmed safe to set post-construction from source inspection.
+- Edited `transcribe.py`:
+  - Added `--embedding-batch-size` and `--segmentation-batch-size` CLI
+    args, both defaulting to 8 (within Zac's suggested 4-8 "safe
+    starting point" range for an 8GB card, chosen over defaulting lower
+    since freeing VRAM below - see next point - opened up real
+    headroom).
+  - Found and fixed a second, related issue while in there: Whisper's
+    transcription model and the alignment model were never released
+    from VRAM before the diarization pipeline loaded. Last night's
+    7.6GB diarization-stage peak almost certainly included leftover
+    Whisper/align VRAM, not just diarization's own footprint. Added
+    explicit `del model / del align_model / gc.collect() /
+    torch.cuda.empty_cache() / torch.cuda.reset_peak_memory_stats()`
+    between the align step and the diarization pipeline load.
+  - Set the batch sizes on the loaded pipeline object
+    (`diarize_pipeline.model.embedding_batch_size` /
+    `.segmentation_batch_size`) with a hasattr guard and a clear
+    warning printed if pyannote's internals ever change shape.
+  - Wrapped the diarize call in a try/except for CUDA OOM with an
+    actionable message (lower the batch-size flags and retry) instead
+    of an opaque crash.
+  - Added stage timing (`diarize_elapsed`) and peak-VRAM logging
+    (`torch.cuda.max_memory_allocated()`) around the diarization call
+    so future runs have real numbers instead of estimates.
+- Validated before committing to the full file: `python -m py_compile`
+  clean, `--help` parses correctly, then a real functional test - cut
+  a 4-minute clip from EP109 itself (10:00-14:00 mark) with ffmpeg,
+  ran the full pipeline against it with the new flags at 8/8. Result:
+  diarization completed in 0.2 minutes, cleanly split into 2 speaker
+  clusters, peak VRAM 1.04GB, no OOM, transcript wrote out correctly.
+  Confirmed the wiring works end to end against the real pyannote
+  pipeline before spending GPU time on the full file.
+- Extracted full EP109 audio (91:36 confirmed) and launched
+  `transcribe.py` detached on GPU against the full file with
+  `--embedding-batch-size 8 --segmentation-batch-size 8`. Monitored via
+  a single background wait-loop (no polling spam back to the session
+  per Zac's explicit feedback from last night's run) until the process
+  exited on its own.
+
+**Retry results - EP109 full 91:36 episode:**
+- Whisper transcribe + align + diarization-model load: ~16m52s
+  (07:17:14 -> 07:34:06), in the same ballpark as last night's clean
+  22m39s for the same stage (some variance expected, not investigated
+  further since it wasn't the bottleneck).
+- **Diarization: completed in 3.3 minutes.** Last night this same stage
+  ran 4h16m and never finished before being killed. That's the direct
+  before/after on the root-cause fix - confirms the batch_size=1 serial
+  GPU call diagnosis was correct.
+- Diarization stage peak VRAM: 1.04GB (vs. 7.6GB observed last night at
+  batch_size=1, though last night's figure likely included un-freed
+  Whisper/align VRAM per the second fix above - not a clean
+  apples-to-apples number, but directionally consistent with more
+  headroom now).
+- 3 speaker clusters detected (SPEAKER_00/01/02), all UNMAPPED - expected,
+  voiceprints still aren't enrolled (`voiceprints/` empty, tracked
+  separately in TASKS.md).
+- Total script wall time, launch to file written: ~22 minutes for the
+  full 91-minute episode, all stages combined.
+- No errors, no OOM, exit code 0.
+
+**Deliverables:**
+- Transcript: `L:\Winter Wolfs Den review show\Frost-Cast\EP 109\NOOO!!
+  RIP Dolly Parton and Tim Curry _ WB merger puts DCU on HOLD _
+  FrostCast Episode 109_transcript.txt` (1,675 lines).
+- Chapter timecodes (17 chapters, pulled from the full transcript,
+  standard FrostCast conversational flow - deaths tribute, poll,
+  horror-genre discussion, Spider-Man box office, Lanterns review,
+  franchise-ranking game, Battlestar Galactica tangent, sign-off):
+  ```
+  00:00:00 - Start
+  00:00:31 - Dolly Parton Tribute
+  00:05:52 - Tim Curry Tribute
+  00:15:42 - Scariest Movie Poll and The Shining
+  00:17:21 - Liminal Horror and the Changing Genre
+  00:29:19 - Indie Horrors Low Budget Advantage
+  00:31:53 - 2025 Horror Box Office Records
+  00:35:11 - The Conjuring Franchise Ranked
+  00:36:15 - Spider-Man Box Office Update
+  00:44:03 - Lanterns Episode 2 Review
+  01:00:19 - Ranking the Big Four Franchises
+  01:09:38 - Star Wars vs Star Trek Where to Live
+  01:13:23 - FTL Tech Warp Speed vs Hyperspace
+  01:17:17 - Battlestar Galactica Deep Dive
+  01:26:39 - Good Boy and Den Files Tease
+  01:28:05 - Sign Off and Weekend Movie Picks
+  01:29:23 - Scariest Movie Poll Results
+  ```
+- Script change: `D:\WKP\.claude\skills\wwd-video-transcriber\scripts\
+  transcribe.py` (batch-size params, VRAM cleanup, OOM handling, timing/
+  VRAM logging - all described above).
+- Test artifacts (not deliverables, left in scratch for reference):
+  `D:\WKP\scratch\ep109-diarization-test\` (4-min validation clip +
+  transcript, full extracted audio wav, full run log).
+
+**Flags for Zac:**
+- Episode title says "WB merger puts DCU on HOLD" but that topic does
+  not appear anywhere in the transcript (grepped for merger/Warner/WBD/
+  Discovery/acqui, zero hits). Either it got cut from the recording,
+  happened off-mic, or the title was drafted ahead of the actual
+  conversation. Not guessing at a chapter for it - flagging instead so
+  the title/description can be reconciled by hand before this ships.
+- Voiceprints still not enrolled - all 3 speaker clusters this episode
+  came back Guest/Unknown [1]/[2]/[3]. Same standing gap as EP106,
+  tracked in TASKS.md.
+- Per the standing FrostCast Transcription Workflow (not a full work
+  up), this run stopped at transcript + chapters. Did not chain into
+  send_transcript.py, wwd-frostcast-chapters as a separate skill call,
+  upload package, or shorts - only ran what was asked. Say the word if
+  Zac wants the full chain run next.
+- transcribe.py's new batch-size defaults (8/8) are now the baseline for
+  every future transcription job on this machine, not just EP109 - worth
+  a quick sanity check on the next couple of episodes to confirm 8 holds
+  up on different runtimes/speaker counts before trusting it fully
+  unattended.
+
+that hour to weigh in.
+kill time.

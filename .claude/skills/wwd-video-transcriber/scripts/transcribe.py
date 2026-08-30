@@ -23,8 +23,10 @@ with the pyannote gated model licenses accepted).
 """
 
 import argparse
+import gc
 import os
 import sys
+import time
 
 import numpy as np
 
@@ -67,6 +69,27 @@ def main():
         default=os.path.join(os.path.dirname(__file__), "..", "voiceprints"),
     )
     parser.add_argument("--model", default="large-v3", help="Whisper model size")
+    parser.add_argument(
+        "--embedding-batch-size",
+        type=int,
+        default=8,
+        help=(
+            "pyannote diarization embedding_batch_size. Pyannote 4.x defaults this "
+            "to 1, which forces fully serial GPU calls and is extremely slow on "
+            "long files. 8 is a modest increase chosen for an 8GB card - raise it "
+            "only after confirming headroom (see --segmentation-batch-size note)."
+        ),
+    )
+    parser.add_argument(
+        "--segmentation-batch-size",
+        type=int,
+        default=8,
+        help=(
+            "pyannote diarization segmentation_batch_size. Same default-of-1 "
+            "problem as embedding_batch_size. Kept equal to it by default; VRAM "
+            "is tight on 8GB cards so don't jump this to 32+ without testing."
+        ),
+    )
     args = parser.parse_args()
 
     hf_token = os.environ.get("HF_TOKEN")
@@ -107,9 +130,65 @@ def main():
     align_model, metadata = whisperx.load_align_model(language_code=result["language"], device=device)
     result = whisperx.align(result["segments"], align_model, metadata, audio, device)
 
-    print("Running diarization (clustering speakers)...")
+    # Whisper + the align model are done contributing at this point but their
+    # weights are still resident on the GPU unless we explicitly drop them.
+    # On an 8GB card that leftover VRAM is exactly what was crowding out
+    # headroom for diarization batching, so free it before loading the
+    # diarization pipeline.
+    del model
+    del align_model
+    gc.collect()
+    if device == "cuda":
+        import torch
+        torch.cuda.empty_cache()
+        torch.cuda.reset_peak_memory_stats()
+
+    print(
+        "Running diarization (clustering speakers) - "
+        f"embedding_batch_size={args.embedding_batch_size}, "
+        f"segmentation_batch_size={args.segmentation_batch_size}..."
+    )
     diarize_pipeline = DiarizationPipeline(token=hf_token, device=device)
-    diarize_segments = diarize_pipeline(args.audio)
+
+    # whisperx.diarize.DiarizationPipeline doesn't expose these as constructor
+    # args - it loads the underlying pyannote Pipeline via Pipeline.from_pretrained,
+    # which only accepts params baked into the model's own config.yaml. Pyannote
+    # 4.0.7 defaults both to 1 (fully serial GPU calls), which is what stalled
+    # EP109 for 4h16m. Set them directly on the loaded pipeline object instead -
+    # embedding_batch_size is a plain settable attribute, segmentation_batch_size
+    # has a property setter that forwards to the underlying Inference object.
+    underlying = getattr(diarize_pipeline, "model", None)
+    if underlying is not None and hasattr(underlying, "embedding_batch_size") and hasattr(underlying, "segmentation_batch_size"):
+        underlying.embedding_batch_size = args.embedding_batch_size
+        underlying.segmentation_batch_size = args.segmentation_batch_size
+    else:
+        print(
+            "WARNING: could not find embedding_batch_size/segmentation_batch_size "
+            "on the loaded pyannote pipeline - running with pyannote's own defaults "
+            "(batch_size=1, slow serial calls). Pyannote's pipeline internals may "
+            "have changed; check the installed version."
+        )
+
+    diarize_start = time.time()
+    try:
+        diarize_segments = diarize_pipeline(args.audio)
+    except RuntimeError as e:
+        if "out of memory" in str(e).lower():
+            print(
+                f"CUDA OOM during diarization at embedding_batch_size="
+                f"{args.embedding_batch_size}, segmentation_batch_size="
+                f"{args.segmentation_batch_size}."
+            )
+            print("Re-run with lower --embedding-batch-size/--segmentation-batch-size values (try 2 or 1).")
+            sys.exit(1)
+        raise
+    diarize_elapsed = time.time() - diarize_start
+    print(f"Diarization completed in {diarize_elapsed / 60:.1f} minutes")
+    if device == "cuda":
+        import torch
+        peak_gb = torch.cuda.max_memory_allocated() / (1024 ** 3)
+        print(f"Diarization stage peak VRAM: {peak_gb:.2f} GB")
+
     result = whisperx.assign_word_speakers(diarize_segments, result)
 
     print("Mapping diarized clusters to enrolled voices...")

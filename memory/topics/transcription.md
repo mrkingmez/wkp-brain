@@ -72,3 +72,46 @@ Whisper + diarization pass from scratch — no checkpointing across runs.
 `L:\Winter Wolfs Den review show\Frost-Cast\EP 106\...transcript.txt`.
 Speakers still came back Guest/Unknown [1]/[2]/[3] — [[voiceprints]] enrollment
 is still the blocker for named speakers, unchanged from the 2026-08-06 note.
+
+## Diarization defaults to batch_size=1 — fully serial, will stall on long files [2026-08-27]
+pyannote-audio 4.0.7's `SpeakerDiarization` pipeline (loaded inside whisperx's
+`DiarizationPipeline`) defaults both `embedding_batch_size` and
+`segmentation_batch_size` to 1, forcing fully serial GPU calls across the whole
+file. On EP109 (91:36) this stalled diarization for 4h16m before it was killed
+without finishing — genuinely still computing (CPU time climbing at steady
+~101-102% of wall clock), not hung, just architecturally slow at batch_size=1.
+Root cause confirmed by reading the installed pyannote source directly
+(`pyannote/audio/pipelines/speaker_diarization.py`), not guessed.
+
+Fix: whisperx's `DiarizationPipeline` doesn't expose these as constructor args
+(it loads the underlying pyannote `Pipeline` via `Pipeline.from_pretrained()`,
+which only reads hyperparameters baked into the model's own `config.yaml` —
+no passthrough for arbitrary kwargs). Set them as attributes on the loaded
+pipeline object *after* construction instead:
+`diarize_pipeline.model.embedding_batch_size = N` and
+`diarize_pipeline.model.segmentation_batch_size = N`
+(`embedding_batch_size` is a plain attribute; `segmentation_batch_size` has a
+property setter that forwards to the underlying `Inference.batch_size`). Both
+confirmed settable post-load from source. `transcribe.py` now exposes
+`--embedding-batch-size`/`--segmentation-batch-size`, both defaulting to 8 —
+chosen as the modest/safe end of the 4-8 range for this 8GB RTX 5060, not
+pushed higher without more headroom data.
+
+Related fix found in the same pass: Whisper's transcription model and the
+align model were never released from VRAM before the diarization pipeline
+loaded, so the diarization-stage VRAM figure (7.6GB observed the night of the
+stall) likely included leftover Whisper/align weights, not just diarization's
+own footprint. `transcribe.py` now does
+`del model; del align_model; gc.collect(); torch.cuda.empty_cache();
+torch.cuda.reset_peak_memory_stats()` between the align step and the
+diarization pipeline load, freeing real headroom before batching even comes
+into play.
+
+Result on retry: diarization stage went from >4h16m (never finished) to 3.3
+minutes (completed cleanly), peak VRAM 1.04GB. Validate any future pyannote/
+whisperx version bump against a short clip first (see `_load_wav_dict` note
+above for the pattern) — a version change could silently move
+`embedding_batch_size`/`segmentation_batch_size` off the plain-attribute
+pattern this fix relies on. `transcribe.py` now guards this with a hasattr
+check and prints a warning rather than failing silently if the attributes
+disappear in a future pyannote release.
