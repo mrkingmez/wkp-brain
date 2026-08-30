@@ -123,6 +123,12 @@ failed, say "not available" and name what is missing.
 - Reusable scripts: the owning skill's scripts\ folder.
 - Deliverables: L:\ per LOCAL-PATHS.md, with a log line in logs\.
 - Paths and interpreters: read LOCAL-PATHS.md. Never hardcode.
+
+## File retention
+Any file produced in a chat gets downloaded to disk the same session it
+is created. Chat outputs are not storage. Deleting a chat deletes the
+only copy. This rule exists because five Kingdom Planners spreadsheets
+were lost exactly that way.
  
 ## Etsy listing cap — LOCKED 15 AUG 26, expires 15 NOV 26
 Maximum 3 new listings per day, maximum 8 per week, across both
