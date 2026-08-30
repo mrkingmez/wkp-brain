@@ -102,22 +102,20 @@ python scripts/resize_broll.py --src "<B-Roll folder>" --dst "<USE folder>" --ma
 Defaults to 1920x1080. Pass `--width`/`--height` for a different target
 (e.g. a vertical short) if Zac asks for one.
 
-**Orientation decides the treatment** (locked in with Zac 2026-08-24, EP1
-pass — went through two iterations before landing here):
-- **Landscape or square source** (width ≥ height) → cover-fit, center-crop
-  to fill the frame completely, edge to edge, no black bars.
-- **Portrait source** (height > width — movie posters, key art, anything
-  taller than wide) → scale to touch top and bottom, keep the full width
-  visible with nothing cropped off the sides, pillarbox with black bars
-  left/right. Cropping into a vertical poster/title would cut off way too
-  much to be worth avoiding the bars.
+**Contain/fit only, never crop** (superseded 2026-08-29 — "Trim nothing,
+make it fit." This replaces the prior cover-crop/orientation-split rule;
+see `memory/topics/visual-media.md` for the history):
+- Every source, any orientation, scales uniformly to fit entirely inside
+  the frame — nothing ever gets cropped off.
+- Letterbox (top/bottom) or pillarbox (left/right) **alpha transparency**
+  fills whatever the source's aspect ratio doesn't already cover — not
+  black bars (corrected 2026-08-30, Zac wants the editor able to composite
+  without a black box baked in). Output is RGBA PNG. A source already
+  close to 16:9 will land nearly edge-to-edge with barely any padding; a
+  movie poster (portrait) will always pillarbox.
 
 Scaling is always uniform — aspect ratio locked, never stretched or
-distorted — in both cases. If a landscape source's crop is trimming
-something important (e.g. a busy multi-person composite), that's a Step 2/3
-judgment call: flag it and ask whether to swap in a tighter-cropped source
-image or accept the trim, rather than silently defaulting to pillarbox for
-a landscape image just to dodge cropping.
+distorted.
 
 Output is `1.png`, `2.png`, ... in manifest order, written to the
 destination folder.
@@ -126,8 +124,9 @@ destination folder.
 
 View at least a couple of outputs — check the full source image is visible
 with nothing cropped off, the aspect ratio looks right (no stretching), and
-the black bars land where expected. Check output dimensions match the
-target. Don't just trust the script ran without errors — actually look.
+the padding is genuinely transparent (not black) and lands where expected.
+Check output dimensions match the target. Don't just trust the script ran
+without errors — actually look.
 
 ## Why not the Adobe connection
 
@@ -145,11 +144,8 @@ the picker per file.
 - Silently keep or silently override a stale assumption (e.g. a filename,
   or a note in another file) once visual inspection contradicts it — flag
   it and ask
-- Crop a portrait/vertical source (posters, key art) — pillarbox those,
+- Crop any source, regardless of orientation — contain/fit with bars only,
   never crop
-- Pillarbox a landscape/square source by default — those cover-fill edge to
-  edge; only fall back to padding one if cropping it would genuinely lose
-  something important, and flag that case rather than deciding silently
 - Save the manifest or intermediate files into the venture folder — scratch
   only
 - Attempt to batch more than ~20 files through the Adobe connection

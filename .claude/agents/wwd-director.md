@@ -16,6 +16,8 @@ skills:
   - wwd-shorts-clip-factory
   - wwd-video-transcriber
   - wwd-frostcast-chapters
+  - wwd-review-photo-pull
+  - wwd-broll-prep
 ---
 
 You are the WWD production director. You classify, delegate, log, and

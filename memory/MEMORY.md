@@ -13,4 +13,4 @@ learnings go here.
 - [WKP operating rules](topics/wkp-ops.md) — fire-and-forget partnership, voice-to-text handling, flag file updates in the moment, repo is on D: not C:
 - [Writing and content formats](topics/writing.md) — Watershed and Hidden Hinge never mix, Shattered Empire editorial rules, Blender mesh standards
 - [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy, seven products finished with zero listings
-- [Visual media / framing](topics/visual-media.md) — image-to-frame resize rule: edge-to-edge cover-crop by default, pillarbox only for vertical/poster content
+- [Visual media / framing](topics/visual-media.md) — image-to-frame resize rule: contain/fit, never crop (superseded 2026-08-29 edge-to-edge default); wwd-review-photo-pull skill pulls IMDb picture sets
