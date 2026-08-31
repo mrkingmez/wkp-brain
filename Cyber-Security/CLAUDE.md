@@ -7,7 +7,7 @@
 Not a business venture — this is Zac's actual day job. Cyber Security Analyst, two-person shop, Columbia County (GA) Board of Commissioners. Hourly, $27.36/hr. This folder is a professional practice/reference system: a playbook to help Zac do the job better, study for certification, and ramp up fast on new tools.
 
 ## Current State
-- No certifications yet. CompTIA CySA+ exam targeted for end of August 2026 — active deadline.
+- No certifications yet. CompTIA CySA+ exam targeted for 30 Sept 2026 — punted from end of August 2026 (moved 8/31), active deadline.
 - Existing tools: a Layer Three traffic-capture appliance (being phased out), a Kali box.
 - Incoming: full Cisco Security Cloud suite (Security Cloud, FMC, Catalyst Center, Cisco ISE) — full license being purchased. Needs fast, practical onboarding once it lands — not 1000-page manuals.
 - No formal frameworks required by the employer yet (nothing found as of 7/23).

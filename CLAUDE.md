@@ -53,14 +53,14 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 
 ## Recurring commitments
 - FrostCast records **Wednesdays 9pm**, weekly, does not stop for other projects
-- Etsy posts new designs Monday and Wednesday: 3 physical (puzzle/canvas) on Monday, 2 digital printables on Wednesday
+- Etsy posts new designs Monday and Wednesday, digital printables only (locked 8/31 — physical puzzle/canvas listings discontinued, see ETSY/CLAUDE.md)
 
 ## Current state — August 2026
 - Second Brain rebuilt on GitHub after the Drive/Google Docs conversion failure. Phase 1 in progress.
 - FrostCast at episode 106. New cold open targeted for ~episode 110.
 - Kingdom Planners: seven finished products, zero listings, shop not yet created. The pipeline is far ahead of the storefront.
 - Den Files episode 1 (Fire in the Sky) targeted for release 1 October 2026 (locked 26 Aug 26).
-- CySA+ exam targeted end of August 2026.
+- CySA+ exam targeted 30 Sept 2026 (punted from end of August 2026, moved 8/31).
 
 ## Memory
 
