@@ -28,6 +28,9 @@ Cyber Secuirty   D:\WKP-Guides\
 
 ## Kingdom Planners
 Kingdom Planners D:\05 Kingdom Planners
+kingdom planners products = D:\Products\05 Kingdom Planners\products
+kingdom planners delivery = D:\Products\05 Kingdom Planners\delivery
+kingdom planners photos   = D:\Products\05 Kingdom Planners\photos
 
  
 ## Tools
