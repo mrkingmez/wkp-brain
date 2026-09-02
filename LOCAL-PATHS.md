@@ -41,8 +41,23 @@ pc health suite  D:\Tools\PCHealth
  
 ### Deliverables and media
 deliverables     L:\
-puzzle art       E:\Puzzle Art
 Guides/Referance  D:\WKP-Guides 
+
+## WarriorKingDesigns (WKD)
+wkd art root     E:\04 Warrior King Desins
+wkd puzzle art   E:\04 Warrior King Desins\Puzzles\Imagines
+                 (subfolders: christian, Christmas, Fantasy, Military)
+wkd delivery     D:\04 New Warrior King Designs\_Print Exports
+                 (confirmed 2026-09-01 — pre-existing convention found on
+                 disk, not newly invented: one subfolder per design with
+                 sized files, plus a same-named .zip at the _Print Exports
+                 root. New line batches get their own named subfolder
+                 under _Print Exports, e.g. \christian\, to avoid
+                 colliding with older per-design exports already at the
+                 root. Older root-level exports (Military, some
+                 Landscapes/Christian) are PNG, 4 sizes, no A4/A3 — an
+                 earlier spec version. Current spec (set 2026-09-01):
+                 8x10/5x7/11x14/16x20/A4/A3, JPG, 300 DPI.)
  
 ## RULES
 - Read the section for the machine you are on.

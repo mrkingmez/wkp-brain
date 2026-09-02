@@ -129,6 +129,114 @@ retried yet - queued as decision WWD-2026-08-27-01 since the fix
 (short test clip first) needs a call on priority, and Zac was asleep at
 that hour to weigh in.
 
+## 2026-08-31 21:5x-22:2x | REVIEW | Good Boy (2025) full work up | elapsed ~35 min
+
+**Status:** DONE
+
+**Trigger:** Zac asked for the full review video workflow on Good Boy (2025),
+explicitly requiring actual cut shorts video files (not just a candidate
+list) landed in a new "shorts" subfolder.
+
+**Classification:** Review (not FrostCast, not Den Files) - transcript was
+already present (Good Boy.txt, Premiere export), per REVIEW.md never
+transcribed.
+
+**Actions taken:**
+- Verified transcript present (180 lines) and USE\ folder already populated
+  (18 images from an earlier wwd-review-photo-pull run).
+- Confirmed wwd-video-upload-package and wwd-shorts-clip-factory are NOT
+  installed as skills on this machine (3rd recurrence - Last House, EP103,
+  now this). Queued WWD-2026-08-31-01.
+- Built chapters by hand from the transcript (14 entries, HH:MM:SS,
+  ascending, all >=10s) - subject-change method per wwd-frostcast-chapters
+  rules, embedded into the upload package description.
+- Built the full upload package by hand from REVIEW.md + CLAUDE.md's
+  Related Skills description: SEO title (+alt), description with chapters,
+  backend tags, hashtags, thumbnail concept (using the existing USE\
+  images), 7 scored shorts candidates (6 SHIP, 1 HOLD per the below-6 rule),
+  Facebook/Instagram posts with Firefly prompts, end screens/cards (flagged
+  as structural, no real channel data), posting schedule.
+- Hit a real production snag mid-session: the raw Good Boy.49184.25372.m4v
+  turned out to be a bare elementary h264 stream (no container, no audio -
+  audio was a separate .aac) and briefly returned Permission Denied: traced
+  to Premiere/Media Encoder actively exporting the finished Good Boy.mp4 in
+  that same folder in real time. Waited it out (polling script confirmed
+  file-size stability), then cut all 6 SHIP shorts candidates from the
+  finished export with ffmpeg (libx264 crf20, aac 192k, 2s safety pad each
+  side for a ~7s raw-vs-final runtime gap that wasn't fully explained).
+  Real .mp4 files, not a candidate list only.
+- Ran devils-advocate (real agent, not a stand-in) against the draft
+  package and shorts manifest, with REVIEW.md as the spec.
+  **Verdict: SHIP WITH FIXES.** 11 findings, one flagged as a joint
+  Matt/Zac call, everything else mechanical. All mechanical fixes applied
+  in this session: description lead rewritten off the budget stat instead
+  of an apology; a factual drift fixed (Todd's "late grandfather's"
+  farmhouse, not "ailing owner"); spoiler note added; 2 chapter timecodes
+  and 2 apostrophe typos fixed; backend tags cut under YouTube's
+  500-character limit (3 low-value tags removed); "NO CGI" removed
+  everywhere (the transcript itself confirms minor CGI was used); clip3's
+  on-screen text no longer states two numbers that don't multiply cleanly;
+  clip4 re-cut with a new in-point (was 08:40:14, now 08:50:16) to open on
+  the actual "entire thing was unscripted" line instead of a weak
+  title-drop, raised 6/10 to 7/10; clips 2, 3, 6 downgraded from
+  unconditional SHIP to HOLD FOR RE-TRIM since their spoken opens fail the
+  three-word hook test and this transcript's block-level timecodes can't
+  fix that without listening to the actual audio; the uncertain
+  transcription garble "grease creature" pulled from all public copy
+  pending audio confirmation (same treatment already given to a garbled
+  "Carrie Fisher"); 2 speaker-count overclaims ("the two hosts," "the
+  guys") softened since the transcript can't confirm who or how many
+  people are talking; Facebook's invented hype and invented host sentiment
+  replaced with transcript-grounded claims; the stale "Verdict below"
+  placeholder fixed to state the real verdict; Section 6 timecode format
+  labeled to prevent MM:SS:FF being misread as HH:MM:SS.
+  **The one item NOT fixed here:** the Section 2 chapter formerly named
+  "Visual Style and Shudder Affiliation" referenced an unsigned, in-progress
+  business negotiation said on tape (transcript 00:13:47 block, "I'm
+  working on getting us affiliated with that. We are in talks."). That's a
+  branding/business call reserved for Matt and Zac jointly per
+  WWD/CLAUDE.md's hard rule, not something I decide. Renamed the chapter
+  and fixed its wrong timecode as a protective default so it doesn't ship
+  as a permanent, searchable YouTube chapter label while open - queued as
+  WWD-2026-08-31-02 in logs\DECISIONS.md with all 3 of devils-advocate's
+  options (cut the segment / disclose it's unpaid and unaffiliated / hold
+  the upload). The raw audio itself is untouched, that's Matt/Zac's call in
+  Premiere.
+- Re-cut clip4 (new in-point) with ffmpeg and replaced it in the shorts
+  folder. Rewrote shorts_manifest.txt to match every Section 6 change:
+  per-platform captions (YouTube/Instagram/Facebook, was one caption for
+  all 3), READY TO POST vs HOLD FOR RE-TRIM status per clip.
+- Saved 2 new persistent memory files (raw-capture-files, bash-quoting) plus
+  updated missing-skills memory, all under
+  D:\WKP\.claude\agent-memory\wwd-director\.
+
+**Deliverables:**
+- Upload package (revised post-review): `L:\Winter Wolfs Den review show\
+  Raw Footage\Mass recording 30 Aug\Good Boy (2025)\Good Boy (2025) -
+  Upload Package.txt`
+- 6 cut shorts (.mp4, clip4 re-cut) + shorts_manifest.txt (revised):
+  `L:\Winter Wolfs Den review show\Raw Footage\Mass recording 30 Aug\
+  Good Boy (2025)\shorts\` - clips 1, 4, 5 ready to post; clips 2, 3, 6
+  held for a manual Premiere re-trim before posting.
+- Chapters: embedded in the upload package description (Section 2), not a
+  separate standalone file, matching EP103/EP109 precedent.
+
+**Flags for Zac:**
+- Good Boy.txt has ZERO speaker differentiation - every line is "Speaker 1."
+  Worse than the usual Guest/Unknown[1]/[2] gap. Nothing in any deliverable
+  credits Winter Wolf or KingZ by name on a specific line.
+- Shorts clip in/out points carry a 2-second safety pad because of an
+  unexplained ~7s runtime gap between the raw .aac (1019.9s) and the final
+  Good Boy.mp4 export (1012.67s) - recommend a quick eyeball pass on
+  clips 1, 4, 5 (the ready-to-post ones) before they ship.
+- Clips 2, 3, 6 need a manual re-trim in Premiere before posting - the
+  source transcript's block-level timecodes aren't precise enough to fix
+  their soft spoken openers without listening to the actual audio.
+- WWD-2026-08-31-01 queued: wwd-video-upload-package and
+  wwd-shorts-clip-factory still not installed, 3rd occurrence.
+- WWD-2026-08-31-02 queued: the Shudder-affiliation chapter/moment needs a
+  joint Matt/Zac call (cut / disclose / hold), see above.
+
 ## 2026-08-27 07:15-07:37 | FROSTCAST | EP 109 transcriber fix + retry | elapsed ~22 min end to end
 
 **Status:** DONE

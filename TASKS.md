@@ -89,16 +89,24 @@ Task
 Deadline
 Status
 Notes
-Post next design batch
+WKD Christian line digital resize/zip
+—
+Done
+2026-09-01. 22/22 designs, 6 sizes each (8x10/5x7/11x14/16x20/A4/A3, 300 DPI JPG), zipped one-per-design at D:\04 New Warrior King Designs\_Print Exports\christian\. One source file ("Genesis Cosmic Light") was a truncated PNG, recovered — see logs\etsy-director.md 2026-09-01 entry.
+Post this week's WKD digital batch
 —
 Not Started
-Fantasy/sci-fi, Christian, or military line
+Recommendation delivered 2026-09-01, unguided (8/20 traffic data is 12 days stale): lead with 6 of the newly-packaged Christian designs, 3 today + 3 Wed 9/3, within the shared 8/week cap (KP using 0 this week, shop not yet created). Still needs titles/tags/descriptions/pricing + AI disclosure sentence before listing.
+Post next design batch (Fantasy/sci-fi or Military)
+—
+Not Started
+Military and Landscape lines don't have digital (6-size JPG) exports yet — only the older 4-size PNG spec exists for a few designs. Needs the same resize/zip pass as Christian before it can post digitally.
 Launch wall art line
 —
 Not Started
 Expanding beyond puzzles
 
-🟠 KDP Publishing — Math Mystery & Puzzle Books (priority 1b, set 8/24)
+🟠 KDP Publishing — Math Mystery & Puzzle Books (ACTIVE-UNSCHEDULED, downgraded from priority 1b 9/1 — pivoting, no agent/schedule, do not surface in daily planning)
 Task
 Deadline
 Status
@@ -154,7 +162,7 @@ EP 106 transcript | — | Done | Transcript generated 2026-08-09, saved to `L:\W
 Week of 8/10 weekly build package | — | Done | `wwd-weekly-planner` run 2026-08-10. Priority call: Last House Tue (decay window, edited), Point Break Thu (evergreen debut, edit still open — due night of 8/11). Full package (social copy, 2 polls, short-form bank, growth notes, cold open check-in) saved to `L:\Winter Wolfs Den review show\2026-08-10 Week of Aug 10\04 Upload Packages\WWD_Weekly_Package_2026-08-10.docx`. Higgsfield credits were at 0, so this week's 7 images shipped as Firefly prompts instead of generated art — see doc Section 5.
 The Last House upload package | — | Done | Built from transcript by hand since `wwd-video-upload-package` skill isn't installed on this machine — title/description/tags/thumbnail concepts/pinned comment saved to `L:\Winter Wolfs Den review show\2026-08-10 Week of Aug 10\04 Upload Packages\The Last House - Upload Package.txt`.
 EP 103 upload package | — | Done | Built by hand from FROSTCAST.md format spec (`wwd-video-upload-package` skill still not installed on this machine). SEO title, 18-chapter description, backend tags, hashtags, thumbnail concept, 6 scored shorts candidates (4 elite ships, 2 held for re-cut), FB/IG posts w/ Firefly prompts, end screens/cards, posting schedule — saved to `L:\Winter Wolfs Den review show\Frost-Cast\EP 103\FrostCast Episode 103 - Upload Package.txt`. Reviewed by a general-purpose agent standing in for the unavailable devils-advocate agent type (verdict: SHIP WITH FIXES, 4 issues found and fixed — see logs\wwd-director.md 2026-08-20 entry). Open flags: shorts clips not yet cut, end-screen/card links are placeholders pending real channel data, shorts host attributions need audio confirmation before crediting Winter Wolf or KingZ by name (voiceprints still not enrolled). Devils-advocate agent gap queued as decision WWD-2026-08-20-01.
-Cold open — Warden character designs | — | Blocked | Blocked on Higgsfield credits (balance confirmed at 0, free plan, checked 2026-08-10). Zac needs to run a cost analysis before topping up. Nothing can generate — including this week's weekly images — until credits are back.
+Cold open — Warden character designs | ~2026-09-mid-to-late (was ~early Sept) | Blocked | Pushed 2 weeks, Zac's call 2026-09-01 (target now ~episode 112, was ~episode 110). Still blocked on Higgsfield credits (balance confirmed at 0, free plan, checked 2026-08-10) — Zac needs to run a cost analysis before topping up. Nothing can generate — including weekly images — until credits are back.
 Story Behind the Story — Fire in the Sky
 2026-10-01
 Not Started

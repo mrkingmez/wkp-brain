@@ -26,7 +26,7 @@ Recording is every Wednesday 9-11pm, scheduled on the Winter Wolf's Den calendar
 
 **Source video location convention:** every episode's raw download lives at `L:\Winter Wolfs Den review show\Frost-Cast\EP <number>\`, confirmed consistent back through EP 1. When Zac says an episode is downloaded, look in that episode's folder for the video file — no need to ask for the full path.
 
-**Cold open:** a new cold open replaces the current one starting around **episode 110** (roughly early September 2026). This is the FrostCast cold open — distinct from the Den Files cold open template, do not confuse the two.
+**Cold open:** a new cold open replaces the current one starting around **episode 112** (roughly mid-to-late September 2026) — pushed 2 weeks from the prior ~episode 110 / early-September target, Zac's call 2026-09-01. This is the FrostCast cold open — distinct from the Den Files cold open template, do not confuse the two.
 
 FrostCast Intel briefing docs in this folder are the prep format.
 

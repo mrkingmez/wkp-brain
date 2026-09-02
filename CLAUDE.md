@@ -24,7 +24,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 | RUBY TWO (WWII short film) | ./RUBY-TWO/ | 8 |
 | Cyber Security (day job practice) | ./Cyber-Security/ | 9 |
 | Investing challenge | ./Investing/ | 10 |
-| KDP Publishing (math mystery + puzzle books) | ./KDP/ | 1b |
+| KDP Publishing (math mystery + puzzle books) | ./KDP/ | active-unscheduled (was 1b, downgraded 1 SEP 26) |
 
 ## Standing rules
 
@@ -57,7 +57,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 
 ## Current state — August 2026
 - Second Brain rebuilt on GitHub after the Drive/Google Docs conversion failure. Phase 1 in progress.
-- FrostCast at episode 106. New cold open targeted for ~episode 110.
+- FrostCast at episode 106. New cold open pushed 2 weeks (Zac's call, 2026-09-01) — now targeted for ~episode 112 / mid-to-late September 2026, was ~episode 110 / early September.
 - Kingdom Planners: seven finished products, zero listings, shop not yet created. The pipeline is far ahead of the storefront.
 - Den Files episode 1 (Fire in the Sky) targeted for release 1 October 2026 (locked 26 Aug 26).
 - CySA+ exam targeted 30 Sept 2026 (punted from end of August 2026, moved 8/31).
@@ -134,17 +134,18 @@ were lost exactly that way.
 Maximum 3 new listings per day, maximum 8 per week, across both
 shops combined. Anti-suspension rule, not a preference.
  
-## Venture status — set 15 AUG 26, amended 24 AUG 26, review 15 NOV 26
+## Venture status — set 15 AUG 26, amended 24 AUG 26, amended 1 SEP 26, review 15 NOV 26
 MAIN EFFORT: Kingdom Planners
-PRIORITY 1B: KDP Publishing (math mystery / puzzle books) — added 24 AUG 26,
-  Zac's direct call, not an agent promotion. Goal is reaching real profit
-  soon; treat as second only to Kingdom Planners in the daily/weekly rundown.
 ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
         WarriorKingDesigns (triage complete, hold)
-ACTIVE-UNSCHEDULED: Watershed, Post-Production, RUBY TWO
+ACTIVE-UNSCHEDULED: KDP Publishing (math mystery / puzzle books), Watershed,
+        Post-Production, RUBY TWO
   - No agent, no schedule. Do not surface in daily planning.
 DORMANT: Investing, SciFi Novel, Shadows, Survival-SciFi, Website
   - Capture only. Do not surface unless Zac asks directly.
+
+KDP downgraded from PRIORITY 1B to ACTIVE-UNSCHEDULED 1 SEP 26 — Zac's
+direct call, pivoting away from it. Was priority 1B added 24 AUG 26.
 
 No agent may promote a venture between categories. That is a
 Zac decision. Queue it in DECISIONS.md if the case is strong.
