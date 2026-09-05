@@ -1,0 +1,4 @@
+<resources>
+    <!-- Working title per handoff doc — needs a branding pass -->
+    <string name="app_name">Spark Capture</string>
+</resources>

@@ -80,3 +80,21 @@ WWII daylight-bombing-mission short film, 15-20 minute target runtime. Has a ful
 
 **Has a CLAUDE.md.** Zero books published yet — this is a from-scratch build. Needs a real hands-on session with Genten Royalty before the active plan gets locked.
 
+---
+
+## 11. Spark Capture — Wake-Word Voice Capture App (Android)
+Hands-free, wake-word-triggered idea capture app for Android. Solves
+capturing ideas hands-free while driving, walking, or otherwise unable
+to touch a phone. Core differentiator: user-selectable custom wake
+word/phrase, not a fixed trigger — no competitor (Otter, Audionotes,
+Google Recorder) offers true zero-touch, self-serve custom wake-word
+capture. 6-phase build plan; currently Phase 1 complete (repo
+scaffold). Freemium model: free tier capped on wake-word slots/
+triggered recordings, paid tier unlocks unlimited custom wake words,
+cloud sync, and project tagging.
+
+**Needs a project file covering:** wake-word engine decision
+(OpenWakeWord free/MVP vs. Porcupine vs. Outspoken), transcription
+approach (on-device vs. cloud), branding pass (app name/package are
+still placeholders — "com.wkp.sparkcapture"), Phase 2 build tracking.
+

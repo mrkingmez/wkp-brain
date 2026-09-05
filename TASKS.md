@@ -278,6 +278,33 @@ Not Started
 
 
 
+Spark Capture (Android app)
+Task
+Deadline
+Status
+Notes
+Repo scaffold applied
+—
+Done
+Phase 1 — folders, Gradle config, interface stubs
+Phase 2 — app shell (UI, note storage, settings)
+—
+Not Started
+Vibe-codeable; do before wake-word SDK work
+Decide wake-word engine
+—
+Not Started
+OpenWakeWord (free/MVP) vs. Porcupine vs. Outspoken
+Decide transcription approach
+—
+Not Started
+On-device vs. cloud
+Branding pass
+—
+Not Started
+App name, package name, launcher icon are all placeholders
+
+
 How to use this file
 New task in any venture → add a row here, same turn it comes up.
 Finished something → mark it Done (or just tell me — I'll update it).

@@ -147,7 +147,9 @@ MAIN EFFORT: Kingdom Planners
 ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
         WarriorKingDesigns (triage complete, hold)
 ACTIVE-UNSCHEDULED: KDP Publishing (math mystery / puzzle books), Watershed,
-        Post-Production, RUBY TWO
+        Post-Production, RUBY TWO, Spark Capture (Android app, scaffold
+        applied, no director, at D:\WKP\spark-capture\, Phase 2 not yet
+        scheduled)
   - No agent, no schedule. Do not surface in daily planning.
 DORMANT: Investing, SciFi Novel, Shadows, Survival-SciFi, Website
   - Capture only. Do not surface unless Zac asks directly.

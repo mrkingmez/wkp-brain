@@ -32,6 +32,9 @@ kingdom planners products = D:\Products\05 Kingdom Planners\products
 kingdom planners delivery = D:\Products\05 Kingdom Planners\delivery
 kingdom planners photos   = D:\Products\05 Kingdom Planners\photos
 
+## Spark Capture
+Spark Capture (Android app scaffold): D:\WKP\spark-capture\
+
  
 ## Tools
 python           C:\Users\kingz\AppData\Local\Programs\
