@@ -305,6 +305,137 @@ Not Started
 App name, package name, launcher icon are all placeholders
 
 
+PAWS (hardware venture)
+Task
+Deadline
+Status
+Notes
+Decide task source (Todoist / Microsoft To Do / Google Tasks / Notion / local file)
+—
+Not Started
+Phase 0 — BLOCKS all firmware work. See PAWS-001 in decisions/DECISIONS.md
+Locate the WKP wolf 3D model, drop into art/
+—
+Not Started
+Phase 0
+Confirm Elegoo Mars generation and build volume
+—
+Not Started
+Phase 0 — see PAWS-003
+Set realistic hours per week so the timeline means something
+—
+Not Started
+Phase 0 — see PAWS-004
+Create GitHub repo, push scaffold
+—
+Not Started
+Phase 0
+Order tools (see docs build guide, Tools section)
+—
+Not Started
+Phase 0
+Order Build 1 parts — TWO boards, not one
+—
+Not Started
+Phase 0
+Board boots, wifi connects, static sprite on screen
+—
+Not Started
+Phase 1 — Taskagotchi
+State machine written and tested on PC, no hardware
+—
+Not Started
+Phase 1 — Taskagotchi
+Task API call, parse JSON, map completions to stat changes
+—
+Not Started
+Phase 1 — Taskagotchi
+Port state machine to firmware, swap animations by state
+—
+Not Started
+Phase 1 — Taskagotchi
+Flash persistence, sleep and power management
+—
+Not Started
+Phase 1 — Taskagotchi
+Character art: 8 states, 3 frames each
+—
+Not Started
+Phase 1 — Taskagotchi
+Enclosure designed and printed
+—
+Not Started
+Phase 1 — Taskagotchi
+Photograph finished unit for the pitch deck
+—
+Not Started
+Phase 1 — Taskagotchi
+XIAO board boots, serves hardcoded JSON state
+—
+Not Started
+Phase 2 — MAC
+Web page polls endpoint, draws a face from the JSON
+—
+Not Started
+Phase 2 — MAC
+Servos: mood to pose mapping, easing, home on boot
+—
+Not Started
+Phase 2 — MAC
+Capacitors installed, brownout tested under full servo load
+—
+Not Started
+Phase 2 — MAC
+Software angle limits set BEFORE first animation loop
+—
+Not Started
+Phase 2 — MAC
+Camera face tracking
+—
+Not Started
+Phase 2 — MAC
+Pan and tilt bracket mounted, cable management
+—
+Not Started
+Phase 2 — MAC
+Photograph and film for content
+—
+Not Started
+Phase 2 — MAC
+Proposal letter
+—
+Not Started
+Phase 3 — Investor materials
+Pitch deck
+—
+Not Started
+Phase 3 — Investor materials
+Image prompts sent to Zac, images returned
+—
+Not Started
+Phase 3 — Investor materials
+Real prototype photos swapped in for renders
+—
+Not Started
+Phase 3 — Investor materials
+Teacher workflow defined
+—
+Not Started
+Phase 4 — Education variant (ClassPaw)
+Confirm zero student-facing data path
+—
+Not Started
+Phase 4 — Education variant (ClassPaw)
+Teacher interviews for real needs
+—
+Not Started
+Phase 4 — Education variant (ClassPaw)
+Variant spec written
+—
+Not Started
+Phase 4 — Education variant (ClassPaw)
+
+
 How to use this file
 New task in any venture → add a row here, same turn it comes up.
 Finished something → mark it Done (or just tell me — I'll update it).

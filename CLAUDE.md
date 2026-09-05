@@ -145,7 +145,9 @@ shops combined. Anti-suspension rule, not a preference.
 ## Venture status — set 15 AUG 26, amended 24 AUG 26, amended 1 SEP 26, review 15 NOV 26
 MAIN EFFORT: Kingdom Planners
 ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
-        WarriorKingDesigns (triage complete, hold)
+        WarriorKingDesigns (triage complete, hold), PAWS (director:
+        paws-director, scaffold complete, blocked on PAWS-001 - task
+        source not yet chosen - blocks all firmware work)
 ACTIVE-UNSCHEDULED: KDP Publishing (math mystery / puzzle books), Watershed,
         Post-Production, RUBY TWO, Spark Capture (Android app, scaffold
         applied, no director, at D:\WKP\spark-capture\, Phase 2 not yet

@@ -98,3 +98,28 @@ cloud sync, and project tagging.
 approach (on-device vs. cloud), branding pass (app name/package are
 still placeholders — "com.wkp.sparkcapture"), Phase 2 build tracking.
 
+---
+
+## 12. PAWS — Desk Devices (Hardware)
+Hardware venture: a family of small desk devices driven by a task list,
+built around an original WKP character (the WKP wolf). Six format
+types — BUILD GUIDE, SOURCING, FIRMWARE, ENCLOSURE, CHARACTER,
+EDUCATION, INVESTOR — run by a dedicated director (paws-director), no
+worker skills yet. Product line runs from TASKAGOTCHI (flat-panel pet,
+Build 1) and MAC (camera-tracking robot, Build 2) up to the flagship
+PAWS voice assistant, with DESKMATE, CLASSPAW, and STUDYPAW as backlog
+variants. Three of the six format types — FIRMWARE, EDUCATION, and by
+extension any CLASSPAW/STUDYPAW work — are hard-gated for child safety:
+no microphone, no LLM, no data collection on any device a person under
+18 touches, and nothing from this venture ever touches the Columbia
+County network.
+
+**Currently blocked on PAWS-001 through PAWS-006** (task source,
+venture/product naming, Elegoo Mars generation, hours per week,
+character model rigging status, and investor audience) — see
+`PAWS\decisions\DECISIONS.md`. PAWS-001 blocks all firmware work.
+
+**Has a CLAUDE.md.** Scaffold complete (rules, director, task list,
+decision queue, seven format specs, folder structure). Zero parts
+ordered, zero prototypes built.
+

@@ -35,6 +35,9 @@ kingdom planners photos   = D:\Products\05 Kingdom Planners\photos
 ## Spark Capture
 Spark Capture (Android app scaffold): D:\WKP\spark-capture\
 
+## PAWS
+PAWS venture = D:\WKP\PAWS
+
  
 ## Tools
 python           C:\Users\kingz\AppData\Local\Programs\
