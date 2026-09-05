@@ -47,7 +47,7 @@ low either way. Flagging rather than acting because pulling a live
 listing is irreversible-ish (loses its listing age/any accumulated
 signal) and Zac hasn't weighed in on retroactive scope.
 
-**Status:** OPEN
+**Status:** RESOLVED: Option B — leave the 2 live F-35 listings as-is (grandfathered), no new current-gen-airframe listings going forward. Zac's call 2026-09-04.
 
 ---
 
@@ -90,6 +90,12 @@ C. Hold the upload until the Shudder deal (if any) actually settles one way
 No recommendation from this director either, this is a business call about
 a real external relationship neither agent has visibility into.
 
+**Update 2026-09-04 (Zac):** Affiliation talks haven't actually happened yet
+("I have not got the affiliation just yet, need to know where to start
+really") — the "in talks" line on tape is ahead of where things actually
+stand. A/B/C pick still not made. This is still a joint call with Matt per
+WWD/CLAUDE.md.
+
 **Status:** OPEN
 
 ---
@@ -125,6 +131,13 @@ call for wwd-shorts-clip-factory specifically, since actually cutting video
 requires real source access and ffmpeg work that a director session can
 already do by hand when the source file is reachable (done successfully
 this session for Good Boy).
+
+**Update 2026-09-04:** Zac asked how Good Boy's package got built without
+the skills existing. Answer: it was hand-built directly from the format
+spec (WWD/CLAUDE.md + `formats\*.md`) by the director session in-chat —
+there is no actual installed skill running underneath it. Same as The Last
+House and EP103. A/B/C pick still not made — asked directly, awaiting
+answer.
 
 **Status:** OPEN
 
@@ -163,6 +176,9 @@ frontmatter fence (started straight at `name:` instead of `---` then
 `name:`), so every session silently fell back to the general-purpose
 stand-in. Fixed (added the fence). Still needs the two exit tests run
 before trusting it as the real reviewer.
+
+**Update 2026-09-04 (Zac):** Skip the two exit tests — trust it as-is.
+devils-advocate is now a standing part of the WWD run chain. Closed.
 
 ---
 
