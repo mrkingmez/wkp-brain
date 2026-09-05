@@ -94,9 +94,17 @@ details:
    detached, on the GPU
 3. Save the transcript as `.txt` in the same folder as the video
 4. Return chapter timecodes when it finishes
+5. Run the `wwd-audio-cut` skill against the transcript and save the cut
+   document to `L:\Winter Wolfs Den review show\Audio\podcast Frostcast audio files\`
+6. Email the full transcript to Matt — locked in 2 Sep 26. From
+   kingzpotus@gmail.com (Zac's account, already authenticated) to
+   mattkhourie32@gmail.com. Subject line names the episode number and title.
+   Send the whole transcript, not a summary or excerpt.
 
 Do not ask which file or where to put the output. The episode number comes from
-the WWD calendar, so check there rather than asking.
+the WWD calendar, so check there rather than asking. Steps 5 and 6 are standard
+for every episode now, run automatically as part of the same chain — do not
+wait for Zac to ask for the audio cut or the email each time.
 
 **Status:** EP106 transcript generated 2026-08-09 (see TASKS.md). Speakers
 came back as Guest/Unknown — voiceprints still aren't enrolled, so it needs

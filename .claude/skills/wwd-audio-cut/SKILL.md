@@ -78,7 +78,13 @@ Violating this is worse than shipping nothing.
 
 ## Output format
 
-
+Locked 2 Sep 26 (Zac's call, replaces an earlier separate-KEEP/DROP-block
+draft — he found splitting KEEP and DROP into two lists broke the flow).
+One single chronological list, alternating Start/Cut in play order, so it
+reads exactly like the edit will play out. Every boundary timestamp is a
+shared edit point: a Start's "until" and the following Cut's first
+timestamp are the same number, and a Cut's "up to" and the following
+Start's first timestamp are the same number — no gaps, no overlaps.
 
 \*\*Target runtime:\*\* \[figure]
 
@@ -86,27 +92,22 @@ Violating this is worse than shipping nothing.
 
 \*\*Cold open:\*\* \[timecode in] to \[timecode out] - why this hooks
 
+Then, in one continuous ascending list:
 
+Start \[in] and go until \[out] | \[what it is, description of the
+content kept]. Ends on: "\[the exact last line spoken before the cut,
+quoted verbatim]"
 
-\*\*KEEP\*\*
+Cut \[in] up to \[out] | \[why it goes]
 
-\[in] - \[out] | \[what it is] | \[why it earns its place]
+...alternating Start/Cut straight through to the end of the episode.
+Merge adjacent same-type decisions into one entry rather than splitting
+a single continuous keep or cut into multiple back-to-back lines with no
+real edit point between them.
 
-...ascending order...
-
-
-
-\*\*DROP\*\*
-
-\[in] - \[out] | \[what it is] | \[why it goes]
-
-...ascending order...
-
-
-
-\*\*Continuity check:\*\* anything in KEEP that references something in
-
-DROP. Name it. Say whether to restore the DROP or also cut the KEEP.
+\*\*Continuity check:\*\* anything in a Start block that references
+something inside a Cut block. Name it. Say whether to restore the Cut
+or also cut the Start.
 
 
 
