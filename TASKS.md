@@ -166,9 +166,8 @@ EP 103 upload package | — | Done | Built by hand from FROSTCAST.md format spec
 Cold open — Warden character designs | ~2026-09-25 (was ~mid-to-late Sept) | Blocked | Punted 3 more weeks, Zac's call 2026-09-04 (target now ~2026-09-25). Still blocked on Higgsfield credits (balance confirmed at 0, free plan, checked 2026-08-10) — cost analysis still pending before topping up. Nothing can generate — including weekly images — until credits are back.
 Story Behind the Story — Fire in the Sky | 2026-10-01 | In Progress | Recording set for Sunday 2026-09-06 — B-Roll fully downloaded. Release date locked 2026-08-26.
 Next FrostCast episode prep | Wed 9pm (weekly) | Not Started | News/trailers/books/games. This is EP111 (Wed 9/9) — EP110 already recorded/transcribed 2026-09-02.
-FrostCast relaunch episode | — | Not Needed | Cut 2026-09-04 — Zac's call: no relaunch needed, schedule has had no gap. Premise was a stale assumption.
-Fix Spotify show metadata | — | Not Started | Fix "Winters" typo, standardize episode titles. Holding 2026-09-04 pending the audio-only podcast relaunch task list below — Zac wants a deep dive before posting fixes live.
-Build task list — bring back audio-only version of the podcast | — | Not Started | New 2026-09-04, Zac's call. Needs its own plan/scope before Spotify metadata fixes go live.
+Bring back the audio-only podcast (relaunch) | — | Not Started | Merged 2026-09-04 — this is the same initiative as the old "FrostCast relaunch episode / We're Back" task: WWD/CLAUDE.md notes the audio side has been dark ~18 months even though the video show never stopped. Needs a real deep-dive/plan before anything posts; may still end in a "We're Back" cross-post episode once scoped. Video-side relaunch is NOT needed (no gap there).
+Fix Spotify show metadata | — | Not Started | Fix "Winters" typo, standardize episode titles. Holding 2026-09-04 pending the audio relaunch plan above — Zac wants a deep dive before posting fixes live.
 Decide new podcast host | — | Done | Decided 2026-09-04 — sticking with Spotify for Creators (free) for now.
 
 WKP — "What If" Military History
@@ -276,7 +275,7 @@ Phase 1 — folders, Gradle config, interface stubs
 Phase 2 — app shell (UI, note storage, settings)
 —
 Not Started
-Vibe-codeable; do before wake-word SDK work
+Vibe-codeable; do before wake-word SDK work. First coding session planned 2026-09-05 — Zac's call 2026-09-04, build guide delivered to `D:\WKP-Guides\Spark Capture - Build Guide.md/.docx` (Android Studio setup through first run, then Note/Room/note-list-screen as session 1 scope).
 Decide wake-word engine
 —
 Not Started
