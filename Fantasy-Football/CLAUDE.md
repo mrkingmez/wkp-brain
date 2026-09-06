@@ -63,6 +63,25 @@ scoring. IDP scoring here is volume-heavy (1pt/tackle, 3pt/sack), so
 high-tackle LBs often outscore big-play DBs — rank the combined S/CB
 pool by projected points, not by position label.
 
+## Card structure (updated after seeing the actual Week 1 card)
+Every weekly card has three parts on different resolution timelines:
+1. **20-game ATS pool** — the recurring weekly pick. Normally locks
+   Thursday kickoff; check the actual card, since the NFL schedule can
+   move the lock (Week 1 2026 is a Wednesday opener).
+2. **Eliminator Challenge (EC)** — one team per week, marked with an X
+   in a yellow box, season-long survivor-style side pool. Logged
+   weekly in `FUTURES-PICKS.md` even though it's a recurring pick, since
+   it's tracked across the whole season.
+3. **Season-long futures** — Super Bowl winner, 14 playoff seeds, and
+   the final NCAA CFP top 12 in order. Made once, on the Week 1 card,
+   graded only at season's end. Live in `FUTURES-PICKS.md`, never
+   graded against a weekly result.
+
+Cards live in `cards\` inside this venture folder
+(`Fantasy-Football\cards\2026-wkN-card.xls`). Picks get entered directly
+into the card file's blank cells — the card is the record, there's no
+separate answer sheet.
+
 ## Pick'em model (card decisions)
 Compare Zac's uploaded Monday card (the frozen baseline) against current
 lines pulled Wednesday/Thursday. Flag any game where the line moved 2+
@@ -97,12 +116,3 @@ the main venture status board (personal, not income), so it won't
 appear there — that's expected, not a gap.
 
 ## Repo structure (once built tonight)
-```
-D:\WKP\Fantasy-Football\
-  CLAUDE.md          <- this file
-  LOG.md             <- season activity log
-D:\WKP\.claude\agents\
-  fantasy-football-director.md
-D:\WKP\.claude\skills\fantasy-football-data\
-  SKILL.md
-```
