@@ -93,10 +93,20 @@ a real external relationship neither agent has visibility into.
 **Update 2026-09-04 (Zac):** Affiliation talks haven't actually happened yet
 ("I have not got the affiliation just yet, need to know where to start
 really") — the "in talks" line on tape is ahead of where things actually
-stand. A/B/C pick still not made. This is still a joint call with Matt per
-WWD/CLAUDE.md.
+stand.
 
-**Status:** OPEN
+**Zac's call 2026-09-04:** leave the line in the final cut as-is (no cut,
+no disclosure line) — it shows the audience real progress is being made.
+Delivered `reports\wwd\Shudder-Affiliate-Guide-2026-09-04.docx/.md` —
+two real paths (Impact affiliate program, and direct AMC Global Media
+partnerships outreach), a ready-to-send email, and a ready-to-send short
+message. Zac to actually send these; not something an agent can do
+unprompted. Still worth a heads-up to Matt since format/branding calls are
+joint, but the "leave the line in" call itself is made.
+
+**Status:** RESOLVED: leave the line in, pursue real affiliation via the
+guide above. Revisit if nothing lands in a few weeks (see the guide's
+"recommended order of operations," step 4).
 
 ---
 
@@ -136,10 +146,16 @@ this session for Good Boy).
 the skills existing. Answer: it was hand-built directly from the format
 spec (WWD/CLAUDE.md + `formats\*.md`) by the director session in-chat —
 there is no actual installed skill running underneath it. Same as The Last
-House and EP103. A/B/C pick still not made — asked directly, awaiting
-answer.
+House and EP103.
 
-**Status:** OPEN
+**Zac's call 2026-09-04:** "The skill is there now." A real installed
+skill (`wwd-review-pipeline`) now exists covering this exact ground —
+full upload package, audio extraction, shorts cutting, per-clip captions.
+WWD/CLAUDE.md's Related Skills section updated to point at it in place of
+the two names that never existed. Effectively Option A, closed.
+
+**Status:** RESOLVED: Option A — wwd-review-pipeline is the real skill
+now installed and referenced in WWD/CLAUDE.md.
 
 ---
 

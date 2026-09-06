@@ -62,8 +62,7 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 
 ## Related Skills
 - wwd-video-transcriber (`skills/wwd-video-transcriber/` in this repo) — turns a downloaded episode video into a diarized, speaker-labeled transcript. Requires one-time setup (Python/ffmpeg/torch — done on the Main Desktop machine as of Aug 2026) and voiceprint enrollment for Matt/Zac/Gabby (not yet done — currently runs with everyone labeled Guest/Unknown until enrolled). Standing rule: the output transcript always saves into the same EP folder as the source video, never a separate outputs/transcripts location — overrides the skill's own doc default.
-- wwd-video-upload-package — full upload package from a transcript: SEO title, description, chapters, backend tags, hashtags, Facebook and Instagram posts with Adobe Firefly image prompts, end screens and cards, posting schedule. Bakes in TubeBuddy SEO compliance targeting 75-85%+. Trigger on "full run" or "full upload package."
-- wwd-shorts-clip-factory — cuts actual clip files with ffmpeg plus per-clip captions and staggered posting schedule: YouTube first, Instagram +45 minutes, Facebook +90 minutes, one clip per day. Requires local file and ffmpeg access, so Cowork rather than chat.
+- wwd-review-pipeline — replaces the old wwd-video-upload-package / wwd-shorts-clip-factory names (2026-09-04, those never existed as real skills — see decision WWD-2026-08-31-01). Real installed skill now: reads the Premiere transcript for a finished review, produces the full upload package (SEO/GEO title, description, chapters, backend tags under 500 characters, hashtags, thumbnail concept, cards, end screen, FB/IG posts, posting schedule), extracts audio-only to `\AUDIO`, cuts vertical Shorts/Reels to `\shorts`, and writes per-clip titles/captions. Trigger on "I just finished [title]," "run the review pipeline on [title]," "work up [title]."
 - wwd-broll-prep (`skills/wwd-broll-prep/` in this repo) — turns a mixed-source B-Roll folder (screenshots, posters, clippings, Google Images grabs) into numbered, frame-ready 1920x1080 PNGs in a `USE\` folder, sequenced to match the episode/review script. Works for Den Files and standard review videos. Local Pillow script, not the Adobe connection — Adobe's batch tools cap around 20 files and can't auto-upload local files. Trigger on "resize the B-Roll" / "get these images ready for the edit."
 
 ## Working Notes
@@ -77,5 +76,5 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 [EP 106 transcript blocked mid-run — see TASKS.md for full status and the exact resume command. Everything is debugged and working (script, HF licenses, GPU/CUDA); it just needs the actual run repeated after Zac's computer restart.]
 [FILL IN — new FrostCast cold open: written? recorded? needs building before ep 110]
 [FILL IN — Den Files topic queue beyond episode 1, once selected from the pipeline candidates above]
-[FILL IN — podcast host platform decision, flagged as open in TASKS.md]
+[DECIDED 2026-09-04 — podcast host staying on Spotify for Creators (free) for now]
 [FILL IN — Spotify metadata fix, flagged as open in TASKS.md — brand name typo "Winters" vs "Winter," inconsistent episode title formatting]
