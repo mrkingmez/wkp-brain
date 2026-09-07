@@ -381,3 +381,49 @@ no chapters/upload-package chain requested).
 
 that hour to weigh in.
 kill time.
+
+---
+
+## 2026-09-06 | Review pipeline | The Whisper Man (2026 Netflix)
+
+Ran wwd-review-pipeline on the finished-transcript-only state (video
+still rendering, Zac confirmed mid-run).
+
+- Folder: L:\Winter Wolfs Den review show\Raw Footage\Mass recording 30 Aug\The Whisper Man (2026 Netflix)\
+- Input: The Whisper Man.txt (645 lines, complete, diarized - Matt/Winter
+  Wolf + Zac/King-Z). Timecodes HH:MM:SS:FF, runtime ~25:15.
+- Output: "The Whisper Man - Upload Package.md" in that folder. SEO title
+  (primary + alt), description w/ QUICK ANSWERS, 14-line chapter list,
+  backend tags (476 chars, python-verified), hashtags, thumbnail concept,
+  FB + IG posts w/ Firefly prompts, cards/end screen, posting schedule,
+  full flags section.
+- SKIPPED: audio extract + all Shorts sections. No finished .mp4 - folder
+  has only raw .m4v (737 MB, unreadable) + .aac (11.5 MB, reads 10:49,
+  partial). Pre-marked 6 clip zones in the package for the re-run.
+- Top flags: (1) video still rendering, re-run pipeline for audio+shorts
+  once .mp4 lands; (2) raw a/v duration (10:49) does not match transcript
+  (25:15), raw files partial/mid-write; (3) "Michelle Monaghan" spelled 3
+  ways in transcript, plus "Winter Wolfstein"/"Kingsley" garbles in the
+  cold open, all held back; (4) explicit on-air language incl. one sexual
+  taunt near 00:20:42 - flag for the edit to bleep/cut before upload.
+
+## 2026-09-06 | Review pipeline (cont.) | The Whisper Man - export landed, run completed
+
+Video finished rendering mid-session. Ran the rest of the pipeline.
+
+- `The Whisper Man.mp4` verified: 1521.23s (25:21), 1920x1080, h264, 30fps,
+  aac 48k stereo, 3.71 GB. Size stable, no temp files.
+- Audio: `AUDIO/The Whisper Man.mp3` (192k, 1521.23s, matches source).
+- Shorts: 6 cut to `shorts/` w/ blur-fill 1080x1920, all verified
+  (h264 + aac, 25.6-39.6s). `shorts/shorts_manifest.txt` written.
+  ALL 6 = HOLD FOR RE-TRIM (block-level Premiere timing, soft spoken opens);
+  clip5 also needs a bleep ("piece of shit" ~21s). clips 4/5/6 under 30s =
+  YT+FB only unless extended for IG. None ship as-is.
+- Package updated in place (header, audio, Section 7, flags, schedule).
+- Zac mid-run fixes applied: (a) output delivered as .docx (`.md` kept too
+  per file-retention rule); (b) hashtags cut to 5 high-volume everywhere
+  (`#TheWhisperMan #Netflix #MovieReview #Thriller #EndingExplained`);
+  (c) card + end-screen times switched to MM:SS:frame (11:22:19 / 17:50:09
+  / 23:31:10).
+- Deliverables now: `The Whisper Man - Upload Package.docx` + `.md`,
+  `AUDIO\`, `shorts\` (6 + manifest), all in the movie folder.
