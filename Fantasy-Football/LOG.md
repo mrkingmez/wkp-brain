@@ -19,6 +19,6 @@ Format per entry:
 2026-09-02 | WEEK 1 | MFL roster + player ID map confirmed live via API | -
 2026-09-02 | WEEK 1 | The Odds API + Google Sheets connected via Composio | -
 
-2026-09-0X | WEEK 1 | Week 1 card structure confirmed (ATS + Eliminator Challenge + season futures); skill and CLAUDE.md updated; card filed under cards\ | Fantasy-Football\cards\2026-wk1-card.xls
+2026-09-06 | WEEK 1 | Week 1 card structure confirmed (ATS + Eliminator Challenge + season futures); skill and CLAUDE.md updated; card filed under cards\ | Fantasy-Football\cards\CODENAME_Week1 Entry.xls
 
 <!-- New entries go above this line. -->

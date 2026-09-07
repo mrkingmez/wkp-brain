@@ -77,8 +77,10 @@ Every weekly card has three parts on different resolution timelines:
    graded only at season's end. Live in `FUTURES-PICKS.md`, never
    graded against a weekly result.
 
-Cards live in `cards\` inside this venture folder
-(`Fantasy-Football\cards\2026-wkN-card.xls`). Picks get entered directly
+Cards live in `cards\` inside this venture folder. The standing filename
+convention for every week is `CODENAME_WeekN Entry.xls` (e.g.
+`Fantasy-Football\cards\CODENAME_Week1 Entry.xls`) — that's the real
+naming used on disk, not `2026-wkN-card.xls`. Picks get entered directly
 into the card file's blank cells — the card is the record, there's no
 separate answer sheet.
 
