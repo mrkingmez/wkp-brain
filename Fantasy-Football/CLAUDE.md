@@ -54,6 +54,28 @@ Two competitions, one repo:
   and via ODDS_API_KEY for anything Claude Code runs locally. Same key,
   two paths — use whichever surface you're in.
 
+## Dead cap on drops (roster-move decisions)
+Cutting a player costs dead cap against this year's $5000 soft cap. The
+hit is a percentage of that player's contract (their `salary` in the MFL
+export), set by how many years are left on the deal (`contractYear` in
+the export):
+
+| Contract runs through | Years left | Dead cap if cut now |
+|---|---|---|
+| 2026 | 1 | 20% of salary |
+| 2027 | 2 | 40% of salary |
+| 2028 | 3 | 60% of salary |
+
+So an expiring cheap contract is nearly free to cut; a long expensive
+one is not. Examples from the current roster: cutting a $600 / 2026
+player costs 120; cutting a $425 / 2028 player costs 255.
+
+RULE: any time a drop is on the table, state the dead-cap cost of that
+specific drop (salary x the rate above) and what it does to available
+cap room. Never recommend a cut without that number. Prefer dropping
+expiring (2026) and low-salary contracts; flag when a proposed cut
+carries a dead-cap hit large enough to matter against the $5000 cap.
+
 ## Roster maximizer model (lineup decisions)
 Per player, per week: consensus projection, snap % trend (last 3 games),
 target share / touch share (last 3 games), opponent points-allowed to

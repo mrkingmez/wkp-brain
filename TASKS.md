@@ -106,6 +106,24 @@ Launch wall art line
 Not Started
 Expanding beyond puzzles
 
+🔵 Kingdom Planners (MAIN EFFORT — digital planners, 7 products finished, 0 listings)
+Task
+Deadline
+Status
+Notes
+Create Etsy shop (Kingdom Planners name)
+—
+Blocked
+2026-09-07 — Etsy showing a $29 one-time setup fee Zac doesn't have on hand. Gates only the shop-goes-live step. Business email is ready: kingdomplannerszk@gmail.com.
+Per-listing prep for all 7 products (free, do now)
+—
+Not Started
+Titles + 13 tags + descriptions each, listing photos/mockup screenshots, individual pricing for the 5 unpriced products, Military Family bundle price, About + shop-policy copy. All doable with no money down so launch is paste-and-go once the $29 is available.
+Resolve Etsy AI-disclosure question for KP
+—
+Not Started
+These are original tools built with AI assistance, not AI-generated content like WKD art. Confirm the actual Etsy policy language before listing.
+
 🟠 KDP Publishing — Math Mystery & Puzzle Books (ACTIVE-UNSCHEDULED, downgraded from priority 1b 9/1 — pivoting, no agent/schedule, do not surface in daily planning)
 Task
 Deadline

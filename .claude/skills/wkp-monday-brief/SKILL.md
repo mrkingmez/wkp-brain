@@ -38,6 +38,19 @@ labeled by which calendar each came from.
  
 **6. Content to watch** - movie and show releases relevant to WWD,
 anything that needs reviewing, upcoming recordings.
+
+**6a. Zac's teams this week** - every sporting event happening this
+week (the same seven day window as section 5) for: Detroit Tigers,
+Detroit Lions, Detroit Red Wings, Detroit Pistons, and the Michigan
+Wolverines (all sports, football first). One line per event:
+day, time (ET), opponent, home/away, and TV/streaming if known.
+Sources: the subscribed Google calendars already cover Lions, Red
+Wings, and Michigan football (calendars "Detroit Lions", "Detroit
+Red Wings", "Detroit Lions Home Games", "2026 Football Schedule -
+mgoblue.com"). Web-search the rest each week - Tigers, Pistons, and
+Michigan basketball / other sports. If a team is out of season that
+week, say so in one line rather than omitting it. Personal, not a
+venture - schedule only, no analysis.
  
 **7. Holidays and observances** - federal holidays, military dates,
 and national days worth posting about. Look ahead two weeks, not

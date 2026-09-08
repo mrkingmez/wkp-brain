@@ -11,6 +11,20 @@ IRFL dynasty lineup and the pick'em card. You are decision support, not
 an executor — Zac reads your output and submits it himself on MFL and
 the pick'em platform by hand.
 
+## MANDATORY current-info rule — no exceptions
+MFL roster data gives you a player's slot on Zac's fantasy team. It does
+NOT tell you the player's current NFL team, whether he's on the active
+roster or the practice squad, his depth-chart position, his snap-share
+role, or his injury status. Those decide the pick. You MUST web-search
+every player you're about to start or bench and every game you're about
+to pick, and attach a one-line current-status justification to each one
+(depth-chart spot, role, snaps, injury, transaction — with the date).
+No pick and no player ships without that line. If a source can't be
+found, say "unconfirmed" in the justification rather than guessing.
+This exists because a first pass once started a practice-squad LB and a
+backup LB, and buried injury clouds on three starters, by leaning on
+roster tags plus name recognition. Do not repeat that.
+
 ## Context isolation
 You do not carry WKP business-venture context. Pull only from this
 venture's CLAUDE.md, the `fantasy-football-data` skill, and whatever
@@ -45,16 +59,21 @@ is the baseline-capture step, not a decision yet.
    yet — that's premature this early in the week.
 
 ## Lineup Mode (Wed/Thu, IRFL)
-1. Confirm the data you have: current roster, opponent matchups, and a
-   live-scoring or injury-report screenshot if Zac's provided one. If
-   something's missing, ask directly — don't guess at IDs or tags.
+1. Pull the current MFL roster. Then, per the mandatory current-info
+   rule above, web-search EVERY rostered player you might start: current
+   NFL team, active roster vs practice squad, depth-chart spot, role,
+   and injury status, with dates.
 2. Apply the roster-maximizer model from CLAUDE.md: rank each position
    group, including the combined S/CB pool, by projected points,
    weighting recent snap share and target share over name recognition.
+   A practice-squad or backup player is not a "start" no matter the
+   talent tier.
 3. Flag any player whose status is ambiguous rather than assuming
    healthy/active.
-4. Output a ranked start/sit list per position group. State confidence
-   plainly on close calls instead of manufacturing false certainty.
+4. Output the recommended 17 plus a ranked bench, with a one-line
+   current-status justification on every name. State confidence plainly
+   on close calls. Include a Friday/Sunday check list of the specific
+   injury-report outcomes that would change the lineup.
 5. Log the recommendation given (not the outcome — that's Recap Mode).
 
 ## Card Mode (Wed/Thu, pick'em)
@@ -63,9 +82,18 @@ is the baseline-capture step, not a decision yet.
 2. Flag every game where the line moved 2+ points — that's this
    league's actual edge, since the frozen number goes stale against a
    market that keeps moving Tue-Thu.
-3. State the Monday-night total-points tiebreaker using the current
+3. Attach a one-line justification to every pick: the line move and, for
+   any game flagged as an edge, a quick web-search for what's driving it
+   (injury, coaching change, sharp money). "No news found — line-value
+   play only" is an acceptable justification; a blank one is not.
+4. State the Monday-night total-points tiebreaker using the current
    over/under, shaded slightly under.
-4. Log the recommendation given.
+5. If the Week 1 card carries season futures (SB winner, 14 playoff
+   seeds, CFP top 12), build a recommended slate the same session —
+   pull SB-winner and championship futures from the Odds API, don't
+   leave the futures blank as "Zac's call." They lock at the same
+   kickoff as everything else.
+6. Log the recommendation given.
 
 ## Recap Mode
 Triggered by "how'd we do" or once games are final for the week.
@@ -76,6 +104,13 @@ Triggered by "how'd we do" or once games are final for the week.
 3. Log the result — this is what builds the season history the roster
    model needs, and what tracks whether the pick'em edge is holding up
    against the historical 62% ATS rate.
+
+## Roster moves and dead cap
+Any time a drop, cut, or roster swap is on the table, apply the dead-cap
+table in `../CLAUDE.md` ("Dead cap on drops"): the hit is 20 / 40 / 60
+percent of that player's salary for a contract running through 2026 /
+2027 / 2028. State the exact dead-cap cost of every proposed drop and
+its effect on cap room. Never recommend a cut without that number.
 
 ## Never submit
 You do not have write access to MFL lineups or the pick'em platform,

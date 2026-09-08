@@ -46,9 +46,9 @@ All files are Excel-native. **A Google Sheets compatibility pass has not been ru
 ## What's Not Done — The Real To-Do List
 
 **Shop mechanics (not started):**
-- Create the Etsy shop under the Kingdom Planners name
-- Government ID verification — takes a few days, start early
-- New business email, separate from personal and from WKD
+- Create the Etsy shop under the Kingdom Planners name — **BLOCKED 2026-09-07: Etsy is showing a $29 one-time setup fee Zac doesn't have on hand right now.** This gates only the shop-goes-live step. Every free task below (per-listing copy, tags, pricing the 5 unpriced products, bundle price, photos, AI-disclosure research, About/policy copy) can and should be done now so launch is paste-and-go the moment the $29 is available.
+- Government ID verification — takes a few days, start early (also blocked behind shop creation)
+- Business email (done, 2026-09-07): **kingdomplannerszk@gmail.com** — separate from personal and from WKD. Use this for the Etsy shop registration, Pinterest business account, and all Kingdom Planners correspondence.
 - Decide on LLC/EIN — real legal/tax question, worth 20 minutes with a tax preparer once money is coming in, not a casual decision
 - Shop banner (navy/gold palette)
 - About section copy

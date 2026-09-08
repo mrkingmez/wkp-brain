@@ -1,0 +1,24 @@
+ # MATCHUP                                  CARD    MKT   MOVE  ATS PICK               SU PICK                ML
+--------------------------------------------------------------------------------------------------------------------------------
+ 1 Seattle vs New England (H-fav)             -3   -3.5   +0.5  Seattle -3.0 (lean)    Seattle         -185/+155 
+ 2 LA Rams vs San Francisco (H-fav)           -3   -3.5   +0.5  LA Rams -3.0 (lean)    LA Rams         -196/+161 
+ 3 Oklahoma vs Michigan (A-fav)               -2     -6     +4  Oklahoma -2.0 (value, mkt -6) Oklahoma        -239/+190 EDGE
+ 4 Army vs South Florida (H-fav)              -1   -3.5   +2.5  Army -1.0 (value, mkt -3.5) Army            -182/+149 EDGE
+ 5 Boise State vs Memphis (H-fav)             -6   -7.5   +1.5  Boise State -6.0 (lean) Boise State     -327/+260 
+ 6 Texas vs Ohio State (H-fav)                -1     -1     +0  Ohio State +1.0 (coin flip, take pts) Texas           -116/-106 
+ 7 Cincinnati vs Tampa Bay (H-fav)            -3     -4     +1  Cincinnati -3.0 (lean) Cincinnati      -210/+170 
+ 8 Detroit vs New Orleans (H-fav)             -7     -7     +0  New Orleans +7.0 (coin flip, take pts) Detroit         -305/+250 
+ 9 Tennessee vs NY Jets (H-fav)               -2   -1.5   -0.5  NY Jets +2.0 (lean)    Tennessee       -125/+105 
+10 Baltimore vs Indianapolis (A-fav)          -4   -3.5   -0.5  Indianapolis +4.0 (lean) Baltimore       -175/+150 
+11 Pittsburgh vs Atlanta (H-fav)              -3     -3     +0  Atlanta +3.0 (coin flip, take pts) Pittsburgh      -180/+155 
+12 Chicago vs Carolina (A-fav)                -2     -3     +1  Chicago -2.0 (lean)    Chicago         -157/+132 
+13 Jacksonville vs Cleveland (H-fav)          -7   -8.5   +1.5  Jacksonville -7.0 (lean) Jacksonville    -400/+315 
+14 Buffalo vs Houston (A-fav)                 -1    --0     -1  Houston +1.0 (lean)    Buffalo (pick'em)  -110/-110 
+15 Las Vegas vs Miami (H-fav)                 -4   -3.5   -0.5  Miami +4.0 (lean)      Las Vegas       -185/+155 
+16 Minnesota vs Green Bay (H-fav)             -2   -1.5   -0.5  Green Bay +2.0 (lean)  Minnesota       -122/+101 
+17 Philadelphia vs Washington (H-fav)         -5     -5     +0  Washington +5.0 (coin flip, take pts) Philadelphia    -235/+195 
+18 LA Chargers vs Arizona (H-fav)            -10    -10     +0  Arizona +10.0 (coin flip, take pts) LA Chargers     -550/+400 
+19 Dallas vs NY Giants (A-fav)                -2     -3     +1  Dallas -2.0 (lean)     Dallas          -160/+135 
+20 Kansas City vs Denver (H-fav)              -3   -2.5   -0.5  Denver +3.0 (lean)     Kansas City     -145/+122 
+
+MNF TIEBREAKER (KC vs DEN) current total (median): 43.5  -> tiebreaker guess shaded ~2 under = 42
