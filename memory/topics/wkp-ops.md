@@ -27,9 +27,20 @@ diagnose the approval path instead of re-issuing it. After 24+ hours and dozens
 of tool calls, a session itself can go bad — a fresh session is the fix, not
 another retry. Say so plainly rather than reassuring.
 
-## Output format preferences [2026-07-24]
-Step-by-step with every click spelled out. Plain language, no jargon. Guides
-delivered as `.docx` for printing with a `.md` copy alongside for the repo.
+## Output format preferences — repeated correction, now LOCKED [2026-07-24, re-corrected 2026-09-12]
+Step-by-step with every click spelled out. Plain language, no jargon.
+
+**The .docx rule is broader than "guides."** Test: is the file needed as
+an operational repo file (CLAUDE.md, TASKS.md, skill/agent defs, code)?
+If yes, stays `.md`/code. If no — it's a deliverable a human reads,
+prints, or ships (upload packages, reports, worksheets, tracker docs,
+guides, anything "finished") — it goes out as `.docx`, `.md` kept
+alongside per the file-retention rule. This got narrowed to "just guides"
+in practice and WWD upload packages kept shipping as `.md`/`.txt` (Last
+House, EP103, T-2) until Zac called it out again 2026-09-12 ("how many
+times do I have to tell you"). Root CLAUDE.md now has this spelled out
+explicitly under "Output document format" — check there, don't re-narrow
+it to guides-only again.
 
 ## Secrets never go on the command line [2026-08-06]
 A Hugging Face token was pasted directly into a Claude Code prompt and is now

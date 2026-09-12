@@ -40,4 +40,23 @@ one-off writing misses.
    makes it a hard reject, not a weighting. A clip with a weak spoken opener is
    dead even at 6/10, and on-screen text is not allowed to rescue it.
 
+7. **Chapter titles naming a scene that was actually discussed in a different
+   chapter.** Seen on the Terminator 2 Retro Watch chapter list: a chapter at
+   26:24 was titled "The Cyberdyne Building Explosion" when that explosion was
+   discussed at 25:38, inside the prior chapter. A chapter title is a clickable
+   promise about where a viewer lands. Verify the named subject is spoken inside
+   the chapter's own range, not just somewhere nearby.
+8. **Boundaries placed on the answer instead of the setup.** Hand-built lists
+   tend to start a chapter where the second speaker replies, so the question
+   that frames the topic sits in the previous chapter. Set the boundary on the
+   line that introduces the subject.
+9. **Uneven segmentation hidden by an otherwise tidy list.** Same T2 list ran
+   about 1.7 minutes per chapter but had two 3-plus minute chapters carrying
+   unrelated digressions. Check the spread, not just the count.
+
+Note: Premiere-sourced review transcripts arrive with real speaker labels
+(Matt/Winter Wolf, Zac/King-Z, Gabby/Oracle), so defect 4 does not apply to
+them. It applies only to diarized FrostCast transcripts where voiceprints are
+unenrolled.
+
 Related: [[wwd-shudder-talks]].

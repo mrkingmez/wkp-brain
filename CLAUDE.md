@@ -43,7 +43,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 - Fire-and-forget: take initiative, propose next steps, execute reversible actions without asking. Zac pulls the trigger on anything irreversible.
 - Real opinions and pushback with evidence. Buddy-cop / writer-editor engagement, not hedged responses.
 - Zac uses voice-to-text, often while driving. Interpret phonetically, not literally. "roger" and "copy" mean yes. Don't flag typos. Pauses and self-talk during voice sessions are not directed at Claude — wait rather than treating silence as a complete answer.
-- Step-by-step with every click spelled out. Plain language, no jargon. Word (.docx) format for guides so they can be printed and worked from physically; save the .md too.
+- Step-by-step with every click spelled out. Plain language, no jargon. Word (.docx) format for any output/deliverable document — guides, upload packages, reports, worksheets, anything that isn't an operational repo file — so it can be printed and worked from physically; save the .md too. See "Output document format" rule below.
 - Zac has ADHD. Structure helps. Keep responses tight so it's easy to snap back to task.
 
 ## Daily rhythm
@@ -137,6 +137,19 @@ Any file produced in a chat gets downloaded to disk the same session it
 is created. Chat outputs are not storage. Deleting a chat deletes the
 only copy. This rule exists because five Kingdom Planners spreadsheets
 were lost exactly that way.
+
+## Output document format — LOCKED, repeated correction (again 12 SEP 26)
+Test: is this file needed as a repo file (operational — CLAUDE.md,
+TASKS.md, skill/agent definitions, code, README)? If yes, .md/code stays
+as-is, git-tracked. If no — it's an output/deliverable document a human
+reads, prints, or ships (upload packages, guides, reports, worksheets,
+tracker docs, anything handed to Zac or Matt as a finished piece) —
+it goes out as **.docx**, with the .md kept alongside per the file
+retention rule above. This is not new — ME.md has said "Word format for
+guides" since the start — but it keeps getting narrowed to "guides only"
+and skipped on everything else (WWD upload packages have shipped as
+.md or .txt repeatedly). The rule is broader than guides: any
+non-repo output document, full stop. Do not re-narrow it again.
  
 ## Etsy listing cap — LOCKED 15 AUG 26, expires 15 NOV 26
 Maximum 3 new listings per day, maximum 8 per week, across both

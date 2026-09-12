@@ -70,6 +70,17 @@ def main():
     )
     parser.add_argument("--model", default="large-v3", help="Whisper model size")
     parser.add_argument(
+        "--whisper-batch-size",
+        type=int,
+        default=8,
+        help=(
+            "whisperx transcribe batch_size. Was hardcoded to 16, which OOM'd on "
+            "an 8GB RTX 5060 partway through EP111 (102 min episode) with a clean "
+            "GPU otherwise. 8 is a safer default for this card; drop to 4 if it "
+            "still OOMs."
+        ),
+    )
+    parser.add_argument(
         "--embedding-batch-size",
         type=int,
         default=8,
@@ -124,7 +135,7 @@ def main():
     print("Loading Whisper model and transcribing (this is the slow step)...")
     model = whisperx.load_model(args.model, device, compute_type=compute_type)
     audio = whisperx.load_audio(args.audio)
-    result = model.transcribe(audio, batch_size=16)
+    result = model.transcribe(audio, batch_size=args.whisper_batch_size)
 
     print("Aligning word-level timestamps...")
     align_model, metadata = whisperx.load_align_model(language_code=result["language"], device=device)

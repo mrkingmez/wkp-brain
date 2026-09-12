@@ -84,6 +84,26 @@ Leave alone (not part of this cleanup): WarriorKingDesigns - Etsy Ops folder (dr
 Cyber Security folder — created under Warrior King Productions/, but still waiting on: is this a real 8th venture (gets a CLAUDE.md + projects.md entry) or a personal reference folder (certs/resume, not something being actively built)?
 
 
+## 🏗️ Repository Build-Out Pass (all ventures) — added 2026-09-12
+Zac's call 2026-09-12: get every venture that already has assets/work sitting outside a real repo (local downloads, or built in a Claude web/Cowork session) actually moved in and scaffolded. Do the physical build work, don't just plan it. Venture status labels (DORMANT/ACTIVE-UNSCHEDULED) are NOT being changed by this — Zac gave no preference on reclassifying the board when asked directly 2026-09-12, so repos get built but planning surfacing rules in root CLAUDE.md stay as-is until he says otherwise.
+| Task | Deadline | Status | Notes |
+|---|---|---|---|
+| Identify "Rider's [or Ryder's] Room" venture/project | — | Not Started | Zac referenced building this out 2026-09-12 ("I have all the stuff, just need to sit down and put it in the repository") — name doesn't match anything in projects.md, memory, or any existing folder. Needs Zac to confirm what this is before a folder/repo gets created for it. |
+| Build Investing repository from ready material | — | Not Started | Zac says he has everything for the trading/swing-scanner tool already (built in a Cowork/web session per his 2026-09-12 note) — just needs it moved into `D:\WKP\Investing\` and actually built. Investing is currently DORMANT (capture-only) but Zac asked directly, which the DORMANT rule allows acting on. |
+| Inventory + build remaining Cowork/web-session repos | — | Not Started | Zac: "there's a few others we've done over in the web base/Cowork one" with everything downloaded, just needing the actual repo built. Needs Zac to list which ones (not captured yet — ask him directly next check-in). |
+
+## WKP Automation / Jarvis Build
+| Task | Deadline | Status | Notes |
+|---|---|---|---|
+| Build Cowork Scheduled Task for daily queue check | — | Not Started | Reads calendar/sheet, executes what's due, runs during morning window |
+| Set up Claude Code Routine against wkp-brain | — | Not Started | Cloud-side, runs with PC off, picks up .claude/skills and .claude/agents automatically since they're git-tracked |
+| Decide connector list per Routine | — | Not Started | Connectors don't inherit from Cowork — attach Calendar/Drive/whatever each Routine needs explicitly |
+| Set autonomy boundary | — | Not Started | Routines run with zero approval prompts — keep anything that posts live or spends money on Desktop tasks (permission mode on); Routines limited to draft/build/prep |
+| Attach pending MCPs | — | Not Started | Zac has additional MCPs he wants connected (2026-09-12) — not yet specified which ones, ask him for the list. |
+| Second-machine setup — split processing between two machines | — | Not Started | Zac wants a second machine running so work can be divvied up by compute/processing power (2026-09-12). LOCAL-PATHS.md is already structured per-machine (one `## MACHINE:` section per box) for exactly this. Cross-session messaging (SendMessage/ListAgents) already lets sessions on different machines talk to each other once both are set up — needs: second machine acquired/available, LOCAL-PATHS.md section added for it, Claude Code installed there. |
+| Voice assistant — TTS/STT personal-assistant mode | — | Not Started | Zac wants voice output (ElevenLabs MCP already connected) and eventually a mode where Claude can proactively reach out with a question rather than only responding when spoken to (2026-09-12: "call me and ask me when you have a question"). Outbound calling isn't available in the current toolset — needs research into what's possible (e.g., ElevenLabs Conversational AI + a phone number) before this is buildable. |
+
+
 🔴 Etsy Store (top priority)
 Task
 Deadline
@@ -189,6 +209,9 @@ Bring back the audio-only podcast (relaunch) | — | Not Started | Merged 2026-0
 Fix Spotify show metadata | — | Not Started | Fix "Winters" typo, standardize episode titles. Holding 2026-09-04 pending the audio relaunch plan above — Zac wants a deep dive before posting fixes live.
 Decide new podcast host | — | Done | Decided 2026-09-04 — sticking with Spotify for Creators (free) for now.
 Wolf-character short series — concept + production plan | — | Not Started | Idea captured 2026-09-08. Short series built around a wolf character with an "animated but live-action feel." Two open questions before anything else: (1) WHAT is the series about — premise, format, episode length, tone, how it fits alongside FrostCast / Den Files / reviews. (2) HOW do we make it — the animated-live-action look (AI video gen e.g. Higgsfield, 2D/3D animation, hybrid comp, puppet/mocap) and the pipeline for it. Also decide whether this wolf is Winter Wolf (Matt's handle), the WKP wolf character (shared with PAWS, has a 3D model somewhere), the cold-open Warden, or a new character entirely — Zac's call, don't assume. Needs a scoping session with Zac.
+Track "Remains" movie for review | 2027-02-14 | Not Started | Releases Valentine's Day 2027 — flag for trailer reaction / review pipeline closer to date.
+Retrofit older WWD output docs to .docx | — | Not Started | Root CLAUDE.md's output-document rule (re-locked 2026-09-12, "how many times do I have to tell you") applies to any deliverable, not just guides. T-2's upload package fixed in place 2026-09-12 (.docx built alongside the .md). Still `.txt` only: The Last House and EP103 upload packages. Good Boy (2025) package also needs checking.
+Connect thewinterwolfsden@gmail.com to Composio | — | Not Started | Not currently connected anywhere — checked 2026-09-11. Existing Gmail connections are kingzpotus@gmail.com (native), zachary.d.king4@gmail.com and kingdomplannerszk@gmail.com (Composio). Needed to read/manage the show's own inbox.
 
 WKP — "What If" Military History
 Task

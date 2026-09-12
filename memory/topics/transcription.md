@@ -115,3 +115,14 @@ above for the pattern) — a version change could silently move
 pattern this fix relies on. `transcribe.py` now guards this with a hasattr
 check and prints a warning rather than failing silently if the attributes
 disappear in a future pyannote release.
+
+## Whisper's own transcribe batch_size was still hardcoded — separate OOM [2026-09-09]
+The diarization batch-size fix above only covers the diarization stage.
+`model.transcribe(audio, batch_size=16)` at the Whisper step was still
+hardcoded and OOM'd on EP111 (102 min episode) on the 8GB RTX 5060, mid-run,
+with the GPU otherwise clean (447MiB used, no games or other GPU load —
+checked via `nvidia-smi` right after the crash). Added `--whisper-batch-size`
+CLI flag, default 8 (was 16). Retry succeeded at 8. If a future long/dense
+episode OOMs again at this step, drop to 4 before assuming something else is
+wrong — large-v3 batches are much heavier per item than diarization
+embeddings, so the safe batch size here is lower than the diarization one.

@@ -17,6 +17,8 @@ Do not blend these. The contrast is the show.
 REVIEW VIDEOS
 Movies and shows in the nerd-verse. Tone benchmark is the Spider-Noir review: gritty, noir-influenced, direct, authentic. Not corporate, not sanitized.
 
+**No bleeping — locked 2026-09-12.** On-air profanity ships as recorded, never bleeped or cut. Applies to every WWD content line (reviews, FrostCast, Den Files, Retro Watch, shorts). Do not flag profanity as something needing a bleep in upload packages going forward.
+
 FROSTCAST
 Weekly podcast, Wednesdays 9pm. News, trailers, books, games in the same space.
 
@@ -78,3 +80,13 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 [FILL IN — Den Files topic queue beyond episode 1, once selected from the pipeline candidates above]
 [DECIDED 2026-09-04 — podcast host staying on Spotify for Creators (free) for now]
 [FILL IN — Spotify metadata fix, flagged as open in TASKS.md — brand name typo "Winters" vs "Winter," inconsistent episode title formatting]
+
+## Writing room
+
+Script craft belongs to the writing room, not to this venture. For any
+scripted segment - Den Files cold open, character expose, FrostCast bit -
+call script-room rather than drafting here. Pass the format spec path so
+the room writes to spec.
+
+devils-advocate still owns format compliance. originality owns whether the
+idea is derivative. They are different checks and both run.

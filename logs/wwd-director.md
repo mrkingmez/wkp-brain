@@ -427,3 +427,123 @@ Video finished rendering mid-session. Ran the rest of the pipeline.
   / 23:31:10).
 - Deliverables now: `The Whisper Man - Upload Package.docx` + `.md`,
   `AUDIO\`, `shorts\` (6 + manifest), all in the movie folder.
+
+## 2026-09-12 | Review (Retro Watch) | T-2 (Terminator 2: Judgment Day) | ~25 min
+
+**Status:** DONE (chapters) / BLOCKED (rest of package)
+**Trigger:** Zac - "There is a new review video call T-2. Transcript is in
+the folder, video still rendering."
+**Classification:** Review (Retro Watch line, no dedicated RETROWATCH.md -
+covered by REVIEW.md's "movies and shows in the nerd-verse"). Transcript
+already present (Premiere-sourced, diarized Matt/Winter Wolf, Zac/King-Z,
+guest Gabby/Oracle) - per rule, never transcribed.
+
+Actions taken:
+- Confirmed transcript present:
+  `L:\Winter Wolfs Den review show\Raw Footage\T-2\A look back at
+  Terminator 2 Judgement Day.txt` (856 lines, HH:MM:SS:FF timecodes,
+  runs to ~00:35:29).
+- Checked the .mp4 already sitting in the folder before trusting it:
+  1863493405 bytes, ffprobe duration 3213.99s (53:34), last write
+  2026-09-10 9:23 PM - predates the transcript file (2026-09-12 12:49 AM)
+  and its runtime does not match the transcript's ~35:29. Confirmed stale/
+  mismatched, not the finished render Zac means by "still rendering."
+  Did not touch it for audio or shorts extraction.
+- Ran wwd-frostcast-chapters against the transcript (chapters only need
+  the transcript, not the video) - 24 chapters incl. Start, Retro Watch
+  subject-change rules followed (chronological, not thematic).
+- Sent the draft to devils-advocate against REVIEW.md. Verdict: SHIP WITH
+  FIXES - one chapter named a scene it didn't cover (26:24 labeled
+  "Cyberdyne Building Explosion" but that scene is discussed at 25:38,
+  inside the prior block), one chapter blended three subjects (minigun /
+  Predator tangent / HUD-and-molten-steel), one boundary landed a beat
+  late (22:53 vs. the real T3 turn at 23:13), one chapter ran 3:38 and
+  drifted into a second subject (29:02, added a 31:10 split), two
+  boundaries landed on the reply instead of the setup (08:04->08:05,
+  18:00->17:48). All five fixes applied to the final list.
+- Saved final chapter list: `A look back at Terminator 2 Judgement Day -
+  Chapters.txt` in the T-2 folder.
+
+Deliverables:
+- `L:\Winter Wolfs Den review show\Raw Footage\T-2\A look back at
+  Terminator 2 Judgement Day - Chapters.txt` (24 chapters, ready to paste
+  into the description or hand to the upload package once it runs).
+
+Flags for Zac:
+- Real render not landed yet. The .mp4 currently in the T-2 folder is
+  stale/mismatched (53:34 vs. transcript's 35:29, written before the
+  transcript) - do not use it, wait for the actual export.
+- Full wwd-review-pipeline run (SEO title/description/tags/thumbnail,
+  audio extract, shorts cut) is BLOCKED until the real .mp4 lands. Say
+  the word once it's there and this picks back up where it left off -
+  chapters are already done and ready to embed.
+
+## 2026-09-12 (cont.) | Review pipeline | T-2 (Terminator 2: Judgment Day) - export landed, full pipeline run
+
+Coordinator confirmed the real render was done. Re-checked the T-2 folder
+before trusting anything.
+
+- New file found: `Terminator 2 Judgement Day.mp4` (note: different
+  filename from the stale one flagged above, not a re-export of it).
+  ffprobe: 2136.83s (35:36.83), 1920x1080, h264, 30fps, aac 48kHz stereo,
+  4.6 GB, written 2026-09-12 1:06 AM - after the transcript file (12:49
+  AM) and lines up with the transcript's last timecode (~35:29) within a
+  few seconds. Confirmed real, used it for everything below. The earlier
+  stale file (`A look back at Terminator 2 Judgement Day.mp4`, 53:34,
+  predates the transcript) was left untouched and flagged again in the
+  package for cleanup.
+- Ran `wwd-review-pipeline` (confirmed installed on this machine, single
+  SKILL.md file at `D:\WKP\.claude\skills\wwd-review-pipeline\`). Reused
+  the already-built, devils-advocate-reviewed chapter list per direct
+  instruction rather than rebuilding it - flagged inside the package that
+  it runs 24 entries against this pipeline's own 8-14 target, since it
+  was built under a different chapters skill before the render landed.
+- Full upload package built: `Terminator 2 Judgement Day - Upload
+  Package.md` in the T-2 folder. SEO title + alt, GEO description with a
+  5-question QUICK ANSWERS block, chapters (reused), backend tags
+  (452 characters, Python-verified), 9 hashtags, thumbnail concept
+  (built from `USE\like a box of roses.png` + poster inset from
+  `USE\1.png`), 6 scored shorts candidates, FB post, IG post, cards/end
+  screen (destinations flagged unverified), posting schedule, full flags
+  section.
+- Audio extracted: `AUDIO\Terminator 2 Judgement Day.mp3` (192k),
+  ffprobe-verified 2136.833333s - exact match to source.
+- Shorts: 6 cut to `shorts\`, all ffprobe-verified (1080x1920, h264+aac,
+  correct durations) and eyeballed on two of them (clean vertical
+  blur-fill reframe, full multicam frame intact, no cropping, host name
+  tags visible). 2 READY TO POST (clip3 M16 nitpick 47.8s, clip4 T3
+  ruins the ending 46.5s). 4 HELD FOR RE-TRIM: clip1 Robert Patrick's
+  dedication (94.3s, over cap, needs front trim), clip2 Dark Fate VFX
+  burn (46.3s, soft open + one profanity instance needing a bleep),
+  clip5 Oracle's "90s good" verdict (31.1s, Instagram-only as cut, soft
+  open), clip6 explosion-was-real (47.1s, real hook buried ~20s in,
+  needs re-trim + one profanity instance needing a bleep). Manifest at
+  `shorts\shorts_manifest.txt`.
+
+Deliverables:
+- `Terminator 2 Judgement Day - Upload Package.md`
+- `AUDIO\Terminator 2 Judgement Day.mp3`
+- `shorts\` (6 clips + `shorts_manifest.txt`)
+- `A look back at Terminator 2 Judgement Day - Chapters.txt` (reused, not
+  rebuilt)
+All in `L:\Winter Wolfs Den review show\Raw Footage\T-2\`.
+
+Flags for Zac:
+- Two on-air profanity instances need a bleep or cut before anything
+  ships (inside clip2's and clip6's ranges) - see package Section 12.
+- 4 of 6 shorts are HOLD FOR RE-TRIM, none ship as-is - block-level
+  Premiere transcript timing again, matches the Whisper Man pattern.
+- Two mp4 files with near-identical names now sit in the T-2 folder
+  (one real, one stale) - recommend renaming or deleting the stale one
+  so it doesn't get grabbed by mistake later.
+- Chapter list (24 entries) exceeds this pipeline's own 8-14 spec target
+  - reused as directed rather than rebuilt, flagged for a possible manual
+  collapse before the live YouTube paste.
+- Card and end-screen destinations are structural placeholders only, no
+  channel analytics or playlist visibility from this pipeline - Zac or
+  Matt need to fill in real links.
+- Spoken date inconsistency on air (Judgment Day given as both April 14
+  and April 29, 2029 in the same breath) - not used anywhere in the
+  package, flagged rather than corrected.
+- wwd-shorts-clip-factory needs source video AND transcript per the
+  chain - also blocked on the same render.

@@ -1,0 +1,66 @@
+W0909 23:07:15.369000 19632 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.11.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not load this library: C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchcodec\libtorchcodec_core7.dll
+FFmpeg version 6: Could not load this library: C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchcodec\libtorchcodec_core6.dll
+FFmpeg version 5: Could not load this library: C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchcodec\libtorchcodec_core5.dll
+FFmpeg version 4: Could not load this library: C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchcodec\libtorchcodec_core4.dll
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+Missing voiceprints for: matt, zac, gabby.
+Run enroll_voices.py for each before transcribing, or continue
+knowingly - unmapped hosts will show up as Guest/Unknown.
+Loading Whisper model and transcribing (this is the slow step)...
+2026-09-09 23:07:19 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-09-09 23:07:19 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.5. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+2026-09-09 23:07:29 - whisperx.asr - INFO - Detected language: en (0.98) in first 30s of audio
+Aligning word-level timestamps...
+Running diarization (clustering speakers) - embedding_batch_size=8, segmentation_batch_size=8...
+2026-09-09 23:10:51 - whisperx.diarize - INFO - Loading diarization model: pyannote/speaker-diarization-community-1
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyannote\audio\models\blocks\pooling.py:103: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1858.)
+  std = sequences.std(dim=-1, correction=1)
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightning\pytorch\utilities\migration\utils.py:197: Redirecting import of pytorch_lightning.callbacks.early_stopping.EarlyStopping to lightning.pytorch.callbacks.early_stopping.EarlyStopping
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightning\pytorch\utilities\migration\utils.py:197: Redirecting import of pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint to lightning.pytorch.callbacks.model_checkpoint.ModelCheckpoint
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightning\pytorch\utilities\migration\migration.py:208: You have multiple `ModelCheckpoint` callback states in this checkpoint, but we found state keys that would end up colliding with each other after an upgrade, which means we can't differentiate which of your checkpoint callbacks needs which states. At least one of your `ModelCheckpoint` callbacks will not be able to reload the state.
+Lightning automatically upgraded your loaded checkpoint from v1.2.7 to v2.6.5. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\kingz\.cache\huggingface\hub\models--pyannote--embedding\snapshots\4db4899737a38b2d618bbd74350915aa10293cb2\pytorch_model.bin`
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyannote\audio\core\model.py:639: UserWarning: Model has been trained with a task-dependent loss function. Set 'strict' to False to load the model without its loss function and prevent this warning from appearing. 
+  warnings.warn(msg)
+Lightning automatically upgraded your loaded checkpoint from v1.2.7 to v2.6.5. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\kingz\.cache\huggingface\hub\models--pyannote--embedding\snapshots\4db4899737a38b2d618bbd74350915aa10293cb2\pytorch_model.bin`
+C:\Users\kingz\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightning\pytorch\core\saving.py:197: Found keys that are not in the model state dict but in the checkpoint: ['loss_func.W']
+Diarization completed in 3.9 minutes
+Diarization stage peak VRAM: 1.04 GB
+Mapping diarized clusters to enrolled voices...
+  SPEAKER_00 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+  SPEAKER_01 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+  SPEAKER_02 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+  SPEAKER_03 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+  SPEAKER_04 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+  SPEAKER_05 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+  SPEAKER_06 -> UNMAPPED (best guess None, confidence 0.00 - below threshold)
+Writing formatted transcript...
+Transcript written to: L:\Winter Wolfs Den review show\Frost-Cast\EP 111\Spider-man cancelled BEFORE Rings of Power__ _ FrostCast Episode 111_transcript.txt
+NOTE: 7 speaker cluster(s) did not confidently match a
+core host - check the Guest/Unknown lines before treating this as final.
