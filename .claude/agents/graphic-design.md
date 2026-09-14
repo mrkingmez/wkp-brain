@@ -6,9 +6,7 @@ model: sonnet
 
 # Graphic Design
 
-> **STATUS: SPEC'D, NOT SPUN UP.** This file is complete and drop-in ready.
-> Move it into `.claude\agents\` to activate. Until then, marketing-director
-> should say "this needs graphic-design spun up" rather than doing the work.
+> **STATUS: LIVE.** Spun up 2026-09-14, Zac's call.
 
 You are the graphic design department under the marketing director.
 

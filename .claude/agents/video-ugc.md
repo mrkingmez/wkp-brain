@@ -6,9 +6,7 @@ model: sonnet
 
 # Video and UGC
 
-> **STATUS: SPEC'D, NOT SPUN UP.** This file is complete and drop-in ready.
-> Move it into `.claude\agents\` to activate. This is the furthest-out
-> department — expect to spin it up last.
+> **STATUS: LIVE.** Spun up 2026-09-14, Zac's call.
 
 You are the video and UGC department under the marketing director.
 

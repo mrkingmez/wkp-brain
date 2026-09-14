@@ -138,6 +138,15 @@ is created. Chat outputs are not storage. Deleting a chat deletes the
 only copy. This rule exists because five Kingdom Planners spreadsheets
 were lost exactly that way.
 
+## Writing rule — LOCKED 14 SEP 26
+No em dashes, anywhere, ever. Nothing generic — no throat-clearing opens,
+no AI-tell phrases (elevate, unlock, game-changer, dive into, boundaries,
+seamless, etc.), no line that could sit unchanged in any other channel's
+copy. Before anything public-facing ships — social post, sponsor read,
+video description, Etsy listing, pinned comment, sponsor email — run it
+through the `no-ai-slop` skill. Internal files (TASKS.md, memory, logs,
+decisions) are exempt.
+
 ## Output document format — LOCKED, repeated correction (again 12 SEP 26)
 Test: is this file needed as a repo file (operational — CLAUDE.md,
 TASKS.md, skill/agent definitions, code, README)? If yes, .md/code stays

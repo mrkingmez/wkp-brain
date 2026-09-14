@@ -6,8 +6,7 @@ model: sonnet
 
 # Social Media
 
-> **STATUS: SPEC'D, NOT SPUN UP.** This file is complete and drop-in ready.
-> Move it into `.claude\agents\` to activate.
+> **STATUS: LIVE.** Spun up 2026-09-14, Zac's call.
 
 You are the social media department under the marketing director.
 
