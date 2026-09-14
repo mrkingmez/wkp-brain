@@ -1,0 +1,205 @@
+:root {
+  --bg: #0f1115;
+  --panel-bg: #1a1d24;
+  --border: #2a2e38;
+  --text: #e8e9ec;
+  --muted: #9aa0ab;
+  --accent: #4f8cff;
+  --covering: #2e7d32;
+  --not-covering: #b71c1c;
+  --stale: #7a5c00;
+  --won: #2e7d32;
+  --lost: #b71c1c;
+  --push: #9a7d00;
+  --upcoming: #5b6270;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h1 { font-size: 18px; margin: 0; }
+.topbar-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.meta { font-size: 12px; color: var(--muted); }
+
+.data-age {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--won);
+  color: var(--won);
+}
+.data-age.warn { border-color: var(--push); color: var(--push); }
+.data-age.stale { border-color: var(--lost); color: var(--lost); background: rgba(183, 28, 28, 0.1); }
+
+.inactive-banner {
+  background: var(--not-covering);
+  color: white;
+  font-weight: 700;
+  padding: 14px 20px;
+  font-size: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.8fr;
+  gap: 16px;
+  padding: 16px 20px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.panel h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 10px 0;
+}
+
+.matchup-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.side { flex: 1; text-align: center; }
+.side .label { font-size: 13px; color: var(--muted); }
+.side .score { font-size: 32px; font-weight: 700; }
+.side .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.vs { color: var(--muted); font-size: 12px; }
+
+.note { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+
+.pickem-games { display: flex; flex-direction: column; gap: 8px; max-height: 480px; overflow-y: auto; }
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.game-row .no-match { color: var(--muted); font-style: italic; }
+
+/* Pick'em row -- rebuilt 2026-09-13. Four columns: MY PICK / GAME /
+   CLOCK / VERDICT. MY PICK is the only team named prominently; the
+   non-picked team gets no verdict badge at all (dropped the old
+   per-side covering/not-covering badges, which doubled the text and
+   buried the one thing that matters). Dot marker dropped -- the pick
+   column replaces it. */
+.pick-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 1.3fr) minmax(120px, 1.3fr) minmax(70px, 0.8fr) minmax(80px, 0.9fr);
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+}
+.pick-row.discrepancy { background: rgba(183, 28, 28, 0.08); border-left: 3px solid var(--lost); padding-left: 6px; }
+
+.pick-row .col-pick {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+}
+.pick-row .col-game { color: var(--muted); }
+.pick-row .col-game .leader { color: var(--text); font-weight: 700; }
+.pick-row .col-clock { color: var(--muted); font-size: 12px; }
+
+.verdict-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.verdict-badge.WINNING, .verdict-badge.WON { background: var(--won); color: white; }
+.verdict-badge.LOSING, .verdict-badge.LOST { background: var(--lost); color: white; }
+.verdict-badge.NOT_STARTED { background: transparent; color: var(--upcoming); border: 1px solid var(--upcoming); }
+
+.discrepancy-banner {
+  background: rgba(183, 28, 28, 0.15);
+  border: 1px solid var(--lost);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.discrepancy-banner .title { font-weight: 700; color: var(--lost); margin-bottom: 4px; }
+
+.pickem-record {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.pickem-record .rec-num { font-size: 20px; font-weight: 700; }
+
+.scoreboard-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+  padding: 6px 0;
+}
+.scoreboard-row.on-card { background: rgba(79, 140, 255, 0.08); border-left: 3px solid var(--accent); padding-left: 6px; }
+.scoreboard-row .league-tag { font-size: 10px; color: var(--muted); border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; }
+
+#news-relevant, #news-other {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+#news-relevant li, #news-other li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+#news-relevant a, #news-other a { color: var(--text); text-decoration: none; }
+#news-relevant a:hover, #news-other a:hover { color: var(--accent); }
+
+.disagreements {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.panel-age {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.panel-age.stale { color: var(--stale); font-weight: 700; }

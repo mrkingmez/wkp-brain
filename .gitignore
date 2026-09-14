@@ -1,1 +1,15 @@
-scratch/ 
+scratch/
+__pycache__/
+*.pyc
+
+# Regenerable data caches -- not operational content, not decisions.
+# Rebuilt by the owning skill/tool on first run.
+Fantasy-Football/dashboard/state.json
+Fantasy-Football/dashboard/.raw_cache.json
+Fantasy-Football/dashboard/espn-nfl-teams-cache.json
+.claude/skills/fantasy-football-data/players-cache.json
+.claude/skills/fantasy-football-data/players-cache.json.meta.json
+.claude/skills/fantasy-football-data/sleeper-players-cache.json
+.claude/skills/fantasy-football-data/sleeper-players-cache.json.meta.json
+.claude/skills/fantasy-football-data/players-cache-details.json
+Fantasy-Football/dashboard/unmatched.log

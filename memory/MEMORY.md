@@ -13,6 +13,7 @@ learnings go here.
 - [WKP operating rules](topics/wkp-ops.md) — fire-and-forget partnership, voice-to-text handling, flag file updates in the moment, repo is on D: not C:
 - [Writing and content formats](topics/writing.md) — Watershed and Hidden Hinge never mix, Shattered Empire editorial rules, Blender mesh standards
 - [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy, seven products finished with zero listings
-- [Visual media / framing](topics/visual-media.md) — image-to-frame resize rule: contain/fit, never crop (superseded 2026-08-29 edge-to-edge default); wwd-review-photo-pull skill pulls IMDb picture sets
+- [Visual media / framing](topics/visual-media.md) — contain/fit resize rule (never crop); wwd-review-photo-pull runs Step 8 (beat-matched images) and Step 3.5 (cover every character with a real subplot, not just the leads — added 2026-09-14 after Heat missed Portman/Judd/Venora/Haysbert)
 - [WWD skill output formats](topics/wwd-skill-formats.md) — wwd-audio-cut uses one chronological Start/Cut list (not separate KEEP/DROP blocks), locked 2026-09-02
 - [Automation vision](topics/automation-vision.md) — Zac's fire-and-forget/automation push, dual-machine + voice assistant plans, "no ventures on hold" asked-not-confirmed 2026-09-12
+- [Personal/non-WKP](topics/user-personal.md) — Zac has a package delivery job, needs mileage logged (first surfaced 2026-09-13)

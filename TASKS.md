@@ -92,6 +92,11 @@ Zac's call 2026-09-12: get every venture that already has assets/work sitting ou
 | Build Investing repository from ready material | — | Not Started | Zac says he has everything for the trading/swing-scanner tool already (built in a Cowork/web session per his 2026-09-12 note) — just needs it moved into `D:\WKP\Investing\` and actually built. Investing is currently DORMANT (capture-only) but Zac asked directly, which the DORMANT rule allows acting on. |
 | Inventory + build remaining Cowork/web-session repos | — | Not Started | Zac: "there's a few others we've done over in the web base/Cowork one" with everything downloaded, just needing the actual repo built. Needs Zac to list which ones (not captured yet — ask him directly next check-in). |
 
+## Shared Infrastructure (not a venture — cross-venture tooling)
+| Task | Deadline | Status | Notes |
+|---|---|---|---|
+| Build nfl-data skill (nflverse) | — | Done | 2026-09-12. Shared data layer at `.claude\skills\nfl-data\` + cache `D:\WKP\data\nfl\`. Serves fantasy football (EPA pick'em tiebreaker, IDP matchup data for lineup optimizer) and an undecided sports-content venture (play-level angles) — data layer only, no scripts/calendar/naming for that venture per spec. Discovery-first design: filenames pulled live from `api.github.com/repos/nflverse/nflverse-data/releases`, never hardcoded. Confirmed 2026-09-12: all 6 target releases exist; `stats_team`/`stats_player`/`pfr_advstats` split into week/reg/regpost per-season files; `schedules`/`players` are single rolling multi-season files, not per-season; `player_stats` (no split) is a separate, deprecated-2025-08-01 release — never use it, use `stats_player`. `stats_team` confirmed carries `passing_epa`/`rushing_epa`/`receiving_epa`; `schedules` confirmed carries full betting lines (`spread_line`, `total_line`, moneylines). Required installing `pyarrow` on this machine to read parquet (now installed). Flag for the fantasy-football-data MFL/Sleeper ID bridge: nflverse's `players` release has `espn_id`/`gsis_id` (overlaps Sleeper) but no `mfl_id` — doesn't fully solve the bridge, only a secondary cross-check. |
+
 ## WKP Automation / Jarvis Build
 | Task | Deadline | Status | Notes |
 |---|---|---|---|
@@ -196,6 +201,7 @@ Deadline
 Status
 Notes
 Picture gather — Good Boy (2025) & The Whisper Man (2026 Netflix) | — | Done | 18 images each (poster + 17 stills) pulled from IMDb, saved to `L:\Winter Wolfs Den review show\Raw Footage\Mass recording 30 Aug\<movie>\`, resized to 1920x1080 PNGs in each `USE\` folder. Contain/fit rule only (no cropping, ever) — this superseded the old edge-to-edge cover-crop default from the EP1 pass, see `memory\topics\visual-media.md`. Built new skill `wwd-review-photo-pull` (wired into wwd-director) so future "record video on this movie X" requests run this whole pipeline unprompted — finds/creates the Raw Footage folder, pulls the IMDb set, filters duplicate poster art and off-topic cross-title contamination, resizes. Note: The Whisper Man's gallery was thin (new release, mostly character-poster key art) — flagged, not padded.
+Picture gather — Heat (1995) | — | Done | 2026-09-13, corrected 2026-09-14. Final set: 1 poster + 32 real stills (33 total) in `L:\Winter Wolfs Den review show\Raw Footage\Heat\USE\`. First pass (25 images) was TMDb backdrops/posters only — strong on De Niro/Pacino and action beats but had zero coverage of Natalie Portman (Lauren), Ashley Judd (Charlene Shiherlis), Diane Venora (Justine), or Dennis Haysbert (Breedan) — all major subplot characters. Zac caught it: "these are all people major to the story... pull ones that are not just cool but hit major beats." Added 8 more via IMDb's per-character filtered still-frame galleries (2 each for the 4 missing characters, incl. Lauren's suicide-attempt still and the Hanna/bus-stop scene). Skill `wwd-review-photo-pull` updated with new **Step 3.5** so future pulls check the full cast list and cover every character carrying a real subplot, not just the leads — see `memory\topics\visual-media.md`. **Step 8 (beat-matched pass) still PENDING** — no script/outline/beat sheet exists yet for a Heat episode.
 EP 106 transcript | — | Done | Transcript generated 2026-08-09, saved to `L:\Winter Wolfs Den review show\Frost-Cast\EP 106\Spider-man DOMINATES the Box Office  _ FrostCast Episode 106_transcript.txt` (1,406 lines, full 83-min episode). Speakers came back as Guest/Unknown [1]/[2]/[3] — voiceprints still aren't enrolled, so needs hand-mapping to Matt/Zac/Gabby before downstream use. Fixed a real bug along the way: pyannote's speaker-embedding step was crashing on a broken torchcodec install; `transcribe.py` now reads WAV clips directly instead of routing through torchcodec, permanent fix. Chapter timecodes pulled from the transcript and given to Zac in-session (not saved to a file yet).
 EP 110 transcript, audio cut, and Matt email | — | Done | 2026-09-02. Transcript (1,650 lines, 92:58 runtime) saved to `L:\Winter Wolfs Den review show\Frost-Cast\EP 110\Gunn killed Lanterns _ FrostCast Episode 110_transcript.txt` — speakers still Guest/Unknown, voiceprints not enrolled. Audio cut saved to `L:\Winter Wolfs Den review show\Audio\podcast Frostcast audio files\FrostCast ep 110 2026-09-02.md` (~74:28 finished runtime, above the 55-70 min target — flagged in the doc rather than force-cutting more of the actual commentary). Full transcript emailed to Matt (mattkhourie32@gmail.com) from kingzpotus@gmail.com. **Pipeline change, Zac's call 2026-09-02:** audio cut + emailing Matt the transcript are now permanent steps 5 and 6 of the FrostCast Transcription Workflow in CLAUDE.md — run automatically every episode going forward, not just this one.
 Week of 8/10 weekly build package | — | Done | `wwd-weekly-planner` run 2026-08-10. Priority call: Last House Tue (decay window, edited), Point Break Thu (evergreen debut, edit still open — due night of 8/11). Full package (social copy, 2 polls, short-form bank, growth notes, cold open check-in) saved to `L:\Winter Wolfs Den review show\2026-08-10 Week of Aug 10\04 Upload Packages\WWD_Weekly_Package_2026-08-10.docx`. Higgsfield credits were at 0, so this week's 7 images shipped as Firefly prompts instead of generated art — see doc Section 5.
@@ -463,6 +469,16 @@ Variant spec written
 Not Started
 Phase 4 — Education variant (ClassPaw)
 
+
+Personal / Admin (non-WKP)
+Task
+Deadline
+Status
+Notes
+Log Saturday 9/12 package-delivery mileage (~149 mi)
+—
+Not Started
+Zac's package delivery job — quick reminder captured 2026-09-13, log the actual odometer/trip number wherever mileage gets tracked for this job.
 
 How to use this file
 New task in any venture → add a row here, same turn it comes up.

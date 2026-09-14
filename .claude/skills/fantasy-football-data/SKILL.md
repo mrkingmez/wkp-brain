@@ -87,3 +87,125 @@ every season.
 Directly into the card file itself — the blank cells adjacent to each
 label are the input fields (yellow-box legend on the card explains
 this). Never build a parallel answer sheet; the card *is* the record.
+
+## Sleeper (no key, read-only, free for non-commercial use)
+
+Base: `https://api.sleeper.app`
+
+**Current week and season state** — call this first, every session.
+Everything else keys off it.
+```
+GET https://api.sleeper.app/v1/state/nfl
+```
+Returns season, week, season_type, display_week.
+
+**Player metadata map** — large payload, roughly five megabytes.
+```
+GET https://api.sleeper.app/v1/players/nfl
+```
+Cache as `sleeper-players-cache.json`. Re-pull weekly at most, same
+rule already in place for the MFL players cache. Never pull this
+mid-session for a single lookup.
+
+**Weekly projections** — undocumented endpoint, works, no auth.
+```
+GET https://api.sleeper.app/projections/nfl/{season}/{week}
+    ?season_type=regular
+    &position[]=QB&position[]=RB&position[]=WR&position[]=TE
+    &position[]=K&position[]=DEF
+    &position[]=DL&position[]=LB&position[]=DB
+```
+Returns pts_ppr, pts_half_ppr, pts_std plus component stats
+(pass_yd, rush_yd, rec, and so on). Use **pts_ppr** — the IRFL is
+full PPR.
+
+The last three position parameters are the IDP block. The league runs
+eight defensive starters, so they are not optional here.
+
+**Weekly actuals** — for recap mode and for checking projection error.
+```
+GET https://api.sleeper.app/v1/stats/nfl/regular/{season}/{week}
+```
+
+**Season stats for one player**
+```
+GET https://api.sleeper.app/stats/nfl/player/{player_id}
+    ?season_type=regular&season={season}
+```
+
+### ESPN public site API (no key, no auth)
+
+Base: `https://site.api.espn.com/apis/site/v2/sports/football`
+
+**Pro scoreboard** — current week if no parameters given.
+```
+GET .../nfl/scoreboard
+GET .../nfl/scoreboard?seasontype=2&week={n}&dates={year}
+```
+Returns matchups, kickoff times, live and final scores, and status.
+
+**College scoreboard** — `groups=80` limits to FBS, which is what the
+pick'em card pulls from.
+```
+GET .../college-football/scoreboard?groups=80&limit=200
+```
+
+**Teams**
+```
+GET .../nfl/teams
+```
+
+## Player ID mismatch — the real work
+
+MFL player IDs and Sleeper player IDs are **different numbering
+systems**. A roster pull gives MFL IDs. A projection pull gives Sleeper
+IDs. Nothing joins them out of the box.
+
+Two paths, try in this order:
+
+1. **Cross-reference IDs.** MFL's players export accepts `&DETAILS=1`,
+   which returns third-party IDs on each player record. Sleeper's
+   player objects carry `espn_id`, `gsis_id`, `rotowire_id`,
+   `sportradar_id`, and others. If both sides expose the same
+   third-party ID, join on that. Build the map once, save it as
+   `id-bridge.json`, and reuse.
+
+2. **Name plus position plus team fallback.** Normalize case, strip
+   punctuation and suffixes (Jr, III, periods). Use only for players
+   the ID bridge misses.
+
+**Do not silently drop players that fail to match.** Write unmatched
+players to a `unmatched.log` and surface the count to Zac. A lineup
+call built on a roster where four IDP players quietly vanished is
+worse than no lineup call.
+
+### Verify before trusting, do not assume
+
+These are undocumented or lightly documented endpoints. Confirm each
+one returns real data before writing logic on top of it:
+
+- Sleeper **IDP projections**. Sleeper accepts DL, LB, and DB
+  positions, but IDP projection quality is thinner than offensive
+  skill positions. Pull one week, eyeball it against a known
+  high-tackle linebacker, and report whether the numbers look real.
+  If IDP projections come back empty or obviously junk, say so — the
+  optimizer needs to fall back to recent-usage ranking for those
+  eight defensive slots rather than pretending it has projections.
+- Sleeper **depth chart** endpoint. Referenced in third-party wrappers,
+  not in official docs. Verify the URL shape before using it.
+- ESPN **injury** data. Some team endpoints carry injury fields, some
+  do not. Confirm before wiring it to anything.
+
+### Rate limits
+
+Neither source publishes limits. Both are free and unofficial and can
+change or break without notice. Cache aggressively, pull once per
+session, and fail loudly rather than retrying in a loop.
+
+### Scope note
+
+Do **not** install any of the "ESPN Fantasy Football MCP" servers on
+GitHub. Every one of them targets ESPN-hosted leagues and wants
+`espn_s2` and `SWID` cookies plus an ESPN league ID. The IRFL is on
+MyFantasyLeague. They provide nothing here. Only ESPN's public *sports*
+API is in scope, and that is a different service with no auth.

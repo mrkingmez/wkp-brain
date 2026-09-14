@@ -6,7 +6,11 @@ description: >
   in a Raw Footage folder named for the movie (creating it if it doesn't
   exist), and resizes it into a sibling USE folder as 1920x1080 PNGs with
   alpha-transparent padding using the same contain/fit rule as
-  wwd-broll-prep. Trigger on "record video on this movie <title>", "picture
+  wwd-broll-prep. If a script, outline, or beat sheet already exists for
+  the episode, also runs a second pass pulling additional beat-matched
+  images tied to specific moments/jokes/FX discussion in that script
+  (including behind-the-scenes/production photos, not just movie stills) -
+  see Step 8. Trigger on "record video on this movie <title>", "picture
   gather for <title>", "get pictures for <title>", or when Zac names a movie
   and wants the picture set ready to go. Requires Claude Code (local
   filesystem + Chrome browser tools + Python/Pillow) - cannot run in plain
@@ -163,6 +167,87 @@ delivered (poster count, real-still count, cast-photo count) - flag it
 plainly if it came in under 18 or the mix leans more cast-heavy than
 intended.
 
+## Step 3.5 - Know the story, cover the major characters (added 2026-09-14)
+
+A picture set built by just grabbing whatever TMDb backdrops look coolest
+skews toward the two leads and the action beats, and misses characters who
+carry major subplots. On the Heat (1995) pull, the first 25-image set was
+strong on De Niro/Pacino and the heist/action sequences but had zero images
+of Natalie Portman (Lauren, the stepdaughter whose suicide attempt is a real
+plot beat), Ashley Judd (Charlene Shiherlis, whose ending rooftop signal to
+Chris is a major plot turn), Diane Venora (Justine, Hanna's disintegrating
+marriage), or Dennis Haysbert (Breedan, the ex-con cook forced into being
+the crew's driver for the final heist). Zac's correction: "these are all
+people major to the story... when you are pulling this pictures you need to
+understand the story of the film, and all the major players in it as well,
+and be sure to pull ones that are not just cool but hit major beats."
+
+**Before finalizing the set:** pull the film's full cast list (IMDb
+`/title/<id>/fullcredits/`) and identify which credited characters actually
+carry a subplot or a major beat, not just who has the most screen time or
+the flashiest action scene. For each one, get at least one real still.
+IMDb's per-character photo galleries are the reliable way to do this -
+from a name's full-cast link, follow through to the character page
+(`/title/<id>/characters/<nm id>/`), then its "Photos" link, which lands
+on `/title/<id>/mediaindex/?relatedNames=<nm id>&contentTypes=still_frame`
+- a still-frame gallery filtered to just that person. This works even when
+the general IMDb mediaindex won't paginate past its first 50 (which gates
+behind sign-in) - the per-name filtered URL is a separate, un-gated view.
+
+**How to apply:** this is not "add more pictures" for its own sake - it's
+matching the pull to the actual story. A generic pretty-picture pull is not
+a substitute for understanding who matters in the film and why. Treat this
+the same as Step 8's beat-matching: know the story first, then go find the
+images that tell it.
+
+## Step 8 - Second pass: beat-matched images (added 2026-09-13)
+
+The 18-image set from Steps 1-7 is the floor, not the ceiling. Reviewed
+`Raw Footage\T-2\USE\` (Terminator 2 review, already produced) and found
+27 images, not 18 - the extra 9 were hand-picked and hand-named to match
+specific moments in the actual commentary: `a new man.png` (the T-1000's
+full-CGI walk-through-fire reveal), `frozen.png` (the liquid-nitrogen
+shatter climax), `pratical effects.png` (a **behind-the-scenes production
+photo** of Robert Patrick rigged with practical squib gear on set - not a
+movie still at all, pulled specifically to illustrate a practical-vs-CGI
+talking point), plus five more each tied to a specific line, joke, or
+plot beat. That set is what actually carried the episode - the generic
+18 alone would not have.
+
+**Precondition: a script, outline, or beat sheet has to already exist**
+for this pass to mean anything - it is matching images to specific
+things the hosts say, not generic content. Check the movie's Raw Footage
+folder and the script-room/wwd-director pipeline for one before starting.
+
+- **If a script/outline exists:** read it. Pull out every moment that's
+  actually a talking point - a named scene, a specific joke or line, an
+  FX or production discussion, a plot beat the hosts call out by name.
+  For each one, find an image that matches THAT specific moment, not a
+  generic still of the same general scene. Behind-the-scenes and
+  production photos are in scope here (unlike Steps 1-7's stills-only
+  rule) whenever the discussion point is actually about the making of
+  the movie - practical effects, stunt work, a specific visual gag - the
+  T-2 BTS photo is the model case, not an exception to avoid.
+- **If no script/outline exists yet:** this pass can't run yet. Say so
+  plainly in the report ("beat-matched pass pending - no script yet") -
+  do not skip it silently, and do not fabricate beats from the movie's
+  general reputation instead of the actual script.
+
+**Naming:** short, specific, tied to the moment - not `still-19.jpg`.
+Match the T-2 pattern: `a new man.png`, `frozen.png`, `practical
+effects.png`. A name that only makes sense to whoever picked it (T-2 had
+one - `henery.png` - that didn't match any character's real name) is
+fine; it just needs to mean something to the person cutting the episode,
+not to a stranger.
+
+**Where they go:** same `USE` folder as the numbered 18, same resize
+pipeline (Step 6), additive - never replace a numbered still with a
+beat-matched one, they serve different purposes.
+
+**Report:** state how many beat-matched images were found and added, and
+name any talking point from the script that a real image couldn't be
+found for - flag it, don't quietly drop it.
+
 ## Do not
 
 - Ask which folder to use - find or create it per Step 1, always flat under
@@ -178,3 +263,13 @@ intended.
 - Pad a thin result with excluded categories to force the count to 18.
 - Crop anything during resize, or pad with black instead of alpha - see
   Step 6.
+- Treat Step 8 as optional when a script already exists - it's a
+  standard part of the pull, not a nice-to-have. If no script exists
+  yet, say the pass is pending; don't silently skip it and don't
+  fabricate beats from general reputation instead of the real script.
+- Limit Step 8 to movie stills only - a behind-the-scenes/production
+  photo is the right answer whenever the discussion point is actually
+  about the making of the movie.
+- Build the set from only the top-billed leads and the coolest action
+  shots - check the full cast per Step 3.5 and cover every character who
+  carries a real subplot, not just who has the most screen time.

@@ -1,0 +1,13 @@
+logged_at,season,week,game_id,away_team,home_team,source,pick_su,pick_ats,line_used,line_source,confidence,on_card,graded_at,away_score,home_score,closing_line,result_su,result_ats
+2026-09-13T18:58:45.451028+00:00,2026,1,401872928,MIA,LV,model,,MIA,4.0,model_only,,True,,,,,,
+2026-09-13T18:58:45.451028+00:00,2026,1,401872927,GB,MIN,model,,GB,2.0,model_only,,True,,,,,,
+2026-09-13T18:58:45.451028+00:00,2026,1,401872929,WSH,PHI,model,,WSH,5.0,model_only,,True,,,,,,
+2026-09-13T18:58:45.451028+00:00,2026,1,401872926,ARI,LAC,model,,ARI,10.0,model_only,,True,,,,,,
+2026-09-13T18:58:45.451028+00:00,2026,1,401872930,DAL,NYG,model,,DAL,-2.0,model_only,,True,,,,,,
+2026-09-13T18:58:45.451028+00:00,2026,1,401872931,DEN,KC,model,,DEN,3.0,model_only,,True,,,,,,
+2026-09-13T18:58:58.630826+00:00,2026,1,401872928,MIA,LV,assisted_card,,MIA,4.0,monday_card,,True,,,,,,
+2026-09-13T18:58:58.630826+00:00,2026,1,401872927,GB,MIN,assisted_card,,GB,2.0,monday_card,,True,,,,,,
+2026-09-13T18:58:58.630826+00:00,2026,1,401872929,WSH,PHI,assisted_card,,WSH,5.0,monday_card,,True,,,,,,
+2026-09-13T18:58:58.630826+00:00,2026,1,401872926,ARI,LAC,assisted_card,,ARI,10.0,monday_card,,True,,,,,,
+2026-09-13T18:58:58.630826+00:00,2026,1,401872930,DAL,NYG,assisted_card,,DAL,-2.0,monday_card,,True,,,,,,
+2026-09-13T18:58:58.630826+00:00,2026,1,401872931,DEN,KC,assisted_card,,DEN,3.0,monday_card,,True,,,,,,

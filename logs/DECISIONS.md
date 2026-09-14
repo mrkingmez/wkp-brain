@@ -14,6 +14,58 @@ Agents append. Zac clears. Nothing else writes.
 
 ---
 
+## [FF-2026-09-12-01] 2026-09-12 | Fantasy Football | Pick'em card marking scheme unconfirmed — Week 1 card reads as fully blank
+
+**Blocked:** Built the Sunday Dashboard's pick'em panel against
+`Fantasy-Football\cards\CODENAME_Week1 Entry.xls` and found every one of
+the 20 ATS games, the Eliminator Challenge pick, and the Monday-night
+tiebreaker score cell empty — no team name retyped, no "X", no cell
+value of any kind in the FAVORED/UNDERDOG/EC columns. Checked cell
+background fill too (via `xlrd formatting_info=True`) in case picks are
+marked by highlight rather than text — the yellow EC-column fill and
+the other template colors are static/decorative across every row
+whether or not that row has a pick, so fill color isn't the signal
+either. Two different explanations fit what's on disk, and guessing
+wrong means the dashboard could silently show "no picks" as if that
+were a real, checked state:
+
+**Options:**
+A. The card is genuinely not filled in yet for Week 1 — Zac hasn't made
+   his picks. Dashboard should show "no picks recorded for this week"
+   plainly, per the doc's own rule ("if the file is missing, say so —
+   do not fall back and pretend"), same handling extended to "file
+   present but empty."
+B. Picks get marked some other way this skill hasn't seen yet — a
+   different cell, a comment, a second sheet, or a convention only
+   visible once a filled-in prior week's card exists to compare against.
+   No prior week's card exists on disk to check this against (Week 1 is
+   the first week of the season).
+
+**Recommendation:** A, provisionally — nothing in the file contradicts
+"not filled in yet," and CLAUDE.md/SKILL.md text ("blank cells adjacent
+to each label are the input fields") reads consistent with typed text
+that simply isn't there yet. But this is a guess dressed as a
+recommendation, not a confirmed mechanism, so Phase 1 ships built to
+read the pick columns as specified and displays "no picks recorded"
+rather than inventing coverage numbers from an empty sheet. Confirm the
+real marking convention once Zac fills in a card (or ask him directly)
+so the parser can be checked against a real filled example instead of
+guessed at.
+
+**Status:** DECIDED: neither A nor B as guessed — Zac confirmed directly
+2026-09-13: picks are marked by **filled cell background color** on
+the favored/underdog cell (option B, a convention this skill hadn't
+seen), and the real file being checked was the wrong one — the actual
+submitted card lives at `D:\Documents\Pickups 2026\Sanders_Week{N}
+Entry.xls`, not `Fantasy-Football\cards\` (blank templates only).
+Verified against the real Week 1 card: 20/20 picks parsed cleanly (19
+games + the Monday-night tiebreaker), zero rows with zero or multiple
+filled cells. `pickem_card.py`, the dashboard, and the accuracy
+tracker's logger all updated to read fill color from the real path.
+Closed.
+
+---
+
 ## [WKD-2026-09-01-01] 2026-09-01 | WKD | 3 live listings appear to violate the current-generation-airframe rule
 
 **Blocked:** Root CLAUDE.md's hard rule states "Never use military insignia,

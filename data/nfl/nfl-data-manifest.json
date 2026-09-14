@@ -1,0 +1,396 @@
+{
+  "discovered_at": "2026-09-13T01:22:38.289125+00:00",
+  "season_filter": "2026",
+  "releases": {
+    "pbp": {
+      "found": true,
+      "published_at": "2022-01-28T02:12:09Z",
+      "asset_count_total": 164,
+      "assets": [
+        {
+          "name": "play_by_play_2026.rds",
+          "size": 98458,
+          "updated_at": "2026-09-12T12:50:50Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.rds"
+        },
+        {
+          "name": "play_by_play_2026.csv",
+          "size": 653647,
+          "updated_at": "2026-09-12T12:50:50Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv"
+        },
+        {
+          "name": "play_by_play_2026.csv.gz",
+          "size": 127765,
+          "updated_at": "2026-09-12T12:50:50Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv.gz"
+        },
+        {
+          "name": "play_by_play_2026.parquet",
+          "size": 294741,
+          "updated_at": "2026-09-12T12:50:50Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet"
+        }
+      ]
+    },
+    "stats_team": {
+      "found": true,
+      "published_at": "2025-07-31T18:48:46Z",
+      "asset_count_total": 554,
+      "assets": [
+        {
+          "name": "stats_team_week_2026.parquet",
+          "size": 52692,
+          "updated_at": "2026-09-12T12:52:20Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.parquet"
+        },
+        {
+          "name": "stats_team_week_2026.rds",
+          "size": 1816,
+          "updated_at": "2026-09-12T12:52:20Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.rds"
+        },
+        {
+          "name": "stats_team_week_2026.csv.gz",
+          "size": 1242,
+          "updated_at": "2026-09-12T12:52:20Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv.gz"
+        },
+        {
+          "name": "stats_team_week_2026.csv",
+          "size": 3596,
+          "updated_at": "2026-09-12T12:52:20Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv"
+        },
+        {
+          "name": "stats_team_reg_2026.parquet",
+          "size": 51935,
+          "updated_at": "2026-09-12T12:52:27Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.parquet"
+        },
+        {
+          "name": "stats_team_reg_2026.csv",
+          "size": 3505,
+          "updated_at": "2026-09-12T12:52:27Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.csv"
+        },
+        {
+          "name": "stats_team_reg_2026.rds",
+          "size": 1770,
+          "updated_at": "2026-09-12T12:52:27Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.rds"
+        },
+        {
+          "name": "stats_team_reg_2026.csv.gz",
+          "size": 1205,
+          "updated_at": "2026-09-12T12:52:27Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.csv.gz"
+        },
+        {
+          "name": "stats_team_regpost_2026.csv",
+          "size": 3505,
+          "updated_at": "2026-09-12T12:52:29Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.csv"
+        },
+        {
+          "name": "stats_team_regpost_2026.csv.gz",
+          "size": 1205,
+          "updated_at": "2026-09-12T12:52:29Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.csv.gz"
+        },
+        {
+          "name": "stats_team_regpost_2026.parquet",
+          "size": 51965,
+          "updated_at": "2026-09-12T12:52:29Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.parquet"
+        },
+        {
+          "name": "stats_team_regpost_2026.rds",
+          "size": 1776,
+          "updated_at": "2026-09-12T12:52:29Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.rds"
+        }
+      ]
+    },
+    "stats_player": {
+      "found": true,
+      "published_at": "2025-07-31T18:47:44Z",
+      "asset_count_total": 554,
+      "assets": [
+        {
+          "name": "stats_player_week_2026.csv.gz",
+          "size": 9651,
+          "updated_at": "2026-09-12T12:52:18Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz"
+        },
+        {
+          "name": "stats_player_week_2026.parquet",
+          "size": 71654,
+          "updated_at": "2026-09-12T12:52:18Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.parquet"
+        },
+        {
+          "name": "stats_player_week_2026.rds",
+          "size": 11405,
+          "updated_at": "2026-09-12T12:52:18Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.rds"
+        },
+        {
+          "name": "stats_player_week_2026.csv",
+          "size": 62178,
+          "updated_at": "2026-09-12T12:52:18Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv"
+        },
+        {
+          "name": "stats_player_reg_2026.csv.gz",
+          "size": 9460,
+          "updated_at": "2026-09-12T12:52:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.csv.gz"
+        },
+        {
+          "name": "stats_player_reg_2026.csv",
+          "size": 59638,
+          "updated_at": "2026-09-12T12:52:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.csv"
+        },
+        {
+          "name": "stats_player_reg_2026.parquet",
+          "size": 70876,
+          "updated_at": "2026-09-12T12:52:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.parquet"
+        },
+        {
+          "name": "stats_player_reg_2026.rds",
+          "size": 11211,
+          "updated_at": "2026-09-12T12:52:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.rds"
+        },
+        {
+          "name": "stats_player_regpost_2026.csv",
+          "size": 59638,
+          "updated_at": "2026-09-12T12:52:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.csv"
+        },
+        {
+          "name": "stats_player_regpost_2026.parquet",
+          "size": 70898,
+          "updated_at": "2026-09-12T12:52:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.parquet"
+        },
+        {
+          "name": "stats_player_regpost_2026.rds",
+          "size": 11218,
+          "updated_at": "2026-09-12T12:52:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.rds"
+        },
+        {
+          "name": "stats_player_regpost_2026.csv.gz",
+          "size": 9460,
+          "updated_at": "2026-09-12T12:52:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.csv.gz"
+        }
+      ]
+    },
+    "schedules": {
+      "found": true,
+      "published_at": "2025-10-01T11:19:34Z",
+      "asset_count_total": 7,
+      "assets": [
+        {
+          "name": "games.qs",
+          "size": 274452,
+          "updated_at": "2026-02-09T11:46:45Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.qs"
+        },
+        {
+          "name": "games.csv",
+          "size": 2178383,
+          "updated_at": "2026-09-13T00:36:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+        },
+        {
+          "name": "games.csv.gz",
+          "size": 512089,
+          "updated_at": "2026-09-13T00:36:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv.gz"
+        },
+        {
+          "name": "games.parquet",
+          "size": 519170,
+          "updated_at": "2026-09-13T00:36:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.parquet"
+        },
+        {
+          "name": "timestamp.txt",
+          "size": 24,
+          "updated_at": "2026-09-13T00:36:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/timestamp.txt"
+        },
+        {
+          "name": "games.rds",
+          "size": 426848,
+          "updated_at": "2026-09-13T00:36:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.rds"
+        },
+        {
+          "name": "timestamp.json",
+          "size": 43,
+          "updated_at": "2026-09-13T00:36:20Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/timestamp.json"
+        }
+      ]
+    },
+    "players": {
+      "found": true,
+      "published_at": "2022-06-19T05:36:22Z",
+      "asset_count_total": 7,
+      "assets": [
+        {
+          "name": "players.qs",
+          "size": 1714102,
+          "updated_at": "2026-03-19T08:37:43Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.qs"
+        },
+        {
+          "name": "timestamp.txt",
+          "size": 24,
+          "updated_at": "2026-09-12T11:52:48Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/timestamp.txt"
+        },
+        {
+          "name": "players.rds",
+          "size": 2306197,
+          "updated_at": "2026-09-12T11:52:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.rds"
+        },
+        {
+          "name": "players.csv",
+          "size": 7287370,
+          "updated_at": "2026-09-12T11:52:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv"
+        },
+        {
+          "name": "players.csv.gz",
+          "size": 2495893,
+          "updated_at": "2026-09-12T11:52:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv.gz"
+        },
+        {
+          "name": "players.parquet",
+          "size": 3385557,
+          "updated_at": "2026-09-12T11:52:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.parquet"
+        },
+        {
+          "name": "timestamp.json",
+          "size": 43,
+          "updated_at": "2026-09-12T11:52:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/timestamp.json"
+        }
+      ]
+    },
+    "pfr_advstats": {
+      "found": true,
+      "published_at": "2022-01-28T02:14:24Z",
+      "asset_count_total": 206,
+      "assets": [
+        {
+          "name": "advstats_week_pass_2026.rds",
+          "size": 734,
+          "updated_at": "2026-09-12T20:16:21Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.rds"
+        },
+        {
+          "name": "advstats_week_pass_2026.csv.gz",
+          "size": 322,
+          "updated_at": "2026-09-12T20:16:21Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.csv.gz"
+        },
+        {
+          "name": "advstats_week_pass_2026.csv",
+          "size": 630,
+          "updated_at": "2026-09-12T20:16:21Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.csv"
+        },
+        {
+          "name": "advstats_week_pass_2026.parquet",
+          "size": 10590,
+          "updated_at": "2026-09-12T20:16:21Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.parquet"
+        },
+        {
+          "name": "advstats_week_rush_2026.csv",
+          "size": 870,
+          "updated_at": "2026-09-12T20:16:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.csv"
+        },
+        {
+          "name": "advstats_week_rush_2026.parquet",
+          "size": 8250,
+          "updated_at": "2026-09-12T20:16:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.parquet"
+        },
+        {
+          "name": "advstats_week_rush_2026.rds",
+          "size": 771,
+          "updated_at": "2026-09-12T20:16:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.rds"
+        },
+        {
+          "name": "advstats_week_rush_2026.csv.gz",
+          "size": 392,
+          "updated_at": "2026-09-12T20:16:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.csv.gz"
+        },
+        {
+          "name": "advstats_week_rec_2026.parquet",
+          "size": 8372,
+          "updated_at": "2026-09-12T20:16:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.parquet"
+        },
+        {
+          "name": "advstats_week_rec_2026.csv.gz",
+          "size": 514,
+          "updated_at": "2026-09-12T20:16:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.csv.gz"
+        },
+        {
+          "name": "advstats_week_rec_2026.csv",
+          "size": 1506,
+          "updated_at": "2026-09-12T20:16:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.csv"
+        },
+        {
+          "name": "advstats_week_rec_2026.rds",
+          "size": 907,
+          "updated_at": "2026-09-12T20:16:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.rds"
+        },
+        {
+          "name": "advstats_week_def_2026.parquet",
+          "size": 14629,
+          "updated_at": "2026-09-12T20:16:26Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.parquet"
+        },
+        {
+          "name": "advstats_week_def_2026.csv",
+          "size": 3164,
+          "updated_at": "2026-09-12T20:16:26Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.csv"
+        },
+        {
+          "name": "advstats_week_def_2026.csv.gz",
+          "size": 1081,
+          "updated_at": "2026-09-12T20:16:26Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.csv.gz"
+        },
+        {
+          "name": "advstats_week_def_2026.rds",
+          "size": 1700,
+          "updated_at": "2026-09-12T20:16:27Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.rds"
+        }
+      ]
+    }
+  }
+}
