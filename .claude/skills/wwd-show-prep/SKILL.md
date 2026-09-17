@@ -7,10 +7,26 @@ description: Turns Matt's photographed topic list into a per-topic prep
 
 # FrostCast Show Prep
 
-Input: an image at D:\WKP\WWD\prep\ containing Matt's handwritten or
-typed topic list. Read the image directly.
+Input: an image at `L:\Winter Wolfs Den review show\Frost-Cast\FrostCast
+Show docs\Pictures\` containing Matt's handwritten or typed topic list
+from the Tuesday planning meeting. Read the image directly.
 
-Output: one prep sheet section per topic. Nothing else.
+**Naming — LOCKED 2026-09-15.** File is named `Frostcast EP <n>.<ext>`,
+one per week, `<n>` incrementing by episode number — starts at EP 112
+(2026-09-15). Always use the current week's file; do not fall back to
+an older one in the same folder. Overrides this skill's old default
+input path (`D:\WKP\WWD\prep\`), which is no longer used.
+
+Output: one prep sheet section per topic, in the RUN SHEET format below.
+Nothing else.
+
+**Standard locked 2026-09-16, repeated correction after the format
+drifted thinner on 2026-09-15.** Every show prep needs BOTH the full
+read-up material AND a quick-glance bullet list per topic — not one or
+the other. Zac's own words: "I want all the information so I can read
+up on it and then some bullet points to get my memory going." The full
+sections are for reading ahead of time; the bullets are for glancing at
+live without re-reading paragraphs.
 
 ## Per topic, in this order
 
@@ -24,6 +40,11 @@ people involved.
 **Colour** - two or three throwaway details usable live. Release-date
 trivia, casting near-misses, franchise callbacks, what someone said
 about it years ago.
+**Quick hits** - 3 to 5 short bullets, each one fact or one line,
+pulled from the sections above. Not a repeat of full sentences -
+compressed to the minimum needed to jog memory live (a name, a number,
+a date, a one-line hook). This section goes last, right before the
+next topic starts.
 
 ## Rules
 

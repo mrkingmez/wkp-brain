@@ -116,6 +116,41 @@ pattern this fix relies on. `transcribe.py` now guards this with a hasattr
 check and prints a warning rather than failing silently if the attributes
 disappear in a future pyannote release.
 
+## Facebook Messenger CAN deliver transcript files — via the browser UI, not the API [2026-09-16, corrected same day]
+First pass ruled this out: the Composio Facebook API connection
+(`FACEBOOK_SEND_MEDIA_MESSAGE`) only accepts a public `media_url`, Drive's
+`share_file` tool can only grant access to a specific email (no "anyone with
+the link"), and pasting the transcript as chat text isn't viable (Messenger
+caps ~2,000 characters/message, EP111's transcript is ~157,000 characters).
+
+That API path is still a dead end, but Zac pushed back — correctly — that
+browser automation was the obvious answer and should have been tried first,
+not last. Using `claude-in-chrome` to drive Zac's actual logged-in Messenger
+session (facebook.com/messages), the file input Messenger's own UI exposes
+takes a real local file upload directly, same as a person clicking "attach
+file" — no public URL needed at all. Confirmed working 2026-09-16: uploaded
+EP111's transcript (154 KB, from the L: drive) via `file_upload` into Matt
+Khourie's personal Messenger thread and sent it — delivered, confirmed in the
+thread as "Sent."
+
+**How to apply:** for delivering an actual file to a specific person over any
+web platform (Messenger, or similar), check whether browser automation can
+just use the site's native upload UI before assuming an API-only path (public
+URL, specific-recipient share, etc.) is the only option — the UI upload
+sidesteps API attachment limitations entirely.
+
+**Locked 2026-09-16 (same session, after the EP111 test landed): Messenger
+replaces email as the transcript delivery step.** Zac's call — the whole
+reason he was testing this was to fix a real problem with the email step, so
+once Messenger delivery was confirmed working he had me retire email outright
+rather than run both. Root CLAUDE.md's FrostCast Transcription Workflow step 6
+now describes the browser-automation send (navigate to
+facebook.com/messages → find the attach-file input → `file_upload` the
+transcript path → send → screenshot to confirm "Sent") instead of the old
+Gmail send. Requires Zac's Chrome + the claude-in-chrome extension to be
+available and logged into Facebook when this step runs — flag to Zac rather
+than skipping silently if it isn't.
+
 ## Whisper's own transcribe batch_size was still hardcoded — separate OOM [2026-09-09]
 The diarization batch-size fix above only covers the diarization stage.
 `model.transcribe(audio, batch_size=16)` at the Whisper step was still

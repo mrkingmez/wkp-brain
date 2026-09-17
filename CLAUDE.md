@@ -96,15 +96,35 @@ details:
 4. Return chapter timecodes when it finishes
 5. Run the `wwd-audio-cut` skill against the transcript and save the cut
    document to `L:\Winter Wolfs Den review show\Audio\podcast Frostcast audio files\`
-6. Email the full transcript to Matt — locked in 2 Sep 26. From
-   kingzpotus@gmail.com (Zac's account, already authenticated) to
-   mattkhourie32@gmail.com. Subject line names the episode number and title.
-   Send the whole transcript, not a summary or excerpt.
+6. Send the full transcript file to Matt over Facebook Messenger — changed
+   2026-09-16 from email (email is retired for this step, per Zac's call
+   after testing the Messenger route). Use `claude-in-chrome` browser
+   automation against Zac's already-logged-in Facebook session, not the
+   Composio Facebook API connection (the API's `FACEBOOK_SEND_MEDIA_MESSAGE`
+   only accepts a public URL and can't take a local file — dead end, don't
+   retry it). Steps:
+   a. Navigate to `https://www.facebook.com/messages` and open Matt Khourie's
+      personal thread (find it in the chat list, or search Messenger for his
+      name if it's not already pinned/recent).
+   b. Use `find` to locate the file-attach input in the compose toolbar
+      (matches "attach photo or file button").
+   c. Use `file_upload` with the transcript's full local path (the same
+      `.txt` saved in step 3) against that input's ref.
+   d. Click Send.
+   e. Screenshot the thread afterward and confirm the message shows
+      "Sent" with the correct filename before reporting done — don't
+      report success without that confirmation.
+   Send the whole transcript file as an attachment, not pasted as chat text
+   (Messenger caps messages around 2,000 characters — the full transcript is
+   far larger) and not a summary or excerpt.
 
 Do not ask which file or where to put the output. The episode number comes from
 the WWD calendar, so check there rather than asking. Steps 5 and 6 are standard
 for every episode now, run automatically as part of the same chain — do not
-wait for Zac to ask for the audio cut or the email each time.
+wait for Zac to ask for the audio cut or the Messenger send each time. If
+Chrome/the claude-in-chrome extension isn't available or Zac isn't logged into
+Facebook when this step runs, flag it back to Zac rather than silently
+skipping the transcript delivery.
 
 **Status:** EP106 transcript generated 2026-08-09 (see TASKS.md). Speakers
 came back as Guest/Unknown — voiceprints still aren't enrolled, so it needs

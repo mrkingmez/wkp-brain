@@ -22,12 +22,24 @@ Two competitions, one repo:
 2. **Pick'em pool** — long-running league with army buddies (Brad, Rice,
    others), 12+ years running. 20-game card: 4-6 college games plus all
    pro games, against the spread. Commissioner sets the line Monday and
-   it's frozen all week. Underdog wins ties. Monday-night total-points
-   is the tiebreaker. Card locks at Thursday-night kickoff — except
-   Week 1 2026, which is a Wednesday opener (Sept 9, 8:20pm ET), so that
-   week's deadline moves up a day. Historical 12-year hit rate is ~62%
-   against the spread, likely because the line is frozen Monday and
-   real money moves the number Tue-Thu.
+   it's frozen all week. Underdog wins ties. Card locks at Thursday-night
+   kickoff — except Week 1 2026, which is a Wednesday opener (Sept 9,
+   8:20pm ET), so that week's deadline moves up a day. Historical 12-year
+   hit rate is ~62% against the spread, likely because the line is
+   frozen Monday and real money moves the number Tue-Thu.
+
+   **The card is always 20 games, full stop — repeated correction
+   2026-09-16 after the Week 2 doc dropped this.** The Monday Night
+   Football game is game 20 of 20, not a separate category — it gets a
+   real ATS pick (or straight-up pick) formatted exactly like games 1
+   through 19, and that pick counts toward the score the same as any
+   other game. The Monday-night total-points guess submitted alongside
+   it is ONLY the tiebreaker mechanism (used to settle ties in total
+   correct picks) — it is never itself a scored pick and never a
+   substitute for an actual winner/spread pick on that game. Every
+   weekly pick doc (model card, `docx_picks.py` output, any prep
+   summary) must show 20 numbered PICK lines, never 19 plus a
+   "tiebreaker note."
 
 ## Hard deadlines
 - Lineup and pick'em card: locked at kickoff of the first game of the
@@ -76,14 +88,19 @@ cap room. Never recommend a cut without that number. Prefer dropping
 expiring (2026) and low-salary contracts; flag when a proposed cut
 carries a dead-cap hit large enough to matter against the $5000 cap.
 
-## Roster maximizer model (lineup decisions)
-Per player, per week: consensus projection, snap % trend (last 3 games),
-target share / touch share (last 3 games), opponent points-allowed to
-that position, game total + spread. Weight recency > name recognition.
-Full PPR inflates pass-catching backs and slot WRs relative to standard
+## Roster maximizer model (lineup decisions) — corrected 2026-09-15
+Never just pull a consensus projection number and rank by it — that is
+not the model, that is skipping the model. For every start/sit call,
+actually research and weigh, per player, per week: snap % trend (last
+3 games), target share / touch share (last 3 games), opponent
+points-allowed to that position, game total + spread, and any current
+injury/practice-report news. Weight recency > name recognition. Full
+PPR inflates pass-catching backs and slot WRs relative to standard
 scoring. IDP scoring here is volume-heavy (1pt/tackle, 3pt/sack), so
 high-tackle LBs often outscore big-play DBs — rank the combined S/CB
-pool by projected points, not by position label.
+pool by projected points, not by position label. Deliverable is a
+specific recommended starting lineup with the reasoning behind each
+close call, not a projections table.
 
 ## Card structure (updated after seeing the actual Week 1 card)
 Every weekly card has three parts on different resolution timelines:
@@ -106,13 +123,33 @@ naming used on disk, not `2026-wkN-card.xls`. Picks get entered directly
 into the card file's blank cells — the card is the record, there's no
 separate answer sheet.
 
-## Pick'em model (card decisions)
-Compare Zac's uploaded Monday card (the frozen baseline) against current
-lines pulled Wednesday/Thursday. Flag any game where the line moved 2+
-points — that's the edge, since the frozen number goes stale against a
-market that keeps updating on injuries and sharp money. Monday-night
-tiebreaker: use the Vegas over/under, shaded slightly under (posted
-primetime totals skew a touch high).
+## Pick'em model (card decisions) — corrected 2026-09-15
+**The blank card Zac drops in `cards\` each week is the trigger to
+produce picks, not something to wait on.** He is not filling it out
+himself before handing it over — a blank frozen-line card IS his normal
+weekly input. Do not report "no picks yet" and stop; that misreads the
+whole workflow.
+
+The actual weekly cycle, three separate cards:
+1. **Model card (this venture's job, due same day the blank card
+   appears, before Thursday kickoff).** Take the blank card, compare
+   the frozen line against current lines pulled Wednesday/Thursday
+   (flag any game moved 2+ points, that's the edge — the frozen number
+   goes stale against a market that keeps moving on injuries and sharp
+   money), and pick a winner for every game: against the spread AND
+   straight-up. Set the Monday-night tiebreaker off the Vegas
+   over/under, shaded slightly under (posted primetime totals skew a
+   touch high). Hand back a finished set of picks, not a diff report —
+   this is the model's submission for the week.
+2. **Zac's card** — he fills out his own picks separately, later,
+   from his own read (not from the model card). Not this venture's
+   job to produce.
+3. **Reality** — actual game results after Monday Night Football.
+
+After MNF, grade all three against each other (model vs Zac vs
+outcome) to build the season prediction model — that's what
+`tracker\predictions.csv` / `grader.py` are for. Never skip straight
+to grading without having produced the model card first.
 
 ## Escalation
 Flag to Zac, don't guess, on: any player tagged questionable/doubtful
