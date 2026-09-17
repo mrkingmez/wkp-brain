@@ -14,6 +14,66 @@ Agents append. Zac clears. Nothing else writes.
 
 ---
 
+## [KP-2026-09-17-01] 2026-09-17 | Kingdom Planners | Shop launch stalled 10 days on $29 setup fee, MAIN EFFORT venture blocked on first revenue
+
+**Blocked:** Kingdom Planners (MAIN EFFORT, seven products finished, zero
+listings) has been Blocked since 2026-09-07 on Etsy's one-time $29
+shop-setup fee, which Zac doesn't have on hand. Nightly rollup for
+2026-09-17 found no update to this task in TASKS.md since it was opened —
+10 days stalled on the single gating item between a finished product
+pipeline and the venture's first possible revenue.
+
+**Options:**
+A. Wait for the $29 to be available from normal cash flow, no other
+   action in the meantime.
+B. Keep the shop-launch step blocked but confirm the free, no-money-down
+   per-listing prep work (titles, 13 tags, descriptions, photos/mockups,
+   pricing for the 5 unpriced products) is actively moving — that task
+   is listed Not Started, same as the blocked shop-creation task, so the
+   parallel work doesn't appear to be happening either.
+C. Treat the $29 as a small near-term expense worth prioritizing given
+   it unlocks the MAIN EFFORT venture's first revenue, and flag it as
+   such rather than leaving it to resolve itself.
+
+**Recommendation:** B — nothing about the $29 gate can be worked around
+by an agent (spending money is Zac's call, per the Escalation rule), but
+the free prep work sitting equally untouched means MAIN EFFORT is fully
+idle right now, not just waiting on funds. Worth Zac confirming whether
+prep work is actually in progress or also stalled.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-09-17-01] 2026-09-17 | WWD | Higgsfield credits still at 0 — blocks cold open AND all weekly images, no cost analysis done yet
+
+**Blocked:** Cold open (Warden character designs) and all weekly WWD
+image generation have been blocked on Higgsfield credits at 0 (free
+plan) since at least 2026-08-10, still 0 as of the last confirmed check.
+Zac has twice punted the cold-open deadline (now ~2026-09-25, an 8-day
+runway from tonight). TASKS.md notes a "cost analysis" for topping up
+credits is still pending and has been pending the whole time this has
+been blocked — no analysis exists yet for Zac to act on.
+
+**Options:**
+A. Run the credits cost analysis now (what Higgsfield tier/spend covers
+   the actual weekly image volume this venture needs) so Zac has a
+   concrete number to say yes/no to, instead of an open-ended "credits
+   are empty."
+B. Leave it as-is and wait for Zac to raise it himself.
+C. Keep substituting the free workaround already used once (Firefly
+   prompts instead of generated art, as done for the 2026-08-10 weekly
+   package) as a standing stopgap while credits stay at 0.
+
+**Recommendation:** A — the ~9/25 target is only 8 days out and nothing
+in the task notes suggests the cost analysis is scheduled. Turning this
+into a specific spend number now gives Zac a fast decision instead of
+another silent slip.
+
+**Status:** OPEN
+
+---
+
 ## [FF-2026-09-12-01] 2026-09-12 | Fantasy Football | Pick'em card marking scheme unconfirmed — Week 1 card reads as fully blank
 
 **Blocked:** Built the Sunday Dashboard's pick'em panel against
