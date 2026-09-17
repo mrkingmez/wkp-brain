@@ -78,7 +78,7 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 - **"The episode is downloaded" trigger:** when Zac says this, locate the video in `L:\Winter Wolfs Den review show\Frost-Cast\EP <next episode number>\` (using the tracked episode count above), run wwd-video-transcriber's extract + transcribe steps automatically, then read the finished transcript and hand back chapter-break timecodes. There is no separate automated chapters tool yet — chapter breaks are identified by reading the transcript directly and judging topic shifts, not a deterministic script. If a dedicated wwd-frostcast-chapters skill shows up later, prefer it over manual reading.
 - This is a two-person show. Anything affecting format, schedule, or branding is a joint decision with Matt, not a solo call.
 - FrostCast is weekly and recurring. It does not stop for other projects.
-- Den Files episodes require real historical research, not summary. Sourcing matters the same way it does for Watershed.
+- Den Files episodes require real historical research, not summary. Sourcing matters the same way it does for the WKP Channel.
 - FrostCast has been inactive on the audio/podcast side for ~18 months even while the show continued — relaunch strategy is a "We're Back" episode cross-posted to YouTube and audio simultaneously.
 
 ## Open

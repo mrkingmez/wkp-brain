@@ -18,7 +18,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 | Etsy — Kingdom Planners (digital planners) | ./Kingdom-Planners/ | 2 |
 | Shattered Empire novels (Books 1 and 2) | ./Shattered-Empire/ | 3 |
 | Winter Wolf's Den / FrostCast / Den Files | ./WWD/ | 4 |
-| Watershed / Hidden Hinge (What If) | ./WhatIF/ | 5 |
+| WKP Channel — What If / Hidden Hinge / AAR Commander | ./WKP-CHANNEL/ | 5 |
 | Post Production house | ./Post-Production/ | 6 |
 | Military SciFi novel | ./SciFi-Novel/ | 7 |
 | RUBY TWO (WWII short film) | ./RUBY-TWO/ | 8 |
@@ -190,7 +190,7 @@ ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
         WarriorKingDesigns (triage complete, hold), PAWS (director:
         paws-director, scaffold complete, blocked on PAWS-001 - task
         source not yet chosen - blocks all firmware work)
-ACTIVE-UNSCHEDULED: KDP Publishing (math mystery / puzzle books), Watershed,
+ACTIVE-UNSCHEDULED: KDP Publishing (math mystery / puzzle books), WKP Channel,
         Post-Production, RUBY TWO, Spark Capture (Android app, scaffold
         applied, no director, at D:\WKP\spark-capture\, Phase 2 not yet
         scheduled)

@@ -1,7 +1,13 @@
-@../ME.md
-@../projects.md
+**ARCHIVED 2026-09-17** — superseded by `WKP-CHANNEL/`. "Watershed" is a
+retired name (see `WKP-CHANNEL/CLAUDE.md`, locked 30 Aug 2026). This file is
+kept for history only — do not read it for current naming, routing, or
+format rules. No `@`-imports below are live; this file is no longer part of
+session startup.
 
-# Watershed — Warrior King Productions
+~~@../ME.md~~
+~~@../projects.md~~
+
+# Watershed — Warrior King Productions (ARCHIVED)
 
 ## What This Is
 Faceless, AI-assisted historical video essays under Warrior King Productions. Distinct from WWD. Previously referred to loosely as "What If military history" — the actual branded methodology is Watershed, and it runs two separate formats that must not be mixed.

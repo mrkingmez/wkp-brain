@@ -53,7 +53,9 @@ Two competitions, one repo:
 - MFL season year: 2026
 - MFL username: mrzacking
 
-## Credentials (never in files — env vars only, see SETUP-TOKENS.md)
+## Credentials (never in files — env vars only)
+Two tokens this venture expects to find as environment variables, not
+committed anywhere:
 - MFL_API_KEY — read access to roster/player exports
 - ODDS_API_KEY — The Odds API, NFL + CFB spreads
 

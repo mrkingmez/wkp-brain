@@ -24,7 +24,7 @@ Read the Production Bible before proposing anything about workflow or pipeline. 
 ## Current Status
 Pre-production. Bible and screenplay written; no production started as of August 2026.
 
-The same bottleneck affecting Watershed applies here — Zac has the tools for the visual quality he wants but is still building the skill to execute it, with zero outsourcing budget. Expect this to move slowly and in modules rather than as one continuous push.
+The same bottleneck affecting the WKP Channel applies here — Zac has the tools for the visual quality he wants but is still building the skill to execute it, with zero outsourcing budget. Expect this to move slowly and in modules rather than as one continuous push.
 
 ## Working Notes
 - This is a learning project as much as a deliverable. Speed is not the metric; finishing a module correctly is.

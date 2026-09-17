@@ -10,7 +10,7 @@ Service arm of Warrior King Productions. Offers sound editing/design, video edit
 - **Video editing** — Zac's strongest suit. Lead offering.
 - **Sound design** — also a genuine strength.
 - **Color grading/correction** — novice level, though Zac has tools that assist here. Offered from day one anyway (all five services launch together), but don't oversell this one.
-- **Motion graphics / limited animation** — capability exists via tools; skill still developing (same gap affecting the Watershed video series — see whatif/CLAUDE.md).
+- **Motion graphics / limited animation** — capability exists via tools; skill still developing (same gap affecting the WKP Channel video series — see WKP-CHANNEL/CLAUDE.md).
 
 ## Niche: Sports Highlight Reels
 Specific target market Zac wants to pursue: high school athletes building recruiting highlight reels for college programs. Personal connection — Zac loves sports and has direct experience (edited his brother's POV hockey footage, GoPro-on-helmet source material, into highlights). This is a real service line under Post-Production, not a side project.

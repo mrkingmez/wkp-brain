@@ -50,7 +50,7 @@ entries). Source PNGs untouched.
 on):** Recommended posting from the newly-packaged Christian batch this
 week, since it's the only line with digital-ready assets today. Flagged
 explicitly as UNGUIDED — the last real WKD traffic pull
-(`data\esty-manual-2026-08-20.md`) is 12 days old, past the 10-day
+(`data\etsy-manual-2026-08-20.md`) is 12 days old, past the 10-day
 freshness rule, so nothing in the pick is traffic-driven, it's subject/
 gift-appeal judgment only. Checked the shared listing cap against Kingdom
 Planners: KP has zero listings and the shop itself isn't created yet
