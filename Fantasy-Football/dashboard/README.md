@@ -46,16 +46,25 @@ live" gate. Use this to sanity-check the page outside of a Sunday.
 | `state.json` | Current snapshot the browser reads (regenerated, gitignored) |
 | `.raw_cache.json` | Poller-internal raw API cache, not served (regenerated, gitignored) |
 
-## Known open item
+## Pick-marking convention — resolved 2026-09-13
 
-**Pick'em card pick-marking convention is unconfirmed** — see
-`..\logs\DECISIONS.md` (repo root) entry `FF-2026-09-12-01` for the
-full writeup, or `decisions/DECISIONS.md` if this venture gets its own
-queue later. The Week 1 card had zero marks anywhere (checked both
-text and cell fill color), so the pick'em panel shows live status for
-both sides of every game without claiming which one was picked. Once a
-real filled-in card exists, revisit `pickem_card.py`'s `read_card()`
-against it.
+Stale note removed 2026-09-17. Picks are marked by **filled cell
+background color** on the favored/underdog cell — confirmed by Zac and
+verified against the real submitted card (`D:\Documents\Pickups
+2026\Sanders_Week{N} Entry.xls`, not the blank templates in
+`Fantasy-Football\cards\`). Any non-default fill color counts as the
+pick; the specific RGB varies by week/card and isn't the signal.
+`pickem_card.py`'s `read_card()` already implements this. Re-verified
+2026-09-17 against a real filled Week 2 control card
+(`Sanders_Week 2P Entry.xls`) — 19/19 games parsed cleanly, one
+consistent fill color, zero ambiguous rows. Full history in
+`..\..\logs\DECISIONS.md` entry `FF-2026-09-12-01` (closed).
+
+**Known real gap:** `read_card()` currently returns only 19 games — it
+does not yet parse game 20 (Monday Night Football), which per Zac's
+2026-09-16 correction is always a real scored pick, not a separate
+tiebreaker-only entry. Needs a fix before this parser can be trusted
+for the full 20-game card.
 
 ## Credentials
 
