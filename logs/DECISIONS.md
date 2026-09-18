@@ -371,3 +371,44 @@ committing to the full file (diarization completed in 0.2 min, no
 OOM). Full EP109 retry: diarization completed in 3.3 minutes, vs.
 4h16m last night without finishing. Transcript, chapters, and full
 numbers in logs\wwd-director.md 2026-08-27 07:15-07:37 entry. Closed.
+
+---
+
+## [WWD-2026-09-18-01] 2026-09-18 | WWD | Surfshark sponsor read has an unresolved FTC disclosure question, read is due to air imminently
+
+**Blocked:** The Surfshark sponsor-read task (finalized 2026-09-14,
+`L:\Winter Wolfs Den review show\Sponsors\Surfshark\Surfshark-Sponsor-Reads-2026-09-14.md`/`.docx`)
+carries a "STILL NEEDS" item that has sat open since it was written and
+was never queued here: an attorney check on whether the written
+disclosure has to sit physically next to the affiliate link in the video
+description/pinned comment, or a spoken disclosure in the read itself is
+enough. `clearance`'s second pass flagged this explicitly and
+`marketing-director`'s log independently notes "real money attached means
+a real attorney/Surfshark brand approval pass still belongs in the loop
+before this airs." This is real affiliate revenue (rev-share, not a flat
+fee) and an FTC compliance question, not something an agent should
+resolve by guessing. Time pressure: EP111 (carrying the read) was
+recorded 2026-09-16, and Heat's release lands today, 2026-09-18, in the
+same posting week the read is meant to go out — the window to fix
+placement before anything airs may already be closing.
+
+**Options:**
+A. Get an actual attorney/compliance read on FTC placement rules before
+   EP111 airs, hold the sponsor segment out of the upload until that's
+   answered.
+B. Ship with the spoken in-read disclosure already in the script (per
+   TASKS.md, both scripts already have explicit spoken paid-partnership
+   disclosure) and add the written link-adjacent disclosure line as a
+   belt-and-suspenders precaution, without waiting on formal legal
+   sign-off, since the affiliate program's own disclosure requirements
+   were part of what got Surfshark's approval already.
+C. Leave the description/pinned-comment wording as currently drafted and
+   accept the risk as low given the spoken disclosure already exists.
+
+**Recommendation:** B — the read already discloses verbally per
+TASKS.md's own notes, so the incremental step (adding a plain written
+line next to the link) is cheap insurance while a real legal opinion is
+pursued in parallel rather than gating the whole episode on it. This is
+still Zac's call given it involves both money and legal exposure.
+
+**Status:** OPEN
