@@ -101,8 +101,14 @@ still placeholders — "com.wkp.sparkcapture"), Phase 2 build tracking.
 ---
 
 ## 12. PAWS — Desk Devices (Hardware)
-Hardware venture: a family of small desk devices driven by a task list,
-built around an original WKP character (the WKP wolf). Six format
+Hardware venture: a family of small desk devices driven by a task list.
+Flagship product and character is **Scout**, an original dog built
+specifically for this venture — not the WWD wolf, no connection between
+the two. Character is locked. Hardware direction is locked: Scout ships
+as a fused personality-device-plus-USB-C-hub product from day one (a
+Waveshare ESP32-S3-Touch-LCD-1.69 screen/personality module plus an
+existing certified USB-C dock module, both in one in-house enclosure),
+not a cheap screen-first build with a hub added later. Six format
 types — BUILD GUIDE, SOURCING, FIRMWARE, ENCLOSURE, CHARACTER,
 EDUCATION, INVESTOR — run by a dedicated director (paws-director), no
 worker skills yet. Product line runs from TASKAGOTCHI (flat-panel pet,
@@ -114,10 +120,13 @@ no microphone, no LLM, no data collection on any device a person under
 18 touches, and nothing from this venture ever touches the Columbia
 County network.
 
-**Currently blocked on PAWS-001 through PAWS-006** (task source,
-venture/product naming, Elegoo Mars generation, hours per week,
-character model rigging status, and investor audience) — see
-`PAWS\decisions\DECISIONS.md`. PAWS-001 blocks all firmware work.
+**Currently blocked on PAWS-001 and PAWS-004** (task source, and hours
+per week) — see `PAWS\decisions\DECISIONS.md`. PAWS-001 blocks all
+firmware work. PAWS-002 (venture/product naming) and PAWS-005
+(character source) are resolved/superseded — PAWS is the venture name,
+Scout is the product and character. PAWS-003 (Elegoo Mars generation)
+and PAWS-006 (investor audience) remain open but not currently
+load-bearing.
 
 **Has a CLAUDE.md.** Scaffold complete (rules, director, task list,
 decision queue, seven format specs, folder structure). Zero parts

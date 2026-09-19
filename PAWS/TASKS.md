@@ -6,6 +6,7 @@ Status key: [ ] not started  [~] in progress  [x] done  [!] blocked
 
 ## Phase 0 — Setup (before any parts arrive)
 
+- [x] Character design: DONE. Scout, see SCOUT-CHARACTER-BIBLE.md.
 - [ ] Decide task source (Todoist / Microsoft To Do / Google Tasks / Notion / local file) — BLOCKS all firmware work
 - [ ] Locate the WKP wolf 3D model, drop into art/
 - [ ] Confirm Elegoo Mars generation and build volume
@@ -24,6 +25,13 @@ Status key: [ ] not started  [~] in progress  [x] done  [!] blocked
 - [ ] Character art: 8 states, 3 frames each
 - [ ] Enclosure designed and printed
 - [ ] Photograph finished unit for the pitch deck
+
+## Phase 1B — Companion app (Android)
+
+Sequenced after the state machine milestone in Phase 1.
+
+- [ ] Companion app build (Android first, not iOS)
+- [ ] Fetch v1 — filename/folder/date search across scoped locations, surfaced in the companion app or opened on the PC
 
 ## Phase 2 — MAC (tracking robot)
 
@@ -58,6 +66,11 @@ Status key: [ ] not started  [~] in progress  [x] done  [!] blocked
 - [ ] Countdown device
 - [ ] PAWS voice layer
 - [ ] PAWS hologram optics
+- [ ] Fetch v2 — content-aware search (photo metadata, then visual content matching). Not a v1 requirement.
+
+## Horizon — Not Yet Specced
+
+- [ ] SD-port data management — Scout scans inserted physical media (SD card, possibly USB-A) and sorts files to where they belong, asking rather than guessing when unsure. Open before building: which port(s), read-only scan-and-suggest vs. read-write move-and-file, and the confirmation rule (never moves or deletes without asking, every time). Do not schedule into an active phase until specced.
 
 ---
 

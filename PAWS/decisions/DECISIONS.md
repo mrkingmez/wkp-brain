@@ -16,7 +16,8 @@ of firmware work after Phase 1 Step 2 depends on it.
 non-starter. Personal task source only.
 
 ## PAWS-002 — Venture vs product naming
-**Status:** OPEN
+**Status:** RESOLVED 9 SEP 2026 — PAWS is the venture name. Scout is the
+flagship product and character name.
 **Question:** Is PAWS the venture name, the flagship product name, or both?
 Current scaffold assumes both. Is PAWS a WKP sub-brand or standalone?
 
@@ -31,7 +32,10 @@ change how the wolf figure gets sliced and whether it needs splitting.
 provisional until this is set.
 
 ## PAWS-005 — Character source
-**Status:** OPEN
+**Status:** SUPERSEDED 9 SEP 2026 — the character is Scout, an original
+dog design built for this venture. Not a reuse of the WWD wolf model.
+The original question about the wolf model's rigging status no longer
+applies.
 **Question:** Zac has a 3D wolf model "almost" done. Is it rigged? What
 format? Does it need a modeling pass before it can drive expressions?
 
