@@ -412,3 +412,70 @@ pursued in parallel rather than gating the whole episode on it. This is
 still Zac's call given it involves both money and legal exposure.
 
 **Status:** OPEN
+
+---
+
+## [WWD-2026-09-26-01] 2026-09-26 | WWD | Cold open deadline (9/25) passed with no update — same Higgsfield-credit block as WWD-2026-09-17-01, now overdue
+
+**Blocked:** TASKS.md lists the cold open (Warden character designs) target
+as "~2026-09-25 (was ~mid-to-late Sept)," punted there by Zac's call on
+2026-09-04. That date was yesterday. The only commit in the last 24 hours
+(`4616083`, weekly numbers pull) doesn't touch this task, WWD/CLAUDE.md, or
+the Higgsfield credit balance, and WWD-2026-09-17-01 (still OPEN) already
+flagged that the cost analysis for topping up credits hadn't been done as
+of 2026-09-17. Nothing in the repo shows that analysis exists now either,
+nine days later. This is the third deadline on the same block (originally
+~early Sept, then ~mid-to-late Sept, then ~9/25) with no visible movement
+on the underlying gate.
+
+**Options:**
+A. Treat this as the same open decision as WWD-2026-09-17-01 and just wait
+   for Zac to resolve it — no new entry needed, folds into that one.
+B. Escalate now that a third deadline has passed without the cost analysis
+   Zac was already asked to review, since repeatedly slipping the same date
+   without new information suggests the credit-topup decision itself, not
+   the deadline, is the actual blocker.
+C. Recommend the venture director re-date the cold open to "unscheduled"
+   until the Higgsfield/Firefly decision is made, rather than carrying a
+   fourth punt silently.
+
+**Recommendation:** B — this repeats an already-open decision rather than
+introducing a new fact, but three missed dates on the same unresolved spend
+question is worth surfacing again instead of letting it go stale silently.
+No agent can spend company money on Higgsfield credits without Zac's say-so
+per the Escalation rule, and the free Firefly fallback stays available if
+he'd rather skip the spend than the analysis.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-09-26-02] 2026-09-26 | WWD | Heat (1995) review shows "In Progress" and a confirmed 9/18 release in TASKS.md, but does not appear in the latest YouTube pull
+
+**Blocked:** `data/weekly-2026-09-25.md` (VidIQ pull, run 2026-09-25, real
+numbers not guessed) checked the newest 30 videos on the Winter Wolf's Den
+channel and found no "Heat (1995)" review video, despite TASKS.md stating
+the release day was "confirmed Friday 2026-09-18 (locked, no more flex)" by
+Zac on 2026-09-14. TASKS.md still lists the task as "In Progress," not
+Done, and no commit since then updates its status either way. Three
+explanations fit what's on disk and an agent can't tell which without
+checking the channel directly: the video published under a different or
+retitled name, the 9/18 date slipped without TASKS.md being corrected, or
+it's further back in upload history than the newest-30 window checked.
+Reporting this as released, or as still pending, without verifying would
+violate the Honesty rule.
+
+**Options:**
+A. Assume it shipped under a different title and move on — risks silently
+   missing a real slip if it didn't ship at all.
+B. Assume the 9/18 date slipped and treat it as still blocked/late — risks
+   wrongly flagging something that already shipped under a different title.
+C. Flag the discrepancy and have Zac or wwd-director confirm directly
+   against the channel/upload history, not guessed.
+
+**Recommendation:** C — a five-minute check for whoever has channel access
+settles this. TASKS.md should then get corrected to Done (with a link) or
+to a real new date, whichever is true, rather than sitting on a locked date
+that already passed silently.
+
+**Status:** OPEN
