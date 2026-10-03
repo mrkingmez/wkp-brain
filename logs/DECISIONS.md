@@ -479,3 +479,74 @@ to a real new date, whichever is true, rather than sitting on a locked date
 that already passed silently.
 
 **Status:** OPEN
+
+---
+
+## [WWD-2026-10-03-01] 2026-10-03 | WWD | Resident Evil review recording date (9/21) passed 12 days ago, task still Not Started
+
+**Blocked:** TASKS.md lists "Resident Evil review — recording date" with
+deadline "2026-09-21 (moved from original date)," noted as Zac's own call
+on 2026-09-14 after Matt's travel plans changed. That date was 12 days ago
+as of tonight (2026-10-03). The task status is still "Not Started" and no
+commit in the repo's history touches this task, the WWD section of
+TASKS.md around it, or any Resident Evil file/folder since the date was
+set. Unlike the Heat and cold-open items already on this queue, this is a
+simple recording date with no known external blocker (no credits, no
+money, no third party) logged against it — just silence past the date.
+
+**Options:**
+A. Assume the recording happened off-repo (nothing requires an agent to
+   know about a filming session the moment it happens) and TASKS.md simply
+   wasn't updated afterward — low-cost, but risks masking a second slipped
+   date if it didn't happen.
+B. Flag it for Zac/wwd-director to confirm directly whether the recording
+   happened on 9/21 as planned, and either mark the task Done or set a
+   real new date — since nothing on disk shows which is true.
+C. Leave it alone — a single Not Started row with no other signal isn't
+   worth a queue entry.
+
+**Recommendation:** B — this is the kind of silent slip the Honesty rule
+exists to catch: TASKS.md currently reads as if 9/21 hasn't happened yet,
+but no agent can tell from the repo whether that's actually true or just
+an unupdated row. A quick confirm either closes it out or surfaces a real
+new blocker.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-03-02] 2026-10-03 | WWD | FrostCast episode tracking has drifted — TASKS.md still on EP113 prep, but EP114 already aired per tonight's VidIQ pull
+
+**Blocked:** TASKS.md's "Next FrostCast episode prep" row (last touched
+2026-09-16) still frames EP113 (Wed 9/23) as the upcoming episode, carrying
+forward six topics EP112 never got to on air (Mandela Catalogue/Spielberg
+item, Sebastian Stan Winter Soldier pitch, Heat 2 recast news, The People v.
+Gorilla Grodd, Mandalorian and Grogu / Supergirl streaming, the franchise-
+longevity prompt) with a note to check whether any need a news refresh
+before re-running them. `data/weekly-2026-10-02.md` (real VidIQ pull,
+committed today in the one commit of the last 24h) shows FrostCast Episode
+114 already published 2026-10-01 — meaning EP113 has already aired too,
+and nothing in the repo records whether those six carried-forward topics
+ever got covered, or what EP114's or EP115's prep sheet looks like. This
+venture is ACTIVE (not unscheduled), so a two-episode gap in tracking is a
+real planning gap, not just stale paperwork.
+
+**Options:**
+A. Treat it as a paperwork lag only — Matt/Zac know what aired, TASKS.md
+   just needs a routine update, no decision needed.
+B. Flag it so wwd-director/Zac confirms whether the six carried topics
+   from EP112 ever ran (on EP113, EP114, or still pending) before they're
+   either dropped or carried forward again onto EP115/EP116 prep.
+C. Treat the gap as low priority since the show is airing on schedule
+   regardless of whether TASKS.md keeps pace.
+
+**Recommendation:** B — the six topics were explicitly flagged as needing
+a staleness check "before re-running them as-is" (news items age out);
+carrying them silently across two more untracked episodes risks running
+outdated news on air. Updating TASKS.md to the real current episode number
+is a five-minute fix once confirmed, not a spend or legal question, but an
+agent nightly-rollup pass isn't authorized to just overwrite venture
+tracking rows on a guess per the Honesty rule, so it's queued rather than
+silently corrected.
+
+**Status:** OPEN
