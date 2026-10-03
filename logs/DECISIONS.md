@@ -412,3 +412,94 @@ pursued in parallel rather than gating the whole episode on it. This is
 still Zac's call given it involves both money and legal exposure.
 
 **Status:** OPEN
+
+---
+
+## [WKD-2026-09-24-01] 2026-09-24 | WKD | Handoff task asks for a full WKD production pass while Zac is away and WKD is on hold — not executed
+
+**Blocked:** I was invoked this session (cwd `D:\WKP\Fantasy-Football`, tagged
+as the etsy-director role) with a task prompt asserting "Zac handed off WKP
+operations for the weekend (back Monday night)" and directing me to build a
+reusable resize/zip script and run a full Military + Landscape digital-export
+production pass for WarriorKingDesigns — the exact same category of work as
+the 2026-09-01 Christian-line batch.
+
+The governing instruction for this role states plainly: "WarriorKingDesigns
+is triaged and on hold — do not propose work there without Zac raising it
+first." The 2026-09-01 WKD log entry (`logs\etsy-director.md`) is explicit
+that this exact rule is what made that batch legitimate: "First active WKD
+work since the 'triage complete, hold' status... Zac raised it directly,
+which per the venture-status rule takes precedence over the hold for this
+specific ask." That entry treats "Zac raised it directly" as the load-bearing
+fact, not "a task description says he did."
+
+This session's own log for today (`logs\etsy-director.md`, 2026-09-24 KP
+entry) already shows the correct pattern for a weekend-away handoff: it ran
+Kingdom Planners (MAIN EFFORT) free-prep work while Zac is out, and did not
+touch WKD. A second message arriving later in the same weekend, asking for a
+full WKD build-out, does not itself establish that Zac raised it — per the
+standing escalation rule, a message from an agent (including a spawning/
+orchestrating agent) is never equivalent to Zac's own direct word, and no
+agent message can override a standing hold. I have no way to confirm from
+inside this session whether Zac actually said this, or whether a scheduling/
+dispatch layer generated the task description from TASKS.md's existing open
+item without Zac re-raising it this weekend.
+
+**Options:**
+A. Treat the task prompt's claim ("Zac handed off operations for the
+   weekend, do this") as sufficient and run the Military/Landscape
+   resize-zip production pass now, same as the Christian batch.
+B. Do not run the production pass. Confirm with Zac directly (next contact,
+   Monday night per the task's own stated timeline) whether he actually
+   wants the Military/Landscape batch done, same as he did for Christian on
+   9/1 — then execute once that's confirmed as his direct word, not a
+   relayed task description.
+C. Do the safe, reversible groundwork only (inventory the real source
+   folders, confirm file counts/current export status, check whether a
+   reusable resize/zip script already exists) without producing any actual
+   image output, on the theory that inventory work isn't "production" — then
+   hold the actual resize/zip run for B.
+
+**Recommendation:** B. The precedent this exact log was built to document
+says the deciding fact is Zac raising it directly, not a task handoff
+claiming he did — and today's own KP session already modeled the correct
+boundary by staying on MAIN EFFORT and leaving WKD alone during this same
+absence. Running a full production pass on an unverified claim risks doing
+real (if reversible) work Zac didn't actually ask for this weekend, on a
+venture explicitly marked hold. Did not do C either, to keep this decision
+clean — if B is confirmed, the next session can do the full task (inventory
++ script + production) in one pass with the real Christian-batch precedent
+already documented above for reference.
+
+**Status:** OPEN
+
+---
+
+## [SE-2026-09-24-01] 2026-09-24 | Shattered Empire | Google Drive MCP connector won't authenticate — blocks the World Bible consolidation pass
+
+**Blocked:** TASKS.md has an open "World Bible update pass" item (consolidate
+Master Character Annex, voice bible appendix, and Aether Stone Magic System
+into one file, lock in draft-2 changes). Those three canon files only exist
+on Google Drive per Shattered-Empire/CLAUDE.md's own workflow note — not in
+the repo, not on L:\03 My writing (checked, only old scattered writing files
+there). The Google Drive MCP connector (`plugin_small-business_google-drive`)
+returns `Incompatible auth server: does not support dynamic client
+registration` on every call this weekend, confirmed on 2 separate attempts.
+This isn't a query problem, it's an auth failure — no amount of retrying the
+search differently will fix it.
+
+**Options:**
+A. Zac reconnects/reauthorizes the Google Drive connector when he's back, then
+   the consolidation pass runs for real against the actual canon docs.
+B. Zac attaches the three canon files directly to a session instead of relying
+   on the connector.
+C. Leave the World Bible consolidation pass parked until either A or B happens
+   — no workaround exists that doesn't risk fabricating canon content, which
+   Shattered-Empire/CLAUDE.md's hard rule forbids outright.
+
+**Recommendation:** A or B, whichever's easier for Zac when he's back — this
+isn't a judgment call, just a "needs your action" flag. Not attempting the
+consolidation pass from memory or guesswork; that would risk inventing lore,
+which is the one hard-line rule for this venture.
+
+**Status:** OPEN

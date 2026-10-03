@@ -68,9 +68,63 @@ Sequenced after the state machine milestone in Phase 1.
 - [ ] PAWS hologram optics
 - [ ] Fetch v2 — content-aware search (photo metadata, then visual content matching). Not a v1 requirement.
 
-## Horizon — Not Yet Specced
+## Phase 1B / Phase 2 candidates — added 24 SEP 2026, engagement brainstorm
 
-- [ ] SD-port data management — Scout scans inserted physical media (SD card, possibly USB-A) and sorts files to where they belong, asking rather than guessing when unsure. Open before building: which port(s), read-only scan-and-suggest vs. read-write move-and-file, and the confirmation rule (never moves or deletes without asking, every time). Do not schedule into an active phase until specced.
+Four of the six ideas from this session's engagement brainstorm land
+here (the other two are the USB-C-hub-as-retention-anchor framing
+note, which isn't a build task, and SD-port data management, tracked
+in its own section below). All four depend on PAWS-001 (task source)
+and/or the D:\WKP\dashboard\data\ JSON write path, which does not
+exist on disk yet (flagged in CAPABILITIES.md Connectivity section) —
+do not start firmware work on any of these before those are resolved.
+See CAPABILITIES.md for full specs.
+
+- [ ] Touch-to-act — mark task done / snooze decision / cycle calendar
+  by tapping the screen, with hold-to-confirm on anything that writes
+  data back out. Blocked on PAWS-001 (needs a write-back API).
+- [ ] Event reactions — one-off animation for a FrostCast episode going
+  live or a decision closing (both feasible off existing logs). Etsy
+  sale reaction explicitly NOT feasible — no Etsy API/export exists.
+- [ ] End-of-day recap — one real completed thing, pulled from TASKS.md
+  and today's log entries, delivered in the evening. No new data
+  pipeline required beyond what wkp-daily-brief already reads.
+- [ ] Proactive push notifications (companion app) — concrete nudge
+  list specced in CAPABILITIES.md: Etsy cap reset, aged decision,
+  FrostCast recording night, BLOCKED-venture flag, Etsy Friday data
+  pull. Capped at one to two pushes a day, each tied to a real tracked
+  constraint.
+
+## SD-port data management — promoted toward v1 candidate, still has open items
+
+- [ ] SD-port data management — Scout scans an inserted SD card,
+  reads file type/date metadata, and suggests a destination against
+  known folder conventions (WWD Raw Footage, WKD exports) — read-only
+  scan-and-suggest for v1, never read-write. Confirmation rule locked:
+  Scout never moves or deletes a file without asking first, every
+  time. Architecture note: the actual file move has to route through
+  the companion app or a PC-side helper — the ESP32-S3 is not
+  positioned to write into D:\WKP or L:\ directly. Still open: which
+  folder-convention rules to encode first (start with WWD and WKD),
+  and exact phase placement (after companion app + Fetch v1, since it
+  needs the same PC-write path). Full spec in CAPABILITIES.md.
+  BLOCKED on PAWS-007 as of 24 SEP 2026 — SD card over SPI and the
+  planned I2S voice-line audio both need pins the Waveshare
+  ESP32-S3-Touch-LCD-1.69 doesn't have enough of to run both natively.
+  See PARTS-RESEARCH.md and decisions\DECISIONS.md.
+
+## Additive hardware research — added 24 SEP 2026
+
+- [ ] Resolve PAWS-007 (SD card vs I2S audio GPIO conflict) before
+  ordering the SD breakout or the audio amp/speaker — see
+  decisions\DECISIONS.md and PARTS-RESEARCH.md.
+- [ ] Haptic feedback driver (DRV2605L, I2C, zero added GPIO cost) —
+  no blocker, candidate for an early low-risk purchase. See
+  PARTS-RESEARCH.md and hardware\PAWS-BOM.xlsx.
+- [ ] I2C rotary encoder (STEMMA QT class, zero added GPIO cost) — no
+  blocker, candidate for an early low-risk purchase alongside the
+  haptic driver. See PARTS-RESEARCH.md and hardware\PAWS-BOM.xlsx.
+- [ ] RGB status LED (WS2812 class, one GPIO) — no blocker, fits the
+  pin budget on its own. See PARTS-RESEARCH.md and hardware\PAWS-BOM.xlsx.
 
 ---
 

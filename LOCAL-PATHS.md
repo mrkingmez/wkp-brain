@@ -28,9 +28,14 @@ Cyber Secuirty   D:\WKP-Guides\
 
 ## Kingdom Planners
 Kingdom Planners D:\05 Kingdom Planners
-kingdom planners products = D:\Products\05 Kingdom Planners\products
-kingdom planners delivery = D:\Products\05 Kingdom Planners\delivery
-kingdom planners photos   = D:\Products\05 Kingdom Planners\photos
+kingdom planners xlsx files (6 of 7 confirmed) = D:\05 Kingdom Planners\excel\files.zip
+kingdom planners products = D:\05 Kingdom Planners\products  (empty as of 2026-09-24)
+kingdom planners delivery = D:\05 Kingdom Planners\delivery  (empty as of 2026-09-24)
+kingdom planners photos   = D:\05 Kingdom Planners\photos    (empty as of 2026-09-24)
+(Corrected 2026-09-24 — the old `D:\Products\05 Kingdom Planners\...` paths do
+not exist on this machine, confirmed by direct check. Complete Budget System's
+.xlsx is not in the files.zip above or anywhere else found on C:/D:/E:/L: —
+see Kingdom-Planners\CLAUDE.md Products table.)
 
 ## Spark Capture
 Spark Capture (Android app scaffold): D:\WKP\spark-capture\

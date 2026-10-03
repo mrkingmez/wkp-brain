@@ -151,6 +151,24 @@ Gmail send. Requires Zac's Chrome + the claude-in-chrome extension to be
 available and logged into Facebook when this step runs — flag to Zac rather
 than skipping silently if it isn't.
 
+## Push the chapter list the moment it's ready — don't wait to be asked [2026-09-24]
+Zac: "we need to remember when we run the frostcast pipeline I need the
+chapter list as soon as it ready not me asking for it." Root CLAUDE.md's
+FrostCast Transcription Workflow already lists "return chapter timecodes"
+as step 4, but this got treated as available-on-request instead of
+proactively surfaced — EP106's chapters were pulled and given "in-session"
+rather than volunteered right when the transcript finished.
+
+**Why:** Zac shouldn't have to remember to ask for a deliverable that's
+already part of the standing pipeline. Fire-and-forget means the result
+comes back done, not done-and-waiting.
+
+**How to apply:** the instant `wwd-frostcast-chapters` (or the chapter-pull
+step inside the transcription workflow) produces the chapter list, post it
+in the same turn/response as the transcript-done confirmation — never hold
+it back pending a follow-up question. Applies to every future episode, not
+just the one that prompted this.
+
 ## Whisper's own transcribe batch_size was still hardcoded — separate OOM [2026-09-09]
 The diarization batch-size fix above only covers the diarization stage.
 `model.transcribe(audio, batch_size=16)` at the Whisper step was still

@@ -6,15 +6,19 @@ description: >
   in a Raw Footage folder named for the movie (creating it if it doesn't
   exist), and resizes it into a sibling USE folder as 1920x1080 PNGs with
   alpha-transparent padding using the same contain/fit rule as
-  wwd-broll-prep. If a script, outline, or beat sheet already exists for
-  the episode, also runs a second pass pulling additional beat-matched
-  images tied to specific moments/jokes/FX discussion in that script
-  (including behind-the-scenes/production photos, not just movie stills) -
-  see Step 8. Trigger on "record video on this movie <title>", "picture
-  gather for <title>", "get pictures for <title>", or when Zac names a movie
-  and wants the picture set ready to go. Requires Claude Code (local
-  filesystem + Chrome browser tools + Python/Pillow) - cannot run in plain
-  claude.ai chat.
+  wwd-broll-prep. If a script, outline, beat sheet, OR a timestamped
+  transcript already exists for the episode, also runs a second pass
+  pulling additional beat-matched images tied to specific moments/jokes/FX
+  discussion (including behind-the-scenes/production photos, not just
+  movie stills), then writes a timecoded timeline-placement list saying
+  exactly where each beat-matched image belongs - see Step 8. Trigger on
+  "record video on this movie <title>", "picture gather for <title>", "get
+  pictures for <title>", "pull pictures from this transcript", "tell me
+  where to insert these in the timeline", or when Zac names a movie and
+  wants the picture set ready to go, or hands over a transcript and wants
+  images placed against it. Requires Claude Code (local filesystem +
+  Chrome browser tools + Python/Pillow) - cannot run in plain claude.ai
+  chat.
 ---
 
 # WWD Review Photo Pull
@@ -200,7 +204,7 @@ a substitute for understanding who matters in the film and why. Treat this
 the same as Step 8's beat-matching: know the story first, then go find the
 images that tell it.
 
-## Step 8 - Second pass: beat-matched images (added 2026-09-13)
+## Step 8 - Second pass: beat-matched images (added 2026-09-13, extended 2026-09-24 to work from a transcript)
 
 The 18-image set from Steps 1-7 is the floor, not the ceiling. Reviewed
 `Raw Footage\T-2\USE\` (Terminator 2 review, already produced) and found
@@ -214,10 +218,17 @@ talking point), plus five more each tied to a specific line, joke, or
 plot beat. That set is what actually carried the episode - the generic
 18 alone would not have.
 
-**Precondition: a script, outline, or beat sheet has to already exist**
-for this pass to mean anything - it is matching images to specific
-things the hosts say, not generic content. Check the movie's Raw Footage
-folder and the script-room/wwd-director pipeline for one before starting.
+**Precondition: a script, outline, beat sheet, OR a timestamped
+transcript has to already exist** for this pass to mean anything - it is
+matching images to specific things the hosts actually say, not generic
+content. Check the movie's Raw Footage folder and the script-room/
+wwd-director pipeline for a script/outline first; if there isn't one but
+a diarized transcript exists (the standard `wwd-video-transcriber`
+output, or one Zac hands over directly), use that instead - a transcript
+is often the stronger source since it's what actually got said on camera,
+not what was planned. Most FrostCast episodes and unscripted reviews will
+only ever have a transcript, never a script - do not treat that as
+"precondition not met."
 
 - **If a script/outline exists:** read it. Pull out every moment that's
   actually a talking point - a named scene, a specific joke or line, an
@@ -228,10 +239,24 @@ folder and the script-room/wwd-director pipeline for one before starting.
   rule) whenever the discussion point is actually about the making of
   the movie - practical effects, stunt work, a specific visual gag - the
   T-2 BTS photo is the model case, not an exception to avoid.
-- **If no script/outline exists yet:** this pass can't run yet. Say so
-  plainly in the report ("beat-matched pass pending - no script yet") -
-  do not skip it silently, and do not fabricate beats from the movie's
-  general reputation instead of the actual script.
+- **If a transcript exists instead (no script/outline):** read the full
+  diarized, timestamped transcript. Walk it the same way as a script -
+  pull out every real talking point (a named scene, a specific joke or
+  line, an FX/production discussion, a topic the hosts spend real time
+  on), but anchor each one to the transcript's actual timecode range
+  instead of a script line. A FrostCast episode covering several unrelated
+  topics works the same way as a single-movie review - segment by topic
+  first (reuse `wwd-frostcast-chapters`' chapter boundaries if that skill
+  already ran on this transcript), then beat-match within each segment.
+  If a topic discussed has no existing Raw Footage/USE folder yet, either
+  pull a fresh image for it (reuse Steps 3-5's sourcing approach - TMDb/
+  IMDb for a movie, a plain web image search for a real-world news topic)
+  or flag it as needing one rather than skipping it.
+- **If neither a script/outline nor a transcript exists yet:** this pass
+  can't run yet. Say so plainly in the report ("beat-matched pass pending
+  - no script or transcript yet") - do not skip it silently, and do not
+  fabricate beats from the movie's general reputation or the episode's
+  general topic instead of the actual script/transcript.
 
 **Naming:** short, specific, tied to the moment - not `still-19.jpg`.
 Match the T-2 pattern: `a new man.png`, `frozen.png`, `practical
@@ -244,9 +269,23 @@ not to a stranger.
 pipeline (Step 6), additive - never replace a numbered still with a
 beat-matched one, they serve different purposes.
 
-**Report:** state how many beat-matched images were found and added, and
-name any talking point from the script that a real image couldn't be
-found for - flag it, don't quietly drop it.
+**Timeline-placement output (required whenever the source is a
+transcript, optional but welcome for a script/outline pass):** write a
+plain timecoded list alongside the images -
+`<Raw Footage>\<Title>\USE\timeline-placements.md` - one line per
+beat-matched image: transcript timecode range, a short quote/paraphrase
+of what's being said, the image filename, and one line on why that image
+fits. This is the actual deliverable an editor drops into the timeline
+against, not just a folder of extra pictures. Example line:
+
+```
+[14:32-14:58] "the liquid nitrogen scene where he just shatters" -> frozen.png (matches the exact FX beat being described)
+```
+
+**Report:** state how many beat-matched images were found and added, name
+any talking point from the script/transcript that a real image couldn't
+be found for (flag it, don't quietly drop it), and confirm the
+timeline-placements file was written when the source was a transcript.
 
 ## Do not
 
@@ -273,3 +312,9 @@ found for - flag it, don't quietly drop it.
 - Build the set from only the top-billed leads and the coolest action
   shots - check the full cast per Step 3.5 and cover every character who
   carries a real subplot, not just who has the most screen time.
+- Treat "no script exists" as a reason to skip Step 8 - check for a
+  transcript before calling the pass pending. A transcript-only source is
+  the normal case, not a fallback.
+- Deliver beat-matched images from a transcript without the
+  timeline-placements file - the timecode list is the point of running
+  from a transcript at all.

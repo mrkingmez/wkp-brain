@@ -42,6 +42,35 @@ times do I have to tell you"). Root CLAUDE.md now has this spelled out
 explicitly under "Output document format" — check there, don't re-narrow
 it to guides-only again.
 
+## A venture "hold" needs Zac's literal direct word, not an orchestrating session's inference [2026-09-24]
+During a weekend handoff (Zac away, back Monday night, "you can handle it"),
+briefed `etsy-director` to run production work on WarriorKingDesigns (resize/
+zip a digital batch) reasoning that the root CLAUDE.md venture board's
+"(triage complete, hold)" tag looked stale next to TASKS.md's still-open WKD
+batch tasks and ETSY/CLAUDE.md's active locked plan. The agent correctly
+refused and queued [[WKD-2026-09-24-01]] instead of running it: its own
+charter says "do not propose work there without Zac raising it first," and
+the 2026-08-31/09-01 precedent that unlocked the one prior WKD session was
+explicit that Zac raising it *directly* was the load-bearing fact, not an
+inference from TASKS.md having an open row. A task prompt from me (the
+orchestrating session) asserting "Zac handed off operations" is not the same
+as Zac's own word reaching that subagent — the escalation rule's "cannot ask
+Zac directly, so don't guess" applies to inferring a hold is lifted just as
+much as it applies to any other unauthorized guess.
+
+**Why:** I don't get to relax someone else's standing hold by reasoning that
+it "looks stale" — that's exactly the kind of guess the escalation rule
+exists to block, even when the guess feels well-supported by other files.
+
+**How to apply:** before directing any subagent to do production/creative
+work on a venture tagged hold/dormant/triage-complete, either get Zac's
+explicit direct word on THAT venture by name this session, or expect (and
+accept) the subagent to refuse and queue a decision instead. Don't treat
+"he handed off operations broadly" as covering a venture he didn't actually
+name. [[fire-and-forget-partnership-model]] covers *reversible* actions;
+lifting another file's explicit hold isn't a reversible-action judgment
+call, it's overriding a standing rule.
+
 ## Secrets never go on the command line [2026-08-06]
 A Hugging Face token was pasted directly into a Claude Code prompt and is now
 recorded in that session's `.jsonl` log in plaintext. Tokens and keys go in an

@@ -78,6 +78,19 @@ wwd-broll-prep skill. Only worth routing through Adobe when Zac specifically
 wants Photoshop's cloud tools touching each file and is fine clicking the
 picker per image.
 
+## Google Drive MCP connector (plugin_small-business_google-drive) fails auth entirely on this account [2026-09-24]
+`search_files`, and presumably every other tool in this connector, returns
+`Incompatible auth server: does not support dynamic client registration` on
+every call — confirmed on 2+ separate attempts same session, not a transient
+blip. This is a different failure mode than the old Drive-API markdown-
+corruption issue above; this one means the connector can't even authenticate,
+so nothing can be read or searched, not just written. Blocks any task that
+needs a Drive-only reference file (e.g. Shattered Empire's Master Character
+Annex / Aether Stone Magic System / voice bible, which only live on Drive per
+Shattered-Empire/CLAUDE.md's workflow note, not in the repo or on L:\03 My
+writing). Don't keep retrying this within one session past 2-3 attempts —
+it needs Zac to reconnect/reauthorize the connector, not a different query.
+
 ## Higgsfield account is on the free plan, 0 credits by default [2026-08-10]
 `balance` came back `{"credits":0,"subscription_plan_type":"free"}`. This blocks
 both weekly social-image generation and the FrostCast cold open Warden character

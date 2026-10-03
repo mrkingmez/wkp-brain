@@ -103,6 +103,32 @@ script exists yet at pull time, the pass is flagged as pending in the
 report, not silently skipped. Additive to the numbered 18, same USE
 folder, same resize pipeline. Full detail in the skill file itself.
 
+## wwd-review-photo-pull Step 8 extended: transcript is now a valid source, not just a script [2026-09-24]
+Zac's ask: "a workflow where I give you a transcript and you pull the
+pictures and you tell me where to insert them in the timeline." Step 8's
+precondition previously required a pre-existing script/outline/beat
+sheet — which meant it never ran for FrostCast episodes or unscripted
+reviews, since those are commentary over a live recording, not something
+written in advance. Most WWD content only ever has a transcript, never a
+script.
+
+**Why:** a diarized, timestamped transcript (the standard
+`wwd-video-transcriber` output) is arguably a *better* beat-matching
+source than a pre-written script — it's what actually got said on
+camera, not what was planned. Treating "no script" as "pass can't run"
+was silently skipping Step 8 for the majority of real content.
+
+**How to apply:** `wwd-review-photo-pull` Step 8 now accepts a
+transcript in place of a script/outline. Segment by topic first (reuse
+[[wwd-frostcast-chapters]]'s chapter boundaries if that already ran),
+beat-match images within each segment same as the script path, and — new
+requirement — write a `timeline-placements.md` file in the movie/
+episode's `USE` folder: one line per beat-matched image with the
+transcript timecode range, a quote/paraphrase, the image filename, and
+why it fits. That timecode file is the actual deliverable Zac asked for
+("tell me where to insert them in the timeline"), not just extra
+pictures in the folder. Full detail in the skill file itself.
+
 ## wwd-review-photo-pull Step 3.5 added: know the story, cover major characters [2026-09-14]
 On the Heat (1995) pull, the first 25-image set (TMDb backdrops/posters,
 Steps 1-7 process) was strong on De Niro/Pacino and action beats but had

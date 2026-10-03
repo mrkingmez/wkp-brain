@@ -2,6 +2,67 @@
 
 Format: ## YYYY-MM-DD HH:MM | TYPE | subject | elapsed
 
+## 2026-09-24 | KP | full free-prep pass, 6 of 7 products, Zac away for the weekend | ~1 session
+
+Ran while Zac is off (back Monday night): the free per-listing prep work
+TASKS.md already scoped as doable with no money down. Guardrails held: shop
+creation stays Blocked (untouched, $29 fee is Zac's spend call), nothing
+listed or published, everything delivered as a draft package for his review.
+
+**Read the real product files first, per the brief.** Found 6 of the 7
+finished products at `D:\05 Kingdom Planners\excel\files.zip` (Debt Freedom,
+PCS, Deployment, VA Tracker, Terminal Leave, Road Trip) and opened every tab
+of every file with openpyxl before writing a word of copy. **Complete Budget
+System, the flagship 16-tab product, is not on disk anywhere** — checked
+every LOCAL-PATHS.md location plus a full scan of C:, D:, E:, and L:. A
+handoff doc in Downloads confirmed why: it was built in a web chat session
+and left in that session's `/mnt/user-data/outputs/`, never downloaded, the
+exact loss pattern root CLAUDE.md's file retention rule exists to prevent.
+Did not invent tab names or features for it. It's flagged as blocked in
+CLAUDE.md, TASKS.md, and the batch doc, with a clear next action (Zac
+re-pulls the file from the original chat or rebuilds it).
+
+**Also caught while reading the real files:** Kingdom-Planners\CLAUDE.md's
+existing product descriptions for Road Trip Planner and Terminal Leave
+didn't match what's actually in the shipped files (Road Trip has no
+Lodging/Attractions tabs, no pie chart, no built-in mileage deduction;
+Terminal Leave's timeline is 12 months, not 6). Corrected CLAUDE.md's
+Products table to the verified real tab lists rather than leaving the stale
+description standing next to new copy that would have contradicted it.
+
+**Delivered:** full listing packs (title, 13 tags, description with every
+tab enumerated) for the 6 confirmed products, plus a drafted-but-blocked
+pack for the Military Family bundle; anchor+sale pricing for all 7
+products and the bundle (2 already locked by Zac, 5 new, confidence level
+noted per number since real Etsy comp data came back thin for 2 of them);
+About section and shop-policy draft; the AI-disclosure sentence and
+publish-time checklist, written distinct from WKD's since the thing being
+disclosed is different (AI-assisted tool build vs. AI-generated art) —
+researched against real search results since Etsy's own policy pages
+block automated fetch, flagged for a live browser double-check before
+launch. Full package: `D:\05 Kingdom Planners\Kingdom-Planners-Listing-Prep-
+Batch-2026-09-24.docx` / `.md`. Ran the no-ai-slop pass before calling it
+done (found and fixed one stray em dash in a section header).
+
+**Delegated, not guessed:** spawned two general-purpose subagents for real
+web research rather than answering from training knowledge — one confirmed
+Etsy's current AI-disclosure mechanism and the 140-char/13-tag/20-char
+limits, one pulled real Etsy comp pricing for the military-planner niche.
+Both came back with sourced, honestly-caveated results (some categories had
+thin or currency-inconsistent data, said so rather than papering over it).
+
+**Not done, no image-generation tool available this session:** the 8-card
+kp-prep photo set. Cards 1 and 6 have real, ready copy (pulled from the
+actual files) but need the image built in Adobe Express or routed to
+graphic-design. Cards 2-5 are correctly left for Zac, the skill's own rule
+requires real screenshots of the working files, not staged content. Cards 7
+and 8 are existing permanent assets, nothing needed.
+
+No DECISIONS.md entries queued this session — pricing was grounded in real
+(if uneven-confidence) comp research plus complexity analogy to the two
+prices Zac already locked, which is what "pricing recommendation" was
+asked for, not a call requiring his judgment beyond reviewing the numbers.
+
 ## 2026-09-01 | WKD | Christian line digital resize/zip + week's product recommendation | elapsed not precisely tracked at session start
 
 First active WKD work since the "triage complete, hold" status (root

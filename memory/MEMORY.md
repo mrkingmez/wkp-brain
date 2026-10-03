@@ -9,10 +9,10 @@ learnings go here.
 ---
 
 - [Tools and infrastructure](topics/tools.md) — Google Drive corrupts markdown through its API, Claude Code needed a non-obvious npm flag, Drive search needs parentId chaining
-- [Video transcription](topics/transcription.md) — WWD transcriber pipeline: GPU/CUDA setup, gated Hugging Face models, HF_TOKEN env var (not a CLI flag), torchcodec is broken here (bypassed, don't try to fix it), output path rule, memory pressure while gaming
+- [Video transcription](topics/transcription.md) — WWD transcriber pipeline: GPU/CUDA setup, gated Hugging Face models, HF_TOKEN env var (not a CLI flag), torchcodec is broken here (bypassed, don't try to fix it), output path rule, memory pressure while gaming; push chapter list proactively the moment it's ready, don't wait to be asked (2026-09-24)
 - [WKP operating rules](topics/wkp-ops.md) — fire-and-forget partnership, voice-to-text handling, flag file updates in the moment, repo is on D: not C:
 - [Writing and content formats](topics/writing.md) — Watershed and Hidden Hinge never mix, Blender mesh standards; **no em dashes / nothing generic is now a general rule for everything public**, enforced via `no-ai-slop` skill, locked 2026-09-14
-- [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy, seven products finished with zero listings
+- [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy; Complete Budget System's file is confirmed lost (2026-09-24), only 6 of 7 products real on disk, never trust a CLAUDE.md product description without opening the real file
 - [Visual media / framing](topics/visual-media.md) — contain/fit resize rule (never crop); wwd-review-photo-pull runs Step 8 (beat-matched images) and Step 3.5 (cover every character with a real subplot, not just the leads — added 2026-09-14 after Heat missed Portman/Judd/Venora/Haysbert)
 - [WWD skill output formats](topics/wwd-skill-formats.md) — wwd-audio-cut uses one chronological Start/Cut list (not separate KEEP/DROP blocks), locked 2026-09-02; weekly output stays in ONE per-week folder, not split into topic folders like "WWD Social" (reversed 2026-09-16)
 - [Automation vision](topics/automation-vision.md) — Zac's fire-and-forget/automation push, dual-machine + voice assistant plans, "no ventures on hold" asked-not-confirmed 2026-09-12
