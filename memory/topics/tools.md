@@ -78,6 +78,28 @@ wwd-broll-prep skill. Only worth routing through Adobe when Zac specifically
 wants Photoshop's cloud tools touching each file and is fine clicking the
 picker per image.
 
+## "Content built in a web/Cowork session, never integrated into the repo" is a recurring failure mode, not a one-off [2026-10-03]
+Second confirmed instance of the same pattern that cost Kingdom Planners
+its Complete Budget System file: a real, genuinely-Zac-authored skill
+(`Listing Factory Skill - SKILL.md`, plus a `30-Day AI Productivity Plan.md`
+companion) was found sitting as plain files in
+`D:\04 New Warrior King Designs\` — never moved into
+`D:\WKP\.claude\skills\`, so `etsy-director.md`'s frontmatter reference to
+it as `listing-factory-weekly-batch-skill` silently resolved to an
+unrelated global Anthropic catalog skill of the same name instead,
+carrying wrong facts (different art path, different fulfillment vendor,
+different pricing) into at least one real task. First read was wrong — it
+looked like generic demo content with a coincidental name collision; the
+real explanation was simpler and matches the KP pattern exactly: genuine
+user content, built outside the repo, never downloaded/moved in.
+
+**How to apply:** when a referenced skill/file doesn't exist where it's
+supposed to, don't stop at "it's generic/fake" as the first explanation —
+check whether the real content is sitting somewhere adjacent (the relevant
+venture's working folder, Downloads, a web-session export path) before
+concluding it was never real. Two for two so far on this exact failure
+mode across two different ventures.
+
 ## Google Drive MCP connector (plugin_small-business_google-drive) fails auth entirely on this account [2026-09-24]
 `search_files`, and presumably every other tool in this connector, returns
 `Incompatible auth server: does not support dynamic client registration` on

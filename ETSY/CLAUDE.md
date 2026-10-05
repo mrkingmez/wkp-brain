@@ -30,10 +30,9 @@ Not a quality problem — POD quality is table stakes, everyone's baseline is si
 
 ## Related Skills
 - design-market-research — finds new sellable design ideas researched from Etsy/Pinterest/RedBubble/Society6. Trigger: "find me new designs" / "market research."
-- listing-factory-weekly-batch-skill — weekly image/listing batch. Trigger: "give me the images to post this week."
-- master-plan-daily-executor — turns a Master Plan v2 calendar day into a ready-to-paste listing pack. Trigger: "do [date]" / "today's listing."
+- wkd-weekly-batch — the real, local weekly report: what should post this week, within the shared cap, based on what's actually export-ready on disk. Trigger: "wkd weekly batch" / "what should WKD post this week."
 
-*(Note: the previous version of this file referenced skills named daily-post, marketing, and market-research — those aren't in the current skills folder. Replaced above with the actual current skill names.)*
+*(Note, corrected 2026-10-03: this file has now wrongly referenced two different sets of phantom skill names twice — first daily-post/marketing/market-research, then listing-factory-weekly-batch-skill/master-plan-daily-executor. Neither set ever existed in `D:\WKP\.claude\skills\` — confirmed by directory listing both times. The second set silently resolved to generic Anthropic demo skills carrying wrong facts for this shop (different art-source path, different fulfillment vendor, different pricing), which bled into at least one real task. wkd-weekly-batch above is a real local skill, verified to exist, built specifically for this shop's actual facts. If this section ever needs updating again, confirm the skill folder exists on disk before writing the name here.)*
 
 ## Open
 [FILL IN — full current listing inventory / tracker reconciliation]

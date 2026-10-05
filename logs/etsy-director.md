@@ -2,6 +2,59 @@
 
 Format: ## YYYY-MM-DD HH:MM | TYPE | subject | elapsed
 
+## 2026-10-03 | WKD | First real wkd-weekly-batch run (Military + Landscape prep) | ~1 session
+
+First real execution of the new `wkd-weekly-batch` skill, after
+`etsy-director.md`'s "on hold" language and the two phantom skill
+references were fixed earlier today (see DECISIONS.md WKD-2026-09-24-01 /
+WKD-2026-10-03-01).
+
+**Confirmed real folder names (LOCAL-PATHS.md was wrong/incomplete).**
+`E:\04 Warrior King Desins\Puzzles\Imagines\` only has christian,
+Christmas, Fantasy, Military — no Landscapes folder there at all. Found a
+second, previously undocumented raw-art tree at
+`D:\04 New Warrior King Designs\` with its own Christmas, Fantasy,
+**Landscapes**, Military, Sci-FI, Sports, Thanksgiving, and a second
+christian folder — Military and christian exist in both trees, with the
+D:\ copies running later (through Dec 2025) than the E:\ copies (through
+Sep 2025). Landscapes only exists on D:\. Updated LOCAL-PATHS.md with the
+full real structure, including each category's \Used\ subfolder
+convention (= already listed, skip).
+
+**Prepped 3 Military + 3 Landscape designs to current digital spec**
+(8x10/5x7/11x14/16x20/A4/A3, JPG, 300 DPI, zipped), none of which existed
+in current spec before today — every Military design on disk only had the
+old 4-size-PNG export, and only 3 of 20 available Landscape designs had
+any export at all (also old spec). Built a reusable version of the
+2026-09-01 Christian-batch script at
+`.claude\skills\wkd-weekly-batch\scripts\wkd_resize_zip.py` instead of a
+one-off scratch script. Output, zip-integrity verified (6 files each, no
+bad entries):
+- `_Print Exports\Military\` — Arlington Autumn Salute, Apache Attack in
+  Desert, Submarine Night Surfacing
+- `_Print Exports\Landscapes\` — Majestic Scottish Highlands, Autumn
+  Forest Splendor, Tropical Waterfall Paradise
+Same 4.69x max upscale factor on the 16x20/A3 sizes as the Christian
+batch (same ~1536x1024 source resolution) — expected, not a new problem.
+
+**Excluded both F-35 raw designs** (F-35 Sunrise Takeoff, F-35 Stealth
+Aerial Maneuver) from candidate selection per the standing current-gen-
+airframe rule — did not prep or recommend either.
+
+**Cap counter still unconfirmed.** No evidence in TASKS.md, DECISIONS.md,
+or this log of any listing actually going live since before 2026-09-01.
+Treated as 0 used this week but flagged rather than assumed — queued
+WKD-2026-10-03-02. Sized the recommendation to the Mon/Wed 3+3=6 cadence
+(within the 8/week combined cap either way) rather than the full 8, to
+leave headroom against that uncertainty.
+
+**Traffic data is stale.** `data\etsy-manual-2026-08-20.md` is the newest
+file in `data\`, 44 days old — recommendation is subject/gift-appeal
+judgment only, not traffic-driven. Flagged per the closed-loop rule.
+
+No listing was posted or published. Prep and report only.
+
+
 ## 2026-09-24 | KP | full free-prep pass, 6 of 7 products, Zac away for the weekend | ~1 session
 
 Ran while Zac is off (back Monday night): the free per-listing prep work

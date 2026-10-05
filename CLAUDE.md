@@ -167,18 +167,38 @@ video description, Etsy listing, pinned comment, sponsor email — run it
 through the `no-ai-slop` skill. Internal files (TASKS.md, memory, logs,
 decisions) are exempt.
 
-## Output document format — LOCKED, repeated correction (again 12 SEP 26)
+## Output document format — LOCKED, repeated correction (again 12 SEP 26, folder rule added 5 OCT 26)
 Test: is this file needed as a repo file (operational — CLAUDE.md,
 TASKS.md, skill/agent definitions, code, README)? If yes, .md/code stays
 as-is, git-tracked. If no — it's an output/deliverable document a human
 reads, prints, or ships (upload packages, guides, reports, worksheets,
 tracker docs, anything handed to Zac or Matt as a finished piece) —
-it goes out as **.docx**, with the .md kept alongside per the file
-retention rule above. This is not new — ME.md has said "Word format for
+it goes out as **.docx**. This is not new — ME.md has said "Word format for
 guides" since the start — but it keeps getting narrowed to "guides only"
 and skipped on everything else (WWD upload packages have shipped as
 .md or .txt repeatedly). The rule is broader than guides: any
 non-repo output document, full stop. Do not re-narrow it again.
+
+**One delivery folder, locked 5 OCT 26 (Zac's call — he kept losing
+track of which report lived where):** every deliverable .docx for Zac
+goes to `D:\WKP Reports\<Deliverable Name>\<YYYY-MM-DD> -
+<Deliverable Name>.docx` — one subfolder per deliverable type, every
+dated version inside it, filename starts with the date. This is the
+ONE place Zac looks, full stop — don't leave a deliverable .docx
+sitting only in some venture folder instead. The matching .md (still
+needed — it's the working source, and it's what makes future edits
+and git version history usable, not something Zac has to see) stays
+in the repo near the venture it belongs to (e.g.
+`Kingdom-Planners\reports\`, `reports\monday\`), never in
+`D:\WKP Reports\` itself. Zac confirmed explicitly he doesn't need the
+.md as long as I can still do my job with it living elsewhere.
+Migrated 5 OCT 26: Monday Briefs (`reports\monday\` →
+`D:\WKP Reports\Monday Brief\`) and the KP listing prep batch
+(`D:\05 Kingdom Planners\` → `D:\WKP Reports\Kingdom Planners Listing
+Prep\`, .md moved to `Kingdom-Planners\reports\`). WWD upload packages
+were NOT migrated — they stay co-located with their episode's raw
+footage because the editor needs them right there; flag to Zac if he
+wants those duplicated into `D:\WKP Reports\` too, don't assume.
  
 ## Etsy listing cap — LOCKED 15 AUG 26, expires 15 NOV 26
 Maximum 3 new listings per day, maximum 8 per week, across both
