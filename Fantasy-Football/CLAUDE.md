@@ -84,6 +84,15 @@ So an expiring cheap contract is nearly free to cut; a long expensive
 one is not. Examples from the current roster: cutting a $600 / 2026
 player costs 120; cutting a $425 / 2028 player costs 255.
 
+**90-day no-team exception (locked 2026-10-07, Zac's call, stated from the
+league rules):** a player with no NFL team for 90 days carries NO dead cap
+when cut. Open points not yet confirmed by Zac: whether a practice-squad
+signing counts as "with a team," and whether a new signing restarts the
+clock. Until he answers, treat a practice-squad player as still attached
+and quote normal dead cap. Current cases: Troy Andersen (released by ATL
+2026-08-07, unsigned, clear to cut free on 2026-11-05); Sterling Shepard
+(on NYJ practice squad since 2026-09-15, status depends on the open point).
+
 RULE: any time a drop is on the table, state the dead-cap cost of that
 specific drop (salary x the rate above) and what it does to available
 cap room. Never recommend a cut without that number. Prefer dropping
@@ -152,6 +161,17 @@ After MNF, grade all three against each other (model vs Zac vs
 outcome) to build the season prediction model — that's what
 `tracker\predictions.csv` / `grader.py` are for. Never skip straight
 to grading without having produced the model card first.
+
+## Straight-up picks are NFL only (locked 2026-10-07, Zac's call, future weeks)
+The straight-up card (winners only, no spread) covers NFL games only. Do not
+produce SU picks for college games. The ATS card still covers all 20 games.
+Applies from Week 6 on. The Week 5 doc already has college SU picks, ignore them.
+
+## Pickups folder layout (locked 2026-10-07, Zac's call, it was jumbled)
+`D:\Documents\Pickups 2026\` has one `Week N\` folder per week holding that
+week's .docx and the card .xls files (blank, Sanders, Sanders P). All of
+Claude's .md working copies live in `Claude MD Files\` there, never loose in
+the root or in a week folder. `dashboard\config.py` reads the week folders.
 
 ## Escalation
 Flag to Zac, don't guess, on: any player tagged questionable/doubtful

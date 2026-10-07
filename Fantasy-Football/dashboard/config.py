@@ -26,14 +26,14 @@ CARD_CODENAME = "Sanders"
 
 
 def model_picks_docx_path(week: int) -> Path:
-    return PICKUPS_DIR / f"Pickups 2026 - Week {week}.docx"
+    return PICKUPS_DIR / f"Week {week}" / f"Pickups 2026 - Week {week}.docx"
 
 
 def hybrid_card_path(week: int) -> Path:
     """The card actually submitted to the league -- human + model
     combined. This is the 'assisted_card' source everywhere in this
     codebase, and what the live dashboard's pick'em panel reads."""
-    return PICKUPS_DIR / f"{CARD_CODENAME}_Week{week} Entry.xls"
+    return PICKUPS_DIR / f"Week {week}" / f"{CARD_CODENAME}_Week{week} Entry.xls"
 
 
 def control_card_path(week: int) -> Path:
@@ -41,7 +41,7 @@ def control_card_path(week: int) -> Path:
     genuinely has none. Callers must check .exists() and treat a
     missing file as ABSENT, not as a card with zero picks -- those are
     different facts (no attempt made vs. an empty attempt)."""
-    return PICKUPS_DIR / f"{CARD_CODENAME}_Week{week}P Entry.xls"
+    return PICKUPS_DIR / f"Week {week}" / f"{CARD_CODENAME}_Week{week}P Entry.xls"
 
 
 STATE_PATH = DASHBOARD_DIR / "state.json"

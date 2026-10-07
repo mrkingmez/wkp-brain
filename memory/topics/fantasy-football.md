@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 5068502a-676d-4fde-9afd-8985d28f90f9
-  modified: 2026-09-16T02:42:11.952Z
+  modified: 2026-10-07T20:18:22.487Z
 ---
 
 ## The blank pick'em card is the trigger, not something to wait on
@@ -40,6 +40,19 @@ build the season prediction model (`tracker\predictions.csv`,
 **How to apply:** any time a blank/frozen card shows up, immediately
 produce and hand back the model's picks — do not wait for or ask about
 Zac's own card.
+
+## Straight-up picks are NFL only (2026-10-07)
+Zac: the straight-up card (winners only, no spread) is NFL only, no college.
+ATS still covers all 20 games. Pickups docs live in per-week folders
+(`Week N\`) with the .md copies in `Claude MD Files\` (see
+`Fantasy-Football\CLAUDE.md`).
+
+## 90-day no-team rule (2026-10-07)
+Zac: in the IRFL rules, a player with no NFL team for 90 days has no dead
+cap penalty when cut. Locked in `Fantasy-Football\CLAUDE.md` under "Dead cap
+on drops". Open: does a practice-squad signing count as "with a team" and
+does it restart the clock (affects Shepard; Andersen is clear 2026-11-05).
+Ask Zac, don't assume.
 
 ## Lineup calls need real research, not a projections lookup
 
