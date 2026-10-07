@@ -550,3 +550,45 @@ tracking rows on a guess per the Honesty rule, so it's queued rather than
 silently corrected.
 
 **Status:** OPEN
+
+---
+
+## [KP-2026-10-07-01] 2026-10-07 | Kingdom Planners | MAIN EFFORT venture now 30 days idle — both the $29 money block AND the free prep work remain untouched
+
+**Blocked:** KP-2026-09-17-01 (still OPEN) flagged this same gate 20 days
+ago. Tonight's rollup confirms nothing has moved since: TASKS.md itself
+has not been edited since 2026-09-17 (confirmed via `git log -- TASKS.md`),
+"Create Etsy shop (Kingdom Planners name)" is still Blocked on the same
+$29 one-time Etsy fee first noted 2026-09-07 — now 30 days running — and
+"Per-listing prep for all 7 products (free, do now)" is still Not Started,
+exactly as it was when first flagged. Zero commits touched this venture in
+the last 24 hours (last repo commit overall: 2026-10-04, an unrelated Etsy
+WKD weekly-prep file). Root CLAUDE.md names Kingdom Planners MAIN EFFORT —
+the one venture every other venture is implicitly ranked under — and it
+has produced zero forward motion, paid or free, for a full month while
+seven finished products sit unlisted.
+
+**Options:**
+A. Fold back into KP-2026-09-17-01 — no new entry needed, same blocker,
+   just more time elapsed.
+B. Escalate explicitly: the repeated non-movement on the free prep work
+   (titles/tags/descriptions/photos/pricing — needs no money, no Zac
+   decision to execute) suggests this isn't just a cash-flow wait, it's a
+   MAIN EFFORT venture that has gone fully idle. Worth a direct, named
+   flag rather than letting a third consecutive rollup silently re-note
+   the same stale $29 line.
+C. Have kdp-director or etsy-director pick up the free prep work now,
+   unprompted, since nothing about it requires the $29 or a Zac decision —
+   only the shop-creation step is actually gated.
+
+**Recommendation:** B, and lean toward C as the actual fix — the prep work
+(titles, 13 tags, descriptions, photos/mockups, pricing for 5 products,
+bundle pricing, About/policy copy) is explicitly free and listed as
+"doable with no money down so launch is paste-and-go once the $29 is
+available." Nothing in the Escalation rule blocks an agent from doing that
+work now; it's the $29 spend and the shop-creation click itself that need
+Zac. A full month of MAIN EFFORT standing still while the money-free half
+of the work also sits untouched is worth Zac's direct attention, separate
+from the original "waiting on $29" framing.
+
+**Status:** OPEN
