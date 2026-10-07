@@ -49,3 +49,6 @@ entries (2026-08-20 through 2026-09-12) now live in
 - Speakers came back Guest/Unknown [1]/[2]/[3] - same standing gap as every prior episode (voiceprints never enrolled). Zac was Guest/Unknown [1] in the small handful of lines where a second/fourth cluster briefly speaks; Matt is the dominant Guest/Unknown [1] cluster throughout, Gabby is Guest/Unknown [3].
 - Audio cut finished runtime (~1:12:53) is above the 55-70 min target - see the flag inside the cut doc itself for why (dense, on-topic episode, no large removable tangent this week).
 - No upload package or shorts were run this session - the standing transcription workflow (transcript + chapters + audio cut + Messenger send) is what was asked for. Say the word if Zac wants the full `wwd-video-upload-package`/shorts chain run next.
+
+## 2026-10-06 - Heat (1995) First Watch upload pipeline
+Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source), 6 Shorts (1 ready, 5 held) in L:\Winter Wolfs Den review show\Raw Footage\Heat\. Speaker map reversed vs skill default (S1=KingZ, S2=Winter Wolf). Flags in package Section 12.

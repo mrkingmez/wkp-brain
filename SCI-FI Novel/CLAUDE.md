@@ -1,7 +1,10 @@
 @../ME.md
 @../projects.md
 
-# Military Sci-Fi Novel (untitled)
+# Military Sci-Fi Novel (working title: Stellar Dominion)
+
+## Files
+Working files live at `D:\Stellar Dominion` (path in LOCAL-PATHS.md): Force Structure, Political Codex, Story SOP, Tier One Teams, TOE, and a Markup Capture doc. Zac marked up the Political Codex, Story SOP and Tier One Teams by hand on 9/20 (scans in `Scan documents\`), and those edits are not applied yet. `Series Documents\` is reserved for the finalized story/world-building docs, empty for now. The docs "still have a long way to go" (Zac, 2026-10-06). Venture is DORMANT, so this is capture only.
 
 ## What This Is
 Next book after Shattered Empire. Standalone military sci-fi, Top Gun-influenced. Zac is still torn between first-person and third-person POV; leaning toward first-person for a single-protagonist academy story, having previously worked in ensemble POV with Shattered Empire.

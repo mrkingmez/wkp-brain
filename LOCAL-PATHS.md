@@ -23,6 +23,43 @@ Audio		 L:\Winter Wolfs Den review show\Frost-Cast\Raw Audio
 ## Writing
 MY Writing  L:\03 My writing
 
+## Shattered Empire
+shattered empire canon set = D:\The Shaterred Empire Series
+                 (folder name is misspelled on disk, use it exactly.)
+                 CONFIRMED by Zac 2026-10-06: this is the settled canon set,
+                 replaces the L:\ plan and the Drive copies.
+                 Contents:
+                 - "Edited folder_" = CURRENT edited chapters (1-10 through
+                   51-Epilogue, plus Prolouge/Epilogue). Also holds an OLD
+                   Master_Character_Annex and Prompt_Master.
+                 - "Editing" = editing toolkit + canon docs: Master_Voice_Bible
+                   (9/2025, OLD), voice_bible_performance PDF (2/2026),
+                   Aether Stone Magic System (10/4/2026, newest copy),
+                   Master_Character_Annex_Rebuilt_v0_1, prompts, idioms.
+                 - "Manuscript Book 1 The Patient Dark" = .docx/.epub/.pdf,
+                   the same book in three formats, not three versions.
+                 - "REwrites" = DRAFT 1 location (first draft, 2025 files).
+                   Archive, not current.
+                 - Root: The_Patience_of_the_Dark_Story_Guide v2.docx
+                   (10/5/2026, current, being revised by Zac, the voice
+                   bible lives inside the story guide going forward) and the
+                   older Story_Guide.docx (7/8/2026), plus loose old
+                   chapter/scene files.
+
+## Stellar Dominion (military sci-fi novel, working title confirmed 2026-10-06)
+stellar dominion files = D:\Stellar Dominion
+                 Zac's call 2026-10-05: the files that matter. Six .docx at
+                 the root (Force_Structure, Markup_Capture, Political_Codex,
+                 Story_SOP, Tier_One_Teams, TOE; 9/14 to 9/20/2026),
+                 "Scan documents" (hand-markup scans as PDFs: Political
+                 Codex, Story SOP, Tier One Teams, odd/even pages plus
+                 merged MARKUP versions, 9/20), "Claude outputs" (two
+                 unreadable_word PNGs), and "Series Documents" (EMPTY as of
+                 2026-10-05, Zac 2026-10-06: it is meant for the finalized
+                 story documents / world building, which are not done yet).
+                 The 9/20 markups are in Scan documents, NOT yet applied to
+                 the base docs. These docs still have a long way to go.
+
 ## Cyber Security
 Cyber Secuirty   D:\WKP-Guides\
 

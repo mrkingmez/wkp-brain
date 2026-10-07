@@ -47,7 +47,7 @@ Service arm: sound editing/design, video editing, motion graphics, limited anima
 
 ---
 
-## 6. Novel — Military Sci-Fi (untitled)
+## 6. Novel — Military Sci-Fi (working title: Stellar Dominion)
 Next book after Shattered Empire. Rebuilding human colonies after attack by a powerful empire; theme of infighting over unity. Still planning; POV undecided. Not a heavy outliner.
 
 **Needs:** Sci-Fi World Bible built from scratch — history, worlds, characters, equipment, ships, alien races, factions, backstory, rank structure.
