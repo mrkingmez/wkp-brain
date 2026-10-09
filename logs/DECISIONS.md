@@ -592,3 +592,42 @@ of the work also sits untouched is worth Zac's direct attention, separate
 from the original "waiting on $29" framing.
 
 **Status:** OPEN
+
+---
+
+## [ETSY-2026-10-09-01] 2026-10-09 | Etsy (WKD + Kingdom Planners) | Manual Friday data pull has lapsed 7+ consecutive weeks, flagged repeatedly in prep docs but never queued as a decision
+
+**Blocked:** Root CLAUDE.md's "Etsy data" rule requires a hand-typed
+`data/etsy-manual-YYYY-MM-DD.md` every Friday (no CSV export exists from
+Etsy). The newest file on disk is still `data/etsy-manual-2026-08-20.md` —
+50 days old as of tonight. `ETSY/weekly-prep/2026-10-04.md` (the most
+recent weekly prep, committed 2026-10-04) independently confirms this is
+now 7 consecutive missed Fridays (8/21 through 10/2) and says the same
+gap was already flagged in the two prep cycles before it (2026-09-20,
+2026-09-27) — three flags running, none ever escalated to this queue.
+Every WKD/KP listing recommendation since 8/20 has been explicitly
+"unguided" per the Closed-loop rule as a result. This isn't something an
+agent can fix — it requires either Zac (or whoever has Etsy Shop Manager
+open) to do the 5-minute screenshot-and-type pass, or a decision to change
+the process.
+
+**Options:**
+A. Keep waiting for the manual pull to resume on its own — no process
+   change, just another reminder.
+B. Have whichever agent next touches Etsy (etsy-director or the weekly
+   prep run) treat a missing current-week file as a standing trigger to
+   explicitly ask Zac for the numbers that session, rather than noting
+   "unguided" and moving on silently.
+C. Revisit whether the Friday-manual-pull cadence is realistic given it
+   has failed 7 weeks straight — e.g. drop to a less frequent but
+   actually-sustained cadence (biweekly, or pull-before-each-batch-decision
+   instead of calendar-Friday), so the closed-loop rule matches what
+   actually happens.
+
+**Recommendation:** C, with B as a low-cost add in the meantime — a rule
+that has silently failed for 7 straight weeks is a cadence problem, not a
+one-off miss. No agent is authorized to change the standing rule in
+CLAUDE.md unilaterally, so this is queued for Zac's call rather than
+guessed at or quietly re-flagged an eighth time.
+
+**Status:** OPEN
