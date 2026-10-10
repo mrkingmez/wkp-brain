@@ -77,6 +77,10 @@ see Kingdom-Planners\CLAUDE.md Products table.)
 ## Spark Capture
 Spark Capture (Android app scaffold): D:\WKP\spark-capture\
 
+## eBay Dropship (working name WKP Commerce)
+eBay dropship venture = D:\WKP\ebay-dropship
+eBay API keys: environment variables only (EBAY_ENV, EBAY_CLIENT_ID, EBAY_CLIENT_SECRET, EBAY_REFRESH_TOKEN), never in files
+
 ## PAWS
 PAWS venture = D:\WKP\PAWS
 

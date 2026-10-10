@@ -524,3 +524,15 @@ New task in any venture → add a row here, same turn it comes up.
 Finished something → mark it Done (or just tell me — I'll update it).
 Deadlines you don't have yet stay blank — fill in real dates as they get set, especially anything tied to a publisher or a launch.
 
+
+eBay Dropship (working name WKP Commerce) — Phase 0, scaffold built 2026-10-10
+Task
+Deadline
+Status
+Notes
+Scaffold built (agents, skills, data, tools, tests) | — | Done | 2026-10-10. See ebay-dropship\CLAUDE.md. pricing.py tests pass (9 checks); ebay_api.py dry-run check: inventory/orders OK, auth/browse clean SKIP (no keys).
+Confirm venture name | — | Not Started | EBAY-002 in ebay-dropship\decisions-queue.md. Placeholder WKP Commerce.
+Zac setup checklist (seller account, business policies, developer keyset, env vars, dedicated card, notifications, GitHub connected) | — | Not Started | Full list in EBAY-DROPSHIP-BUILD.md section 7.
+Populate data\fee-table.md from eBay's current fee page | — | Not Started | pricing.py refuses to run until filled and dated.
+Verify eBay API endpoint paths/scopes in ebay_api.py against developer docs | — | Not Started | Written from knowledge, doc pages were not machine-readable at build time.
+Run ebay-director Phase 0 kickoff, then answer "Where do we go?" (EBAY-001) | — | Not Started | Researcher scheduled task is created only after the category pick.

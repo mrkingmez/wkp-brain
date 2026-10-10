@@ -25,6 +25,7 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 | Cyber Security (day job practice) | ./Cyber-Security/ | 9 |
 | Investing challenge | ./Investing/ | 10 |
 | KDP Publishing (math mystery + puzzle books) | ./KDP/ | active-unscheduled (was 1b, downgraded 1 SEP 26) |
+| eBay Dropship (working name WKP Commerce) | ./ebay-dropship/ | Phase 0, scaffold built, awaiting Zac setup items (not yet placed in a venture-status category, Zac decides) |
 
 ## Standing rules
 

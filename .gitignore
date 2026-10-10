@@ -13,3 +13,8 @@ Fantasy-Football/dashboard/espn-nfl-teams-cache.json
 .claude/skills/fantasy-football-data/sleeper-players-cache.json.meta.json
 .claude/skills/fantasy-football-data/players-cache-details.json
 Fantasy-Football/dashboard/unmatched.log
+
+# eBay dropship: credentials never in git, api logs not tracked
+.env
+ebay-dropship/tools/.env
+ebay-dropship/logs/*.log
