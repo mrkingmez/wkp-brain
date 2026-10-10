@@ -685,3 +685,266 @@ week.
 
 **Status:** RESOLVED: Option A confirmed — 0 used, full cap available.
 (either shop) before the weekly report can stop flagging this every time.
+**Status:** OPEN
+
+---
+
+## [WWD-2026-09-26-01] 2026-09-26 | WWD | Cold open deadline (9/25) passed with no update — same Higgsfield-credit block as WWD-2026-09-17-01, now overdue
+
+**Blocked:** TASKS.md lists the cold open (Warden character designs) target
+as "~2026-09-25 (was ~mid-to-late Sept)," punted there by Zac's call on
+2026-09-04. That date was yesterday. The only commit in the last 24 hours
+(`4616083`, weekly numbers pull) doesn't touch this task, WWD/CLAUDE.md, or
+the Higgsfield credit balance, and WWD-2026-09-17-01 (still OPEN) already
+flagged that the cost analysis for topping up credits hadn't been done as
+of 2026-09-17. Nothing in the repo shows that analysis exists now either,
+nine days later. This is the third deadline on the same block (originally
+~early Sept, then ~mid-to-late Sept, then ~9/25) with no visible movement
+on the underlying gate.
+
+**Options:**
+A. Treat this as the same open decision as WWD-2026-09-17-01 and just wait
+   for Zac to resolve it — no new entry needed, folds into that one.
+B. Escalate now that a third deadline has passed without the cost analysis
+   Zac was already asked to review, since repeatedly slipping the same date
+   without new information suggests the credit-topup decision itself, not
+   the deadline, is the actual blocker.
+C. Recommend the venture director re-date the cold open to "unscheduled"
+   until the Higgsfield/Firefly decision is made, rather than carrying a
+   fourth punt silently.
+
+**Recommendation:** B — this repeats an already-open decision rather than
+introducing a new fact, but three missed dates on the same unresolved spend
+question is worth surfacing again instead of letting it go stale silently.
+No agent can spend company money on Higgsfield credits without Zac's say-so
+per the Escalation rule, and the free Firefly fallback stays available if
+he'd rather skip the spend than the analysis.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-09-26-02] 2026-09-26 | WWD | Heat (1995) review shows "In Progress" and a confirmed 9/18 release in TASKS.md, but does not appear in the latest YouTube pull
+
+**Blocked:** `data/weekly-2026-09-25.md` (VidIQ pull, run 2026-09-25, real
+numbers not guessed) checked the newest 30 videos on the Winter Wolf's Den
+channel and found no "Heat (1995)" review video, despite TASKS.md stating
+the release day was "confirmed Friday 2026-09-18 (locked, no more flex)" by
+Zac on 2026-09-14. TASKS.md still lists the task as "In Progress," not
+Done, and no commit since then updates its status either way. Three
+explanations fit what's on disk and an agent can't tell which without
+checking the channel directly: the video published under a different or
+retitled name, the 9/18 date slipped without TASKS.md being corrected, or
+it's further back in upload history than the newest-30 window checked.
+Reporting this as released, or as still pending, without verifying would
+violate the Honesty rule.
+
+**Options:**
+A. Assume it shipped under a different title and move on — risks silently
+   missing a real slip if it didn't ship at all.
+B. Assume the 9/18 date slipped and treat it as still blocked/late — risks
+   wrongly flagging something that already shipped under a different title.
+C. Flag the discrepancy and have Zac or wwd-director confirm directly
+   against the channel/upload history, not guessed.
+
+**Recommendation:** C — a five-minute check for whoever has channel access
+settles this. TASKS.md should then get corrected to Done (with a link) or
+to a real new date, whichever is true, rather than sitting on a locked date
+that already passed silently.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-03-01] 2026-10-03 | WWD | Resident Evil review recording date (9/21) passed 12 days ago, task still Not Started
+
+**Blocked:** TASKS.md lists "Resident Evil review — recording date" with
+deadline "2026-09-21 (moved from original date)," noted as Zac's own call
+on 2026-09-14 after Matt's travel plans changed. That date was 12 days ago
+as of tonight (2026-10-03). The task status is still "Not Started" and no
+commit in the repo's history touches this task, the WWD section of
+TASKS.md around it, or any Resident Evil file/folder since the date was
+set. Unlike the Heat and cold-open items already on this queue, this is a
+simple recording date with no known external blocker (no credits, no
+money, no third party) logged against it — just silence past the date.
+
+**Options:**
+A. Assume the recording happened off-repo (nothing requires an agent to
+   know about a filming session the moment it happens) and TASKS.md simply
+   wasn't updated afterward — low-cost, but risks masking a second slipped
+   date if it didn't happen.
+B. Flag it for Zac/wwd-director to confirm directly whether the recording
+   happened on 9/21 as planned, and either mark the task Done or set a
+   real new date — since nothing on disk shows which is true.
+C. Leave it alone — a single Not Started row with no other signal isn't
+   worth a queue entry.
+
+**Recommendation:** B — this is the kind of silent slip the Honesty rule
+exists to catch: TASKS.md currently reads as if 9/21 hasn't happened yet,
+but no agent can tell from the repo whether that's actually true or just
+an unupdated row. A quick confirm either closes it out or surfaces a real
+new blocker.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-03-02] 2026-10-03 | WWD | FrostCast episode tracking has drifted — TASKS.md still on EP113 prep, but EP114 already aired per tonight's VidIQ pull
+
+**Blocked:** TASKS.md's "Next FrostCast episode prep" row (last touched
+2026-09-16) still frames EP113 (Wed 9/23) as the upcoming episode, carrying
+forward six topics EP112 never got to on air (Mandela Catalogue/Spielberg
+item, Sebastian Stan Winter Soldier pitch, Heat 2 recast news, The People v.
+Gorilla Grodd, Mandalorian and Grogu / Supergirl streaming, the franchise-
+longevity prompt) with a note to check whether any need a news refresh
+before re-running them. `data/weekly-2026-10-02.md` (real VidIQ pull,
+committed today in the one commit of the last 24h) shows FrostCast Episode
+114 already published 2026-10-01 — meaning EP113 has already aired too,
+and nothing in the repo records whether those six carried-forward topics
+ever got covered, or what EP114's or EP115's prep sheet looks like. This
+venture is ACTIVE (not unscheduled), so a two-episode gap in tracking is a
+real planning gap, not just stale paperwork.
+
+**Options:**
+A. Treat it as a paperwork lag only — Matt/Zac know what aired, TASKS.md
+   just needs a routine update, no decision needed.
+B. Flag it so wwd-director/Zac confirms whether the six carried topics
+   from EP112 ever ran (on EP113, EP114, or still pending) before they're
+   either dropped or carried forward again onto EP115/EP116 prep.
+C. Treat the gap as low priority since the show is airing on schedule
+   regardless of whether TASKS.md keeps pace.
+
+**Recommendation:** B — the six topics were explicitly flagged as needing
+a staleness check "before re-running them as-is" (news items age out);
+carrying them silently across two more untracked episodes risks running
+outdated news on air. Updating TASKS.md to the real current episode number
+is a five-minute fix once confirmed, not a spend or legal question, but an
+agent nightly-rollup pass isn't authorized to just overwrite venture
+tracking rows on a guess per the Honesty rule, so it's queued rather than
+silently corrected.
+
+**Status:** OPEN
+
+---
+
+## [KP-2026-10-07-01] 2026-10-07 | Kingdom Planners | MAIN EFFORT venture now 30 days idle — both the $29 money block AND the free prep work remain untouched
+
+**Blocked:** KP-2026-09-17-01 (still OPEN) flagged this same gate 20 days
+ago. Tonight's rollup confirms nothing has moved since: TASKS.md itself
+has not been edited since 2026-09-17 (confirmed via `git log -- TASKS.md`),
+"Create Etsy shop (Kingdom Planners name)" is still Blocked on the same
+$29 one-time Etsy fee first noted 2026-09-07 — now 30 days running — and
+"Per-listing prep for all 7 products (free, do now)" is still Not Started,
+exactly as it was when first flagged. Zero commits touched this venture in
+the last 24 hours (last repo commit overall: 2026-10-04, an unrelated Etsy
+WKD weekly-prep file). Root CLAUDE.md names Kingdom Planners MAIN EFFORT —
+the one venture every other venture is implicitly ranked under — and it
+has produced zero forward motion, paid or free, for a full month while
+seven finished products sit unlisted.
+
+**Options:**
+A. Fold back into KP-2026-09-17-01 — no new entry needed, same blocker,
+   just more time elapsed.
+B. Escalate explicitly: the repeated non-movement on the free prep work
+   (titles/tags/descriptions/photos/pricing — needs no money, no Zac
+   decision to execute) suggests this isn't just a cash-flow wait, it's a
+   MAIN EFFORT venture that has gone fully idle. Worth a direct, named
+   flag rather than letting a third consecutive rollup silently re-note
+   the same stale $29 line.
+C. Have kdp-director or etsy-director pick up the free prep work now,
+   unprompted, since nothing about it requires the $29 or a Zac decision —
+   only the shop-creation step is actually gated.
+
+**Recommendation:** B, and lean toward C as the actual fix — the prep work
+(titles, 13 tags, descriptions, photos/mockups, pricing for 5 products,
+bundle pricing, About/policy copy) is explicitly free and listed as
+"doable with no money down so launch is paste-and-go once the $29 is
+available." Nothing in the Escalation rule blocks an agent from doing that
+work now; it's the $29 spend and the shop-creation click itself that need
+Zac. A full month of MAIN EFFORT standing still while the money-free half
+of the work also sits untouched is worth Zac's direct attention, separate
+from the original "waiting on $29" framing.
+
+**Status:** OPEN
+
+---
+
+## [ETSY-2026-10-09-01] 2026-10-09 | Etsy (WKD + Kingdom Planners) | Manual Friday data pull has lapsed 7+ consecutive weeks, flagged repeatedly in prep docs but never queued as a decision
+
+**Blocked:** Root CLAUDE.md's "Etsy data" rule requires a hand-typed
+`data/etsy-manual-YYYY-MM-DD.md` every Friday (no CSV export exists from
+Etsy). The newest file on disk is still `data/etsy-manual-2026-08-20.md` —
+50 days old as of tonight. `ETSY/weekly-prep/2026-10-04.md` (the most
+recent weekly prep, committed 2026-10-04) independently confirms this is
+now 7 consecutive missed Fridays (8/21 through 10/2) and says the same
+gap was already flagged in the two prep cycles before it (2026-09-20,
+2026-09-27) — three flags running, none ever escalated to this queue.
+Every WKD/KP listing recommendation since 8/20 has been explicitly
+"unguided" per the Closed-loop rule as a result. This isn't something an
+agent can fix — it requires either Zac (or whoever has Etsy Shop Manager
+open) to do the 5-minute screenshot-and-type pass, or a decision to change
+the process.
+
+**Options:**
+A. Keep waiting for the manual pull to resume on its own — no process
+   change, just another reminder.
+B. Have whichever agent next touches Etsy (etsy-director or the weekly
+   prep run) treat a missing current-week file as a standing trigger to
+   explicitly ask Zac for the numbers that session, rather than noting
+   "unguided" and moving on silently.
+C. Revisit whether the Friday-manual-pull cadence is realistic given it
+   has failed 7 weeks straight — e.g. drop to a less frequent but
+   actually-sustained cadence (biweekly, or pull-before-each-batch-decision
+   instead of calendar-Friday), so the closed-loop rule matches what
+   actually happens.
+
+**Recommendation:** C, with B as a low-cost add in the meantime — a rule
+that has silently failed for 7 straight weeks is a cadence problem, not a
+one-off miss. No agent is authorized to change the standing rule in
+CLAUDE.md unilaterally, so this is queued for Zac's call rather than
+guessed at or quietly re-flagged an eighth time.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-10-01] 2026-10-10 | WWD | Heat (1995) review confirmed published, but on a different date/title than the "locked" plan — TASKS.md still reads "In Progress," answers part of open WWD-2026-09-26-02
+
+**Blocked:** `data/weekly-2026-10-09.md` (real VidIQ pull, committed
+2026-10-09, the only substantive commit in the last 24 hours) shows a
+video titled "Heat (1995) First Watch Review: Why Winter Wolf Says They
+Cannot Make Movies Like This Anymore!" published 2026-10-07, with 327
+views/11 likes/1 comment as of 10/9. TASKS.md's "Heat (1995) review —
+record + release" row still reads "In Progress" with deadline "Record
+tonight 2026-09-14; release Fri 2026-09-18 (confirmed by Zac)" — a date
+Zac called "locked, no more flex" on 2026-09-14. This confirms the video
+exists and shipped (answering part of the still-OPEN WWD-2026-09-26-02,
+which flagged it as missing from the 9/25 VidIQ pull), but it shipped 19
+days after the locked date under a title not previously recorded anywhere
+in TASKS.md, and no commit in that window explains the slip or updates
+the task status. I'm not authorized to edit TASKS.md (read-only rollup),
+so the row still reads as if release hasn't happened.
+
+**Options:**
+A. Treat this as closing out WWD-2026-09-26-02 — the video shipped, case
+   closed, no need to ask why the date moved.
+B. Have wwd-director or Zac mark the TASKS.md row Done with the real
+   2026-10-07 publish date and title, and separately confirm why the
+   locked 9/18 date slipped 19 days with no recorded reason — worth
+   knowing whether "locked" dates are being treated as firm in practice.
+C. Leave both this and WWD-2026-09-26-02 open until Zac or Matt confirms
+   directly, since an agent pull of VidIQ titles/dates is strong evidence
+   but not a substitute for the people who actually made the release call.
+
+**Recommendation:** B — the title/date match is specific enough (exact
+episode subject, published in the right week, showing up as this week's
+top-performing long-form video) that this is very likely the same video,
+not a coincidence. TASKS.md should get corrected to Done with the real
+date once confirmed, and the 19-day silent slip on a "locked" date is
+worth a quick gut-check on whether the locking convention needs
+tightening, separate from the Resident Evil and FrostCast-episode-drift
+staleness already queued (WWD-2026-10-03-01, WWD-2026-10-03-02) — this is
+now the third WWD task this month found stale in TASKS.md after the fact
+rather than updated when it happened.
+
+**Status:** OPEN
