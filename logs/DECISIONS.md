@@ -631,3 +631,46 @@ CLAUDE.md unilaterally, so this is queued for Zac's call rather than
 guessed at or quietly re-flagged an eighth time.
 
 **Status:** OPEN
+
+---
+
+## [WWD-2026-10-10-01] 2026-10-10 | WWD | Heat (1995) review confirmed published, but on a different date/title than the "locked" plan — TASKS.md still reads "In Progress," answers part of open WWD-2026-09-26-02
+
+**Blocked:** `data/weekly-2026-10-09.md` (real VidIQ pull, committed
+2026-10-09, the only substantive commit in the last 24 hours) shows a
+video titled "Heat (1995) First Watch Review: Why Winter Wolf Says They
+Cannot Make Movies Like This Anymore!" published 2026-10-07, with 327
+views/11 likes/1 comment as of 10/9. TASKS.md's "Heat (1995) review —
+record + release" row still reads "In Progress" with deadline "Record
+tonight 2026-09-14; release Fri 2026-09-18 (confirmed by Zac)" — a date
+Zac called "locked, no more flex" on 2026-09-14. This confirms the video
+exists and shipped (answering part of the still-OPEN WWD-2026-09-26-02,
+which flagged it as missing from the 9/25 VidIQ pull), but it shipped 19
+days after the locked date under a title not previously recorded anywhere
+in TASKS.md, and no commit in that window explains the slip or updates
+the task status. I'm not authorized to edit TASKS.md (read-only rollup),
+so the row still reads as if release hasn't happened.
+
+**Options:**
+A. Treat this as closing out WWD-2026-09-26-02 — the video shipped, case
+   closed, no need to ask why the date moved.
+B. Have wwd-director or Zac mark the TASKS.md row Done with the real
+   2026-10-07 publish date and title, and separately confirm why the
+   locked 9/18 date slipped 19 days with no recorded reason — worth
+   knowing whether "locked" dates are being treated as firm in practice.
+C. Leave both this and WWD-2026-09-26-02 open until Zac or Matt confirms
+   directly, since an agent pull of VidIQ titles/dates is strong evidence
+   but not a substitute for the people who actually made the release call.
+
+**Recommendation:** B — the title/date match is specific enough (exact
+episode subject, published in the right week, showing up as this week's
+top-performing long-form video) that this is very likely the same video,
+not a coincidence. TASKS.md should get corrected to Done with the real
+date once confirmed, and the 19-day silent slip on a "locked" date is
+worth a quick gut-check on whether the locking convention needs
+tightening, separate from the Resident Evil and FrostCast-episode-drift
+staleness already queued (WWD-2026-10-03-01, WWD-2026-10-03-02) — this is
+now the third WWD task this month found stale in TASKS.md after the fact
+rather than updated when it happened.
+
+**Status:** OPEN
