@@ -948,3 +948,46 @@ now the third WWD task this month found stale in TASKS.md after the fact
 rather than updated when it happened.
 
 **Status:** OPEN
+
+---
+
+## [WWD-2026-10-13-01] 2026-10-13 | WWD | Week of 9/14 social calendar still reads "In Progress" 23 days after its own window closed, both of its named blockers have since cleared
+
+**Blocked:** TASKS.md's "Week of 9/14 social calendar (FrostCast EP111, Heat
+review, Surfshark launch, Constitution Day, POW/MIA Recognition Day)" row
+carries deadline "Runs through 2026-09-20" and is still marked "In
+Progress" tonight (2026-10-13) — 23 days past that window. Its own notes
+list two "remaining open flags" that were waiting on later events: filling
+in episode-specific promo copy "after EP111/Heat are actually recorded,"
+and routing a Surfshark announcement-post badge graphic to graphic-design
+"if Zac wants one before Tuesday." Both gating events have since happened
+- EP111 was recorded 2026-09-16, and the Heat review actually published
+2026-10-07 (confirmed this month in WWD-2026-10-10-01, itself still OPEN).
+No commit since 2026-09-16 touches this task, the social calendar file in
+`WWD Social\`/weekly folders, or says whether the remaining post copy ever
+got filled in and the posts actually went out. Root CLAUDE.md's Honesty
+rule means this can't be reported Done or abandoned without someone
+actually checking; this read-only rollup has no authority to edit
+TASKS.md itself.
+
+**Options:**
+A. Assume it's effectively closed - the window is three and a half weeks
+   gone, Zac/marketing-media presumably posted what they could by hand,
+   no further flag needed.
+B. Flag for confirmation: has social-media/wwd-director actually filled in
+   and posted the remaining per-post copy for this calendar now that
+   EP111, Heat, and the Surfshark read have all actually happened, and is
+   this row safe to mark Done - or does a fresh calendar need building
+   since the original window is long past?
+C. Leave it alone - it's a drafting/scheduling task, not money or legal
+   exposure, so skip queuing it at all.
+
+**Recommendation:** B - same pattern as the already-OPEN FrostCast-episode-
+drift and Resident-Evil-date items (WWD-2026-10-03-01, WWD-2026-10-03-02)
+and the Heat-release-date item (WWD-2026-10-10-01): a time-boxed WWD task
+whose window closed weeks ago with no close-out note in TASKS.md. Low
+stakes on its own, but this is now the fourth WWD tracking row found stale
+after the fact this month, which suggests TASKS.md updates for WWD are
+consistently lagging real production rather than this being a one-off.
+
+**Status:** OPEN
