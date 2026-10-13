@@ -29,11 +29,28 @@ def model_picks_docx_path(week: int) -> Path:
     return PICKUPS_DIR / f"Week {week}" / f"Pickups 2026 - Week {week}.docx"
 
 
+def _find_card(week: int, suffix: str) -> Path:
+    """Real filenames drift week to week ('Sanders_Week1 Entry.xls' vs
+    'Sanders_Week 5 Entry.xls', 'Week 2P' vs 'Week 5p'). Match on
+    codename + week + suffix, ignoring the optional space and case.
+    Returns the canonical (no-space) path if nothing matches, so callers'
+    .exists() check still reports ABSENT correctly."""
+    import re
+    folder = PICKUPS_DIR / f"Week {week}"
+    pat = re.compile(
+        rf"^{re.escape(CARD_CODENAME)}_Week\s*{week}{suffix}\s+Entry\.xls$", re.IGNORECASE)
+    if folder.is_dir():
+        for p in sorted(folder.iterdir()):
+            if pat.match(p.name):
+                return p
+    return folder / f"{CARD_CODENAME}_Week{week}{suffix.upper()} Entry.xls"
+
+
 def hybrid_card_path(week: int) -> Path:
     """The card actually submitted to the league -- human + model
     combined. This is the 'assisted_card' source everywhere in this
     codebase, and what the live dashboard's pick'em panel reads."""
-    return PICKUPS_DIR / f"Week {week}" / f"{CARD_CODENAME}_Week{week} Entry.xls"
+    return _find_card(week, "")
 
 
 def control_card_path(week: int) -> Path:
@@ -41,7 +58,7 @@ def control_card_path(week: int) -> Path:
     genuinely has none. Callers must check .exists() and treat a
     missing file as ABSENT, not as a card with zero picks -- those are
     different facts (no attempt made vs. an empty attempt)."""
-    return PICKUPS_DIR / f"Week {week}" / f"{CARD_CODENAME}_Week{week}P Entry.xls"
+    return _find_card(week, "P")
 
 
 STATE_PATH = DASHBOARD_DIR / "state.json"

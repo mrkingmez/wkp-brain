@@ -11,8 +11,11 @@ description: >
   pulling additional beat-matched images tied to specific moments/jokes/FX
   discussion (including behind-the-scenes/production photos, not just
   movie stills), then writes a timecoded timeline-placement list saying
-  exactly where each beat-matched image belongs - see Step 8. Trigger on
-  "record video on this movie <title>", "picture gather for <title>", "get
+  exactly where each beat-matched image belongs, with a Premiere transition
+  recommendation for each - see Step 8. Also runs the whole review intake
+  (calendar entries, photo pull, resize, delete originals) when Zac says "we
+  are doing a review on <title>" - see Review Intake Mode. Trigger on
+  "we are doing a review on <title>", "record video on this movie <title>", "picture gather for <title>", "get
   pictures for <title>", "pull pictures from this transcript", "tell me
   where to insert these in the timeline", or when Zac names a movie and
   wants the picture set ready to go, or hands over a transcript and wants
@@ -35,6 +38,30 @@ Needs the `mcp__claude-in-chrome__*` tools (load them via ToolSearch if
 deferred - `browser_batch`, `navigate`, `javascript_tool`, `find`,
 `read_page` at minimum), plus Python + Pillow and read/write access to
 `L:\`. Cannot run in plain claude.ai chat.
+
+## Review Intake Mode (added 2026-10-11, Zac's call) - the full flow
+
+Zac opens with "we are doing a review on <title>" and gives the recording
+date, filming date, and release date (if he leaves one out, ask in one line).
+Run all of this without further prompting:
+
+1. **Calendar.** Put the dates on the **Winter Wolf's Den** Google Calendar
+   (id `thewinterwolfsden@gmail.com`, not the primary or the WKP one). Follow the
+   existing pattern on that calendar: a timed `<Title> - Record Review` event
+   (Sunday-night recording convention is 7 to 9 PM ET unless he says a
+   different time) and an all-day `<Title> - Review Release` event on the
+   release date. Check `list_events` first so you never double-book an entry.
+   If the movie's own theatrical-release entry already exists (e.g.
+   `Other Mommy - Movie`), leave it alone, it is a different event.
+2. **Folder, photos, resize** - Steps 1 to 7 below, unchanged.
+3. **Delete the originals (Step 7.5).** Only after Step 7 verification passes.
+4. **Report back** with the real count and mix, anything flagged, and the
+   calendar entries made. Then wait for the transcript.
+5. **When Zac hands over the transcript** (he edits first), run Step 8 and
+   deliver the placement report with transitions to `D:\WKP Reports\`.
+
+Resolve the title first (Step 2). A just-released film is the normal case
+here, so expect TMDb to be thin. Report the real count, never pad.
 
 ## The three corrections from the first run - read before doing anything
 
@@ -171,6 +198,21 @@ delivered (poster count, real-still count, cast-photo count) - flag it
 plainly if it came in under 18 or the mix leans more cast-heavy than
 intended.
 
+## Step 7.5 - Clean up: delete the originals (added 2026-10-11, Zac's call)
+
+Once Step 7 passes, the movie folder should hold ONLY `USE\`. Delete the
+downloaded `.jpg` originals sitting directly in `Raw Footage\<Movie Name>\`
+(poster candidates, rejected stills, duplicates, everything). Rules:
+
+- Delete only loose files directly in the movie folder. Never touch `USE\`.
+- Never delete before Step 7 verification passes (15+ files, 1920x1080
+  RGBA, nothing cropped, transparent padding).
+- First write the source list to `D:\WKP\scratch\<movie>_urls.txt` (poster
+  and every backdrop/still URL, with which were excluded and why). The
+  originals are re-downloadable from it if Zac ever wants them back.
+- Step 8's second pass pulls fresh images later. Those get downloaded,
+  resized into `USE\` the same way, and their originals deleted the same way.
+
 ## Step 3.5 - Know the story, cover the major characters (added 2026-09-14)
 
 A picture set built by just grabbing whatever TMDb backdrops look coolest
@@ -239,6 +281,7 @@ only ever have a transcript, never a script - do not treat that as
   rule) whenever the discussion point is actually about the making of
   the movie - practical effects, stunt work, a specific visual gag - the
   T-2 BTS photo is the model case, not an exception to avoid.
+- **Sanity-check the transcript first (added 2026-10-12).** If the Premiere .txt is much shorter than the video, shows one speaker for a two-host show, or has big empty timecode blocks, do not build on it. Transcribe the mp4 with wwd-video-transcriber using `--num-speakers 2`, then convert to edit timecodes by matching shared lines (see memory/topics/transcription.md). Place each image on the exact line it fits, not at the start of a block.
 - **If a transcript exists instead (no script/outline):** read the full
   diarized, timestamped transcript. Walk it the same way as a script -
   pull out every real talking point (a named scene, a specific joke or
@@ -281,6 +324,27 @@ against, not just a folder of extra pictures. Example line:
 ```
 [14:32-14:58] "the liquid nitrogen scene where he just shatters" -> frozen.png (matches the exact FX beat being described)
 ```
+
+**Transition recommendations (added 2026-10-11).** Every placement line also
+gets a transition suggestion and a duration in frames, picked ONLY from the
+Premiere built-ins in [premiere-transitions.md](premiere-transitions.md)
+(Zac is on the Adobe defaults). Follow that file's table, lean on hard cuts and
+Cross Dissolve, and never recommend anything from its avoid list. Extended
+example line:
+
+```
+[14:32-14:58] "the liquid nitrogen scene where he just shatters" -> frozen.png | in: Cross Dissolve 12f, out: hard cut | matches the exact FX beat being described
+```
+
+**Deliverable: the placement report (.docx).** Per the root CLAUDE.md output
+rule this goes to `D:\WKP Reports\Review Image Placement\<YYYY-MM-DD> - <Title>
+Image Placement.docx` (the one delivery folder). Keep the matching `.md` in
+`WWD\reports\`. Also keep the `timeline-placements.md` next to the images in
+`USE\`. The report contains: the title block and runtime, the numbered
+placement table (timecode, quote, image file, in/out transition and frames,
+why), any talking point with no image found, a short "transition strategy"
+paragraph, and a how-to-apply note for Premiere. The `no-ai-slop` pass is
+not required, since this is an internal editing doc. Build the .docx with `D:\WKP\.claude\skills\no-ai-slop\scripts\md_to_docx.py`.
 
 **Report:** state how many beat-matched images were found and added, name
 any talking point from the script/transcript that a real image couldn't

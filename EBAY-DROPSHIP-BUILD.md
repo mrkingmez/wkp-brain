@@ -279,7 +279,7 @@ description: Handles eBay orders for the dropship venture: supplier purchase pre
 ## Orders
 1. Pull new paid orders via eBay Fulfillment API.
 2. For each: verify supplier stock and current cost. If cost rose and margin breaks floor, flag to Zac (do not auto-cancel; seller-initiated cancels for out of stock create defects).
-3. Pre-graduation: write a BUY item to decisions-queue.md with order ID, supplier, SKU, buyer ship-to (masked in the queue: city and state only), cost. Zac places or approves the supplier order.
+3. Pre-graduation: write a BUY item to decisions-queue.md with order ID, supplier, SKU, item, cost. No buyer data of any kind in the queue. Zac opens the order in eBay Seller Hub, takes the ship-to from there, and places or approves the supplier order himself.
 4. Upload tracking to eBay the moment the supplier provides it, inside handling time.
 
 ## Sync (every run)
@@ -292,7 +292,7 @@ Draft replies only. Zac sends until graduation. Never disclose the supplier rela
 Follow Zac's return policy. Route to supplier's US return address per agreement. Log every return reason.
 
 ## Privacy
-Buyer names and addresses never go into git-tracked files. orders.csv stores order ID, city, state, item, and money fields only.
+No buyer data of any kind goes into the repo: no name, address, city, state, ZIP, email, phone, or username, in any file, log, queue item, report, or memory. orders.csv stores order ID, item, and money fields only. Buyer ship-to lives only in eBay Seller Hub.
 ```
 
 ### 5.6 `ebay-dropship/CLAUDE.md`

@@ -577,6 +577,21 @@ def build_full_scoreboard_panel(week: int, nfl_scoreboard: dict, cfb_scoreboard_
         if t:
             on_card_abbrs.add(t["abbreviation"])
 
+    def quarter_clock(status: dict) -> str:
+        """'Q2 5:32', 'Halftime', 'OT 3:10'. ESPN's period is 1-4 for
+        regulation, 5+ for overtime; halftime/end-of-quarter come through
+        as the status's own shortDetail text, so use that when present."""
+        detail = (status.get("type", {}).get("shortDetail") or "")
+        low = detail.lower()
+        if "half" in low or low.startswith("end of"):
+            return detail
+        period = status.get("period")
+        clock = status.get("displayClock") or ""
+        if not period:
+            return clock
+        label = f"Q{period}" if period <= 4 else ("OT" if period == 5 else f"{period - 4}OT")
+        return f"{label} {clock}".strip()
+
     def nfl_row(event):
         comp = event["competitions"][0]
         away = next(c for c in comp["competitors"] if c["homeAway"] == "away")
@@ -586,6 +601,8 @@ def build_full_scoreboard_panel(week: int, nfl_scoreboard: dict, cfb_scoreboard_
             "away_team": away["team"]["abbreviation"], "away_score": away.get("score"),
             "home_team": home["team"]["abbreviation"], "home_score": home.get("score"),
             "clock": comp["status"].get("displayClock"),
+            "period": comp["status"].get("period"),
+            "clock_display": quarter_clock(comp["status"]),
             "status": comp["status"]["type"]["description"],
             "on_card": away["team"]["abbreviation"] in on_card_abbrs or home["team"]["abbreviation"] in on_card_abbrs,
         }
@@ -609,6 +626,8 @@ def build_full_scoreboard_panel(week: int, nfl_scoreboard: dict, cfb_scoreboard_
             "away_team": away_name, "away_score": away.get("score"),
             "home_team": home_name, "home_score": home.get("score"),
             "clock": comp["status"].get("displayClock"),
+            "period": comp["status"].get("period"),
+            "clock_display": quarter_clock(comp["status"]),
             "status": comp["status"]["type"]["description"],
             "on_card": on_card,
         }

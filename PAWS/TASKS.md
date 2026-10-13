@@ -131,3 +131,12 @@ See CAPABILITIES.md for full specs.
 ## Decisions waiting on Zac
 
 See decisions/DECISIONS.md
+
+## Two-screen hardware research — added 7 OCT 2026
+
+- [ ] Decide PAWS-008 (Pi 5 two-screen build vs stay on ESP32) — see
+  decisions\DECISIONS.md and reports\2026-10-07 - PAWS Hardware Research.md.
+- [ ] If Pi path approved: verify three suppliers per part and add BOM
+  rows (transparent OLED, Touch Display 2, Pi 5, UPS HAT E plus 21700
+  cells, ProMaster 4041 hub, microSD). Also research color or larger
+  transparent panels.

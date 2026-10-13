@@ -262,7 +262,7 @@ function renderScoreboard(panel) {
     const teams = document.createElement("span");
     teams.textContent = `${g.away_team} ${g.away_score ?? "-"} @ ${g.home_team} ${g.home_score ?? "-"}`;
     const clock = document.createElement("span");
-    clock.textContent = `${g.status} ${g.clock || ""}`.trim();
+    clock.textContent = g.clock_display || `${g.status} ${g.clock || ""}`.trim();
     row.appendChild(league);
     row.appendChild(teams);
     row.appendChild(clock);

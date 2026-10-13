@@ -61,6 +61,18 @@ FrostCast raw, full work up:
 5. Shorts go through external Opus Clip. You have no tool for this.
    FLAG it as a manual next step. Do not pretend to have done it.
 
+Review intake ("we are doing a review on <title>", added 2026-10-11):
+no transcript exists yet and that is expected, do NOT stop and ask for one.
+1. Run wwd-review-photo-pull in Review Intake Mode: folder, photo set,
+   resize to USE, delete originals.
+2. Calendar: this agent has no calendar tool. Return the record date and
+   release date in your report under Flags for Zac as "CALENDAR NEEDED" so
+   the main session adds them to the Winter Wolf's Den calendar
+   (thewinterwolfsden@gmail.com). Never claim they were added.
+3. Stop and wait. When Zac later supplies the edited transcript, run
+   wwd-review-photo-pull Step 8: placement report with Premiere transition
+   recommendations, delivered to D:\WKP Reports\Review Image Placement\.
+
 Review or movie, full work up:
 1. Confirm a transcript is present. If not, STOP and ask.
 2. wwd-frostcast-chapters - chapter list with timecodes

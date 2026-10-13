@@ -179,3 +179,8 @@ CLI flag, default 8 (was 16). Retry succeeded at 8. If a future long/dense
 episode OOMs again at this step, drop to 4 before assuming something else is
 wrong — large-v3 batches are much heavier per item than diarization
 embeddings, so the safe batch size here is lower than the diarization one.
+
+## Two-host reviews: force 2 speakers, and know which file is raw (2026-10-12)
+- `transcribe.py` now takes `--num-speakers 2`. Without it pyannote can split two hosts across extra clusters. Use it for any review or First Watch. Output is still Guest/Unknown [1]/[2] (no voiceprints), so map by content: whoever says "the King and I" / "King, get the numbers" is Winter Wolf, the other is KingZ.
+- The mp4 in a review's Raw Footage folder is the raw StreamYard recording, NOT the edit. The Premiere `.txt` next to it is the edit's transcript and can be thin, miss one host entirely, and mislabel speakers. For placement work, transcribe the raw file and convert to edit time by finding the offset (match 5 or more shared lines; Other Mommy was raw minus 14:58).
+- **Why:** Other Mommy placement report was first built on the Premiere .txt, covered only half the review, and Zac caught the speaker errors.

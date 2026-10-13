@@ -101,6 +101,8 @@ def main():
             "is tight on 8GB cards so don't jump this to 32+ without testing."
         ),
     )
+    parser.add_argument("--num-speakers", type=int, default=None,
+        help="Exact speaker count if known (e.g. 2 for a two-host review). Stops pyannote inventing extra speakers.")
     args = parser.parse_args()
 
     hf_token = os.environ.get("HF_TOKEN")
@@ -182,7 +184,7 @@ def main():
 
     diarize_start = time.time()
     try:
-        diarize_segments = diarize_pipeline(args.audio)
+        diarize_segments = diarize_pipeline(args.audio, num_speakers=args.num_speakers)
     except RuntimeError as e:
         if "out of memory" in str(e).lower():
             print(

@@ -18,3 +18,5 @@ Fantasy-Football/dashboard/unmatched.log
 .env
 ebay-dropship/tools/.env
 ebay-dropship/logs/*.log
+ebay-dropship/keysets.txt
+**/keysets*.txt

@@ -112,7 +112,14 @@ def read_card(path: Path) -> dict:
         col3 = str(sheet.cell_value(r, 3)).strip()
         col4 = str(sheet.cell_value(r, 4)).strip() if sheet.ncols > 4 else ""
 
-        m = SECTION_RE.match(col2) if col2 and not col1 and not col3 else None
+        # Header text normally sits in col 2 (Weeks 1-3); the Week 5 card
+        # has it in col 1 instead, so accept either when the rest of the
+        # row is blank.
+        m = None
+        if col2 and not col1 and not col3:
+            m = SECTION_RE.match(col2)
+        elif col1 and not col2 and not col3:
+            m = SECTION_RE.match(col1)
         if m:
             section = m.group(1).upper().replace("TIE BREAKER", "TIE BREAKER")
             section_date = m.group(2).strip()

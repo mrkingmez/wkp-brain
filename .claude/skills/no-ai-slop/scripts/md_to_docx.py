@@ -33,9 +33,34 @@ def main():
         lines = f.readlines()
 
     doc = Document()
+    table_rows = []
+
+    def flush_table():
+        if not table_rows:
+            return
+        ncols = max(len(r) for r in table_rows)
+        t = doc.add_table(rows=0, cols=ncols)
+        t.style = 'Table Grid'
+        for ri, r in enumerate(table_rows):
+            cells = t.add_row().cells
+            for ci in range(ncols):
+                para = cells[ci].paragraphs[0]
+                add_runs(para, r[ci] if ci < len(r) else '')
+                if ri == 0:
+                    for run in para.runs:
+                        run.bold = True
+        table_rows.clear()
+
     for raw in lines:
         line = raw.rstrip('\n')
         stripped = line.strip()
+
+        if stripped.startswith('|'):
+            cells = [c.strip() for c in stripped.strip('|').split('|')]
+            if not all(re.fullmatch(r':?-{2,}:?', c) for c in cells):
+                table_rows.append(cells)
+            continue
+        flush_table()
 
         if not stripped:
             continue
@@ -69,6 +94,7 @@ def main():
         p = doc.add_paragraph()
         add_runs(p, stripped)
 
+    flush_table()
     doc.save(dst)
     print(f"Wrote {dst}")
 

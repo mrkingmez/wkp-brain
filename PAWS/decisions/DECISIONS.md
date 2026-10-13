@@ -73,3 +73,16 @@ tradeoff entirely. Also decides what gets ordered next.
 and no open decision blocking them — the haptic feedback driver and the
 I2C rotary encoder both ride the existing I2C bus at zero added pin
 cost. Those can be ordered independent of how PAWS-007 resolves.
+
+## PAWS-008 — Platform change for Scout's two-screen, full-port spec
+**Status:** OPEN — raised 7 OCT 2026, supersedes PAWS-007 if approved
+**Question:** Zac's spec (transparent character screen, larger touch
+screen, battery, SD plus microSD reader, USB-A and USB-C) does not fit the
+locked Waveshare ESP32-S3-Touch-LCD-1.69 (four free pins, one USB port).
+Move Scout to a Raspberry Pi 5 based build, or stay on the ESP32 board
+and cut those features from v1?
+**Why it matters:** Pi path is roughly $282 to $312 in main parts versus
+a small fraction for the ESP32 path, changes the enclosure, and makes
+PAWS-007 moot. Full detail: reports\2026-10-07 - PAWS Hardware Research.md.
+**Note:** Child-safety blockers (no mic, no LLM, no cloud on devices a
+minor touches) apply either way.

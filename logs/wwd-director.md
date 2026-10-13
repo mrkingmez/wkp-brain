@@ -52,3 +52,19 @@ entries (2026-08-20 through 2026-09-12) now live in
 
 ## 2026-10-06 - Heat (1995) First Watch upload pipeline
 Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source), 6 Shorts (1 ready, 5 held) in L:\Winter Wolfs Den review show\Raw Footage\Heat\. Speaker map reversed vs skill default (S1=KingZ, S2=Winter Wolf). Flags in package Section 12.
+
+### 2026-10-11 - Other Mommy (2026) review intake
+**Status:** DONE (photo stage); transcript stage pending
+**Trigger:** "we are doing a review on Other Mommy", recording tonight, release Tue 10/13
+**Classification:** Review (intake)
+**Actions taken:** TMDb 1400837 confirmed. Calendar: added "Other Mommy - Record Review" (Sun 10/11 7-9 PM ET) and "Other Mommy - Review Release" (Tue 10/13 all-day) to Winter Wolf's Den calendar. Pulled 17 backdrops + 6 poster candidates, filtered to 15 (1 poster, 13 stills, 1 promo portrait), resized to 1920x1080 RGBA PNG in USE\, verified, deleted originals. Skill, director routing, and Premiere transition reference updated.
+**Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\Other Mommy (2026)\USE\ (15 PNGs); source list D:\WKP\scratch\other-mommy_urls.txt
+**Flags for Zac:** Set is 15 not 18 (brand-new release, IMDb has no extra stills). Placement report waits on the edited transcript.
+
+### 2026-10-12 - Carrie (2026 series) review intake
+**Status:** DONE (intake). Step 8 pending transcript.
+**Trigger:** "today we are doing a review video on Carrie series, recording today release thursday"
+**Classification:** Review (intake)
+**Actions taken:** Title resolved to TMDb tv/288673 (Prime Video, premiered 2026-10-07). Calendar entries added on thewinterwolfsden@gmail.com: Record Review Mon 10/12 7 to 9 PM ET (time assumed from usual pattern), all-day Review Release Thu 10/15. Pulled 33 backdrops + 19 posters, curated to 1 poster + 17 stills, resized to 1920x1080 RGBA PNG in USE (verified, transparent padding), originals deleted.
+**Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\Carrie (2026 series)\USE\1-18.png ; source list D:\WKP\scratch\carrie_urls.txt
+**Flags for Zac:** record time assumed; awaiting edited transcript for placement report.

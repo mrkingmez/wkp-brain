@@ -36,7 +36,8 @@ BROWSE_SCOPE = "https://api.ebay.com/oauth/api_scope"
 OK, SKIP = "OK", "SKIP"
 _SECRET_KEYS = {"authorization", "access_token", "refresh_token", "client_secret"}
 _PII_KEYS = {"buyer", "shippingaddress", "shipto", "fullname", "email", "phone", "addressline1",
-             "addressline2", "postalcode"}
+             "addressline2", "postalcode", "city", "stateorprovince", "state", "countrycode",
+             "contactaddress", "username", "buyerregistrationaddress"}
 
 
 def host():
