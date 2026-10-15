@@ -123,3 +123,26 @@ with timing/leads, "before you go live" checklist, block-by-block framing)
 that the 2026-09-15 rewrite dropped — promised to Zac same night, not yet
 built back into the skill file itself as of this entry. Check the skill file
 before assuming this got done.
+
+
+## Shorts factory (Part 2), installed 2026-10-14
+
+Review shorts are now BUILT, not just cut. Source of truth is `.claude/skills/wwd-review-pipeline/shorts-factory.md` plus `scripts/build_short.py`. Zac's trigger: the old shorts "looked like they were just cut up, no other build to it."
+
+- Five clips max, all finished, ship floor 7. No HOLD FOR RE-TRIM. The old reason (block-level timecodes can't resolve mid-block in-points) was wrong, silencedetect (-32dB, 0.28s) solves it.
+- Length: YouTube Shorts and Instagram Reels are 3 min now (Oct 2024, Jan 2025). Working target 30 to 75s, floor 20s. Facebook Reels unverified, assume 90s. The old 59s Instagram cap is retired.
+- Every clip: blurred-fill 1080x1920 (never center crop), burned-in Poppins captions, timed hook text, film tag strip, cover PNG plus one-frame prepend. Output doc is `[Title] - Shorts Captions.md/.docx`, replaces shorts_manifest.txt.
+- Gotcha found in testing: the one-frame cover clip carries about 1s of silent audio unless capped with `-t 0.0334`, which breaks head-silence QC and adds a second of length.
+- Gotcha: PowerShell 5.1 `Set-Content -Encoding utf8` writes a BOM, so JSON specs are read with utf-8-sig.
+- Additions beyond Zac's spec (flagged for veto): film tag strip, hook fade, background darken, -14 LUFS loudness normalize.
+
+## Review placement reports need a fun layer with sound (2026-10-14)
+Zac on the Carrie report: "where is the fun... where is the cool thing that happens with the poster... sound effects... music prompts for Suno... a Firefly prompt for the nomination sticker." The first Carrie report was dissolves only. **Why:** reviews are entertainment, and Other Mommy's melt and blood close set the bar. **How to apply:** every placement report gets the fun layer described in `premiere-transitions.md` (5 built moments, timecoded SFX cue map, Den Kit, Suno prompts, Firefly sticker prompts). Wolfie Awards sticker is the recurring graphic. Research limit: web searches gave general SFX principles plus Dead Meat's awards bit and CinemaSins' breaking counter, no frame-level channel teardowns.
+
+**Tone rule on top of the fun layer (2026-10-14):** Match the tone of the movie, not just the joke. The fun comes from the hosts' lines, but the sound underneath must fit what is on screen. No comedy music or cartoon sounds over death, abuse, bullying violence or school-shooting talk. Dry and dark beats funny there: a silence, a heartbeat, a low hit, or no cue at all. Zac's example: no Benny Hill chase music while counting dead bodies. **How to apply:** before listing any sound cue, ask what is on screen and what is being said; if it is a death, abuse or violence beat, use horror sound or silence only.
+
+**Transition variety, 2026-10-14:** Zac said 90% of the Carrie report was Cross Dissolve, hard cut and Film Dissolve and Premiere has more. My old skill note wrongly said he was on Adobe defaults only. **How to apply:** use Adobe's Modern transitions (Impacts set, names in `premiere-transitions.md`), about half of placements, matched to the picture, each paired with a sound, no back-to-back repeats. He also wants verdict stickers (Recommend Watch, Do Not Watch, Dumpster Fire) with timestamps, used only where a host says it. Open: the exact name of his own glitch transition (third-party, not on Adobe's list).
+
+## Posting Checklist is part of every review's shorts package (2026-10-15)
+Zac: the checklist should be part of the posting package for all review videos. shorts-factory.md Section 11 footer now requires a dated table (day, clip path, cover, YT/IG/FB times, tick boxes) plus click-by-click YouTube Studio and Meta Business Suite steps. Why it was missing: the footer was only a 3-line schedule. Posting is manual: Composio is cloud-side and cannot read L:\, YouTube API quota was exhausted 2026-10-15, Meta composer can't take automation uploads. Use asset_id=104052046075172 for the Winter Wolf's Den page.
+

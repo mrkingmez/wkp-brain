@@ -1,4 +1,4 @@
-# WKP Memory
+﻿# WKP Memory
 
 Index of operational learnings. Details live in `topics/`. Read this every session.
 
@@ -14,7 +14,7 @@ learnings go here.
 - [Writing and content formats](topics/writing.md) — Watershed and Hidden Hinge never mix, Blender mesh standards; **no em dashes / nothing generic is now a general rule for everything public**, enforced via `no-ai-slop` skill, locked 2026-09-14
 - [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy; Complete Budget System's file is confirmed lost (2026-09-24), only 6 of 7 products real on disk, never trust a CLAUDE.md product description without opening the real file
 - [Visual media / framing](topics/visual-media.md) — contain/fit resize rule (never crop); wwd-review-photo-pull runs Step 8 (beat-matched images) and Step 3.5 (cover every character with a real subplot, not just the leads — added 2026-09-14 after Heat missed Portman/Judd/Venora/Haysbert)
-- [WWD skill output formats](topics/wwd-skill-formats.md) — wwd-audio-cut uses one chronological Start/Cut list (not separate KEEP/DROP blocks), locked 2026-09-02; weekly output stays in ONE per-week folder, not split into topic folders like "WWD Social" (reversed 2026-09-16)
+- [WWD skill output formats](topics/wwd-skill-formats.md) — wwd-audio-cut uses one chronological Start/Cut list (not separate KEEP/DROP blocks), locked 2026-09-02; weekly output stays in ONE per-week folder, not split into topic folders like "WWD Social" (reversed 2026-09-16); review shorts are now BUILT via shorts-factory.md (5 clips max, all finished, no holds, burned-in captions, 2026-10-14)
 - [Automation vision](topics/automation-vision.md) — Zac's fire-and-forget/automation push, dual-machine + voice assistant plans, "no ventures on hold" asked-not-confirmed 2026-09-12
 - [Personal/non-WKP](topics/user-personal.md) — Zac has a package delivery job, needs mileage logged (first surfaced 2026-09-13); was sick ~2 weeks through late Sept/early Oct 2026, explains the production slip on several items
 - [Marketing / sponsors](topics/marketing-sponsors.md) — Surfshark affiliate deal terms + corrected tracking links, marketing subagent spec→live pattern, POW/MIA content must stay about the missing/captured, never about Zac's own service (2026-09-14)

@@ -382,3 +382,5 @@ timeline-placements file was written when the source was a transcript.
 - Deliver beat-matched images from a transcript without the
   timeline-placements file - the timecode list is the point of running
   from a transcript at all.
+
+- **Intro/outro stings (added 2026-10-13):** shows open with a burning-logo sting after the host intro line (Other Mommy: about 00:14 to 01:31). A Premiere transcript block that spans 70+ seconds for one sentence is that sting, not speech. Never put a poster or still across it. Poster covers the intro line only, and a fun transition can hand off into the logo. Ask Zac for sting start/end if the transcript does not make it obvious.
