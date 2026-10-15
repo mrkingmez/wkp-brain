@@ -948,3 +948,139 @@ now the third WWD task this month found stale in TASKS.md after the fact
 rather than updated when it happened.
 
 **Status:** OPEN
+
+---
+
+## [WWD-2026-10-13-01] 2026-10-13 | WWD | Week of 9/14 social calendar still reads "In Progress" 23 days after its own window closed, both of its named blockers have since cleared
+
+**Blocked:** TASKS.md's "Week of 9/14 social calendar (FrostCast EP111, Heat
+review, Surfshark launch, Constitution Day, POW/MIA Recognition Day)" row
+carries deadline "Runs through 2026-09-20" and is still marked "In
+Progress" tonight (2026-10-13) — 23 days past that window. Its own notes
+list two "remaining open flags" that were waiting on later events: filling
+in episode-specific promo copy "after EP111/Heat are actually recorded,"
+and routing a Surfshark announcement-post badge graphic to graphic-design
+"if Zac wants one before Tuesday." Both gating events have since happened
+- EP111 was recorded 2026-09-16, and the Heat review actually published
+2026-10-07 (confirmed this month in WWD-2026-10-10-01, itself still OPEN).
+No commit since 2026-09-16 touches this task, the social calendar file in
+`WWD Social\`/weekly folders, or says whether the remaining post copy ever
+got filled in and the posts actually went out. Root CLAUDE.md's Honesty
+rule means this can't be reported Done or abandoned without someone
+actually checking; this read-only rollup has no authority to edit
+TASKS.md itself.
+
+**Options:**
+A. Assume it's effectively closed - the window is three and a half weeks
+   gone, Zac/marketing-media presumably posted what they could by hand,
+   no further flag needed.
+B. Flag for confirmation: has social-media/wwd-director actually filled in
+   and posted the remaining per-post copy for this calendar now that
+   EP111, Heat, and the Surfshark read have all actually happened, and is
+   this row safe to mark Done - or does a fresh calendar need building
+   since the original window is long past?
+C. Leave it alone - it's a drafting/scheduling task, not money or legal
+   exposure, so skip queuing it at all.
+
+**Recommendation:** B - same pattern as the already-OPEN FrostCast-episode-
+drift and Resident-Evil-date items (WWD-2026-10-03-01, WWD-2026-10-03-02)
+and the Heat-release-date item (WWD-2026-10-10-01): a time-boxed WWD task
+whose window closed weeks ago with no close-out note in TASKS.md. Low
+stakes on its own, but this is now the fourth WWD tracking row found stale
+after the fact this month, which suggests TASKS.md updates for WWD are
+consistently lagging real production rather than this being a one-off.
+
+**Status:** OPEN
+
+
+---
+
+## [WWD-2026-10-15-01] 2026-10-15 | WWD | Surfshark FTC/attorney-check question (WWD-2026-09-18-01) likely overtaken by events — two more episodes have shipped since the "rescheduled" update, resolution never confirmed
+
+**Blocked:** WWD-2026-09-18-01 (OPEN) flagged an unresolved attorney/
+compliance question on the Surfshark sponsor read — whether the written
+disclosure must sit physically next to the affiliate link in the
+description/pinned comment, or the spoken in-read disclosure already in
+the script is enough. Its last update (2026-10-03, Zac) said the read
+had been pulled from EP111 and "rescheduled to this week's new FrostCast
+episode" because Zac had been sick. Tonight's rollup cross-checked the
+corrected sponsor-read file itself and the confirmed VidIQ publish
+record:
+- `WWD/prep/FrostCast Episode 112 - Surfshark Sponsor Read.md` (committed
+  2026-09-16, renamed from an EP111 draft the same day) is the actual
+  script, targeting the episode recorded Wed 2026-09-16 — not the
+  original EP111/9-14 draft the open decision still cites.
+- `data/weekly-2026-09-25.md` confirms "FrostCast Episode 113" published
+  2026-09-24; `data/weekly-2026-10-02.md` confirms "FrostCast Episode
+  114" published 2026-10-01. Both are real VidIQ pulls, not estimates.
+- No pull or commit anywhere confirms EP112 itself publishing, and none
+  of the three weekly pulls since 9/16 mention Surfshark, the written
+  disclosure line, or an attorney/compliance sign-off by name.
+So two episodes past the one the FTC question was "rescheduled" to have
+already shipped, with zero record of the attorney check happening, the
+written-disclosure-placement decision being made, or anyone confirming
+the read aired (or didn't) with proper disclosure. TASKS.md's own
+Surfshark row still only describes the superseded EP111 draft. This is
+real affiliate revenue plus an FTC compliance question — not something
+to guess at — and the window the 10/3 update assumed ("this week's
+episode") has almost certainly already closed unresolved.
+
+**Options:**
+A. Treat it as already shipped with only the spoken disclosure (per
+   TASKS.md's own note that both scripts already had explicit spoken
+   paid-partnership language) and close the loop retroactively — no
+   further legal exposure to chase since the segment, if it aired,
+   aired with at least some disclosure.
+B. Get Zac or Matt to confirm directly which episode (112, 113, 114, or
+   still pending) actually carried the Surfshark read, whether the
+   written disclosure line made it into that episode's
+   description/pinned comment, and whether the attorney/compliance
+   question ever got a real answer — before assuming it's fine.
+C. Leave it exactly as OPEN in WWD-2026-09-18-01 and take no further
+   action, on the theory that nothing has materially changed since.
+
+**Recommendation:** B — this is the same real-money/legal-exposure item
+WWD-2026-09-18-01 already flagged as needing an actual attorney answer,
+not an agent guess; the fact that two more episodes have shipped since
+the last "rescheduled" update without any record of resolution makes it
+more urgent to confirm, not less. I'm not authorized to decide FTC
+placement or legal risk myself, so this stays queued rather than
+assumed either way.
+
+**Status:** OPEN
+
+---
+
+## [CS-2026-10-15-01] 2026-10-15 | Cyber Security | CySA+ exam target date (30 Sept 2026) passed 15 days ago with no outcome recorded anywhere, and the deadline was never tracked as a TASKS.md row in the first place
+
+**Blocked:** `Cyber-Security/CLAUDE.md` and root `CLAUDE.md` both state
+"CompTIA CySA+ exam targeted 30 Sept 2026 (punted from end of August
+2026, moved 8/31)" as an active deadline. Today is 2026-10-15 — 15 days
+past that date. No commit in the repo's history touches Cyber-Security/
+or mentions CySA+/the exam since that date was set, and no row for it
+exists in TASKS.md at all (Cyber Security has no task table in TASKS.md
+to begin with, only the two CLAUDE.md mentions) — so there is nothing to
+mark Blocked, In Progress, or Done, and no way for this rollup to tell
+whether Zac sat the exam, passed, failed, or punted it again. Per the
+Honesty rule, I'm reporting this as genuinely unknown rather than
+assuming either outcome.
+
+**Options:**
+A. Assume no news is good news — Zac would have mentioned it if the
+   exam didn't go as planned — and leave it alone until he brings it up.
+B. Flag for direct confirmation of the exam outcome, then either add a
+   Cyber Security task table to TASKS.md going forward (it's the only
+   ACTIVE venture per root CLAUDE.md's venture-status list with no task
+   table at all) or at minimum update both CLAUDE.md "Current state"
+   mentions with the real outcome and next date if it was punted again.
+C. Leave it exactly as-is — a day-job certification deadline, not
+   venture money or legal exposure, so out of scope for this queue.
+
+**Recommendation:** B — a dated commitment that's 15 days overdue with
+zero record either way is exactly the kind of silent slip the nightly
+rollup exists to catch, and Cyber Security being the one ACTIVE venture
+with no TASKS.md presence at all means this kind of date can keep
+slipping past unnoticed until someone asks. Confirming the real outcome
+costs nothing and closes a real gap in how this venture is tracked.
+
+**Status:** OPEN
