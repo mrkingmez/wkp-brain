@@ -1084,3 +1084,59 @@ slipping past unnoticed until someone asks. Confirming the real outcome
 costs nothing and closes a real gap in how this venture is tracked.
 
 **Status:** OPEN
+
+## [WWD-2026-10-16-01] 2026-10-16 | WWD | Shorts cannot be posted through any connected automation route — "Post Other Mommy (2026) shorts" is due today with no working auto-post path, and TASKS.md hasn't been updated to reflect the blocker
+
+**Blocked:** `WWD/reports/Social-Posting-Connector-Report.md` (written
+2026-10-15, part of last night's "todays updates" commit) tested every
+posting route available in this session for the five finished Other
+Mommy shorts and found none of them can actually publish a local file
+from Zac's PC:
+- Composio (Facebook/Instagram) only accepts a file already staged on
+  its own cloud storage or a public link, not a local path — rejected
+  the upload.
+- Composio YouTube hit a shared daily quota (HTTP 403), already used up.
+- OpusClip would require re-processing the already-finished clips inside
+  its own app.
+- VidIQ's YouTube login is Matt's account with no Instagram connected,
+  and its upload also only takes a public link.
+- Meta Business Suite's web Reel composer hides its upload behind a
+  native file picker no browser-automation tool here can operate.
+The report's own recommendation is Option A (a PC-side posting script
+using Zac's own Meta developer app + Google Cloud project credentials —
+removes the shared-quota and file-path problems for good) as the real
+fix, with Option D (post by hand using the Posting Checklist already
+built into the Other Mommy shorts captions doc) as the same-day
+workaround. TASKS.md's "Post Other Mommy (2026) shorts" row still only
+says "Reminder set for 2026-10-16" with no mention that automated
+posting is blocked — that row is due TODAY and, as written, nothing in
+this repo can execute it without Zac either posting by hand right now or
+setting up Option A's credentials (a Meta app ID/secret/token and a
+Google Cloud OAuth client), which only he can create and which involves
+his own developer/Google accounts.
+
+**Options:**
+A. Zac does Option D today (the ten-minutes-per-clip manual checklist)
+   to keep today's posting cadence, independent of anything else.
+B. Zac greenlights the Option A setup walkthrough (Meta app first, since
+   it covers Instagram too) so future weeks post automatically — this
+   needs him to actually click through developer.facebook.com and
+   console.cloud.google.com with an agent walking him through it live,
+   not something that can be queued and done unattended.
+C. Zac asks for Option C research first (Buffer/Metricool/Publer/Later)
+   before committing to building Option A, in case a paid tool is less
+   setup work overall.
+D. Leave posting manual indefinitely and don't build A or research C —
+   acceptable only if the 10-minutes-per-clip manual cost is tolerable
+   long-term.
+
+**Recommendation:** A for today specifically (keeps the existing "one
+short a day" cadence from slipping on its first day), then B as the real
+fix — matches the report author's own ranked recommendation. I can't
+create the Meta app or Google Cloud project myself (they require Zac's
+own accounts and a live walkthrough), so this stays queued rather than
+assumed either way per the Escalation rule.
+
+**Status:** OPEN
+
+---
