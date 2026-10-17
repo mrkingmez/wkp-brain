@@ -1140,3 +1140,45 @@ assumed either way per the Escalation rule.
 **Status:** OPEN
 
 ---
+
+## [WWD-2026-10-17-01] 2026-10-17 | WWD | FrostCast episode drift has widened from 1 episode to 3 since WWD-2026-10-03-02 was opened — EP116 has now aired, TASKS.md still frames EP113 as upcoming
+
+**Blocked:** WWD-2026-10-03-02 (still OPEN, opened 2026-10-03) already
+flagged that TASKS.md's "Next FrostCast episode prep" row was stuck on
+EP113 while EP114 had already aired per that night's VidIQ pull. Tonight's
+real VidIQ pull (`data/weekly-2026-10-16.md`, committed in the only
+non-decision commit of the last 24 hours) shows the drift has grown, not
+closed: "MCU is (maybe) back with VisionQuest | Crystal Lake is almost
+here | FrostCast Episode 116" published 2026-10-15 as a livestream (81
+views, 9 likes as of the pull). TASKS.md has not been touched since
+2026-09-16 and still reads EP113 as the upcoming episode carrying six
+carried-forward topics from EP112. That is now at least three aired
+episodes past the tracked row (EP114, EP115 implied, EP116 confirmed)
+with zero record in this repo of whether the six carried topics (Mandela
+Catalogue/Spielberg, Sebastian Stan Winter Soldier pitch, Heat 2 recast
+news, The People v. Gorilla Grodd, Mandalorian and Grogu/Supergirl
+streaming, the franchise-longevity prompt) ever ran, were dropped, or are
+still being carried forward onto whatever episode comes next.
+
+**Options:**
+A. Fold into WWD-2026-10-03-02 as the same open issue, just more time
+   elapsed — no new entry needed.
+B. Escalate: a one-episode lag becoming a three-episode lag without
+   anyone closing the loop suggests the TASKS.md update step for this
+   venture has stopped happening altogether, not just fallen behind — a
+   different problem than a single missed update.
+C. Leave it — the show airs on schedule either way, so the tracking gap
+   is cosmetic.
+
+**Recommendation:** B — same reasoning as WWD-2026-10-03-02, but worth a
+fresh entry because the gap tripled instead of closing, which is itself
+new information: whatever has been happening since 2026-09-16 on this
+task hasn't included a TASKS.md pass. Confirming which of the six EP112
+topics actually ran, and resetting the row to whatever episode is really
+next, is a five-minute fix once someone with the real schedule (Zac or
+wwd-director) confirms it — not something this read-only rollup can
+correct on a guess.
+
+**Status:** OPEN
+
+---
