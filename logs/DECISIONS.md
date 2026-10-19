@@ -1141,6 +1141,48 @@ assumed either way per the Escalation rule.
 
 ---
 
+## [WWD-2026-10-19-01] 2026-10-19 | WWD | Cold-open shot-list blocker is filed under the eBay Dropship table in TASKS.md, not WWD, and has not been queued as its own decision
+
+**Blocked:** TASKS.md's eBay Dropship section (added 2026-10-10) contains a
+row titled "Cold open shot list + Firefly swap" whose content is plainly
+WWD cold-open work, not eBay: a shot list, a Warden design brief, the
+Winter Wolf Express look, and who appears in shots 1 and 7, built from
+"Hey all you warden.docx" (the Big Trouble version of the script). The
+row itself says Zac told the team on 2026-10-10 that draft 1 was built
+from the wrong script source and that he is finding the right files
+himself, with an explicit "do not work this until he hands them over."
+That is a real, still-open blocker distinct from the Higgsfield-credit
+block already tracked for the same Warden cold open in WWD-2026-09-17-01
+and WWD-2026-09-26-01 (those are about paying for image generation; this
+one is about which script is even the right source). Nine days have
+passed with no update, and because the row lives under eBay Dropship
+rather than WWD in TASKS.md, a WWD-focused status pass is likely to miss
+it entirely.
+
+**Options:**
+A. Fold this into the existing Warden cold-open decision thread
+   (WWD-2026-09-26-01) rather than opening a new entry — risk: that
+   thread is specifically about credit cost, so folding mixes two
+   unrelated blockers under one resolution.
+B. Log it as its own entry (this one) so the script-source block and the
+   TASKS.md filing mismatch both stay visible, and flag Zac to either
+   move the row into WWD's table or confirm it belongs under
+   eBay/cross-venture cold-open work on purpose.
+C. Leave it alone — the row already says "Blocked" with clear notes, so
+   nothing is technically missing from the record.
+
+**Recommendation:** B. The specific ask (confirm the correct script,
+the Warden design brief, the Winter Wolf Express look, and who is in
+shots 1 and 7) is a decision only Zac can make and is different from
+the credits question already queued. The filing location is itself
+worth a flag since it risks the blocker going unseen on a normal WWD
+check-in. This is a read-only nightly rollup, so the row doesn't get
+moved here — queuing it is the right scope.
+
+**Status:** OPEN
+
+---
+
 ## [WWD-2026-10-17-01] 2026-10-17 | WWD | FrostCast episode drift has widened from 1 episode to 3 since WWD-2026-10-03-02 was opened — EP116 has now aired, TASKS.md still frames EP113 as upcoming
 
 **Blocked:** WWD-2026-10-03-02 (still OPEN, opened 2026-10-03) already
