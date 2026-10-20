@@ -196,10 +196,7 @@ in the repo near the venture it belongs to (e.g.
 Migrated 5 OCT 26: Monday Briefs (`reports\monday\` →
 `D:\WKP Reports\Monday Brief\`) and the KP listing prep batch
 (`D:\05 Kingdom Planners\` → `D:\WKP Reports\Kingdom Planners Listing
-Prep\`, .md moved to `Kingdom-Planners\reports\`). WWD upload packages
-were NOT migrated — they stay co-located with their episode's raw
-footage because the editor needs them right there; flag to Zac if he
-wants those duplicated into `D:\WKP Reports\` too, don't assume.
+Prep\`, .md moved to `Kingdom-Planners\reports\`). WWD upload packages now ALSO go to `D:\WKP Reports\<Movie> Upload Package\` (Zac's call 2026-10-19). The movie folder keeps its own copy because the editor works from it, the reports folder is the one place Zac looks.
  
 ## Etsy listing cap — LOCKED 15 AUG 26, expires 15 NOV 26
 Maximum 3 new listings per day, maximum 8 per week, across both

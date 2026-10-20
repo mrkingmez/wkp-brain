@@ -143,6 +143,7 @@ Pull and hold before writing:
 ## 3. Build the Upload Package
 
 Write to the movie folder as `[Movie Title] - Upload Package.md`, plus `.docx`.
+**Also save the .docx to the one reports folder (LOCKED 2026-10-19, Zac asked why packages were not there):** D:\WKP Reports\[Movie Title] Upload Package\<YYYY-MM-DD> - [Movie Title] Upload Package.docx. The movie folder keeps its copy for the editor, the reports folder is where Zac looks. The .md source stays in the repo at WWD\reports\[Movie-Title]-Upload-Package.md. Do both every run, then say both paths in the chat summary.
 
 **One document, locked 2026-10-18 (Zac).** The shorts captions doc is merged into this
 package. There is no separate `Shorts Captions` file anymore. Everything about one short
@@ -483,6 +484,7 @@ Do not restate the package contents in chat. He reads the file.
 12. **Do not ask permission mid-run.** Execute, then flag.
 13. **Shorts follow `shorts-factory.md`, including its hard rules:** five clips max, all
     finished, burned-in captions, never center crop, look at the frames before shipping.
+14. **Stay on the movie (LOCKED 2026-10-19, Zac).** A review's shorts, titles, hooks, descriptions, chapter titles and tags are about the movie under review. Do not build a short, hook or chapter around a tangent the hosts drifted into (another franchise, a studio's strategy, the DCU, a different movie's rating). Pick the next movie-focused moment instead. Other titles can appear only when a host says them inside a clip about this movie, and never in a title or hook.
 
 ---
 

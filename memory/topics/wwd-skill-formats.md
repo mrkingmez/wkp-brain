@@ -146,3 +146,6 @@ Zac on the Carrie report: "where is the fun... where is the cool thing that happ
 ## Posting Checklist is part of every review's shorts package (2026-10-15)
 Zac: the checklist should be part of the posting package for all review videos. shorts-factory.md Section 11 footer now requires a dated table (day, clip path, cover, YT/IG/FB times, tick boxes) plus click-by-click YouTube Studio and Meta Business Suite steps. Why it was missing: the footer was only a 3-line schedule. Posting is manual: Composio is cloud-side and cannot read L:\, YouTube API quota was exhausted 2026-10-15, Meta composer can't take automation uploads. Use asset_id=104052046075172 for the Winter Wolf's Den page.
 
+
+## Stay on the movie in shorts and packages (LOCKED 2026-10-19)
+Zac, on the Street Fighter package: the short about animating the DCU was a tangent, swap it for something about the movie, and when we do a review keep it about the movie. Rule 14 in wwd-review-pipeline SKILL.md, plus WWD/CLAUDE.md. Replaced with Not For Me Until It Was (WWE cast worry turned respect for the games), Game Details (bonus stage car, announcer voice), kept Momoa as Blanka, Bison Raul Julia line, and Watch Again. Dropped Mortal Kombat 2 from tags, the DCU from the description and a chapter title.

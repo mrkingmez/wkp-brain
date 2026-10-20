@@ -387,3 +387,6 @@ audio unless its audio was capped at one frame length.
 **2026-10-18.** Captions doc merged into the Upload Package (Zac). Each short's copy,
 files, checks and posting window sit in one block. Posting moved from fixed dates and
 times to windows timed from the full video going live.
+
+
+**Stay on the movie (LOCKED 2026-10-19, Zac).** Pick clips about the movie under review. Skip clips whose topic is a tangent (another franchise, the DCU, a different movie). If a clip would mention another title in the first sentence or the hook, cut it later or pick another. Street Fighter (2026): the animated-DCU short was replaced by a game-details short.

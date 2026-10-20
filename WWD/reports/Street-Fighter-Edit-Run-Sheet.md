@@ -1,5 +1,7 @@
 # Street Fighter (2026) - Edit Run Sheet, Version 2
 
+**Picture rule (LOCKED 2026-10-19, Zac): no picture stays on screen longer than 7 seconds, and no picture is used twice. We are not a faceless channel, so the hosts' faces carry the show and pictures are quick cutaways on the word. When one of us goes on a point (about 14 seconds or more), cut to that host's solo camera. Solo shots are the CAM stops, in timeline order with everything else.**
+
 **Built 2026-10-18 from the edit transcript (20:37). Version 2 adds the video game pieces you picked (V1, V2, V3, V5, V8, V10), all built and ready.** Folder: `L:\Winter Wolfs Den review show\Raw Footage\Street Fighter 2026\`. 31 pictures in `USE\`. Owned sounds only, no music beds, no Capcom art, font or audio.
 
 **How to use this version:** start with the VIDEO GAME PIECES table below, then work down the stops. Every clip already has its sound baked in, so you do not add sound for those. Pieces not picked (V4, V6, V7, V9, V11 to V14) are listed at the bottom in case you change your mind.
@@ -92,7 +94,7 @@ Built as `P:\WWD Kit\Street Fighter\Title - Street Fighter.png` (see-through bac
 
 ### 1. 00:11 | PNG 1 (poster) | search: "Welcome back to the channel"
 Said: "Hey, guys. Welcome back to the channel, Winter Wolf here" (Winter Wolf)
-Picture `USE\1.png` to 00:28. **Power Slam:** Scale keyframe 150 at the first frame, 100 ten frames later (right-click both, Ease Out). Opacity 0 to 100 over the first 3 frames. In: hard cut. Out: Cross Dissolve 12f.
+Picture `USE\1.png` to 00:18. **Power Slam:** Scale keyframe 150 at the first frame, 100 ten frames later (right-click both, Ease Out). Opacity 0 to 100 over the first 3 frames. In: hard cut. Out: Cross Dissolve 12f. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\Adobe\Foley\Foley Table Fist Hits Wood Table 01.wav` on the landing frame (frame 10), 0 dB.
 Notes: Round 1 (00:11) and Versus (00:14) play over this poster. Hold the poster to 00:28 as written.
 
@@ -112,20 +114,32 @@ Said: "And now Street Fighter, I'm a pretty happy wolf for 2026" (Winter Wolf)
 Picture `USE\1.png` to 00:40. In: Zoom Blur Impacts 14f. Out: Cross Dissolve 12f.
 Sound: `SFX\deep-fast-whoosh_GyZDnHNu.mp3` -10 dB at the cut.
 
+### CAM 1. 00:39 | KINGZ SOLO | search: "I'm playing here either. I think it"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 00:39 to 00:54. In: hard cut. Out: hard cut back to the two-shot.
+
 ### 5. 01:00 | SOUND ONLY | search: "Capcom versus Marvel"
 Said: "Capcom versus Marvel, Capcom versus John Wick" (KingZ)
 Sound: `SFX\Adobe\Technology\Technology Electronic Buttons Arcade Game Buttons Single 01.wav` -10 dB on "John Wick," then nothing. No picture (the joke is the line).
 
 ### 6. 01:44 | PNG 22 (Akuma / Roman Reigns) | search: "WWE guy"
 Said: "I'm not a current WWE guy... it's for wrestling fans" (Winter Wolf)
-Picture `USE\22.png` to 01:58. In: Light Sweep Impacts 14f. Out: hard cut.
+Picture `USE\22.png` to 01:51. In: Light Sweep Impacts 14f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: this is the Akuma character poster of Roman Reigns, it also pays off at stop 38.
 
 ### 7. 02:00 | PNG 2 (Ryu) | search: "respect"
 Said: "They showed this game in this movie a lot of respect" (Winter Wolf)
-Picture `USE\2.png` to 02:18. In: Cross Dissolve 12f. Out: hard cut.
+Picture `USE\2.png` to 02:07. In: Cross Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\fireball-whoosh_GknWsSNu.mp3` -10 dB on "fireballs" (about 02:08). `SFX\Adobe\Impacts\Impact Punch Hard Single 01.wav` -8 dB on "dragon punches" (about 02:11).
 Notes: add the screen shake (V14) on the punch.
+
+### CAM 2. 02:07 | WINTER WOLF SOLO | same turn that starts "Dude, I would pay that. I would", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 02:07 to 02:18. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 3. 02:18 | KINGZ SOLO | search: "Yeah, they they paid great homage to"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 02:18 to 02:33. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 8. 02:30 | SPOILER ALERT | search: "here's your alert"
 Said: "we're going to throw up the spoiler alert here" (KingZ)
@@ -134,15 +148,15 @@ Notes: V13 would turn this into the flashing WARNING screen.
 
 ### 9. 02:36 | PNG 4 (Ken and Ryu) | search: "DNA from a bunch of different games"
 Said: "they took some DNA from a bunch of different games" (Winter Wolf)
-Picture `USE\4.png` to 02:55. In: Film Dissolve 12f. Out: hard cut. Slow push: Scale 100 to 106 across the hold.
+Picture `USE\4.png` to 02:43. In: Film Dissolve 12f. Out: hard cut. Slow push: Scale 100 to 106 across the hold. (7 seconds max, then back to the hosts' faces.)
 
 ### 10. 02:55 | PNG 3 (Cammy and Chun-Li) | search: "Everybody had a little moment to shine"
 Said: "Everybody had a little moment to shine" (Winter Wolf)
-Picture `USE\3.png` to 03:04. In: Cross Dissolve 12f. Out: hard cut.
+Picture `USE\3.png` to 03:02. In: Cross Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 
 ### 11. 03:04 | PNG 13 (Chun-Li) | search: "costumes were spot on"
 Said: "Their costumes were spot on" (KingZ)
-Picture `USE\13.png` to 03:12. In: Pop Motion Impacts 8f. Out: hard cut.
+Picture `USE\13.png` to 03:11. In: Pop Motion Impacts 8f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 
 ### 12. 03:12 | PNG 7 (Guile) | search: "Guile"
 Said: "Guile looked really good" (KingZ)
@@ -156,12 +170,16 @@ Notes: the transcript reads "50s Vega," a garble. The masked fighter is Vega (Or
 
 ### 14. 03:25 | PNG 18 (Balrog / 50 Cent) | search: "that was 50 cent"
 Said: "that was 50 Cent when we saw the credits roll" (KingZ)
-Picture `USE\18.png` to 03:33. In: Glow Impacts 16f. Out: hard cut.
+Picture `USE\18.png` to 03:32. In: Glow Impacts 16f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\Adobe\Human Elements\Human Crowd Cheer 04.wav` -14 dB at the cut, tail under "Banger."
+
+### CAM 4. 03:33 | KINGZ SOLO | search: "I think they did really good in"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 03:33 to 03:47. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 15. 03:50 | PNG 5 (Ken versus Ryu) | search: "frenemy rival brother"
 Said: "Ken and Ryu, you have their frenemy rival brother thing" (Winter Wolf)
-Picture `USE\5.png` to 04:03. In: Split Impacts 12f. Out: hard cut.
+Picture `USE\5.png` to 03:57. In: Split Impacts 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: V4 (character select) would cover 03:47 to 04:20 instead of stops 15 to 17.
 
 ### 16. 04:03 | PNG 15 (Chun-Li) | search: "investigating Bison"
@@ -170,18 +188,42 @@ Picture `USE\15.png` to 04:10. In: Cross Dissolve 12f. Out: hard cut.
 
 ### 17. 04:10 | PNG 7 (Guile) | search: "comic relief"
 Said: "Guile's guy was used mainly here for comic relief" (Winter Wolf)
-Picture `USE\7.png` to 04:20. In: hard cut. Out: Cross Dissolve 12f.
+Picture `USE\7.png` to 04:17. In: hard cut. Out: Cross Dissolve 12f. (7 seconds max, then back to the hosts' faces.)
 
 ### 18. 04:35 | PNG 17 (Zangief) | search: "Zangief"
 Said: "Zangief show up and he was just the big Russian brawler" (Winter Wolf)
-Picture `USE\17.png` to 04:51. In: Stretch Impacts 10f. Out: hard cut.
+Picture `USE\17.png` to 04:42. In: Stretch Impacts 10f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\Adobe\Impacts\Impact Body Punch 01.wav` -10 dB at the cut.
 Notes: V12 (move-list box) goes here.
 
+### CAM 5. 04:42 | WINTER WOLF SOLO | same turn that starts "And it was kind of funny. And", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 04:42 to 04:52. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 6. 04:53 | KINGZ SOLO | search: "Yeah, I definitely know that the bar"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 04:53 to 05:09. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 7. 05:09 | WINTER WOLF SOLO | search: "Right. It it depends it on the"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 05:09 to 05:23. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 8. 05:24 | WINTER WOLF SOLO | search: "Aspect to animated stuff. Not not game"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 05:24 to 05:43. In: hard cut. Out: hard cut back to the two-shot.
+
 ### 19. 05:46 | PNG 11 (Akuma) | search: "Akuma story"
 Said: "it also told the Akuma story of how he got into this" (KingZ)
-Picture `USE\11.png` to 06:02. In: Burn Chroma Impacts 12f. Out: hard cut.
+Picture `USE\11.png` to 05:53. In: Burn Chroma Impacts 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\fireball-whoosh_GknWsSNu.mp3` -14 dB.
+
+### CAM 9. 05:53 | KINGZ SOLO | same turn that starts "Yeah, and it also told the Akuma", cut after the picture ends
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 05:53 to 06:48. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 10. 06:48 | WINTER WOLF SOLO | search: "I think that's that's the strongest case"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 06:48 to 07:22. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 20. 07:08 | SOUND ONLY | search: "Hadouken"
 Said: "flying around laser beams, Hadouken shit" (Winter Wolf)
@@ -190,53 +232,92 @@ Notes: V10 (original fireball flash) goes here.
 
 ### 21. 07:44 | PNG 4 (Ken) | search: "bonus stage"
 Said: "Ken beating up the car, that's the bonus stage for extra points" (Winter Wolf)
-Picture `USE\4.png` to 07:56. In: Spring Motion Impacts 10f. Out: hard cut.
+Picture `USE\4.png` to 07:51. In: Spring Motion Impacts 10f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\Adobe\Crashes\Crash Impact Car Crash Hard Hit 12.wav` -8 dB on "car."
 Notes: V9 (BONUS STAGE banner) goes here.
 
+### CAM 11. 07:51 | WINTER WOLF SOLO | same turn that starts "But that's, that's that's the that's the", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 07:51 to 08:01. In: hard cut. Out: hard cut back to the two-shot.
+
 ### 22. 08:16 | PNG 20 (Dan Hibiki) | search: "pink guy"
 Said: "Gonna be a pink guy up in here any minute now" (Winter Wolf)
-Picture `USE\20.png` to 08:45. In: Pop Motion Impacts 8f. Out: Cross Dissolve 12f.
+Picture `USE\20.png` to 08:23. In: Pop Motion Impacts 8f. Out: Cross Dissolve 12f. (7 seconds max, then back to the hosts' faces.)
 Notes: Dan Hibiki (Andrew Schulz) in his pink suit. The transcript garbles this section ("Joe Indian," "Kenzie," "pinky"), so I only matched the pink line.
+
+### CAM 12. 08:23 | KINGZ SOLO | search: "That guy was hilarious. He's a great"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 08:23 to 08:56. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 23. 08:58 | PNG 24 (He-Man) | search: "quintessential dude movie"
 Said: "the quintessential dude movie of 2026, right alongside He-Man" (Winter Wolf)
-Picture `USE\24.png` to 09:10. In: Cross Dissolve 12f. Out: hard cut.
+Picture `USE\24.png` to 09:05. In: Cross Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 
 ### 24. 09:14 | PNG 20 (Dan Hibiki) | search: "threw himself into harm's way"
 Said: "He threw himself into harm's way to save him" (Winter Wolf)
-Picture `USE\20.png` to 09:28. In: hard cut. Out: hard cut.
+Picture `USE\20.png` to 09:21. In: hard cut. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: confirm in the footage that this line is about Dan. If not, drop this stop.
 
 ### 25. 09:30 | PNG 5 (Ken versus Ryu) | search: "best scene in the movie"
 Said: "that's the best scene in the movie" (Winter Wolf)
-Picture `USE\5.png` to 09:46. In: Film Dissolve 12f. Out: hard cut.
+Picture `USE\5.png` to 09:37. In: Film Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: no sound here, it is the emotional scene. V6 PERFECT would land at 09:45.
 
-### 26. 10:12 | PNG 19 (Blanka) | search: "Jason Momoa is Blanka"
+### CAM 13. 09:37 | WINTER WOLF SOLO | same turn that starts "This is the quintessential dude movie of", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 09:37 to 09:51. In: hard cut. Out: hard cut back to the two-shot.
+
+### 26. 10:12 | PNG 19 (Blanka), then PNG 32 (Momoa in A Minecraft Movie) | search: "Jason Momoa is Blanka"
 Said: "Jason Momoa is Blanka. What did you think there?" (Winter Wolf)
-Picture `USE\19.png` to 10:52. In: Cross Dissolve 12f. Out: hard cut.
-Notes: this holds through KingZ's answer, "he takes it to the 11th level."
+Picture `USE\19.png` 10:12 to 10:19. In: Cross Dissolve 12f. Out: hard cut. Slow push: Scale 100 to 106 across the hold.
+Hosts' faces 10:19 to 10:23.
+Then `USE\32.png` 10:23 to 10:30, on KingZ's "like he does in comedies... the 11th level." In: Cross Dissolve 12f. Out: hard cut. Slow push: Scale 100 to 106.
+Then NO PICTURE 10:30 to 10:52, the two hosts for "the touching part... he has a serious story... a kid trapped in a man's body."
+Notes: split on 2026-10-19 (Zac: too long on one picture). USE\32.png is a promo image of Jason Momoa in the pink jacket from A Minecraft Movie (2025), TMDb. Each picture is used once in the whole video (stop 34 no longer uses 19).
+
+### CAM 14. 10:30 | KINGZ SOLO | search: "And that's kind of what he did"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 10:30 to 10:52. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 15. 10:52 | WINTER WOLF SOLO | search: "This is lost as a child, orphan"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 10:52 to 11:08. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 27. 11:18 | PNG 14 (Bison) | search: "what you thought of Bison"
 Said: "the other character I wanted to take on is Bison" (Winter Wolf)
-Picture `USE\14.png` to 11:45. In: Luma Fade Impacts 16f. Out: hard cut.
+Picture `USE\14.png` to 11:25. In: Luma Fade Impacts 16f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: V1 ROUND 2 would land here.
+
+### CAM 16. 11:25 | KINGZ SOLO | same turn that starts "I thought bison was probably the weakest", cut after the picture ends
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 11:25 to 11:44. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 28. 12:27 | PNG 27 (Street Fighter 1994 / Raul Julia era) | search: "Raul Julia"
 Said: "he's just not Raul Julia" (Winter Wolf)
-Picture `USE\27.png` to 12:48. In: Film Dissolve 12f. Out: hard cut.
+Picture `USE\27.png` to 12:34. In: Film Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: this is the 1994 movie art with Bison in the red cape. I did not use a photo of Raul Julia himself (the only free photo is from a different movie).
+
+### CAM 17. 12:34 | WINTER WOLF SOLO | same turn that starts "The Bison's acquisition. Let's not ruin it.", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 12:34 to 12:43. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 18. 12:48 | KINGZ SOLO | search: "Like, oh, I think it was to"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 12:48 to 13:02. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 29. 13:12 | PNG 16 (Bison) | search: "Today's the day you die"
 Said: "Today's the day you die. Don't say it. He said it." (Winter Wolf)
-Picture `USE\16.png` to 13:24. In: Cross Dissolve 12f. Out: hard cut.
+Picture `USE\16.png` to 13:19. In: Cross Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\record-scratch_zkkU_2VO.mp3` -6 dB on "He said it" (about 13:20).
 Notes: V6 K.O. goes here.
 
 ### 30. 13:25 | PNG 14 (Bison) | search: "fetish direction"
 Said: "took his comic stuff in a really weird fetish direction" (Winter Wolf)
-Picture `USE\14.png` to 13:41. In: hard cut. Out: Cross Dissolve 12f.
+Picture `USE\14.png` to 13:32. In: hard cut. Out: Cross Dissolve 12f. (7 seconds max, then back to the hosts' faces.)
+
+### CAM 19. 13:32 | WINTER WOLF SOLO | same turn that starts "He said the thing. And then on", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 13:32 to 13:40. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 31. 14:05 | PNG 14 (Bison with the snail) | search: "snail"
 Said: "when he ate this snail straight out, in the shell" (KingZ)
@@ -245,19 +326,27 @@ Notes: the same picture, tighter. Optional slow push: Scale 100 to 112.
 
 ### 32. 14:10 | PNG 15 (Chun-Li) | search: "fireplace"
 Said: "He throws Chun-Li in the damn fireplace. Did they just fatality this chick?" (Winter Wolf)
-Picture `USE\15.png` to 14:26. In: hard cut. Out: Cross Dissolve 12f.
+Picture `USE\15.png` to 14:17. In: hard cut. Out: Cross Dissolve 12f. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\Adobe\Fire and Explosions\Fire Fireball Large 01.wav` -16 dB, trimmed to 2 seconds, on "fireplace."
 Notes: V6 FATALITY goes here.
 
+### CAM 20. 14:17 | WINTER WOLF SOLO | same turn that starts "Yeah. I mean, there's flashes of that.", cut after the picture ends
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 14:17 to 14:26. In: hard cut. Out: hard cut back to the two-shot.
+
 ### 33. 14:30 | PNG 7 (Guile) | search: "sonic boom"
 Said: "the only thing they didn't do was Guile's sonic boom" (Winter Wolf)
-Picture `USE\7.png` to 14:45. In: Cross Dissolve 12f. Out: hard cut.
+Picture `USE\7.png` to 14:37. In: Cross Dissolve 12f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Notes: V11 (error box) goes here.
 
-### 34. 14:55 | PNG 19 (Blanka) | search: "electric"
+### 34. 14:55 | SOUND ONLY | search: "electric"
 Said: "they did the electric" (KingZ)
-Picture `USE\19.png` to 15:01. In: Flash Impacts 6f. Out: hard cut.
+No picture here (Blanka's picture, USE\19.png, is already used at stop 26 and no picture is used twice).
 Sound: `SFX\electric-sizzle_zyuNWG4u.mp3` -12 dB, trimmed to 2 seconds.
+
+### CAM 21. 14:57 | KINGZ SOLO | search: "And then the other one that was"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 14:57 to 15:14. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 35. 15:17 | SOUND ONLY | search: "didn't come out till 94"
 Said: "how did you grow up with a song that didn't come out till 94?" (KingZ)
@@ -268,35 +357,55 @@ Notes: V3 (health bar drop) would go here.
 Said: "What was your showtime like? How many butts in seats?" (Winter Wolf)
 Notes: nothing here on purpose, this is a face-to-face stretch. V1 ROUND 3 would land here.
 
+### CAM 22. 15:43 | WINTER WOLF SOLO | search: "To work. Oh no. Yeah. Me it"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 15:43 to 15:58. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 23. 15:58 | KINGZ SOLO | search: "We were kind of limited, and we"
+Said by KingZ, going on a point.
+Cut to KingZ's solo camera (the King-Z webcam clip) 15:58 to 16:14. In: hard cut. Out: hard cut back to the two-shot.
+
+### CAM 24. 16:15 | WINTER WOLF SOLO | search: "That's just how they roll. But I"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 16:15 to 16:40. In: hard cut. Out: hard cut back to the two-shot.
+
 ### 37. 17:00 | PNG 28 (Roman Reigns) | search: "Roman Reigns"
 Said: "Roman Reigns, all he did was play his tribal chief character" (KingZ)
-Picture `USE\28.png` to 17:12. In: Light Leak Impacts 16f. Out: hard cut.
+Picture `USE\28.png` to 17:07. In: Light Leak Impacts 16f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 
 ### 38. 17:12 | PNG 22 (Akuma / Roman Reigns) | search: "That's Akuma"
 Said: "Perfect. That's Akuma." (Winter Wolf)
-Picture `USE\22.png` to 17:22. In: hard cut. Out: hard cut.
+Picture `USE\22.png` to 17:19. In: hard cut. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 
 ### 39. 17:22 | PNG 28 (Roman Reigns) | search: "tribal chief"
 Said: "his hula follow that he wears as the tribal chief" (KingZ)
-Picture `USE\28.png` to 17:46. In: hard cut. Out: Cross Dissolve 12f.
+Picture `USE\28.png` to 17:29. In: hard cut. Out: Cross Dissolve 12f. (7 seconds max, then back to the hosts' faces.)
 Notes: the transcript garbles the necklace name ("Ullevaal," "hula follow"), so no text on screen.
 
 ### 40. 18:05 | PNG 21 (E. Honda) | search: "E Honda"
 Said: "E. Honda comes to mind in the Steam House, that was a hundred hand slap" (Winter Wolf)
-Picture `USE\21.png` to 18:19. In: Zoom Blur Impacts 14f. Out: hard cut.
+Picture `USE\21.png` to 18:12. In: Zoom Blur Impacts 14f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 Sound: `SFX\Adobe\Impacts\Impact Punch Single 01.wav`, eight quick hits back to back on "hundred hand slap," -12 dB.
 
 ### 41. 18:20 | PNG 13 (Chun-Li) | search: "Steam House"
 Said: "where Chun-Li is doing the almost bare ass walk into the steam" (Winter Wolf)
-Picture `USE\13.png` to 18:34. In: Soft Wipe Impacts 14f. Out: hard cut.
+Picture `USE\13.png` to 18:27. In: Soft Wipe Impacts 14f. Out: hard cut. (7 seconds max, then back to the hosts' faces.)
 
 ### 42. 18:57 | PNG 25 (Thunderbolts) | search: "Thunderbolts"
 Said: "You liked Thunderbolts" (Winter Wolf)
 Picture `USE\25.png` to 19:03. In: Mosaic Impacts 10f. Out: hard cut.
 
+### CAM 25. 19:11 | WINTER WOLF SOLO | search: "Off the trail. That was the trailer."
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 19:11 to 19:43. In: hard cut. Out: hard cut back to the two-shot.
+
 ### 43. 19:35 | STICKER | search: "solid recommendation"
 Said: "I give this a solid recommendation when this comes out on streaming" (Winter Wolf)
 STICKER: drop `P:\WWD Kit\Stickers\Recommend Watch.mov` on the top video track so the stamp hits on the word "recommendation" (the hit is 6 frames into the clip). Thud is built in.
+
+### CAM 26. 19:50 | WINTER WOLF SOLO | search: "Dude, I feel like that's that's a"
+Said by Winter Wolf, going on a point.
+Cut to Winter Wolf's solo camera (the Winter Wolf webcam clip) 19:50 to 20:12. In: hard cut. Out: hard cut back to the two-shot.
 
 ### 44. 20:04 | NO PICTURE | search: "how likely are we to watch this again"
 Said: "a new rating system for us is how likely are we to watch this again" (Winter Wolf)
@@ -339,6 +448,7 @@ Notes: real photo of Randy Savage, a joke pic. Held for the last beat.
 | 29 | Macho Man Randy Savage, real photo | the last joke | Wikimedia Commons |
 | 30 | Other Mommy (2026) poster | the outro callout | copied from the Other Mommy folder |
 | 31 | Carrie (2026) poster | the outro callout | copied from the Carrie folder |
+| 32 | Jason Momoa in A Minecraft Movie (2025), promo image | "he does in comedies... the 11th level" (stop 26) | TMDb |
 
 **Gaps (talked about, no good picture found):**
 - **The 1987 Street Fighter and Street Fighter II arcade (00:55 to 01:15):** the only free images are tiny (about 260 pixels wide). Use a screenshot you take from your own copy if you want one.

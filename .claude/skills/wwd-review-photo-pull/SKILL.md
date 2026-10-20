@@ -303,6 +303,12 @@ only ever have a transcript, never a script - do not treat that as
   fabricate beats from the movie's general reputation or the episode's
   general topic instead of the actual script/transcript.
 
+**One picture, one place (LOCKED 2026-10-19, Zac: "I do not like using the same picture twice").** Within one video, every placement uses a different image. Never reuse a PNG for a second beat, a second stop in a run sheet, a short, a card or a callback. If there are more beats than pictures, pull more (Steps 3-5 sourcing, new stills) instead of repeating. Before delivering a placement report or run sheet, check that no filename appears twice and say so in the report ("N placements, N different pictures"). The poster is the one allowed exception only if Zac asks for an open and close on it.
+
+**Solo shots, only a few (LOCKED 2026-10-19, Zac, corrected same day).** Add a CAM stop (cut to that host's solo camera, the King-Z or Winter Wolf webcam clip) only when a host is making a good point and clearly has the floor. A few per video, not every long turn. Pick the strongest points from the speaker-labeled transcript and leave the rest as the two-shot. Zac is still teaching his edit taste, so save each new correction to memory the same turn.
+
+**Seven seconds max (LOCKED 2026-10-19, Zac: "we are not a faceless channel").** No picture stays on screen longer than 7 seconds in any run sheet or placement report. A picture is a quick cutaway on the word, then the hosts' faces return. If a talking point runs long, give the picture its first 7 seconds only, or use a different picture for the next beat (never the same one twice). Check every hold before delivering and say so in the report.
+
 **Fill the picture gaps automatically (added 2026-10-18, Zac's call).** On
 the FIRST transcript for a video, read it for every talking point with no
 picture in `USE\` yet: another movie or show named, an actor's other role,
@@ -418,6 +424,8 @@ timeline-placements file was written when the source was a transcript.
 - Deliver beat-matched images from a transcript without the
   timeline-placements file - the timecode list is the point of running
   from a transcript at all.
+- Put the same picture on two beats, stops or shorts in one video. Pull
+  another still instead (see "One picture, one place" in Step 8).
 
 - **Fun builds are click-by-click with real files (LOCKED 2026-10-17, Zac):** "I need to know how, step by step." Every fun build (poster open, blood drop, stickers, sound cues) must be written as numbered Premiere steps a person can follow without guessing: which track, which panel, which effect, what number to type, which keyframe. Every sound, overlay, template or music bed must name the **exact file path** of an asset Zac owns. Assets live on `P:\` (Sounds, Stock Footage, Tools, AE Templets) and `L:\Winter Wolfs Den review show\`; search the index `D:\WKP\data\assets\p-drive-index.csv` first (rebuild it if P:\ changed). Never write "a creak sound" or "a splat if you have one." Only when nothing owned fits: give a Firefly prompt (images/stickers), a Suno prompt (music), or a specific search (sound), plus the P:\ folder to save it into. Model case: Carrie report, Part B4.
 - **The deliverable is ONE run sheet in timeline order (LOCKED 2026-10-17, Zac):** no separate parts for sounds, builds, stickers or transitions. One numbered list of stops from start to finish; each stop holds everything for that moment (search words, picture, in/out transition with frames, sound file path and dB, sticker clip, build steps inline). A short "before you start" block at the top and a "still open" list at the bottom, nothing else. Model: `WWD\reports\Carrie-Edit-Run-Sheet.md`. Name the docx `<date> - <Title> Edit Run Sheet.docx` in `D:\WKP Reports\Review Image Placement\`.

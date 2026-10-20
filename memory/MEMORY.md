@@ -1,4 +1,4 @@
-﻿# WKP Memory
+# WKP Memory
 
 Index of operational learnings. Details live in `topics/`. Read this every session.
 
@@ -13,7 +13,7 @@ learnings go here.
 - [WKP operating rules](topics/wkp-ops.md) — fire-and-forget partnership, voice-to-text handling, flag file updates in the moment, repo is on D: not C:; a relayed Zac quote is never enough for a held venture, only his direct word in-session or a written repo change counts; when a hold keeps blocking legit standing work, check if the wall is scoped wrong before trying harder to get past it (WKD 2026-10-03)
 - [Writing and content formats](topics/writing.md) — Watershed and Hidden Hinge never mix, Blender mesh standards; **no em dashes / nothing generic is now a general rule for everything public**, enforced via `no-ai-slop` skill, locked 2026-09-14
 - [Kingdom Planners](topics/kingdom-planners.md) — shop not yet created on Etsy; Complete Budget System's file is confirmed lost (2026-09-24), only 6 of 7 products real on disk, never trust a CLAUDE.md product description without opening the real file
-- [Visual media / framing](topics/visual-media.md) — contain/fit resize rule (never crop); wwd-review-photo-pull runs Step 8 (beat-matched images) and Step 3.5 (cover every character with a real subplot, not just the leads — added 2026-09-14 after Heat missed Portman/Judd/Venora/Haysbert)
+- [Visual media / framing](topics/visual-media.md) — contain/fit resize rule (never crop); wwd-review-photo-pull runs Step 8 (beat-matched images) and Step 3.5 (cover every character with a real subplot, not just the leads — added 2026-09-14 after Heat missed Portman/Judd/Venora/Haysbert); never use the same picture twice in one video (locked 2026-10-19)
 - [WWD skill output formats](topics/wwd-skill-formats.md) — wwd-audio-cut uses one chronological Start/Cut list (not separate KEEP/DROP blocks), locked 2026-09-02; weekly output stays in ONE per-week folder, not split into topic folders like "WWD Social" (reversed 2026-09-16); review shorts are now BUILT via shorts-factory.md (5 clips max, all finished, no holds, burned-in captions, 2026-10-14)
 - [Automation vision](topics/automation-vision.md) — Zac's fire-and-forget/automation push, dual-machine + voice assistant plans, "no ventures on hold" asked-not-confirmed 2026-09-12
 - [Personal/non-WKP](topics/user-personal.md) — Zac has a package delivery job, needs mileage logged (first surfaced 2026-09-13); was sick ~2 weeks through late Sept/early Oct 2026, explains the production slip on several items

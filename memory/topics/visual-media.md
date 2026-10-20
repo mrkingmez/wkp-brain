@@ -179,3 +179,17 @@ Music in reviews is intro and outro only (Zac 2026-10-17, viewer feedback). The 
 
 ## Sticker kit, run sheet, character ID (2026-10-17)
 Zac wants reusable finished assets, not templates he builds: P:\WWD Kit\Stickers (4 clips with sound baked in) and P:\WWD Kit\Cards (Next Up end cards). Wolfie nominee must look premium (gold star at school), never a cartoon stamp. Edit doc = one timeline-order run sheet, everything inline; he is a one-man editor and scrolling between parts wastes his time. Character mix-up (teacher placed on the 'new bully' line) fixed by IMDb-tagged stills and a who's-in-it list. Rules live in wwd-review-photo-pull SKILL.md.
+
+## Never use the same picture twice in one video (LOCKED 2026-10-19)
+Zac, mid-edit: "I do not like using the same picture twice." Every placement in a video gets a different image. Run sheets and placement reports must show N placements = N different filenames; if beats outnumber pictures, pull more stills rather than repeat. Poster is the only exception, and only if Zac asks. Rule is in wwd-review-photo-pull SKILL.md (Step 8, "One picture, one place", plus the do-not list). Related: [[wwd-review-photo-pull]]. Checked the Halloween Top 5 short: 13 stills, all different, OK.
+
+## Shake presets he owns (2026-10-19)
+`P:\AE Templets\Screen Shake Annoyed Editor.prfpset` is the impact shake (one preset, Transform with Position/Scale/Rotation/Shutter Angle). `P:\Tools\Jarle's Deadpool Camera Shake Presets.prfpset` is slow handheld wobble (Long Lens, Small Camcorder, Somewhat Steady, Lots of Movement, More Movement; "For any footage" vs "For oversized footage"), not a hit shake. Import via Effects panel menu, Import Presets.
+## Pictures: 7 seconds max (LOCKED 2026-10-19)
+Zac, mid-edit of Street Fighter: pictures were held up to 40 s, and he said they are not a faceless channel, no picture longer than 7 seconds. Rule: every picture is a quick cutaway on the word, max 7 s, then back to the hosts' faces. Pairs with the no-repeat rule above. Applied to the Street Fighter run sheet (27 stops shortened). Also: his timeline drifts from transcript timecodes, so ask for two anchor lines (first and last) and rebuild the sheet with an offset. Rule lives in wwd-review-photo-pull SKILL.md Step 8 and WWD/CLAUDE.md.
+
+## Solo camera shots on a host's long point (LOCKED 2026-10-19)
+Zac, mid-edit: the run sheet had no solo shots of either host when one goes on a point. Rule (CORRECTED same day, see below): the run sheet gets a CAM stop that cuts to that host's solo camera (StreamYard King-Z and Winter Wolf webcam files in the movie's Raw Footage folder). Pictures are only the first 7 seconds of a turn, then the solo shot carries the rest. Zac said this is an ongoing refinement: 'we will keep working on it until you know what I like and my vision.' Expect more taste corrections on edit style and save each one the same turn. Built for Street Fighter: 26 CAM stops generated from speaker turns in the transcript (script D:\WKP\scratch\add_cams.py).
+
+## Solo cams: only a few (correction 2026-10-19)
+Zac: 26 solo cams was too many. Only a few, when a host is making a good point and has the floor. The 14-second automatic rule is retired. Also: he is nearly done with Street Fighter and is not going back, so the Street Fighter run sheet stays as delivered (26 CAM stops, 7-second caps, v2.2) and these are notes for future videos. His words: it is a work in progress, Rome was not built in a day. Do not re-edit finished sheets after he calls it done.
