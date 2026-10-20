@@ -1,0 +1,11 @@
+{
+  "_note": "One overdue task is between the two triggers: Scout holds whatever mood it was already in, no flicker.",
+  "tasks": [
+    {"title": "Log delivery mileage", "due_in_days": -1, "status": "open"},
+    {"title": "Post Monday WKD batch", "due_in_days": 2, "status": "open"}
+  ],
+  "calendar": [],
+  "ventures_blocked": [],
+  "open_decisions": 2,
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "_note": "Event reactions fire once per new event id, for about 8 seconds, then Scout remembers it. Use Reset memory to replay.",
+  "tasks": [
+    {"title": "Post Heat shorts", "due_in_days": 1, "status": "open"},
+    {"title": "Edit FrostCast EP117", "done_in_days": 0, "status": "done", "effort": 5},
+    {"title": "Reply to sponsor email", "done_in_days": 0, "status": "done", "effort": 1}
+  ],
+  "calendar": [],
+  "ventures_blocked": [],
+  "open_decisions": 1,
+  "events": [
+    {"id": "wwd-ep117-live", "type": "episode_live", "title": "FrostCast EP117"}
+  ]
+}

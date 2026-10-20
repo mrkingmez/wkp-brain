@@ -60,3 +60,10 @@ Format per entry:
 2026-10-07 | WEEK 5 | Model card produced from blank `cards\CODENAME_Week 5 Entry.xls` (20 games, locks Thu 10/8, TB@DAL). Odds API pull plus web-verified injuries. Edges: ATL +6.5 (Lamar ankle, 10pt swing), JAX -2.5 (5pt), CHI +2.5 (flip, Bagent starts), DET -3.5 (2pt). MNF tiebreaker 53. EC rec JAX (used-teams history not on file, flagged). Week 4 has no card, doc, or tracker rows. Not logged to predictions.csv. | D:\Documents\Pickups 2026\Pickups 2026 - Week 5.md/.docx
 
 <!-- New entries go above this line. -->
+
+## Week 6 (2026-10-18 slate, card locks Thu 10/15)
+
+2026-10-15 | WEEK 6 | Simulator built (Zac: "make it happen"). Logged the 14 NFL model picks to tracker predictions.csv (correcting the line below). New skill .claude\skills\ff-simulator: coach tendencies from pbp 2023-26, game sim, lineup optimizer, pick'em probabilities. Backtests: coach model +3% vs league on pass rate; full sim about 3-6% lower error than a recent average for QB/RB/WR/TE/K, tie on IDP, ranges calibrated to 80%. Sim lineup beats sheet lineup by 8.3 avg (79% of sims): RB Robinson for White, LB Gibbens for Dodson, DB Scott in. Nothing committed. | D:\WKP Reports\Fantasy Simulator Report\2026-10-15 - Fantasy Simulator Report.docx
+
+2026-10-15 | WEEK 6 | Card + Lineup. Odds pulled (Odds API 9-book, 1:45 AM ET), 20-game ATS card, 14 NFL SU picks, EC rec LA Rams, MNF tiebreaker 49, IRFL lineup (byes: DET CIN MIA MIN gutted the roster). First use of the new NFL Next Gen Stats feed (nextgen_stats release added to nfl-data). Edges: ATL +3.5, CAR +1.5, LV +6.5. Not written to tracker predictions.csv. | D:\Documents\Pickups 2026\Week 6\Pickups 2026 - Week 6.docx
+

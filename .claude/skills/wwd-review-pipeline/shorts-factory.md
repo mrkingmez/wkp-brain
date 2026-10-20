@@ -268,11 +268,14 @@ ffprobe is not a visual check.
 
 ---
 
-## 11. The captions document
+## 11. Shorts copy and posting (now inside the Upload Package)
 
-Write `shorts\[Movie Title] - Shorts Captions.md`, then convert to `.docx` with
-`.claude\skills\no-ai-slop\scripts\md_to_docx.py` and keep both beside the clips. This is the
-file that was missing on the Other Mommy run and the reason the clips were unusable.
+**Merged 2026-10-18 (Zac): no separate `Shorts Captions` file.** Everything below goes into
+the Upload Package, Section 7 (one complete block per short, format in SKILL.md) and
+Section 11 (flexible posting windows plus checklist). The fixed-date, fixed-clock table
+described in the footer below is replaced by windows timed from when the full video goes
+live; keep the click-by-click steps and pre-post checks. Older reviews (Other Mommy, Carrie)
+keep their separate captions files as they are.
 
 **Header:** source file full path, duration, resolution, fps, audio codec; audio deliverable
 path and duration; clip count; any attribution warning (diarization absent or inferred);
@@ -380,3 +383,7 @@ by `scripts\build_short.py`. Poppins bundled in `assets\fonts`. Added film tag s
 fade, background darken, and -14 LUFS loudness normalization (flagged above as additions).
 Fixed a bug found in testing: the one-frame cover clip carried about a second of silent
 audio unless its audio was capped at one frame length.
+
+**2026-10-18.** Captions doc merged into the Upload Package (Zac). Each short's copy,
+files, checks and posting window sit in one block. Posting moved from fixed dates and
+times to windows timed from the full video going live.

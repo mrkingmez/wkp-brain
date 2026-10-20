@@ -203,19 +203,63 @@ You warn at 06:19 that you will not spoil, then you spoil on purpose at 28:17. M
 
 1. Essential Graphics: a red rectangle across the frame (about 220 px tall) with white bold text **SPOILERS AHEAD**. Optional hazard stripes above and below if you have a pattern.
 2. Slide it in from the left at 28:11 (Position keyframes, 8 frames, Ease Out), hold it until 28:17, then the existing **Dip To Black 15f** on #36 takes the screen.
-3. Sound: two short **siren chirps** at 28:12, then a **Heartbeat** starting at 28:14, one beat per second, under the dialogue. Cut the regular music bed out at 28:14 and bring the spoiler bed (Suno S4) in at 28:17.
+3. Sound: two short **siren chirps** at 28:12, then a **Heartbeat** starting at 28:14, one beat per second, under the dialogue. Stop the heartbeat at 28:17. No music bed.
 4. Also add a small green "NO SPOILERS" check text at 06:12 when you promise not to spoil, with a soft chime. (The Recommend Watch sticker follows at 06:20, see Part G.) It makes the 28:17 break land harder.
 
 ### B4. Blood Bucket Drop with sound (37:32 to 37:47)
 
-The visual recipe is in the Fun transitions section above and is unchanged. This is the sound layer for it.
+**Rewritten 2026-10-17 as a full click-by-click build. Every file below is already on your drives.** Find the spot by the words, not the clock: if your timeline moved, the words still land in the right place.
 
-- **37:32:** a long **rope creak** as Carrie walks (10.png).
-- **37:36:** a **bucket tip and clunk** as the red wipe starts.
-- **At the full-cover red frames:** a **wet slap**, loud and short. Right after it, **drop the music and everything else to silence** for 12 to 20 frames.
-- **37:38 (15.png reveal):** a low **drone** and a quiet **fire crackle** bed that runs to 37:47 ("the gym had some pyro").
-- **About 37:43:** an **electric zap** on "electric effects."
-- Do not put the heartbeat here. The heartbeat is the spoiler section's sound, and it should stop dead on the slap.
+**What you need (all owned, nothing to download)**
+
+| Piece | File |
+|---|---|
+| Image before | `L:\Winter Wolfs Den review show\Raw Footage\Carrie (2026 series)\USE\10.png` |
+| Image after | `...\Carrie (2026 series)\USE\15.png` |
+| Blood pour (sound built in) | `P:\WWD Kit\Transitions\Blood Pour.mov` |
+| Extra splash, optional | `P:\Tools\Free+Stylized+Blood+Pack\Free Stylized Blood Pack\Blood 7.mov` |
+| Creak | `P:\Sounds\Sound FX\long-scary-wooden-creaks_M1b01BVO.mp3` |
+| Drone | `P:\Sounds\Sound FX\Adobe\Drones\Drone Production Element Imaging Bed Evil Tension 01.wav` |
+| Fire crackle | `P:\Sounds\Sound FX\fire-wood-crackle-flames_G1y2ewE_.mp3` |
+| Electric zap | `P:\Sounds\Sound FX\Adobe\Production Elements\Production Element Title Transition Electrical Zap 01.wav` |
+
+**Track layout:** V1 = host cams, V2 = pictures, V3 = Blood Pour, V4 = optional extra splash. A1 = your voices, A3 and A4 = sound effects. No music in this section.
+
+**Step 1. Bring the files in (2 minutes)**
+1. In the Project panel, right-click an empty spot, **New Bin**, name it `Carrie FX`.
+2. Double-click the bin to open it. Press **Ctrl+I**, browse to each file in the table, select it, click **Open**.
+
+**Step 2. Find the spot by the words**
+1. Top menu: **Window > Text**. Click the **Transcript** tab.
+2. In the search box type `Wrecking Crew`. Click the highlighted word. Your playhead jumps there.
+3. Press **M** to drop a marker. This is START.
+4. Search `pyro`. Click it. Press **M**. This is REVEAL.
+5. Search `electric`. Click it. Press **M**. This is ZAP.
+
+**Step 3. The two pictures**
+1. Drag `10.png` onto **V2** so its left edge sits on START. Drag its right edge to REVEAL.
+2. Drag `15.png` onto **V2** right after it, starting at REVEAL. Drag its right edge to the next placement (the "Magneto" line, image #43).
+3. No transition between them. The blood covers the swap.
+
+**Step 4. The blood pour (V3), replaces the old red block (2026-10-17)**
+1. From the `WWD Kit` bin, drag `Transitions\Blood Pour.mov` onto **V3**.
+2. Slide it so its **16th frame sits exactly on the cut** between 10.png and 15.png. Easy way: put the playhead on the cut, press **Left Arrow** 16 times, and start the clip there.
+3. Play it. The blood pours down with drips, covers the screen for 6 frames, then slides off to show 15.png. The pour splash and the wet splat are built in.
+4. If you see the picture swap before the screen is fully red, nudge the clip 2 frames left or right.
+
+**Step 5. Optional extra splash (V4)**
+1. Put the playhead on the first fully red frame (14 frames into Blood Pour).
+2. Drag `P:\Tools\Free+Stylized+Blood+Pack\Free Stylized Blood Pack\Blood 7.mov` onto **V4** there. **Scale** `180`.
+
+**Step 6. The sound (A3 and A4)**
+1. **Creak:** drag the creak onto **A3** at START. Double-click it, set **Volume > Level** to `-12 dB`. Trim its end to where the blood starts.
+2. **Quiet beat:** trim the creak so it ends where the blood starts. Nothing else plays for half a second after the splat. Your voices on A1 keep going.
+3. **Drone:** drag onto **A4** at REVEAL. Level `-18 dB`. Trim to the end of 15.png.
+4. **Fire crackle:** drag onto **A3** at REVEAL. Level `-20 dB`. Trim to the end of 15.png.
+5. **Zap:** drag onto **A4** (after the drone, or A5 if A4 is busy) at ZAP. Level `-10 dB`.
+6. Select the drone and fire clips, **Ctrl+D** adds a short fade at each end.
+
+**Check it:** play from 5 seconds before START. You should hear the creak, the pour and SPLAT as the screen goes red, a beat of quiet, then the drone and fire under your voices, with a zap on "electric." No heartbeat here; that is the spoiler section's sound.
 
 ### B5. The Next Up card (39:17 to about 39:22)
 
@@ -253,7 +297,7 @@ This is the best argument in the review. The hosts cannot agree who the good guy
 
 "How many can you name?" Two grown men failing a quiz.
 
-1. A ticking, playful **thinking cue** (Suno S5) under 12:12 to 12:36, ducked low.
+1. No thinking music (music is intro and outro only, rule 2026-10-17). A single clock tick sound at 12:12 is enough.
 2. **Buzzer** at 12:19 (the miss: "other than Starbuck... let's see").
 3. **Ding** at 12:25 (the Anders actor, named as Chris's dad) and a second ding at 12:56 (Hilo). Small counter in the corner: REUNION: 1, 2, 3.
 4. If the cast photos get pulled (see "Talking points with no image" above), flip a card to each face as they land.
@@ -267,7 +311,7 @@ Every cue below is tied to a spoken line. Sound names are search terms for Part 
 | # | Edit time | The line | Sound | On screen |
 |---|---|---|---|---|
 | 1 | 00:01 | Poster open | Thud, reverse swell, Suno S1 sting (Kit: Stamp Thud) | Power Slam (B1) |
-| 2 | 00:19 | End of intro | Start the Suno S2 horror bed, ducked low | none |
+| 2 | 00:19 | End of intro | Intro music ends here. No music under the talk (rule 2026-10-17) | none |
 | 3 | 01:53 | "told her... we're not getting sued" (garbled) | Gavel bang (Kit: Gavel) | Red stamp NOT GETTING SUED, 1.5 s. Confirm the line first, it is a transcript garble |
 | 4 | 02:20 | "new category for the Wolfie Awards" | Suno S3 fanfare plus Stamp Thud | Wolfie sticker (B2) |
 | 5 | 02:34 | "front running entry" | Small ding | Sticker parks in the corner |
@@ -277,7 +321,7 @@ Every cue below is tied to a spoken line. Sound names are search terms for Part 
 | 9 | 06:00 | "world's first true test of anarchy" | Total silence 1 s, then low drone | none |
 | 10 | 06:12 | "not going to do a whole lot of heavy spoilers" | Soft chime | Small NO SPOILERS check |
 | 11 | 07:45 | "the fucking prom king" | Spotlight click, short brass fanfare, crowd "ooh" | Gold crown sticker on #12 (12.png) (Part F, F5) |
-| 12 | 12:12 to 12:56 | BSG quiz | Suno S5 thinking cue, buzzer at 12:19, dings at 12:25 and 12:56 | BSG quiz (B8) |
+| 12 | 12:12 to 12:56 | BSG quiz | Buzzer at 12:19, dings at 12:25 and 12:56. No thinking music | BSG quiz (B8) |
 | 13 | 17:41 | "Carrie's mom just... needle" | **Record scratch exactly on the word "needle"** (Kit: Record Needle). Freeze the host cam 6 frames | none |
 | 14 | 17:44 to 18:14 | The Tombstone flashback | Suno S6 western whistle and twang sting | Sepia tint on the host cam for the story, text "FLASHBACK: TOMBSTONE" |
 | 15 | 19:44 | "no blue lights" | One siren chirp | Text WHERE ARE THE COPS? |
@@ -287,7 +331,7 @@ Every cue below is tied to a spoken line. Sound names are search terms for Part 
 | 19 | 27:27 | "people throwing cameras in her face" | Shutter-click burst that speeds up for 8 to 10 clicks, camera flash pops | 3 white flash frames over #35 (24.png) |
 | 20 | 27:44 | the gym teacher "ran" | Gym whistle | none |
 | 21 | 28:12 | Spoiler warning | Two siren chirps, heartbeat from 28:14 (Kit: Heartbeat) | Spoiler Alarm (B3) |
-| 22 | 28:17 | Spoiler section starts | Swap to Suno S4 spoiler bed | Dip To Black 15f as placed |
+| 22 | 28:17 | Spoiler section starts | Heartbeat stops. No music bed | Dip To Black 15f as placed |
 | 23 | 29:46 | "the Brotherhood of Evil Mutants" | Low metal groan and magnetic hum swell (Kit: Magnet Groan) | none |
 | 24 | 31:17 | "we have to cut this segment" | Record scratch | Scoreboard in (B6) |
 | 25 | 31:36 | "they are the bad guys" | Buzzer | Scoreboard BAD 1 |
@@ -335,7 +379,7 @@ Extras (not Kit, per-review): siren chirp, truck horn, door slam, gym whistle, c
 ### Mix rules
 
 - **Dialogue first.** SFX peaks sit under the voice peaks. If a cue hides a word, turn it down.
-- **Music bed:** Essential Sound panel, tag the clip **Music**, turn on **Ducking** against dialogue. Start at roughly 15 dB of duck and set it by ear.
+- **Music:** intro and outro only (rule 2026-10-17). Tag the intro and outro clips **Music** in Essential Sound and fade them under the first and last words. Nothing under the talk.
 - **Sync to the frame:** hits (thud, scratch, buzzer) land on the exact frame of the word or the visual. Whoosh and swell sounds should end on that frame, not start there.
 - **Match length:** trim each sound so it does not run past the visual it belongs to.
 - **Silence is a cue.** The record scratch at "needle," the silence at "true test of anarchy," and the silence after the blood slap all work because everything stops.
@@ -344,6 +388,8 @@ Extras (not Kit, per-review): siren chirp, truck horn, door slam, gym whistle, c
 ---
 
 ## Part E: Suno music prompts
+
+**Rule 2026-10-17 (Zac, viewer feedback): music is intro and outro only. No beds under the talk.** S2, S4 and S5 are cut. Use S1 (intro), S8 (outro) and S9 (Next Up card) only.
 
 You wrote "sudo," I read it as **Suno**. If you meant something else, tell me.
 
@@ -357,10 +403,7 @@ How to use these:
 | ID | Cue | Style | Lyrics box |
 |---|---|---|---|
 | S1 | Intro sting, 5 to 8 s (00:01) | instrumental, warped 1980s prom slow dance, detuned synth pad ballad, music box, tape wobble, creepy sweet, 70 BPM, ends on a sudden low dissonant hit, no vocals | [Instrumental] [Short intro] [End] |
-| S2 | Under-talk bed, loop, 60 to 90 s (00:19 to 28:17) | instrumental, eerie 1970s horror score, detuned piano, sparse music box, analog synth drone, dark ambient, slow and sparse, minimal melody, no drums, no vocals, 60 BPM, loopable | [Instrumental] [Sparse] |
 | S3 | Wolfie fanfare, 4 to 6 s (02:20) | instrumental, mock award show fanfare, bright brass, snare roll, proud and a little cheesy, ends on a big cymbal crash, 110 BPM, no vocals | [Instrumental] [Short intro] [End] |
-| S4 | Spoiler bed, loop (28:17 to 37:30) | instrumental, ominous cinematic tension bed, low strings, slow heartbeat pulse, distant choir pad, rising unease, no melody, no vocals, 55 BPM | [Instrumental] [Dark] |
-| S5 | Thinking cue, 20 to 25 s (12:12 to 12:36) | instrumental, game show thinking music, ticking clock, pizzicato strings, playful tension, 100 BPM, ends with a sting, no vocals | [Instrumental] [End] |
 | S6 | Western sting, about 4 s (17:44) | instrumental, spaghetti western sting, lonesome whistle, twangy electric guitar, dusty, short, ends on a single held note, no vocals | [Instrumental] [Short intro] [End] |
 | S7 | Fire and blood cue, optional (37:32 to 38:00) | instrumental, slow apocalyptic church organ and choir, pounding timpani, building dread, cinematic, ends abruptly, no vocals | [Instrumental] [Build] [End] |
 | S8 | Outro (39:04 to 39:18) | instrumental, dark synthwave outro, pulsing bass, brooding, 100 BPM, fading out, no vocals | [Instrumental] [Outro] [Fade Out] [End] |

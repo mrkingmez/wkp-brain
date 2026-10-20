@@ -41,7 +41,7 @@ reads the real asset list off every tracked release, and writes
 All downloads read from that manifest, never from a filename typed
 into a script.
 
-## The six tracked releases (tags on the nflverse-data repo)
+## The seven tracked releases (tags on the nflverse-data repo; `nextgen_stats` added 2026-10-15)
 
 | Tag | Holds | Season-specific? | Consumer |
 |---|---|---|---|
@@ -51,6 +51,19 @@ into a script.
 | `schedules` | Games, results, full betting lines | **No** — one rolling `games.*` file, all seasons, filter by `season` column | Both |
 | `players` | Player info + cross-platform ID mappings | **No** — one rolling `players.*` file | Both |
 | `pfr_advstats` | PFR advanced stats | Yes — split into `_pass_`, `_rush_`, `_rec_`, `_def_{season}.*` | Content |
+
+| `nextgen_stats` | **NFL Next Gen Stats** (the AWS-powered tracking data): `ngs_passing`, `ngs_receiving`, `ngs_rushing` | **No** for the current files: `ngs_passing/receiving/rushing.parquet` hold every season, filter on `season` and `week` (week 0 is the season row). Older per-season files also exist | Fantasy lineup optimizer |
+
+Added 2026-10-15, Zac's call. No official Next Gen Stats API exists (the nextgenstats.nfl.com
+site runs on undocumented internal endpoints, do not build on them). nflverse republishes the
+three tables, updated automatically (last update seen 2026-10-14, data through week 5 of 2026).
+Columns confirmed 2026-10-15:
+- **passing:** avg_time_to_throw, avg_completed_air_yards, avg_intended_air_yards, aggressiveness, avg_air_yards_to_sticks, completion_percentage_above_expectation, expected_completion_percentage, passer_rating.
+- **receiving:** avg_cushion, avg_separation, avg_intended_air_yards, percent_share_of_intended_air_yards, targets, receptions, catch_percentage, avg_yac, avg_expected_yac, avg_yac_above_expectation.
+- **rushing:** efficiency, percent_attempts_gte_eight_defenders (stacked boxes), avg_time_to_los, rush_yards_over_expected, rush_yards_over_expected_per_att, rush_pct_over_expected.
+- Join key to other tables: `player_gsis_id` (matches `gsis_id` in the `players` release, which is the bridge toward Sleeper and ESPN ids). There is NO defensive Next Gen table in this release, so IDP does not get NGS data.
+Command: `python scripts/nfl_data.py get nextgen_stats ngs_receiving.parquet --season 2026`.
+Honesty rule applies: state the file age, and say data runs through the last completed week only.
 
 **`player_stats` (no underscore split) is a different, separate release
 tag from `stats_player`. Confirmed deprecated** — its own release body

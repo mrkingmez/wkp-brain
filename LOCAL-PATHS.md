@@ -20,6 +20,13 @@ wwd source video L:\Winter Wolfs Den review show\
 frostcast source L:\Winter Wolfs Den review show\Frost-Cast\
 Audio		 L:\Winter Wolfs Den review show\Frost-Cast\Raw Audio
 
+wwd owned assets  P:\  (Zac 2026-10-17: everything he owns. Sounds\Sound FX
+                 (Adobe SFX library + loose mp3s), Sounds\Music, Stock Footage
+                 (Blood mist, Green Screen), Tools (blood/lava packs, transitions,
+                 LUTs, overlays), AE Templets (.mogrt + AE projects). Searchable
+                 index: D:\WKP\data\assets\p-drive-index.csv. Not owned = Suno,
+                 Firefly or a web search.)
+
 ## Writing
 MY Writing  L:\03 My writing
 

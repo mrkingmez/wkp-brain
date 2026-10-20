@@ -57,8 +57,10 @@ Run all of this without further prompting:
 3. **Delete the originals (Step 7.5).** Only after Step 7 verification passes.
 4. **Report back** with the real count and mix, anything flagged, and the
    calendar entries made. Then wait for the transcript.
-5. **When Zac hands over the transcript** (he edits first), run Step 8 and
-   deliver the placement report with transitions to `D:\WKP Reports\`.
+5. **When Zac hands over the transcript** (he edits first, cutting the
+   banter and life talk, so never transcribe or build from the raw recording
+   before he says the cut is ready), run Step 8 and deliver the placement
+   report with transitions to `D:\WKP Reports\`.
 
 Resolve the title first (Step 2). A just-released film is the normal case
 here, so expect TMDb to be thin. Report the real count, never pad.
@@ -301,6 +303,18 @@ only ever have a transcript, never a script - do not treat that as
   fabricate beats from the movie's general reputation or the episode's
   general topic instead of the actual script/transcript.
 
+**Fill the picture gaps automatically (added 2026-10-18, Zac's call).** On
+the FIRST transcript for a video, read it for every talking point with no
+picture in `USE\` yet: another movie or show named, an actor's other role,
+the game or book it came from, a real event, a callback, a prop or scene
+the hosts describe. Also add anything else that would clearly help a
+beat. Go get each one without asking (TMDb/IMDb for titles and people, a
+plain web image search for everything else, same quality rules as Steps
+4 to 5), resize per Step 6, and save it in that video's `USE\` folder with
+the next free number. Use them in the run sheet, then tell Zac in the
+report what was added and for which line. Anything with no usable image
+is listed as a gap, never skipped quietly.
+
 **Naming:** short, specific, tied to the moment - not `still-19.jpg`.
 Match the T-2 pattern: `a new man.png`, `frozen.png`, `practical
 effects.png`. A name that only makes sense to whoever picked it (T-2 had
@@ -340,10 +354,32 @@ example line:
 rule this goes to `D:\WKP Reports\Review Image Placement\<YYYY-MM-DD> - <Title>
 Image Placement.docx` (the one delivery folder). Keep the matching `.md` in
 `WWD\reports\`. Also keep the `timeline-placements.md` next to the images in
-`USE\`. The report contains: the title block and runtime, the numbered
-placement table (timecode, quote, image file, in/out transition and frames,
-why), any talking point with no image found, a short "transition strategy"
-paragraph, and a how-to-apply note for Premiere. The `no-ai-slop` pass is
+`USE\`.
+
+**Format: one Edit Run Sheet in video order (LOCKED 2026-10-18, Zac).** The
+whole report is one list of numbered stops, top to bottom in the order of
+the video. No separate sound map, sticker, music or "no image" sections.
+Every stop starts with the three things Zac liked from the old placement
+doc, then everything else for that moment sits right under it:
+
+```
+### 7. 02:54 | PNG 19 | search: "captivated"
+Said: "I was captivated from the first episode" (Winter Wolf)
+In: Cross Dissolve 12f. Hold to 03:07. Out: hard cut.
+Sound: <full path> at -10 dB, on the word "captivated".
+Notes: zoom, sticker, anything else for this moment.
+```
+
+- Stops with no picture still get their own stop in order, with the type
+  in the header where the PNG would go: `SOUND ONLY`, `STICKER`,
+  `CAM: single out Winter Wolf` (or KingZ), `CARD`.
+- Everything for a PNG lives under that PNG's stop. If one picture is used
+  twice, it gets two stops.
+- Keep the one-time "Before you start" block at the top (paths, import,
+  tracks, how to find a spot) and a short list of gaps at the end. That
+  is the only content outside the stops.
+- Model: `WWD\reports\Carrie-Edit-Run-Sheet.md`, plus a "Said:" quote line
+  and the PNG number in each header. The `no-ai-slop` pass is
 not required, since this is an internal editing doc. Build the .docx with `D:\WKP\.claude\skills\no-ai-slop\scripts\md_to_docx.py`.
 
 **Report:** state how many beat-matched images were found and added, name
@@ -383,4 +419,11 @@ timeline-placements file was written when the source was a transcript.
   timeline-placements file - the timecode list is the point of running
   from a transcript at all.
 
+- **Fun builds are click-by-click with real files (LOCKED 2026-10-17, Zac):** "I need to know how, step by step." Every fun build (poster open, blood drop, stickers, sound cues) must be written as numbered Premiere steps a person can follow without guessing: which track, which panel, which effect, what number to type, which keyframe. Every sound, overlay, template or music bed must name the **exact file path** of an asset Zac owns. Assets live on `P:\` (Sounds, Stock Footage, Tools, AE Templets) and `L:\Winter Wolfs Den review show\`; search the index `D:\WKP\data\assets\p-drive-index.csv` first (rebuild it if P:\ changed). Never write "a creak sound" or "a splat if you have one." Only when nothing owned fits: give a Firefly prompt (images/stickers), a Suno prompt (music), or a specific search (sound), plus the P:\ folder to save it into. Model case: Carrie report, Part B4.
+- **The deliverable is ONE run sheet in timeline order (LOCKED 2026-10-17, Zac):** no separate parts for sounds, builds, stickers or transitions. One numbered list of stops from start to finish; each stop holds everything for that moment (search words, picture, in/out transition with frames, sound file path and dB, sticker clip, build steps inline). A short "before you start" block at the top and a "still open" list at the bottom, nothing else. Model: `WWD\reports\Carrie-Edit-Run-Sheet.md`. Name the docx `<date> - <Title> Edit Run Sheet.docx` in `D:\WKP Reports\Review Image Placement\`.
+- **Every created asset carries its recipe in the run sheet (LOCKED 2026-10-17, Zac):** anything made for a video (Suno music, Firefly art, a rendered sticker or card) gets its exact prompt (Suno Style and Lyrics lines, Firefly prompt) or, if built by script, its source files and how to remake it, written into the stop where it is used. Never in a separate doc.
+- **Sticker kit is finished drop-in clips (LOCKED 2026-10-17):** `P:\WWD Kit\Stickers\` holds `Recommend Watch`, `Save Yourself the Time`, `Dumpster Fire` (rubber stamps, upper right, thud baked in, stamp lands 6 frames in) and `Wolfie Award Nominee` (premium, not a stamp: crystal wolf trophy, gold type, the show's own Wolfie fanfare baked in, 6 s). Each is a .mov with alpha plus a .png. "Do Not Watch" is retired. Transitions kit: `P:\WWD Kit\Transitions\Blood Pour.mov` (wet dripping blood sheet with sound, 54 frames, full cover frames 14 to 19, cut on frame 16; `scripts\make_blood_pour.py`). Never hand Zac a flat Color Matte wipe for blood; he called it a big red block. The run sheet just says which clip to drop and on which word. Only use a sticker where a host actually says it; Zac picks how many per video (Carrie: two). Rebuild with `scripts\make_stickers.py`. End cards: `scripts\make_next_up.py --title "<next movie>"` (add `--style fighter` for the slanted brush, fire-gradient arcade look; match the style to the movie, never paste the studio logo) writes `P:\WWD Kit\Cards\Next Up - <Title>.mov`; make it during the photo pull once the hosts name the next review.
+- **Sounds: owned or skip (LOCKED 2026-10-17):** only list a sound with a file path Zac owns. If a cue is worth it and nothing owned fits, download it yourself during the photo pull from Mixkit (free, no account, license covers YouTube) into `P:\Sounds\Sound FX\Mixkit\`, then add it to the index. Otherwise drop the cue. Zac is a one-man show: fewer cues, each one ready to drag in. No music except intro and outro.
+- **Know who is in every picture (LOCKED 2026-10-17, Zac: the "new bully" line got a picture of a teacher):** before any character-specific placement, build a "who's in it" list for the set: for each picture, the character, the actor, and what is happening. Source character stills from IMDb's per-actor galleries (Step 3.5), which tag who is in the photo, and keep that tag; TMDb backdrops carry no tags. When the hosts name a character ("Tina, the new bully"), look up which actor plays that character and only place a picture tagged with that actor. If none exists, say so in the run sheet and put a general still there instead. Never guess a character from costume or setting.
+- **Find spots by words, not just the clock (LOCKED 2026-10-17, Zac: "your timestamps are off"):** every placement and cue gives the exact words to search in Premiere's **Window > Text > Transcript** search box, plus the timecode. Zac's timeline drifts from the transcript once he adds stings and cuts, so the words are the reliable anchor. Use words that appear once in the transcript; check with a grep before writing them.
 - **Intro/outro stings (added 2026-10-13):** shows open with a burning-logo sting after the host intro line (Other Mommy: about 00:14 to 01:31). A Premiere transcript block that spans 70+ seconds for one sentence is that sting, not speech. Never put a poster or still across it. Poster covers the intro line only, and a fun transition can hand off into the logo. Ask Zac for sting start/end if the transcript does not make it obvious.

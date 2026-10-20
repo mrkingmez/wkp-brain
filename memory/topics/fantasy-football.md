@@ -68,3 +68,13 @@ maximizer model (lineup decisions)."
 See [[wkp-ops]] for the general fire-and-forget/take-initiative rule
 this reinforces — don't stop and hand back a status report when the
 actual ask was a deliverable.
+
+## Simulation project (2026-10-15)
+Zac wants simulations with real coaching tendencies for lineups and picks, modeled on a gambler friend who
+does the same for DraftKings/FanDuel DFS (not sportsbooks, not legal in GA) using nflverse Next Gen Stats plus
+the last 2-3 seasons of coaching data. Built `.claude/skills/ff-simulator/` same night. Honest backtest result:
+about 3-6% lower error than a plain recent average at QB/RB/WR/TE/K, a tie on IDP, so the value is ranges and
+correlations, not magic. First-year coaches (BAL Minter, CLE Monken, LV Kubiak, MIA Hafley) fall back to team
+history plus league mean. Gambler friend's second source arrives 2026-10-16. Tracker: only Weeks 1 and 6 are logged.
+**How to apply:** run the simulator for every lineup call, state its limits, and log picks to the tracker BEFORE kickoff, not after.
+See [[wkp-ops]].

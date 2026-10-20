@@ -38,11 +38,12 @@ TRACKED_TAGS = [
     "schedules",
     "players",
     "pfr_advstats",
+    "nextgen_stats",
 ]
 
 # schedules and players ship as one rolling multi-season file, not a
 # per-season asset — confirmed by discovery, not assumed.
-ROLLING_TAGS = {"schedules", "players"}
+ROLLING_TAGS = {"schedules", "players", "nextgen_stats"}  # nextgen_stats: ngs_passing/receiving/rushing hold all seasons, filter on the season column (confirmed 2026-10-15)
 
 
 def _get_json(url: str):

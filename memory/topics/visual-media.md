@@ -171,3 +171,11 @@ rule for Step 8 reports: include at least one themed, creative transition
 (poster open or close is the usual spot), with step-by-step Premiere recipe.
 Recipes live in `.claude/skills/wwd-review-photo-pull/premiere-transitions.md`.
 Effect names written from knowledge, not verified against Zac's Premiere build.
+
+## Fun builds: click-by-click, owned assets, word anchors (2026-10-17)
+Zac could not follow the Carrie B4 blood bucket cue list ("How do I make this happen"). Rule now in wwd-review-photo-pull SKILL.md: numbered Premiere steps, exact file paths from P:\ (index at D:\WKP\data\assets\p-drive-index.csv) or L:\, Firefly/Suno/search only for what is not owned. Timestamps drift from his timeline, so every cue also gives words to search in Premiere's Text panel. P:\Tools\Free+Stylized+Blood+Pack clips are 1080x1080 ProRes 4444 splatter bursts (center hits), not full-screen pours; the full-screen drop is a Color Matte + Linear Wipe.
+
+Music in reviews is intro and outro only (Zac 2026-10-17, viewer feedback). The Carrie fun pass had beds under the talk (Suno S2/S4/S5); those were cut. Rule lives in WWD/CLAUDE.md and premiere-transitions.md.
+
+## Sticker kit, run sheet, character ID (2026-10-17)
+Zac wants reusable finished assets, not templates he builds: P:\WWD Kit\Stickers (4 clips with sound baked in) and P:\WWD Kit\Cards (Next Up end cards). Wolfie nominee must look premium (gold star at school), never a cartoon stamp. Edit doc = one timeline-order run sheet, everything inline; he is a one-man editor and scrolling between parts wastes his time. Character mix-up (teacher placed on the 'new bully' line) fixed by IMDb-tagged stills and a who's-in-it list. Rules live in wwd-review-photo-pull SKILL.md.

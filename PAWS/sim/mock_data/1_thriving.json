@@ -1,0 +1,14 @@
+{
+  "_note": "Mock of the future D:\\WKP\\dashboard\\data feed. Dates can be ISO (2026-10-20), \"today\", or a day offset (due_in_days: -2 = two days ago).",
+  "tasks": [
+    {"title": "Post Monday WKD batch", "due_in_days": 2, "status": "open"},
+    {"title": "FrostCast prep sheet", "due_in_days": 1, "status": "open"},
+    {"title": "Upload Carrie review", "done_in_days": 0, "status": "done", "effort": 3}
+  ],
+  "calendar": [
+    {"title": "FrostCast recording", "days_from_today": 0, "tags": ["wwd"]}
+  ],
+  "ventures_blocked": [],
+  "open_decisions": 2,
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "_note": "Bible rule: a hard week and a birthday can both be true. Expect BURIED + SPECIAL together.",
+  "tasks": [
+    {"title": "Listing photos", "due_in_days": -4, "status": "open"},
+    {"title": "Shorts posting", "due_in_days": -1, "status": "open"},
+    {"title": "Third edit pass", "due_in_days": -3, "status": "open"}
+  ],
+  "calendar": [
+    {"title": "the anniversary", "days_from_today": 0, "tags": ["anniversary"]}
+  ],
+  "ventures_blocked": ["Kingdom Planners"],
+  "open_decisions": 4,
+  "events": []
+}

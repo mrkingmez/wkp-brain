@@ -118,7 +118,12 @@ Every weekly card has three parts on different resolution timelines:
 1. **20-game ATS pool** — the recurring weekly pick. Normally locks
    Thursday kickoff; check the actual card, since the NFL schedule can
    move the lock (Week 1 2026 is a Wednesday opener).
-2. **Eliminator Challenge (EC)** — one team per week, marked with an X
+2. **Eliminator Challenge (EC)** — league rule (Zac, 2026-10-15): the EC
+   team must ALSO be the ATS pick in its game. You cannot take a team in
+   the EC and its opponent against the spread (Rams EC means Rams -12.5
+   ATS, not Arizona +12.5). Pick the EC first, then force that game's ATS
+   pick to match. EC restarted Week 6 2026 after EC 1 ended
+   with a winner, so every team was available again that week. One team per week, marked with an X
    in a yellow box, season-long survivor-style side pool. Logged
    weekly in `FUTURES-PICKS.md` even though it's a recurring pick, since
    it's tracked across the whole season.

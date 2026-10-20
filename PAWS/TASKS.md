@@ -18,7 +18,7 @@ Status key: [ ] not started  [~] in progress  [x] done  [!] blocked
 ## Phase 1 — Taskagotchi (Covacut style)
 
 - [ ] Board boots, wifi connects, static sprite on screen
-- [ ] State machine written and tested on PC, no hardware
+- [x] State machine written and tested on PC, no hardware (2026-10-15, `sim\`, 7 tests pass, mock data stands in for PAWS-001)
 - [ ] Task API call, parse JSON, map completions to stat changes
 - [ ] Port state machine to firmware, swap animations by state
 - [ ] Flash persistence, sleep and power management

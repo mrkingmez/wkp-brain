@@ -55,3 +55,10 @@ Files touched: CAPABILITIES.md, TASKS.md, decisions\DECISIONS.md,
 hardware\PAWS-BOM.xlsx (new), PARTS-RESEARCH.md (new), this log.
 Elapsed: single session, one delegated subagent call (~211 seconds,
 144k tokens) for the hardware research pass.
+
+## 2026-10-15 - Scout state machine on PC (Phase 1 milestone)
+Type: FIRMWARE (PC prototype, no hardware)
+Zac paused the hardware purchase (cost). Built `sim\`: scout_state.py (moods, special layer, event reactions, evening recap,
+hold-the-last-mood band, banned guilt phrases), placeholder sprites, tkinter stand-in screen, 5 mock scenarios, 7 tests
+passing, window smoke-tested. PAWS-008 (Pi vs ESP32) left open; Zac leaning Pi but no purchase. Mock JSON stands in for
+PAWS-001. Not committed.

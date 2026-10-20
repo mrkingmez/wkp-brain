@@ -1,0 +1,1266 @@
+{
+ "envs": {
+  "SEA@DEN": {
+   "spread_home": -2.5,
+   "total": 40.5,
+   "DEN": {
+    "plays": 62.219723835100346,
+    "dropbacks": 36.40425,
+    "att": 33.90375,
+    "carries": 25.8165,
+    "comp": 21.15925,
+    "pass_yds": 191.6982617647511,
+    "rush_yds": 98.6823479979735,
+    "ints": 0.75975,
+    "ptd": 1.191,
+    "rtd": 0.81975,
+    "fgm": 1.407,
+    "xpm": 1.8965,
+    "sacks": 2.5005
+   },
+   "SEA": {
+    "plays": 60.17569965799261,
+    "dropbacks": 33.03125,
+    "att": 30.426,
+    "carries": 27.1385,
+    "comp": 20.01575,
+    "pass_yds": 209.0506710184004,
+    "rush_yds": 113.92094947726791,
+    "ints": 0.77475,
+    "ptd": 1.258,
+    "rtd": 1.1015,
+    "fgm": 1.62325,
+    "xpm": 2.22375,
+    "sacks": 2.60525
+   },
+   "_pts": {
+    "DEN": 18.980117318816422,
+    "SEA": 21.679270837878235
+   }
+  },
+  "HOU@JAX": {
+   "spread_home": 2.5,
+   "total": 42.5,
+   "JAX": {
+    "plays": 62.15038001718639,
+    "dropbacks": 34.92225,
+    "att": 31.9535,
+    "carries": 27.22275,
+    "comp": 20.7375,
+    "pass_yds": 238.8948397508376,
+    "rush_yds": 102.13000328107447,
+    "ints": 0.6845,
+    "ptd": 1.3515,
+    "rtd": 1.09675,
+    "fgm": 1.6775,
+    "xpm": 2.30775,
+    "sacks": 2.96875
+   },
+   "HOU": {
+    "plays": 63.35391502049916,
+    "dropbacks": 38.243,
+    "att": 35.86775,
+    "carries": 25.1085,
+    "comp": 22.62725,
+    "pass_yds": 248.3327436593722,
+    "rush_yds": 88.05464935172306,
+    "ints": 0.704,
+    "ptd": 1.27275,
+    "rtd": 0.85375,
+    "fgm": 1.5185,
+    "xpm": 2.00275,
+    "sacks": 2.37525
+   },
+   "_pts": {
+    "JAX": 22.52840170171922,
+    "HOU": 20.006699125317123
+   }
+  },
+  "CHI@ATL": {
+   "spread_home": -1.0,
+   "total": 51.0,
+   "ATL": {
+    "plays": 62.93971069498488,
+    "dropbacks": 33.04025,
+    "att": 30.8325,
+    "carries": 29.90025,
+    "comp": 19.249,
+    "pass_yds": 234.34421503211144,
+    "rush_yds": 145.954293878487,
+    "ints": 0.83775,
+    "ptd": 1.391,
+    "rtd": 1.361,
+    "fgm": 1.8765,
+    "xpm": 2.58875,
+    "sacks": 2.20775
+   },
+   "CHI": {
+    "plays": 66.1837617599153,
+    "dropbacks": 36.27125,
+    "att": 33.49375,
+    "carries": 29.91,
+    "comp": 20.819,
+    "pass_yds": 221.59255390768607,
+    "rush_yds": 137.74401350479707,
+    "ints": 0.70125,
+    "ptd": 1.536,
+    "rtd": 1.31625,
+    "fgm": 1.94625,
+    "xpm": 2.68225,
+    "sacks": 2.7775
+   },
+   "_pts": {
+    "ATL": 25.06459528053571,
+    "CHI": 25.8232266953089
+   }
+  },
+  "BAL@CLE": {
+   "spread_home": -5.0,
+   "total": 42.5,
+   "CLE": {
+    "plays": 61.8544014096568,
+    "dropbacks": 36.887,
+    "att": 34.681,
+    "carries": 24.9655,
+    "comp": 21.43375,
+    "pass_yds": 233.5840570722095,
+    "rush_yds": 97.14476327874529,
+    "ints": 0.7785,
+    "ptd": 1.17725,
+    "rtd": 0.82325,
+    "fgm": 1.381,
+    "xpm": 1.8835,
+    "sacks": 2.206
+   },
+   "BAL": {
+    "plays": 60.74995845003021,
+    "dropbacks": 30.545,
+    "att": 27.94925,
+    "carries": 30.204,
+    "comp": 18.94175,
+    "pass_yds": 206.8842480261149,
+    "rush_yds": 153.98899603793996,
+    "ints": 0.532,
+    "ptd": 1.232,
+    "rtd": 1.316,
+    "fgm": 1.72375,
+    "xpm": 2.3905,
+    "sacks": 2.59575
+   },
+   "_pts": {
+    "CLE": 18.84432003156865,
+    "BAL": 23.603463600192114
+   }
+  },
+  "TEN@IND": {
+   "spread_home": 7.0,
+   "total": 44.5,
+   "IND": {
+    "plays": 62.40473864575056,
+    "dropbacks": 34.04675,
+    "att": 31.519,
+    "carries": 28.36375,
+    "comp": 19.5195,
+    "pass_yds": 218.43561637242948,
+    "rush_yds": 103.05037233595236,
+    "ints": 0.63175,
+    "ptd": 1.396,
+    "rtd": 1.35675,
+    "fgm": 1.93525,
+    "xpm": 2.58175,
+    "sacks": 2.52775
+   },
+   "TEN": {
+    "plays": 60.56969348877012,
+    "dropbacks": 37.57,
+    "att": 35.38875,
+    "carries": 22.99875,
+    "comp": 22.241,
+    "pass_yds": 230.72899677131792,
+    "rush_yds": 92.99072978680857,
+    "ints": 0.5725,
+    "ptd": 1.31375,
+    "rtd": 0.7565,
+    "fgm": 1.4645,
+    "xpm": 1.933,
+    "sacks": 2.18125
+   },
+   "_pts": {
+    "IND": 25.54200851643853,
+    "TEN": 19.11912472552315
+   }
+  },
+  "NYJ@NE": {
+   "spread_home": 7.0,
+   "total": 43.5,
+   "NE": {
+    "plays": 61.23590793665456,
+    "dropbacks": 33.31975,
+    "att": 31.05025,
+    "carries": 27.914,
+    "comp": 20.83425,
+    "pass_yds": 252.04045498620638,
+    "rush_yds": 126.86589076850115,
+    "ints": 0.5875,
+    "ptd": 1.56925,
+    "rtd": 1.1805,
+    "fgm": 1.901,
+    "xpm": 2.58275,
+    "sacks": 2.2695
+   },
+   "NYJ": {
+    "plays": 60.536906807832345,
+    "dropbacks": 35.7865,
+    "att": 33.54425,
+    "carries": 24.751,
+    "comp": 21.39075,
+    "pass_yds": 207.12375445492933,
+    "rush_yds": 99.9762904895767,
+    "ints": 0.58775,
+    "ptd": 1.24775,
+    "rtd": 0.76375,
+    "fgm": 1.3845,
+    "xpm": 1.8845,
+    "sacks": 2.24225
+   },
+   "_pts": {
+    "NE": 25.412592301752387,
+    "NYJ": 18.361310286190328
+   }
+  },
+  "NO@NYG": {
+   "spread_home": -1.0,
+   "total": 46.0,
+   "NYG": {
+    "plays": 61.6903872058945,
+    "dropbacks": 32.2215,
+    "att": 29.66125,
+    "carries": 29.4675,
+    "comp": 18.5535,
+    "pass_yds": 192.55962387593917,
+    "rush_yds": 123.34832303950839,
+    "ints": 0.548,
+    "ptd": 1.24425,
+    "rtd": 1.2,
+    "fgm": 1.714,
+    "xpm": 2.302,
+    "sacks": 2.56025
+   },
+   "NO": {
+    "plays": 63.78672791792147,
+    "dropbacks": 37.08125,
+    "att": 34.62075,
+    "carries": 26.7065,
+    "comp": 22.94875,
+    "pass_yds": 239.37099780637212,
+    "rush_yds": 113.35227843687468,
+    "ints": 0.76225,
+    "ptd": 1.40175,
+    "rtd": 1.163,
+    "fgm": 1.73275,
+    "xpm": 2.4135,
+    "sacks": 2.4605
+   },
+   "_pts": {
+    "NYG": 22.618020008251595,
+    "NO": 23.504075377318937
+   }
+  },
+  "CAR@PHI": {
+   "spread_home": -1.0,
+   "total": 39.5,
+   "PHI": {
+    "plays": 61.45624372295191,
+    "dropbacks": 32.887,
+    "att": 30.7925,
+    "carries": 28.56225,
+    "comp": 18.199,
+    "pass_yds": 201.67385233349984,
+    "rush_yds": 123.1065021343595,
+    "ints": 0.70375,
+    "ptd": 0.9815,
+    "rtd": 1.09625,
+    "fgm": 1.40575,
+    "xpm": 1.94475,
+    "sacks": 2.0945
+   },
+   "CAR": {
+    "plays": 61.10015355712361,
+    "dropbacks": 35.205,
+    "att": 32.817,
+    "carries": 25.8975,
+    "comp": 20.91675,
+    "pass_yds": 225.98827270736064,
+    "rush_yds": 106.29582500486359,
+    "ints": 0.64225,
+    "ptd": 1.26925,
+    "rtd": 0.896,
+    "fgm": 1.503,
+    "xpm": 2.04525,
+    "sacks": 2.388
+   },
+   "_pts": {
+    "PHI": 19.202129440233126,
+    "CAR": 20.126378281534258
+   }
+  },
+  "PIT@TB": {
+   "spread_home": -2.5,
+   "total": 39.5,
+   "TB": {
+    "plays": 63.15697404728322,
+    "dropbacks": 36.17725,
+    "att": 33.75425,
+    "carries": 26.98225,
+    "comp": 21.75875,
+    "pass_yds": 229.4375522374056,
+    "rush_yds": 122.4240263548297,
+    "ints": 0.905,
+    "ptd": 1.17,
+    "rtd": 0.83275,
+    "fgm": 1.38825,
+    "xpm": 1.8855,
+    "sacks": 2.423
+   },
+   "PIT": {
+    "plays": 63.39479284426728,
+    "dropbacks": 37.22275,
+    "att": 35.36425,
+    "carries": 26.17275,
+    "comp": 22.01325,
+    "pass_yds": 255.42026328959497,
+    "rush_yds": 123.11849663242695,
+    "ints": 0.728,
+    "ptd": 1.34075,
+    "rtd": 0.887,
+    "fgm": 1.59225,
+    "xpm": 2.08925,
+    "sacks": 1.8585
+   },
+   "_pts": {
+    "TB": 18.703729292961018,
+    "PIT": 20.876354604729986
+   }
+  },
+  "ARI@LA": {
+   "spread_home": 12.5,
+   "total": 51.5,
+   "LA": {
+    "plays": 64.81864220130352,
+    "dropbacks": 36.064,
+    "att": 33.8805,
+    "carries": 28.7545,
+    "comp": 21.7155,
+    "pass_yds": 276.11890081708293,
+    "rush_yds": 136.3451201404492,
+    "ints": 0.73425,
+    "ptd": 2.002,
+    "rtd": 1.46225,
+    "fgm": 2.42975,
+    "xpm": 3.25975,
+    "sacks": 2.1835
+   },
+   "ARI": {
+    "plays": 64.15599186144799,
+    "dropbacks": 41.19875,
+    "att": 38.60825,
+    "carries": 22.955,
+    "comp": 25.06375,
+    "pass_yds": 239.70885987758544,
+    "rush_yds": 97.90578833032856,
+    "ints": 0.95475,
+    "ptd": 1.47825,
+    "rtd": 0.67325,
+    "fgm": 1.4535,
+    "xpm": 2.02725,
+    "sacks": 2.5905
+   },
+   "_pts": {
+    "LA": 32.041329395440385,
+    "ARI": 19.490860125983673
+   }
+  },
+  "LAC@KC": {
+   "spread_home": 8.0,
+   "total": 42.5,
+   "KC": {
+    "plays": 62.6572865324498,
+    "dropbacks": 35.545,
+    "att": 32.861,
+    "carries": 27.1155,
+    "comp": 20.42975,
+    "pass_yds": 225.52178009328304,
+    "rush_yds": 121.08717181817552,
+    "ints": 0.8435,
+    "ptd": 1.62225,
+    "rtd": 1.10075,
+    "fgm": 1.88625,
+    "xpm": 2.55525,
+    "sacks": 2.684
+   },
+   "LAC": {
+    "plays": 63.44572414528682,
+    "dropbacks": 37.23475,
+    "att": 35.1335,
+    "carries": 26.21525,
+    "comp": 21.27175,
+    "pass_yds": 231.52210533424483,
+    "rush_yds": 105.23937005150766,
+    "ints": 0.92825,
+    "ptd": 1.0785,
+    "rtd": 0.77875,
+    "fgm": 1.34675,
+    "xpm": 1.74875,
+    "sacks": 2.10125
+   },
+   "_pts": {
+    "KC": 25.13384044647304,
+    "LAC": 17.406254345560413
+   }
+  },
+  "BUF@LV": {
+   "spread_home": -4.5,
+   "total": 53.5,
+   "LV": {
+    "plays": 61.196291665631,
+    "dropbacks": 37.0275,
+    "att": 34.9235,
+    "carries": 24.1665,
+    "comp": 22.603,
+    "pass_yds": 233.973874152316,
+    "rush_yds": 89.87112515107964,
+    "ints": 0.8,
+    "ptd": 1.62325,
+    "rtd": 1.03825,
+    "fgm": 1.85975,
+    "xpm": 2.50475,
+    "sacks": 2.104
+   },
+   "BUF": {
+    "plays": 62.51010652367576,
+    "dropbacks": 32.2475,
+    "att": 29.889,
+    "carries": 30.26275,
+    "comp": 19.82,
+    "pass_yds": 238.9974029217109,
+    "rush_yds": 149.8532148373444,
+    "ints": 0.65725,
+    "ptd": 1.53875,
+    "rtd": 1.6315,
+    "fgm": 2.221,
+    "xpm": 2.9905,
+    "sacks": 2.3585
+   },
+   "_pts": {
+    "LV": 24.58508811305778,
+    "BUF": 29.103479420941397
+   }
+  },
+  "DAL@GB": {
+   "spread_home": 1.5,
+   "total": 53.0,
+   "GB": {
+    "plays": 60.22492372477439,
+    "dropbacks": 33.515,
+    "att": 31.4895,
+    "carries": 26.715,
+    "comp": 19.907,
+    "pass_yds": 257.1666669593165,
+    "rush_yds": 111.57759844654161,
+    "ints": 0.48675,
+    "ptd": 1.65,
+    "rtd": 1.322,
+    "fgm": 2.066,
+    "xpm": 2.79325,
+    "sacks": 2.0255
+   },
+   "DAL": {
+    "plays": 64.7579690440899,
+    "dropbacks": 38.6255,
+    "att": 36.10225,
+    "carries": 26.12925,
+    "comp": 23.3825,
+    "pass_yds": 263.81575574462744,
+    "rush_yds": 110.28959962476907,
+    "ints": 0.7725,
+    "ptd": 1.648,
+    "rtd": 1.12375,
+    "fgm": 1.88875,
+    "xpm": 2.60975,
+    "sacks": 2.52325
+   },
+   "_pts": {
+    "GB": 27.174646135994337,
+    "DAL": 25.761976525083316
+   }
+  },
+  "WAS@SF": {
+   "spread_home": 7.5,
+   "total": 50.5,
+   "SF": {
+    "plays": 60.8815068259564,
+    "dropbacks": 32.72675,
+    "att": 30.7185,
+    "carries": 28.15475,
+    "comp": 20.9235,
+    "pass_yds": 244.3931909882337,
+    "rush_yds": 128.8207369750915,
+    "ints": 0.56575,
+    "ptd": 1.7155,
+    "rtd": 1.409,
+    "fgm": 2.169,
+    "xpm": 2.944,
+    "sacks": 2.00825
+   },
+   "WAS": {
+    "plays": 61.84696136171799,
+    "dropbacks": 34.67875,
+    "att": 32.86825,
+    "carries": 27.171,
+    "comp": 19.984,
+    "pass_yds": 221.38618878550972,
+    "rush_yds": 122.2830143118637,
+    "ints": 0.5945,
+    "ptd": 1.21275,
+    "rtd": 1.1015,
+    "fgm": 1.61675,
+    "xpm": 2.171,
+    "sacks": 1.8105
+   },
+   "_pts": {
+    "SF": 29.21218900274591,
+    "WAS": 21.409594910733446
+   }
+  }
+ },
+ "dropped_out": [
+  [
+   "SEA",
+   "Jake Bobo"
+  ],
+  [
+   "SEA",
+   "Drake Thomas"
+  ],
+  [
+   "SEA",
+   "Jadarian Price"
+  ],
+  [
+   "SEA",
+   "Julian Neal"
+  ],
+  [
+   "SEA",
+   "Robbie Ouzts"
+  ],
+  [
+   "SEA",
+   "Zach Charbonnet"
+  ],
+  [
+   "SEA",
+   "Coby Bryant"
+  ],
+  [
+   "SEA",
+   "Chazz Surratt"
+  ],
+  [
+   "DEN",
+   "Talanoa Hufanga"
+  ],
+  [
+   "DEN",
+   "Pat Bryant"
+  ],
+  [
+   "DEN",
+   "Jonathon Cooper"
+  ],
+  [
+   "DEN",
+   "Jonah Coleman"
+  ],
+  [
+   "DEN",
+   "Pat Surtain II"
+  ],
+  [
+   "HOU",
+   "Dylan Horton"
+  ],
+  [
+   "HOU",
+   "Ja'Marcus Ingram"
+  ],
+  [
+   "HOU",
+   "Jaylin Smith"
+  ],
+  [
+   "HOU",
+   "Damone Clark"
+  ],
+  [
+   "HOU",
+   "E.J. Speed"
+  ],
+  [
+   "HOU",
+   "Henry To'oTo'o"
+  ],
+  [
+   "HOU",
+   "British Brooks"
+  ],
+  [
+   "HOU",
+   "Christian Kirk"
+  ],
+  [
+   "HOU",
+   "Mario Edwards"
+  ],
+  [
+   "HOU",
+   "David Montgomery"
+  ],
+  [
+   "HOU",
+   "Jayden Higgins"
+  ],
+  [
+   "HOU",
+   "Jalen Pitre"
+  ],
+  [
+   "JAX",
+   "Caleb Ransaw"
+  ],
+  [
+   "JAX",
+   "BJ Green II"
+  ],
+  [
+   "CHI",
+   "Dayo Odeyingbo"
+  ],
+  [
+   "CHI",
+   "T.J. Edwards"
+  ],
+  [
+   "CHI",
+   "Joe Tryon-Shoyinka"
+  ],
+  [
+   "CHI",
+   "Ruben Hyppolite II"
+  ],
+  [
+   "CHI",
+   "Brittain Brown"
+  ],
+  [
+   "CHI",
+   "Nikola Kalinic"
+  ],
+  [
+   "CHI",
+   "Kyler Gordon"
+  ],
+  [
+   "ATL",
+   "Yasir Abdullah"
+  ],
+  [
+   "ATL",
+   "David Sills"
+  ],
+  [
+   "ATL",
+   "James Pearce Jr."
+  ],
+  [
+   "ATL",
+   "A.J. Terrell"
+  ],
+  [
+   "ATL",
+   "Ronnie Harrison"
+  ],
+  [
+   "ATL",
+   "Jalon Walker"
+  ],
+  [
+   "ATL",
+   "JD Bertrand"
+  ],
+  [
+   "BAL",
+   "T.J. Tampa"
+  ],
+  [
+   "BAL",
+   "Ja'Kobi Lane"
+  ],
+  [
+   "BAL",
+   "Durham Smythe"
+  ],
+  [
+   "BAL",
+   "Jacob Hummel"
+  ],
+  [
+   "CLE",
+   "Dylan Sampson"
+  ],
+  [
+   "CLE",
+   "Alex Wright"
+  ],
+  [
+   "CLE",
+   "Nathaniel Watson"
+  ],
+  [
+   "CLE",
+   "Raheim Sanders"
+  ],
+  [
+   "CLE",
+   "Mason Graham"
+  ],
+  [
+   "CLE",
+   "Dillon Gabriel"
+  ],
+  [
+   "CLE",
+   "Myles Garrett"
+  ],
+  [
+   "TEN",
+   "Jaylen Harrell"
+  ],
+  [
+   "TEN",
+   "Kevin Winston Jr."
+  ],
+  [
+   "TEN",
+   "Darrell Baker Jr."
+  ],
+  [
+   "TEN",
+   "Kendell Brooks"
+  ],
+  [
+   "IND",
+   "Cameron Mitchell"
+  ],
+  [
+   "IND",
+   "Arden Key"
+  ],
+  [
+   "IND",
+   "Alec Pierce"
+  ],
+  [
+   "NYJ",
+   "Braiden McGregor"
+  ],
+  [
+   "NYJ",
+   "Marcelino McCrary-Ball"
+  ],
+  [
+   "NYJ",
+   "Adonai Mitchell"
+  ],
+  [
+   "NYJ",
+   "Joseph Ossai"
+  ],
+  [
+   "NYJ",
+   "Ja'Sir Taylor"
+  ],
+  [
+   "NYJ",
+   "Tre Brown"
+  ],
+  [
+   "NYJ",
+   "Micheal Clemons"
+  ],
+  [
+   "NYJ",
+   "Arian Smith"
+  ],
+  [
+   "NYJ",
+   "Omar Cooper Jr."
+  ],
+  [
+   "NYJ",
+   "Tyler Baron"
+  ],
+  [
+   "NYJ",
+   "Breece Hall"
+  ],
+  [
+   "NYJ",
+   "David Onyemata"
+  ],
+  [
+   "NE",
+   "Mack Hollins"
+  ],
+  [
+   "NE",
+   "Reggie Gilliam"
+  ],
+  [
+   "NE",
+   "A.J. Brown"
+  ],
+  [
+   "NE",
+   "Harold Landry III"
+  ],
+  [
+   "NE",
+   "Quintayvious Hutchins"
+  ],
+  [
+   "NE",
+   "Bryce Baringer"
+  ],
+  [
+   "NE",
+   "Dell Pettus"
+  ],
+  [
+   "NO",
+   "Mason Tipton"
+  ],
+  [
+   "NO",
+   "Travis Etienne"
+  ],
+  [
+   "NO",
+   "Moliki Matavao"
+  ],
+  [
+   "NO",
+   "Bryan Bresee"
+  ],
+  [
+   "NYG",
+   "Korie Black"
+  ],
+  [
+   "NYG",
+   "Gunner Olszewski"
+  ],
+  [
+   "NYG",
+   "Paulson Adebo"
+  ],
+  [
+   "NYG",
+   "Braxton Berrios"
+  ],
+  [
+   "NYG",
+   "Brian Burns"
+  ],
+  [
+   "NYG",
+   "DJ Davidson"
+  ],
+  [
+   "NYG",
+   "Chauncey Golston"
+  ],
+  [
+   "NYG",
+   "Elijah Chatman"
+  ],
+  [
+   "NYG",
+   "Roy Robertson-Harris"
+  ],
+  [
+   "NYG",
+   "Jaxson Dart"
+  ],
+  [
+   "NYG",
+   "Jarrick Bernard-Converse"
+  ],
+  [
+   "CAR",
+   "Bam Martin-Scott"
+  ],
+  [
+   "CAR",
+   "Nic Scourton"
+  ],
+  [
+   "CAR",
+   "Xavier Legette"
+  ],
+  [
+   "CAR",
+   "Cam Jackson"
+  ],
+  [
+   "CAR",
+   "Trevor Etienne"
+  ],
+  [
+   "CAR",
+   "Mike Jackson"
+  ],
+  [
+   "CAR",
+   "LaBryan Ray"
+  ],
+  [
+   "CAR",
+   "Tershawn Wharton"
+  ],
+  [
+   "CAR",
+   "Jonathon Brooks"
+  ],
+  [
+   "CAR",
+   "Jaycee Horn"
+  ],
+  [
+   "PHI",
+   "Will Shipley"
+  ],
+  [
+   "PHI",
+   "Jalyx Hunt"
+  ],
+  [
+   "PHI",
+   "Grant Calcaterra"
+  ],
+  [
+   "PHI",
+   "Tank Bigsby"
+  ],
+  [
+   "PHI",
+   "Jakorian Bennett"
+  ],
+  [
+   "PIT",
+   "Michael Pittman"
+  ],
+  [
+   "PIT",
+   "Calvin Austin III"
+  ],
+  [
+   "PIT",
+   "Trey Sermon"
+  ],
+  [
+   "PIT",
+   "Roman Wilson"
+  ],
+  [
+   "PIT",
+   "Derrick Harmon"
+  ],
+  [
+   "PIT",
+   "Adam Thielen"
+  ],
+  [
+   "PIT",
+   "Ben Skowronek"
+  ],
+  [
+   "PIT",
+   "Darius Slay"
+  ],
+  [
+   "TB",
+   "Markees Watts"
+  ],
+  [
+   "TB",
+   "Teddy Bridgewater"
+  ],
+  [
+   "TB",
+   "Jalen McMillan"
+  ],
+  [
+   "TB",
+   "Baker Mayfield"
+  ],
+  [
+   "ARI",
+   "Kitan Crawford"
+  ],
+  [
+   "ARI",
+   "Hunter Long"
+  ],
+  [
+   "ARI",
+   "Zachary Carter"
+  ],
+  [
+   "ARI",
+   "Will Johnson"
+  ],
+  [
+   "LA",
+   "Darious Williams"
+  ],
+  [
+   "LA",
+   "Terrance Ferguson"
+  ],
+  [
+   "LA",
+   "Ronnie Rivers"
+  ],
+  [
+   "LA",
+   "Ahkello Witherspoon"
+  ],
+  [
+   "LAC",
+   "Trey Lance"
+  ],
+  [
+   "LAC",
+   "Da'Shawn Hand"
+  ],
+  [
+   "LAC",
+   "Denzel Perryman"
+  ],
+  [
+   "LAC",
+   "David Njoku"
+  ],
+  [
+   "LAC",
+   "KeAndre Lambert-Smith"
+  ],
+  [
+   "LAC",
+   "Tre Harris"
+  ],
+  [
+   "KC",
+   "Isiah Pacheco"
+  ],
+  [
+   "KC",
+   "Tyquan Thornton"
+  ],
+  [
+   "KC",
+   "Joshua Williams"
+  ],
+  [
+   "KC",
+   "Cooper McDonald"
+  ],
+  [
+   "BUF",
+   "Jordan Hancock"
+  ],
+  [
+   "BUF",
+   "Tyrell Shavers"
+  ],
+  [
+   "LV",
+   "Dont'e Thornton Jr."
+  ],
+  [
+   "LV",
+   "Carter Runyon"
+  ],
+  [
+   "LV",
+   "Jamal Adams"
+  ],
+  [
+   "LV",
+   "Jack Bech"
+  ],
+  [
+   "DAL",
+   "Malik Davis"
+  ],
+  [
+   "DAL",
+   "Marist Liufau"
+  ],
+  [
+   "DAL",
+   "Jalen Thompson"
+  ],
+  [
+   "DAL",
+   "P.J. Locke"
+  ],
+  [
+   "DAL",
+   "Jonathan Bullard"
+  ],
+  [
+   "GB",
+   "Edgerrin Cooper"
+  ],
+  [
+   "GB",
+   "Collin Oliver"
+  ],
+  [
+   "GB",
+   "Jayden Reed"
+  ],
+  [
+   "GB",
+   "Warren Brinson"
+  ],
+  [
+   "GB",
+   "Jordon Riley"
+  ],
+  [
+   "GB",
+   "Josh Jacobs"
+  ],
+  [
+   "GB",
+   "Luke Musgrave"
+  ],
+  [
+   "GB",
+   "Javon Hargrave"
+  ],
+  [
+   "GB",
+   "Micah Parsons"
+  ],
+  [
+   "GB",
+   "Savion Williams"
+  ],
+  [
+   "GB",
+   "Nate Hobbs"
+  ],
+  [
+   "GB",
+   "Chris Brooks"
+  ],
+  [
+   "WAS",
+   "Jordan Magee"
+  ],
+  [
+   "WAS",
+   "Jaylin Lane"
+  ],
+  [
+   "WAS",
+   "Marcus Mariota"
+  ],
+  [
+   "WAS",
+   "Trey Amos"
+  ],
+  [
+   "WAS",
+   "Jer'Zhan Newton"
+  ],
+  [
+   "WAS",
+   "Nick Bellore"
+  ],
+  [
+   "WAS",
+   "Jeremy McNichols"
+  ],
+  [
+   "WAS",
+   "Leo Chenal"
+  ],
+  [
+   "SF",
+   "C.J. West"
+  ],
+  [
+   "SF",
+   "Ricky Pearsall"
+  ],
+  [
+   "SF",
+   "Jake Tonges"
+  ],
+  [
+   "SF",
+   "Kalia Davis"
+  ],
+  [
+   "SF",
+   "Garret Wallow"
+  ],
+  [
+   "SF",
+   "Dre Greenlaw"
+  ],
+  [
+   "SF",
+   "Demarcus Robinson"
+  ],
+  [
+   "SF",
+   "Sam Okuayinonu"
+  ],
+  [
+   "SF",
+   "Alfred Collins"
+  ],
+  [
+   "SF",
+   "Marques Sigle"
+  ],
+  [
+   "SF",
+   "Isaac Guerendo"
+  ],
+  [
+   "SF",
+   "Nick Martin"
+  ],
+  [
+   "SF",
+   "Deebo Samuel Sr."
+  ]
+ ]
+}

@@ -142,7 +142,17 @@ Pull and hold before writing:
 
 ## 3. Build the Upload Package
 
-Write to the movie folder as `[Movie Title] - Upload Package.md`.
+Write to the movie folder as `[Movie Title] - Upload Package.md`, plus `.docx`.
+
+**One document, locked 2026-10-18 (Zac).** The shorts captions doc is merged into this
+package. There is no separate `Shorts Captions` file anymore. Everything about one short
+(file, cover, hook, all three platforms' copy, posting window, checks) sits together in
+that short's own block in Section 7. Never split a short's info across sections.
+Section order: header, 1 Title, 2 Full Description (chapters inside it), 4 Tags,
+5 Hashtags, 6 Thumbnail, 7 Shorts (complete blocks), 8 Facebook, 9 Instagram, 10 Cards
+and End Screen, 11 Posting Windows plus checklist, 12 Flags, 13 Fair Use (always last).
+Keep giving two titles, Zac sometimes combines them. Every public piece stays SEO and
+GEO friendly (keyword first, answer-shaped lines, named entities).
 
 ### Package header
 
@@ -197,12 +207,16 @@ Structure, in this order:
    Named entities carry weight here: film title, director, cast, studio, streamer,
    franchise, year.
 5. **One comment-driving question.**
-6. **CHAPTERS block.** See Section 3 below.
+6. **CHAPTERS block.** Built per the rules below, written right here in the description.
 7. **Hashtags.** See Section 5 below.
+8. **Fair use disclaimer**, the Section 13 block, pasted as the last thing in the
+   description.
 
-Never state a final review score in the description. Tease only.
+Write the whole description as ONE paste-ready block, so Zac copies it once. Never state
+a final review score in the description. Tease only.
 
-### Section 3. Chapter List
+**No separate chapter section (2026-10-18, Zac).** The chapters live only inside the full
+description. There is no Section 3 anymore. Chapter rules:
 
 **The first line is always this literal line, no exceptions:**
 
@@ -267,14 +281,30 @@ forward.) `#FrostCast` is fine on FrostCast content only, not on review videos.
 - Pull the text stack from the strongest number or verdict in the transcript.
 - Never state a review score on the thumbnail.
 
-### Section 7. Shorts Candidates
+### Section 7. Shorts (one complete block per short)
 
-Full scoring detail for the clips that will be built. See `shorts-factory.md` Section 2
-for selection criteria. This section of the package holds the reasoning: snapped source
-in and out points, first three spoken words, hook assessment, on-screen text, mid-clip
-retention beat, ending and loop assessment, and the 1 to 10 score. **Five clips maximum,
-ship 7 and above, there is no hold verdict.** A moment that cannot be made good is dropped,
-not queued.
+**Five clips maximum, ship 7 and above, there is no hold verdict.** See
+`shorts-factory.md` Section 2 for selection. Each short gets ONE block with everything
+about it, in this order, strongest first (same order as the posting order):
+
+```
+### Short N: <plain name>  (post Nth, window: <from Section 11>)
+File: shorts\clipN_slug.mp4   Cover: shorts\clipN_slug_cover.png
+Length / source: 47.2s, 02:21 to 03:07 of the full video
+On-screen hook: "FOUR TO EIGHT WORDS"
+Opens on: "first five spoken words"   Ends on: "last few words"
+Checks: spoiler? swearing? anything to listen for
+
+YouTube title / YouTube description + 3 to 4 hashtags
+Instagram caption + 4 to 5 hashtags
+Facebook caption
+
+Why it ships: score, hook, mid-clip beat, ending/loop (two or three lines)
+Tick: [ ] YT  [ ] IG  [ ] FB
+```
+
+Per-platform copy rules are in `shorts-factory.md` Section 11. Never identical copy across
+the three.
 
 ### Section 8. Facebook Post
 
@@ -313,15 +343,32 @@ so and mark it for Zac or Matt to fill in rather than inventing a title.
 Flag clearly that channel analytics and current playlist structure are not visible from
 this pipeline, so destinations are structural recommendations, not verified links.
 
-### Section 11. Posting Schedule
+### Section 11. Posting Windows (flexible, timed from when the full video goes live)
 
-- **YouTube full review:** 11:00 AM ET on the publish date.
-- **Instagram promo post:** +45 minutes.
-- **Facebook promo post:** +90 minutes.
-- **Shorts:** one per day, YouTube first, Instagram +45 min, Facebook +90 min, starting
-  the day after the full review publishes so they do not compete with the main upload.
-- V2 follow-up posts on both platforms target the following weekend, using a secondary
-  angle from the transcript, never the same angle as V1.
+**Changed 2026-10-18 (Zac): life gets in the way, so no fixed clock times or dates.**
+Give windows measured from "the full review goes live" (call it hour 0), built on best
+practice. Sources disagree on exact times (checked 2026-10-18: Hopper HQ, SocialPilot,
+Blogging Wizard/Statusbrew, Postsyncer), but they agree that timing matters most for the
+long video's first day or two, that Shorts reward consistency more than an exact time, and
+that the channel's own YouTube Studio "When your viewers are on YouTube" chart beats any
+generic number. Default windows:
+
+- **Full review:** whenever it is ready. A weekday late morning or a weekend morning is a
+  good default, not a rule.
+- **Instagram and Facebook promo posts:** same day, within 1 to 3 hours of hour 0.
+- **Short 1:** 24 to 48 hours after hour 0. Leave the long video its first day alone so
+  the early clicks go to it.
+- **Each next short:** 1 to 2 days after the one before. Keep a steady rhythm; skipping a
+  day is fine, posting two the same day is not.
+- **Time of day for shorts:** weekday evenings (about 6 to 10 PM ET) or weekend
+  afternoons (about noon to 6 PM ET) when it is possible. Any time beats not posting.
+- **Same short on Instagram and Facebook:** anytime the same day as the YouTube one.
+- **Spoiler shorts:** not before about 72 hours after hour 0.
+- V2 follow-up posts the following weekend, a secondary angle, never the same as V1.
+
+End with a short checklist (one line per short in posting order with its window and tick
+boxes) plus the click-by-click YouTube Studio and Meta Business Suite steps from
+`shorts-factory.md` Section 11. Do not post any short before the full review is live.
 
 ### Section 12. Flags and Production Notes
 
@@ -332,6 +379,32 @@ Anything Zac or Matt has to decide.
 
 Be direct here. An unflagged assumption that reaches publish is worse than a long flags
 section.
+
+### Section 13. Fair Use Disclaimer (always the last section)
+
+Same block on every video, never reworded per upload (source: the End of Oak Street
+package). It is also pasted at the very end of the full description in Section 2.
+
+```
+FAIR USE DISCLAIMER
+
+Copyright Disclaimer under Section 107 of the Copyright Act of 1976:
+Allowance is made for fair use for purposes such as criticism, comment,
+news reporting, teaching, scholarship, education and research. Fair use
+is a use permitted by copyright statute that might otherwise be infringing.
+
+All footage, images, audio and other material appearing in this video are
+the property of their respective owners and are used here for the purpose
+of critical review and commentary. No copyright infringement is intended.
+Winter Wolf's Den does not claim ownership of any third party material.
+
+This video is transformative in nature. It contains original commentary,
+criticism and analysis, and is not intended to substitute for the original
+work in any way.
+
+If you are a copyright owner and believe material in this video has been
+used improperly, please contact us directly and we will address it promptly.
+```
 
 ---
 
@@ -366,9 +439,9 @@ The short version:
   captions, timed hook text, film tag, cover PNG plus a one-frame cover prepend, normalized
   audio. Never a center crop.
 - **QC is mandatory and includes looking at frames.** ffprobe is not a visual check.
-- **Output:** `shorts\clipN_slug.mp4`, `clipN_slug_cover.png`, and
-  `shorts\[Movie Title] - Shorts Captions.md` plus `.docx` (replaces the old
-  `shorts_manifest.txt`).
+- **Output:** `shorts\clipN_slug.mp4` and `clipN_slug_cover.png`. All captions and
+  posting info go in the Upload Package's Section 7 blocks (merged 2026-10-18), not a
+  separate captions file.
 - Length: working target 30 to 75 seconds, floor 20 seconds. YouTube Shorts and Instagram
   Reels allow 3 minutes now. Facebook Reels length is unverified, assume 90 seconds.
 
@@ -381,8 +454,7 @@ once.
 At the end, report to Zac in chat, short:
 - Folder used
 - Files written, with full paths
-- Clip count (every shipped clip is finished, there is no held category) and the path to
-  the captions document
+- Clip count (every shipped clip is finished, there is no held category)
 - The top 3 flags, nothing else
 
 Do not restate the package contents in chat. He reads the file.

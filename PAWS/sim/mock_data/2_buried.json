@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {"title": "Create Kingdom Planners shop", "due_in_days": -9, "status": "open"},
+    {"title": "Listing photos", "due_in_days": -4, "status": "open"},
+    {"title": "Shorts posting", "due_in_days": -1, "status": "open"},
+    {"title": "Log delivery mileage", "due_in_days": -2, "status": "open"},
+    {"title": "Third edit pass", "due_in_days": 5, "status": "open"}
+  ],
+  "calendar": [
+    {"title": "Work", "days_from_today": 0}, {"title": "PT appointment", "days_from_today": 0},
+    {"title": "Review recording", "days_from_today": 0}, {"title": "Planning call", "days_from_today": 0},
+    {"title": "Weekly build", "days_from_today": 0}, {"title": "Dinner", "days_from_today": 0},
+    {"title": "FrostCast", "days_from_today": 0}
+  ],
+  "ventures_blocked": ["Kingdom Planners", "PAWS"],
+  "open_decisions": 7,
+  "events": []
+}
