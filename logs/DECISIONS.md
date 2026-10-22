@@ -1224,3 +1224,48 @@ correct on a guess.
 **Status:** OPEN
 
 ---
+
+## [SYS-02] 2026-10-22 | SYSTEM | Nightly rollup produced no commit for 2 consecutive nights (10-20, 10-21), gap only visible from tonight's run
+
+**Blocked:** Not a venture blocker - a process gap in the automation this
+rollup itself is part of. `git log` shows the last commit to this repo
+was `87ae400` on 2026-10-19 03:11 UTC ("Nightly rollup: queue
+WWD-2026-10-19-01"). Working tree is clean (`git status --short` empty)
+and `git log --all --since=72.hours.ago` returns only that same commit -
+so nothing landed in this repo, from any session, for the 2026-10-20 or
+2026-10-21 nights, and tonight (2026-10-22) is the first run since. The
+run history shows this rollup committed every night from at least
+2026-10-09 through 2026-10-19 without a gap, so a 2-night silent stretch
+immediately after is a change in pattern worth a human look, not
+something to assume away as "nothing happened" - per the Honesty rule,
+the only thing confirmed is that no file in this repo changed; whether
+the scheduled task itself failed to fire, fired into a session that
+errored before committing, or Zac was genuinely away from all ventures
+for 2 full days is not something a read-only pass on this repo can
+distinguish.
+
+**Options:**
+A. Treat as cosmetic - Zac may simply not have touched WKP for 2 days
+   (he has a day job, evening obligations, and was sick earlier in
+   October per memory/topics/user-personal.md), and every other
+   venture's own Blocked items are already individually tracked above,
+   so no separate action needed.
+B. Flag for Zac to check the scheduled task configuration (cron/trigger
+   list) directly - a silent 2-night gap in a nightly automation is the
+   kind of failure that compounds quietly (missed decisions, stale
+   TASKS.md) if it's actually the trigger and not just a quiet couple of
+   days.
+C. Escalate further by trying to inspect the trigger/schedule
+   configuration from inside this session - out of scope: this rollup
+   is read-only against the repo and has no tool access to its own
+   scheduling layer in this run.
+
+**Recommendation:** B - cheap for Zac to check (one look at his
+scheduled tasks list) and the downside of ignoring a real scheduling
+failure (more silent nights, more drift like WWD-2026-10-17-01's episode
+tracking) is worse than the cost of asking. Not escalating to C since
+nothing here indicates urgency beyond "verify it's still wired up."
+
+**Status:** OPEN
+
+---
