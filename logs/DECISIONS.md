@@ -1141,6 +1141,48 @@ assumed either way per the Escalation rule.
 
 ---
 
+## [WWD-2026-10-19-01] 2026-10-19 | WWD | Cold-open shot-list blocker is filed under the eBay Dropship table in TASKS.md, not WWD, and has not been queued as its own decision
+
+**Blocked:** TASKS.md's eBay Dropship section (added 2026-10-10) contains a
+row titled "Cold open shot list + Firefly swap" whose content is plainly
+WWD cold-open work, not eBay: a shot list, a Warden design brief, the
+Winter Wolf Express look, and who appears in shots 1 and 7, built from
+"Hey all you warden.docx" (the Big Trouble version of the script). The
+row itself says Zac told the team on 2026-10-10 that draft 1 was built
+from the wrong script source and that he is finding the right files
+himself, with an explicit "do not work this until he hands them over."
+That is a real, still-open blocker distinct from the Higgsfield-credit
+block already tracked for the same Warden cold open in WWD-2026-09-17-01
+and WWD-2026-09-26-01 (those are about paying for image generation; this
+one is about which script is even the right source). Nine days have
+passed with no update, and because the row lives under eBay Dropship
+rather than WWD in TASKS.md, a WWD-focused status pass is likely to miss
+it entirely.
+
+**Options:**
+A. Fold this into the existing Warden cold-open decision thread
+   (WWD-2026-09-26-01) rather than opening a new entry — risk: that
+   thread is specifically about credit cost, so folding mixes two
+   unrelated blockers under one resolution.
+B. Log it as its own entry (this one) so the script-source block and the
+   TASKS.md filing mismatch both stay visible, and flag Zac to either
+   move the row into WWD's table or confirm it belongs under
+   eBay/cross-venture cold-open work on purpose.
+C. Leave it alone — the row already says "Blocked" with clear notes, so
+   nothing is technically missing from the record.
+
+**Recommendation:** B. The specific ask (confirm the correct script,
+the Warden design brief, the Winter Wolf Express look, and who is in
+shots 1 and 7) is a decision only Zac can make and is different from
+the credits question already queued. The filing location is itself
+worth a flag since it risks the blocker going unseen on a normal WWD
+check-in. This is a read-only nightly rollup, so the row doesn't get
+moved here — queuing it is the right scope.
+
+**Status:** OPEN
+
+---
+
 ## [WWD-2026-10-17-01] 2026-10-17 | WWD | FrostCast episode drift has widened from 1 episode to 3 since WWD-2026-10-03-02 was opened — EP116 has now aired, TASKS.md still frames EP113 as upcoming
 
 **Blocked:** WWD-2026-10-03-02 (still OPEN, opened 2026-10-03) already
@@ -1178,6 +1220,51 @@ topics actually ran, and resetting the row to whatever episode is really
 next, is a five-minute fix once someone with the real schedule (Zac or
 wwd-director) confirms it — not something this read-only rollup can
 correct on a guess.
+
+**Status:** OPEN
+
+---
+
+## [SYS-02] 2026-10-22 | SYSTEM | Nightly rollup produced no commit for 2 consecutive nights (10-20, 10-21), gap only visible from tonight's run
+
+**Blocked:** Not a venture blocker - a process gap in the automation this
+rollup itself is part of. `git log` shows the last commit to this repo
+was `87ae400` on 2026-10-19 03:11 UTC ("Nightly rollup: queue
+WWD-2026-10-19-01"). Working tree is clean (`git status --short` empty)
+and `git log --all --since=72.hours.ago` returns only that same commit -
+so nothing landed in this repo, from any session, for the 2026-10-20 or
+2026-10-21 nights, and tonight (2026-10-22) is the first run since. The
+run history shows this rollup committed every night from at least
+2026-10-09 through 2026-10-19 without a gap, so a 2-night silent stretch
+immediately after is a change in pattern worth a human look, not
+something to assume away as "nothing happened" - per the Honesty rule,
+the only thing confirmed is that no file in this repo changed; whether
+the scheduled task itself failed to fire, fired into a session that
+errored before committing, or Zac was genuinely away from all ventures
+for 2 full days is not something a read-only pass on this repo can
+distinguish.
+
+**Options:**
+A. Treat as cosmetic - Zac may simply not have touched WKP for 2 days
+   (he has a day job, evening obligations, and was sick earlier in
+   October per memory/topics/user-personal.md), and every other
+   venture's own Blocked items are already individually tracked above,
+   so no separate action needed.
+B. Flag for Zac to check the scheduled task configuration (cron/trigger
+   list) directly - a silent 2-night gap in a nightly automation is the
+   kind of failure that compounds quietly (missed decisions, stale
+   TASKS.md) if it's actually the trigger and not just a quiet couple of
+   days.
+C. Escalate further by trying to inspect the trigger/schedule
+   configuration from inside this session - out of scope: this rollup
+   is read-only against the repo and has no tool access to its own
+   scheduling layer in this run.
+
+**Recommendation:** B - cheap for Zac to check (one look at his
+scheduled tasks list) and the downside of ignoring a real scheduling
+failure (more silent nights, more drift like WWD-2026-10-17-01's episode
+tracking) is worse than the cost of asking. Not escalating to C since
+nothing here indicates urgency beyond "verify it's still wired up."
 
 **Status:** OPEN
 
