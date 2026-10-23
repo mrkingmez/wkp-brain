@@ -1,4 +1,4 @@
-﻿---
+---
 name: dialogue-doctor
 description: Line level dialogue pass on any WKP script. Checks that
   people sound like people and kills AI slop. Use when a script needs

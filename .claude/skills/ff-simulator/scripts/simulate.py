@@ -29,6 +29,22 @@ WINDOW_GAMES = 14        # last N team games feed usage and efficiency
 DECAY = 0.88             # weight per game back
 MISS_WEIGHT = 0.4        # weight of a game where the player has no stat line (see build_players)
 
+# ---------------------------------------------------------------- offensive line layer (ol_model.py)
+# OL_SCALE multiplies the data-fitted effect sizes in ol_coefs.json. 0 = layer off (Week 6 behaviour, default).
+OL_SCALE = 0.0
+_OL_COEF = {}
+
+
+def set_ol(scale, zero=(), coef_path=r"D:\WKP\data\ff-simulator\ol_coefs.json"):
+    """Turn the OL layer on at `scale` (1.0 = the fitted size). Needs ol_coefs.json from ol_model.py fit."""
+    global OL_SCALE, _OL_COEF
+    OL_SCALE = float(scale)
+    _OL_COEF = json.load(open(coef_path)) if scale else {}
+    for k in zero:                       # switch single components off (e.g. zero=("sack_rate",))
+        if k in _OL_COEF:
+            _OL_COEF[k] = dict(_OL_COEF[k], beta=0.0)
+
+
 # ---------------------------------------------------------------- scoring
 PTS = dict(pass_yd=0.04, pass_td=6, int=-2, rush_yd=0.1, rush_td=6, rec=1, rec_yd=0.1, rec_td=6,
            fum_lost=-2, solo=1, ast=0.5, sack=3, def_int=3, pd=1, ff=2, fr=2, def_td=6, safety=4, xp=1,
@@ -115,6 +131,7 @@ class TeamModel:
             ypc=(tot("ryd") + 100 * L["ypc"]) / (max(tot("car"), 1) + 100),
         )
         self.avail = {}                      # player_id -> chance he plays (set by the runner)
+        self.ol_missing = 0.0                # share of usual starting-OL snaps unavailable (0..1), set by the runner
         self.team_tgt = max(tot("tgt"), 1)
         self.team_car = max(tot("car"), 1)
         self.team_ptd = max(tot("ptd"), 0.5)
@@ -225,6 +242,11 @@ def simulate_game(home: TeamModel, away: TeamModel, spread_home: float, total: f
         ypa = off.off["ypa"] + (0.7 * (d["ypa"] - lg_def["ypa"]) if d is not None else 0)
         ypc = off.off["ypc"] + (0.6 * (d["ypc"] - lg_def["ypc"]) if d is not None else 0)
         sack_rate = np.clip(((d["sack"] if d is not None else lg_def["sack"]) * 0.7 + lg_def["sack"] * 0.3), 0.01, 0.2)
+        if OL_SCALE and off.ol_missing:
+            m_ = off.ol_missing * OL_SCALE
+            sack_rate = np.clip(sack_rate + _OL_COEF["sack_rate"]["beta"] * m_, 0.01, 0.25)
+            ypa = ypa + _OL_COEF["ypa"]["beta"] * m_
+            ypc = ypc + _OL_COEF["ypc"]["beta"] * m_
         int_rate = off.off["int"] * 0.6 + (d["int"] if d is not None else lg_def["int"]) * 0.4
         sacks = rng.binomial(dropbacks, sack_rate)
         att = dropbacks - sacks

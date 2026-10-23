@@ -101,6 +101,15 @@ def grade_week(season: int, week: int) -> dict:
     scoreboard = espn_games.week_scoreboard(season, week)
     games = espn_games.normalize_games(scoreboard)
     games_by_id = {g["game_id"]: g for g in games}
+    nfl_ids = set(games_by_id)
+
+    # College (added 2026-10-21): any ungraded row whose game_id is not an
+    # NFL game this week is looked up on the FBS scoreboard by calendar
+    # date. Only fetched when such rows exist.
+    if any(str(r["season"]) == str(season) and str(r["week"]) == str(week) and r["game_id"] not in nfl_ids
+           and not (r.get("result_su") or r.get("result_ats")) for r in rows):
+        for g in espn_games.cfb_games_for_week(season, week):
+            games_by_id.setdefault(g["game_id"], g)
 
     now = datetime.now(timezone.utc)
     graded, refused, skipped_incomplete = 0, [], 0
@@ -188,7 +197,9 @@ def grade_week(season: int, week: int) -> dict:
                 covered = home_covered if picked_home else not home_covered
                 result_ats = "correct" if covered else "incorrect"
 
-        closing_line = _closing_line_for(season, week, row["away_team"], row["home_team"])
+        # nflverse only carries NFL lines; college closing line stays blank.
+        closing_line = (_closing_line_for(season, week, row["away_team"], row["home_team"])
+                        if row["game_id"] in nfl_ids else None)
 
         row["graded_at"] = now.isoformat()
         row["away_score"] = away_score
@@ -296,6 +307,17 @@ def summarize(season: int, week: int):
         print(f"  Against the spread: {ats_correct}/{ats_total} = {_pct(ats_correct, ats_total)} "
               f"(baseline {_fmt_pct(ATS_BREAKEVEN_PCT)} -- this league has no push, ties go to the "
               f"underdog{tie_note})")
+
+    nfl_ids_in_week = {g["game_id"] for g in espn_games.normalize_games(espn_games.week_scoreboard(season, week))}
+    for label, in_nfl in (("NFL", True), ("College", False)):
+        parts = []
+        for source in ("model", "assisted_card", "control_card"):
+            sr = [r for r in rows if r["source"] == source and r.get("result_ats") in ("correct", "incorrect")
+                  and ((r["game_id"] in nfl_ids_in_week) == in_nfl)]
+            if sr:
+                parts.append(f"{source} {sum(1 for r in sr if r['result_ats'] == 'correct')}/{len(sr)}")
+        if parts:
+            print(f"  ATS by league -- {label}: " + ", ".join(parts))
 
     fav_correct, fav_total = favorite_baseline(season, week)
     print(f"\n  Favorite-picks-every-game baseline (this week's games): "

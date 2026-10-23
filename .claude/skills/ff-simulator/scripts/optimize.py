@@ -5,7 +5,7 @@ IRFL starting rules (MFL TYPE=league, pulled 2026-10-15): 17 starters, 8 of them
 So: offense = QB + PK + 7 from RB/WR/TE; defense = 8 from DL/LB/DB.
 Every legal slot split is tried and the best players are taken in each group.
 
-python optimize.py 2026 6 [--taxi]
+python optimize.py 2026 6 [--taxi] [--roster path.json] [--sheet names.json]
   --taxi   treat taxi-squad players as startable (use only if the league lets you activate before lock)
 
 Three lineups are reported:
@@ -23,7 +23,14 @@ import pandas as pd
 
 season, week = int(sys.argv[1]), int(sys.argv[2])
 allow_taxi = "--taxi" in sys.argv
-base = Path(r"D:\WKP\data\ff-simulator") / f"sim_{season}_wk{week}"
+ROSTER = r"D:\WKP\scratch\wk6_roster.json"      # default keeps Week 6 usage unchanged
+SHEET = None                                      # optional: JSON list of player names currently set on MFL
+if "--roster" in sys.argv:
+    ROSTER = sys.argv[sys.argv.index("--roster") + 1]
+if "--sheet" in sys.argv:
+    SHEET = sys.argv[sys.argv.index("--sheet") + 1]
+SUF = sys.argv[sys.argv.index("--suffix") + 1] if "--suffix" in sys.argv else ""
+base = Path(r"D:\WKP\data\ff-simulator") / f"sim_{season}_wk{week}{SUF}"
 z = np.load(str(base) + ".npz")
 ids, names, teams, groups, D = z["ids"], z["names"], z["teams"], z["groups"], z["draws"]
 idx = {i: n for n, i in enumerate(ids)}
@@ -31,7 +38,7 @@ idx = {i: n for n, i in enumerate(ids)}
 npl = pd.read_parquet(r"D:\WKP\data\nfl\players\players.parquet")[["gsis_id", "espn_id"]].dropna()
 npl["espn_id"] = npl.espn_id.astype(str).str.replace(r"\.0$", "", regex=True)
 e2g = dict(zip(npl.espn_id, npl.gsis_id))
-rows = json.load(open(r"D:\WKP\scratch\wk6_roster.json"))   # pos,name,team,status,salary,contractYear,proj,inj,mfl,espn
+rows = json.load(open(ROSTER))   # pos,name,team,status,salary,contractYear,proj,inj,mfl,espn
 POSMAP = {"QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE", "PK": "PK", "DT": "DL", "DE": "DL", "LB": "LB", "CB": "DB", "S": "DB"}
 pool, missing = [], []
 for pos, name, nfl, status, sal, cy, proj, inj, mfl, espn in rows:
@@ -103,7 +110,7 @@ L = {
 tots = {k: show(k, v) for k, v in L.items()}
 
 # the lineup from the Week 6 pick sheet, scored by the same simulation
-doc = ["Brissett, Jacoby", "Croskey-Merritt, Jacory", "White, Rachaad", "Flowers, Zay", "Allen, Keenan",
+doc = json.load(open(SHEET)) if SHEET else ["Brissett, Jacoby", "Croskey-Merritt, Jacory", "White, Rachaad", "Flowers, Zay", "Allen, Keenan",
        "Flournoy, Ryan", "Goedert, Dallas", "Schultz, Dalton", "Folk, Nick", "Davis, Jordan", "Kancey, Calijah",
        "Okereke, Bobby", "Strnad, Justin", "Dodson, Tyrel", "Kinchens, Kamren", "Jenkins, Rayshawn", "Mukuba, Andrew"]
 cur = [p for p in pool if p["name"] in doc]

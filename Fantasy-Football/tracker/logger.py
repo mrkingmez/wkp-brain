@@ -317,7 +317,7 @@ def _log_xls_card(season: int, week: int, source: str, path: Path, nfl_teams: li
     now = datetime.now(timezone.utc)
     scoreboard = espn_games.week_scoreboard(season, week)
     espn_games_list = espn_games.normalize_games(scoreboard)
-    cfb_events = espn_client.cfb_scoreboard().get("events", [])
+    cfb_events = espn_games.cfb_events_for_week(season, week)
 
     rows, refusals = [], []
     for card_game in _all_card_rows(card):
@@ -445,7 +445,7 @@ def log_model_from_docx(season: int, week: int) -> dict:
     doc_picks = docx_picks.parse_model_ats_picks(path)
     nfl_scoreboard = espn_games.week_scoreboard(season, week)
     nfl_games = espn_games.normalize_games(nfl_scoreboard)
-    cfb_events = espn_client.cfb_scoreboard().get("events", [])
+    cfb_events = espn_games.cfb_events_for_week(season, week)
 
     on_card_games = None
     hybrid_path = dashboard_config.hybrid_card_path(week)
@@ -536,3 +536,68 @@ def log_model_from_docx(season: int, week: int) -> dict:
         "unmatched": unmatched,
         "docx_picks_found": len(doc_picks),
     }
+
+
+def log_cfb_model_picks(season: int, week: int, picks: list[dict], logged_at: str | None = None,
+                        line_source: str = "frozen_card") -> dict:
+    """College (FBS) model picks, ATS only (straight-up stays NFL-only per
+    Fantasy-Football/CLAUDE.md, so pick_su is always blank).
+
+    picks: [{team (either team in the game, any common name), pick_ats
+    (team name), fav (card favorite name), spread (card spread, positive
+    number), confidence (optional)}]. line_used is converted to the
+    nflverse sign (positive = home favored) from fav/spread/home.
+    Games are located by calendar date, not ESPN week (see espn_games).
+
+    logged_at: leave None for a normal pre-kickoff log (a pick for a game
+    already kicked off is REFUSED). For a labelled BACKFILL, pass the ISO
+    timestamp of the verifiable pre-game record (e.g. the pick doc's file
+    mtime) and a line_source ending in '_backfill'. The stamp must still
+    be before kickoff, so the grader's integrity rule is not bypassed,
+    and the label keeps the provenance visible forever.
+    """
+    now = datetime.now(timezone.utc)
+    stamp = logged_at or now.isoformat()
+    stamp_dt = datetime.fromisoformat(stamp)
+    events = espn_games.cfb_events_for_week(season, week)
+    rows, refusals = [], []
+    for p in picks:
+        m = team_match.match_cfb_team(p["team"], events)
+        if m is None:
+            refusals.append(f"REFUSED: could not match '{p['team']}' to a CFB game this week -- not guessing")
+            continue
+        event, _ = m
+        comp = event["competitions"][0]
+        away_c = next(c for c in comp["competitors"] if c["homeAway"] == "away")
+        home_c = next(c for c in comp["competitors"] if c["homeAway"] == "home")
+        away, home = away_c["team"]["abbreviation"], home_c["team"]["abbreviation"]
+        kickoff = event.get("date")
+        if kickoff and stamp_dt >= datetime.fromisoformat(kickoff.replace("Z", "+00:00")):
+            refusals.append(f"REFUSED: {away}@{home} stamp {stamp} is not before kickoff {kickoff}")
+            continue
+        names = {}
+        for c in (away_c, home_c):
+            t = c["team"]
+            names[c["homeAway"]] = [t.get("location", ""), t.get("shortDisplayName", ""), t.get("abbreviation", "")]
+
+        def side(name):
+            for ha, toks in names.items():
+                if any(name.strip().lower() == tok.lower() for tok in toks if tok):
+                    return ha
+            raise ValueError(f"'{name}' is not a team in {away}@{home}")
+        fav_home = side(p["fav"]) == "home"
+        pick_abbr = home if side(p["pick_ats"]) == "home" else away
+        rows.append({
+            "logged_at": stamp, "season": season, "week": week, "game_id": event["id"],
+            "away_team": away, "home_team": home, "source": "model",
+            "pick_su": "", "pick_ats": pick_abbr,
+            "line_used": p["spread"] if fav_home else -p["spread"],
+            "line_source": line_source, "confidence": p.get("confidence", ""),
+            "on_card": True,
+        })
+    for r in refusals:
+        print(r)
+    existing = _load_existing_keys(season, week, "model")
+    rows = [r for r in rows if (r["game_id"], r["source"]) not in existing]
+    _append_rows(rows)
+    return {"logged": len(rows), "refused": refusals}

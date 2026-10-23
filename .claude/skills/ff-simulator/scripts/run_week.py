@@ -58,8 +58,54 @@ def market_lines(odds_path: str) -> dict:
     return out
 
 
-def injury_sets():
-    """Out / IR / Doubtful / Suspended players (dropped) and Questionable players, as gsis ids."""
+UNAVAILABLE = {"OUT", "IR", "PUP", "NFI", "RESERVE", "SUSPENDED", "HOLDOUT", "RETIRED", "CUT", "PRACTICE_SQUAD", "INACTIVE"}
+DOUBTFUL_PLAY_RATE = 0.25
+
+
+def injury_sets(season=None, week=None, verbose=True):
+    """Return (drop set, rates dict) as gsis ids.
+
+    If the file data/ff-simulator/injuries_SEASON_wkWEEK.csv exists (build_injuries.py: MFL + nflverse + ESPN +
+    transactions, latest source wins) it is used, then overrides_<season>_wk<week>.json (same folder) is applied on top.
+    Otherwise falls back to the old MFL-only logic (Week 6 behaviour unchanged).
+    rates maps gsis -> chance he plays (Questionable 0.75, Doubtful 0.25). It is a dict, so `in` checks still work.
+    """
+    f = OUT / f"injuries_{season}_wk{week}.csv" if season and week else None
+    if f is not None and f.exists():
+        d = pd.read_csv(f)
+        d = d[d.gsis_id.notna()]
+        drop, rates = set(), {}
+        for r in d.itertuples():
+            if r.category in UNAVAILABLE:
+                drop.add(r.gsis_id)
+            elif r.category == "DOUBTFUL":
+                rates[r.gsis_id] = DOUBTFUL_PLAY_RATE
+            elif r.category == "QUESTIONABLE":
+                rates[r.gsis_id] = QUESTIONABLE_PLAY_RATE
+        o = OUT / f"overrides_{season}_wk{week}.json"
+        if o.exists():
+            ov = json.load(open(o))
+            for p in ov.get("players", []):
+                m = d[(d.player.str.lower() == p["name"].lower()) & (d.team == p["team"])]
+                gid = p.get("gsis_id") or (m.gsis_id.iloc[0] if len(m) else None)
+                if not gid:
+                    print("  OVERRIDE NOT APPLIED (no gsis match):", p["name"])
+                    continue
+                prob = p.get("play_prob")
+                cat = p["category"]
+                drop.discard(gid)
+                rates.pop(gid, None)
+                if cat in UNAVAILABLE or prob == 0:
+                    drop.add(gid)
+                elif prob is not None and prob < 1:
+                    rates[gid] = prob
+                elif cat == "QUESTIONABLE":
+                    rates[gid] = QUESTIONABLE_PLAY_RATE
+                elif cat == "DOUBTFUL":
+                    rates[gid] = DOUBTFUL_PLAY_RATE
+                if verbose:
+                    print(f"  override: {p['name']} ({p['team']}) -> {cat} {prob if prob is not None else ''}")
+        return drop, rates
     sys.path.insert(0, r"D:\WKP\Fantasy-Football\dashboard")
     import mfl_client as m
     cache = json.load(open(r"D:\WKP\.claude\skills\fantasy-football-data\players-cache-details.json"))
@@ -68,7 +114,7 @@ def injury_sets():
     npl = pd.read_parquet(DATA_PLAYERS)[["gsis_id", "espn_id"]].dropna()
     npl["espn_id"] = npl.espn_id.astype(str).str.replace(r"\.0$", "", regex=True)
     e2g = dict(zip(npl.espn_id, npl.gsis_id))
-    drop, quest = set(), set()
+    drop, quest = set(), {}
     for i in m.injuries().get("injuries", {}).get("injury", []):
         e = espn.get(i["id"])
         g = e2g.get(str(e)) if e else None
@@ -78,16 +124,17 @@ def injury_sets():
         if status in ("out", "doubtful", "suspended", "holdout", "retired") or status.startswith("ir"):
             drop.add(g)
         elif "question" in status:
-            quest.add(g)
+            quest[g] = QUESTIONABLE_PLAY_RATE
     return drop, quest
 
 
 def simulate_week(season, week, lines, tg, lg, pw, defs, lg_def, sched, drops=frozenset(), quest=frozenset(),
-                  sims=4000, seed=2026, verbose=True, apply_quest_zero=True, boxes=None):
+                  sims=4000, seed=2026, verbose=True, apply_quest_zero=True, boxes=None, team_now=None, ol_missing=None):
     as_of = season * 100 + week
     rng = np.random.default_rng(seed)
     wk = sched[(sched.season == season) & (sched.week == week)]
     latest = pw.sort_values("order").groupby("player_id").team.last().to_dict()
+    latest.update(team_now or {})      # current NFL team from the injury/roster layer beats the stat-history team
     results, envs, dropped = {}, {}, []
     for _, g in wk.iterrows():
         away, home = g.away_team, g.home_team
@@ -103,7 +150,8 @@ def simulate_week(season, week, lines, tg, lg, pw, defs, lg_def, sched, drops=fr
             coach = g.away_coach if team == away else g.home_coach
             t = cm.tendencies(tg, coach, team, as_of, lg)
             tm[team] = sm.TeamModel(team, pw, tg, t, as_of, latest)
-            tm[team].avail = {i: QUESTIONABLE_PLAY_RATE for i in quest}
+            tm[team].avail = dict(quest)
+            tm[team].ol_missing = (ol_missing or {}).get(team, 0.0)
             names = {i: v["name"] for i, v in tm[team].players.items()}
             dropped += [(team, names[i]) for i in tm[team].drop(drops)]
         bx = {} if boxes is not None else None
@@ -126,7 +174,7 @@ def simulate_week(season, week, lines, tg, lg, pw, defs, lg_def, sched, drops=fr
     if apply_quest_zero:
         for n, i in enumerate(ids):
             if i in quest and results[i][2] != "QB":     # QBs handled inside the game (backup steps in)
-                M[n] *= (rng.random(M.shape[1]) < QUESTIONABLE_PLAY_RATE)
+                M[n] *= (rng.random(M.shape[1]) < quest[i])
     return ids, results, M, envs, dropped
 
 
@@ -136,6 +184,16 @@ def summarize(ids, results, M, quest=frozenset()):
         "group": [results[i][2] for i in ids], "mean": M.mean(1), "sd": M.std(1),
         "p10": np.percentile(M, 10, axis=1), "p50": np.percentile(M, 50, axis=1), "p90": np.percentile(M, 90, axis=1),
         "questionable": [i in quest for i in ids]}).sort_values("mean", ascending=False)
+
+
+def current_teams(season, week):
+    """gsis -> current NFL team from the merged injury table (nflverse weekly roster). {} if no table (Week 6 behaviour)."""
+    f = OUT / f"injuries_{season}_wk{week}.csv"
+    if not f.exists():
+        return {}
+    d = pd.read_csv(f)
+    d = d[d.gsis_id.notna() & d.roster_team.notna()]
+    return dict(zip(d.gsis_id, d.roster_team))
 
 
 def load_all(season, week):
@@ -155,15 +213,24 @@ def main():
     ap.add_argument("--sims", type=int, default=4000)
     ap.add_argument("--odds", default=r"D:\WKP\scratch\wk6_odds.json")
     ap.add_argument("--seed", type=int, default=2026)
+    ap.add_argument("--ol", default="", help="offensive-line layer: 'full', 'yds' (no sack effect) or a number; output gets an _ol suffix")
     a = ap.parse_args()
     tg, lg, pw, defs, lg_def, sched = load_all(a.season, a.week)
     lines = market_lines(a.odds)
-    drops, quest = injury_sets()
-    print(f"{len(drops)} out/doubtful/IR flagged, {len(quest)} questionable")
+    ol_miss, suffix = None, ""
+    if a.ol:
+        import ol_model
+        zero = ("sack_rate",) if a.ol == "yds" else ()
+        sm.set_ol(1.0 if a.ol in ("full", "yds") else float(a.ol), zero)
+        ol_miss = ol_model.week_miss(a.season, a.week)
+        suffix = "_ol" + a.ol
+        print("OL missing share by team:", {k: round(v, 2) for k, v in ol_miss.items() if v > 0})
+    drops, quest = injury_sets(a.season, a.week)
+    print(f"{len(drops)} unavailable flagged, {len(quest)} questionable/doubtful (rate < 1)")
     ids, results, M, envs, dropped = simulate_week(a.season, a.week, lines, tg, lg, pw, defs, lg_def, sched,
-                                                   drops, quest, a.sims, a.seed)
+                                                   drops, quest, a.sims, a.seed, team_now=current_teams(a.season, a.week), ol_missing=ol_miss)
     OUT.mkdir(parents=True, exist_ok=True)
-    base = OUT / f"sim_{a.season}_wk{a.week}"
+    base = OUT / f"sim_{a.season}_wk{a.week}{suffix}"
     np.savez_compressed(str(base) + ".npz", ids=np.array(ids), names=np.array([results[i][0] for i in ids]),
                         teams=np.array([results[i][1] for i in ids]), groups=np.array([results[i][2] for i in ids]),
                         draws=M)

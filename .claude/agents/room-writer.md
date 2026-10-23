@@ -1,4 +1,4 @@
-﻿---
+---
 name: room-writer
 description: Drafts scripts from a pitch and diagnoses structure in
   existing pages. Use when the writing room needs a brief, a beat

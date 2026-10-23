@@ -11,6 +11,8 @@ in D:\WKP\logs\.
 Format per entry:
 `YYYY-MM-DD | WEEK N | action | result/pointer`
 
+2026-10-22 | WEEK 7 | Lineup + SU picks confirmed | 14 NFL SU picks already in tracker\predictions.csv (logged 2026-10-21 pre-kickoff, matches the final SU list). Zac's lineup: Golden (GB) over Allen (IND) at WR4, Moss (Questionable) in, Baltimore DE in IDP. Zac's rule: wind, rain and snow all matter unless the game is in a dome.
+
 ---
 
 ## Week 1 (2026-09-09 kickoff — Wednesday, not the usual Thursday)
@@ -61,9 +63,20 @@ Format per entry:
 
 <!-- New entries go above this line. -->
 
+## Week 7 (2026-10-25 slate, card locks Thu 10/22)
+
+2026-10-21 | WEEK 6 | Correction (Zac): the Week 6 card went 14 of 20 right, tied for the lead, lost the tiebreaker 50 vs 48. Tracker now covers all 20 games (college backfilled and graded 2026-10-21): model 12 of 20 ATS (NFL 8/14, college 4/6), 8 of 14 SU (NFL only). Zac's own card 14 of 20 ATS: same 4/6 on college, 10/14 on NFL (he beat the model on 5 of the 8 NFL games where they split, the model won 3). The 8/14 figures elsewhere in this log are NFL-only. | Zac, in session; D:\WKP\Fantasy-Football\tracker\predictions.csv
+2026-10-21 | WEEK 7 | Card Mode (model card). Refreshed pbp/stats/schedules, Odds API pull, ran ff-simulator 10,000 sims per NFL game (sim is market-anchored; only edge is card vs market). 20 ATS picks, 14 NFL SU, no 2+ pt moves (max 1.5: LA@LV, SF@ATL, SDSU@CSU), expected ~10.4 ATS wins. MNF tiebreaker 44 (DAL@PHI, total 44.0). No EC: Zac eliminated Week 6 (Rams), recorded in FUTURES-PICKS.md. W6 model graded 8/14 ATS NFL-only (12/20 with college), 8/14 SU. 14 NFL rows plus the 6 college ATS rows logged to tracker predictions.csv (college logging added 2026-10-21). IRFL lineup not run. | D:\Documents\Pickups 2026\Week 7\Pickups 2026 - Week 7.docx
+2026-10-21 | WEEK 7 | Lineup Mode (IRFL, sim-based). Fresh MFL pull, sim re-run 10k. EXPECTED 149.6 avg (MFL proj 147.5) vs MFL-set lineup 117.1 (White on WAS bye); opp Plautianus Chiefs, win prob ~84.5% vs their set lineup. Q flags (Davis, Spears, Hockenson) and new FA adds (T. Robinson DE, Sanker S) unconfirmed by web. | D:\WKP\Fantasy-Football
+eports\Week7-Lineup-2026-10-21.md
+
 ## Week 6 (2026-10-18 slate, card locks Thu 10/15)
 
 2026-10-15 | WEEK 6 | Simulator built (Zac: "make it happen"). Logged the 14 NFL model picks to tracker predictions.csv (correcting the line below). New skill .claude\skills\ff-simulator: coach tendencies from pbp 2023-26, game sim, lineup optimizer, pick'em probabilities. Backtests: coach model +3% vs league on pass rate; full sim about 3-6% lower error than a recent average for QB/RB/WR/TE/K, tie on IDP, ranges calibrated to 80%. Sim lineup beats sheet lineup by 8.3 avg (79% of sims): RB Robinson for White, LB Gibbens for Dodson, DB Scott in. Nothing committed. | D:\WKP Reports\Fantasy Simulator Report\2026-10-15 - Fantasy Simulator Report.docx
 
 2026-10-15 | WEEK 6 | Card + Lineup. Odds pulled (Odds API 9-book, 1:45 AM ET), 20-game ATS card, 14 NFL SU picks, EC rec LA Rams, MNF tiebreaker 49, IRFL lineup (byes: DET CIN MIA MIN gutted the roster). First use of the new NFL Next Gen Stats feed (nextgen_stats release added to nfl-data). Edges: ATL +3.5, CAR +1.5, LV +6.5. Not written to tracker predictions.csv. | D:\Documents\Pickups 2026\Week 6\Pickups 2026 - Week 6.docx
 
+
+## Week 7 (2026-10-25 slate, card locks Thu 10/22)
+
+2026-10-21 | WEEK 7 | Lineup + Card rerun on new multi-source injury layer (MFL, nflverse, ESPN, transactions; build_injuries.py, overrides file for Branch/Mays/White). Lineup v2 supersedes the 3 PM one (Golden Q and T. Robinson Q found, Allen and Sanker start). No pick flips; CIN@BAL line moved 3.5 (now CIN -1.0, total 48.5), CIN +3.5 cover prob 63 pct; tiebreaker stays 44. OL layer built and backtested, context only, off | Fantasy-Football\reports\Week7-Lineup-2026-10-21.md

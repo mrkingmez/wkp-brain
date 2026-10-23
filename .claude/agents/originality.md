@@ -1,4 +1,4 @@
-﻿---
+---
 name: originality
 description: Adversarial read on whether a WKP script is derivative,
   generic, or reads as a version of something already made. Use

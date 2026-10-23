@@ -68,3 +68,12 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 **Actions taken:** Title resolved to TMDb tv/288673 (Prime Video, premiered 2026-10-07). Calendar entries added on thewinterwolfsden@gmail.com: Record Review Mon 10/12 7 to 9 PM ET (time assumed from usual pattern), all-day Review Release Thu 10/15. Pulled 33 backdrops + 19 posters, curated to 1 poster + 17 stills, resized to 1920x1080 RGBA PNG in USE (verified, transparent padding), originals deleted.
 **Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\Carrie (2026 series)\USE\1-18.png ; source list D:\WKP\scratch\carrie_urls.txt
 **Flags for Zac:** record time assumed; awaiting edited transcript for placement report.
+
+### 2026-10-21 - FrostCast EP117 show prep
+**Status:** DONE (all 9; topics 1, 5, 8 built from best-guess readings, marked READ AS)
+**Trigger:** Run wwd-show-prep on Matt's EP117 list, topics 2, 3, 4, 6, 7, 9
+**Classification:** Other (show prep, single skill)
+**Actions taken:** Read list image; 3 research desks via general-purpose agents (Doomsday/Narnia, Clayface/DC villains, anthology/Crawlers). Crawlers verified as a real 2026 film (Oct 16, Roadside/Saban). Docx built from md.
+**Deliverables:** D:\WKP Reports\FrostCast Show Prep\2026-10-21 - FrostCast EP117 Show Prep.docx and Part 2; md at D:\WKP\WWD\reports\FrostCast-EP117-Show-Prep.md and -Part-2.md
+**Flags for Zac:** Topics 1 (read as Wonder Woman/Arjona), 5 (Alcock Instagram deletions plus Gunn Threads reply; no Gunn Instagram post found), 8 (assumed Narnia) are guesses, Zac to confirm. Check Clayface critic aggregate before recording (opens Oct 23). Many trade originals paywalled, items marked via. Joker 2019 gross, Narnia and Doomsday budgets unverified. Devils-advocate review not run (time).
+**Docx note:** original EP117 docx files were open in Word (locked), so the all-9-topics versions were saved as '... v2.docx' beside them.

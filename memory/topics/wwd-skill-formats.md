@@ -149,3 +149,25 @@ Zac: the checklist should be part of the posting package for all review videos. 
 
 ## Stay on the movie in shorts and packages (LOCKED 2026-10-19)
 Zac, on the Street Fighter package: the short about animating the DCU was a tangent, swap it for something about the movie, and when we do a review keep it about the movie. Rule 14 in wwd-review-pipeline SKILL.md, plus WWD/CLAUDE.md. Replaced with Not For Me Until It Was (WWE cast worry turned respect for the games), Game Details (bonus stage car, announcer voice), kept Momoa as Blanka, Bison Raul Julia line, and Watch Again. Dropped Mortal Kombat 2 from tags, the DCU from the description and a chapter title.
+
+## Upload package hard rules (locked 2026-10-19, Zac)
+- Cards: ALL inside the first 3 minutes. Average viewers only watch that far. Outro mentions go on the end screen.
+- Hashtags: exactly 5 on YouTube, never more (YouTube penalizes channels over 5). High-volume discovery tags only (franchise, movie, MovieReview, star name). Never channel-branded tags like #FrostCast. Both were missed in the first Street Fighter package, fixed same day. Rules live in wwd-review-pipeline SKILL.md Sections 5 and 10.
+- Teasers, not verdicts (2026-10-19, Zac): FB/IG posts and the description opening never state the hosts' verdict. Hook only, so people still need to watch. Copy must go through copywriting + social-media (via marketing-director) and no-ai-slop BEFORE it goes in the report; I had been hand-writing it. Rules 15 and 16 in wwd-review-pipeline SKILL.md. Open: the description's QUICK ANSWERS block gives verdicts for GEO, conflicts with this, Zac to decide.
+- Instagram images (2026-10-19, Zac): ratio must be 4:5 to 1.91:1 and all images in a post share one ratio. He posts the thumbnail (16:9) with the Firefly picture, so Firefly prompts are 16:9 horizontal. Never vertical/square. In wwd-review-pipeline Section 9.
+
+## Mass record of two shows (2026-10-20, Zac)
+- Layout: one folder `Raw Footage\mass record <titles>\` holds the raw `Untitled recording.mp4`, the King-Z and Winter Wolf StreamYard webcam mp4s, and one subfolder per show with its transcript. Each show subfolder gets its own `USE\`. Assets built for a show go in their own folder under `P:\WWD Kit\<Show>\`, never mixed.
+- Transcripts from Premiere label hosts Speaker 1 = Winter Wolf, Speaker 2 = KingZ (confirmed by Zac). Zac cuts the big banter first, the transcript timecodes match the assembly cut, small cuts remain, so anchor every stop on search words.
+- Tone per show: Zac picks it when he hands over the folder (Crystal Lake straight-forward for the Friday the 13th franchise, Vision Quest tech-y for the AIs). Build kit pieces to match (spoiler card, boot opener, AI tags), all original looks.
+- Built with `scripts\make_wk_kit_cl_vq.py` (kit) and `D:\WKP\scratch\mass_cl_vq\rs_*.py` (run sheets, finds each stop by transcript words and checks no repeated picture, 7 s holds).
+- Host requests spoken on camera become kit pieces: Winter Wolf asked for a counter every time KingZ says a wrong name for Spader, so there are Wrong Name Counter clips 1 to 3 (Kevin, David, Dave).
+
+
+## Run sheet standing items (Zac, 2026-10-20)
+- Zac already has a Spoiler Alert clip he uses every time. Do NOT build a new one in kits. In run sheets just say where it goes. **Why:** I built new Spoiler Alerts for Crystal Lake and Vision Quest that he did not need. **How to apply:** skip it in make_wk_kit scripts, mark the stop as 'your Spoiler Alert'.
+- Zac has a Like and Subscribe video. Every run sheet must say what time or which line to drop it in. **How to apply:** add one LIKE AND SUBSCRIBE stop per run sheet, in timeline order. Do not build the clip.
+- No new documents or rework of the two current run sheets right now (Zac, 2026-10-20). Applies going forward. See [[visual-media]].
+
+## Crystal Lake opening scare (Zac, 2026-10-20)
+19.0 s opener starting at 0:01: canoe girl, show poster leaps from the lake and drags her under, she just vanishes (no blood). Homage to the canoe scare in Friday the 13th (1980), not Part 3 (that one is Pamela's body). Option 1 built in code (make_cl_opening.py, P:\WWD Kit\Crystal Lake\). Option 2: Zac generates Firefly plates, Claude composites the real poster, sound and cuts (the Adobe connector here has no Firefly generation). **Why:** AI video garbles poster text, so the poster is always composited from the real PNG. **How to apply:** for any "make a shot" ask, build the free fallback first, give Firefly prompts for the realistic version, and flag run sheet re-timing. See [[visual-media]].

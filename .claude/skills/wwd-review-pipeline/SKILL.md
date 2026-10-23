@@ -1,4 +1,4 @@
----
+﻿---
 name: wwd-review-pipeline
 description: >-
   End-to-end Winter Wolf's Den review video pipeline. Triggered when Zac/KingZ says he
@@ -143,7 +143,7 @@ Pull and hold before writing:
 ## 3. Build the Upload Package
 
 Write to the movie folder as `[Movie Title] - Upload Package.md`, plus `.docx`.
-**Also save the .docx to the one reports folder (LOCKED 2026-10-19, Zac asked why packages were not there):** D:\WKP Reports\[Movie Title] Upload Package\<YYYY-MM-DD> - [Movie Title] Upload Package.docx. The movie folder keeps its copy for the editor, the reports folder is where Zac looks. The .md source stays in the repo at WWD\reports\[Movie-Title]-Upload-Package.md. Do both every run, then say both paths in the chat summary.
+**Also save the .docx to the one reports folder (LOCKED 2026-10-19, Zac asked why packages were not there):** D:\WKP Reports\WWD Upload Packages\[Movie Title] Upload Package\<YYYY-MM-DD> - [Movie Title] Upload Package.docx. The movie folder keeps its copy for the editor, the reports folder is where Zac looks. The .md source stays in the repo at WWD\reports\[Movie-Title]-Upload-Package.md. Do both every run, then say both paths in the chat summary.
 
 **One document, locked 2026-10-18 (Zac).** The shorts captions doc is merged into this
 package. There is no separate `Shorts Captions` file anymore. Everything about one short
@@ -261,12 +261,12 @@ cut and why.
 
 ### Section 5. Hashtags
 
-Eight to ten hashtags for the description, on-video use, and socials.
-
-- 2 franchise / IP anchors
-- 2 to 3 search-intent drivers (Review, Breakdown, HonestTake, EndingExplained)
-- 2 to 3 broad community magnets (HorrorCommunity, MovieReview, IndieHorror, SciFi)
-- Year or genre tag where it fits
+**HARD RULE (Zac, 2026-10-19): exactly 5 hashtags on YouTube, never more.** YouTube
+penalizes channels that use more than five. Every one must be a high-volume tag that
+gets new viewers: franchise/IP name, the movie, MovieReview, a big star name, genre.
+**Never channel-branded tags** (#FrostCast, #WinterWolf, #WinterWolfsDen): nobody
+searches them, they earn no views. Same five in the description and the package.
+Instagram and Facebook posts keep their own counts in Sections 8 and 9.
 
 **Never use #WinterWolfsDen.** The channel is too small for a branded tag to carry any
 weight, it wastes a slot. (The Good Boy package used it. That was wrong, do not copy it
@@ -324,12 +324,22 @@ the three.
 - 4 to 6 lines max, exits quickly.
 - Primary keyword and IP name in the first sentence.
 - 5 to 8 hashtags, more than Facebook.
-- One Firefly prompt, square or vertical, bold and high contrast, negative space at the
+- **Image rules (Zac, 2026-10-19, replaces "square or vertical"):** Instagram only publishes
+  photos with an aspect ratio between 4:5 and 1.91:1, and every image in one post must
+  share the same ratio. Zac posts the video thumbnail (16:9) together with the Firefly
+  picture, so generate the picture horizontal at 16:9 to match the thumbnail. Never ask
+  for vertical or square here. State "16:9 horizontal" in the prompt.
+- One Firefly prompt, 16:9 horizontal, bold and high contrast, negative space at the
   top for a text overlay.
 
 **Never post identical copy across platforms.** Always split.
 
 ### Section 10. Cards and End Screen
+
+**HARD RULE (Zac, 2026-10-19): every card sits inside the first 3 minutes (00:00:00 to
+00:03:00).** Most viewers only watch that far, so a card later than that is wasted. Tie each
+one to something said in that window (a movie, show or topic the hosts name). Outro
+mentions of other videos go on the end screen, never cards.
 
 **Cards:** 2 to 3, placed at natural pause points, with the exact HH:MM:SS timestamp and
 a stated destination type (another review on a related film, a playlist, a FrostCast
@@ -485,6 +495,8 @@ Do not restate the package contents in chat. He reads the file.
 13. **Shorts follow `shorts-factory.md`, including its hard rules:** five clips max, all
     finished, burned-in captions, never center crop, look at the frames before shipping.
 14. **Stay on the movie (LOCKED 2026-10-19, Zac).** A review's shorts, titles, hooks, descriptions, chapter titles and tags are about the movie under review. Do not build a short, hook or chapter around a tangent the hosts drifted into (another franchise, a studio's strategy, the DCU, a different movie's rating). Pick the next movie-focused moment instead. Other titles can appear only when a host says them inside a clip about this movie, and never in a title or hook.
+15. **Tease, never give the verdict (LOCKED 2026-10-19, Zac).** Facebook posts, Instagram posts and the description opening must make people want to watch, not replace the video. Do not state the hosts' verdict, recommendation, "would watch again" answer or score in any of them. Lead with the hook: the question, the fight, the surprise, the argument between the hosts. The Street Fighter package failed this (the Facebook post handed over the verdict).
+16. **Marketing copy goes through the departments before it reaches the report (LOCKED 2026-10-19, Zac).** The description, Facebook post, Instagram post and per-short captions are drafted, then sent to `copywriting` (description) and `social-media` (FB, IG, short captions) via `marketing-director`, then run through `no-ai-slop`, THEN written into the package. Pipeline facts (chapters, tags, header, cards, timings) stay with this skill. Log which agent touched which section. If an agent is unavailable, say so in the package header instead of silently hand-writing it.
 
 ---
 

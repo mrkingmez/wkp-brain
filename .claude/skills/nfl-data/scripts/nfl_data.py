@@ -39,6 +39,8 @@ TRACKED_TAGS = [
     "players",
     "pfr_advstats",
     "nextgen_stats",
+    "pbp_participation",   # added 2026-10-22 for ff-play-sim: offense formation/personnel, defenders in box, routes, coverage
+    "ftn_charting",        # added 2026-10-22 for ff-play-sim: play action, motion, RPO, blitz, play-level charting
 ]
 
 # schedules and players ship as one rolling multi-season file, not a

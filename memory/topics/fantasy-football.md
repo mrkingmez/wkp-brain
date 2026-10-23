@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 5068502a-676d-4fde-9afd-8985d28f90f9
-  modified: 2026-10-07T20:18:22.487Z
+  modified: 2026-10-23T01:34:51.220Z
 ---
 
 ## The blank pick'em card is the trigger, not something to wait on
@@ -68,6 +68,9 @@ maximizer model (lineup decisions)."
 See [[wkp-ops]] for the general fire-and-forget/take-initiative rule
 this reinforces — don't stop and hand back a status report when the
 actual ask was a deliverable.
+
+## Weather rule (Zac, 2026-10-22)
+Wind, rain and snow all factor into a game, unless it is a dome. My weather_signal.py test only covered wind, temp, roof and surface (wind >= 15 mph took ~2 pts off the total; nothing at play level). Precipitation was not tested separately. **How to apply:** flag weather for every outdoor game in picks and lineup calls; consider testing rain/snow in ff-play-sim. See [[wkp-ops]].
 
 ## Simulation project (2026-10-15)
 Zac wants simulations with real coaching tendencies for lineups and picks, modeled on a gambler friend who

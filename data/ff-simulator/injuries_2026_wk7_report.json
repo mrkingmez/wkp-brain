@@ -1,0 +1,20 @@
+{
+ "fetched_at": "2026-10-22T17:39Z",
+ "sources": {
+  "MFL_players_refresh": "2696 players",
+  "MFL_INJ": "500 rows, response timestamp 2026-10-22T16:01Z, week 7",
+  "MFL_ROSTER": "25 fantasy-IR-slot rows (note only), pulled 2026-10-22T17:39Z",
+  "NFLV_INJ": "273 rows for week 7 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7)]), release updated 2026-10-22T12:55Z",
+  "NFLR_INJ": "273 rows for week 7 via nflreadpy",
+  "NFLV_ROST": "2275 week-7 roster rows, 2274 records, release updated 2026-10-22T12:58Z",
+  "ESPN_INJ": "800 rows, feed timestamp 2026-10-22T17:39Z",
+  "ESPN_TX": "113 team-transaction lines in last 10 days -> 268 player moves, feed timestamp 2026-10-22T17:38Z (dates are date-only, midnight ET)"
+ },
+ "merged_rows": 2479,
+ "raw_rows": 4413,
+ "unresolved_gsis": 9,
+ "newest_as_of": "2026-10-22T17:15Z",
+ "age_hours_of_newest": 0.4,
+ "stale_over_24h": false,
+ "conflicts": 36
+}

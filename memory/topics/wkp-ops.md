@@ -102,3 +102,15 @@ A Hugging Face token was pasted directly into a Claude Code prompt and is now
 recorded in that session's `.jsonl` log in plaintext. Tokens and keys go in an
 environment variable or a gitignored file, and get passed by reference. If one
 is ever pasted, say so immediately and tell Zac to rotate it.
+
+## Review gates (locked 2026-10-19, Zac, all ventures)
+Social copy goes through script-room + marketing-director (copywriting/social-media) + no-ai-slop before it ships or goes in a report. Every script gets TWO writing-room passes. Promo teases, never gives the verdict. Written in root CLAUDE.md "Review gates". Caught because I hand-wrote Street Fighter FB/IG/description inside the pipeline.
+
+## Agent wiring audit (2026-10-20, Zac asked for a deep check)
+Every venture director now has a "Writing room and marketing" section, the Agent tool, and a fallback: return NEEDS WRITING ROOM or NEEDS MARKETING and the main session (Jarvis) runs it. Tested live: script-room and wwd-director had Agent, ebay-director did not (fixed, also shattered-empire and military-scifi). **Why:** review gates (19 OCT 26) only work if directors can reach script-room and marketing-director. **How to apply:** new director = copy the section from any wired director. Subagents cannot ask Zac questions or open a browser. Open: fiction-director and shattered-empire-director overlap, Zac to pick one. See [[wwd-skill-formats]].
+
+## Book chain (Zac, 2026-10-20)
+Zac decided: fiction-director owns ALL books (not screen), builds timelines and tasks, knows writing and publishing. New fiction-researcher does the real-world lookups (e.g. a flipped heart). Chain: Zac -> Jarvis -> fiction-director -> fiction-researcher, results back up, Jarvis stays free (run in background) and tells Zac when done. Briefs land in D:\WKP\research\books\<book>\. shattered-empire-director and military-scifi-director are now canon desks under fiction-director. **Why:** Zac wants Jarvis free for him. **How to apply:** route every book question to fiction-director in the background. Resolves the overlap flagged earlier.
+
+## Direct handoffs between directors (Zac, 2026-10-20)
+Directors send tasks straight to each other (script-room, devils-advocate, marketing-director, fiction-director, any venture director) with the Agent tool. Jarvis is not the switchboard. Protocol in D:\WKP\AGENT-NETWORK.md: handoff note, two-handoff limit, no calling back a waiting desk, departments and benches stay behind their boss, decisions still go to DECISIONS.md. **Why:** Zac does not want every ask to climb up to Jarvis. **How to apply:** new director = add the Peer handoffs section. New agent files need a restart to register. See [[wkp-ops]].

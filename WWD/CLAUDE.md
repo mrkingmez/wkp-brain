@@ -21,6 +21,8 @@ Movies and shows in the nerd-verse. Tone benchmark is the Spider-Noir review: gr
 
 **Pictures are cutaways (LOCKED 2026-10-19, Zac).** WWD is not a faceless channel. No picture stays on screen longer than 7 seconds, and no picture is used twice in one video. The hosts' faces carry the show: a few solo camera cuts, only when a host makes a good point and has the floor (not every long turn). Applies to every run sheet and placement report.
 
+**Upload package hard rules (LOCKED 2026-10-19, Zac).** Every card sits in the first 3 minutes of the video. Exactly 5 YouTube hashtags, never more, all high-volume discovery tags, never channel-branded (#FrostCast gets no views). See wwd-review-pipeline Sections 5 and 10.
+
 **Stay on the movie (LOCKED 2026-10-19, Zac).** When we review a movie, the upload package, shorts, hooks, chapter titles and tags are about that movie, not tangents like the DCU or another title's rating. See wwd-review-pipeline rule 14.
 
 **No bleeping — locked 2026-09-12.** On-air profanity ships as recorded, never bleeped or cut. Applies to every WWD content line (reviews, FrostCast, Den Files, Retro Watch, shorts). Do not flag profanity as something needing a bleep in upload packages going forward.

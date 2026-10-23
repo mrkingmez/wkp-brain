@@ -14,7 +14,7 @@ summ = pd.read_csv(str(base) + "_summary.csv")
 npl = pd.read_parquet(r"D:\WKP\data\nfl\players\players.parquet")[["gsis_id", "espn_id"]].dropna()
 npl["espn_id"] = npl.espn_id.astype(str).str.replace(r"\.0$", "", regex=True)
 e2g = dict(zip(npl.espn_id, npl.gsis_id))
-rows = json.load(open(r"D:\WKP\scratch\wk6_roster.json"))   # pos,name,team,status,salary,contractYear,proj,inj,mfl,espn
+rows = json.load(open(sys.argv[sys.argv.index("--roster") + 1] if "--roster" in sys.argv else r"D:\WKP\scratch\wk6_roster.json"))   # pos,name,team,status,salary,contractYear,proj,inj,mfl,espn
 r = pd.DataFrame(rows, columns=["pos", "name", "nfl", "status", "salary", "cy", "proj", "inj", "mfl", "espn"])
 r["gsis_id"] = r.espn.astype(str).str.replace(r"\.0$", "", regex=True).map(e2g)
 m = r.merge(summ[["gsis_id", "mean", "sd", "p10", "p50", "p90", "group"]], on="gsis_id", how="left")

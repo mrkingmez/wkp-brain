@@ -1,0 +1,33 @@
+{
+ "week": 7,
+ "note": "Facts Zac gives directly. Applied AFTER injuries_2026_wk7.csv. category: ACTIVE removes the player from the drop list. play_prob optional (0-1).",
+ "players": [
+  {
+   "name": "Brian Branch",
+   "team": "DET",
+   "category": "ACTIVE",
+   "play_prob": 1.0,
+   "source": "Zac via Jarvis: team announced Wed 2026-10-21 that Branch will play",
+   "as_of": "2026-10-21T20:00Z",
+   "note": "MFL still shows IR-PUP (20:01Z) and nflverse shows RES/R04 (12:56Z), both stale vs the announcement. Web (Pride of Detroit / PFR / CBS): practice window opened this week, Campbell said he expects activation before Sunday, possible snap count. Formal activation transaction not yet in ESPN feed."
+  },
+  {
+   "name": "Rachaad White",
+   "team": "WAS",
+   "category": "IR",
+   "play_prob": 0.0,
+   "source": "Zac via Jarvis 2026-10-21 (manual)",
+   "as_of": "2026-10-21T20:00Z",
+   "note": "CONFLICT with sources: ESPN feed (10-20) has White Active and playing MNF 10-19 vs SF (7 carries, 4 rec, TD); MFL injuries export has no entry; MFL roster slot is ROSTER, not IR. WAS is on bye in Week 7 either way, so the sim effect is nil."
+  },
+  {
+   "name": "Cade Mays",
+   "team": "DET",
+   "category": "ACTIVE",
+   "play_prob": 1.0,
+   "source": "Zac via Jarvis 2026-10-21 (manual): playing",
+   "as_of": "2026-10-21T20:00Z",
+   "note": "Lions C/OL. ESPN 10-10: IR, wrist fracture. nflverse 10-21 12:56Z: RES/R48 (IR, designated to return). Web (PFR/Pride of Detroit): practice window opened Wed 10-21, 21 days to activate; formal activation not yet in the ESPN transaction feed. Offensive line is NOT modeled by the simulator, so this changes no sim number."
+  }
+ ]
+}

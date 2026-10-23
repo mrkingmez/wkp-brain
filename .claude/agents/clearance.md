@@ -1,4 +1,4 @@
-﻿---
+---
 name: clearance
 description: Copyright and fair use risk flagging on WKP scripts and
   video content. Use before anything publishes. Flags reproduced

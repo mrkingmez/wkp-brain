@@ -95,13 +95,20 @@ number.
   picks Zac never actually made, which is a worse failure than asking
   him to paste the same plain-text list twice. Revisit this once that
   decision is resolved.
-- **NCAA games aren't wired into the tracker yet.** `log_card_picks`
-  only queries the NFL scoreboard; a college team name is refused
-  loudly (not silently dropped) rather than guessed at. Section 1 asks
-  for "whatever college is in scope" — extending to the CFB scoreboard
-  (same approach as the dashboard's `team_match.match_cfb_team`) is
-  straightforward but wasn't built since Phase 1's stated goal was
-  "grade one real week correctly," which didn't require it.
+- **College (FBS) games are wired in as of 2026-10-21 (ATS only).**
+  `logger.log_cfb_model_picks(season, week, picks, logged_at=None,
+  line_source='frozen_card')` logs college model picks; `grader.py`
+  grades any row whose game_id is not on the NFL scoreboard against the
+  FBS scoreboard. College games are fetched by CALENDAR DATE across the
+  pick'em week (`espn_games.cfb_events_for_week`), never by ESPN's CFB
+  week number, which is off by one from the pick'em week (pick'em Week 6
+  college = ESPN CFB week 7). No `pick_su` for college (NFL-only rule),
+  no `closing_line` (nflverse has NFL only), summary prints ATS split by
+  NFL and College. Backfill rule: pass `logged_at` = the verifiable
+  pre-game file mtime of the pick doc and `line_source='..._backfill'`;
+  the stamp must still be before kickoff or the row is refused. The
+  Week 6 college rows are the one backfill (stamp 2026-10-15T05:49:53Z,
+  `frozen_card_backfill`).
 - **`pick_su` is left blank for card-sourced picks** unless a line is
   explicitly prefixed `SU:` in the pasted text. A plain team-name list
   from a spread pool is an ATS pick by construction; assuming it also

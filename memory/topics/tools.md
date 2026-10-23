@@ -119,3 +119,9 @@ both weekly social-image generation and the FrostCast cold open Warden character
 art. Check balance before attempting generation rather than assuming credits are
 available — Zac is doing a cost analysis before topping up, so don't spend/trigger
 a purchase without asking first.
+
+## IMDb and TMDb image pulls without the API (2026-10-20)
+- Python cannot read IMDb or TMDb pages (403 or no __NEXT_DATA__), but the media CDNs (`m.media-amazon.com/images/M/<key>._V1_.jpg`, `image.tmdb.org/t/p/original`) download fine from Python.
+- Get keys through Chrome: on an imdb.com tab, `fetch('/title/<tt>/mediaindex/?relatedNames=<nm>&contentTypes=still_frame')`, parse `__NEXT_DATA__`, keep images whose caption names the show. Per-actor pages list stills IMDb has tagged to that person. `fetch('/find/?s=tt&q=...')` gives `titleResults.results[0].listItem.primaryImage.url` for a title's poster.
+- The javascript tool truncates output near 1000 characters and blocks anything with query strings. Print in chunks of about 14 keys. A fetch to localhost from the page hangs and freezes the tab, do not do that.
+- A tab that hangs: open a new tab, close the old one.

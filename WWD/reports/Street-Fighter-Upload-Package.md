@@ -1,13 +1,14 @@
 # Street Fighter (2026) - Upload Package
 
-**Built 2026-10-19 from the two-speaker transcript.** The Premiere "final" transcript only had one speaker label and dropped most of Winter Wolf's lines, so it was used only to check timing.
+**Built 2026-10-19 from the final export.** Chapters and shorts are timed from a fresh two-speaker transcript of the finished video. Names come from the older labeled transcript. Premiere's own "final" transcript had one speaker label and dropped most of Winter Wolf's lines, so it was not used.
 
 ## Header
-- Source transcript: `Street Fighter _2026_ Review - Round 1 - FIGHT!.txt` (500 lines, labeled KingZ and Winter Wolf), runs to 20:37. Timing checked against `... FIGHT! final.txt` (268 lines, one speaker label, last line 20:34).
-- Final export: still rendering when this was written (`... ed.mp4` being written in the movie folder). Runtime will be about 20:35. ffprobe readout, audio file and shorts are filled in once the export lands.
-- Speaker audit: PASS. Two labeled speakers, Matt / Winter Wolf and Zac / KingZ, so host attribution is safe.
-- **Chapter times are DRAFT.** They come from the older transcript and the final cut runs 0 to about 5 seconds different at points. They get re-timed from a fresh two-speaker transcript of the final export (a background job is making it).
-
+- Final export: `Street Fighter _2026_ Review - Round 1 - FIGHT! ed.mp4`, 20:46.4 (1246.37 s), 1920x1080, 30 fps, h264 video, AAC 48 kHz audio.
+- Audio-only file: `AUDIO\Street Fighter (2026).mp3`, 192 kbps, 1246.37 s (matches the video to the frame).
+- Transcript used for timing and chapters: `Street Fighter 2026 - final cut transcript (2 speakers).txt` (made from the final export, 251 lines). Names and attribution come from the older labeled transcript (`Street Fighter _2026_ Review - Round 1 - FIGHT!.txt`, Matt / Winter Wolf and Zac / KingZ), because the new one labels the voices Guest/Unknown [1] and [2] (no voiceprints enrolled). [1] is Winter Wolf, [2] is KingZ.
+- Speaker audit: PASS. Attribution is safe where the two transcripts agree, and every quote below was checked against the labeled one.
+- Chapter times are from the final export's own transcript, so they match the video to about a second.
+- Shorts: 5 finished clips in `shorts\` (see Section 7).
 ```
 Voices in all copy: Winter Wolf (sharp, verdict-first) and KingZ (warm, connective).
 Handles only. No review score stated. No em dashes.
@@ -23,7 +24,7 @@ Why the primary won: the keyword leads in the first five words, and it answers t
 
 Street Fighter (2026) review: Winter Wolf and KingZ say the movie respects the games, from the fireballs and dragon punches to fights lifted straight from the arcade. Winter Wolf gives it a solid recommendation for streaming, and KingZ says he will watch it again when it gets there.
 
-Spoiler note: light spoilers after the alert at 02:18. They mention a mid-credits scene (03:04), Dan's big moment in the last act (09:14) and Bison's setup for a sequel (11:10). To skip spoilers, watch up to 02:18, then jump to the verdict at 19:31.
+Spoiler note: light spoilers after the alert at 02:18. They mention a mid-credits scene (03:04), Dan's big moment in the last act (09:14) and Bison's setup for a sequel (11:09). To skip spoilers, watch up to 02:18, then jump to the verdict at 19:22.
 
 QUICK ANSWERS
 Is Street Fighter (2026) good? Both hosts had fun. Winter Wolf says he laughed about every other minute and gives it a solid recommendation for streaming. KingZ says he will skip a second theater trip and watch it when it hits streaming.
@@ -45,21 +46,21 @@ Which Street Fighter character did you play the most, and did the movie do them 
 
 CHAPTERS
 00:00:00 - Start
-00:00:12 - Hollywood Nostalgia Done Right
-00:00:40 - Street Fighter II Memories and the WWE Casting Doubts
+00:00:11 - Hollywood Nostalgia Done Right
+00:00:39 - Street Fighter II Memories and the WWE Casting Doubts
 00:02:18 - Spoiler Alert: How the Movie Respects the Games
 00:03:04 - Costumes, Characters and the Mid-Credits Scene
 00:05:09 - The Anime-Style Flashbacks
-00:06:02 - Animation vs Live Action: How the Movie Pulls It Off
-00:07:24 - Game Details: Bonus Stage Car, Game Music and Dan
-00:09:14 - Dan's Big Moment and the Best Scene in the Movie
-00:10:02 - Jason Momoa as Blanka: Over the Top or Perfect?
-00:11:10 - Bison: The Weakest Character in Street Fighter (2026)?
-00:14:09 - Chun-Li, the Fireplace and the Moves They Skipped
-00:15:43 - Roman Reigns as Akuma and the Theater Crowd
-00:19:31 - Would We Watch It Again? The Verdict
+00:05:50 - Animation vs Live Action: How the Movie Pulls It Off
+00:07:31 - Game Details: Bonus Stage Car, Game Music and Dan
+00:08:56 - Dan's Big Moment and the Best Scene in the Movie
+00:10:04 - Jason Momoa as Blanka: Over the Top or Perfect?
+00:11:09 - Bison: The Weakest Character in Street Fighter (2026)?
+00:14:05 - The Snail, the Fireplace and the Moves They Skipped
+00:15:42 - Theater Crowd, Roman Reigns as Akuma and E. Honda
+00:19:22 - Would We Watch It Again? The Verdict
 
-#StreetFighter #StreetFighterMovie #StreetFighter2026 #MovieReview #HonestTake #Capcom #VideoGameMovie #JasonMomoa #RomanReigns #GamerNostalgia
+#StreetFighter #StreetFighterMovie #MovieReview #JasonMomoa #VideoGameMovie
 
 FAIR USE DISCLAIMER
 
@@ -86,7 +87,9 @@ Street Fighter 2026, Street Fighter movie, Street Fighter 2026 review, Street Fi
 (Verified: 468 characters.) Cut "worth watching" and "Mortal Kombat 2" to keep the tags about this movie and under the 500 cap. Character names Dan Hibiki and E Honda come from the cast pulls for the pictures, not from anything said on air.
 
 ## 5. Hashtags
-#StreetFighter #StreetFighterMovie #StreetFighter2026 #MovieReview #HonestTake #Capcom #VideoGameMovie #JasonMomoa #RomanReigns #GamerNostalgia
+#StreetFighter #StreetFighterMovie #MovieReview #JasonMomoa #VideoGameMovie
+
+Hard cap of 5 (YouTube penalizes channels that use more). All five are franchise, movie-intent or star-name tags people actually browse. No channel-branded tags (#FrostCast, #WinterWolf) because nobody searches them. Volume is judged from how broadly each tag is used, not a pulled number, so check them in YouTube's own hashtag page before upload if you want to swap one. The same five go in the description (the first three show above the title).
 
 ## 6. Thumbnail
 Your `thumbnail.jpg` is already in the folder: Ryu on the left, Bison in the center over the Street Fighter logo, Ken on the right, "REVIEW" in the top left. It is a strong, clean read. Keep it. If you want a second version to test:
@@ -97,13 +100,13 @@ Your `thumbnail.jpg` is already in the folder: Ryu on the left, Bison in the cen
 No score on the thumbnail.
 
 ## 7. Shorts
-**Clips are not cut yet.** The pipeline cuts shorts from the finished export, and it was still rendering when this was written. The five picks, copy and checks are ready below. All five stay about the movie (Zac, 2026-10-19). When the export lands, the clips are built and the "File" lines and cut times are filled in (times below are from the older transcript, so they get snapped to the final cut). Scores are provisional, they get confirmed on the real clip.
+**All five clips are built and checked.** Each file in `shorts\` has a matching `_cover.png`. They are 1080x1920 with burned-in captions, hook text, a cover frame, and the first and last spoken words verified. I also looked at frames from each. All five stay about the movie.
 
 ### Short 1: Jason Momoa as Blanka (post 1st, window: Short 1 in Section 11)
-File: shorts\clip1_momoa_blanka.mp4 (to be cut)   Cover: shorts\clip1_momoa_blanka_cover.png
-Length / source: about 68s, about 10:02 to 11:10 of the full video
+File: shorts\clip1_momoa_blanka.mp4   Cover: shorts\clip1_momoa_blanka_cover.png
+Length / source: 63.9s, 10:04 to 11:08 of the full video
 On-screen hook: "MOMOA AS BLANKA, TOO MUCH?"
-Opens on: "I want to put up two other performances"   Ends on: "Jimmy. Yeah. That's right."
+Opens on: "I want to put up two other performances"   Ends on: "Jimmy, I'm Jimmy."
 Checks: light spoiler (the Amazon backstory is game lore), no heavy swearing.
 
 YouTube title: Street Fighter (2026): Jason Momoa as Blanka, Over the Top?
@@ -115,14 +118,14 @@ Instagram caption: Jason Momoa is Blanka. Too much, or just right? KingZ goes ov
 
 Facebook caption: Jason Momoa plays Blanka in Street Fighter (2026), and KingZ and Winter Wolf do not fully agree on how far he took it. KingZ liked the fight scene and the serious story, but says he does what he does in comedies and takes it to the 11th level. Do you want that version of Blanka? Full review is on the channel.
 
-Why it ships: 8 provisional. Hook is a direct question, the debate gives it a mid-clip turn (comic vs serious), ends on a clean laugh.
+Why it ships: 8. Hook is a direct question, the debate gives it a mid-clip turn (comic vs serious), ends on a clean laugh.
 Tick: [ ] YT  [ ] IG  [ ] FB
 
 ### Short 2: Not for Me, Until It Was (post 2nd)
-File: shorts\clip2_not_for_me.mp4 (to be cut)   Cover: shorts\clip2_not_for_me_cover.png
-Length / source: about 57s, about 01:21 to 02:18 of the full video
+File: shorts\clip2_not_for_me.mp4   Cover: shorts\clip2_not_for_me_cover.png
+Length / source: 40.9s, 01:38 to 02:18 of the full video
 On-screen hook: "NOT FOR ME, UNTIL IT WAS"
-Opens on: "Dude, I would pay that"   Ends on: "I love watching that."
+Opens on: "I'll admit, I kind of groaned"   Ends on: "I loved watching that."
 Checks: no spoilers (ends before the spoiler alert), mild language.
 
 YouTube title: Street Fighter (2026): Winter Wolf Did Not Expect to Like It
@@ -134,14 +137,14 @@ Instagram caption: Winter Wolf groaned at the Street Fighter (2026) casting. The
 
 Facebook caption: When Street Fighter (2026) was announced, Winter Wolf admits he groaned at the casting and figured it was for wrestling fans. Then he saw it. He says the movie gave the games a lot of respect, from the fireballs and dragon punches to fights lifted straight from the arcade. Did the casting worry you too? Full review on the channel.
 
-Why it ships: 8 provisional. Clear before-and-after turn, a quotable line, spoiler free.
+Why it ships: 8. Clear before-and-after turn, a quotable line, spoiler free.
 Tick: [ ] YT  [ ] IG  [ ] FB
 
 ### Short 3: Bison, Raul Julia and "Don't Say It" (post 3rd)
-File: shorts\clip3_bison_dont_say_it.mp4 (to be cut)   Cover: shorts\clip3_bison_dont_say_it_cover.png
-Length / source: about 54s, about 12:27 to 13:21
+File: shorts\clip3_bison_dont_say_it.mp4   Cover: shorts\clip3_bison_dont_say_it_cover.png
+Length / source: 48.2s, 12:32 to 13:20
 On-screen hook: "DON'T SAY IT. HE SAID IT."
-Opens on: "He's just not Raul Julia"   Ends on: "He said it. And I was like, oh."
+Opens on: "The bigger problem here is he's just not Raul Julia"   Ends on: "He said it. And I was like, oh."
 Checks: the famous line is spoken on air, no plot spoilers.
 
 YouTube title: Street Fighter (2026): Bison Is Not Raul Julia
@@ -153,12 +156,12 @@ Instagram caption: Don't say it. Don't say it. He said it. Winter Wolf on the Bi
 
 Facebook caption: Winter Wolf says the new Bison is just not Raul Julia, and when the movie sets up the famous line he was begging it not to. KingZ liked that they kept it in as an homage. Which Bison was better? Full review on the channel.
 
-Why it ships: 7.5 provisional. Strong ending beat, shorter than the others, depends on the audience knowing the line.
+Why it ships: 7.5. Strong ending beat, shorter than the others, depends on the audience knowing the line.
 Tick: [ ] YT  [ ] IG  [ ] FB
 
 ### Short 4: The Game Details They Put in the Movie (post 4th)
-File: shorts\clip4_game_details.mp4 (to be cut)   Cover: shorts\clip4_game_details_cover.png
-Length / source: about 38s, about 07:24 to 08:02
+File: shorts\clip4_game_details.mp4   Cover: shorts\clip4_game_details_cover.png
+Length / source: 30.6s, 07:31 to 08:02
 On-screen hook: "THE BONUS STAGE IS IN THE MOVIE"
 Opens on: "Some of my favorite beats from the movie"   Ends on: "the announcer voice at the beginning of the movie"
 Checks: no spoilers, the game details are named on air.
@@ -172,14 +175,14 @@ Instagram caption: Ken beating up the car. Walls that break. The announcer voice
 
 Facebook caption: Winter Wolf loved how many game details they pulled into Street Fighter (2026): Ken beating up the car like the bonus stage, walls that break like the later games, real game music and the announcer voice at the start. Which one did you catch? Full review on the channel.
 
-Why it ships: 7 provisional. Pure fan service, easy to share, no spoilers, a little list-like.
+Why it ships: 7. Pure fan service, easy to share, no spoilers, a little list-like.
 Tick: [ ] YT  [ ] IG  [ ] FB
 
 ### Short 5: Would We Watch It Again? (post 5th)
-File: shorts\clip5_watch_again.mp4 (to be cut)   Cover: shorts\clip5_watch_again_cover.png
-Length / source: about 30s, about 19:31 to 20:00
+File: shorts\clip5_watch_again.mp4   Cover: shorts\clip5_watch_again_cover.png
+Length / source: 25.8s, 19:32 to 19:57
 On-screen hook: "A NEW RATING SYSTEM"
-Opens on: "There's a lot of good stuff"   Ends on: "This is a watch again for me."
+Opens on: "I give this a solid recommendation"   Ends on: "This is a watch again for me."
 Checks: no number rating stated. Cut the clip before the next sentence, which brings up another movie.
 
 YouTube title: Street Fighter (2026): Would We Watch It Again?
@@ -191,10 +194,10 @@ Instagram caption: Our new rating system: how likely are we to watch it again? W
 
 Facebook caption: Winter Wolf has an idea for a new rating system: not a number, just how likely we are to watch it again. For Street Fighter (2026), it is a yes for both of us, just not at the theater. Would you rewatch it? Full review on the channel.
 
-Why it ships: 7 provisional. Clean verdict clip, no spoilers, closes the run.
+Why it ships: 7. Clean verdict clip, no spoilers, closes the run.
 Tick: [ ] YT  [ ] IG  [ ] FB
 
-Spare if one fails the check: "The Only Move They Skipped" (about 14:26 to 14:57). Winter Wolf goes down the roster of moves and says the only thing they did not do was Guile's sonic boom. Hook: "THE ONE MOVE THEY SKIPPED."
+Spare (not built): "The Only Move They Skipped" (about 14:26 to 14:57). Winter Wolf goes down the roster of moves and says the only thing they did not do was Guile's sonic boom. Hook: "THE ONE MOVE THEY SKIPPED."
 ## 8. Facebook Post
 Winter Wolf and KingZ watched Street Fighter (2026), and the verdict is in: it respects the games. The fireballs, the dragon punches, even fights lifted straight from the arcade. Winter Wolf gives it a solid recommendation for streaming. KingZ is waiting for streaming too, and both say they will watch it again. We also argue about Jason Momoa's Blanka and Bison's big boots to fill after Raul Julia. Which Street Fighter did you play the most? Full review: [VIDEO LINK]
 #StreetFighter #StreetFighterMovie #MovieReview
@@ -203,17 +206,19 @@ Firefly prompt: [Glowing retro arcade cabinet in a dark room, fireball of red an
 
 ## 9. Instagram Post
 Street Fighter (2026) review is up. Winter Wolf says it respects the games, and he would watch it again. KingZ is waiting for streaming. Plus the Momoa Blanka debate. Link in bio.
-#StreetFighter #StreetFighterMovie #StreetFighter2026 #MovieReview #HonestTake #Capcom #VideoGameMovie #GamerNostalgia
+#StreetFighter #StreetFighterMovie #MovieReview #Capcom #VideoGameMovie
 
-Firefly prompt: [Vertical poster, a clenched glowing fist at the bottom, red and yellow energy burst behind it, pixel confetti, large empty dark space at the top for a text overlay, bold high contrast arcade style]
+Firefly prompt: [16:9 horizontal poster, a clenched glowing fist at the bottom, red and yellow energy burst behind it, pixel confetti, large empty dark space on one side for a text overlay, bold high contrast arcade style]
 
 ## 10. Cards and End Screen
-**Cards (destinations unverified, fill in links):**
-1. About 00:20:14, the outro mentions the Other Mommy review: link the Other Mommy (2026) review.
-2. About 00:20:19, the outro mentions the Carrie review: link the Carrie (2026) review.
-3. Optional: a third card is not needed. Keep the cards to the two reviews named on air.
+**Cards: all inside the first 3 minutes (LOCKED), because that is where most viewers are still watching. Destinations unverified, fill in links:**
+1. 00:00:29, the line "He-Man, Mortal Kombat 2, and now Street Fighter": link the He-Man or Mortal Kombat 2 video if the channel has one.
+2. 00:00:50, "Street Fighter 2 came out before Mortal Kombat": link the Mortal Kombat 2 video, or a video game movie playlist if there is no MK2 video.
+3. 00:01:25, "ingrained in our 90s kid DNA": link the Retro Watch playlist.
 
-**End screen (last 15 to 20 seconds, from about 00:20:15):** Subscribe element, a Watch Next tile (the Carrie review, the newest), and a second tile for the reviews playlist if one exists. Channel analytics and playlist structure are not visible from here, so these are structural recommendations, not verified links.
+If the channel has none of those, drop the cards rather than force a bad link. The Other Mommy and Carrie mentions at the outro (about 00:20:14) are now handled by the end screen only, not cards.
+
+**End screen (last 15 to 20 seconds, from about 00:20:28 of the 20:46 video):** Subscribe element, a Watch Next tile (the Carrie review, the newest), and a second tile for the reviews playlist if one exists. Channel analytics and playlist structure are not visible from here, so these are structural recommendations, not verified links.
 
 ## 11. Posting Windows
 Hour 0 is when the full review goes live. No fixed dates, release date is not set yet.
@@ -242,8 +247,8 @@ Hour 0 is when the full review goes live. No fixed dates, release date is not se
 Do not post any short before the full review is live.
 
 ## 12. Flags and Production Notes
-1. **Export not finished.** Runtime, ffprobe readout, audio file and shorts wait on it. Chapter times will be re-timed from the final export's own transcript.
-2. **Timing drift:** chapters were built from the older transcript. The final cut runs 0 to about 5 seconds different in places (the Roman Reigns stretch is the biggest gap I found). Do not post these chapter times before the re-time.
+1. **Timing is checked.** Chapters and shorts come from the final export's own transcript. The diarization labels in the new transcript are Guest/Unknown, so attribution was checked against the older labeled transcript.
+2. **Premiere's final.txt is not a good source.** It has one speaker label and drops most of Winter Wolf's lines. It was only used to compare timing.
 3. **Next-up mismatch:** on air, KingZ says "next week we'll be doing Clayface" and "a little bonus one on Monday." Your Next Up card says Crystal Lake. Pick one for the end card.
 4. **Garbles held out of the copy:** "Guile of Vader" (Guile), "50s Vega" (Vega), "Kingussie in the B seat" (greeting line), "Joe Indian" and "Kenzie" (Dan section), "Ullevaal" and "hula follow" (Roman Reigns necklace), "non blonds" (the karaoke song title), "Monet" (Monday), "Johnny / Jimmy" (Blanka), "Shirley Temple" (garbled Dan line).
 5. **Fact check on air:** KingZ says the karaoke song "didn't come out till 94." That is not repeated anywhere in the copy, and the date should be checked before it is mentioned publicly.
@@ -251,6 +256,8 @@ Do not post any short before the full review is live.
 7. **Language:** the recording has explicit language, it ships as recorded (no bleeping). Check YouTube's age setting if you want, but nothing here needs a bleep.
 8. **Adult jokes:** the Chun-Li steam house joke (18:20) and a couple of crude jokes. The description leaves them out.
 9. **Release date:** not set. Check the calendar.
+10. **Short covers checked by eye:** clip 1 uses a Blanka still, clip 2 the Akuma poster, clips 3 and 4 the two-host frame, clip 5 your Watch Again card. Clip 1 has the shortest head silence (0.05 s). Its first word "I" was confirmed on playback.
+11. **Clip 2 start moved:** it opens on "I'll admit, I kind of groaned" because the earlier lines are a Capcom versus John Wick joke, which is off topic and opens on "So".
 
 ## 13. Fair Use Disclaimer
 Same block as at the end of the description. Never reword per upload.

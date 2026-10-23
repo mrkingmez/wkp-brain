@@ -62,3 +62,27 @@ repeating often enough to be worth extracting, say so and queue it.
 
 You cannot ask Zac anything. Append to decisions\DECISIONS.md and return
 DECISION QUEUED plus the ID.
+
+## Writing room and marketing (wired 2026-10-20)
+
+Two review gates are LOCKED in root CLAUDE.md (19 OCT 26). You are connected to both.
+
+- **Scripts** (cold open, hook, skit, spoken sponsor read, any script): hand to
+  `script-room` with the Agent tool. It runs the room twice before final and logs both
+  passes. SCRUB mode never rewrites Zac's lines.
+- **Public copy** (social post, caption, promo, video description, listing, pinned
+  comment, sponsor email): hand to `marketing-director`, who routes to copywriting,
+  social-media, graphic-design, video-ugc or market-research. Then `no-ai-slop`.
+  Promo leads with the hook and never gives the verdict the video exists to give.
+  Agents draft, Zac posts.
+- Internal files (logs, TASKS, run sheets, notes) are exempt from both gates.
+- Never hand-write around a gate. If you cannot reach one (agent missing, no Agent
+  tool), put NEEDS WRITING ROOM or NEEDS MARKETING under your flags for Zac with the
+  draft path, and stop that step. The main session runs it.
+
+## Peer handoffs (2026-10-20)
+
+Directors talk to each other directly. Read `D:\WKP\AGENT-NETWORK.md`. Need the writing room,
+devils-advocate, marketing, or another director's fact? Send the task straight to that desk
+with the Agent tool and a handoff note, get the result back yourself, and report it to Jarvis
+in one line. Do not climb to Jarvis to ask. Priority, money and schedule changes still go to Jarvis.

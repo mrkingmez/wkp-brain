@@ -193,3 +193,7 @@ Zac, mid-edit: the run sheet had no solo shots of either host when one goes on a
 
 ## Solo cams: only a few (correction 2026-10-19)
 Zac: 26 solo cams was too many. Only a few, when a host is making a good point and has the floor. The 14-second automatic rule is retired. Also: he is nearly done with Street Fighter and is not going back, so the Street Fighter run sheet stays as delivered (26 CAM stops, 7-second caps, v2.2) and these are notes for future videos. His words: it is a work in progress, Rome was not built in a day. Do not re-edit finished sheets after he calls it done.
+
+
+## Extras are fine, never force a picture (Zac, 2026-10-20)
+Zac: OK to grab more pictures than needed, and no need to use them all. If a picture does not fit a beat, leave it out. **Why:** forcing a weak picture onto a line hurts the edit more than a spare in USE. **How to apply:** over-pull in the photo pass, place only what fits, list the rest as spares in the run sheet. Still: no picture twice, 7 s max hold. See [[wwd-skill-formats]].
