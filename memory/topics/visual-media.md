@@ -197,3 +197,6 @@ Zac: 26 solo cams was too many. Only a few, when a host is making a good point a
 
 ## Extras are fine, never force a picture (Zac, 2026-10-20)
 Zac: OK to grab more pictures than needed, and no need to use them all. If a picture does not fit a beat, leave it out. **Why:** forcing a weak picture onto a line hurts the edit more than a spare in USE. **How to apply:** over-pull in the photo pass, place only what fits, list the rest as spares in the run sheet. Still: no picture twice, 7 s max hold. See [[wwd-skill-formats]].
+
+## ProRes .mov freezes on Zac's machine, deliver MP4 (2026-10-23)
+Zac: a ProRes .mov made by ffmpeg (prores_ks) played about two frames then froze, twice (last time too); once re-encoded to H.264 MP4 it worked. The files are valid (all frames decode in ffmpeg), so it is a player/editor decode problem on his side. **How to apply:** for any opaque clip made for Zac (openers, full-screen cards), also write an H.264 MP4 (yuv420p, crf 14, -g 15, -bf 0, aac 256k, +faststart) and tell him to use that one. Clips that need transparency (stickers, tags, counters) cannot be MP4; if one of those freezes, ask him and test an alternative (PNG sequence or WebM alpha). See [[wkp-ops]].
