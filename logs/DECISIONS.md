@@ -1269,3 +1269,69 @@ nothing here indicates urgency beyond "verify it's still wired up."
 **Status:** OPEN
 
 ---
+
+## [EBAY-2026-10-23-01] 2026-10-23 | eBay Dropship | Refresh-token swap deadline (6:30 PM 10/19 ET) passed 4 days ago, OAuth step still Not Started, blocking Phase 0 kickoff
+
+**Blocked:** TASKS.md's "eBay refresh token + live check (home desktop)"
+row set a hard deadline of "Tonight 2026-10-19 6:30 PM ET" for Zac to
+finish the OAuth sign-in/swap on his home desktop and run
+`ebay-dropship\tools\get_refresh_token.py`, with an explicit instruction
+in the row itself telling Claude to check in with him at that time. That
+deadline is now 4 days past (tonight is 2026-10-23) and the row is still
+Not Started, with nothing in the repo recording whether the swap
+happened, failed, or was never attempted. This gates confirming
+`EBAY_REFRESH_TOKEN` is set, the live seller-account test, and by
+extension "Run ebay-director Phase 0 kickoff, then answer Where do we
+go? (EBAY-001)" plus the researcher scheduled task that only gets
+created after that category pick - the whole venture's next phase is
+sitting behind this one manual step. Also still open from the same row:
+the Doba trial spend decision, Terapeak/sold data, and confirming which
+API scopes were actually ticked on the RuName form.
+
+**Options:**
+A. Treat as a normal pending-Zac-action item, no escalation - this is a
+   manual step on his own home desktop on his own schedule, and a missed
+   self-set deadline for it isn't inherently urgent.
+B. Flag it because it is now the single gating item for the entire eBay
+   Phase 0 kickoff chain (EBAY-001, the researcher scheduled task, the
+   Doba trial decision) and has gone 4 days with zero record of outcome.
+
+**Recommendation:** B - nothing about completing this step is something
+an agent can do for Zac (it needs his own logged-in browser session on
+his own home desktop), but per the Honesty rule this rollup cannot assume
+it quietly succeeded just because no failure is logged either - worth him
+confirming one way or the other so EBAY-001 and the researcher task can
+actually start.
+
+**Status:** OPEN
+
+---
+
+## [FF-2026-10-23-01] 2026-10-23 | Fantasy Football (personal) | Gambler friend's FanDuel lineup method never confirmed delivered - deadline passed a week ago, Blocked row untouched since creation
+
+**Blocked:** TASKS.md's Fantasy Football table has "Gambler friend's
+FanDuel lineup method" marked Blocked with deadline 2026-10-16, note
+reading "Zac gives the source tomorrow; add as extra features to
+ff-simulator." That deadline is now a week past and the row has not been
+touched since it was created 2026-10-15 - no record anywhere of the
+source arriving, being incorporated, or being dropped. Meanwhile
+ff-simulator and the new ff-play-sim skill both got substantial real
+build work in last night's commit (520f287, 2026-10-22: coach/defense
+layers, player layer, injury model, backtests), so the surrounding work
+has clearly kept moving without this input.
+
+**Options:**
+A. Leave it - this is explicitly "off the venture board" and personal,
+   and the simulator work has continued productively without the
+   gambler's method, so nothing load-bearing is actually stuck.
+B. Confirm with Zac whether the source ever came through; if not, either
+   chase it again or drop the row rather than let it sit stale.
+
+**Recommendation:** A for urgency - nothing else is waiting on this - but
+worth one line at the next real check-in, since a week-old "tomorrow"
+promise with zero follow-up is exactly the kind of row that quietly rots
+in TASKS.md if nobody closes the loop.
+
+**Status:** OPEN
+
+---
