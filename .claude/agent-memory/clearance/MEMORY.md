@@ -1,0 +1,1 @@
+- [Ian Griffin trailer client](project_ian_griffin_trailer.md) — retired CSM author; crest/chevrons, cover AI/license, Ford marks open since 2026-10-23

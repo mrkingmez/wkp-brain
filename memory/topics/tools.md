@@ -125,3 +125,7 @@ a purchase without asking first.
 - Get keys through Chrome: on an imdb.com tab, `fetch('/title/<tt>/mediaindex/?relatedNames=<nm>&contentTypes=still_frame')`, parse `__NEXT_DATA__`, keep images whose caption names the show. Per-actor pages list stills IMDb has tagged to that person. `fetch('/find/?s=tt&q=...')` gives `titleResults.results[0].listItem.primaryImage.url` for a title's poster.
 - The javascript tool truncates output near 1000 characters and blocks anything with query strings. Print in chunks of about 14 keys. A fetch to localhost from the page hangs and freezes the tab, do not do that.
 - A tab that hangs: open a new tab, close the old one.
+
+## AI image/video tools until Nov 20 2026 (Zac, 2026-10-24)
+Adobe Firefly credits are out until November. Higgsfield and paid tools are unaffordable, ElevenLabs is free tier, Claude is the only paid subscription. Until Nov 20 use free tools: Gemini (stills, first choice), Leonardo.ai (backup), Ideogram (text in images), Hailuo free account for short clips if its free tier checks out (credits, watermark, commercial terms not yet confirmed, Zac creates the account). Fallback for clips: animate stills with scripts and P: drive assets. Do not spend ElevenLabs credits. AI-footage disclosure at YouTube upload still applies.
+

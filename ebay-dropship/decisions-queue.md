@@ -6,6 +6,7 @@ Types: CATEGORY, LIST, BUY, REFUND, PRICE, SPEND, SUPPLIER.
 ## Open
 
 ### EBAY-001 | CATEGORY | Where do we go?
+**APPROVED 2026-10-24 by Zac: Home & Garden small household/organization, and Auto accessories (universal, no fitment). Next: item-level research, then supplier vetting on Doba (Zac signed up for the paid trial 2026-10-24). No listings until Zac approves each one.**
 Where do we go? Phase 0 scan done 2026-10-10: reports/category-scan.md. No scouting, vetting, or listing until Zac answers.
 
 Numbers: eBay fee 13.6 percent plus 0.40 per order (verified 2026-10-10). At the 20 percent floor with the 10 percent tax buffer, net is about 5 to 13 dollars per sale on items priced 22 to 64 dollars (supplier costs assumed, not quoted). Under about 20 dollars sold price cannot clear the 5 dollar floor.
