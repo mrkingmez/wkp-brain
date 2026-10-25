@@ -1335,3 +1335,42 @@ in TASKS.md if nobody closes the loop.
 **Status:** OPEN
 
 ---
+
+## [EBAY-2026-10-25-01] 2026-10-25 | eBay Dropship | EBAY-001 was approved by Zac 2026-10-24, but TASKS.md's gating row still reads "Not Started" and doesn't reflect it
+
+**Blocked:** `ebay-dropship/decisions-queue.md` shows EBAY-001 (CATEGORY -
+"Where do we go?") marked **APPROVED 2026-10-24 by Zac**: Home & Garden
+small household/organization, and Auto accessories (universal, no
+fitment), with Doba paid-trial signup already done the same day and
+next step named as item-level research plus supplier vetting. This
+landed in last night's commit (c1745da, 2026-10-24). TASKS.md's eBay
+Dropship table still carries "Run ebay-director Phase 0 kickoff, then
+answer 'Where do we go?' (EBAY-001) | — | Not Started" with no note of
+the approval, and "Zac setup checklist" / the researcher-scheduled-task
+row are also unchanged. Nothing is actually blocked here - Zac already
+decided - but this read-only rollup cannot edit TASKS.md itself (logs
+only), so the drift sits unrecorded anywhere Zac would see it at a
+glance. Related open rows from the same day's commit (eBay parts
+sourcing, eBay salvage track, both now "In Progress" with real supplier
+outreach sent) are already reflected correctly in TASKS.md and need no
+flag.
+
+**Options:**
+A. Leave it - this is pure bookkeeping lag, one commit old, and the real
+   substance (the approval, the Doba signup, the next step) is already
+   correctly recorded in ebay-dropship/decisions-queue.md, so nothing is
+   actually lost or acted on wrongly.
+B. Flag it so the next working session (not this read-only rollup)
+   updates the TASKS.md row to "In Progress" / notes the 2026-10-24
+   approval and moves on to the item-level research step EBAY-001's own
+   approval note calls for - otherwise the kickoff row can sit stale
+   indefinitely since nothing is currently watching it.
+
+**Recommendation:** B - cheap fix for whichever session picks up eBay
+next, and the researcher-scheduled-task TASKS.md references ("created
+only after the category pick") is now unblocked and worth actually
+spinning up rather than leaving dormant behind a stale "Not Started."
+
+**Status:** OPEN
+
+---
