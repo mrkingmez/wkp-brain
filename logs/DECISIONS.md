@@ -1374,3 +1374,66 @@ spinning up rather than leaving dormant behind a stale "Not Started."
 **Status:** OPEN
 
 ---
+
+## [KP-2026-10-26-01] 2026-10-26 | Kingdom Planners | MAIN EFFORT Etsy shop launch now 48 days blocked on the same $29 fee, unchanged since KP-2026-10-07-01
+
+**Blocked:** Kingdom Planners (MAIN EFFORT, six of seven products fully
+prepped with titles/tags/descriptions/pricing/AI-disclosure, zero live
+listings) remains Blocked on Etsy's one-time $29 shop-setup fee, open
+since 2026-09-07. Last night's commit (5a830f6, "Add Etsy weekly prep
+plan for week of 10/26") computed this at 48 days blocked - up from the
+30-day mark flagged in KP-2026-10-07-01 - with no change recorded to
+either the money gate or the free prep work in between. KP drew 0 of the
+shared Etsy cap again this week, the eighth straight cycle it has done so
+per that same commit.
+
+**Options:**
+A. Leave it - already queued twice (KP-2026-09-17-01, DECIDED: wait for
+   funds; KP-2026-10-07-01, still OPEN), nothing new has happened to
+   change the calculus, and money decisions are Zac's call per the
+   Escalation rule, not something elapsed time alone resolves.
+B. Re-surface explicitly given this is now the single longest-standing
+   blocker on the entire venture board for the one venture marked MAIN
+   EFFORT, with a fully finished, researched product line sitting on
+   zero revenue the whole time.
+
+**Recommendation:** B - not to second-guess Zac's original "wait for
+funds" call, but 48 days (and counting, still no Friday Etsy data pull to
+even measure what waiting is costing) is worth one more clear flag so the
+original decision gets either reconfirmed or revisited, rather than
+drifting past 60 and 90 days on the same unexamined assumption.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-26-01] 2026-10-26 | WWD | Clayface + Vision Quest 3&4 mass-record deadline (Sat 10/24) passed 2 days ago, row still reads "Not Started" despite real same-day prep work
+
+**Blocked:** TASKS.md's WWD table carries "Mass record: Clayface +
+Vision Quest eps 3 & 4" with deadline Sat 2026-10-24 (now 2 days past as
+of tonight) and status still "Not Started." The row's own notes show
+real prep landed the same day the deadline hit - folder structure built,
+23 Clayface USE images, 35 Vision Quest ep3/4 USE images, a silent
+Clayface intro clip - but nothing in the notes confirms the actual
+record session with Winter Wolf happened. The row is prep-complete, not
+recording-complete, and its status field was never moved off "Not
+Started" even though the self-set date has now passed.
+
+**Options:**
+A. Leave it - this is Zac and Winter Wolf's own on-camera session, not
+   something an agent can do, and a couple days' slip past a self-set
+   recording date isn't unusual (Resident Evil slipped 12+ days per
+   WWD-2026-10-03-01 with no lasting harm).
+B. Flag it now so it gets confirmed one way or the other before it
+   compounds the way the Resident Evil and FrostCast-episode-drift rows
+   did before someone caught TASKS.md back up - either the session
+   happened and the status/date just needs updating, or it hasn't and
+   downstream work (photo pull, transcript, run sheet, review pipeline)
+   is now also slipping behind it.
+
+**Recommendation:** B - same pattern this rollup already caught on
+WWD-2026-10-03-01 and WWD-2026-10-17-01: a passed production deadline
+with an untouched status row is exactly what this nightly check exists
+to surface before the gap widens further.
+
+**Status:** OPEN
