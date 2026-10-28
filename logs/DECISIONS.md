@@ -1437,3 +1437,44 @@ with an untouched status row is exactly what this nightly check exists
 to surface before the gap widens further.
 
 **Status:** OPEN
+
+---
+
+## [CS-2026-10-28-01] 2026-10-28 | Cyber Security | CySA+ exam deadline now 28 days overdue (was 15 days at CS-2026-10-15-01) with zero record either way, and zero repo activity in the 13 days since that entry to check
+
+**Blocked:** CS-2026-10-15-01 flagged the CompTIA CySA+ exam target
+(30 Sept 2026, per `Cyber-Security/CLAUDE.md` and root `CLAUDE.md`) as
+15 days overdue with no recorded outcome. Tonight that gap is 28 days,
+not because anything new happened but because nothing has: `git log`
+shows no commits at all between 2026-10-26 03:12 UTC and now
+(2026-10-28 03:10 UTC, this rollup's run time) — the longest gap between
+commits in the recent history this rollup has checked. Cyber Security
+still has no task table in TASKS.md, so there is still no row this
+rollup can mark Blocked/In Progress/Done, and still no way to tell
+whether Zac sat the exam, passed, failed, or punted it again. Per the
+Honesty rule, reporting as genuinely unknown rather than assuming either
+way.
+
+**Options:**
+A. Leave it — same reasoning as CS-2026-10-15-01 Option A: a day-job
+   cert deadline, not venture money or legal exposure, and Zac would
+   likely mention it unprompted either way.
+B. Re-flag now that the gap has nearly doubled with zero movement, and
+   treat the complete absence of a Cyber Security TASKS.md table as its
+   own standing gap worth closing independent of this one exam date —
+   the venture is marked ACTIVE in root CLAUDE.md but has no tracked
+   tasks at all, so nothing about it can ever show up as "newly changed"
+   in a nightly rollup even when something real happens there.
+C. Stop re-flagging this specific exam date on every rollup cycle since
+   CS-2026-10-15-01 already said what needs saying — repeating the same
+   open question with a bigger day-count doesn't add new information.
+
+**Recommendation:** B for the structural gap (give Cyber Security a real
+TASKS.md table so future activity there is actually visible to this
+process), C for not mechanically re-flagging the same exam date every
+few nights once the first flag is on record — this entry exists mainly
+to note that the 48-hour commit drought tonight means literally nothing
+in the repo moved to check against, not to manufacture urgency on a
+question CS-2026-10-15-01 already asked correctly.
+
+**Status:** OPEN
