@@ -25,7 +25,7 @@
 |---|---|---|
 | wwd-music | 2 | No music goes in the videos. Zac adds the intro and outro himself, and the run sheets say no music beds. |
 | clearance, originality, room-writer | 3 each | These only run inside script-room, and only one script went through the room this month (the Ian trailer). |
-| ebay-researcher | 0 (named once in a log) | Its scheduled scans only start after EBAY-001 (category pick) is answered. That's still open. |
+| ebay-researcher | 0 (named once in a log) | The category pick (EBAY-001) was approved 2026-10-24, but the scheduled scans were never set up. Corrected 2026-10-29: an earlier version of this report said EBAY-001 was still open. |
 
 ## Most used
 
@@ -40,7 +40,7 @@ wwd-director 21, general-purpose 20, wwd-vfx 10, fantasy-football-director 10, m
 
 ## Recommendations (Zac's call, nothing changed)
 
-- Answer EBAY-001, PAWS-001 and PAWS-004. That wakes 3 agents with no other work.
+- Answer PAWS-001 and PAWS-004, and set up the eBay researcher routine (EBAY-001 is already approved).
 - Add devils-advocate as one pass in the WWD upload package gate, or retire it.
 - Fold graphic-design and video-ugc into wwd-vfx and shorts-factory, or give them Etsy and KP image jobs once the shop is live.
 - Leave the dormant-venture directors alone. Idle is correct for them.
