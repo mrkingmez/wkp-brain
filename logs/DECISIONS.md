@@ -865,7 +865,7 @@ Zac. A full month of MAIN EFFORT standing still while the money-free half
 of the work also sits untouched is worth Zac's direct attention, separate
 from the original "waiting on $29" framing.
 
-**Status:** OPEN
+**Status:** DECIDED 2026-10-29 (Zac): wait for funds. No money for the fee right now. Do not re-queue this until Zac says the money is there.
 
 ---
 
@@ -1403,7 +1403,7 @@ even measure what waiting is costing) is worth one more clear flag so the
 original decision gets either reconfirmed or revisited, rather than
 drifting past 60 and 90 days on the same unexamined assumption.
 
-**Status:** OPEN
+**Status:** DECIDED 2026-10-29 (Zac): wait for funds. No money for the fee right now. Do not re-queue this until Zac says the money is there.
 
 ---
 
