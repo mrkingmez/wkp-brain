@@ -19,3 +19,6 @@ learnings go here.
 - [Personal/non-WKP](topics/user-personal.md) — Zac has a package delivery job, needs mileage logged (first surfaced 2026-09-13); was sick ~2 weeks through late Sept/early Oct 2026, explains the production slip on several items
 - [Marketing / sponsors](topics/marketing-sponsors.md) — Surfshark affiliate deal terms + corrected tracking links, marketing subagent spec→live pattern, POW/MIA content must stay about the missing/captured, never about Zac's own service (2026-09-14)
 - [Fantasy football](topics/fantasy-football.md) — blank pick'em card is the trigger to produce model picks, not something to wait on; lineup calls need real research, not just projected points (corrected 2026-09-15)
+- [Firefly video models](topics/firefly-models.md) - the real model menu on Zac's Firefly (Veo 3.1, Kling 3.0, Runway Gen-4.5, Luma Ray, Firefly Video), settings panel, start-frame slot; Matt paid for credits (2026-10-25)
+- [Double check before 'missing'](topics/wkp-ops.md) — verify a second way before saying a file/attachment is not there; Outlook winmail.dat can hide a second attachment (Week 8 card miss, 2026-10-28)
+- [Verify agent calendar writes](topics/wkp-ops.md) - agents can claim calendar events they never made; list the calendar to confirm; Zac wants mainstream wide releases on the WWD calendar (2026-10-29)

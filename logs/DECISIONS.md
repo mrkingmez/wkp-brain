@@ -1478,3 +1478,10 @@ in the repo moved to check against, not to manufacture urgency on a
 question CS-2026-10-15-01 already asked correctly.
 
 **Status:** OPEN
+## WWD-2026-10-27-01 - Vision Quest eps 3 and 4: end card and sheet density
+**Raised by:** wwd-director, 2026-10-27
+**Question:** (1) What follows eps 3 and 4 for the end card (stop 24 is an empty marked slot)? (2) The sheet has 24 stops, not 35 to 40, because only 10 of 38 stills are verified. Pull verified Paladin, Edith, Friday, Jarvis, pirate ship and gala pictures (IMDb per-actor galleries, needs a browser session) to add about 8 stops? (3) Wrong-name tally sticker for stop 18: series count 4, 5, 6 or "THIS VIDEO" 1, 2, 3? (4) Reuse eps 1-2 opener?
+**Recommendation:** Pull the pictures via main session, then wwd-vfx builds the tally sticker.
+**Status:** OPEN
+
+---

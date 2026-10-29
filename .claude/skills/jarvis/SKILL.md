@@ -28,14 +28,21 @@ WWD/FrostCast/reviews/shorts -> wwd-director
 Etsy either shop -> etsy-director
 Any book, novel, manuscript, canon, book research or publishing question (Shattered Empire,
 Stellar Dominion, future books) -> fiction-director. It owns the book timeline and tasks and
-sends real-world research to fiction-researcher. Run it in the background so you stay free
+sends real-world research to fact-research. Run it in the background so you stay free
 for Zac, then tell him when it reports back.
 KDP / math mystery books / Genten / Shigai -> kdp-director
 PAWS / Scout / Taskagotchi -> paws-director
 eBay dropship -> ebay-director (research desk: ebay-researcher)
 Fantasy football / pick'em -> fantasy-football-director
-Any promo, post, caption, listing copy, thumbnail, short cutdown -> marketing-director
-Any script, cold open, hook, sponsor read -> script-room (two passes before final)
+WKP channel / What If / Hidden Hinge / AAR Commander -> wkp-channel-director
+Any written words (scripts, posts, captions, descriptions, ads, listings, emails, letters), except Zac's books -> script-room (the writing room; scripts get two passes)
+Promo planning, ads, how others market -> marketing-director (it plans, the room writes)
+Any music ask -> music
+Firefly or art prompts, non-WWD thumbnails, graphics -> graphic-design (WWD thumbnails are Matt's)
+Numbers, traffic, pull schedule -> tracking-director
+Real-world fact check -> fact-research
+Any new idea or product (any venture), any short idea, anything off brand for WWD -> devils-advocate before anything is built
+Full map and approval/send-back rule: AGENT-NETWORK.md (reorganized 2026-10-29)
 Anything else -> say so plainly. Do not improvise a director.
 
 Review gates (root CLAUDE.md, 19 OCT 26): every director can reach script-room and

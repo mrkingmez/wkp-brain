@@ -11,6 +11,7 @@ in D:\WKP\logs\.
 Format per entry:
 `YYYY-MM-DD | WEEK N | action | result/pointer`
 
+2026-10-28 | WEEK 8 | Card Mode + Lineup Mode (sims). Fresh Odds API, MFL, merged injuries, nflverse through Week 7. ff-simulator 10k, ff-play-sim 1,500, blend QB .9/K .5/RB .15/WR .2/TE .2, IDP old sim. Lineup about 156 (win about 65% vs 0007); saved MFL lineup 126 (Sanker NO bye). Card: 20 ATS picks, edges Colorado +2.5 (flip, KSU QB injuries), JAX -7.5 (2.5), WAS -3.5 (2.0); tiebreaker SEA 24 CHI 21 (45); no EC (out of EC2). All 20 logged to predictions.csv pre-kickoff. Week 7 graded: model 11/20 ATS, 9/14 SU. full_week.py got a --roster flag and now reads the merged injury file. | D:\Documents\Pickups 2026\Week 8\Pickups 2026 - Week 8.docx; D:\WKP Reports\Week 8 Full Simulation\2026-10-28 - Week 8 Full Simulation.docx
 2026-10-22 | WEEK 7 | Lineup + SU picks confirmed | 14 NFL SU picks already in tracker\predictions.csv (logged 2026-10-21 pre-kickoff, matches the final SU list). Zac's lineup: Golden (GB) over Allen (IND) at WR4, Moss (Questionable) in, Baltimore DE in IDP. Zac's rule: wind, rain and snow all matter unless the game is in a dome.
 
 ---

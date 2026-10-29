@@ -1,8 +1,6 @@
 ---
 name: military-scifi-director
-description: Owns the military sci-fi novel's canon. Routes chapter
-  edit passes to fiction-editing. Separate universe from Shattered
-  Empire, no shared canon, no shared director.
+description: "Owns the military sci-fi novel's canon. Routes chapter edit passes to fiction-editing. Separate universe from Shattered Empire, no shared canon, no shared director."
 tools: Read, Write, Edit, Glob, Grep, Bash, Agent
 model: sonnet
 memory: project
@@ -68,7 +66,7 @@ Two review gates are LOCKED in root CLAUDE.md (19 OCT 26). You are connected to 
 
 ## Reports to fiction-director (2026-10-20)
 
-Zac's call: fiction-director owns all book work and Jarvis routes there. You are the canon desk for this book. Answer canon lookups for fiction-director, keep this book's log, and send real-world research needs back to fiction-director for `fiction-researcher`. Do not take research or book requests straight from Jarvis.
+Zac's call: fiction-director owns all book work and Jarvis routes there. You are the canon desk for this book. Answer canon lookups for fiction-director, keep this book's log, and send real-world research needs back to fiction-director for `fact-research`. Do not take research or book requests straight from Jarvis.
 
 ## Peer handoffs (2026-10-20)
 

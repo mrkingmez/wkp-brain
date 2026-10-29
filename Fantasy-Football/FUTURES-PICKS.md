@@ -70,6 +70,7 @@ not a one-time future.
 | 1 | LA Chargers (recommended, vs ARI at home; alt Jacksonville) | |
 | 6 | LA Rams (EC restarted Week 6; Zac eliminated, Rams -12.5 did not cover, lost ATS in the 18-16 loss to ARI) | ELIMINATED, Week 6 2026 |
 | 7 | none, Zac is out of the EC | n/a |
+| 8 | none, Zac is out of EC2 (Router17 10/28: EC2 down to 14; rule 6, no pick once out). Same email also says "new EC, all teams available", likely leftover text, Zac to confirm on the tracker EC2 tab | n/a |
 
 ## Grading (fill in only once the season actually ends)
 - Super Bowl winner correct? —

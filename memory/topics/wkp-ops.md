@@ -114,3 +114,11 @@ Zac decided: fiction-director owns ALL books (not screen), builds timelines and 
 
 ## Direct handoffs between directors (Zac, 2026-10-20)
 Directors send tasks straight to each other (script-room, devils-advocate, marketing-director, fiction-director, any venture director) with the Agent tool. Jarvis is not the switchboard. Protocol in D:\WKP\AGENT-NETWORK.md: handoff note, two-handoff limit, no calling back a waiting desk, departments and benches stay behind their boss, decisions still go to DECISIONS.md. **Why:** Zac does not want every ask to climb up to Jarvis. **How to apply:** new director = add the Peer handoffs section. New agent files need a restart to register. See [[wkp-ops]].
+
+## Always double check before saying something is missing (Zac, 2026-10-28)
+I told Zac the Week 8 pick'em card was not in Router17's email. It was. The email came from Outlook as a winmail.dat (TNEF) package holding BOTH the Week 7 and Week 8 cards. tnefparse only pulled the first one, and Gmail's attachment list only showed the Week 7 name. Zac downloaded Week 8 himself from the same email.
+**Why:** a "not there" answer sends Zac chasing other people for something he already has.
+**How to apply:** before reporting a file, attachment, or fact as missing or wrong, verify it a second way (search the raw bytes, open the file, try a second tool or method). For Outlook mail, scan winmail.dat for every filename, not just what the parser returns. Only report "not there" after two independent checks agree.
+
+## Verify agent calendar writes (2026-10-29)
+The 10/26 November-releases agent reported 6 events as "added now", but 4 were never on the Winter Wolf's Den calendar. Zac caught it. When an agent says it wrote to the calendar, list the calendar afterward to confirm. Also, Zac wants mainstream wide releases on the WWD calendar (How to Rob a Bank, Jimmy). Do not skip them as "off channel".

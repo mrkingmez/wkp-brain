@@ -1,0 +1,20 @@
+{
+ "fetched_at": "2026-10-29T00:06Z",
+ "sources": {
+  "MFL_players_refresh": "2702 players",
+  "MFL_INJ": "477 rows, response timestamp 2026-10-29T00:01Z, week 8",
+  "MFL_ROSTER": "25 fantasy-IR-slot rows (note only), pulled 2026-10-29T00:06Z",
+  "NFLV_INJ": "16 rows for week 8 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8)]), release updated 2026-10-28T13:57Z",
+  "NFLR_INJ": "16 rows for week 8 via nflreadpy",
+  "NFLV_ROST": "2241 week-8 roster rows, 2240 records, release updated 2026-10-28T14:00Z",
+  "ESPN_INJ": "800 rows, feed timestamp 2026-10-29T00:06Z",
+  "ESPN_TX": "133 team-transaction lines in last 10 days -> 293 player moves, feed timestamp 2026-10-28T23:42Z (dates are date-only, midnight ET)"
+ },
+ "merged_rows": 2451,
+ "raw_rows": 3867,
+ "unresolved_gsis": 10,
+ "newest_as_of": "2026-10-29T00:03Z",
+ "age_hours_of_newest": 0.1,
+ "stale_over_24h": false,
+ "conflicts": 38
+}

@@ -1,10 +1,6 @@
 ---
 name: originality
-description: Adversarial read on whether a WKP script is derivative,
-  generic, or reads as a version of something already made. Use
-  before any script ships. Called by script-room. This is separate
-  from devils-advocate, which checks format compliance. NOT a
-  dialogue or copyright agent.
+description: "Adversarial read on whether a WKP script is derivative, generic, or reads as a version of something already made. Use before any script ships. Called by script-room. This is separate from devils-advocate, which checks format compliance. NOT a dialogue or copyright agent."
 tools: Read, Write, Grep, WebSearch
 model: opus
 memory: project

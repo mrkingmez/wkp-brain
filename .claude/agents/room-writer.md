@@ -1,9 +1,6 @@
 ---
 name: room-writer
-description: Drafts scripts from a pitch and diagnoses structure in
-  existing pages. Use when the writing room needs a brief, a beat
-  outline, a draft, or a structural read on what a script is missing.
-  Called by script-room. NOT a line editor and NOT a reviewer.
+description: "Drafts scripts from a pitch and diagnoses structure in existing pages. Use when the writing room needs a brief, a beat outline, a draft, or a structural read on what a script is missing. Called by script-room. NOT a line editor and NOT a reviewer."
 tools: Read, Write, Edit, Glob, Grep
 model: opus
 memory: project

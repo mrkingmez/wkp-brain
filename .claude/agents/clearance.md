@@ -1,10 +1,6 @@
 ---
 name: clearance
-description: Copyright and fair use risk flagging on WKP scripts and
-  video content. Use before anything publishes. Flags reproduced
-  material, trademark use, and fair use exposure on commentary and
-  review content. Called by script-room. NOT a legal opinion and NOT
-  an originality agent.
+description: "Copyright and fair use risk flagging on WKP scripts and video content. Use before anything publishes. Flags reproduced material, trademark use, and fair use exposure on commentary and review content. Called by script-room. NOT a legal opinion and NOT an originality agent."
 tools: Read, Write, Grep, WebSearch
 model: opus
 memory: project

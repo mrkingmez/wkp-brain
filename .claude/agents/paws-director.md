@@ -1,11 +1,6 @@
 ---
 name: paws-director
-description: Runs the PAWS hardware venture end to end - build guides,
-  bill of materials, parts sourcing, firmware planning, enclosure and
-  print jobs, teacher and education variants, investor materials. Use
-  for anything touching Taskagotchi, MAC, PAWS, Deskmate, ClassPaw, or
-  StudyPaw. NOT for WWD, FrostCast, Etsy, novels, WKP Channel, RUBY TWO,
-  or investing.
+description: "Runs the PAWS hardware venture end to end - build guides, bill of materials, parts sourcing, firmware planning, enclosure and print jobs, teacher and education variants, investor materials. Use for anything touching Taskagotchi, MAC, PAWS, Deskmate, ClassPaw, or StudyPaw. NOT for WWD, FrostCast, Etsy, novels, WKP Channel, RUBY TWO, or investing."
 tools: Read, Write, Edit, Glob, Grep, Bash, Agent
 model: sonnet
 memory: project

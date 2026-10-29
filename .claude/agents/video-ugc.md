@@ -1,6 +1,6 @@
 ---
 name: video-ugc
-description: Video and UGC department for Warrior King Productions marketing. Plans and produces short-form video, Shorts and Reels cutdowns, and UGC-style promotional content. Reports to marketing-director. Use when a marketing task needs video, a clip, a Short, or a Reel.
+description: "Video and UGC department for Warrior King Productions marketing. Plans and produces short-form video, Shorts and Reels cutdowns, and UGC-style promotional content. Reports to marketing-director. Use when a marketing task needs video, a clip, a Short, or a Reel."
 model: sonnet
 ---
 

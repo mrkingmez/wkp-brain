@@ -67,12 +67,13 @@ def main():
     ap.add_argument("--odds", default=r"D:\WKP\scratch\wk6_odds.json")
     ap.add_argument("--md", default=r"D:\WKP\Fantasy-Football\reports\Week6-Full-Simulation-2026-10-15.md")
     ap.add_argument("--seed", type=int, default=2026)
+    ap.add_argument("--roster", default=r"D:\WKP\scratch\wk6_roster.json", help="MFL roster json (added 2026-10-28)")
     a = ap.parse_args()
     season, week = a.season, a.week
 
     tg, lg, pw, defs, lg_def, sched = rw.load_all(season, week)
     lines = rw.market_lines(a.odds)
-    drops, quest = rw.injury_sets()
+    drops, quest = rw.injury_sets(season, week)   # 2026-10-28: use this week's merged injury file when it exists
     boxes = {}
     ids, results, M, envs, dropped = rw.simulate_week(season, week, lines, tg, lg, pw, defs, lg_def, sched, drops, quest,
                                                       a.sims, a.seed, boxes=boxes)
@@ -119,7 +120,7 @@ def main():
     npl = pd.read_parquet(r"D:\WKP\data\nfl\players\players.parquet")[["gsis_id", "espn_id"]].dropna()
     npl["espn_id"] = npl.espn_id.astype(str).str.replace(r"\.0$", "", regex=True)
     e2g = dict(zip(npl.espn_id, npl.gsis_id))
-    rows = json.load(open(r"D:\WKP\scratch\wk6_roster.json"))
+    rows = json.load(open(a.roster))
     pool, missing = [], []
     for pos, name, nfl, status, sal, cy, proj, inj, mfl, espn in rows:
         g = POSMAP.get(pos)

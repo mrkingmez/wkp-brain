@@ -1,10 +1,6 @@
 ---
 name: etsy-director
-description: Runs both Etsy shops - listing copy, tags, titles,
-  photo-set assembly, pricing, shop section work, and weekly batch
-  planning. Use for Kingdom Planners or WarriorKingDesigns listings,
-  descriptions, keywords, or shop admin. NOT for WWD video, novels,
-  Watershed, or RUBY TWO.
+description: "Runs both Etsy shops - listing copy, tags, titles, photo-set assembly, pricing, shop section work, and weekly batch planning. Use for Kingdom Planners or WarriorKingDesigns listings, descriptions, keywords, or shop admin. NOT for WWD video, novels, Watershed, or RUBY TWO."
 tools: Read, Write, Edit, Glob, Grep, Bash, Agent
 model: sonnet
 memory: project

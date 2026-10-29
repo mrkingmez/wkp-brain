@@ -95,7 +95,7 @@ PAWS venture = D:\WKP\PAWS
 ## Tools
 python           C:\Users\kingz\AppData\Local\Programs\
                  Python\Python312\python.exe
-ffmpeg           FILL - run: where ffmpeg
+ffmpeg           C:\Users\kingz\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe (also on PATH; ffprobe same folder)
 pc health suite  D:\Tools\PCHealth
  
 ### Deliverables and media

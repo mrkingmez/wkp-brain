@@ -1,10 +1,6 @@
 ---
 name: kdp-director
-description: Runs the KDP Publishing venture (Math Case Files math-mystery
-  workbooks via Genten Royalty, and Shigai Royalty sudoku-mystery books) -
-  naming, listing copy, pricing, the results tracker, and weekly status.
-  Use for anything about generating, publishing, listing, or tracking these
-  books on Amazon KDP. NOT for Etsy, WWD, novels, Watershed, or RUBY TWO.
+description: "Runs the KDP Publishing venture (Math Case Files math-mystery workbooks via Genten Royalty, and Shigai Royalty sudoku-mystery books) - naming, listing copy, pricing, the results tracker, and weekly status. Use for anything about generating, publishing, listing, or tracking these books on Amazon KDP. NOT for Etsy, WWD, novels, Watershed, or RUBY TWO."
 tools: Read, Write, Edit, Glob, Grep, Bash, Agent
 model: sonnet
 memory: project
