@@ -78,7 +78,7 @@ no transcript exists yet and that is expected, do NOT stop and ask for one.
    (thewinterwolfsden@gmail.com). Never claim they were added.
 3. Stop and wait. When Zac later supplies the edited transcript, run
    wwd-review-photo-pull Step 8: placement report with Premiere transition
-   recommendations, delivered to D:\WKP Reports\Review Image Placement\.
+   recommendations, delivered to D:\WKP Reports\Asset Placement Run Sheets\.
 
 Review or movie, full work up: run wwd-review-pipeline (upload package, audio,
 finished shorts per shorts-factory.md, resolved in DECISIONS). The older chain

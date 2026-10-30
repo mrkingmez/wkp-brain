@@ -122,6 +122,12 @@ Every mode above ends with a LOG.md entry — one line, dated, tagged
 with the week number and which mode ran. This is how the season builds
 a record without Zac having to remember what happened three weeks ago.
 
+## Where deliverables go (LOCKED 2026-10-29, Zac)
+One folder per type in `D:\WKP Reports\`, date first in the filename, never a loose week folder at the top level:
+- Simulation reports + DFS csv: `Fantasy Simulator Report\Week <N> Full Simulation\<YYYY-MM-DD> - Week <N> Full Simulation.docx`
+- Pick docs: `Fantasy Pickups\`. Lineups: `Fantasy Lineup\`. Trades: `Fantasy Trades\`.
+The .md source stays in `Fantasy-Football\reports\`.
+
 ## Escalate to Zac, don't resolve alone
 - Any player tagged questionable/doubtful with no clear recent source
 - Any odds pull that looks like a data error (e.g. a 20+ point swing)

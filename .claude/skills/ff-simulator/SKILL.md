@@ -30,6 +30,12 @@ Personal use, decision support only. Never submits anything.
 5. `coach_table.py <season> <week>` writes the current coaching tendency table.
 6. `backtest_coach.py` and `backtest_sim.py` test the models against real results.
 
+## Where the report goes (LOCKED 2026-10-29, Zac)
+Every simulation report and its DFS projections csv go in a per-week folder inside the one simulator folder:
+`D:\WKP Reports\Fantasy Simulator Report\Week <N> Full Simulation\<YYYY-MM-DD> - Week <N> Full Simulation.docx`
+(csv same folder, same date prefix). Never a week folder loose at the top of `D:\WKP Reports\`. The .md stays in `Fantasy-Football\reports\`.
+Other fantasy deliverables keep their own type folders: `Fantasy Pickups\`, `Fantasy Lineup\`, `Fantasy Trades\`.
+
 ## Report gate (added 2026-10-21, Zac's rule)
 Do not simulate until every team playing that week has an injury report. `wait_and_run.py <season> <week> --until "<local time>"`
 polls the nflverse injuries release every 20 minutes (bye teams excluded). When all teams are in it runs build_injuries,

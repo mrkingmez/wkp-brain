@@ -1028,7 +1028,7 @@ Points use each site's classic scoring as I know it (DraftKings: full PPR, 3-poi
 | K | Matt Gay | LV | 9.5 | 1.0 to 21.0 |
 | K | Jason Myers | SEA | 9.4 | 1.0 to 20.0 |
 
-Salary files: **not available.** No DraftKings or FanDuel salary CSV for this slate is on disk, so no salary-cap lineups were built. The projections are saved at D:\WKP Reports\Week 8 Full Simulation6-10-28 - Week 8 DFS Projections.csv. Drop the salary file in and run dfs_optimize.py to build lineups.
+Salary files: **not available.** No DraftKings or FanDuel salary CSV for this slate is on disk, so no salary-cap lineups were built. The projections are saved at D:\WKP Reports\Fantasy Simulator Report\Week 8 Full Simulation6-10-28 - Week 8 DFS Projections.csv. Drop the salary file in and run dfs_optimize.py to build lineups.
 
 ## 5. Limits
 

@@ -49,7 +49,7 @@ A sheet that reaches wwd-director with a rule broken is your failure.
   frames with ffmpeg and looking at them, never guess a shot edge.
 - A Transition map table at the end with the designed-vs-plain counts.
 - Gaps and flags, Still open.
-- Deliverable is .docx at `D:\WKP Reports\Review Image Placement\<YYYY-MM-DD> - <Movie> Edit Run Sheet.docx`
+- Deliverable is .docx at `D:\WKP Reports\Asset Placement Run Sheets\<YYYY-MM-DD> - <Movie> Edit Run Sheet.docx`
   with the .md at `D:\WKP\WWD\reports\<Movie>-Edit-Run-Sheet.md`. **Revise a sheet in place.
   Never spin up a second dated copy unless wwd-director says so.** Convert with
   `.claude\skills\no-ai-slop\scripts\md_to_docx.py`.

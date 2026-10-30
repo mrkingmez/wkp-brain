@@ -1,6 +1,6 @@
 # Vision Quest Episodes 5 and 6 - Pre-Record Brief
 
-Record: Fri 2026-10-30 (time on the calendar is a placeholder, 7 to 9 PM). Prepared 2026-10-29 by wwd-director.
+Record: Fri 2026-10-30, 9:15 PM (Zac, on the calendar). Prepared 2026-10-29 by wwd-director. Pictures and clips updated 2026-10-29 evening.
 Handles only. No scores, no verdicts.
 
 ## 1. Episode facts (verified)
@@ -40,16 +40,23 @@ Built only from what the hosts said in the eps 3-4 recording, not from outside r
 
 ## 4. Pictures
 
-- Count: 4 stills in `USE\` (3 from ep 5, 1 from ep 6), 1920x1080 RGBA, contain/fit, none cropped. No poster. 2 more TMDb ep 5 stills were removed as twins of eps 3-4 pictures (moved to `USE\_unverified\`).
-- Dup check (dHash): no overlap with eps 1-2 (66 images) or eps 3-4 (38 images) in the final set, no twins inside the set.
-- Verified people: Picture 1 only (Vision, by the forehead gem, tentative). Pictures 2, 3 and 4 have no confirmed character; use on general lines only.
-- Not covered: Ultron (James Spader), Tommy, Jocasta, Paul Denning, Lisa, Billy, F.R.I.D.A.Y. IMDb per-actor galleries were blocked (403) and no Chrome tool was available. A Chrome session can pull them. TMDb will probably fill in over the next days.
-- Tags: `USE\pictures-tags.md`. Source URLs: `D:\WKP\scratch\vq56_urls.txt`.
+- Count: 15 stills in `USE\` (1 to 4 from TMDb, 5 to 15 from the IMDb ep 5 and ep 6 galleries, pulled through Chrome 2026-10-29 evening). 1920x1080 RGBA, contain/fit, none cropped. No poster. Originals deleted.
+- Dup check (dHash, borderline pairs checked by eye): no overlap with eps 1-2 or eps 3-4, no twins inside the set. 9 IMDb stills were skipped because they were already used in eps 1-2 or 3-4 (IMDb files some series stills under more than one episode).
+- Verified people (IMDb photo captions, not faces): Vision 1, 3, 7, 8. Ultron 5 (human form), 6 and 13 (robot, with Jocasta), 15 (top hat, face not visible). Jocasta 4, 9. E.D.I.T.H. 3, 8, 10. F.R.I.D.A.Y. 8. U and DUM-E 3. Tommy and Lisa 11. Paladin (Todd Stashwick) 12. Cybersecurity Bot and Female Bot 14. Picture 2 is still untagged.
+- Not covered: Billy, and "Paul Denning" (no one by that name in IMDb's captions or cast list, check the episode).
+- Episode filing is IMDb's, not proof of the scene. Check a picture against the episode before using it on a scene-specific line.
+- Tags: `USE\pictures-tags.md`.
 - Folder: `L:\Winter Wolfs Den review show\Raw Footage\mass recording clayface and vision ep 3&4\Vision Quest ep 5 and 6\`
 
-## 5. Clip links (nothing downloaded)
+## 5. Clips (downloaded 2026-10-29, Zac's yes)
 
-Thin: Marvel posted two short promos for these episodes. Nothing was watched or frame-checked; all details are YouTube metadata only. Use Marvel Entertainment's channel only; skip re-uploads.
+Both promos are in `Video Clips\` as Premiere-safe H.264, muted, 30 fps: `Promo - There's No Hope For You (muted H264).mp4` (22.3 s) and `Promo - Devil on His Shoulder (muted H264).mp4` (24.4 s).
+**Both are VERTICAL (1080x1920), social cuts.** In the 16:9 edit they sit pillarboxed or punched in. Frame check:
+- #1 "There's no hope for you.": Ultron robots with "TONIGHT" text, a figure in teal walking out a door, Vision close-up (gem lit), a chained padlock, Tommy close-up, Ultron in human form (glasses, beard), Disney+ logo at the end. Usable cuts: the Vision, Tommy and Ultron close-ups. Avoid the TONIGHT text and the end logo.
+- #2 "Devil on His Shoulder": Tommy, a top-hat silhouette, Tommy and Vision in a car, Vision in the vest, robot Ultron, VisionQuest title cards at the end. **A Disney+ bug sits top right on every frame and captions are burned in** ("THE DEVIL ON HIS SHOULDER", "WHO ARE YOU TALKING TO?"). Needs a punch-in past the bug and captions, or blur, like the eps 3-4 trailers.
+- Both were posted for the ep 5 and 6 drop (10/27 and 10/28). Whether each shot is from ep 5 or 6 is not confirmed by the frames; check against the episodes.
+
+Original scout notes:
 
 | # | Title | URL | Uploaded | Length | Notes |
 |---|---|---|---|---|---|
@@ -69,7 +76,8 @@ Fair use rules: one short cut under 4 s, muted, inside one shot, no title card o
 | System Boot - Cyberspace.mov | Yes, no episode text |
 | System Boot.mov | NO, has "EPISODES 1 + 2 ... LOADED" baked in |
 | Wrong Name Counter 1 Kevin, 2 David, 3 Dave | Exist, tied to the eps 1-2 count |
-| Next Up | Not built, by instruction. Existing Clayface card is the wrong show. |
+| Next Up | BUILT 2026-10-29: `P:\WWD Kit\Cards\Next Up - Vision Quest 7 and 8 Finale (MP4).mp4` (6 s). Eps 7 and 8 both drop Tue 11/3. |
+| Series intro | LOCKED (Zac): the eps 1-2 `Opener - Firefly (MP4).mp4` opens every Vision Quest video. |
 
 Wrong Name Counter (not built): Option A, the count continues from the eps 1-2 total, needs a new "Series Tally" script with a variable number and the real running count from earlier transcripts. Option B, fresh at eps 5-6, reuses the existing generator, small build. Needs Zac's answer first.
 Note: .mov pieces are ProRes, which froze on Zac's machine before. Only the opener has an MP4. Audio on the kit pieces was not heard.
@@ -77,9 +85,9 @@ Note: .mov pieces are ProRes, which froze on Zac's machine before. Only the open
 ## 7. Open items for Zac
 
 1. Wrong Name Counter: continue the count from eps 1-2, or start fresh? Then wwd-vfx builds it.
-2. What comes after eps 5 and 6 (for the end card)? Next Up not built until you say.
-3. Yes or no to download promo clips #1 and #2 so they can be frame-checked, converted and muted.
-4. Picture set is thin (4). Want a Chrome session to pull IMDb per-actor stills for Ultron, Tommy, Jocasta and the AIs? Otherwise the set is filled from the transcript after the edit.
-5. Confirm the real record time (calendar shows a 7 to 9 PM placeholder).
+2. DONE: Next Up card for eps 7 and 8 finale built.
+3. DONE: promos downloaded, muted, converted, frame-checked (both vertical, see Section 5).
+4. DONE: picture set now 15. More gets added from the transcript after the recording.
+5. DONE: record time 9:15 PM.
 6. Director and writer credits are single-source. Check on the Disney+ page if you plan to say them on air.
 7. System Boot (original) is stale; use the Cyberspace version or ask for a rebuild.

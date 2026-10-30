@@ -81,3 +81,7 @@ correlations, not magic. First-year coaches (BAL Minter, CLE Monken, LV Kubiak, 
 history plus league mean. Gambler friend's second source arrives 2026-10-16. Tracker: only Weeks 1 and 6 are logged.
 **How to apply:** run the simulator for every lineup call, state its limits, and log picks to the tracker BEFORE kickoff, not after.
 See [[wkp-ops]].
+
+## Zac never picks against Detroit (2026-10-29)
+Zac's own card always takes the Lions unless he knows they are bad that year. It is loyalty, not a read on the game. Week 8 he took DET -3.5 when the model had MIN +3.5.
+**Why:** his team. **How to apply:** the model card still picks Detroit games on the numbers. Do not argue Zac off Detroit. When grading model vs Zac, call out Detroit games separately so the loyalty pick does not skew the read on his other calls.
