@@ -1,0 +1,2 @@
+- [WWD comic COLD TOW findings](project_wwd-comic-cold-tow.md) — pass 01 fixes (Silent Hill fog, Barbara Gordon method, Lego Movie motive); pass 02 SHIPS, all landed
+- [WWD comic villain findings](project_wwd-comic-leak.md) — pass 1 Leak sources + pass 2 Last Word: FINAL WORD stamp, Question/Rorschach look risk, never seal people

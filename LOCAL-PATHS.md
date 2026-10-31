@@ -97,6 +97,10 @@ python           C:\Users\kingz\AppData\Local\Programs\
                  Python\Python312\python.exe
 ffmpeg           C:\Users\kingz\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe (also on PATH; ffprobe same folder)
 pc health suite  D:\Tools\PCHealth
+open generative ai  C:\Users\kingz\AppData\Local\Programs\Open Generative AI
+                 (v2.0.0, installed 2026-10-30, Start Menu shortcut. Free local
+                 image models + paid Muapi cloud models. Installer kept in
+                 D:\Tools\Open Generative AI\)
  
 ### Deliverables and media
 reports/deliverables (ALL, locked 2026-10-05) = D:\WKP Reports\

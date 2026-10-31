@@ -1,0 +1,1 @@
+- [WWD comic originality lessons](project_wwd_comic.md) — COLD TOW pass 2 pick (draft-02), DEAD HOUR TOW archived; traps: object heads, spoiler villains, fog horror, Gordon-style Oracle
