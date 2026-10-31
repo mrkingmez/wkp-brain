@@ -129,3 +129,7 @@ a purchase without asking first.
 ## AI image/video tools until Nov 20 2026 (Zac, 2026-10-24)
 Adobe Firefly credits are out until November. Higgsfield and paid tools are unaffordable, ElevenLabs is free tier, Claude is the only paid subscription. Until Nov 20 use free tools: Gemini (stills, first choice), Leonardo.ai (backup), Ideogram (text in images), Hailuo free account for short clips if its free tier checks out (credits, watermark, commercial terms not yet confirmed, Zac creates the account). Fallback for clips: animate stills with scripts and P: drive assets. Do not spend ElevenLabs credits. AI-footage disclosure at YouTube upload still applies.
 
+
+## Open Generative AI + Wan2GP, tried and removed (2026-10-31)
+Zac tested local image/video gen. Local SDXL worked only after 3 fixes (sampler name `dpmpp2m` vs `dpm++2m` in app.asar, unknown `--sd-version` arg, missing CUDA 12 DLLs so it ran on CPU). Local video (Wan2GP) fit 8 GB VRAM but is far below Veo 3.1. Zac uninstalled everything.
+**Why:** the app is marketed as free top models, but the strong models are paid cloud (Muapi key); local ones are much weaker. Do not bypass API keys. **How to apply:** for video use Firefly (Veo 3.1, 4000 credits on renewal, check cost in the panel before Generate). Do not re-suggest local video gen unless the GPU changes. Diagnosis tip that worked: run the CLI by hand to see the real error.
