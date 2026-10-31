@@ -1485,3 +1485,137 @@ question CS-2026-10-15-01 already asked correctly.
 **Status:** OPEN
 
 ---
+
+## [WWD-2026-10-31-01] 2026-10-31 | WWD | "Post Clayface (2026) shorts" deadline (10/29) now 2 days past, status still "Not Started," and the row's own note says the reminder needed to trigger it was never set
+
+**Blocked:** TASKS.md's WWD table carries "Post Clayface (2026) shorts"
+with deadline 2026-10-29 and status "Not Started." The row's own note
+says the reminder for that date was "NOT yet set (director has no
+scheduler tool, main session to set it)" — meaning the one mechanism
+meant to trigger this task never existed. Underneath that, the deadline
+itself rests on an assumption that isn't confirmed anywhere in
+TASKS.md: the 5 Clayface shorts are only supposed to post after the full
+Clayface review goes live, but the most recent Clayface review note
+(2026-10-26, under "Mass record: Clayface + Vision Quest eps 3 & 4")
+still lists "release date" as an open item for Zac, with no later entry
+confirming the full review actually posted. So it's unclear whether
+this task is overdue because a live reminder was never set, or whether
+it isn't actually due yet because the review it depends on was never
+confirmed live.
+
+**Options:**
+A. Leave it — Zac tracks WWD releases closely day to day and would
+   know the real state of both the review and the shorts better than
+   anything written here.
+B. Flag both gaps together now: confirm whether the full Clayface
+   review ever went live, and if it did, get a reminder set for the
+   shorts sequence (same pattern already caught on the Other Mommy and
+   Crystal Lake shorts rows, which both got real calendar reminders) —
+   if it did not, correct the deadline so it stops reading as overdue
+   for a step that was never reached.
+
+**Recommendation:** B — this is the same "deadline passed, no trigger
+ever set" pattern this rollup exists to catch, and it's cheap to
+resolve either way: one line confirming release status fixes it.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-31-02] 2026-10-31 | WWD | Vision Quest ep 5+6 recording (Friday 2026-10-30, 9:15 PM) outcome not recorded — no commit touches it and TASKS.md's note is still the pre-record prep from 10/29
+
+**Blocked:** TASKS.md's WWD table has "Vision Quest ep 5 + 6 review"
+marked "In Progress," set to record Friday 2026-10-30. The row's newest
+note is dated 2026-10-29 (pre-record prep: 15 USE pictures, 2 muted
+Marvel promo clips, Next Up card for the finale) and says "After the
+recording: transcript, picture gaps, run sheet, review pipeline" — none
+of which appear anywhere. `git log --since=24.hours.ago` shows exactly
+one commit tonight (694fc3b, the weekly numbers pull), and the broader
+week's commits (2026-10-29 and earlier) don't mention it either. Per the
+Honesty rule, this is reported as genuinely unconfirmed, not assumed
+either way — the recording may well have happened last night with the
+transcript/run sheet work simply not logged yet.
+
+**Options:**
+A. Leave it — Friday night recordings with Winter Wolf routinely land a
+   day or two before the write-up catches up (same pattern as the
+   Clayface/Vision Quest 3&4 mass record, WWD-2026-10-26-01).
+B. Flag it so the next real WWD session confirms one way or the other
+   before picture-pull and transcript work either starts late or
+   duplicates work already done off-record.
+
+**Recommendation:** B, low urgency — same reasoning as
+WWD-2026-10-26-01: a one-line confirmation closes this, and nothing
+downstream looks stuck yet, just unconfirmed.
+
+**Status:** OPEN
+
+---
+
+## [WWD-2026-10-31-03] 2026-10-31 | WWD | Warden cold-open deadline now over a month overdue (was ~2026-09-25) with no touch since the 2026-10-03 "wait for funds" decision
+
+**Blocked:** TASKS.md's WWD table still carries "Cold open — Warden
+character designs" as Blocked, deadline "~2026-09-25 (was ~mid-to-late
+Sept)," gated on Higgsfield credits (confirmed at 0, free plan).
+WWD-2026-09-17-01 resolved this 2026-10-03 as DECIDED: wait for funds,
+same call as the Kingdom Planners $29 fee. Tonight that decision is 28
+days old and the self-set deadline is now 36 days past, with nothing in
+the repo since 10/3 that touches Higgsfield credits, a cost analysis,
+or the Warden row itself — the exact "quietly rotting" pattern the KP
+fee entries (KP-2026-09-17-01 / KP-2026-10-07-01 / KP-2026-10-26-01)
+have been re-flagged for on a similar ~20-to-28-day cadence.
+
+**Options:**
+A. Leave it — Zac already made this call once (wait for funds) and
+   nothing about the underlying money situation has signaled it's
+   changed; re-flagging the same unchanged answer on a timer adds
+   noise, not information.
+B. Re-flag now, same as the KP fee pattern, mainly to get the still-
+   unrun Higgsfield cost analysis (flagged as missing back in
+   WWD-2026-09-17-01, never done) in front of Zac once more now that a
+   full month has passed on a "mid-to-late Sept" target with no fresh
+   number for him to act on either way.
+
+**Recommendation:** B, low urgency, matching the KP cadence — not to
+contest "wait for funds," just to note the gap has grown enough that a
+real cost number (one Higgsfield tier vs. the actual weekly image
+volume this venture needs) is still owed and would make the next
+decision faster whenever funds do free up.
+
+**Status:** OPEN
+
+---
+
+## [PAWS-2026-10-31-01] 2026-10-31 | PAWS | PAWS-001 and PAWS-004 block all firmware work and have been open since the venture's scaffold, but have never been cross-logged in this file despite PAWS being ACTIVE in root CLAUDE.md
+
+**Blocked:** `PAWS\decisions\DECISIONS.md` carries PAWS-001 (task
+source — Todoist / Microsoft To Do / Google Tasks / Notion / local
+file, "blocks all firmware work") and PAWS-004 (realistic hours per
+week, so the build timeline means something) as OPEN, both since the
+venture's scaffold commit. Root `CLAUDE.md` lists PAWS under ACTIVE
+venture status. TASKS.md's PAWS table shows every Phase 0/1 firmware-
+adjacent row ("Decide task source," "Set realistic hours per week,"
+"Task API call, parse JSON...," "Port state machine to firmware...")
+as "Not Started," consistent with both blockers still being open. This
+is the first time this specific gap has been cross-logged in the main
+nightly-rollup decision file — it has only ever lived in PAWS's own
+venture-level queue, so it has never been visible to whoever reviews
+this file without also opening PAWS's queue separately.
+
+**Options:**
+A. Leave it in PAWS's own queue only — that file already tracks it
+   correctly with the right context (board boots, state-machine-on-PC
+   work already done and not actually blocked by either question), and
+   duplicating it here risks the two queues drifting out of sync.
+B. Cross-log once (this entry) so a scan of this file alone surfaces
+   that an ACTIVE venture has a standing firmware blocker, without
+   trying to own or duplicate PAWS's queue going forward.
+
+**Recommendation:** B for this one entry, then back to A — PAWS's own
+queue is the right home for PAWS-001/PAWS-003/PAWS-004/PAWS-006/
+PAWS-007/PAWS-008 going forward; this is a one-time visibility flag,
+not a decision to start mirroring that whole queue here every night.
+
+**Status:** OPEN
+
+---
