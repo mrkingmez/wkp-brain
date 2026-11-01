@@ -14,6 +14,7 @@ Directors work with each other directly. Jarvis is not a switchboard.
 | Fact research | fact-research | (none) | Real-world facts with sources, for books, the WKP channel, Den Files and scripts. |
 | Market research | market-research (under marketing) | (none) | Competitors, trends, and how channels and sellers like ours market. Open to all. |
 | Tracking | tracking-director | (none) | Every numbers pull and its schedule. Saves to `data\`. |
+| Animation (3D) | animation-director | Blender: blender-asset-scout, blender-builder-props, blender-builder-characters. Unreal: ue-scene-builder, ue-asset-integrator | **Every 3D model, character, creature, prop, rig, scene, turntable and render, built in Blender and Unreal.** Added 2026-10-31 (Zac). Answers to WKP, takes jobs from any director, gates the work against `ANIMATION\STANDARDS.md`, free and licensed assets only. |
 | Hostile review | devils-advocate | (none) | **Every new idea and every new product, any venture, before it is built.** Every short idea (Shorts, Reels, short films). **WWD: anything that might be off brand** (verdict says whether it is off brand and whether it is still a good idea). Any hostile read before something ships. |
 
 ## Venture directors
@@ -46,6 +47,7 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 - room-writer, copywriting, originality: through script-room. dialogue-doctor: through script-room, or fiction-director for book edits. clearance and devils-advocate may be called direct.
 - social-media, video-ugc: through marketing-director. market-research: any director may call it, with a line to marketing-director.
 - wwd-vfx, wwd-color, wwd-run-sheet, wwd-pictures, wwd-clip-scout, wwd-sound, wwd-rights: through wwd-director. Standards page: `WWD\STANDARDS.md`. wwd-vfx may talk to graphic-design directly.
+- blender-asset-scout, blender-builder-props, blender-builder-characters, ue-scene-builder, ue-asset-integrator: through animation-director only. The two Blender builders and the two Unreal benches may talk to their sibling directly. Standards page: `ANIMATION\STANDARDS.md`. animation-director may call graphic-design, fact-research and devils-advocate like any director.
 - ebay-researcher: through ebay-director, which sets its schedule.
 - shattered-empire-director and military-scifi-director: canon-keeper benches under fiction-director.
 

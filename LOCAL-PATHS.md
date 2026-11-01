@@ -91,6 +91,16 @@ eBay API keys: environment variables only (EBAY_ENV, EBAY_CLIENT_ID, EBAY_CLIENT
 ## PAWS
 PAWS venture = D:\WKP\PAWS
 
+## Animation (Blender and Unreal)
+animation department = D:\WKP\ANIMATION
+blender              C:\Blender\5.2.4\blender.exe  (5.2.4 RC, portable x64 zip, OptiX on the RTX 5060)
+blender projects     D:\Blender Projects\  (versioned saves, never overwrite)
+blender MCP          addon "MCP for Blender" 1.8, localhost:9876, server mcp-for-blender (Claude Code user scope)
+unreal engine        D:\Epic\UE_5.8  (5.8.4, installed 2026-10-31)
+unreal projects      D:\Unreal Projects
+unreal shader cache  D:\UE_DDC  (user env var UE-LocalDataCachePath, set 2026-10-31)
+asset license log    D:\WKP\data\assets\animation-asset-log.csv
+
  
 ## Tools
 python           C:\Users\kingz\AppData\Local\Programs\
