@@ -1619,3 +1619,40 @@ not a decision to start mirroring that whole queue here every night.
 **Status:** OPEN
 
 ---
+
+## [WWD-2026-11-01-01] 2026-11-01 | WWD | Halloween Top 5 short's own deadline ("Before 2026-10-31") has now passed with the short still "In Progress," gated on a step only Zac can do
+
+**Blocked:** TASKS.md's WWD table carries "WWD short: Top 5 Halloween
+movies that will scare you" with deadline "Before 2026-10-31" and status
+"In Progress." Today is 2026-11-01 — that window closed yesterday. The
+row's own note says the short is otherwise finished (53s vertical cut,
+all captions and sounds in) and the only remaining piece is "Zac's voice
+recording is left," with trailer clips also not added pending his okay
+to download them. No commit in the last 24 hours (the only one tonight,
+`78fea84`, is the unrelated PC health work) touches this short, Halloween
+TASKS.md row, or the `Raw Footage\Halloween Top 5\` folder. A seasonal
+short tied to Halloween loses most of its relevance the longer it sits
+unposted past the date itself, which is different from the other open
+WWD production-date slips already queued (those are evergreen reviews
+that don't expire).
+
+**Options:**
+A. Leave it — Zac tracks his own recording queue, and a short that
+   misses Halloween itself can still post as a year-round "scariest
+   movies" list if the Halloween framing is dropped or softened.
+B. Flag it so Zac or wwd-director confirms whether to still record the
+   voice-over and post as a general (non-Halloween-dated) list, or stand
+   the task down as a missed seasonal window — since as currently
+   scoped/dated, continuing to carry it as "In Progress" against a
+   passed Halloween deadline risks it quietly rotting the way the
+   Resident Evil and FrostCast-drift rows did before being caught.
+
+**Recommendation:** B — low stakes (no money, no legal exposure, nothing
+else blocked on it), but cheap to resolve: one line from Zac either
+reframes the deadline (post it as evergreen) or closes it out as skipped
+this year. The only remaining work item (his own voice recording) is not
+something an agent can do unprompted.
+
+**Status:** OPEN
+
+---
