@@ -26,7 +26,17 @@ Also pointing at I: and needing a fix: three PATH entries (`I:\`, `I:\Git\cmd`, 
 1. Close VS Code, every Claude Code window and every terminal. Claude Code runs on the Node we are replacing, so do this part outside Claude Code.
 2. Plug nothing new in. Leave the enclosure connected for now.
 
-## Part 1: Install fresh copies on C:
+## Part 1a: Uninstall the three programs on I: FIRST
+
+Why first: the installer finds the old copy and upgrades it in place on I:, it does not make a new one. This was tested on 2026-10-31: Git, Node and VS Code all stayed on I: (Git went 2.55 to 2.56, Node went to 26.13.0). Right now each program has exactly one entry, so there is no guessing which one is the I: copy.
+
+1. Click **Start**, type `installed apps`, click **Installed apps**.
+2. In the search box, type `Git`. Click the three dots next to **Git**, click **Uninstall**, click **Uninstall** again, click through the wizard.
+3. Search `Node`. Click the three dots next to **Node.js**, click **Uninstall**, click **Yes** or **Next** through the prompts.
+4. Search `Visual Studio Code`. Click the three dots next to **Microsoft Visual Studio Code (User)**, click **Uninstall**, click **Yes**.
+5. Nothing will work in Claude Code or VS Code until Part 1b is done. That is expected.
+
+## Part 1b: Install fresh copies on C:
 
 1. Right-click the **Start** button, click **Terminal (Admin)**, click **Yes**.
 2. Paste this line and press Enter. Wait for it to finish:
@@ -36,7 +46,10 @@ Also pointing at I: and needing a fix: three PATH entries (`I:\`, `I:\Git\cmd`, 
 4. Paste this line and press Enter. Wait for it to finish:
    `winget install --id Microsoft.VisualStudioCode -e --source winget`
 5. If any step asks you to accept terms, type `Y` and press Enter.
-6. Close the terminal.
+6. Check each landed on C: by pasting this and pressing Enter:
+   `Test-Path "C:\Program Files\Git","C:\Program Files\nodejs","$env:LOCALAPPDATA\Programs\Microsoft VS Code"`
+   You want three lines that say `True`. If any says `False`, stop and tell me.
+7. Close the terminal.
 
 ## Part 2: Point Windows at the new copies
 
@@ -63,10 +76,9 @@ Also pointing at I: and needing a fix: three PATH entries (`I:\`, `I:\Git\cmd`, 
 ## Part 4: Clean up the old copies (I do this with you)
 
 Tell me when Parts 1 to 3 are done. I will:
-1. Read each program's install location so we remove the I: copy, not the new C: one.
-2. Uninstall the old Git and the old VS Code from I:.
-3. Delete the old Node files in the root of I: (`node.exe`, `npm`, `npx`, `corepack`, the `.cmd` and `.ps1` files, `node_modules`).
-4. Nothing gets deleted until Part 3 passes.
+1. Confirm the three programs are gone from I: and registered only on C:.
+2. Delete whatever the uninstallers left behind on I: (leftover Git, VS Code and Node folders, plus the loose Node files in the root: `npm`, `npx`, `corepack`, the `.cmd` and `.ps1` files, `node_modules`).
+3. I only delete after Part 3 passes, and I list each item first.
 
 ## Part 5: Restart and settle
 
@@ -80,7 +92,8 @@ It still runs from I:. It is paused work (Spark Capture), so leave it alone and 
 
 ## If something goes wrong
 
-- Nothing on I: is deleted until Part 3 passes, so the old setup still works as a fallback.
+- Parts 1a to 3 leave nothing to fall back on while you work, so do them in one sitting. Your VS Code settings, extensions, Git settings and Claude Code settings are on C: and are not touched by the uninstall.
+- If Part 1b fails, tell me the exact message. The installers can be re-run, and the old programs can be reinstalled from winget if needed.
 - Part 2 only edits PATH and one setting. Windows made a restore point earlier today (Before WKP PC fixes).
 
 ## After the move: watch the drive

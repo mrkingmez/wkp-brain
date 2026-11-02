@@ -22,3 +22,6 @@ learnings go here.
 - [Firefly video models](topics/firefly-models.md) - the real model menu on Zac's Firefly (Veo 3.1, Kling 3.0, Runway Gen-4.5, Luma Ray, Firefly Video), settings panel, start-frame slot; Matt paid for credits (2026-10-25)
 - [Double check before 'missing'](topics/wkp-ops.md) — verify a second way before saying a file/attachment is not there; Outlook winmail.dat can hide a second attachment (Week 8 card miss, 2026-10-28)
 - [Verify agent calendar writes](topics/wkp-ops.md) - agents can claim calendar events they never made; list the calendar to confirm; Zac wants mainstream wide releases on the WWD calendar (2026-10-29)
+- [Show session = resume command](topics/session-resume.md) — 'show session' means give the claude --resume line (2026-11-01)
+- [Push at end of batch](topics/push-batching.md) — batch pushes after installs/add-ons, not each change (2026-11-01)
+- [Leave Adobe alone](topics/leave-adobe-alone.md) — never disable Adobe startup/tasks; Zac said so twice (2026-11-01)

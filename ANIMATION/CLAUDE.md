@@ -19,6 +19,12 @@ Benches are called only through animation-director. Specs in `.claude\agents\`.
 
 `blender-asset-quality`, `blender-character-craft`, `blender-asset-sourcing`, `blender-mcp-ops`, `ue-import-pipeline`, `ue-scene-lighting-render`, `ue-mcp-and-automation`. When a bench keeps missing the same standard, fix the skill and date the lesson.
 
+## Mandate (Zac, 2026-11-01, LOCKED)
+
+The Animation team does it ALL: sculpted characters and creatures, boats, houses and buildings, big landscapes, props, scenes. The team must learn to sculpt and model to a professional level, and it must be trained through skills until it can. It also looks for ready-made free assets first, and builds or adapts only what it cannot find. "I mean it all." If the team cannot reach Zac's bar with a method, it says so, finds a better method, and trains on it. It does not hand Zac weak work and does not hand the job back as "not possible."
+
+Skills still to write (training gap found 2026-11-01): `blender-sculpting-and-retopo` (sculpt mode, brushes, multires, dyntopo, retopology, baking), `blender-environment-landscapes` (terrain, geometry nodes, scatter, large worlds for Unreal), `blender-architecture-and-vehicles` (houses, buildings, boats, hulls, interiors, modular kits). Wolf Warrior v1/v2 files deleted 2026-11-01 at Zac's order.
+
 ## Rules (locked 2026-10-31, Zac)
 
 1. **Free only, ask first.** Nothing that costs money, credits or a subscription without Zac's yes and the exact price. Applies to assets, AI image-to-3D services and plugins.
@@ -47,4 +53,5 @@ Benches are called only through animation-director. Specs in `.claude\agents\`.
 ## Current state (update after each job)
 
 - **2026-10-31:** department created. Skills being written from official docs. Blender-to-Unreal pipeline repo NOT chosen yet: candidates report at `D:\WKP\reports\animation\2026-10-31-Blender-UE-Pipeline-Candidates.md`, Zac picks. No agent can drive the Unreal Editor live yet (see `ue-mcp-and-automation`), so Unreal steps are scripts plus click steps for Zac.
-- **First test asset:** Wolf Warrior with Sword, `D:\Blender Projects\Wolf Warrior with Sword v2.blend`. v2 body is a skin-modifier mesh with muscle masses. Known misses: head reads cartoonish, chest plate hidden, legs thin, tail straight, flat fur, does not match the reference face. AI image-to-3D would match better but costs credits (Higgsfield balance is 0, free plan). Zac chose the free hand-built route.
+- **2026-11-01, Zac REJECTED the Wolf Warrior: "it looked like crap, like someone who has never used Blender before would draw, that is way, way below the standard."** Do not save, ship, show to other directors, or use it as a benchmark. The method that made it (code-built Skin modifier blobs) is not good enough for characters. Characters need a different method before anything is shown to Zac again (see STANDARDS.md corrections).
+- **Old note, superseded:** First test asset: Wolf Warrior with Sword, `D:\Blender Projects\Wolf Warrior with Sword v2.blend`. v2 body is a skin-modifier mesh with muscle masses. Known misses: head reads cartoonish, chest plate hidden, legs thin, tail straight, flat fur, does not match the reference face. AI image-to-3D would match better but costs credits (Higgsfield balance is 0, free plan). Zac chose the free hand-built route.

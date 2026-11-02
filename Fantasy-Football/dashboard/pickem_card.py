@@ -48,7 +48,7 @@ from pathlib import Path
 
 import xlrd
 
-SECTION_RE = re.compile(r"^(NFL|NCAA|Monday Night Tie ?Breaker)\s*\(\s*([^)]+)\)", re.I)
+SECTION_RE = re.compile(r"^(NFL|NCAA|Monday Night Tie ?Breaker)\s*\(?\s*([^)]+)\)", re.I)  # opening paren optional: Week 8 card header was "NFL 1 November )"
 
 # RGB -> Zac's own outcome-hint label. Confirmed against the real Week 1
 # card. Any other non-default fill color found is reported as

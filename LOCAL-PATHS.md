@@ -107,6 +107,8 @@ python           C:\Users\kingz\AppData\Local\Programs\
                  Python\Python312\python.exe
 ffmpeg           C:\Users\kingz\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe (also on PATH; ffprobe same folder)
 pc health suite  D:\Tools\PCHealth
+openwhispr          %LocalAppData%\Programs\OpenWhispr  (1.11.0, installer D:\Tools\OpenWhispr\)
+voice studio        D:\Tools\Voice Studio  (v0.7.2, backend\venv, start: python studio.py start)
  
 ### Deliverables and media
 reports/deliverables (ALL, locked 2026-10-05) = D:\WKP Reports\

@@ -60,4 +60,4 @@ animation-director checks every deliverable against this file before the request
 
 ## Zac's corrections (add dated lines here as he gives them)
 
-(none yet)
+- **2026-11-01 (Zac), the bar for characters and creatures:** the Wolf Warrior v1/v2 "looked like crap, like someone who has never used Blender before would draw." Anything that reads as amateur, blobby, cartoonish or primitive-built FAILS, whatever the poly count and checklist say. The test is: would it pass as work from an experienced 3D artist? If the Blender section cannot reach that with the method it has, it says so and queues options for Zac instead of delivering a weak version. Skin-modifier blob characters are not an accepted method.
