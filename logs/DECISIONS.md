@@ -1656,3 +1656,73 @@ something an agent can do unprompted.
 **Status:** OPEN
 
 ---
+## [ANIM-2026-11-02-01] 2026-11-02 | Animation (Blender/Unreal, shared) | Three Zac-only sign-offs from the 2026-10-31/11-01 build have never been escalated to this queue
+
+**Blocked:** TASKS.md's Animation department row and `ANIMATION\CLAUDE.md`
+both carry "OPEN FOR ZAC" items from the 2026-10-31 build (specs for
+`animation-director`, 5 benches, 7 training skills, and `ANIMATION\STANDARDS.md`
+all written and committed, most recently in `87705c1`, 2026-11-01): (1) Zac
+needs to mark up `ANIMATION\STANDARDS.md` — every number in it is currently
+a Claude-drafted guess; (2) Zac needs to pick the Blender-to-Unreal pipeline
+repo from the candidates report (`D:\WKP\reports\animation\2026-10-31-Blender-UE-Pipeline-Candidates.md`)
+before anything gets installed — xavier150's Blender-For-UnrealEngine-Addons
+(GPL-3.0) is the only one proposed so far, nothing is installed; (3) Zac
+needs to say yes or no to any Unreal bridge that opens a network port (Epic's
+built-in MCP plugin on port 8000, no auth found, is currently off by default
+per his 2026-11-01 answer, but the broader "any future port" question is still
+open). None of these three have ever been logged in this file — they have
+only ever lived inline in TASKS.md and `ANIMATION\CLAUDE.md`, which this
+nightly rollup does not treat as the decision queue.
+
+**Options:**
+A. Leave it — Zac already has the full list sitting in `ANIMATION\CLAUDE.md`
+   and the open item is naturally visible the next time he opens that file
+   or the Animation department comes up.
+B. Cross-log once (this entry) so a scan of this file alone surfaces that a
+   shared department with real spend/security implications (GPL licensing,
+   an open port) has three unresolved sign-offs, without trying to mirror
+   `ANIMATION\CLAUDE.md`'s open-items list every night going forward.
+
+**Recommendation:** B, one-time visibility flag — nothing here is urgent
+(no work is blocked on it since the Blender/Unreal benches have other
+backlog), but a license pick and a network-port question are exactly the
+kind of irreversible-ish calls that should have a paper trail in the
+decision queue, not just a venture file.
+
+**Status:** OPEN
+
+---
+
+## [ETSY-2026-11-02-01] 2026-11-02 | Etsy (WKD) | Listing cap (locked 15 Aug, expires 15 Nov) sunsets in 13 days having apparently never bound in practice
+
+**Blocked:** Root CLAUDE.md's Etsy listing cap (max 3/day, 8/week combined
+WKD + Kingdom Planners, "Anti-suspension rule, not a preference") is locked
+2026-08-15 and set to expire 2026-11-15 — 13 days from tonight. Per tonight's
+`ETSY/weekly-prep/2026-11-01.md` (committed in `80decef`): TASKS.md shows no
+confirmed live listing from either shop since before the cap was locked, so
+the cap looks to have never actually been tested against real posting
+volume in the three months it's been in force — it has been a theoretical
+ceiling over an idle shop, not a binding constraint. No existing entry in
+this file addresses whether the cap itself should be renewed, adjusted, or
+allowed to lapse on 11/15; the closest related entries (ETSY-2026-10-09-01,
+the lapsed Friday manual-data-pull cadence; WKD-2026-09-24-01/WKD-2026-10-03-01,
+process fights over who can authorize a production pass) are about
+different questions.
+
+**Options:**
+A. Let it lapse silently on 11/15 — if it's never bound, nothing changes
+   operationally either way, so it's not worth a dedicated decision.
+B. Flag it now so Zac decides, before 11/15, whether to renew it as-is
+   (useful insurance once real posting finally starts, especially heading
+   into BFCM per tonight's prep doc), loosen it, or let it expire and
+   revisit if/when the shops are actually posting again.
+
+**Recommendation:** B — low urgency, but cheap to resolve, and the timing
+matters only in one direction: if Zac wants it renewed, that's easiest to
+do before it expires rather than after, especially with BFCM prep already
+underway and the backlog of unposted Military/Landscape/Christian designs
+this same prep doc flags as still gated on listing copy, not cap headroom.
+
+**Status:** OPEN
+
+---
