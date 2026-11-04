@@ -1726,3 +1726,17 @@ this same prep doc flags as still gated on listing copy, not cap headroom.
 **Status:** OPEN
 
 ---
+
+## [VENTURE-2026-11-03-01] 2026-11-03 | Venture scout | CMMC Level 1 kit: day-job conflict check must be done by Zac before any build or public sale
+
+**Context:** Deep dive at `research\ventures\cmmc-l1\01-scope-deep-dive.md`. The venture sells cyber compliance documents. Zac works in cyber for a day job. An agent cannot read his employment terms and must not assume.
+
+**Question for Zac:** Read his employment agreement, outside-work/moonlighting policy, any ethics or conflict-of-interest form, and (if the employer touches DoD or contractors) any rule about advising defense contractors. Does it allow selling CMMC Level 1 templates? Checklist is in section 4 of the deep dive.
+
+**Options:**
+A. Check and get written OK (or a yes from HR/ethics) before building anything public.
+B. Drop the venture if the policy blocks it.
+
+**Recommendation:** A. Cost is one read-through plus maybe one email from Zac. Nothing is built or sold until answered.
+
+**Status:** OPEN

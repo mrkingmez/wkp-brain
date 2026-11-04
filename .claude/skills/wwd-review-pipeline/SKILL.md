@@ -155,6 +155,39 @@ and End Screen, 11 Posting Windows plus checklist, 12 Flags, 13 Fair Use (always
 Keep giving two titles, Zac sometimes combines them. Every public piece stays SEO and
 GEO friendly (keyword first, answer-shaped lines, named entities).
 
+## UPLOAD ORDER FORMAT, LOCKED 2026-11-02 (Zac). Applies to every package from now on.
+This replaces the section order above and overrides Sections 7, 8, 9, 10 and 11 where they
+disagree. It does NOT reopen packages already shipped (Vision Quest 5 and 6 is done and posted,
+shorts included, leave it alone). Zac follows the package top to bottom while uploading, so the
+document runs in the exact order he does the work, and nothing he needs is in a different section.
+
+ORDER: header, 1 Title, 2 Full Description (chapters inside), 3 Tags, 4 Hashtags, 5 Thumbnail,
+6 Cards (exactly 3), 7 End Screen, 8 POST SEQUENCE, 9 Flags, 10 Fair Use (always last).
+
+**6 Cards: ALWAYS exactly 3.** Card 3 is ALWAYS FrostCast (the flagship show). Cards 1 and 2 are
+the best related videos that REALLY EXIST. All three sit before 00:03:00 (average watch time),
+tied to something said in that window. wwd-director must know every video and playlist on the
+channel: the source of truth is WWD\data\video-inventory.md (refresh from VidIQ each run).
+NEVER tell Zac to put a card or end-screen tile on a video or playlist that is not in that
+inventory. Do not mention playlists unless one is verified there. If fewer than two real related
+videos exist, use the best-performing real videos and say which, never a placeholder.
+
+**8 POST SEQUENCE is one list in the order he posts. Every item carries its own time options
+right there, never in a separate section:**
+1. Full video publish: 3 time options.
+2. Facebook post (copy + Firefly prompt + hashtags): 3 time options.
+3. Instagram post (copy + Firefly prompt + hashtags): 3 time options.
+4. Short 1 to 5, each as one complete block (file, cover, hook, checks, YouTube/IG/FB copy,
+   3 time options, tick boxes). Spoiler shorts last.
+There is no separate "Posting Windows" section and no separate shorts section.
+
+**Time options (Zac is usually late posting):** give THREE concrete options per post, a best
+slot, a good slot, and a late-but-still-fine fallback, each as a day and clock time ET, plus one
+line on why. The times come from research, not generic advice: the channel's own numbers
+(VidIQ audience and video data, D:\WKP\data\, WWD\data\post-times.md) first, outside
+sources second, and the basis is stated. If the research file is older than 30 days, refresh it
+before building the package and say so. Never give a single time.
+
 ### Package header
 
 Source transcript filename and line count, ffprobe readout of the export, speaker-audit

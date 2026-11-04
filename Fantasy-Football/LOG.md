@@ -64,6 +64,8 @@ Format per entry:
 
 2026-10-07 | WEEK 5 | Model card produced from blank `cards\CODENAME_Week 5 Entry.xls` (20 games, locks Thu 10/8, TB@DAL). Odds API pull plus web-verified injuries. Edges: ATL +6.5 (Lamar ankle, 10pt swing), JAX -2.5 (5pt), CHI +2.5 (flip, Bagent starts), DET -3.5 (2pt). MNF tiebreaker 53. EC rec JAX (used-teams history not on file, flagged). Week 4 has no card, doc, or tracker rows. Not logged to predictions.csv. | D:\Documents\Pickups 2026\Pickups 2026 - Week 5.md/.docx
 
+2026-11-03 | WEEK 9 | Recap + Card Mode + Lineup Mode (Tuesday 10:30 PM ET, pre-practice reports). Week 8 graded: model 9/20 ATS (NFL 6/14, college 3/6), 10/14 SU; Zac's card 13/20. Card parsed (blank, 20/20). Sims run (old sim 10k, play sim 1,500, byes PIT and TEN). 20 model picks logged to predictions.csv before kickoff. Edges: Notre Dame -3.5 (2.0), Cleveland +3.5 (2.0), JAX -8.5 (1.5). Tiebreaker BUF 24 MIN 21 (45). Lineup about 151 blended; saved MFL lineup starts Dowdle on bye. Flags: Lamar Jackson OUT per MFL feed only (unconfirmed on web), Brissett benched per ESPN feed, Robinson (ATL) Questionable, RB2 thin (Washington Jr. is on taxi). Web search returned mostly older seasons, so most statuses are feed-only. No EC. | D:\Documents\Pickups 2026\Week 9\Pickups 2026 - Week 9.docx; D:\WKP Reports\Fantasy Simulator Report\Week 9 Full Simulation6-11-03 - Week 9 Full Simulation.docx
+
 <!-- New entries go above this line. -->
 
 ## Week 7 (2026-10-25 slate, card locks Thu 10/22)

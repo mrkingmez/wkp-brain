@@ -107,8 +107,9 @@ python           C:\Users\kingz\AppData\Local\Programs\
                  Python\Python312\python.exe
 ffmpeg           C:\Users\kingz\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe (also on PATH; ffprobe same folder)
 pc health suite  D:\Tools\PCHealth
-openwhispr          %LocalAppData%\Programs\OpenWhispr  (1.11.0, installer D:\Tools\OpenWhispr\)
+openwhispr          %LocalAppData%\Programs\OpenWhispr  (1.11.0, installer D:\Tools\OpenWhispr\)  WORKING 2026-11-03: hotkey Right Alt, tap mode (tap to start, tap to stop, text appears after 2nd tap), local model.
 voice studio        D:\Tools\Voice Studio  (v0.7.2, backend\venv, start: python studio.py start)
+openmontage        D:\Tools\OpenMontage  (commit 195eab2 audited 2026-11-02, AGPL-3.0, own venv .venv, npm ci --ignore-scripts, NO keys set, no GPU extras; run with D:\Tools\OpenMontage\.venv\Scripts\python.exe)
  
 ### Deliverables and media
 reports/deliverables (ALL, locked 2026-10-05) = D:\WKP Reports\

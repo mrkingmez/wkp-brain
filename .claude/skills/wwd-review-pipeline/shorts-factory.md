@@ -195,6 +195,17 @@ no cover. Re-render with a different `cover_at` if it is a bad frame.
 
 ---
 
+
+### Cover picture rule, LOCKED 2026-11-02 (Zac)
+Covers use a PICTURE that goes with the clip's topic, not a plain video frame of the two hosts.
+Pick it from the movie's `USE\` folder (the same set the run sheet uses, so it is already
+rights-checked and tagged), matching what the clip is about (the character, scene or gag named in
+the hook). Put its full path in the spec as `cover_image`. The build fits the picture (contain,
+never cropped) over a blurred copy of itself with the hook text on top. If no USE picture fits the
+topic, say so and fall back to a video frame. Never use a picture that is in the clip's
+first 4 s as an unverified source (see wwd-rights flags). Do not reuse the same picture as another
+short's cover in the same batch.
+
 ## 9. Render
 
 One spec file per clip, then render. The script handles all three stages (body, one-frame

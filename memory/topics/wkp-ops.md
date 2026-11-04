@@ -122,3 +122,5 @@ I told Zac the Week 8 pick'em card was not in Router17's email. It was. The emai
 
 ## Verify agent calendar writes (2026-10-29)
 The 10/26 November-releases agent reported 6 events as "added now", but 4 were never on the Winter Wolf's Den calendar. Zac caught it. When an agent says it wrote to the calendar, list the calendar afterward to confirm. Also, Zac wants mainstream wide releases on the WWD calendar (How to Rob a Bank, Jimmy). Do not skip them as "off channel".
+
+- Aether Stone Magic System is LOCKED and done (Zac 2026-11-02, said it keeps popping up on the Monday report). Never list it as open in any brief or report unless something new comes in. Skill rule is in wkp-monday-brief/SKILL.md.

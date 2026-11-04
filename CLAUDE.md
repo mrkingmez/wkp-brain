@@ -246,3 +246,6 @@ Etsy provides NO traffic CSV export. Views, favorites, and visits
 live only in D:\WKP\data\etsy-manual-YYYY-MM-DD.md, typed by hand
 each Friday. Do not look for an Etsy traffic CSV. Do not report a
 view or favorite count that is not in that file.
+
+## Task Observer (wired 2026-11-02, Zac yes)
+Weekly review only. Do NOT load the task-observer skill at session start (it is 45 KB). Once a week, with the Monday brief, run its weekly review: read the observation log, propose skill updates and new-skill candidates to Zac. Log a corrections observation when Zac corrects the same thing twice (Adobe is the model case). No hook installed, no network use.

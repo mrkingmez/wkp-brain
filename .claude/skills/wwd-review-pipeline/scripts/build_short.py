@@ -12,7 +12,7 @@ Subcommands
       then runs QC (ffprobe, head silence, three frames written for eyeballing).
 
 Spec keys for render: src, outdir, slug, film, start, end, hook, text, silence,
-cover_at (optional, seconds into the clip), n (optional clip number).
+cover_at (optional, seconds into the clip), cover_image (optional, a topic picture from the movie USE folder; used instead of a video frame), n (optional clip number).
 Never hardcode paths: the caller reads them from LOCAL-PATHS.md.
 """
 import argparse, json, os, re, shutil, subprocess, sys
@@ -194,6 +194,12 @@ BLUR = ("[0:v]split=2[bg][fg];[bg]scale=1080:1920:force_original_aspect_ratio=in
         "boxblur=24:6,eq=brightness=-0.06[bgb];[fg]scale=1080:608[fgs];[bgb][fgs]overlay=(W-w)/2:656,setsar=1[base];"
         "[base]subtitles={ass}:fontsdir=fonts[v]")
 
+# Topic-picture cover: blurred copy of the picture fills the frame, the picture itself is
+# fitted (contain, never cropped) in the middle, hook text on top.
+COVER_IMG = ("[0:v]format=rgba,split=2[bg][fg];[bg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+             "boxblur=24:6,eq=brightness=-0.04[bgb];[fg]scale=1080:1500:force_original_aspect_ratio=decrease[fgs];"
+             "[bgb][fgs]overlay=(W-w)/2:(H-h)/2+80,setsar=1[base];[base]subtitles={ass}:fontsdir=fonts[v]")
+
 def cmd_render(a):
     spec = json.load(open(a.spec, encoding="utf-8-sig"))
     n, slug = spec.get("n", 1), spec["slug"]
@@ -220,8 +226,13 @@ def cmd_render(a):
          "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "body.mp4"], cwd=work)
     # cover png: strongest frame from inside the clip, same layout, big hook
     at = s + float(spec.get("cover_at", 6.0))
-    run(["ffmpeg", "-y", "-ss", str(at), "-i", src, "-frames:v", "1", "-filter_complex",
-         BLUR.format(ass="cover.ass"), "-map", "[v]", "-q:v", "2", "cover.png"], cwd=work)
+    if spec.get("cover_image"):
+        # picture that goes with the topic of the clip (from the movie's USE folder)
+        run(["ffmpeg", "-y", "-i", spec["cover_image"], "-frames:v", "1", "-filter_complex",
+             COVER_IMG.format(ass="cover.ass"), "-map", "[v]", "-q:v", "2", "cover.png"], cwd=work)
+    else:
+        run(["ffmpeg", "-y", "-ss", str(at), "-i", src, "-frames:v", "1", "-filter_complex",
+             BLUR.format(ass="cover.ass"), "-map", "[v]", "-q:v", "2", "cover.png"], cwd=work)
     # stage 2 one-frame cover clip, params identical to the body
     run(["ffmpeg", "-y", "-loop", "1", "-framerate", "30", "-i", "cover.png", "-f", "lavfi", "-i",
          "anullsrc=channel_layout=stereo:sample_rate=48000", "-frames:v", "1", "-t", "0.0334",

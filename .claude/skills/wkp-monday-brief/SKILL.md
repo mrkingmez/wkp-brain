@@ -72,3 +72,6 @@ If a venture had no activity, say so plainly rather than padding.
 ## Escalation
 A calendar or venture folder is unreachable - say which one and
 produce the brief without it rather than failing entirely.
+
+## Do not surface (Zac, locked 2026-11-02)
+- Aether Stone Magic System: there is one, it was settled weeks ago, it is DONE. Do not list it as open, pending, a conflict, or a duplicate in any brief, unless Zac says there is something NEW about it.

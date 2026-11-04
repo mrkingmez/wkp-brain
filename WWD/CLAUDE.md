@@ -23,6 +23,8 @@ Movies and shows in the nerd-verse. Tone benchmark is the Spider-Noir review: gr
 
 **Upload package hard rules (LOCKED 2026-10-19, Zac).** Every card sits in the first 3 minutes of the video. Exactly 5 YouTube hashtags, never more, all high-volume discovery tags, never channel-branded (#FrostCast gets no views). See wwd-review-pipeline Sections 5 and 10.
 
+**Upload package order and cards, LOCKED 2026-11-02 (Zac).** The package runs in upload order (Title, Description, Tags, Hashtags, Thumbnail, Cards, End Screen, then one Post Sequence with full video, Facebook, Instagram and Shorts 1 to 5, each with 3 researched time options inside it). Cards are ALWAYS exactly 3, card 3 is always FrostCast, all before 3:00, and only point to videos and playlists that exist in `WWD\data\video-inventory.md`. Never suggest a card or playlist Zac does not have. Post-time research is in `WWD\data\post-times.md`. Shorts covers use a topic picture from the USE folder. Full rules in `wwd-review-pipeline\SKILL.md`.
+
 **Stay on the movie (LOCKED 2026-10-19, Zac).** When we review a movie, the upload package, shorts, hooks, chapter titles and tags are about that movie, not tangents like the DCU or another title's rating. See wwd-review-pipeline rule 14.
 
 **No bleeping — locked 2026-09-12.** On-air profanity ships as recorded, never bleeped or cut. Applies to every WWD content line (reviews, FrostCast, Den Files, Retro Watch, shorts). Do not flag profanity as something needing a bleep in upload packages going forward.
