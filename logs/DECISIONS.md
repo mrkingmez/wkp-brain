@@ -1740,3 +1740,19 @@ B. Drop the venture if the policy blocks it.
 **Recommendation:** A. Cost is one read-through plus maybe one email from Zac. Nothing is built or sold until answered.
 
 **Status:** OPEN
+
+
+---
+
+## [VENTURE-2026-11-05-01] 2026-11-05 | Venture scout | Fort Eisenhower/Fort Gordon newcomer guide: verdict is slow/no demand proof, cheap free test proposed, never logged to the decision queue
+
+**Blocked:** Venture-scout idea 3 from the 2026-10-26 first scan (`research\ventures\2026-10-26 venture scout first scan.md`) got two research passes on 2026-11-03, both committed in that day's batch (`61a5200`): `research\ventures\newcomer-guide\01-market-research.md` and `02-fact-and-risk-brief.md`. Market research verdict: "Slow, off-season, free competition is good, and no demand proof" — no paid Fort Eisenhower/Fort Gordon PCS guide found on Etsy, Gumroad, Payhip, Amazon, or TpT; demand signal is two stale, mostly unreadable forum threads; and a free, active Facebook PCS group (Fort Gordon PCS Pay-It-Forward) already covers much of the same ground. The research's own recommendation is a $0, about one-hour free test post in that group to count real requests before writing anything paid. The fact/risk brief adds 17 open questions only Zac can answer (audience and scope, which gates/areas/schools, VA and spouse content, personal "what I wish I knew" material) plus real fair-housing, platform-disclosure, and licensed-data (GreatSchools) guardrails if it ever gets built. Neither file has reached this queue — the same gap already flagged for the parallel CMMC-L1 idea from the same scan in `VENTURE-2026-11-03-01`.
+
+**Options:**
+A. Run the free test first (post in the Fort Gordon PCS Pay-It-Forward Facebook group, count real requests) before building or writing anything, per the research's own recommendation.
+B. Skip the test and draft the paid guide anyway, treating this as content Zac already knows firsthand regardless of the no-demand-proof finding.
+C. Drop the idea for now — slow season, free competition already covers most of it, and the stronger lead from the same scan is CMMC L1 (already queued in `VENTURE-2026-11-03-01`), not this.
+
+**Recommendation:** A — costs nothing but Zac's time, and directly tests the one gap the research actually found (no demand proof) before any of the 17 open questions are worth spending time answering.
+
+**Status:** OPEN
