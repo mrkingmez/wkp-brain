@@ -1,0 +1,126 @@
+Prompt Reference Document
+This document contains all editing prompts, numbered to match the Updated Editing Calendar.
+Stage 1: Structural & Flow (Sept 4 – Oct 15)
+#2 Scene Change Check
+Here’s Chapter [X]. Act as a developmental editor. Go scene by scene and tell me:
+
+1. What changes in this scene (plot, emotion, tension)?  
+2. If nothing changes, tell me exactly where it stalls.  
+3. Suggest 2–3 ways I could adjust those moments so the scene ends with momentum.
+
+Do NOT rewrite the scene. Just analyze shifts and suggest targeted fixes.
+#8 Continuity & Timeline Check
+Here’s Chapter [X]. Cross-check it against earlier chapters and tell me:
+
+- Do the events line up logically?  
+- Does character knowledge/behavior remain consistent?  
+- Are there any contradictions in time of day, geography, or continuity?  
+- If yes, flag the exact line and suggest how to align it.
+Stage 2: Voice & Character (Oct 16 – Nov 15)
+#1 Voice Bible Dialogue Alignment
+Here is the Voice Bible for my characters and here is Chapter [X].
+
+I want you to act as a professional line editor and apply ONLY the Voice Bible to the dialogue. 
+Do not change narration, plot, or scene structure. 
+Do not add or remove lines. Only adjust the words inside quotation marks so they fit the character’s voice and accent.
+
+For each change, output:
+
+Character: [Name]  
+Original Line: "[original dialogue]"  
+Revised Line: "[new dialogue]"
+
+#5 Character Consistency Audit
+Here’s Chapter [X]. Go through each speaking character and tell me:
+
+1. Does this dialogue/narration match their Voice Bible?  
+2. Flag any lines that sound out of character.  
+3. Suggest how to tweak word choice to stay true.  
+4. Tell me if the character voice drifted since earlier chapters.
+
+Format:  
+Character: [Name]  
+Strongest Moment: [line that nails the voice]  
+Weakest Moment: [line that drifts]  
+Fix Suggestion: [voice-corrected option]
+
+#6 Accent Authenticity Check
+Here’s Chapter [X]. Using the Voice Bible accents, check every character with a distinct regional accent.
+
+For each, flag:  
+- Lines that sound too modern or generic.  
+- Lines where the accent fades.  
+- Suggested revision to keep their regional flavor without overdoing it.
+
+Stage 3: Immersion & Style (Nov 16 – Dec 5)
+#4 Immersion/Tension/Momentum (ITM) Pass
+Here’s Chapter [X]. For each scene, break it down into:
+
+- Immersion: Where can I add 1 sensory detail to deepen setting?  
+- Tension: Is there emotional or situational pressure? If weak, suggest a tweak.  
+- Momentum: What moves forward? If nothing, suggest how to raise stakes.
+
+#3 Cut the Fat
+Here’s Chapter [X]. Identify paragraphs or lines that are overwritten, repetitive, or slow pacing.
+
+For each, output:  
+Original: [line/paragraph]  
+Issue: [why it’s weak]  
+Cut Option: [shorter version with same meaning]  
+Tension Option: [alternative that sharpens mood or pressure]
+
+#7 Combat & Action Flow Audit
+Here’s Chapter [X]. Analyze each action/combat sequence:
+
+1. Does description bog down?  
+2. Does the action reflect POV’s personality?  
+3. Are stakes/tension clear?  
+
+Suggest targeted fixes to streamline or heighten urgency.
+
+Stage 4: Final Polish & Proof (Dec 6 – Dec 20)
+#9 Grammar/Word Choice Polish
+Here’s Chapter [X]. Perform a word-level polish. For each flagged line, show:
+
+Original: [line]  
+Correction: [line with grammar/spelling fix]  
+Note: [why it reads better]
+
+Do not rewrite style—only polish mechanics.
+
+#10 Strengths & Weaknesses Report
+Here’s Chapter [X]. Give me an editor’s report:
+
+1. Two-paragraph summary of the chapter.  
+2. Strengths: list what works (voice, pacing, imagery, dialogue).  
+3. Weaknesses: list what falls flat.  
+4. Suggested Focus: top 3 things to fix.
+
+Be blunt, no flattery. Margin-note style feedback.
+
+Stage 5: Wrap & Prep (Dec 21 – Dec 31)
+Chapter Title Generator
+Here’s Chapter [X]. Suggest 3 possible titles (2–6 words each). 
+They must be evocative, tone-appropriate, and unique. 
+Explain why each fits and recommend the strongest one.
+
+Harmon’s Journal Entry
+Here’s Chapter [X]. Summarize in 1–2 sentences, written as Harmon’s private journal entry. 
+
+Voice: grim, clipped, duty-bound. Short, deliberate sentences. Rare humor, dark if present. 
+Must sound like Harmon’s honest thoughts, not narration.
+
+Final Global Checklist Prompt
+Here is my full manuscript. Using the Final Global Checklist, analyze the whole book for:
+
+- Name & lore consistency  
+- Pacing balance (Action/Intrigue/Dialog/Exploration)  
+- Emotional arcs flowing naturally  
+- Sensory variety (not just sight/sound)  
+- Metaphors fitting world/era/POV  
+- Distinct voices in dialogue-only form  
+- Any slow or dragging chapters  
+- Clear hook and core stakes (query-ready)  
+- Subtle series seeds without gaping loose ends
+
+Give a detailed report with flagged examples and suggested fixes. Do not rewrite scenes.

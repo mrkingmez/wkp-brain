@@ -1,0 +1,1 @@
+2026-11-04 | video-ugc | point man for Ian Griffin trailer: wrote Post-Production/reports/ian-trailer/03-production-shotlist-assets-schedule.md (shot list, assets, schedule, exports, costs, risks, checklists); logged WRENCH-2026-11-04-06 to 12. Calendar flag: brief weekdays off by one (11/4 is Wed). Nothing sent, spent, generated or pushed.

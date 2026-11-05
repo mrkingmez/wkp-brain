@@ -38,3 +38,6 @@ No hard date — Zac's framing: "anytime," gated mainly by getting the Fiverr pr
 [FILL IN — high school outreach list/script for the sports recruiting-reel niche]
 [FILL IN — color grading sample, once skill level supports it]
 [FILL IN — software/tools list per service type]
+
+## Studio Director (added 2026-11-04, Zac)
+The house now has a head: `studio-director` (spec at `.claude/agents/studio-director.md`). It takes any video production job, appoints one point man per project, orders the shared departments, gates the package and hands it to Zac. Project folders go in `Post-Production/projects/<project>/`. First project: Ian Griffin book trailer (point man chosen by the marketing-director run on 2026-11-04). Until the spec loads at the next session start, Jarvis covers the role.

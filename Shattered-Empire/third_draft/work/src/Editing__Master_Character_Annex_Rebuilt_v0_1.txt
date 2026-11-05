@@ -1,0 +1,667 @@
+MASTER CHARACTER ANNEX
+Rebuilt Canon Version 0.1
+Prepared as a clean replacement for the damaged Character Annex. This version prioritizes voice, depth, world texture, continuity, dialect, and character distinction. It is a working master, not a final locked bible. Anything marked TBD needs a later canon decision.
+Revision Purpose
+This document replaces the older Character Annex rather than patching it. The old annex contained duplicated entries, outdated voice rules, inconsistent spellings, and several flattened or repeated speech profiles. This rebuild uses the user confirmed canon hierarchy: latest user decision first, then recent chapter decisions, then current project memory, then older annex material only when it still fits.
+Canon Locks
+Correct spelling: Neavin.
+Correct spelling: Taerel.
+Correct title/name: Brother Aldrek.
+Correct nation: Aldoria.
+Correct nation: Moradaer.
+Lysana and Lysara Vaelor are the same character. Annex entry should be listed as Lysana / Lysara Vaelor.
+Selective phonetic spelling is allowed when it strengthens character voice, region, class, or emotional pressure.
+Detail should not be cut simply to speed up the read. Environmental change, world texture, emotional echo, and tactical grounding are valid reasons to keep detail.
+The annex must support stronger dialogue differentiation across region, class, profession, education, age, trauma, and stress behavior.
+Canon Authority Hierarchy
+1. Direct user corrections given during the rebuild.
+2. Most recent chapter decisions and current book notes.
+3. Finalized or most current chapter text.
+4. Current saved project memory.
+5. Old Character Annex material, only when not contradicted.
+6. Older drafts and older assistant outputs.
+Global Editing and Voice Rules
+Do not flatten character speech into clean modern prose.
+Do not remove dialect merely because it is not grammatically standard.
+Do not remove phonetic spellings when they are intentional, readable, and character appropriate.
+Do not make every character sound educated, calm, and polished.
+Do not cut environmental updates when the environment has changed. Wind, water, light, smoke, crowd movement, heat, cold, smell, pressure, and terrain can evolve inside a scene.
+Do not cut repeated contextual grounding when it gives the reader orientation, tension, or immersion.
+Do not prioritize speed over voice, world texture, tactical logic, or emotional truth.
+Do not let two major characters share the same speech profile unless the overlap is explained and differentiated.
+Every named character should have at least a short voice note, even if they only appear once.
+Editing should make the manuscript sound more like Zac wrote it on purpose, not more like neutral AI-polished fantasy.
+Accent and Dialect Rule
+Accent should be built in layers. The default order is word choice, sentence rhythm, grammar pressure, slang or shortened words, then selective phonetic spelling. Phonetics are spice, not soup. Use enough to make the voice audible, not enough to make the line unreadable.
+Allowed tools: ain't, reckon, ye, yer, gonna, ’em, nothin’, coulda, shoulda, figger, dropped g endings, regional idioms, literal translation, clipped grammar, and class specific vocabulary.
+Control rule: Use heavier dialect when the character is tired, angry, frightened, drunk, rushed, among their own people, or emotionally unguarded. Use lighter dialect in formal scenes if the character is consciously controlling their speech.
+Regional Speech Systems
+Aldoria
+Aldorian speech carries a Germanic influence. This applies broadly across the culture, though education, class, and personal control affect how visible it is.
+Formal even when casual. Contractions are used less often.
+Context often comes before the point.
+Action can feel slightly delayed in the sentence.
+Blunt directness can sound harsh to outsiders.
+Metaphors may feel literal or slightly translated.
+Precision is favored over clever wordplay.
+Bad news is not softened much.
+Sample line: "The plan, it is not without risk."
+Sample line: "This man you trust, why?"
+Sample line: "The door, it was open when I arrived."
+Sample line: "If what you say is true, and I do not yet believe it, then we have a problem."
+Sample line: "Under normal circumstance, I would agree. These are not normal."
+Sample line: "That opportunity is gone, yes."
+Sample line: "I do not think so."
+Sample line: "Your plan will fail."
+Sample line: "That is not good enough."
+Sample line: "You are wrong about this."
+Altisflumen
+Altisflumen speech should feel more proper, with an English influenced class structure. Because the culture uses firearms and practical shard powered tools, its vocabulary can be more technical, precise, and professionally divided by class.
+Educated classes sound polished and restrained.
+Military speakers use precise technical terms and controlled command language.
+Aristocrats and high officers carry formal diction, social restraint, and sharper class markers.
+Commoners may still sound cleaner than rural regions because cultural identity prizes order, education, and craft.
+Specialized terms include rifle, cartridge, powder charge, range marker, supported position, sightline, and volley.
+Opindale
+Opindale remains the most neutral Common speaking region. It is useful as the reader baseline. Court figures can be polished, commoners can be practical, but the region should not be overloaded with accent unless class, neighborhood, or profession demands it.
+Moradaer
+Moradaer is a confirmed Accord nation. Its detailed speech system still needs fuller worldbuilding, but current use should lean disciplined, direct, and shaped by military scouting culture when tied to Lysana / Lysara Vaelor. Avoid making it sound identical to Opindale.
+Rural Hill Country and Mountain Regions
+This is the strongest dialect zone. Neavin is the anchor example. Speech should carry land, labor, weather, mining, stone, rivers, family manners, and practical survival.
+Dropped endings and contractions are common.
+Phonetic spelling may be used selectively.
+Metaphors come from stone, timber, weather, rivers, mines, animals, tools, hunger, and distance.
+Manners can exist beneath rough phrasing.
+Do not confuse dialect with stupidity.
+Sample line: "Wind's gone mean. River knows it too."
+Sample line: "Ain't no clean road through that."
+Sample line: "Don't go puttin' court words on mountain trouble."
+Unnamed Eastern Countries
+Garr is currently tied to an unnamed eastern country with a Texan like flavor. This region needs future naming. Current speech should be plainspoken, warm when safe, blunt when pressured, and grounded in duty, roads, weather, horses, work, and practical leadership.
+Class and Profession Voice Systems
+Royalty
+Royal characters control rooms through implication, restraint, timing, and status. They do not need to shout. They speak with the expectation that consequences will follow.
+Formal but not always stiff.
+Trained to hide emotional reaction.
+Threats often arrive as courtesy.
+Love and politics can exist in the same sentence.
+High Nobles
+High nobles weaponize manners. They speak in implication, reputation, history, obligation, bloodline, and insult wrapped in silk.
+Minor Lords
+Minor lords are more insecure and more likely to overperform refinement. They posture, sharpen small insults, and watch the reactions of higher nobles.
+Guild Masters
+Guild masters speak with practical authority. Their language is shaped by craft, money, reputation, logistics, apprentices, deadlines, and risk.
+Middle Class
+Middle class speech should be more polished than poor/common speech but less socially weaponized than noble speech. They code switch around rank and authority.
+Poor / Common Folk
+Common speech should reflect region and work. More idioms, contractions, direct survival concerns, suspicion of officials, and practical metaphors.
+Soldiers
+Soldiers use short commands, gallows humor, nicknames, repetition under stress, and practical warnings. Veterans should sound different from fresh recruits.
+Guards
+Guards speak procedurally. They care about permissions, orders, gates, locks, badges, curfews, and not getting blamed.
+Priests / Clergy
+Priests speak with moral caution, ritual awareness, and measured restraint. Former warriors turned priests carry command beneath calm.
+Children
+Children must sound their age, class, education, fear, and upbringing. Noble children may imitate adult formality. Poor children may be sharp and observational. Traumatized children may speak too little or too plainly. Do not make children tiny adult scholars unless the story justifies it.
+Core Cast Full Profiles
+Harmon
+Tier: Tier 1 Core Cast
+Role / Function: Commander, strategist, mentor, and founding authority of the team.
+Current Status: Active. Trying to change, not merely lead.
+Origin / Class / Culture: Ancient Ringbearer roots, now speaking closest to neutral Common with old history beneath it.
+Core Description: A mixture of wise mentor and retired Tier 1 commander with grandfather warmth. He carries the weight of every life placed under his command and fears failure more than death.
+Voice: Calm command. Dry restraint. Warmth with steel ribs. He lets silence work.
+Speech Pattern: Measured sentences, little wasted language, tactical clarity, rare cleaned up military humor. He should not become a generic wise old man.
+Stress Behavior: Under pressure he gets calmer, lower, clearer, and more dangerous.
+Relationships: Team commander and moral anchor. Connected deeply to the Ringbearer past and to Adin.
+Continuity Notes: Harmon wants to retire from one kingdom and serve a higher calling for the realm. He is not staying as a kingdom asset in Book 2.
+Forbidden Mistakes: Do not make him over-explain. Do not make him a soft mentor only. Do not make him threaten when a quiet quid pro quo or silence is stronger.
+Sample line: "You can argue with me after we survive. I may even pretend to listen."
+Adin
+Tier: Tier 1 / Shadow Figure
+Role / Function: Ringbearer, strategist, secret mover, and father of Queen Mirelle.
+Current Status: Active shadow figure. Mirelle does not know he is her father.
+Origin / Class / Culture: Ancient world predating modern nations.
+Core Description: Publicly controlled and politically dangerous. Privately intimate and fractured when focused on Mirelle because she is his daughter.
+Voice: Public voice should evoke Luthen Rael from Andor: composed, layered, weary, dangerous, and revolutionary. Private voice is disturbed, intimate, and obsessive.
+Speech Pattern: Can sound normal in public. Alone, he may whisper as if speaking to someone unseen. His private language is protective, haunted, and dangerous.
+Stress Behavior: Under pressure, he becomes more precise and more willing to sacrifice pieces on the board.
+Relationships: Father of Queen Mirelle, though she does not know it. Connected to Harmon and the Ringbearer legacy.
+Continuity Notes: Uses the line or variation: Two taken care of. One to go. A flash of light from his hand may hint at the ring he wears.
+Forbidden Mistakes: Do not frame his fixation as simple lust. The intimacy is paternal, secretive, and warped by purpose.
+Sample line: "Empires do not fall because men hate them. They fall because enough men decide the cost of obedience has become too high."
+Luca
+Tier: Tier 1 Core Cast
+Role / Function: Centuries old trained assassin, shadow-bound warrior, social chameleon, and central mystery.
+Current Status: Active. Emotionally rebuilding through connection and grief.
+Origin / Class / Culture: Not easily defined. His existence changed after the death of his sister and his bond with Ariel.
+Core Description: For a long time, Luca functioned more as weapon than person. He tries to fit into whatever space the mission demands. Leadership and love unsettle him more than killing.
+Voice: Adaptive. Luca does not have one fixed public voice. He studies the room and becomes what will not stand out.
+Speech Pattern: He knows multiple still-spoken languages and may mimic people around him. Contractions, formality, accent, and word choice depend on who he is with and what cover he needs.
+Stress Behavior: Luca does get stressed, but it becomes focus. He narrows to the task and cuts away everything not useful.
+Relationships: Connected to Ariel, Aymir, Taerel, and Lysana. Does not know how to handle love or women well.
+Continuity Notes: His shadow power and bond with Ariel must remain mysterious and emotionally heavy. His final battle with the cracked onyx shard should not be reduced to normal magic.
+Forbidden Mistakes: Do not write him as the same grim assassin voice in every scene. Do not make him panic under stress. Do not make him casually confident in leadership or romance.
+Sample line: "I can be what they expect. That is easy. Being what you need is the part I have not learned."
+Nyssa
+Tier: Tier 1 Core Cast
+Role / Function: Scout, infiltrator, close combat specialist, and emotional blade of the team.
+Current Status: Active. Developing deeper feelings for Dain.
+Origin / Class / Culture: Opindale, urban and mercenary circles.
+Core Description: Trauma made her refuse powerlessness. Sarcasm, flirtation, and control are her armor, but beneath them is a scared little girl still hiding inside.
+Voice: Fast, sharp, flirtatious, sarcastic at about 8 out of 10.
+Speech Pattern: She flirts both as armor and for control. Her sarcasm should bite but still have charm. When emotionally exposed, she becomes softer and almost lost.
+Stress Behavior: Usually sharper and more sarcastic, but danger to someone she loves can make her brutally serious.
+Relationships: Sees Riven as family/brother. Develops complicated feelings for Dain after he earns her trust.
+Continuity Notes: Her vulnerability should not erase her edge. She is not only the flirty rogue. She is wounded, smart, and dangerous.
+Forbidden Mistakes: Do not make her flirtation only romantic. Do not make her sarcasm generic. Do not make her soften too easily.
+Sample line: "Do not mistake the smile for mercy. I smile at locked doors too, right before I pick them."
+Dain Kerswell
+Tier: Tier 1 Core Cast
+Role / Function: Fallen noble, duelist, infiltrator, and emotionally volatile court-trained survivor.
+Current Status: Active. Building a new identity after losing his old life.
+Origin / Class / Culture: Opindale, fallen noble court culture.
+Core Description: A fallen noble who still clings to his past but knows he must move forward if he wants to be anything now. His polish is both identity and armor.
+Voice: Polished court sarcasm, educated warmth when he chooses, tactical control, flirtation, and suppressed anger.
+Speech Pattern: Flirtatious with women in general. Takes a deeper liking to Nyssa when she helps him during the jailbreak. Under pressure he becomes more polished, not less.
+Stress Behavior: Anger sharpens into formality. He should use his anger issue more often, especially when pride, injustice, or humiliation hits.
+Relationships: Romantic tension with Nyssa. His brother would kill him if he returned to the family manor.
+Continuity Notes: Dain is Opindale, not Aldorian. His noble speech should not use Aldorian Germanic cadence unless imitating someone.
+Forbidden Mistakes: Do not make him generic noble snark. Do not forget the anger issue. Do not strip his fallen-noble ache.
+Sample line: "Careful. I am being civil because the room is crowded, not because I have forgotten how to be honest."
+Weslin
+Tier: Tier 1 Core Cast
+Role / Function: Fourteen year old apprentice, shard-touched observer, and emotionally vulnerable heart of the team.
+Current Status: Active. Recovering from tapping the shard in later Stormhaven chapters.
+Origin / Class / Culture: Opindale small town trade community. Homeschooled by a smart mother and a warrior father turned baker. Family has ancient/centuries-old connections.
+Core Description: A boy who wants to prove he matters. He is smart and observant, but he is still fourteen.
+Voice: Young, anxious, bright, homeschooled, not adult scholar.
+Speech Pattern: Stutters only under anxiety. When truly afraid, the stutter can disappear and be replaced by strange clarity. He should sound like a smart boy, not a university lecturer.
+Stress Behavior: Anxiety brings hesitation and stutters. Deep terror may make him suddenly clear and focused.
+Relationships: Supported closely by Reau and Aurelia after shard strain. Wants approval and safety.
+Continuity Notes: His intelligence should feel age-appropriate and shaped by home education, kindness, bakery life, and warrior-parent lessons.
+Forbidden Mistakes: Do not make him sound like an adult academic. Do not make the stutter constant. Do not flatten his fear into generic nervousness.
+Sample line: "I know what I saw. I wish I didn't, but I do."
+Caedric "Ash" Valen
+Tier: Tier 1 Core Cast
+Role / Function: Fighter with blacksmith roots, bruiser, jokester, and pressure valve of the team.
+Current Status: Active.
+Origin / Class / Culture: Working-class blacksmith background, with Brooklyn dockworker style energy.
+Core Description: Ash is blunt, physical, quick with his mouth, and sharper than people expect. Jokes are defense, reflex, and deliberate irritation depending on the moment.
+Voice: Working-class, blunt, rough, urban-flavored. Think blacksmith son with dockworker bite, not polished soldier.
+Speech Pattern: Short punches, physical metaphors, quick insults, casual rhythm, and phrases with a "forget about it" type flavor without using modern slang that breaks setting.
+Stress Behavior: Jokes by reflex until things are truly bad. If Ash goes serious, the reader should feel the floor drop.
+Relationships: Core team member. Often clashes, jokes, and anchors action through blunt reaction.
+Continuity Notes: His dialogue should have weight, grit, and comic timing, not clean fantasy banter.
+Forbidden Mistakes: Do not make him sound noble, scholarly, or calmly tactical unless the moment is intentionally surprising.
+Sample line: "Yeah, great. Locked door, blood smell, and a hallway that screams trap. Beautiful. Love what they've done with the place."
+Aurelia
+Tier: Tier 1 Core Cast
+Role / Function: Professor-calm con artist, dialect master, and identity-fractured operative.
+Current Status: Active.
+Origin / Class / Culture: Varied through mission history. Cultural voice depends on role being played.
+Core Description: Aurelia has lived inside too many roles, minds, and missions. She can imitate others convincingly, but she no longer knows who she really is.
+Voice: Default is professor-calm, controlled, analytical, and measured.
+Speech Pattern: Can shift dialects convincingly. Her true voice is unstable because so many minds and missions have eroded her center.
+Stress Behavior: Quiet, analytical, and surgical. Emotional breaks should feel rare and unsettling.
+Relationships: Protective around Weslin after shard strain. Tied into team trust through usefulness and mystery.
+Continuity Notes: Her voice changes should always serve character and mission, not author convenience.
+Forbidden Mistakes: Do not give her a stable "true voice" unless the scene is about that fracture. Do not make her generic elegant mentor.
+Sample line: "I can sound like anyone, if given time. That is not the same as knowing which one is me."
+Reau
+Tier: Tier 1 Core Cast
+Role / Function: Arthur's son, fighter, Ringbearer-linked figure, and serious team member.
+Current Status: Active. Wears a binding collar that suppresses magic and hides identity.
+Origin / Class / Culture: Opindale, Brotherhood-adjacent legacy through Arthur.
+Core Description: Plain, direct, serious, loyal. Carries his father's legacy and the weight of what was taken.
+Voice: Plain and direct. Restrained and serious. Emotion appears more through action than speech.
+Speech Pattern: Few wasted words. Not flowery. Not overly formal. The binding collar does not affect how much he speaks.
+Stress Behavior: Even quieter and more focused.
+Relationships: Arthur's son. Close supportive bond with Weslin during later chapters. Loyal to the team.
+Continuity Notes: Harmon knows who he is. Merrick took his sword. His collar suppresses magic and hides identity.
+Forbidden Mistakes: Do not make him overly poetic or silent because of the collar. Do not erase his plain directness.
+Sample line: "Say where to stand. I'll hold it."
+Neavin
+Tier: Tier 1 Core Cast
+Role / Function: Miner, mountain man, tracker, wilderness survivor, and earth-bonded stone manipulator.
+Current Status: Active.
+Origin / Class / Culture: Hill country / mountain mining background near Opindale.
+Core Description: Neavin is a miner and mountain man. His mother raised him right, giving him old-fashioned manners under the grit.
+Voice: Medium-heavy mountain dialect. Gruff, practical, sometimes courteous, with stone and weather in his mouth.
+Speech Pattern: Use slang, contractions, dropped endings, and selective phonetic spelling. Chapter 7 voice is the main anchor. Acceptable tools include ain't, reckon, ye, yer, gonna, ’em, nothin’, coulda, shoulda, figger if already established, and dropped g endings.
+Stress Behavior: Gets quieter and more focused when danger closes. Dialect may thicken when tired, angry, or among his own.
+Relationships: Team member. Earth creature bond allows stone manipulation and tunnel boring.
+Continuity Notes: He can be rough and mannered at the same time. Mother raised him with old-fashioned manners.
+Forbidden Mistakes: Do not clean him into rural gentleman. Do not erase phonetic flavor. Do not write dialect as stupidity.
+Sample line: "Ain't sayin' it's wise, sir. Just sayin' the mountain's already made up her mind, and she don't much care for ours."
+Lysana / Lysara Vaelor
+Tier: Tier 1 Core Cast / Major Supporting by arc
+Role / Function: Scout, elite fighter, emotional anchor for Garr, and Luca-team figure.
+Current Status: Dead by Chapter 40 aftermath unless scene occurs before that point.
+Origin / Class / Culture: Moradaer, military scouting culture.
+Core Description: Lysana wants permanence, family, and a life beyond endless conflict. Her instability growing up makes connection both desired and frightening.
+Voice: Confident, direct, energetic, warm when safe, bold when teasing.
+Speech Pattern: Teasing and direct, but not identical to Nyssa. Less weaponized flirtation, more soldier-scout energy and emotional bravery.
+Stress Behavior: Aggressive and fearless under pressure.
+Relationships: Important friend to Garr. Connected emotionally to Luca's team and Aymir/Taerel arc.
+Continuity Notes: Lysana and Lysara Vaelor are the same person. Use Lysana as story-facing name and Lysara Vaelor as formal/full name.
+Forbidden Mistakes: Do not list her twice. Do not make her a Nyssa duplicate. Do not forget her desire for stability.
+Sample line: "Easy. If death wanted us neat, it should've brought better manners."
+Garran "Garr" Thornebrook
+Tier: Tier 1 Core Cast
+Role / Function: Warrior, protector, and reluctant leader.
+Current Status: Active.
+Origin / Class / Culture: Unnamed eastern country, Texan-like flavor. Region needs final name.
+Core Description: A leader who is not sure he is good enough to lead. He has few friends, with Lysana being especially important.
+Voice: Plainspoken, grounded, regional warmth beneath duty. Not noble, not mountain dialect, not standard soldier-bark.
+Speech Pattern: Direct, practical, sometimes self-effacing. Uses simple phrasing with weight. Should feel like someone trying to stand steady even when unsure.
+Stress Behavior: Protective. Takes responsibility even when he doubts himself.
+Relationships: Close to Lysana. Team leader energy in progress.
+Continuity Notes: Needs his own flavor. Eastern country name TBD.
+Forbidden Mistakes: Do not make him bland loyal muscle. Do not make him sound like Neavin. Do not erase leadership insecurity.
+Sample line: "I ain't sayin' I know the right road. I'm sayin' somebody's gotta pick one before the dark does it for us."
+Riven Duskwind
+Tier: Tier 1 Core Cast
+Role / Function: Charming criminal, rogue, infiltrator, and survivor.
+Current Status: Active. Starts in prison in early tale.
+Origin / Class / Culture: Aldoria in old annex, but current canon should verify whether this remains true. Urban criminal networks.
+Core Description: A criminal survivor who wants security and connection without admitting the depth of it.
+Voice: Charming, cutting, survival-based, more direct and less round-edged than Nyssa.
+Speech Pattern: Quicker, more practical, and less ornamental than Nyssa. Follow the jailbreak version the user wrote.
+Stress Behavior: Focuses hard. Thief instincts take over. Humor gets sharper, not softer.
+Relationships: Sees Nyssa as family-like. Part of prison/jailbreak arc.
+Continuity Notes: Should be distinct from Nyssa. He charms, but survival comes first.
+Forbidden Mistakes: Do not make him a male Nyssa. Do not make him merely playful. Avoid the old "mischievous" style profile.
+Sample line: "I can lie prettier if you want, but the ugly version saves time."
+Brother Aldrek
+Tier: Tier 1 Core Cast
+Role / Function: Warrior priest, healer, and spiritual anchor.
+Current Status: Active.
+Origin / Class / Culture: Opindale, former knightly/military orders before joining faith of the Creator.
+Core Description: Former terrifying warrior who turned toward faith after recognizing what bloodshed had made of him. He seeks protection and redemption.
+Voice: Former knight and priest at once. Deliberate, reflective, humble, and grave.
+Speech Pattern: Avoids profanity almost completely. Uses moral and spiritual framing. When angry, the old command voice comes back.
+Stress Behavior: Becomes more commanding when angered. In battle, the warrior under the priest reappears.
+Relationships: Team healer and moral counterweight.
+Continuity Notes: Will not leave the wounded if he can help them, ally or enemy.
+Forbidden Mistakes: Do not make him soft only. Do not make him swear casually. Do not make him generic church voice.
+Sample line: "I have buried men for less than what you are considering. Do not ask me to bless it."
+Aymir
+Tier: Tier 1 Core Cast
+Role / Function: Soldier, protector, older brother of Taerel.
+Current Status: Active.
+Origin / Class / Culture: Altisflumen. Educated and shaped by homeland/military culture.
+Core Description: Older than Taerel. Disciplined military brother and risk taker. Protective, competent, and capable of soldier-buddy humor.
+Voice: Clear, structured, educated, military-shaped, but not humorless.
+Speech Pattern: Can joke like soldiers do with close comrades. Uses precise terms, tactical language, and controlled phrasing. More risk-friendly than Taerel.
+Stress Behavior: Protective and tactical. Chooses action quickly.
+Relationships: Older brother of Taerel. Protective of his brother's identity and safety.
+Continuity Notes: Should not be a duplicate of Taerel. He is more disciplined and also more willing to risk.
+Forbidden Mistakes: Do not make him overly stiff. Do not erase the risk-taker side. Do not give him Taerel's aristocratic Victorian flavor.
+Sample line: "Bad plan. Good timing. I have survived worse combinations."
+Taerel
+Tier: Tier 1 Core Cast
+Role / Function: Scout, marksman, tactical observer, younger brother of Aymir.
+Current Status: Active. Injured arm in later chapters.
+Origin / Class / Culture: Altisflumen. Aristocratic background with Victorian London flavor.
+Core Description: Younger than Aymir. Cautious after hiding for so long. Carries aristocratic polish and a gambling weakness.
+Voice: Victorian London aristocrat flavor: formal, dry, controlled, polished, and class-marked.
+Speech Pattern: Thinks in odds, wagers, tells, risk, and bad hands. Less talkative than Aymir. More cautious. Injury appears mostly through grunts and clipped pauses from pain.
+Stress Behavior: Caution sharpens. Pain may make him grunt, pause, or clip his words.
+Relationships: Brother of Aymir. Has small controlled bets with Aymir to keep gambling weakness contained.
+Continuity Notes: Correct spelling is Taerel. Not Tearel.
+Forbidden Mistakes: Do not make him sound like Aymir. Do not make him plain/direct only. Do not forget the aristocratic edge and gambling language.
+Sample line: "Poor odds, ugly table, and no honest dealer in sight. Still, I have played worse hands."
+Major Supporting Characters
+King Edric Wyman
+Tier: Tier 2 Major Supporting / Royalty
+Role / Function: King, Accord figure, husband of Queen Mirelle.
+Current Status: Active.
+Origin / Class / Culture: Royal house tied to his father's dream and bloodline right to unite the broken kingdom.
+Core Description: A political ruler who loves Mirelle and sees her as his equal. He is grateful that the attack on Aldoria accelerates his father's dream and his birthright.
+Voice: Royal, controlled, intimate with Mirelle, politically aware, and capable of warmth without losing command.
+Speech Pattern: Formal in public, more emotionally direct in private. Should not sound naive.
+Stress Behavior: Seeks control and clarity. Can press for truth without shouting.
+Relationships: Husband of Queen Mirelle. Political superior to Governor Drake in the scene context, though Drake was not appointed by him.
+Continuity Notes: Has used Harmon's mirror several times over 9-10 days and understands its basic function.
+Forbidden Mistakes: Do not say he appointed Meridian Drake as governor. Do not frame his father's dream as Mirelle's dream.
+Sample line: "Most royal marriages are arrangements between strangers. I was fortunate. I found an equal."
+Queen Mirelle
+Tier: Tier 2 Major Supporting / Royalty
+Role / Function: Queen, political manipulator, daughter of Adin without knowing it.
+Current Status: Active.
+Origin / Class / Culture: Royal court.
+Core Description: Coldly controlled, subtle, and dangerous. She manipulates the assassin with limited physical contact and promises without surrendering control.
+Voice: Elegant, controlled, intimate as a weapon, never careless.
+Speech Pattern: Can sound warm when manipulating. Chooses every phrase. Does not over-explain motive.
+Stress Behavior: Maintains control and redirects pressure.
+Relationships: Wife of Edric. Daughter of Adin, unknown to her. Manipulates assassin.
+Continuity Notes: Her line to Edric: "No. That is only for you. You're the only one man enough to keep up with me."
+Forbidden Mistakes: Do not make her reckless or physically out of control with the assassin. She is in control.
+Sample line: "You will have your true reward when the work is finished."
+Governor Meridian Drake
+Tier: Tier 2 Major Supporting / Political
+Role / Function: Governor, political hostage, attempted assassin under duress.
+Current Status: Active after Chapter 49 events, disgraced but emotionally released when told his family is safe.
+Origin / Class / Culture: His country selects governors through noble houses. Not appointed by King Edric.
+Core Description: A man forced toward treason by threats against his family. His tragedy is how close he came to irreversible betrayal.
+Voice: Formal, strained, increasingly fractured under the seven bell chimes.
+Speech Pattern: Political restraint cracking under paternal terror. Memories and guilt should interrupt his composure.
+Stress Behavior: Trembles between duty, friendship, fear, and desperation.
+Relationships: Husband of Karethiel. Father of Lysa and Camryn. Friend/political associate of Edric.
+Continuity Notes: Deadline: seventh bell or final ceremonial fire extinguished around 7:00 p.m., whichever comes first.
+Forbidden Mistakes: Do not make him a villain. Do not forget family coercion. Do not say Edric appointed him.
+Sample line: "If I fail them, there will be no office left in me. No title. No man."
+Karethiel
+Tier: Tier 2 Supporting / Family
+Role / Function: Governor Drake's wife.
+Current Status: Alive and rescued by later communication, unless scene occurs before reveal.
+Origin / Class / Culture: Governor's family / political household.
+Core Description: Central emotional hostage in Drake's coercion arc.
+Voice: TBD. Likely noble household poise under terror, maternal strength, and restrained fear.
+Speech Pattern: Should reflect rank, love for children, and endurance.
+Relationships: Wife of Meridian Drake. Mother of Lysa and Camryn.
+Continuity Notes: Name locked: Karethiel.
+Forbidden Mistakes: Do not leave her as generic wife if she appears on-page.
+Sample line: "If they use our fear, then let them choke on how long we endured it."
+Lysa
+Tier: Tier 3 Child / Supporting
+Role / Function: Child of Meridian Drake and Karethiel.
+Current Status: Alive and rescued by later communication, unless scene occurs before reveal.
+Core Description: Child hostage in Drake family arc.
+Voice: Child voice. Age TBD. Should not sound like an adult.
+Speech Pattern: Fear should simplify language. Noble upbringing may add manners even under terror.
+Relationships: Sibling of Camryn.
+Continuity Notes: Name locked.
+Forbidden Mistakes: Do not make her precocious unless canon supports it.
+Camryn
+Tier: Tier 3 Child / Supporting
+Role / Function: Child of Meridian Drake and Karethiel.
+Current Status: Alive and rescued by later communication, unless scene occurs before reveal.
+Core Description: Child hostage in Drake family arc.
+Voice: Child voice. Age TBD. Should differ from Lysa when ages are known.
+Speech Pattern: TBD by age and temperament.
+Relationships: Sibling of Lysa.
+Continuity Notes: Name locked.
+Forbidden Mistakes: Do not merge with Lysa.
+Ting
+Tier: Tier 2 Major Supporting / Political
+Role / Function: Political figure connected to Qing secret agenda and later diplomatic kindness.
+Current Status: Active / future plot relevant.
+Core Description: Carries a secret agenda tied to Qing. Later speaks kindly to a female delegate missing someone from her delegation.
+Voice: Diplomatic, controlled, culturally specific. Can become unexpectedly gentle when leveraging memory and family ties.
+Speech Pattern: Should balance strategic purpose with sincere personal warmth when discussing his wife's homeland and fond memories.
+Relationships: Will confront Harmon in Book 2 or 3 over Qing secret agenda.
+Continuity Notes: Later dialogue should ask a female delegate to stay longer for protection/trade negotiations tied to his wife's homeland.
+Forbidden Mistakes: Do not make him only a schemer. His kindness may be strategic and sincere at once.
+Sample line: "I wish I had stood inside the signing itself. Since I did not, allow me to build something worthy beside it."
+Arthur
+Tier: Tier 2 Historical / Family
+Role / Function: Father of Reau, Brotherhood figure, investigator of corruption.
+Current Status: Dead before current events.
+Origin / Class / Culture: Brotherhood / Ringbearer-linked. Last name TBD. Previously Vaelen but user wanted an unused name.
+Core Description: Suspected Brotherhood corruption and hid critical notes for his son before being killed.
+Voice: TBD. Likely disciplined, paternal, investigative, and morally burdened.
+Relationships: Father of Reau. Connected to Brotherhood corruption.
+Continuity Notes: Arthur's final last name remains TBD.
+Forbidden Mistakes: Do not lock Vaelen unless user confirms.
+Ariel
+Tier: Tier 2 Mythic Supporting
+Role / Function: Angel connected to Luca and his sister, co-creator of Shadow Waters.
+Current Status: Spiritually active / bonded influence.
+Core Description: Loved Luca's sister and refused to return to the hereafter after her death. Retains ability to hear prayers and echoes of the divine.
+Voice: TBD. Should feel divine, grief-bound, and otherworldly without becoming vague fog.
+Speech Pattern: Likely restrained, sorrowful, luminous, and precise.
+Relationships: Connected to Luca and Luca's sister.
+Continuity Notes: Needs fuller canon expansion.
+Forbidden Mistakes: Do not reduce Ariel to a power source.
+Luca's Sister
+Tier: Tier 2 Historical / Emotional Core
+Role / Function: Dead sister of Luca, loved by Ariel.
+Current Status: Dead. Name TBD.
+Core Description: Her death changed Luca's existence and led Ariel to remain in the mortal world.
+Voice: TBD if appearing in memory or flashback.
+Relationships: Sister of Luca. Loved by Ariel.
+Continuity Notes: Needs name and personality if she appears directly.
+Forbidden Mistakes: Do not leave her as only a plot device if she appears in scene.
+Lord Merrick
+Tier: Tier 2 Antagonist / Noble
+Role / Function: Antagonistic noble/political actor tied to imprisonment and larger corruption.
+Current Status: Active or prior antagonist, depending chapter.
+Core Description: Hired mercenaries to keep Riven imprisoned. Connected to plans involving a vault. Took Reau's sword.
+Voice: Noble authority with menace, ownership, and entitlement.
+Speech Pattern: Should sound controlled, superior, and strategic rather than cartoon cruel.
+Relationships: Enemy of Harmon's team, tied to Riven/Reau prison arc.
+Continuity Notes: Needs full profile from chapters.
+Forbidden Mistakes: Do not make him generic sneering lord.
+Lord Halvayne
+Tier: Tier 2 Political / Noble
+Role / Function: Host of the Chapter 34 tea party.
+Current Status: Active in Stormhaven arc.
+Core Description: Court intrigue figure. Hosts poetic, biting, tense political duel with Dain and Nyssa.
+Voice: Elegant, threatening, socially precise, theatrical in a controlled noble way.
+Speech Pattern: Introduces noble guests by role/game in the city. Uses implication and public pressure.
+Continuity Notes: Tea scene must name him, not Lord Velmir. A re-educator figure is mentioned as a threat.
+Forbidden Mistakes: Do not misname as Velmir. Do not make tea dialogue casual.
+Sample line: "In this city, Lord Theren, everyone plays. The wise choose a mask before one is chosen for them."
+Captain Vance
+Tier: Tier 2 Military Supporting
+Role / Function: Military leader receiving intel in Chapter 50 aftermath.
+Current Status: Active.
+Core Description: Professional soldier dealing with wreckage, losses, and urgent threat information.
+Voice: Command practical, field-weary, direct.
+Speech Pattern: Uses soldier economy. Should not over-talk grief.
+Relationships: Interacts with Aymir and Taerel after battle.
+Continuity Notes: Needs fuller extraction from Chapter 50.
+Sergeant Corren Vey
+Tier: Tier 2 Military Supporting
+Role / Function: Sergeant who gives dire warning about changeling and Red Cloak threat.
+Current Status: Active in Chapter 50 aftermath.
+Core Description: Experienced soldier carrying urgent warning.
+Voice: Gruff, direct, rank-aware, field practical.
+Speech Pattern: Short warning-focused statements with military urgency.
+Continuity Notes: Warns Aymir and Taerel in aftermath.
+Talron
+Tier: Tier 2 Supporting / Prisoner
+Role / Function: Captured soldier interrogated in Chapter 45.
+Current Status: Captured / interrogation source.
+Core Description: Reveals or helps reveal the name Sythrael Korr.
+Voice: Fearful soldier under pressure. Could be defensive, exhausted, indoctrinated, or broken depending scene.
+Speech Pattern: Should show rank, fear, and what he is hiding.
+Continuity Notes: Needs fuller Chapter 45 extraction.
+Torn / Teralon
+Tier: Tier 2 Antagonist / Former Student
+Role / Function: Former student of Harmon and duel opponent in Chapter 46.
+Current Status: Active/antagonistic in duel.
+Core Description: Emotional and martial challenge to Harmon. Name form needs final lock if both are used.
+Voice: Personal, wounded, confrontational, trained.
+Speech Pattern: Should carry history with Harmon. Not generic villain dialogue.
+Continuity Notes: Chapter 46 focuses on Harmon and Weslin in loft and duel with Torn/Teralon.
+Forbidden Mistakes: Do not lose the student-teacher emotional charge.
+Colton
+Tier: Tier 2 Antagonist Agent
+Role / Function: Steward who delivers the bloody lock of hair to Governor Drake.
+Current Status: Active in coercion arc.
+Core Description: Cold, precise, and threatening. Delivers the line: Do what is required of you. If you don't, it will be a work of art.
+Voice: Polished, cruel, controlled.
+Speech Pattern: Minimal. Threats should sound practiced, artistic, and bureaucratically calm.
+Continuity Notes: Name locked: Colton.
+Forbidden Mistakes: Do not make him shout. His calm is the threat.
+Sample line: "Do what is required of you. If you do not, it will be a work of art."
+Antagonists, Mythic Figures, and Shadow Powers
+Lucent
+Tier: Tier 2 Mythic Antagonist
+Role / Function: Adept Knight leader, creator-linked figure, divine-return focus for Red Cloaks.
+Current Status: Dead or awaiting resurrection influence, depending story reveal.
+Core Description: A central mythic antagonist whose vision shapes extremist belief. Red Cloaks worship him as next step in human evolution and a god.
+Voice: TBD. Should feel visionary, terrifying, charismatic, and absolute if appearing directly.
+Relationships: Father of First Sword, changeling son, and unknown third son.
+Continuity Notes: Pearl of Magic was created by Adept Knights led by Lucent as a conduit for power.
+Forbidden Mistakes: Do not make him merely evil wizard. He must feel like ideology with a face.
+Sythrael Korr
+Tier: Tier 2 Mythic Antagonist / Mystery
+Role / Function: Feared name central to Stormhaven mystery, ancient construct/divine vessel layer.
+Current Status: Deliberately uncertain for reader until reveal.
+Core Description: A name everyone seems to know but no one can explain. Later lore connects Korr to a vessel created from divine essence during the Age of the Etheric Divide, sealed beneath Stormhaven with blood-bound anchors.
+Voice: If speaking through a vessel, should feel ancient, ritualistic, alien, and controlled. If only mentioned, the name should create fear or silence.
+Continuity Notes: Korr takes physical form through a corrupted Brotherhood operative and leads the Red Cloaks. The name should remain mysterious in early Chapter 34.
+Forbidden Mistakes: Do not over-explain Korr before the intended reveal.
+The First Sword
+Tier: Tier 2 Antagonist / Secret Heir
+Role / Function: High-ranking Brotherhood member and secret son of Lucent.
+Current Status: Active or hidden, identity secret.
+Core Description: Did not know he was Lucent's son until approached by his changeling brother.
+Voice: TBD. Should reflect Brotherhood discipline, command, and identity shock.
+Relationships: Son of Lucent. Brother to changeling son and unknown third son.
+Continuity Notes: His identity as Lucent's son is secret.
+Forbidden Mistakes: Do not reveal secret too early.
+Lucent's Changeling Son
+Tier: Tier 2 Antagonist
+Role / Function: Changeling son of Lucent who launches attack at the pass.
+Current Status: Active antagonist.
+Core Description: Manipulative, infiltrating, and central to the sons conflict.
+Voice: TBD. Should be adaptive but not identical to Luca's chameleon skill.
+Relationships: Brother of First Sword and unknown third son.
+Continuity Notes: Needs name if one exists.
+Lucent's Unknown Third Son
+Tier: Tier 2 Mystery Character
+Role / Function: Third son of Lucent, role still being developed.
+Current Status: Unknown.
+Core Description: Reserved mystery slot.
+Voice: TBD.
+Continuity Notes: List as Unknown Third Son until final name and function are confirmed.
+Mindflayer General
+Tier: Tier 2 Antagonist / Psychic
+Role / Function: Hidden manipulator behind Stormhaven control network.
+Current Status: Active during Stormhaven arc.
+Core Description: Uses a control device on the tallest tower to manipulate limited targets after ritual/ceremony. Guides Red Cloaks and helps install the tower device.
+Voice: Psychic, cold, strategic, alien intelligence. Should not sound like a human noble.
+Continuity Notes: Device has limited capacity and does not control everyone. People are controlled after ritual or ceremony.
+Forbidden Mistakes: Do not make the tower control all citizens directly.
+Veydrassil / Red Cloaks
+Tier: Faction
+Role / Function: Radical Adept faction worshiping Lucent, publicly called Red Cloaks.
+Current Status: Active terrorist faction.
+Core Description: Former Brotherhood defectors, Adepts, zealots, and pawns of Moreland. They believe Lucent's return is inevitable and the world must be prepared.
+Voice: Religious zealotry plus military discipline. Rank and background should affect individual speech.
+Continuity Notes: Moreland secretly funds and manipulates them while publicly distancing itself.
+Forbidden Mistakes: Do not call them only terrorists without the religious and military structure. Do not forget Veydrassil is their true name.
+Additional Named Characters and Short Entries
+Braden / Baldwin
+Tier: Tier 4 Minor Noble
+Role / Function: Mid-noble bully or insult source in early chapter context. Name needs final confirmation.
+Current Status: Minor character, if retained.
+Core Description: Cruel young noble who weaponizes class and sexual reputation.
+Voice: Petty, entitled, sharp, trying to sound older and more powerful than he is.
+Speech Pattern: Uses status insults and class policing.
+Continuity Notes: Confirm whether Braden and Baldwin are separate or typo variants.
+Lord Velmir
+Tier: Tier 4 Noble / TBD
+Role / Function: Old/incorrect tea party host name or separate noble if retained.
+Current Status: Needs confirmation.
+Continuity Notes: Chapter 34 tea party host is Lord Halvayne, not Lord Velmir. If Velmir remains, he needs separate function.
+Re-educator Figure
+Tier: Tier 4 Political Threat
+Role / Function: Threat named or referenced during Halvayne tea scene.
+Current Status: Needs name if recurring.
+Core Description: Symbol of Stormhaven loyalty testing and coercion.
+Voice: Should sound institutional, clinical, and threatening if on-page.
+Continuity Notes: Currently a function more than a named character.
+Governor's Family
+Tier: Family Group
+Role / Function: Political hostages and emotional stakes for Drake.
+Current Status: Karethiel, Lysa, and Camryn have separate entries.
+Continuity Notes: Do not collapse them into abstract stakes in scenes where they appear.
+The Fence Who Saves Riven
+Tier: Tier 4 Criminal Contact
+Role / Function: Criminal contact who saves Riven and gives intel.
+Current Status: Active in relevant arc.
+Core Description: Not mind-controlled. Gives intel about Red Cloak actions and purge of the criminal undercity.
+Voice: Criminal undercity practical. Nervous but useful. Should not sound noble.
+Continuity Notes: Needs name if available.
+Forbidden Mistakes: Do not mark as mind controlled.
+Lord Merrick's Mercenaries
+Tier: Minor Antagonist Group
+Role / Function: Mercenaries hired to keep Riven imprisoned.
+Current Status: Factional minor antagonists.
+Voice: Paid steel. Practical, threatening, less ideological than Red Cloaks.
+Continuity Notes: Includes brute Red Adept mercenary on lower prison floor.
+Red Adept Brute Mercenary
+Tier: Tier 4 Minor Antagonist
+Role / Function: Brute Red Adept fought by Ash in prison sequence.
+Current Status: Combat antagonist.
+Voice: Physical intimidation, sparse speech, violent confidence.
+Continuity Notes: Needs name if given in chapter.
+Stormhaven Council Members
+Tier: Political Group
+Role / Function: Political figures under guard, scattered, or controlled.
+Current Status: Varied.
+Voice: Noble/political voices with fear, caution, and factional pressure.
+Continuity Notes: Some members scattered. Council under strict guard.
+Female Delegate Missing Someone
+Tier: Tier 3 Delegate
+Role / Function: Delegate Ting later treats kindly while negotiating protection/trade.
+Current Status: Needs name and country.
+Core Description: Missing someone from her delegation. Represents kingdom tied to Ting's wife's homeland and fond memories.
+Voice: Diplomatic, worried, cautious.
+Continuity Notes: Add dialogue where Ting expresses regret not being part of signing and asks her to stay longer.
+Named Soldiers and Archers from Luca Battle Chapters
+Tier: Extraction Queue
+Role / Function: Battlefield support characters in Chapters 39-40.
+Current Status: Needs extraction from final chapters.
+Core Description: Should not remain faceless if named. Each named soldier/archer needs a one-line voice note and fate if known.
+Voice: Soldier voices should vary by age, experience, fear, humor, and role.
+Continuity Notes: Current known group: 13 allied soldiers, 5 archers, 3 civilian medics, able-bodied civilians at cavern. Specific names to extract in next pass.
+Faction and Group Voice Rules
+Brotherhood
+The Brotherhood was created shortly after the Second Magic War to police magic, regulate magical items, and secure dangerous artifacts. Voice should carry discipline, training, old institutional authority, and in corrupted members, moral rot beneath formal duty.
+Ringbearers
+Ringbearers should feel older than the current political moment. Their speech may be modernized through long adaptation, but their perspective is ancient. Harmon and Adin should not sound like identical old men.
+Adept Knights
+Historical order tied to Lucent and the Pearl of Magic. If shown in flashback or lore, their speech should feel elevated, ideological, and dangerous with certainty.
+Breachborn Religion
+Religious movement around bonding through breaches. Followers may speak with awe, fear, devotion, and misunderstood spiritual vocabulary. Avoid making all adherents sound identical.
+Moreland Agents
+Moreland influence should sound strategic, deniable, and politically cold. Public distance, private funding, and indirect destabilization shape their language.
+Voice Collision Audit
+These pairs must be checked in every future voice pass.
+Luca vs Aymir vs Taerel: Luca adapts to fit the room. Aymir is military disciplined and risk-taking. Taerel is aristocratic, cautious, and odds-minded.
+Nyssa vs Riven: Nyssa circles with flirtation and sarcasm. Riven cuts faster with criminal survival logic.
+Harmon vs Brother Aldrek: Harmon is command and strategy with grandfather warmth. Aldrek is priest-warrior redemption with moral gravity.
+Dain vs King Edric: Dain is fallen noble sarcasm and anger. Edric is royal authority and political intimacy.
+Neavin vs Garr: Neavin is mountain miner dialect and stone/weather practicality. Garr is eastern/Texan-like plainspoken leadership insecurity.
+Ash vs generic soldiers: Ash has working-class dockworker/blacksmith bite. Soldiers use rank, role, gallows humor, and battlefield economy.
+Aurelia vs anyone she imitates: Aurelia may sound like others intentionally, but the scene must know she is performing.
+Forbidden Mistakes Master List
+Do not use the old rule banning phonetic accent spelling.
+Do not smooth Neavin into generic rural gentleman.
+Do not make Luca sound like the same grim assassin in every scene.
+Do not make Weslin sound like an adult scholar.
+Do not make Taerel sound like Aymir.
+Do not make Dain lose his fallen-noble anger.
+Do not make Nyssa's flirtation only romantic.
+Do not give Aurelia a stable true voice.
+Do not list Lysana and Lysara Vaelor separately.
+Do not call Tearel the correct spelling. Correct is Taerel.
+Do not call Naevin the correct spelling. Correct is Neavin.
+Do not call Aldonia the correct country. Correct is Aldoria.
+Do not claim King Edric appointed Governor Drake.
+Do not make Queen Mirelle lose control with the assassin.
+Do not reduce Red Cloaks to generic terrorists. They are Veydrassil, a Lucent-worshiping Adept faction backed and manipulated by Moreland.
+Do not cut world texture merely because readers already know the location. If the river, wind, light, sound, crowd, weather, or danger changes, the detail may belong.
+Open Questions for Later Canon Lock
+Harmon full name, if any.
+Luca's sister's name and personality.
+Arthur's final last name.
+First Sword real name.
+Lucent's changeling son name.
+Lucent's third son name and role.
+Final name of Garr's eastern homeland.
+Whether Riven's old Aldoria origin remains canon.
+Whether Braden and Baldwin are separate characters or typo variants.
+Specific names, voices, and fates of soldiers, archers, civilians, and medics from Chapters 39-40.
+Full Moradaer speech system.
+Specific age and speech differences between Lysa and Camryn.
+Usage Rule for Future Editing Passes
+Before any chapter edit, the editor should check character voice against this rebuilt annex and the latest user correction. The correct starting statement should be: Canon checked against repaired Character Annex and current memory. Beginning analysis.
+Any future patch map must label suggested removals carefully. Repetition is not a cut reason by itself. Use categories like Keep: world texture, Keep: environmental progression, Keep: character voice, Keep: emotional echo, Fix: clarity only, Fix: tense drift, Fix: character voice mismatch, Fix: continuity contradiction, and Possible cut only if truly dead weight.

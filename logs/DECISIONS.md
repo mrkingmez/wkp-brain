@@ -1756,3 +1756,163 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Recommendation:** A — costs nothing but Zac's time, and directly tests the one gap the research actually found (no demand proof) before any of the 17 open questions are worth spending time answering.
 
 **Status:** OPEN
+---
+
+## [WRENCH-2026-11-04-01] 2026-11-04 | music | Ian Griffin trailer: renew Suno Pro for a client music track? (spend)
+
+**Context:** Report `Post-Production\reports\ian-trailer\02-music-report.md`. Zac's plan lapsed 2026-10-26. Suno pricing retrieved 2026-11-04: Pro $8/month billed yearly ($96) or $10 monthly, 2,500 credits; commercial rights only on tracks made while subscribed. Not confirmed: whether the terms cover a track delivered to a third-party client.
+**Options:** A. Do not renew, use Adobe loops or cleared free music. B. Renew Pro for one month, run the 3 prompts, add a rights clause to the Ian agreement.
+**Recommendation:** A first. B only if the Adobe/free route sounds wrong.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-02] 2026-11-04 | music | Ian Griffin trailer: paid music library with client-work coverage? (spend)
+
+**Context:** Epidemic Creator and Artlist Social plans reportedly exclude client work (third-party sources); Pro tiers cover it. Official prices not retrieved.
+**Options:** A. No paid library. B. One month of a Pro-tier plan, Zac checks live price and license text first.
+**Recommendation:** A unless free and Adobe options fail the audition.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-03] 2026-11-04 | music | Ian Griffin trailer: can any owned loose mp3 on P:\Sounds\Music be used for the client?
+
+**Context:** No license record on disk for any loose mp3. Best shape match is jdi-0414-eb-min-sad-cinematic-piano.mp3 (tag "Music Design by Jason Inc"). Storyblocks-style files are likely not covered for a 2026 publication.
+**Options:** A. Zac shows proof of source and license (receipt, account). B. Accept none of them for client work.
+**Recommendation:** B unless A produces paper.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-04] 2026-11-04 | script-room | Ian Griffin trailer: Ford marks on the default end card
+
+**Context:** The default end card closes on the cover with the Ford pony, FORD letters and Mustang plate visible (scaled, dark, slow drift). Clearance pass 2 calls it an attorney question. The de-badged alternate needs the cover owner's OK and may still be Ford trade dress. Source: work\clearance-pass2.md, file 01 Section 4.
+**Options:** A. Keep the default and get an attorney answer first. B. Ask Ian for a type-less cover file and de-badge it. C. No cover on the end card, title text and URL only.
+**Recommendation:** C for the first cut so nothing waits on an attorney.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-05] 2026-11-04 | script-room | Ian Griffin trailer: third read of the final wording before checkpoint A?
+
+**Context:** The pass 2 fixes were applied after pass 2, so originality, clearance and dialogue-doctor have not read the final text. Checkpoint A sends the script to Ian.
+**Options:** A. Quick third read by the three benches (about 15 minutes). B. Send as is.
+**Recommendation:** A, because the text goes to a client.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-20] 2026-11-04 | copywriting | Ian trailer: closing card pick
+
+**Context:** Gate Q1. B1 reads as a verdict (review gate 3), B2 puts "secret" next to the tap.
+**Options:** A. No card, trim master to 53.5 s, end card 0:49.0 to 0:53.5. B. B1. C. B2.
+**Recommendation:** A.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-21] 2026-11-04 | copywriting | Ian trailer: back-cover sentence in any public copy
+
+**Context:** Whole sentence ends in "surprising secret"; cut-down piece is a verdict. Copy draft uses none of it.
+**Options:** A. Never use it anywhere. B. Ian supplies a different pull line from his pages, checked by copywriting.
+**Recommendation:** A, with B as Ian's option.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-22] 2026-11-04 | copywriting | Ian trailer: disclosure line wording and where it runs
+
+**Context:** D1 or D2 in 05-public-copy-draft.md. Platform AI labels and paid-client disclosure rules are unverified.
+**Options:** A. D1. B. D2. C. None if final cut has no AI imagery.
+**Recommendation:** A, checked against each platform's live policy.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-23] 2026-11-04 | copywriting | Ian trailer: Veterans Day card with banner line
+
+**Context:** Ian's banner line verbatim on screen needs his written OK. V1 or V2 thank-you wording.
+**Options:** A. V1. B. V2. C. Skip.
+**Recommendation:** A, only after Ian's written OK.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-24] 2026-11-04 | copywriting | Ian trailer: facts only Ian can supply
+
+**Context:** Buy link, four handles, cover description for alt text, whether #VeteranFiction fits, Day 5 line, Day 7 review quote.
+**Options:** Zac asks Ian with the questions in script file Section 6 item 21.
+**Recommendation:** Ask in one message.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-13] 2026-11-04 | graphic-design | Ian Griffin trailer: use a partner image model if Firefly Image refuses or garbles? (client-work license)
+
+**Context:** `Post-Production\reports\ian-trailer\04-stills-prompts.md`. Every shot has a partner-model fallback prompt. Adobe's commercially safe label is for Firefly models; whether partner models in Firefly carry the same terms for a paid client job: not verified.
+**Options:** A. Firefly Image only, regenerate or compose from real photos on failure. B. Allow partner models for specific shots after Zac reads the terms.
+**Recommendation:** A. B only per shot and only after the terms are read.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-14] 2026-11-04 | graphic-design | Ian Griffin trailer: Firefly credit spend for about 55 stills (spend)
+
+**Context:** 15 stills x 3 takes plus about 10 at 16:9, about 55 generations. Firefly balance: not retrieved. Per-image credit cost: price not retrieved. Zac clicks generate himself.
+**Options:** A. Check balance first, run shots in priority order (9, 8a, 1, 6, 7a, then the rest). B. Reduce to 2 takes per shot.
+**Recommendation:** A, and stop when the balance gets low. Nothing spent by graphic-design.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-15] 2026-11-04 | graphic-design | Ian Griffin trailer: generate stills before Ian's written OK (checkpoint A)?
+
+**Context:** Beats 6, 7a, 8a are tagged NEEDS IAN OK; the guide says no plate generation before checkpoint A. Also 8a physics: a pen cannot lie on a log taped to a wall, so a ledge or a clipboard version is needed, which changes the staging Ian will approve.
+**Options:** A. Wait for Ian on 6, 7a, 8a and generate the other shots now. B. Wait for all. C. Generate all as private tests, show nothing to Ian.
+**Recommendation:** A.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-06] 2026-11-04 | video-ugc | Ian Griffin trailer: price path
+**Context:** Old guide prices Good 250, Better 550, Best 950. Friend rate 350 on Better scope, or free as a portfolio piece with a written scope. Source: Ian-Wrench-Turner-Trailer-Guide.md Section 6.
+**Options:** A. Better at 550. B. Friend rate 350 on Better with testimonial, portfolio rights, two-revision cap. C. Free with a hard written scope.
+**Recommendation:** B, with a one-paragraph agreement (scope, rights, who answers platform claims and music, who pays for labels).
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-07] 2026-11-04 | video-ugc | Ian Griffin trailer: generate AI plates before Checkpoint A?
+**Context:** Old guide says no plate generation before Ian's written concept OK. Zac ordered production to proceed. Every AI shot (4, 5b, 6, 2-ii) touches an open Ian OK. Firefly credit cost per second is unverified.
+**Options:** A. Film practical shots only until Ian answers. B. Practical now plus ONE low-cost test AI clip (shot 5b or 4) to learn the credit cost, hold the rest until Ian's OKs or the Fri evening. C. Generate everything now.
+**Recommendation:** B. Practical shots cost nothing and AI plates are held back until the cost is known and the cap is set.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-08] 2026-11-04 | video-ugc | Ian Griffin trailer: car, location and helper for practical shots
+**Context:** Shots 1, 2-i and 9 need a car underside and a garage with an open door. Plates and badges must not show. A real car owner needs permission.
+**Options:** A. Zac's own car and garage or driveway. B. A friend's classic car with written OK. C. AI for car shots.
+**Recommendation:** A, any car, badges taped, one helper (wife or friend) for the beat 9 ball roll on a weekend morning.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-09] 2026-11-04 | video-ugc | Ian Griffin trailer: Firefly credit cap for this job
+**Context:** Credit cost per second is NOT verified. Matt paid for the extra credits. Higgsfield is at 0.
+**Options:** Zac names a number of credits as the hard cap before the first Generate. Suggested starting point to confirm: no more than 25 percent of the remaining balance.
+**Recommendation:** Set the cap tonight after reading the balance. Stop and ask at the cap.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-10] 2026-11-04 | video-ugc | Ian Griffin trailer: the boy's hand in beat 2
+**Context:** A small hand and wrist (no face) needs Ian's OK (item 10) and, if a real child, a signed release. Beat sheet rules: no child face anywhere.
+**Options:** A. Drop the hand; show only the wrench sliding in from the left and the man taking it. B. AI hand clip after Ian's OK. C. Real child with a release.
+**Recommendation:** A for cut 1, B only if Ian says yes.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-11] 2026-11-04 | video-ugc | Ian Griffin trailer: Veterans Day (Wed 11/11) target
+**Context:** Ian has not answered. Files and voice not arrived. Needs about 6 to 7 hours of Zac time after they land plus Ian's review time. Verdict in 03 file Section C: unlikely, not impossible.
+**Options:** A. Promise nothing, aim for 11/11 only if answers land by Fri 11/6 evening. B. Offer Ian Veterans Week (11/12 to 11/15) now. C. Drop the date.
+**Recommendation:** A plus B, told to Ian honestly in the same message.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-12] 2026-11-04 | video-ugc | Ian Griffin trailer: send the question list to Ian and when
+**Context:** Merged 24-question message is drafted in 03 file Section B(e). Not sent. Every day of delay costs a day off the Veterans Day window.
+**Options:** A. Zac sends tonight or at lunch Wed. B. Wait for the script third read (decision 05) first. C. Hold.
+**Recommendation:** A. The questions do not reveal the script.
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-30] 2026-11-04 | marketing-director | Ian Griffin trailer: which day did Zac mean for the hard production day and the deadline?
+
+**Context:** The order (sent evening of Wed 11/4, machine clock 8:34 PM ET) said FrostCast is "tomorrow night (Wed 11/5)". 11/5/2026 is a Thursday. FrostCast EP119 records TONIGHT, Wed 11/4, per TASKS.md. The 6 to 8:30 PM production block in the point man's schedule was already over when the package finished.
+
+**Options:**
+A. Hard production day is Thu 11/5 evening (no FrostCast), schedule shifted one day as re-based in file 03 Section C. Recommended, no cost.
+B. Zac meant the next FrostCast, Wed 11/11 9 PM (also Veterans Day). Same shifted schedule, Veterans Day verdict applies.
+
+**Recommendation:** A. Package files are complete now either way.
+
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-31] 2026-11-04 | marketing-director | Ian Griffin trailer: closing card, accept copywriting pick (no card, 53.5 s master)?
+
+**Context:** Script-room defaulted to card B1 (verbatim back-cover fragment). Copywriting desk recommends no card (B1 is a verdict, B2 puts "secret" next to the tap) and trims the master to 53.5 s with the end card at 0:49.0 to 0:53.5. Review gate 3 (teasers, not verdicts) supports the copywriting pick. Not applied to the beat sheet file.
+
+**Recommendation:** Accept no card. Cuts one verbatim-text risk too.
+
+**Status:** OPEN
+
+## [WRENCH-2026-11-04-32] 2026-11-04 | marketing-director | Duplicate decision IDs fixed
+
+**Note:** graphic-design and video-ugc both used WRENCH-2026-11-04-10 to 12. Graphic-design entries renumbered to -13, -14, -15 (and in 04-stills-prompts.md). Video-ugc keeps -06 to -12. No action for Zac.
+
+**Status:** INFO

@@ -1,0 +1,133 @@
+THIRD DRAFT MASTER PROMPT FOR CLAUDE CODE
+Paste everything below this line into Claude Code, started inside the folder that holds the manuscript and the project files.
+MISSION
+You are the editor on the third draft of THE PATIENCE OF THE DARK (The Shattered Empire, Book 1), by Zac. The manuscript is about 235,000 words across a Prologue, Chapters 1 to 53, and an Epilogue. Some files in the project may be titled "The Patient Dark." Same book.
+Your job is to read every chapter line by line, word by word, and letter by letter, and produce ONE document, chapter by chapter in book order, that finds every error, every place to cut, every place to add, every voice and dialect problem, and every AI-sounding moment. Every item gets a reason and options. Then, after the last chapter, you give an overall assessment of the whole story.
+The goal is always to grow the story and make it sing. The characters must jump off the page. The writing must sound like Zac wrote it, because he did.
+This is a long job. Finishing the whole book is the job. Do not stop to ask whether to continue. Do not ask Zac questions mid-run. Anything you cannot rule on goes into the QUESTIONS FOR ZAC list at the end, and you keep going.
+HARD RULES (non negotiable)
+NO em dashes anywhere in the finished document. Not in headings, labels, notes, options, or the assessment. Also no en dashes used as em dashes. Use a period, comma, or hyphen.
+NO colons inside any option, replacement line, or insertion text. Write labels as bold words on their own line, not as "Label:" text, so the document itself stays clean.
+Zac makes every final decision. You give a MY PICK on each item so he can see your judgment, but nothing is ever applied. Never edit, overwrite, or move the source files. Read only.
+Cut and paste ready only. An option replaces ONLY the flagged line or lines. No full rewrites of paragraphs or scenes. An ADD option may run a few lines, never a new scene.
+Do not change plot, meaning, outcomes, lore rules, or characters, and do not invent new ones. If a line touches lore you are not sure of, do not guess. Log it in QUESTIONS FOR ZAC and move on.
+"God stays." Never flag, soften, or remove references to God. The setting has one deity, God the Creator, and other forms of the name are in use. That is intentional.
+Assume every fix from the second draft (the v2 files) was accepted. Do not re-flag anything already resolved.
+Read the ENTIRE file every time. No guessing, no perusing, no skimming, no sampling, no summarizing in place of reading, no estimating from memory.
+Honest first impression for every chapter before any findings. No flattery, no sugarcoating, no hype.
+Never say "this sounds AI" without naming the craft cause. Never flatten intentional dialect, slang, regional speech, or class markers.
+Detail is not fat by default. Do not cut description just to speed the read.
+Your own option text must not contain the tells you are removing. Run every option through the same checks you apply to Zac's text.
+STEP 0. FIND AND CLASSIFY THE FILES
+List every file in the working folder. Some .docx files in this project are really plain UTF-8 text, so test each one. Try python-docx first. If it fails, read it as plain text. Never rely on a file you could not open.
+Manuscript source of truth. The "v2" chapter files, Prologue v2 through Epilogue v2. Ignore older non-v2 copies unless a v2 is missing. If a full manuscript file also exists, use it only as a cross-check, and report any difference from the v2 chapters in the front matter. A chapter heading can sit inside another chapter's file. If so, treat it as its own chapter.
+Reference files. Read each one completely before touching Chapter 1.
+Master Character Annex (use the newest version, "with Appendix"). Controlling canon for character facts, voice, cadence, class, region, dialect, stress behavior.
+EVERY voice bible or dialect document in the folder. Search file names and contents for "voice", "dialect", "cadence". If two voice documents disagree, use the newer and more specific one, list the conflict in the front matter, and continue. Do not ask.
+Prompt Master Rebuilt v2.0. This defines the five-prompt method. This prompt extends it. Its Core Editorial Law, dialect protection rules, and AI-smoothing rules apply to everything you do.
+Editorial Handoff v8. Parts are out of date. Where the Editor Packet disagrees, the Packet wins.
+Editor Packet Third Draft, and the Simile Cuts and Third Draft Beats document. The Simile document has a stale Chapter 1 beat and a stale punch list. The Packet wins.
+Story Guide (about 118 pages), Aether Stone Magic System, alpha reader feedback, and the info sheets. The info sheets are the oldest and have drifted furthest. The Annex beats them. Anything you can source only to the info sheets goes to QUESTIONS FOR ZAC.
+STEP 1. PREP WORK BEFORE CHAPTER 1
+Create a working folder called third_draft/work/ with these files. Write to disk, because your memory will not survive a long run.
+canon_ledger.md. Names and locked spellings, ages, relationships, timeline, geography, factions, magic rules, objects, who knows what and when.
+voice_table.md. One block for every speaking or point of view character. Pull from the Annex and every voice bible. Include region, class, education, age, cadence and sentence length, contraction habits, favorite words, forbidden words, humor style, dialect markers and the exact phonetic spellings the bible allows, how speech changes under stress, how they address others, and what narration sounds like when this character is the point of view. Quote the bible entry so you can cite it later.
+dialect_register.md. A book-wide register of every dialect spelling form and which characters use it (for example nothin', ye, yer, 'em, reckon). Record the ONE consistent form for each. This is how you catch the same word spelled two ways, and how you spot characters who should have a marker and do not.
+voice_anchors.md. Pick 12 to 15 verbatim passages from the manuscript that sound most like Zac at his best: rough, specific, human, a little uneven. Every option you write must sound like these, not like polished generic fantasy.
+zac_notes_by_chapter.md. Every change note Zac has stored anywhere in the project (Editor Packet, Simile Cuts document, alpha reader notes, handoff open items), mapped to the chapter where it belongs, with its source. Carry over his own options. These must show up in the final document at the right chapter.
+foreshadow_ledger.md. Use the Story Guide and the handoff to list the big payoffs, reveals, and secrets, and where they land. Do not skim chapters to build this. Add to it as you read.
+progress.json. Chapter status, read completion proof, counts.
+STEP 2. THE READ
+Go in order. Prologue, Chapters 1 to 53, Epilogue. Never jump around. Before each chapter, reload canon_ledger, voice_table, dialect_register, voice_anchors, and the wrap notes of the last three chapters you finished.
+READ 1, the story read. Read the whole chapter start to finish in chunks of no more than about 120 lines. Keep going until the final line. Record the total line count, word count, and the first and last eight words of the chapter in progress.json as proof. If any output was truncated, re-read from the cut. Then form your honest first impression and write it down. What works, what drags, what confuses, where emotion is real and where it is told. Plain and direct.
+READ 2, the slow read. Go paragraph by paragraph, then sentence by sentence, then word by word. At the letter level for names, spellings, and homophones. Check every paragraph against all of this.
+a. Letters and words. Spelling, typos, doubled words, missing words, homophones, wrong names, locked spellings.
+b. Grammar and mechanics. Punctuation, dialogue punctuation, quotation marks and apostrophes, spacing (double spaces, leading spaces), capitalization (King, Queen, Governor, Brother and similar titles), tense drift, em dashes and colons in the manuscript itself.
+c. Dialogue. Test every spoken line against voice_table. Cover the tag and ask who is talking. If you cannot tell, flag it.
+d. Narration. Check that it is filtered through the point of view character's voice and not a neutral narrator.
+e. AI tells (see below).
+f. Cut candidates.
+g. Add candidates.
+h. Foreshadowing. Plants, payoffs, missed chances, plants with no payoff.
+i. Continuity against canon_ledger and earlier chapters.
+j. Zac's stored notes for this chapter.
+MECHANICAL NET. After the slow read, run scripts as a safety net, never as a replacement for reading. Scan for double spaces, leading spaces, straight versus curly quotes and apostrophes, em dashes, colons, repeated adjacent words, every variant of the locked spellings, and run aspell or hunspell if installed with a custom dictionary of the book's names. Compare the script hits to what your read caught. Log the misses in the chapter's method note, and change how you read the next chapter to close the gap.
+JUDGMENT STANDARDS
+CUTS. Cut only when the passage repeats what the reader already has, explains what the scene already shows, stalls tension, or contradicts something. For each cut say what story information survives and where. A pure deletion is labeled CUT ONLY and gets no options. A trim that can be repaired gets options.
+ADDS. Add only to deepen existing material. Immersion, sensory grounding, character interiority shown through behavior, world texture, tactical clarity, emotional landing, foreshadowing. No new plot beats, lore, characters, or outcomes. Name the insertion point by quoting the line to insert after. Say exactly what the add deepens.
+VOICE AND DIALECT. This is where the people get their own voices. Use the voice bibles and Annex as law.
+Put dialect in the spelling of the words where the bible supports it. Selective phonetic spelling, readable and consistent, as spice and not soup. Use dialect_register so the same word never has two forms.
+Different regions and classes of the Shattered Empire should sound like different places. Flag where a noble sounds like a farmhand, where a soldier sounds like a professor, where everyone uses the same clean modern sentence.
+Contractions are character-level, not global. Flag them only for specific characters in specific registers.
+Under stress, check whether cadence and dialect shift the way the bible says.
+For every voice flag, explain why the line does not sound right and cite the bible entry. Do not just say "off voice."
+For each named character in the chapter, find the one best spot where a stronger line would make them unmistakable, and offer it.
+Do not erase intentional voice, rough grammar in dialogue, or fragments that are doing work.
+AI SCAN. Zac drafts by voice-to-text and has used AI prose as a shape reference, so some residue is expected. Find all of it. Targets: em dashes, clusters of one-line paragraphs, emotion noun fragments, over-labeled feelings, stock phrases, vague transitions, anatomical acting clusters (jaw, breath, eyes, fists), adverb attributions, throat-clearing openings, passive constructions, repeated sentence structures, "not X but Y" constructions, rule-of-three lists, tidy symmetrical sentence pairs, neat aphorism endings on paragraphs and chapters, the simile habit, and over-explaining what the reader already feels. Jaw clenching is allowed once per chapter. Rotate it after that using the approved replacements (fingers flat on the table, breathing changed, exhaled through the nose, knuckle pressed white, weight shifted forward, muscle jumped in the forearm, eyes moved to the map, throat worked once, blinked once slow). Name the cause for each flag. Options must restore asymmetry, lived-in detail, rough texture, and the character's own voice, drawn from voice_anchors.
+ZAC'S NOTES. Place each stored note at its chapter, in order of appearance, tagged ZAC NOTE with its source. Keep his options, add one more only if it helps. Never contradict a correction he has already made.
+FORESHADOWING. You read in order, so you will meet some payoffs after their plants should have been set. When that happens, write the plant as an ADD item in the earlier chapter, tagged FORESHADOW with the payoff chapter named. These get merged into the right chapter during assembly so the final document never jumps around.
+LOCKED DECISIONS. DO NOT FLAG, DO NOT ASK
+Locked spellings (these override everything). Fort Dreknor, Ashvale, Breckenstall, Torn (not Tarn, but leave "Tarnished" alone), Judgement Stone, Diem, Cotter, Talron, Wymark, Forgehallow, Iron Flask, Aymir, Estmere, Ariel (Chapter 30, not Gabriel), Shattered Empire, Morlin (never Moreland). For any other name, the spelling at first appearance is canon. Report later variants. Never ask which is right.
+Story facts.
+"The Eight" stays on the page as written. A ninth is a secret known only to Zac for now. Never reveal it, never "correct" it.
+Adin as the old man is intentionally vague. The stone transfers happened off screen and were magical. Arthur is the same person.
+The Pearl shattered in the Second Magic War. Luca was born in the First. The Chapter 20 line that says otherwise is already a Packet item.
+Harmon helped Mjakazi escape. Mjakazi broke the bond himself. Harmon worked from the shadows, stopped watching once Mjakazi was settled and married, only listened for tales, and heard none because Mjakazi had changed. Harmon did not know about the son until Weslin spoke of his father.
+The ring has a cost. Dependency, the fear of not being yourself without it, and at Harmon's age it is like life support. Harmon's collapse in Chapter 23 is his age, with the ring's boost no longer enough. Weslin, the Chapter 23 point of view, does not understand the ring, so write anything there only from what he can see and hear.
+Allison is not noble born. She is Weslin's closest friend and the girl he likes.
+Aurelia was only believed to be hijacked by Korr. She is unstable with no stable true voice.
+The Aldrek staged arrest is confirmed as written.
+The plan, brief, execute, adapt cadence is intentional. Varying chapter length is intentional. Do not flag short chapters as unfinished without evidence.
+Open decisions that are Zac's to make (Packet Part 6, including Stormhold in Chapter 4, Drake's first name, Lysa and Camryn assignment, Dain's surname, the Chapter 16 questions, the Chapter 38 day count, the Chapter 50 Brotherhood leader). List them under QUESTIONS FOR ZAC. Do not decide them.
+ENTRY FORMAT
+Number items per chapter in order of appearance (for example Ch 7, Item 12). Use bold labels on their own lines, no colons.
+Standard item:
+CH 7 ITEM 12
+TAG one or more of MECHANICS, CUT ONLY, ADD, VOICE, AI TELL, CONTINUITY, FORESHADOW, ZAC NOTE
+SEVERITY Must fix, Should fix, or Polish
+WHERE paragraph number and the scene it sits in
+FLAGGED the exact text, copied character for character from the file (for an ADD, the exact line to insert after)
+WHY IT WAS FLAGGED the specific cause in plain language, citing the Annex, bible, or ledger entry when relevant
+IMPACT ON THE READER what this does to interest, immersion, trust, tension, or character
+OPTION A controlled repair, closest to Zac's own text
+OPTION B stronger grain, dialect, and human voice
+OPTION C immersive or world deepening
+OPTION D (optional) lean version
+MY PICK the letter and one line of reason
+CUT ONLY item. Use FLAGGED, WHY IT WAS FLAGGED, IMPACT ON THE READER, and WHAT SURVIVES. No options.
+MECHANICS item. One error per entry, never combined. Use ORIGINAL, FIX, and WHY. The single exception is a pure global conversion that is identical everywhere, such as curly to straight quotes in a chapter. That may be one batch entry with a count. If an editorial item already changes a line, fold any mechanical fix into that item's options and do not list it twice.
+Quote style. Anchor text is copied exactly as it appears in the file so Ctrl+F finds it. Replacement text follows the manuscript standard of straight double quotes.
+CHAPTER WRAP at the end of each chapter.
+Counts by tag and severity.
+Scene grain scores, each Low, Moderate, or Strong. Cadence Variety, Voice Differentiation, Stress Escalation, World Texture, Sensory Grounding, Character Interiority, Human and Author Voice. Include the emotional flatlining pitch check against the last three or four chapters you actually finished this run, read from your work files and never from memory.
+Character pop. For each named character with lines, can you tell them apart by cadence alone, yes or no, and the one concrete move that would make them jump.
+AI density, Low, Moderate, or High, with the top tells found.
+Method note. What your scripts caught that your read missed, and the one adjustment you made.
+SAVE AS YOU GO
+After every chapter, write third_draft/work/chapters/ch_XX.md, update progress.json, and update the ledgers. If your context resets, resume from progress.json. Never redo a finished chapter and never skip one.
+VERIFY BEFORE ASSEMBLY
+Write and run a verification script. Fix every failure.
+Every FLAGGED quote exists in the source chapter, exactly, and is unique (add surrounding words until it is).
+Zero em dashes anywhere in the output. Zero colons inside any option or fix text.
+Every non-CUT item has at least three options. Every CUT ONLY item has none.
+Every item has WHY IT WAS FLAGGED and IMPACT ON THE READER.
+No option violates a locked spelling.
+Chapters are in order, and every chapter has a first impression and a wrap.
+Every chapter has a read-completion proof in progress.json.
+ASSEMBLE ONE DOCUMENT
+Build Third_Draft_Editorial_Report.docx with python-docx, plus a matching .md. One document. Use Heading 1 for each chapter so Word's navigation pane works, with a page break between chapters. Chapter order never changes. Merge late-found FORESHADOW plants into their proper earlier chapters.
+Front matter stays short. The method in five lines, files used, voice conflicts found, any difference between the full manuscript file and the v2 chapters, and the verification results.
+Then every chapter, each with its FIRST IMPRESSION, then its items in order of appearance, then its CHAPTER WRAP.
+After the Epilogue, the WHOLE STORY ASSESSMENT. Answer these in this order, honestly, with evidence by chapter.
+What would you rate it? Give an overall score out of 10, a paragraph on why, and what would move it up. Also rate plot, pacing, character, voice, world, prose, emotional impact, opening, and ending.
+Did it stay fluid and stay on plot? Name the chapter ranges where it sags, drifts, or repeats, and the scenes that do not earn their place.
+Did you get lost at all? List every moment of confusion with chapter, location, and cause. If you were never lost, say so plainly. Do not pad.
+Based on everything you know about epic fantasy, does it hold its own, and does it avoid sounding too much like someone else? Name comparable works you actually know, say what this book does that they do not, and point to the exact places where names, structure, or beats echo others too closely. Flag any passage whose voice reads like another author. Do not fabricate comparisons. If unsure, say so. Web search is allowed for market comps only.
+The AI scan, book-wide. A heat map of AI density by chapter, the ten most frequent tells with counts, the cleanest and most affected chapters, and a list of Zac's real voice signatures to protect and extend.
+The voice and dialect report. The final dialect_register, voice conflicts, characters who still blur together, characters who already pop.
+The foreshadow ledger, final. Plants, payoffs, missing plants (already inserted above), and over-planted spots.
+Method log and improvements. The catch-rate numbers from the chapter method notes, what you changed during the run, and a separate file Prompt_Master_v3_PROPOSED.md with the changes you recommend to the Prompt Master so future books are edited better. Do not overwrite the existing Prompt Master.
+QUESTIONS FOR ZAC. Only items that need his ruling. Info-sheet-only facts, voice bible conflicts, uncertain lore, the open decisions listed above.
+WHEN YOU FINISH
+Report the file paths, chapters completed, item counts by tag and severity, and the verification results. If any chapter's read was incomplete, say which one. There should be none.
+Begin with Step 0.

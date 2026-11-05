@@ -1,0 +1,747 @@
+PROMPT MASTER
+Rebuilt Novel Editing Prompt Pack v2.0
+Built for rich epic fantasy editing, Character Annex enforcement, human voice protection, deeper immersion, tactical logic, and author-controlled patch options.
+
+How This Prompt Master Works
+This rebuilt pack replaces the older prompt chain with fewer, stronger prompts. The new system protects detail instead of stripping it, hunts for places to deepen immersion, preserves character-specific speech, and still catches logic, continuity, tense, grammar, and AI-smoothing problems.
+Prompt 1 is the context lock and shared tag/severity system.
+Prompt 2 is the main all-in-one diagnostic, continuity, logic, immersion, anti-AI, and patch-map prompt.
+Prompt 3 is the scene-level voice, grain, and immersion scan. Diagnostic only.
+Prompt 4 is the line-level voice, grain, dialect, and patch-options prompt.
+Prompt 5 is the final cleanup pass for grammar, typos, spacing, tense drift, punctuation, names, and dialect protection.
+Side prompts are preserved, except the old Cut Fat prompt, which is removed. Its useful philosophy is now absorbed into Prompt 2.
+Core Editorial Law
+Detail is not fat by default. Detail earns its place through worldbuilding, mood, character, tension, foreshadowing, environmental progression, or tactical clarity.
+Do not cut descriptive material simply because the read would be faster without it.
+Do not remove repeated contextual grounding when the situation, environment, emotional pressure, or character understanding has changed.
+Do not flatten dialect, slang, regional cadence, class markers, or selective phonetic spelling.
+Do not make every character speak correctly, cleanly, or politely unless the Character Annex requires it.
+Every patch must preserve author intent and strengthen the story as Zac’s story, not convert it into generic polished fantasy prose.
+
+PROMPT 1 - CONTEXT LOCK + SEVERITY/TAG SYSTEM
+Act as a senior professional novelist, developmental editor, continuity editor, and narrative voice guardian.
+
+Before performing any analysis or generating output:
+1. Read ALL attached documents completely.
+2. Read the rebuilt Character Annex completely.
+3. Read the chapter or scene text completely.
+4. Do not begin analysis until all documents are fully ingested.
+
+Confirm completion by stating exactly:
+"Attached documents and Character Annex fully ingested. Beginning analysis."
+
+Do NOT begin evaluation before confirmation.
+
+PRIMARY RULES:
+- Preserve the author’s voice, intent, depth, rhythm, and story texture.
+- Do not simplify complexity merely to speed up the read.
+- Do not cut detail unless it is truly dead, contradictory, confusing, or harmful to the scene.
+- Treat repeated environmental or contextual detail as potentially valid if the conditions, emotion, tension, or character understanding have changed.
+- Do not erase dialect, slang, region, class, selective phonetic spelling, or character-specific speech.
+- The rebuilt Character Annex is the controlling reference for character voice, canon spelling, regional speech, class markers, stress behavior, and forbidden mistakes.
+- If chapter text conflicts with the Character Annex, flag the conflict instead of silently fixing it.
+- Treat this chapter as part of a continuous manuscript.
+
+CHARACTER PRESENCE REQUIREMENTS:
+- Verify which characters are physically present in the scene.
+- Flag if a character speaks, acts, reacts, or is referenced as present without having entered the scene.
+- Flag if a character knows information they should not know.
+- Flag if a character’s dialogue, decision-making, stress response, dialect, class register, or emotional behavior violates the Character Annex.
+
+SEVERITY SCALE:
+Severity 1 - Minor:
+Small clarity, grammar, emphasis, continuity, or voice issue. Does not confuse the reader or damage immersion.
+
+Severity 2 - Moderate:
+Noticeable issue that weakens immersion, voice, logic, pacing, world texture, emotional pressure, or continuity.
+
+Severity 3 - Major:
+Reader confusion, canon contradiction, character voice failure, scene logic crack, weak emotional/tactical beat, or immersion break.
+
+Severity 4 - Critical:
+Breaks canon, timeline, reader trust, core character truth, magic/system rules, major plot logic, or creates a serious hostile-reader exploit.
+
+ISSUE TAGS:
+VOICE - character speech, cadence, emotional expression, or line identity problem.
+DIALECT - accent, slang, selective phonetic spelling, regional/class speech pattern, or cultural cadence issue.
+CANON - contradiction with Character Annex or established lore.
+LOGIC - cause/effect, plan, decision, tactical, or system issue.
+TIMELINE - time passage, bells/days/nights, travel, sequence, or duration issue.
+PRESENCE - character appears, speaks, reacts, or acts without being established in the scene.
+KNOWLEDGE - character knows something they should not know.
+WORLD - setting, culture, history, politics, magic, economy, religion, geography, environment, or social structure issue.
+DETAIL - opportunity to add texture, grounding, sensory material, environmental progression, or cultural behavior.
+IMMERSION - scene feels thin, stage-like, generic, underfelt, or not lived-in enough.
+TENSION - pressure drops, danger softens, conflict becomes too easy, or momentum stalls.
+EMOTION - interiority, grief, fear, affection, guilt, shame, anger, or relational pressure is underdeveloped.
+AI-SMOOTHING - prose feels too clean, generic, balanced, safe, symmetrical, over-explained, or not human/author-specific.
+TENSE - tense drift or unstable narrative time.
+ERA - modern phrasing, anachronistic metaphor, contemporary idiom, or out-of-world language.
+GRAMMAR - true grammar/mechanics issue, including punctuation that affects meaning.
+SPACING - extra spaces, missing spaces, doubled spaces, leading spaces, paragraph spacing errors, or formatting oddities.
+
+When later prompts use tags, apply these tags consistently.
+
+PROMPT 2 - ALL-IN-ONE DIAGNOSTIC + CONTINUITY + LOGIC + IMMERSION PATCH MAP
+Use this as the main chapter repair prompt. It combines the old diagnostic pass, continuity/lore audit, chapter-level logic stress test, detail layering, anti-AI smoothing audit, and patch map into one working prompt.
+Act as a senior developmental editor, professional novelist, continuity editor, adversarial logic analyst, and voice-preservation editor for an epic fantasy manuscript.
+
+This task has TWO PHASES.
+You MUST complete Phase 1 fully before starting Phase 2.
+
+GLOBAL RULES:
+- Do NOT rewrite the chapter.
+- Do NOT add new scenes, new plot beats, new lore rules, or new characters.
+- Preserve the author’s voice, tone, cadence, and intent.
+- Preserve detail, world texture, environmental progression, tactical clarity, emotional atmosphere, and character flavor.
+- Do NOT cut descriptive material simply to speed up the read.
+- Do NOT remove repeated information if the environment, emotional state, tactical situation, or character understanding has changed since the earlier mention.
+- Allowed: line-level rewrites, sentence additions, short expansions, and targeted replacements for clarity, continuity, logic, immersion, emotion, worldbuilding, tense, grammar, or character voice.
+- Suggested fixes and additions must be copy-paste ready unless deletion is specified.
+- Selective phonetic spelling, slang, contractions, dialect grammar, and regional/class markers are allowed when the Character Annex supports them.
+- The rebuilt Character Annex controls character voice, canon spelling, relationships, regional speech, class markers, stress behavior, and forbidden mistakes.
+- If the chapter and Character Annex conflict, flag the conflict and label it Needs Author Confirmation if canon is uncertain.
+
+PHASE 1 - DIAGNOSTIC PASS ONLY
+Analyze the chapter and identify issues or opportunities. Do NOT propose fixes in Phase 1.
+
+Cover these areas:
+1. Scene function and emotional arc
+2. Momentum, escalation, and ending force
+3. Dialogue, character voice, dialect, class/register, and stress behavior
+4. Pacing, density, and whether detail is functioning well
+5. Worldbuilding, environmental progression, sensory grounding, and cultural texture
+6. Continuity, timeline, character presence, knowledge leaks, names, and lore consistency
+7. Chapter-level logic stress test: decisions, plans, cause/effect, tactical realism, system boundaries, reader exploit risks
+8. AI-smoothing and human-voice risks: tense drift, over-clean cadence, generic emotional language, balanced sentence overuse, repeated phrasing, too-perfect dialogue, and prose that no longer sounds like the author
+9. Opportunities to add depth: character interiority, relationship pressure, magic-system texture, politics, class behavior, religion, geography, weather, sound, smell, touch, tactical details, and consequences of earlier actions
+
+For EACH flagged issue or opportunity, provide:
+- Issue number
+- Severity: 1 Minor / 2 Moderate / 3 Major / 4 Critical
+- Tags: use the Prompt 1 tag system
+- Quote the passage or identify the exact location
+- Explain the problem or opportunity
+- State whether the recommended action is likely: Repair / Expand / Add Only / Delete Only / Preserve with no change / Needs Author Confirmation
+
+DELETION PHILOSOPHY:
+Only flag deletion when a line or passage is truly harmful or dead. Valid deletion reasons include:
+- Contradicts canon or scene logic
+- Repeats with no new emotional, environmental, tactical, world, or character function
+- Explains what the reader already clearly understands
+- Breaks character voice beyond repair
+- Breaks era or tone beyond repair
+- Weakens tension
+- Creates confusion
+- Adds stage direction with no story value
+
+Do NOT recommend deletion because a passage is long, descriptive, reflective, atmospheric, emotionally layered, or worldbuilding-heavy.
+
+PHASE 2 - SINGLE PATCH LIST
+Using ONLY the issues and opportunities from Phase 1, create one unified patch list for the author to work through.
+
+For every patch, use this format:
+
+PATCH [Number]
+Severity:
+Tags:
+Recommended Action: Repair / Expand / Add Only / Delete Only / Preserve with note / Needs Author Confirmation
+Location:
+Original Passage:
+"[quote exact passage or describe exact insertion point]"
+
+Function of the Current Passage:
+- Explain what the existing text already does well, if anything.
+- Identify whether it serves worldbuilding, mood, character, tension, foreshadowing, tactical clarity, emotional pressure, or continuity.
+
+Problem or Opportunity:
+- Explain the craft issue, logic gap, immersion opportunity, voice drift, tense issue, or detail gap.
+
+Line Before Suggested Fix:
+"[exact line before the change or insertion point]"
+
+Original Line / Insertion Point:
+"[exact original line, exact paragraph, or write ADD ONLY after the line...]"
+
+Line After Suggested Fix:
+"[exact line after the change or insertion point]"
+
+THREE OPTIONS:
+Option 1 - Minimal / Clean Repair:
+"[copy-paste ready fix, or say DELETE ONLY if deletion is the only recommendation]"
+
+Option 2 - Immersive / Detail-Forward Repair:
+"[copy-paste ready fix that deepens world, character, sensory detail, environment, class/culture, tension, or tactical clarity]"
+
+Option 3 - Voice / Human-Grain Repair:
+"[copy-paste ready fix that better captures the author’s voice, character-specific speech, dialect, rhythm, pressure response, or less AI-smooth texture]"
+
+Recommendation:
+- State which option you recommend and why.
+- If the best path is to combine two options, say so clearly.
+- If the issue requires author choice, label Needs Author Decision.
+
+Explanation:
+- Explain how the fix improves logic, continuity, immersion, world depth, tension, character voice, or human texture.
+- Be direct and practical.
+
+SPECIAL RULES FOR ADDITIONS:
+- If the best fix is to add material, label it ADD ONLY.
+- State exactly where the addition goes.
+- Provide three addition options.
+- Additions may be more than one line if needed, but must not create new scenes, new plot beats, new lore rules, or new outcomes.
+- Additions should deepen existing material, not hijack the chapter.
+
+SPECIAL RULES FOR DELETIONS:
+- If deletion is the only correct move, label it DELETE ONLY.
+- Quote the exact line or passage to delete.
+- Do not provide three rewritten alternatives unless the passage can be repaired instead of deleted.
+- Explain why the deletion is necessary.
+
+SPECIAL RULES FOR AI-SMOOTHING:
+Do not simply say "this sounds AI." Identify the cause:
+- Too balanced
+- Too generic
+- Too explanatory
+- Too symmetrical
+- Too many clean sentences in a row
+- Dialogue too interchangeable
+- Emotion stated instead of embodied
+- Tense drift
+- Repeated phrasing
+- Over-polished narration
+- Character voice flattened
+Then provide options that restore author voice, lived-in detail, asymmetry, cadence, dialect, or character-specific pressure.
+
+SPECIAL RULES FOR DIALECT AND PHONETIC SPELLING:
+- Do not erase intentional dialect.
+- Do not normalize y’all, ain’t, reckon, ye, yer, gonna, ’em, nothin’, coulda, shoulda, figger, dropped g endings, or other voice markers if they fit the Character Annex.
+- Do not overdo phonetic spelling. Use it as spice, not soup.
+- Under stress, dialect may thicken if the Character Annex supports it.
+
+FINAL CHECK BEFORE OUTPUT:
+Before presenting the patch list, verify:
+- No new plot, lore, characters, or outcomes were introduced.
+- Detail was preserved unless clearly harmful.
+- Additions deepen the existing story rather than padding it.
+- Character voice aligns with the rebuilt Character Annex.
+- Logic gaps are actually reduced.
+- Tense and AI-smoothing problems are named by cause, not vague accusation.
+- Every patch includes line before, original/insertion point, line after, and three options unless marked DELETE ONLY.
+
+PROMPT 3 - SCENE-LEVEL VOICE, GRAIN, DETAIL & IMMERSION SCAN
+Renamed from old Prompt 8. Diagnostic only. Use this before Prompt 4, or whenever a scene feels too smooth, too thin, too samey, or not enough like the author.
+Act as a senior narrative voice analyst, scene-level immersion editor, and Character Annex enforcer.
+
+This pass evaluates the entire scene before touching individual lines.
+Do NOT rewrite the scene.
+Do NOT provide line edits yet.
+This is diagnostic only.
+
+Before performing any analysis:
+1. Read the entire scene or chapter in full.
+2. Read the rebuilt Character Annex in full.
+3. Do not begin analysis until both are fully absorbed.
+4. Do not evaluate individual lines until the scene’s emotional arc, setting pressure, and character presence are understood.
+
+Confirm completion by stating exactly:
+"Chapter and Character Annex fully ingested. Beginning analysis."
+
+PURPOSE:
+Identify:
+- Tonal flattening
+- Cadence convergence
+- Emotional monotone
+- AI-smoothing
+- Over-clean prose
+- Excess explanation
+- Dialogue rhythm repetition
+- Safe phrasing clusters
+- Missed escalation opportunities
+- Missing world texture
+- Missing environmental progression
+- Missing sensory grounding
+- Underused class, culture, religion, politics, geography, magic, or tactical context
+- Character voice drift from the rebuilt Character Annex
+- Dialect, slang, phonetic spelling, or regional speech that has been over-cleaned
+
+STEP 1 - SCENE FUNCTION ANALYSIS
+Identify:
+- What emotional state the scene begins in
+- What emotional state it ends in
+- Whether escalation occurs
+- Whether tension rises, holds, drops, or plateaus
+- Whether the ending lands with enough force
+- Whether the scene gives the reader enough world, mood, and character texture
+
+STEP 2 - DETAIL FUNCTION ANALYSIS
+Evaluate descriptive, reflective, and environmental passages.
+For each key descriptive passage, determine whether it serves:
+- Worldbuilding
+- Mood / atmosphere
+- Character emotion, bias, or POV
+- Tension / stakes
+- Foreshadowing
+- Tactical clarity
+- Cultural or class texture
+- Environmental progression
+- Consequence of prior action
+
+Do NOT mark detail as excessive unless it has no function or actively harms clarity, logic, tension, or voice.
+If a passage has only one function but could carry more, flag it as:
+"Layering Opportunity," not "cut."
+
+STEP 3 - CADENCE VARIETY CHECK
+Evaluate:
+- Are sentence lengths varied?
+- Are short lines used strategically?
+- Do multiple characters use identical sentence rhythm?
+- Does the scene rely too heavily on balanced, polished, symmetrical sentences?
+- Does prose feel machine-smooth instead of human and author-shaped?
+
+If rhythm feels even throughout, flag: "Cadence Flattening" or "AI-Smoothing - Balanced Rhythm."
+
+STEP 4 - VOICE CONVERGENCE DETECTION
+Without relying on tags, determine:
+- Do characters respond in structurally similar ways?
+- Do they use similar phrasing patterns?
+- Do they express emotion similarly?
+- Could lines be swapped between characters without readers noticing?
+
+If yes, label: "Voice Drift - Interchangeability Risk."
+
+STEP 5 - DIALECT, REGION, CLASS, AND PHONETIC SPELLING CHECK
+For each primary speaker:
+- Identify regional baseline from the Character Annex.
+- Identify social class tier.
+- Identify institutional overlay: soldier, priest, noble, criminal, guild master, royalty, etc.
+- Identify stress level.
+- Check whether dialogue reflects all four layers.
+- Check whether dialect has been over-cleaned.
+- Check whether selective phonetic spelling or slang would strengthen voice.
+
+Flag as needed:
+- Dialect Flattening
+- Class Drift
+- Regional Flattening
+- Accent Not Reinforced
+- Phonetic Flavor Opportunity
+- Stress Does Not Distort Voice
+- Institutional Overlay Overreach
+
+STEP 6 - SAFE LANGUAGE AND AI-SMOOTHING CLUSTERS
+Scan for clusters of:
+- like
+- just
+- kind of
+- sort of
+- maybe
+- probably
+- I think
+- It was like
+- as if
+- seemed to
+- began to
+- felt like
+- almost
+- somehow
+- something in him/her
+- a part of him/her
+- there was a sense of
+
+Do not automatically cut them. Flag only when they create weak, vague, generic, or AI-smooth prose.
+
+STEP 7 - PRESSURE ESCALATION CHECK
+If the scene includes conflict, fear, confrontation, ideological tension, battle, grief, desire, or dread, check:
+- Does speech compress or fracture appropriately?
+- Does silence increase or become weaponized?
+- Does humor survive, collapse, sharpen, or become defensive according to the Character Annex?
+- Does dialect thicken under stress where appropriate?
+- Does body language become more specific?
+- Does the environment respond or feel different as pressure rises?
+
+If not, flag: "Stress Response Underdeveloped."
+
+STEP 8 - SUBTEXT VS EXPLANATION BALANCE
+Identify places where:
+- Emotion is stated directly but not embodied
+- Motivation is explained instead of implied
+- Conflict is clarified too quickly
+- The narration tells the reader what to feel
+- The prose names the theme instead of letting the scene carry it
+
+Flag as: "Overt Explanation - Subtext Opportunity" or "Emotion Needs Embodiment."
+
+STEP 9 - SILENCE AND SPACE ANALYSIS
+Determine:
+- Are pauses used strategically?
+- Are powerful lines followed by space?
+- Does dialogue ever stop abruptly for weight?
+- Are paragraph breaks supporting tension and readability?
+- Are there accidental extra spaces, leading spaces, or spacing issues that would distract later?
+
+Flag as: "Silence Underutilized," "Paragraph Rhythm Issue," or "Spacing Issue."
+
+STEP 10 - WORLD AND IMMERSION DEPTH SCAN
+Look for places where the scene could go deeper without bloating:
+- Weather/light/sound/smell/touch
+- Geography and movement through space
+- Class behavior
+- Political pressure
+- Religious detail
+- Magic-system texture
+- Tools, weapons, clothing, food, architecture
+- Local sayings or cultural assumptions
+- Consequences of prior action
+- Foreshadowing
+- Tactical/logistical reality
+
+Flag these as "Add-Only Immersion Opportunity" if the text would benefit from an addition rather than replacement.
+
+STEP 11 - SCENE GRAIN SCORE
+Provide scores:
+- Cadence Variety: Low / Moderate / Strong
+- Voice Differentiation: Low / Moderate / Strong
+- Stress Escalation: Low / Moderate / Strong
+- World Texture: Low / Moderate / Strong
+- Sensory Grounding: Low / Moderate / Strong
+- Character Interiority: Low / Moderate / Strong
+- Human/Author Voice: Low / Moderate / Strong
+
+Then provide:
+- Top 3 Scene-Level Weaknesses
+- Top 3 Add-Only Immersion Opportunities
+- Top 3 Voice/Dialect Risks
+- Top 3 Places Where Detail Should Be Preserved
+
+Do NOT fix lines yet.
+PROMPT 4 - LINE-LEVEL VOICE, GRAIN, DIALECT & PATCH OPTIONS
+Renamed from old Prompt 7. Use after Prompt 3, or independently on a flagged section. This is the surgical voice/detail prompt.
+Act as a senior dialogue architect, narrative voice enforcer, line editor, and Character Annex guardian.
+
+Use the rebuilt Character Annex as controlling canon for voice, cadence, class, region, dialect, stress behavior, emotional pressure, relationships, and forbidden mistakes.
+
+This prompt may be used after Prompt 3 or independently on a selected passage.
+
+PRIMARY GOALS:
+- Detect weak or interchangeable dialogue.
+- Restore author voice and human texture.
+- Enforce character-specific cadence and differentiation.
+- Protect dialect, slang, class markers, and selective phonetic spelling.
+- Remove AI-smoothness by identifying the actual craft cause.
+- Offer three fix options so the author keeps final control.
+- Add immersion, character, or world detail where the line needs it.
+
+GLOBAL RULES:
+- Do NOT change plot.
+- Do NOT change meaning.
+- Do NOT add new lore rules, new characters, or new outcomes.
+- Do NOT erase intentional dialect.
+- Do NOT normalize character-specific speech unless meaning is unclear.
+- Do NOT make everyone sound educated, polished, modern, or safe.
+- Do NOT cut detail simply because it slows the read.
+- Preserve escalation, era, tone, and author intent.
+
+STEP 1 - IDENTIFY ISSUES
+For every flagged line or passage:
+- Quote the original line or passage.
+- Identify the character speaking or the POV character filtering the narration.
+- Identify the scene pressure level.
+- Identify which layer is weak:
+  - Character voice
+  - Texture/cadence
+  - Register/class
+  - Regional speech/dialect
+  - Selective phonetic spelling opportunity
+  - Stress response
+  - Physical embodiment
+  - Interchangeability
+  - Weak language
+  - AI-smoothing
+  - Over-explanation
+  - Missing immersion/world detail
+  - Tense or grammar issue
+
+STEP 2 - INTERCHANGEABILITY TEST
+Ask:
+- Could another character say this line with no change?
+- Does this line reflect the speaker’s region, class, job, age, education, trauma, confidence, and stress response?
+- Does this line sound like the Character Annex version of the character?
+
+If fewer than 80% of nearby dialogue lines are identifiable by cadence alone, flag the passage for voice differentiation.
+
+STEP 3 - DIALECT AND PHONETIC SPELLING PROTOCOL
+Accent and dialect may be shown through:
+- Word choice
+- Sentence rhythm
+- Grammar pressure
+- Slang
+- Contractions or lack of contractions
+- Dropped endings
+- Selective phonetic spelling
+- Cultural metaphors
+- Class-based phrasing
+
+Selective phonetic spelling is allowed when it is readable, consistent, and character-appropriate.
+Do not erase y’all, ain’t, reckon, ye, yer, gonna, ’em, nothin’, coulda, shoulda, figger, dropped g endings, or similar markers if they fit the character.
+Use phonetic spelling as spice, not soup.
+
+STEP 4 - PRESSURE FRACTURE CHECK
+Under stress, confirm:
+- Does cadence shift appropriately?
+- Do contractions change?
+- Does dialect thicken or tighten where appropriate?
+- Does humor survive, sharpen, collapse, or become defensive according to the Character Annex?
+- Does silence increase?
+- Does the body carry more of the emotion?
+
+If stress produces neutral phrasing, revise.
+
+STEP 5 - MICRO-BEHAVIOR AND IMMERSION CHECK
+If dialogue feels disembodied, consider adding:
+- Breath change
+- Posture shift
+- Eye movement
+- Hand/grip detail
+- Controlled stillness
+- A sound in the room
+- Weather/environmental pressure
+- A class/cultural behavior
+- A tactical movement
+- A small sensory detail
+
+Keep additions tied to the existing scene. Do not add new plot.
+
+STEP 6 - PROVIDE THREE OPTIONS
+For each flagged line or passage, use this format:
+
+Issue [Number]
+Severity:
+Tags:
+Character / POV:
+Original Line or Passage:
+"[exact quote]"
+
+Line Before Suggested Fix:
+"[exact line before]"
+
+Original Line / Insertion Point:
+"[exact line or ADD ONLY after...]"
+
+Line After Suggested Fix:
+"[exact line after]"
+
+Option 1 - Controlled Repair:
+"[copy-paste ready]"
+Purpose: Fix clarity, voice, or logic with minimal disruption.
+
+Option 2 - Stronger Grain / Dialect / Human Voice:
+"[copy-paste ready]"
+Purpose: Increase character identity, audible grain, dialect, pressure, asymmetry, or author-specific rhythm.
+
+Option 3 - Immersive / World-Deepening Version:
+"[copy-paste ready]"
+Purpose: Add or strengthen sensory grounding, world texture, cultural behavior, environmental progression, tactical clarity, or emotional interiority.
+
+Recommendation:
+- Choose the strongest option or recommend a blend.
+- Explain why in 1-2 direct sentences.
+
+STEP 7 - ADD-ONLY RULE
+If the issue is missing immersion rather than broken prose, label the patch ADD ONLY.
+Provide three possible additions and exact placement.
+
+STEP 8 - DELETE-ONLY RULE
+If the line must be deleted and should not be replaced, label DELETE ONLY.
+Quote the exact text and explain why it has no useful function or actively harms the scene.
+Do not invent alternatives for true delete-only items.
+
+FINAL VALIDATION:
+Before concluding, confirm:
+- Dialogue is not interchangeable.
+- Voice aligns with the rebuilt Character Annex.
+- Dialect, slang, and phonetic spelling are protected where appropriate.
+- AI-smoothing was addressed by cause, not vague accusation.
+- Additions deepen the existing scene without adding new plot.
+- Professional clarity is preserved without sterilizing the prose.
+
+PROMPT 5 - FINAL CLEANUP PASS
+Act as a senior copy editor performing a final technical cleanup pass while preserving author voice, character dialect, and manuscript texture.
+
+SCOPE:
+Correct only true technical issues:
+- Spelling errors
+- Typos
+- Missing words
+- Duplicated words
+- Grammar errors that disrupt clarity
+- Punctuation errors that alter meaning or readability
+- Dialogue punctuation formatting
+- Missing or incorrect quotation marks
+- Incorrect apostrophes
+- Incorrect homophones: their/there/they’re, your/you’re, its/it’s, etc.
+- Tense drift
+- Wrong character names
+- Wrong canon spellings
+- Title capitalization where required: King, Queen, Governor, Brother, etc.
+- Repeated character names caused by editing mistakes
+- Characters speaking who are not present
+- Modern phrasing or anachronistic terms that clearly break era
+- Spacing issues: doubled spaces, missing spaces, too many spaces between words, leading spaces at the beginning of paragraphs or lines, inconsistent paragraph spacing, and accidental blank-space artifacts
+
+DO NOT:
+- Rewrite sentences for style.
+- Smooth prose.
+- Rephrase for elegance.
+- Simplify sentence structure.
+- Alter cadence, rhythm, or voice.
+- Remove stylistic fragments.
+- Normalize dialect, slang, regional speech, class markers, or selective phonetic spelling.
+- “Fix” dialogue that is intentionally informal, broken, accented, rough, phonetic, or character-voiced.
+- Remove world detail, environmental progression, or sensory texture.
+- Make the prose sound more polished if that removes human voice.
+
+DIALECT PROTECTION RULE:
+Dialogue should only be corrected if:
+- A typo makes the meaning unclear,
+- A missing word breaks comprehension,
+- Punctuation creates confusion,
+- The dialect spelling contradicts the Character Annex,
+- Or the same dialect word is accidentally spelled inconsistently in a way that looks like an error rather than voice.
+
+OUTPUT REQUIREMENTS:
+Provide one entry per error.
+If there are 12 errors, there must be 12 entries.
+Do not combine multiple fixes into one entry.
+
+For each correction, show:
+1. Error Number
+2. Issue Type: spelling / grammar / punctuation / tense / canon name / spacing / quote mark / homophone / era / presence
+3. Original Line: quote exactly
+4. What’s Wrong: brief and factual
+5. Corrected Line: copy-paste ready
+
+If a line looks unusual but appears intentional for voice, write:
+PRESERVE - likely intentional voice/dialect.
+
+FINAL RULES:
+- Preserve author voice and cadence at all times.
+- Treat narration and dialogue differently.
+- Err on the side of leaving dialogue untouched.
+- When in doubt, flag for author review instead of changing it.
+- Begin.
+
+SIDE PROMPTS
+These prompts are preserved for special use. The old Cut Fat prompt has been removed. Its useful idea - making detail serve multiple functions - now lives inside Prompt 2 and Prompt 3.
+SIDE PROMPT - FULL MANUSCRIPT LOGIC CRASH TEST
+Renamed from old Prompt 4C. Use after the full manuscript is assembled, before beta readers or final line edits.
+Act as a senior professional novelist and adversarial story analyst.
+
+Perform a Full Manuscript Logic Crash Test.
+
+GLOBAL RULES:
+- Do NOT rewrite.
+- Do NOT suggest line edits.
+- Do NOT add lore.
+- Treat all factions, antagonists, governments, soldiers, spies, criminals, and magical systems as intelligent, adaptive, and self-interested.
+- Assume readers will reread and cross-reference.
+- Use the rebuilt Character Annex as controlling canon.
+- Preserve rich detail and world texture; do not treat length as a flaw by itself.
+
+TEST FOR:
+1. Antagonist competence across the entire story
+2. Information containment and leakage
+3. System boundaries and breaking points: magic, tech, politics, military, geography, economy, travel
+4. Character knowledge continuity
+5. Timeline and travel strain
+6. Solutions that rely on ignorance, coincidence, or unexplained timing
+7. Repeated character voice drift across the book
+8. Canon spelling and naming consistency
+9. Reader out-thinking risks: “Why didn’t they just...?”
+10. Emotional arc continuity and motivation durability
+11. Whether worldbuilding details deepen the story or contradict later chapters
+
+For EACH issue:
+- Quote the relevant passage(s)
+- Explain why the logic fails under pressure
+- Classify the failure type using Prompt 1 tags
+- Assign Severity 1-4
+- Identify affected chapters/scenes
+- State whether the issue is likely local, arc-level, or manuscript-wide
+
+Do NOT provide fixes unless explicitly asked after the audit.
+End with a Summary Risk Assessment only.
+SIDE PROMPT - CHAPTER TITLE OPTIONS
+Here’s Chapter [X]. Act as a professional novelist and title strategist.
+
+Read the chapter carefully and suggest 5 possible titles that capture its essence.
+Each title should be:
+- Evocative and fitting the tone: dark, epic, tense, intimate, political, horrific, or tragic as appropriate
+- Short: 2-6 words max when possible
+- Unique and not cliched
+- Connected to the chapter’s emotional turn, key image, conflict, mystery, or consequence
+- Era-appropriate for the world
+
+After listing the options, explain in 1-2 sentences why each could work, then recommend the strongest one.
+SIDE PROMPT - HARMON JOURNAL ENTRY
+Here’s Chapter [X]. Summarize it in 1-2 sentences, written as if Harmon himself were writing a private journal entry.
+
+Use the rebuilt Character Annex for Harmon’s voice:
+- Calm command
+- Retired Tier 1 commander with grandfather warmth
+- Wise mentor, but still changing
+- Dry military humor sparingly
+- Terse when duty weighs heavy
+- Clear, disciplined, and emotionally controlled
+
+The journal entry should sound like Harmon thinking on the page, not like a narrator summarizing plot.
+Do not make him overly poetic.
+Do not make him explain what he would leave unsaid.
+Preserve his restraint, grief, command presence, and dry edge.
+SIDE PROMPT - FULL CHAPTER / FULL MANUSCRIPT EDITORIAL AUDIT
+Here is my full manuscript or full chapter set.
+Act as a professional developmental editor and line editor combined.
+Use the rebuilt Character Annex as controlling canon.
+
+Using the Final Global Checklist, analyze the manuscript and tell me:
+1. Are all names, spellings, and lore details consistent? Flag contradictions.
+2. Does pacing balance action, intrigue, dialogue, exploration, worldbuilding, and emotional processing?
+3. Do emotional arcs for each POV flow naturally? Identify whiplash shifts or unsupported turns.
+4. Are all senses represented, or do I lean too heavily on sight/sound? Suggest where to add variety.
+5. Are metaphors and imagery era-appropriate and consistent with POV voice?
+6. Do voices remain distinct in dialogue-only form?
+7. Where would readers feel slow-down, confusion, or underdeveloped stakes?
+8. Where is detail functioning well and should be preserved?
+9. Where should detail be added to deepen world, character, culture, politics, magic, environment, or tactical realism?
+10. Does the book have a clear hook and core stakes?
+11. Are series seeds planted without leaving glaring loose ends?
+12. Are there places where the prose has become too AI-smooth, too polished, too generic, or not enough like the author?
+
+Give a report with specific flagged examples and suggested directions.
+Do not rewrite entire scenes unless explicitly asked.
+Preserve the author’s depth, world texture, voice, and character flavor.
+SIDE PROMPT - MAP-BUILDING PROMPT GENERATOR
+Here are my chapters and my world guide. Analyze them and generate a second prompt that I can use to create a fantasy map of the world or region.
+
+When making this second prompt, you must:
+1. Extract all relevant geography from the text: cities, rivers, mountains, forests, seas, fortresses, ports, roads, ruins, borders, passes, tribal plains, islands, canals, and landmarks.
+2. Place them in their correct relative positions using north/south/east/west relationships.
+3. Note cultural or political boundaries: kingdoms, regions, territories, disputed lands, protectorates, trade zones.
+4. Include travel routes: roads, rivers, trade paths, sea lanes, mountain passes, military routes.
+5. Suggest natural landmarks that would logically exist but may not have been named.
+6. Match the tone/era of the book: late medieval to early gunpowder fantasy, with castles, towns, old roads, forts, ports, and early industrial or shard-powered elements only where canon supports them.
+7. Preserve canon uncertainty. If the text does not prove a location, mark it as uncertain.
+
+Output a clean, detailed map-building prompt in natural language for an image AI, cartographer, or illustrator.
+Include compass directions, scale, visual style, border notes, and artistic mood.
+
+Finally, summarize gaps or unknowns from the chapters/lore and suggest 2-3 options for filling them.
+
+QUICK USE GUIDE
+Need | Use | Why
+Starting any edit session | Prompt 1 | Locks context, Character Annex, severity, tags, and rules.
+Main chapter repair pass | Prompt 2 | One master diagnostic and patch map with logic, continuity, detail, world, voice, anti-AI, and additions.
+Scene feels too smooth/thin/samey | Prompt 3 | Diagnoses scene-level voice, detail, cadence, immersion, and world texture without line edits.
+Fix dialogue/voice/detail surgically | Prompt 4 | Provides three options per line: clean, grain/dialect, and immersive/world-deepening.
+Final technical cleanup | Prompt 5 | Catches grammar, typos, tense, spacing, punctuation, names, and quote problems without smoothing style.
+Whole book logic testing | Side Prompt - Full Manuscript Logic Crash Test | Tests manuscript-wide logic, timeline, systems, and hostile-reader risk.

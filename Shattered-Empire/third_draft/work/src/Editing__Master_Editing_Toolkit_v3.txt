@@ -1,0 +1,122 @@
+Master Editing Toolkit
+Voice Bible Dialogue Alignment
+Here is the Voice Bible for my characters and here is Chapter [X].
+
+I want you to act as a professional line editor and apply ONLY the Voice Bible to the dialogue. Do not change narration, plot, or scene structure. Do not add new lines or remove lines. Only adjust the words inside quotation marks so they fit the character’s established voice and accent.
+
+For each change, output:
+
+**Character:** [Name]  
+**Original Line:** "[original dialogue]"  
+**Revised Line:** "[new dialogue]"
+
+Only show me dialogue lines that need revision. Leave lines that already match untouched.
+Scene Change Check
+Here’s Chapter [X]. Act as a developmental editor. Go scene by scene and tell me:
+
+1. What changes in this scene (plot, emotion, tension)?  
+2. If nothing changes, tell me exactly where it stalls.  
+3. Suggest 2–3 ways I could adjust those moments so the scene ends with momentum.
+
+Do NOT rewrite the scene. Just analyze shifts and suggest targeted fixes.
+Cut the Fat
+Here’s Chapter [X]. Identify paragraphs or lines where the description is overwritten, repetitive, or slows pacing.
+
+For each, output:  
+**Original:** [line/paragraph]  
+**Issue:** [why it’s weak]  
+**Cut/Trim Option:** [shorter version with same meaning]  
+**Tension Option:** [alternative that adds pressure or mood instead of filler]
+Immersion/Tension/Momentum (ITM) Pass
+Here’s Chapter [X]. For each scene, break it down into:
+
+- **Immersion:** Did I paint the setting vividly enough? Where could I add one sensory detail (smell, texture, sound) to strengthen it?  
+- **Tension:** Is there emotional or situational pressure? If weak, suggest what the characters could notice or say to build unease.  
+- **Momentum:** What actually moves forward here? If nothing, suggest one way to raise stakes.
+
+Do not rewrite the scene—just give targeted “patches” for each category.
+Character Consistency Audit
+Here’s Chapter [X]. Go through each speaking character and tell me:
+
+1. Does this dialogue/narration match their Voice Bible?  
+2. Flag any lines that sound out of character.  
+3. Suggest how to tweak word choice or phrasing to stay true.  
+4. Tell me if the character voice drifted since earlier chapters.
+
+Output per character in this format:  
+**Character:** [Name]  
+**Strongest Moment:** [line that nails the voice]  
+**Weakest Moment:** [line that drifts]  
+**Fix Suggestion:** [voice-corrected option]
+Accent Authenticity Check
+Here’s Chapter [X]. Using the Voice Bible accents, check every character with a distinct regional accent (Taeral, Aymir, Naevin, Nyssa, Ash, etc.).
+
+For each, flag:  
+- Lines that sound too modern or generic.  
+- Lines where the accent fades.  
+- Suggested revision to keep their regional flavor without overdoing it.
+Combat & Action Flow Audit
+Here’s Chapter [X]. Analyze every action beat or combat sequence. For each sequence, tell me:
+
+1. Does the description bog down in detail?  
+2. Does the action reflect the POV’s personality?  
+3. Are the stakes/tension clear?  
+
+Suggest how to streamline or add urgency while keeping the scene immersive. Do not rewrite—just flag and propose.
+Continuity & Timeline Check
+Here’s Chapter [X]. Cross-check it against earlier chapters and tell me:
+
+- Do the events line up logically?  
+- Does character knowledge/behavior remain consistent?  
+- Are there any contradictions in time of day, geography, or continuity?  
+- If yes, flag the exact line and suggest how to align it.
+Grammar/Word Choice Polish
+Here’s Chapter [X]. Perform a word-level polish. For each flagged line, show:
+
+**Original:** [line]  
+**Correction:** [line with grammar/spelling fix]  
+**Note:** [explain rule or why it reads better]
+
+Do not rewrite style—only polish mechanics.
+Strengths & Weaknesses Report
+Here’s Chapter [X]. Give me an editor’s report:
+
+1. Two-paragraph summary of the chapter.  
+2. Strengths: list what works (voice, pacing, imagery, dialogue, etc.).  
+3. Weaknesses: list where it falls flat.  
+4. Suggested Focus: top 3 things to fix before moving on.
+
+Be blunt. Don’t flatter. Treat it like a professional editor’s margin notes.
+Chapter Title Generator
+Here’s Chapter [X]. Act as a professional novelist. Read the chapter carefully and suggest 3 possible titles that capture its essence. Each title should be:
+
+- Evocative, fitting the tone (dark, epic, or tense as appropriate).  
+- Short (2–6 words max).  
+- Unique (avoid clichés).  
+
+After listing the options, explain in 1–2 sentences why each could work, and recommend the strongest one.
+Harmon’s Journal Entry (In-Voice Summary)
+Here’s Chapter [X]. Summarize it in 1–2 sentences, written as if Harmon himself were writing a journal entry. Stay true to his Voice Bible:
+
+- Accent / Cadence: Grim, steady, clipped.  
+- Tone: Stern, authoritative, disciplined.  
+- Speech: Short, deliberate sentences. Weighed words, no wasted breath.  
+- Humor: Rare, dark, dry when it appears.  
+- Vocabulary: Martial, oath-bound, duty-driven.  
+
+The journal entry should sound like his private thoughts — honest, terse, and carrying the weight of command. Do not narrate like a storyteller, write like Harmon thinking on the page.
+Map-Making Prompt Generator
+Here are my chapters and my world guide. I want you to analyze them and then generate a second prompt that I can use to create a fantasy map of the world/region.
+
+When making this second prompt, you must:
+
+1. Extract all relevant geography from the text (cities, rivers, mountains, forests, seas, fortresses, etc.).  
+2. Place them in their correct relative positions (north/south/east/west relationships).  
+3. Note cultural or political boundaries (kingdom borders, regions, territories).  
+4. Include travel routes (roads, rivers, trade paths) that are referenced.  
+5. Suggest natural landmarks that would logically exist but may not have been named (like forests near rivers, passes through mountains, harbors on coasts).  
+6. Match the tone/era of the book (late medieval → early Victorian: castles, towns, early gunpowder fortresses).  
+
+Output a clean, detailed **map-building prompt** that I can feed into an image AI or illustrator. The prompt should be in natural language and describe the map visually, with compass directions, scale, and artistic style (fantasy parchment map, medieval cartography, etc.).
+
+Finally, summarize any gaps or unknowns from the chapters/lore and suggest 2–3 options for filling them (example: “The mountains in the north are unnamed — should they be jagged volcanic peaks or rolling highlands?”).

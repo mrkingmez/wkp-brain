@@ -13,3 +13,8 @@ Design rules adopted (untested, confirm once Zac hands results back):
 - Firefly image model name on Zac's account: not verified. Partner models (Nano Banana Pro) for multi-reference: not verified.
 
 To record after the first batch comes back: which views held consistent, whether the mask, crown cap, wax-seal head and "full stop only" face came out clean, whether the tool added crests or text, and whether reference-photo attachment was accepted.
+
+## 2026-11-04: Ian Griffin trailer stills (The Wrench Turner)
+Source: Post-Production\reports\ian-trailer\04-stills-prompts.md. Nothing generated yet, all untested.
+Design rules adopted: one style sentence prefix; ball-free plates plus one real photo of the prop ball composited in After Effects as the safest way to keep one ball; blank ruled forms for logs, scrawl added in edit because image models invent fake letters; subject kept in the center third so 9:16, 16:9 and 4:5 all survive; no make or model named for the car.
+To record after the first batch: did Firefly hold the ball, did it refuse a child's hand, did blank forms stay blank, did the Style Reference carry grain.

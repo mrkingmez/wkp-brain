@@ -1,0 +1,138 @@
+Editor Packet, The Patience of the Dark
+Third draft changes, collected from the project notes, the canon rulings, the alpha reader feedback, and the full manuscript. Zac makes the final call on every item. No em dashes and no colons in any suggestion. God stays.
+How to use this. Part 1 is mechanical find and replace. Part 2 is story fixes with paste-ready lines. Part 3 is the simile habit. Part 4 is items I could not source. Part 5 is the alpha reader's notes. Part 6 is what is still Zac's to decide. Part 7 is what the old handoff document gets wrong.
+Part 1, spelling and mechanics
+Counts are from the v2 files. Three of these follow Zac's locked spellings over first appearance (Torn, Breckenstall, Fort Dreknor), because he ruled on them by name.
+Part 2, story fixes with paste-ready lines
+Chapter 20, Luca and the Pearl (priority)
+Ruling from Zac. The Pearl shatters at the end of the Second Magic War, not the First. Luca stays a child of the First War. This is the only mention of the Pearl in Chapter 20.
+Find. I was born Luk’on, a child of war, not the Second Magic War you’ve heard whispered about, but the First, when the skies cracked, and the Pearl shattered, spilling power and madness into the world.
+Option 1, minimal (recommended). I was born Luk'on, a child of war, not the Second Magic War you've heard whispered about, but the First, when the skies cracked and the Veil tore, spilling power and madness into the world.
+Option 2, immersive. I was born Luk'on, a child of war, not the Second Magic War you've heard whispered about, but the First, when the Seven broke the seal on the Etherveil and the skies cracked, spilling power and madness into the world.
+Option 3, voice. I was born Luk'on, a child of war, not the Second Magic War you've heard whispered about, but the First, when the skies cracked and the lock on the Ether broke, and the madness came pouring out.
+Chapter 6, Allison hears the reveal
+Problem from the alpha reader. Allison stays in the room while Harmon tells Weslin he is an Adept, and Harmon would not do that casually. Canon note. Allison is not noble born, and she is Weslin's closest friend and the girl he likes, so Option 2 works well because Harmon can know exactly who she is. Paste one of these just before the line that begins You are an Adept, Weslin.
+Option 1, minimal, she is sent off. Harmon did not look at her. "Allison. Watch the corridor and stay there until I say otherwise." She went, and the door closed behind her, and only then did he turn back to Weslin.
+Option 2, immersive, he weighs her first. Harmon's eyes went to Allison and stayed there. It was a long, unhurried look, and it was not unkind, but it was a weighing all the same. Whatever he found, he nodded once, slowly, and let it stand. Then he turned back to Weslin.
+Option 3, voice, sworn to silence. "Allison. What you hear in this room stays in this room. I need to hear you say it." "I understand," she said. Her voice was small, but it did not shake. Harmon held her gaze a moment longer, then let her go.
+Chapter 1, why Harmon picks Weslin
+Correction. My first version had Harmon recognize Weslin, and that was wrong. Harmon helped Mjakazi escape, but Mjakazi broke the bond himself. Harmon worked from the shadows, did not watch his every step, and once Mjakazi was settled he only listened for tales. He never heard any because Mjakazi had changed. So in Chapter 1 Harmon does not know Weslin is Mjakazi's son. He picks him for not quitting, which Chapter 4 says. The alpha reader found the pick rash, so the fix is a small hint of why. Paste one of these right after Harmon says Walk with me.
+Option 1, minimal. Harmon's gaze stayed on the boy a half second longer than the moment needed, taking in the scuffed knees and the breath he was still fighting to steady. Then it moved on.
+Option 2, immersive. Harmon had watched the boy run himself breathless for a task no one would thank him for, and not once had he slowed. A man noticed that. He noticed it, and he kept it.
+Option 3, voice. He had watched the boy push himself near to collapse for a duty nobody cared about. Harmon filed that away and said nothing.
+Chapter 4, make the Mjakazi history clear
+Zac's ruling. Harmon helped Mjakazi escape, but Mjakazi broke the bond himself. Harmon worked from the shadows and did not watch his every step. Once Mjakazi was settled, before he married, Harmon stopped watching and only listened for tales. He never heard any because Mjakazi had changed. So Harmon did not know about the son until Weslin spoke of his father. Chapter 4 already has Harmon arranging the tavern, the dockyard job and the bakery from the shadows, but it never says three things. It does not say Mjakazi broke the bond, it does not say Harmon stopped watching, and it does not say when Harmon learned who the boy's father was. There are three small insertions.
+Insertion A, when Harmon learned whose son Weslin is
+Line before. Today’s work was at the end of this road, in a bakery that smelled of warm bread and everything Harmon was about to disturb.
+Insert after it. Pick one of the options below.
+Option 1, minimal. He had put it together an hour ago, from a few words about a father who baked. Harmon had lost track of that man years back. He had not known there was a son.
+Option 2, immersive. An hour ago the boy had said enough about his father for Harmon to know exactly who he was. Harmon had lost track of that man years back. He had listened for a rumor, a name, anything at all, and heard nothing, because the man had made himself someone else. He had not known there was a son. He had not known there was a bakery.
+Option 3, voice. An hour ago it clicked, from a few careless words about a father who baked. Harmon had listened for that man for years and heard nothing, because the man had changed. He had never once guessed at a son.
+Line after. He fell into step beside the boy. “Do you think your father will welcome the news?”
+Insertion B, Mjakazi broke the bond himself
+Find. “Mjakazi, I risked my life to get you out. I brought you here to give you a chance at a new life.”
+Option 1, minimal. "Mjakazi, I risked my life to get you out. I opened the door. You were the one who walked through it, and the chain in your chest was yours to break, not mine."
+Option 2, immersive. "Mjakazi, I risked my life to get you out. I could open the door and nothing more. What was in your chest, you broke yourself. I only stood outside it. Then I brought you here to give you a chance at a new life."
+Option 3, voice. "I got you out, Mjakazi. I did that much. The chain in your chest, you broke on your own. I never could have. Then I brought you here for a new start."
+Insertion C, Harmon stopped watching
+Find. “I did what I could. And when I saw you with Zeriah, happy, building a family, I knew you would be fine. You had finally found peace.”
+Paste one of these straight after that closing quote, as the next lines of Harmon's speech, or fold it into the same quote.
+Option 1, minimal. "After that I stopped watching. I listened for a name, a rumor, a story. Nothing ever came, because you had changed too well."
+Option 2, immersive. "After that I let you be. I only listened for stories, a rumor of a man who baked, a name I knew. Nothing ever reached me. You had changed too well to be found, and I took that as a blessing."
+Option 3, voice. "That was the last I watched. After, I only listened for tales, and none came. You were gone from every story, and I let you be."
+Also note. In Chapter 4 Harmon already says to Weslin I know him, and I know he's a good man, which now reads correctly because Insertion A tells the reader he learned who the father was that hour.
+Chapter 15, Merrick sigil outlier
+Canon. Merrick's personal sigil is four foxes around hammers. The Forged order's sigil is a serrated black star over a silver flame. This line is the outlier.
+Find. Lord Iven Merrick. Twin-headed hammer wrapped in ivy. He always did have a flair for presentation.
+Replace with. Lord Iven Merrick. Four foxes around hammers. He always did have a flair for presentation.
+Chapter 17 and Chapter 23, the ring and Harmon's age
+Correction. My first version of this item was wrong. The ring does have a cost. It is a dependency that grows, a fear of not being himself without it, and at his age it is close to life support. The Chapter 17 sentence The cost of that ring's power was something he had stopped counting already says that, so it can stay. The real point is the Forgehallow escape. Harmon going down at the end of the fight in Chapter 23 is his age, and the ring still gives a boost but no longer enough to carry him like it used to. Nothing on the page says that yet, so Chapter 23 needs one beat.
+Chapter 17, optional deepen
+Find. The cost of that ring’s power was something he had stopped counting.
+Option 1, keep as written. No change. It already carries the dependency.
+Option 2, fear. The cost of that ring’s power was something he had stopped counting, and the thought of setting it down frightened him more than any blade.
+Option 3, life support. The cost of that ring’s power was something he had stopped counting. At his age it was less a gift than a tether, and he no longer knew who he would be if it let go.
+Chapter 23, add one beat after the collapse
+These are new lines for Zac to accept or reject. Paste after the paragraph that ends the sword and his armor were gone, and before Weslin stared. If you prefer it after Weslin stared, it still works. Weslin is the point of view here, and he does not really know how the ring works, so the beat stays in what he can see and hear and never explains the ring.
+Line before. “I’m fine,” Harmon grunted. “Just... get me on the horse.” As soon as the words left his lips, the sword and his armor were gone.
+Option 1, minimal. Harmon's hand closed over the ring on his finger and stayed there. Weslin did not know why, only that it looked like something the old man did not want seen.
+Option 2, immersive. Harmon's hand went to the ring and closed over it, hard, the knuckles gone pale. Weslin had no idea what the ring did or what it asked of him. He only knew that a man that old should not look so small after a fight he had just won.
+Option 3, voice, Harmon says it. "Not the ring's fault," Harmon muttered, eyes closed, to no one. "Just the years." Weslin did not understand, and he did not ask.
+Line after. Weslin stared. The sword was gone and the armor with it, as if neither had ever existed.
+Also check Chapter 27. Garr says We don't know what kind of toll that magic took. That reads fine as a guess from someone who does not know, so no change is suggested.
+Chapter 10, Creator
+Zac's ruling. One deity, God the Creator, and people use other forms of the name. Chapter 5 and Chapter 27 already say God the Creator. Harmon's expletive in Chapter 10 reads in lowercase. Optional change for consistency.
+Find. and for the creator’s sake, keep your head down
+Replace with. and for the Creator's sake, keep your head down
+Chapter 23, the plan line
+The old handoff lists one remaining fix, delete Here is the plan, it's time we are getting out of here from Dain's courtyard line. I searched the current Chapter 23 file and that wording is not there, so it looks already done. Editor, confirm on your copy.
+Aurelia, feeling useless and wanting more
+This is new direction from Zac, not a stored note. I searched the project and the memory notes and found nothing saved on it. It follows canon. She stays unstable, no stable true voice, and nothing confirms Korr hijacked her. She only believes something is wrong. Suggested home is after the pond, around the Chapter 48 half-nonsense stretch or the Chapter 51 crying. Placement is Zac's call.
+Option 1, minimal and internal. She had been in the room when it happened. The wall had come down on her, and she had not been able to do one thing about it. Useless. The word sat in her chest and would not move. Next time the door would not hold. She would make sure of it, whatever it cost.
+Option 2, spoken, half-nonsense. "I was right there," she said, to no one, to the water. "Right there and it did not matter. They shut me out." Her fingers opened and closed in her lap. "Next time I am not the door. I am the hand. Tell them. Tell them the hand is coming."
+Option 3, headache and doubt. The headache came back behind her eyes, slow and sure. She pressed the heel of her hand against it and made herself breathe. Useless. She had been strong enough once, or she had told herself so. More. She needed more. The thought did not sound like hers, or maybe it did, and she could not tell anymore which was worse.
+Part 3, the simile habit
+The alpha reader's loudest note. A search of the manuscript found 84 narration hits of the pattern the way a man does X when Y, or like someone who. The full cut list is in the separate file Simile_Cuts_and_Third_Draft_Beats.docx, 64 paste-ready cuts by chapter, with 19 marked Keep. Chapter 19 and Chapter 6 are the heaviest. The three lines the reader quoted, with cuts.
+Find. His face was the face of someone performing indifference very carefully.
+Replace with. His face showed indifference, and it took effort.
+Find. Then he exhaled once, slow and quiet, the way a man exhales when he has heard a true thing and is deciding how to carry it.
+Replace with. Then he exhaled once, slow and quiet. It was a true thing, and he was deciding how to carry it.
+Find. walked back toward the noise like someone who had never been anywhere else.
+Replace with. walked back toward the noise.
+The pass catches the pattern families I searched for, so expect stragglers in the read-through. Rule of thumb for the editor, if the sentence still works after the comparison is cut, cut it.
+Part 4, items I could not source
+These three were on my working list from earlier in the project. I could not find them in the stored notes or the handoff, so I cannot tell you exactly what was meant. Zac, confirm they are real before the editor spends time on them.
+Chapter 49, a timeline anchor. Possibly tying the feast to the bell count and days in Chapters 47 and 48. The handoff says the seventh bell connecting line was already added to Chapter 49.
+Chapters 47 and 48, make mimic family versus real family unmistakable. The handoff says the family on the 32nd floor were all mimics and the real family was in a sealed room nearby, and the facts are consistent, so this would be a clarity pass only.
+Chapter 52, trim the Rouric torture. Nothing in the notes says how much, or why.
+Part 5, alpha reader notes
+One reader, Jason McCrickard. Rated it 7 out of 10, called it an Epic Adventure, stopped around Chapter 9, and would absolutely read Book Two. He said he is hooked so far. He is right on three points and lighter on the rest.
+Right, the simile habit. See Part 3.
+Right, Allison present in the Chapter 6 reveal. See Part 2.
+Partly right. Harmon choosing Weslin in Chapter 1 looks rash, but Harmon did not know Weslin was Mjakazi's son. The fix is a hint of why he picks him, not recognition. See Part 2.
+Lighter, he felt Adin was underdeveloped early, given the role Adin plays in assembling the team. Adin is deliberately vague, so no change is suggested. Zac's call.
+Lighter, Chapter 7 introduces a lot of characters and clans at once. A cut or a trimmed line or two on the clan descriptions would help the early reader. Zac's call.
+Lighter, he found Harmon a bit too human and wanted more wisdom and tact shown, and some dialogue short and forced. Zac's call, and Harmon's warmth is a stated choice.
+He also said not to change the key characters and the pacing of the early chapters.
+Part 6, still Zac's to decide
+Chapter 4 says the great hall at Stormhold. Canon notes say Stormhold is likely the great hall within Stormhaven. One use. Recommendation, leave it as written, since it reads as a named hall.
+Governor Drake's first name. Meridian is listed but unconfirmed. Do not use it on the page until Zac confirms.
+Drake's children. The handoff says resolved, Camryn is the son and Lysa is the daughter. The canon notes still say to be decided. Zac to confirm which.
+Dain's surname. Kerswell appears in Ch7 and Ch12, and his cover Lord Alric Rendsdale appears in Ch11, Ch12, Ch18 and Ch52. Leave both as written unless Zac wants Kerswell explained.
+Chapter 16, two open questions from the handoff. What the Taerel and Aymir exchange about avoiding something refers to, and whether the line That's the anchor is spoken by Luca or Taerel.
+Chapter 38 day count. Five days since one message versus nine since the warning. Two separate events, or reconcile.
+Whether the Ch50 Brotherhood leader with three fingers gone is Korr's physical form. The canon notes treat Korr as bonded into a former Brotherhood commander, so the description fits, but do not state it on the page until Zac confirms.
+Part 7, the old handoff document is out of date on these
+It says do not call the king Edric. Zac's ruling is that Edric and Wymark are both fine. Only Wyman is wrong.
+It says Harmon Deim. The ruling is Harmon Diem.
+It says Justice Stone. The ruling is Judgement Stone.
+It says the manuscript is about 252,000 words. The confirmed second draft count is 234,859.
+It says the Eight is correct to change to the Nine in the notes. Zac's ruling is that the page says the Eight and the ninth is a secret. Do not change it.
+The Aldrek staged-arrest beat is confirmed as written, so no clarification beat is needed.
+Locked canon spellings are Fort Dreknor, Ashvale, Breckenstall, and Torn.
+Backstory such as Reau's Shardborn status and Weslin's parentage is deliberately off the page. It is not a gap to flag.
+Find | Replace with | Where and how many
+Colton | Cotter | Ch24 six, Ch38 ten, Ch49 two. 18 total.
+Wyman (as in King Edric Wyman) | Wymark | Ch36 two, Ch38 one, Ch49 one. Keep Edric, both Edric and Wymark are fine for the king.
+Aymer | Aymir | Ch13 twenty-three, Ch14 twenty, Ch20 twenty-nine. 72 total.
+Taeral | Taerel | Ch9 one.
+Tarlon | Talron | Ch51 two.
+Tarn (the prisoner) | Torn | Ch23 three, Ch27 three, Ch28 three. Leave the word Tarnished in Ch31 and Ch47 alone.
+Brackenstall, Brackenstalls | Breckenstall, Breckenstalls | Ch2 one, Ch7 three, including the sign over the door.
+Forgehollow | Forgehallow | Ch12 one, Ch18 six, Ch19 one, Ch21 three, Ch27 one. 12 total.
+Forge Hollow | Forgehallow | Ch52 two.
+Fort Dran | Fort Dreknor | Ch16 one.
+Deim (Harmon Deim) | Diem | Ch50 one.
+Ashgate | Ashvale | Ch42 one.
+Ironflask | Iron Flask | Ch21 two.
+Gabriel (Gabriel heard her call for justice) | Ariel | Ch30 one.
+Judgment Stone | Judgement Stone | Ch20 one.
+Adien | Adin | Ch4 one.
+Adldrek | Aldrek | Ch36 one.
+Nysaa | Nyssa | Ch35 one.
+Welsin | Weslin | Ch6 one.
+Eastmere Rebellion | Estmere Rebellion | Ch35 one.
+Shared Empire | Shattered Empire | Prologue one.
+Chapter Thriteen | Chapter Thirteen | Ch13 heading.
+Chapter Thrity-Five, Thrity-Six, Thrity-Nine | Chapter Thirty-Five, Thirty-Six, Thirty-Nine | Headings of Ch35, Ch36, Ch39.
+Anther loud snap. | Another loud snap. | Ch22 one.

@@ -1,0 +1,1431 @@
+{
+ "run_started": "2026-11-04",
+ "source": "D:\\The Shaterred Empire Series\\Edited folder_",
+ "next_chapter": "ASSEMBLE",
+ "chapters": {
+  "ch_00_prologue": {
+   "status": "done",
+   "words": 1555,
+   "paragraphs_total": 104,
+   "paragraphs_nonempty": 53,
+   "read_lines": 104,
+   "read_words": 1555,
+   "first8": "The clatter of dice and the soft scrape",
+   "last8": "the tale of the night the nightmares returned.",
+   "items": 20,
+   "verify_errors": [],
+   "tag_counts": {
+    "AI TELL": 11,
+    "VOICE": 1,
+    "ZAC NOTE": 1,
+    "MECHANICS": 4,
+    "ADD": 1,
+    "FORESHADOW": 1,
+    "CUT ONLY": 2,
+    "CONTINUITY": 3
+   },
+   "sev_counts": {
+    "Polish": 13,
+    "Must fix": 2,
+    "Should fix": 5
+   }
+  },
+  "ch_01": {
+   "status": "done",
+   "words": 5002,
+   "paragraphs_total": 325,
+   "paragraphs_nonempty": 165,
+   "read_lines": 325,
+   "read_words": 5002,
+   "first8": "Weslin pounded down the stone corridors of the",
+   "last8": "he stepped out, leaving silence in his wake.",
+   "items": 45,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 7,
+    "CUT ONLY": 2,
+    "CONTINUITY": 10,
+    "VOICE": 10,
+    "AI TELL": 25,
+    "ZAC NOTE": 1,
+    "ADD": 2,
+    "FORESHADOW": 1,
+    "ERA": 1
+   },
+   "sev_counts": {
+    "Polish": 31,
+    "Must fix": 3,
+    "Should fix": 11
+   },
+   "note": "written after full read"
+  },
+  "ch_02": {
+   "status": "done",
+   "words": 3567,
+   "paragraphs_total": 113,
+   "paragraphs_nonempty": 109,
+   "read_lines": 113,
+   "read_words": 3567,
+   "first8": "The Broken Bolt sang with life. Even with",
+   "last8": "drinking. Sat with the candle a moment longer.",
+   "items": 42,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 11,
+    "VOICE": 7,
+    "AI TELL": 16,
+    "CONTINUITY": 7,
+    "ZAC NOTE": 4,
+    "CUT ONLY": 5,
+    "FORESHADOW": 2
+   },
+   "sev_counts": {
+    "Must fix": 4,
+    "Should fix": 10,
+    "Polish": 28
+   },
+   "note": "written after full read"
+  },
+  "ch_03": {
+   "status": "done",
+   "words": 3147,
+   "paragraphs_total": 177,
+   "paragraphs_nonempty": 90,
+   "read_lines": 177,
+   "read_words": 3147,
+   "first8": "Adin sat and watched his friend gather the",
+   "last8": "still high. The fourth bell did not care.",
+   "items": 39,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 7,
+    "CONTINUITY": 9,
+    "AI TELL": 16,
+    "VOICE": 7,
+    "FORESHADOW": 3,
+    "ZAC NOTE": 7,
+    "CUT ONLY": 1
+   },
+   "sev_counts": {
+    "Must fix": 2,
+    "Should fix": 10,
+    "Polish": 27
+   },
+   "note": "written after full read"
+  },
+  "ch_04": {
+   "status": "done",
+   "words": 4693,
+   "paragraphs_total": 114,
+   "paragraphs_nonempty": 113,
+   "read_lines": 114,
+   "read_words": 4693,
+   "first8": "Market Street had been swallowed alive. Harmon and",
+   "last8": "a while before they could be put down.",
+   "items": 52,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 17,
+    "AI TELL": 20,
+    "ZAC NOTE": 8,
+    "FORESHADOW": 3,
+    "ADD": 1,
+    "CONTINUITY": 4,
+    "CUT ONLY": 3,
+    "VOICE": 3,
+    "SIMILE": 1
+   },
+   "sev_counts": {
+    "Must fix": 2,
+    "Should fix": 16,
+    "Polish": 34
+   },
+   "note": "written after full read"
+  },
+  "ch_05": {
+   "status": "done",
+   "words": 2651,
+   "paragraphs_total": 74,
+   "paragraphs_nonempty": 74,
+   "read_lines": 74,
+   "read_words": 2651,
+   "first8": "Harmon Diem stepped through the great carved oak",
+   "last8": "if nothing had changed. The feast had begun.",
+   "items": 38,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 15,
+    "AI TELL": 13,
+    "ZAC NOTE": 7,
+    "FORESHADOW": 1,
+    "VOICE": 2,
+    "CONTINUITY": 5,
+    "CUT ONLY": 1
+   },
+   "sev_counts": {
+    "Should fix": 7,
+    "Polish": 26,
+    "Must fix": 5
+   },
+   "note": "written after full read"
+  },
+  "ch_06": {
+   "status": "done",
+   "words": 3423,
+   "paragraphs_total": 115,
+   "paragraphs_nonempty": 109,
+   "read_lines": 115,
+   "read_words": 3423,
+   "first8": "Weslin sat stirring his stew, his grip tight",
+   "last8": "time.\u201d And together, they walked into the night.",
+   "items": 41,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 11,
+    "ZAC NOTE": 10,
+    "AI TELL": 15,
+    "ADD": 1,
+    "CONTINUITY": 3,
+    "VOICE": 4,
+    "CUT ONLY": 3,
+    "FORESHADOW": 3
+   },
+   "sev_counts": {
+    "Must fix": 3,
+    "Should fix": 5,
+    "Polish": 33
+   },
+   "note": "written after full read"
+  },
+  "ch_07": {
+   "status": "done",
+   "words": 5526,
+   "paragraphs_total": 180,
+   "paragraphs_nonempty": 170,
+   "read_lines": 180,
+   "read_words": 5526,
+   "first8": "Harmon and Weslin approached the Brackenstall Stables, their",
+   "last8": "said, standing next to Adin. Adin laughed softly.",
+   "items": 103,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 42,
+    "AI TELL": 20,
+    "VOICE": 17,
+    "CUT ONLY": 4,
+    "CONTINUITY": 15,
+    "ZAC NOTE": 5,
+    "FORESHADOW": 7
+   },
+   "sev_counts": {
+    "Must fix": 3,
+    "Should fix": 22,
+    "Polish": 78
+   },
+   "note": "written after full read"
+  },
+  "ch_08": {
+   "status": "done",
+   "words": 3906,
+   "paragraphs_total": 107,
+   "paragraphs_nonempty": 107,
+   "read_lines": 107,
+   "read_words": 3906,
+   "first8": "The echoes of the Feast still lingered in",
+   "last8": "leaning against the railing, listening to the water.",
+   "items": 56,
+   "verify_errors": [],
+   "tag_counts": {
+    "CUT ONLY": 1,
+    "AI TELL": 19,
+    "CONTINUITY": 11,
+    "MECHANICS": 19,
+    "FORESHADOW": 3,
+    "ZAC NOTE": 2,
+    "VOICE": 2
+   },
+   "sev_counts": {
+    "Polish": 39,
+    "Should fix": 16,
+    "Must fix": 1
+   },
+   "note": "written after full read"
+  },
+  "ch_09": {
+   "status": "done",
+   "words": 3684,
+   "paragraphs_total": 99,
+   "paragraphs_nonempty": 99,
+   "read_lines": 99,
+   "read_words": 3684,
+   "first8": "The boat cut through the still waters of",
+   "last8": "he would remember. He faced forward and rode.",
+   "items": 46,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 17,
+    "AI TELL": 13,
+    "CONTINUITY": 8,
+    "CUT ONLY": 2,
+    "FORESHADOW": 4,
+    "VOICE": 2,
+    "ZAC NOTE": 1
+   },
+   "sev_counts": {
+    "Must fix": 2,
+    "Should fix": 5,
+    "Polish": 39
+   },
+   "note": "written after full read"
+  },
+  "ch_10": {
+   "status": "done",
+   "words": 3863,
+   "paragraphs_total": 135,
+   "paragraphs_nonempty": 122,
+   "read_lines": 137,
+   "read_words": 3863,
+   "first8": "The wind rolled down the high cliffs of",
+   "last8": "different now. Still strangers. But not entirely alone.",
+   "items": 55,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 23,
+    "AI TELL": 19,
+    "CUT ONLY": 1,
+    "CONTINUITY": 6,
+    "FORESHADOW": 3,
+    "ZAC NOTE": 1,
+    "VOICE": 3
+   },
+   "sev_counts": {
+    "Should fix": 12,
+    "Must fix": 2,
+    "Polish": 41
+   },
+   "note": "written after full read"
+  },
+  "ch_11": {
+   "status": "done",
+   "words": 4113,
+   "paragraphs_total": 129,
+   "paragraphs_nonempty": 128,
+   "read_lines": 130,
+   "read_words": 4113,
+   "first8": "Harmon had paid generously, and it showed. Three",
+   "last8": "beyond the windows, and the gathering storm outside.",
+   "items": 77,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 31,
+    "CONTINUITY": 15,
+    "VOICE": 5,
+    "AI TELL": 22,
+    "ZAC NOTE": 1,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Should fix": 17,
+    "Polish": 58,
+    "Must fix": 2
+   },
+   "note": "written after full read"
+  },
+  "ch_12": {
+   "status": "done",
+   "words": 4324,
+   "paragraphs_total": 134,
+   "paragraphs_nonempty": 134,
+   "read_lines": 134,
+   "read_words": 4324,
+   "first8": "The streets of Forgehallow buzzed with a constant",
+   "last8": "the next step in whatever this was becoming.",
+   "items": 69,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 28,
+    "CONTINUITY": 11,
+    "VOICE": 2,
+    "AI TELL": 20,
+    "ZAC NOTE": 2,
+    "CUT ONLY": 3,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Must fix": 2,
+    "Should fix": 18,
+    "Polish": 49
+   },
+   "note": "written after full read"
+  },
+  "ch_13": {
+   "status": "done",
+   "words": 3743,
+   "paragraphs_total": 143,
+   "paragraphs_nonempty": 138,
+   "read_lines": 143,
+   "read_words": 3743,
+   "first8": "Snow crunched beneath iron-shod hooves as Luca and",
+   "last8": "hollow. The night ahead waited. Wide. White. Watching.",
+   "items": 60,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 23,
+    "CONTINUITY": 4,
+    "VOICE": 3,
+    "AI TELL": 24,
+    "CUT ONLY": 2,
+    "ZAC NOTE": 1,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Must fix": 1,
+    "Polish": 50,
+    "Should fix": 9
+   },
+   "note": "written after full read"
+  },
+  "ch_14": {
+   "status": "done",
+   "words": 2773,
+   "paragraphs_total": 102,
+   "paragraphs_nonempty": 102,
+   "read_lines": 102,
+   "read_words": 2773,
+   "first8": "The sound of breath was louder than their",
+   "last8": "hers, and then they all saw it together.",
+   "items": 41,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 13,
+    "CONTINUITY": 4,
+    "VOICE": 2,
+    "AI TELL": 15,
+    "CUT ONLY": 3,
+    "ZAC NOTE": 1,
+    "FORESHADOW": 3
+   },
+   "sev_counts": {
+    "Must fix": 1,
+    "Should fix": 8,
+    "Polish": 32
+   },
+   "note": "written after full read"
+  },
+  "ch_15": {
+   "status": "done",
+   "words": 4583,
+   "paragraphs_total": 184,
+   "paragraphs_nonempty": 183,
+   "read_lines": 184,
+   "read_words": 4583,
+   "first8": "\u201cLuca\u2019s found an orc raider camp.\u201d The room",
+   "last8": "and was working hard not to become one.",
+   "items": 57,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 17,
+    "CONTINUITY": 9,
+    "VOICE": 3,
+    "AI TELL": 13,
+    "CUT ONLY": 4,
+    "ZAC NOTE": 2,
+    "FORESHADOW": 9
+   },
+   "sev_counts": {
+    "Polish": 45,
+    "Should fix": 11,
+    "Must fix": 1
+   },
+   "note": "written after full read"
+  },
+  "ch_16": {
+   "status": "done",
+   "words": 4494,
+   "paragraphs_total": 228,
+   "paragraphs_nonempty": 226,
+   "read_lines": 228,
+   "read_words": 4494,
+   "first8": "The wind whispered like a warning across the",
+   "last8": "and steady, burying blood, bodies, and answers alike.",
+   "items": 46,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 12,
+    "CONTINUITY": 6,
+    "AI TELL": 16,
+    "CUT ONLY": 2,
+    "ZAC NOTE": 2,
+    "FORESHADOW": 8
+   },
+   "sev_counts": {
+    "Polish": 36,
+    "Must fix": 2,
+    "Should fix": 8
+   },
+   "note": "written after full read"
+  },
+  "ch_17": {
+   "status": "done",
+   "words": 2718,
+   "paragraphs_total": 177,
+   "paragraphs_nonempty": 92,
+   "read_lines": 177,
+   "read_words": 2718,
+   "first8": "Maps were strewn like fallen leaves across the",
+   "last8": "lot from, and more before it was done.",
+   "items": 53,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 15,
+    "CONTINUITY": 10,
+    "VOICE": 2,
+    "AI TELL": 17,
+    "CUT ONLY": 3,
+    "ZAC NOTE": 2,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 45,
+    "Should fix": 8
+   },
+   "note": "written after full read"
+  },
+  "ch_18": {
+   "status": "done",
+   "words": 4306,
+   "paragraphs_total": 260,
+   "paragraphs_nonempty": 157,
+   "read_lines": 262,
+   "read_words": 4306,
+   "first8": "After breakfast, Aurelia and Weslin returned to their",
+   "last8": "unaware of the storm it had just birthed.",
+   "items": 50,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 9,
+    "ZAC NOTE": 1,
+    "AI TELL": 13,
+    "VOICE": 11,
+    "CONTINUITY": 8,
+    "FORESHADOW": 7,
+    "CUT ONLY": 1
+   },
+   "sev_counts": {
+    "Must fix": 3,
+    "Polish": 34,
+    "Should fix": 13
+   },
+   "note": "written after full read"
+  },
+  "ch_19": {
+   "status": "done",
+   "words": 4571,
+   "paragraphs_total": 188,
+   "paragraphs_nonempty": 187,
+   "read_lines": 188,
+   "read_words": 4571,
+   "first8": "Harmon returned to his makeshift command hub, which",
+   "last8": "picks it up, only that it gets done.",
+   "items": 53,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 9,
+    "ZAC NOTE": 10,
+    "CONTINUITY": 7,
+    "AI TELL": 15,
+    "FORESHADOW": 7,
+    "VOICE": 5
+   },
+   "sev_counts": {
+    "Must fix": 2,
+    "Polish": 35,
+    "Should fix": 16
+   },
+   "note": "written after full read"
+  },
+  "ch_20": {
+   "status": "done",
+   "words": 5076,
+   "paragraphs_total": 163,
+   "paragraphs_nonempty": 156,
+   "read_lines": 163,
+   "read_words": 5076,
+   "first8": "A thin veil of morning mist clung to",
+   "last8": "quite as sharp. Not tonight, but it would.",
+   "items": 54,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 8,
+    "ZAC NOTE": 1,
+    "CONTINUITY": 9,
+    "AI TELL": 17,
+    "FORESHADOW": 6,
+    "CUT ONLY": 1,
+    "VOICE": 12
+   },
+   "sev_counts": {
+    "Must fix": 4,
+    "Polish": 39,
+    "Should fix": 11
+   },
+   "note": "written after full read"
+  },
+  "ch_21": {
+   "status": "done",
+   "words": 3847,
+   "paragraphs_total": 179,
+   "paragraphs_nonempty": 145,
+   "read_lines": 179,
+   "read_words": 3847,
+   "first8": "The last golden streaks of sunlight filtered through",
+   "last8": "now, the silence held, as if drawing breath.",
+   "items": 38,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 10,
+    "ZAC NOTE": 1,
+    "CONTINUITY": 7,
+    "VOICE": 7,
+    "FORESHADOW": 6,
+    "AI TELL": 7
+   },
+   "sev_counts": {
+    "Must fix": 3,
+    "Polish": 28,
+    "Should fix": 7
+   },
+   "note": "written after full read"
+  },
+  "ch_22": {
+   "status": "done",
+   "words": 3095,
+   "paragraphs_total": 144,
+   "paragraphs_nonempty": 144,
+   "read_lines": 144,
+   "read_words": 3095,
+   "first8": "Brother Aldrek sat in a stone-walled chamber, dimly",
+   "last8": "slipped back. Nyssa sucked in a breath. \u201cDain?!\u201d",
+   "items": 27,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 7,
+    "CONTINUITY": 5,
+    "FORESHADOW": 6,
+    "AI TELL": 6,
+    "VOICE": 3
+   },
+   "sev_counts": {
+    "Should fix": 6,
+    "Polish": 21
+   },
+   "note": "written after full read"
+  },
+  "ch_23": {
+   "status": "done",
+   "words": 3200,
+   "paragraphs_total": 282,
+   "paragraphs_nonempty": 142,
+   "read_lines": 282,
+   "read_words": 3200,
+   "first8": "Aldrek\u2019s knee kept him pinned to the floor.",
+   "last8": "in his shoulders that no victory could ease.",
+   "items": 20,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 5,
+    "CONTINUITY": 6,
+    "VOICE": 2,
+    "AI TELL": 3,
+    "FORESHADOW": 3,
+    "ZAC NOTE": 1
+   },
+   "sev_counts": {
+    "Polish": 13,
+    "Should fix": 6,
+    "Must fix": 1
+   },
+   "note": "written after full read"
+  },
+  "ch_24": {
+   "status": "done",
+   "words": 2787,
+   "paragraphs_total": 225,
+   "paragraphs_nonempty": 114,
+   "read_lines": 225,
+   "read_words": 2787,
+   "first8": "The twenty-seventh Hall of Fowther Palace shimmered beneath",
+   "last8": "a cloak, not of comfort, but of patience.",
+   "items": 41,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 8,
+    "CONTINUITY": 6,
+    "VOICE": 6,
+    "AI TELL": 15,
+    "FORESHADOW": 6
+   },
+   "sev_counts": {
+    "Must fix": 1,
+    "Polish": 37,
+    "Should fix": 3
+   },
+   "note": "written after full read"
+  },
+  "ch_25": {
+   "status": "done",
+   "words": 4294,
+   "paragraphs_total": 312,
+   "paragraphs_nonempty": 158,
+   "read_lines": 312,
+   "read_words": 4294,
+   "first8": "The snow had crusted hard overnight, its surface",
+   "last8": "cold wind howled like prophecy through the trees.",
+   "items": 34,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 6,
+    "AI TELL": 11,
+    "VOICE": 6,
+    "CONTINUITY": 6,
+    "FORESHADOW": 3,
+    "CUT ONLY": 2
+   },
+   "sev_counts": {
+    "Polish": 29,
+    "Should fix": 5
+   },
+   "note": "written after full read"
+  },
+  "ch_26": {
+   "status": "done",
+   "words": 2484,
+   "paragraphs_total": 123,
+   "paragraphs_nonempty": 93,
+   "read_lines": 123,
+   "read_words": 2484,
+   "first8": "The acrid stench hit first, thick, burnt oil",
+   "last8": "somewhere out there, Taerel rode into the unknown.",
+   "items": 25,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 5,
+    "AI TELL": 8,
+    "VOICE": 5,
+    "FORESHADOW": 4,
+    "CONTINUITY": 3
+   },
+   "sev_counts": {
+    "Should fix": 5,
+    "Polish": 20
+   },
+   "note": "written after full read"
+  },
+  "ch_27": {
+   "status": "done",
+   "words": 4615,
+   "paragraphs_total": 311,
+   "paragraphs_nonempty": 176,
+   "read_lines": 311,
+   "read_words": 4615,
+   "first8": "The air was cold but not biting, just",
+   "last8": "a ghost. And the fire crackled between them.",
+   "items": 38,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 7,
+    "CONTINUITY": 6,
+    "ZAC NOTE": 2,
+    "FORESHADOW": 9,
+    "AI TELL": 9,
+    "VOICE": 5
+   },
+   "sev_counts": {
+    "Must fix": 3,
+    "Polish": 30,
+    "Should fix": 5
+   },
+   "note": "written after full read"
+  },
+  "ch_28": {
+   "status": "done",
+   "words": 3708,
+   "paragraphs_total": 297,
+   "paragraphs_nonempty": 156,
+   "read_lines": 297,
+   "read_words": 3708,
+   "first8": "The tent was dimly lit only by a",
+   "last8": "heading northeast, toward Stormhaven, to answer the unknown.",
+   "items": 37,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 6,
+    "ZAC NOTE": 3,
+    "AI TELL": 9,
+    "FORESHADOW": 8,
+    "CONTINUITY": 8,
+    "VOICE": 3
+   },
+   "sev_counts": {
+    "Must fix": 1,
+    "Polish": 31,
+    "Should fix": 5
+   },
+   "note": "written after full read"
+  },
+  "ch_29": {
+   "status": "done",
+   "words": 2357,
+   "paragraphs_total": 144,
+   "paragraphs_nonempty": 73,
+   "read_lines": 144,
+   "read_words": 2357,
+   "first8": "The frost bit deeper up here. The horse\u2019s",
+   "last8": "need to. The ridge held. The fire burned.",
+   "items": 23,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "CONTINUITY": 6,
+    "FORESHADOW": 3,
+    "VOICE": 3,
+    "AI TELL": 8
+   },
+   "sev_counts": {
+    "Polish": 19,
+    "Should fix": 4
+   },
+   "note": "written after full read"
+  },
+  "ch_30": {
+   "status": "done",
+   "words": 5848,
+   "paragraphs_total": 481,
+   "paragraphs_nonempty": 240,
+   "read_lines": 481,
+   "read_words": 5848,
+   "first8": "The ridge gave them nothing. Not a trail.",
+   "last8": "started yet, but it would. It always did.",
+   "items": 33,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 5,
+    "VOICE": 9,
+    "AI TELL": 10,
+    "ZAC NOTE": 1,
+    "CONTINUITY": 6,
+    "FORESHADOW": 2
+   },
+   "sev_counts": {
+    "Must fix": 1,
+    "Polish": 22,
+    "Should fix": 10
+   },
+   "note": "written after full read"
+  },
+  "ch_31": {
+   "status": "done",
+   "words": 3288,
+   "paragraphs_total": 274,
+   "paragraphs_nonempty": 138,
+   "read_lines": 274,
+   "read_words": 3288,
+   "first8": "The sun was low by the time Luca",
+   "last8": "slow, wicked grin. \u201cThat\u2019s a mission worth taking.\u201d",
+   "items": 19,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "AI TELL": 5,
+    "VOICE": 5,
+    "CONTINUITY": 2,
+    "FORESHADOW": 2,
+    "ZAC NOTE": 2
+   },
+   "sev_counts": {
+    "Polish": 14,
+    "Should fix": 5
+   },
+   "note": "written after full read"
+  },
+  "ch_32": {
+   "status": "done",
+   "words": 4866,
+   "paragraphs_total": 385,
+   "paragraphs_nonempty": 228,
+   "read_lines": 385,
+   "read_words": 4866,
+   "first8": "The capital rose before them like a god",
+   "last8": "He said nothing else. He didn't need to.",
+   "items": 24,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "AI TELL": 5,
+    "VOICE": 10,
+    "CONTINUITY": 4,
+    "FORESHADOW": 2
+   },
+   "sev_counts": {
+    "Polish": 17,
+    "Should fix": 7
+   },
+   "note": "written after full read"
+  },
+  "ch_33": {
+   "status": "done",
+   "words": 4101,
+   "paragraphs_total": 331,
+   "paragraphs_nonempty": 166,
+   "read_lines": 331,
+   "read_words": 4101,
+   "first8": "Morning was still working itself into noon when",
+   "last8": "shut behind them with a final, weighted click.",
+   "items": 23,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 2,
+    "CONTINUITY": 5,
+    "VOICE": 6,
+    "AI TELL": 4,
+    "FORESHADOW": 3
+   },
+   "sev_counts": {
+    "Polish": 17,
+    "Should fix": 6
+   },
+   "note": "written after full read"
+  },
+  "ch_34": {
+   "status": "done",
+   "words": 6130,
+   "paragraphs_total": 563,
+   "paragraphs_nonempty": 305,
+   "read_lines": 563,
+   "read_words": 6130,
+   "first8": "Stormhaven held its breath. The once-proud capital of",
+   "last8": "the note once, pocketed it, and said nothing.",
+   "items": 27,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "AI TELL": 5,
+    "CONTINUITY": 8,
+    "VOICE": 5,
+    "FORESHADOW": 6
+   },
+   "sev_counts": {
+    "Polish": 22,
+    "Should fix": 4,
+    "Must fix": 1
+   },
+   "note": "written after full read; Zac Find applied P45"
+  },
+  "ch_35": {
+   "status": "done",
+   "words": 6890,
+   "paragraphs_total": 671,
+   "paragraphs_nonempty": 339,
+   "read_lines": 671,
+   "read_words": 6890,
+   "first8": "The morning haze was now thinning into shafts",
+   "last8": "until the safe house door closed behind them.",
+   "items": 34,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 6,
+    "AI TELL": 7,
+    "VOICE": 5,
+    "CONTINUITY": 12,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 26,
+    "Must fix": 3,
+    "Should fix": 5
+   },
+   "note": "written after full read; Zac notes applied"
+  },
+  "ch_36": {
+   "status": "done",
+   "words": 5591,
+   "paragraphs_total": 520,
+   "paragraphs_nonempty": 291,
+   "read_lines": 520,
+   "read_words": 5591,
+   "first8": "Snow drifted in lazy coils past the high",
+   "last8": "he said evenly, \u201cGet me Riven and Nyssa.\u201d",
+   "items": 35,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 5,
+    "CONTINUITY": 12,
+    "AI TELL": 8,
+    "VOICE": 5,
+    "ZAC NOTE": 1,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 25,
+    "Must fix": 2,
+    "Should fix": 8
+   },
+   "note": "written after full read; Zac notes applied (Wymark x2, heading)"
+  },
+  "ch_37": {
+   "status": "done",
+   "words": 3825,
+   "paragraphs_total": 358,
+   "paragraphs_nonempty": 181,
+   "read_lines": 358,
+   "read_words": 3825,
+   "first8": "It was near midday when Taerel finally stepped",
+   "last8": "time was coming. And death\u2026 came with it.",
+   "items": 32,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "CONTINUITY": 8,
+    "VOICE": 4,
+    "AI TELL": 9,
+    "FORESHADOW": 8
+   },
+   "sev_counts": {
+    "Polish": 29,
+    "Must fix": 1,
+    "Should fix": 2
+   },
+   "note": "written after full read; no Zac notes"
+  },
+  "ch_38": {
+   "status": "done",
+   "words": 3433,
+   "paragraphs_total": 244,
+   "paragraphs_nonempty": 125,
+   "read_lines": 244,
+   "read_words": 3433,
+   "first8": "Governor Meridian Drake stood at the window of",
+   "last8": "no one noticed the world held its breath.",
+   "items": 30,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 5,
+    "CONTINUITY": 8,
+    "VOICE": 2,
+    "AI TELL": 11,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 24,
+    "Must fix": 2,
+    "Should fix": 4
+   },
+   "note": "written after full read; Zac notes applied (Cotter x10, Wymark, day count as question)"
+  },
+  "ch_39": {
+   "status": "done",
+   "words": 3515,
+   "paragraphs_total": 325,
+   "paragraphs_nonempty": 184,
+   "read_lines": 325,
+   "read_words": 3515,
+   "first8": "The wind held its breath as Luca crouched",
+   "last8": "and certain. And then they turned and fought.",
+   "items": 30,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 4,
+    "ZAC NOTE": 3,
+    "CONTINUITY": 9,
+    "VOICE": 2,
+    "AI TELL": 7,
+    "FORESHADOW": 5
+   },
+   "sev_counts": {
+    "Polish": 27,
+    "Should fix": 3
+   },
+   "note": "written after full read; Zac notes applied (heading, 3 simile Finds as Option A)"
+  },
+  "ch_40": {
+   "status": "done",
+   "words": 2689,
+   "paragraphs_total": 354,
+   "paragraphs_nonempty": 178,
+   "read_lines": 354,
+   "read_words": 2689,
+   "first8": "The Joblins were already on them. A tide",
+   "last8": "His voice, dry as dust, cracked. \u201cI did.\u201d",
+   "items": 32,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 4,
+    "CONTINUITY": 11,
+    "VOICE": 2,
+    "AI TELL": 10,
+    "FORESHADOW": 5
+   },
+   "sev_counts": {
+    "Polish": 28,
+    "Should fix": 4
+   },
+   "note": "written after full read; no Zac notes; Lysana dies, shard to black dust per ledger"
+  },
+  "ch_41": {
+   "status": "done",
+   "words": 5148,
+   "paragraphs_total": 599,
+   "paragraphs_nonempty": 300,
+   "read_lines": 599,
+   "read_words": 5148,
+   "first8": "The climb was cold, steep, and miserable, but",
+   "last8": "uninterested. Riven stood. \u201cCome on. Time to disappear.\u201d",
+   "items": 23,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 1,
+    "CONTINUITY": 8,
+    "VOICE": 4,
+    "AI TELL": 3,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 20,
+    "Should fix": 3
+   },
+   "note": "written after full read; Zac Keep at P116 respected"
+  },
+  "ch_42": {
+   "status": "done",
+   "words": 4504,
+   "paragraphs_total": 489,
+   "paragraphs_nonempty": 258,
+   "read_lines": 489,
+   "read_words": 4504,
+   "first8": "The first light of dawn had yet to",
+   "last8": "only thing that moved was the falling snow.",
+   "items": 26,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 2,
+    "CONTINUITY": 10,
+    "VOICE": 2,
+    "AI TELL": 5,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 20,
+    "Must fix": 2,
+    "Should fix": 4
+   },
+   "note": "written after full read; Ashgate fix applied, Zac Keep at P238 respected"
+  },
+  "ch_43": {
+   "status": "done",
+   "words": 5418,
+   "paragraphs_total": 402,
+   "paragraphs_nonempty": 218,
+   "read_lines": 402,
+   "read_words": 5418,
+   "first8": "The snow kept falling, thin and constant now,",
+   "last8": "\"Let's hope it's not the first of many.\"",
+   "items": 27,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "CONTINUITY": 11,
+    "VOICE": 3,
+    "AI TELL": 6,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 23,
+    "Should fix": 4
+   },
+   "note": "written after full read; no Zac notes for this chapter"
+  },
+  "ch_44": {
+   "status": "done",
+   "words": 4655,
+   "paragraphs_total": 433,
+   "paragraphs_nonempty": 218,
+   "read_lines": 433,
+   "read_words": 4655,
+   "first8": "The stone stairwell descended into a darkness that",
+   "last8": "They had nowhere left to go but forward.",
+   "items": 26,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "CONTINUITY": 9,
+    "VOICE": 2,
+    "AI TELL": 6,
+    "FORESHADOW": 6
+   },
+   "sev_counts": {
+    "Polish": 23,
+    "Should fix": 3
+   },
+   "note": "written after full read; no Zac notes for this chapter"
+  },
+  "ch_45": {
+   "status": "done",
+   "words": 5384,
+   "paragraphs_total": 488,
+   "paragraphs_nonempty": 244,
+   "read_lines": 488,
+   "read_words": 5384,
+   "first8": "The barricade gave way with a deafening crack,",
+   "last8": "longest blade before she'd taken the first step.",
+   "items": 29,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "CONTINUITY": 12,
+    "VOICE": 2,
+    "AI TELL": 5,
+    "FORESHADOW": 7
+   },
+   "sev_counts": {
+    "Polish": 24,
+    "Should fix": 5
+   },
+   "note": "written after full read; no Zac notes; Korr identity not stated (OD-7)"
+  },
+  "ch_46": {
+   "status": "done",
+   "words": 5842,
+   "paragraphs_total": 248,
+   "paragraphs_nonempty": 198,
+   "read_lines": 248,
+   "read_words": 5842,
+   "first8": "The loft above the stable was still and",
+   "last8": "asked in unison, \u201cWhat the abyss was that?\u201d",
+   "items": 32,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 4,
+    "CONTINUITY": 13,
+    "VOICE": 1,
+    "AI TELL": 6,
+    "FORESHADOW": 5
+   },
+   "sev_counts": {
+    "Polish": 27,
+    "Should fix": 5
+   },
+   "note": "written after full read; Zac 4 simile notes applied (3 Finds as Option A, 1 deletion)"
+  },
+  "ch_47": {
+   "status": "done",
+   "words": 5438,
+   "paragraphs_total": 223,
+   "paragraphs_nonempty": 204,
+   "read_lines": 223,
+   "read_words": 5438,
+   "first8": "The stairwell to the twenty-eighth floor was narrow",
+   "last8": "Dain looked at the others. \"Up,\" he said.",
+   "items": 29,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 3,
+    "CONTINUITY": 5,
+    "VOICE": 1,
+    "AI TELL": 7,
+    "FORESHADOW": 10
+   },
+   "sev_counts": {
+    "Polish": 26,
+    "Should fix": 3
+   },
+   "note": "29 items; Zac simile applied; Tarnished left; mimic-family note logged as question; clock 5 bells vs 7th bell; sister-in-law geography; supplies skipped"
+  },
+  "ch_48": {
+   "status": "done",
+   "words": 6965,
+   "paragraphs_total": 563,
+   "paragraphs_nonempty": 309,
+   "read_lines": 563,
+   "read_words": 6965,
+   "first8": "Every window on the eastern wall exploded inward",
+   "last8": "they\u2019d seen. And what was still to come.",
+   "items": 52,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 5,
+    "CONTINUITY": 18,
+    "VOICE": 3,
+    "AI TELL": 12,
+    "FORESHADOW": 11
+   },
+   "sev_counts": {
+    "Polish": 38,
+    "Should fix": 13,
+    "Must fix": 1
+   },
+   "note": "52 items; 3 Zac similes applied; Aurelia placement + mimic note logged as questions; Briala 'his mother'; cart assignments; double split; carts rise vs grain passage; Harmon age lines; Korr herald line logged"
+  },
+  "ch_49": {
+   "status": "done",
+   "words": 4776,
+   "paragraphs_total": 196,
+   "paragraphs_nonempty": 195,
+   "read_lines": 196,
+   "read_words": 4776,
+   "first8": "The rain whispered against the stained-glass windows of",
+   "last8": "a feast out there that needed its king.",
+   "items": 37,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 4,
+    "ZAC NOTE": 5,
+    "CONTINUITY": 8,
+    "VOICE": 4,
+    "AI TELL": 7,
+    "FORESHADOW": 9
+   },
+   "sev_counts": {
+    "Polish": 32,
+    "Must fix": 2,
+    "Should fix": 3
+   },
+   "note": "37 items; 4 Zac similes applied; spellings Cotter/Wymark; seventh-bell anchor confirmed on page; Harmon mirror msg vs Ch48 not tonight; first bell vs seventh; Drake sent to Steward room"
+  },
+  "ch_50": {
+   "status": "done",
+   "words": 5631,
+   "paragraphs_total": 306,
+   "paragraphs_nonempty": 155,
+   "read_lines": 306,
+   "read_words": 5631,
+   "first8": "Snow drifted over the body at Aymir\u2019s knees,",
+   "last8": "until the bend in the road swallowed them.",
+   "items": 36,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 4,
+    "ZAC NOTE": 6,
+    "CONTINUITY": 11,
+    "VOICE": 4,
+    "AI TELL": 3,
+    "FORESHADOW": 8
+   },
+   "sev_counts": {
+    "Polish": 30,
+    "Must fix": 3,
+    "Should fix": 3
+   },
+   "note": "36 items; 3 cuts + 2 Keeps applied; Deim->Diem; OD-7 leader left alone; P49 memory before Corren; Seven words=six; no time anchor; silence x4; filed x3"
+  },
+  "ch_51": {
+   "status": "done",
+   "words": 4268,
+   "paragraphs_total": 247,
+   "paragraphs_nonempty": 121,
+   "read_lines": 247,
+   "read_words": 4268,
+   "first8": "The clearing sat like a held breath in",
+   "last8": "kept coming. They didn't slow down to count.",
+   "items": 21,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 4,
+    "ZAC NOTE": 2,
+    "CONTINUITY": 6,
+    "AI TELL": 2,
+    "FORESHADOW": 7
+   },
+   "sev_counts": {
+    "Polish": 16,
+    "Must fix": 1,
+    "Should fix": 4
+   },
+   "note": "21 items; Ash simile cut applied; Tarlon->Talron; Aurelia crying note logged; 'the boy' = Reau; two days vs no limit; collar chain payoff"
+  },
+  "ch_52": {
+   "status": "done",
+   "words": 6319,
+   "paragraphs_total": 313,
+   "paragraphs_nonempty": 197,
+   "read_lines": 313,
+   "read_words": 6319,
+   "first8": "The frost-laced wind had lost the stench of",
+   "last8": "she could finish. The river carried them on.",
+   "items": 24,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 8,
+    "ZAC NOTE": 3,
+    "CONTINUITY": 5,
+    "AI TELL": 3,
+    "CUT ONLY": 1,
+    "VOICE": 2,
+    "FORESHADOW": 2
+   },
+   "sev_counts": {
+    "Polish": 16,
+    "Should fix": 6,
+    "Must fix": 2
+   },
+   "note": "24 items; Keeps P47/P82 applied; Rouric trim logged as question; Forgehallow fixed; wound/seizure/sun continuity"
+  },
+  "ch_53": {
+   "status": "done",
+   "words": 6435,
+   "paragraphs_total": 161,
+   "paragraphs_nonempty": 160,
+   "read_lines": 161,
+   "read_words": 6435,
+   "first8": "The streets of Opindale were quieter in the",
+   "last8": "Then he walked out and left it there.",
+   "items": 31,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 5,
+    "CONTINUITY": 5,
+    "CUT ONLY": 2,
+    "AI TELL": 10,
+    "VOICE": 2,
+    "FORESHADOW": 4
+   },
+   "sev_counts": {
+    "Polish": 26,
+    "Must fix": 2,
+    "Should fix": 3
+   },
+   "note": "31 items; 5 Zac notes applied; Nine vs Eight, Lysana mismatch, empty seats, tonight"
+  },
+  "ch_99_epilogue": {
+   "status": "done",
+   "words": 2113,
+   "paragraphs_total": 63,
+   "paragraphs_nonempty": 61,
+   "read_lines": 63,
+   "read_words": 2113,
+   "first8": "The chamber was silent, save for the drip",
+   "last8": "guttered out. Darkness took over the whole warehouse.",
+   "items": 19,
+   "verify_errors": [],
+   "tag_counts": {
+    "MECHANICS": 3,
+    "ZAC NOTE": 1,
+    "AI TELL": 5,
+    "CONTINUITY": 5,
+    "FORESHADOW": 4,
+    "CUT ONLY": 1
+   },
+   "sev_counts": {
+    "Polish": 15,
+    "Should fix": 4
+   },
+   "note": "19 items; Keep applied; shard held/wore, Brotherhood, hair, burned twice"
+  }
+ }
+}

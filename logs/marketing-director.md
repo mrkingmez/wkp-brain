@@ -119,3 +119,4 @@ copy fill-in after EP111/Heat are actually recorded, graphic-design
 spin-up (or text-only post) for a Surfshark announcement badge, Zac's
 call on referencing his own veteran status in the POW/MIA post. Nothing
 in either deliverable publishes without Zac's sign-off — drafts only.
+2026-11-04 | marketing-director | Ian Griffin trailer production package assembled: script-room (script, 2 passes), music (audit), video-ugc (point man: shotlist, assets, schedule), graphic-design (stills), copywriting (public copy + no-ai-slop). Decisions WRENCH-2026-11-04-01..32. Nothing sent, spent, posted or pushed.

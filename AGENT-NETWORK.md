@@ -15,6 +15,7 @@ Directors work with each other directly. Jarvis is not a switchboard.
 | Market research | market-research (under marketing) | (none) | Competitors, trends, and how channels and sellers like ours market. Open to all. |
 | Tracking | tracking-director | (none) | Every numbers pull and its schedule. Saves to `data\`. |
 | Animation (3D) | animation-director | Blender: blender-asset-scout, blender-builder-props, blender-builder-characters. Unreal: ue-scene-builder, ue-asset-integrator | **Every 3D model, character, creature, prop, rig, scene, turntable and render, built in Blender and Unreal.** Added 2026-10-31 (Zac). Answers to WKP, takes jobs from any director, gates the work against `ANIMATION\STANDARDS.md`, free and licensed assets only. |
+| Studio (video production, Post-Production house) | studio-director | (none yet; appoints one point man per project from existing agents) | **Every video production project that is not a WWD review**: client jobs, book trailers, promo video, short films, What If and other channel episodes once the channel starts. Added 2026-11-04 (Zac). Head of Studio. Picks the point man, orders the departments in sequence, gates the package, delivers it. wkp-channel-director owns what a channel covers, the studio owns producing it. |
 | Hostile review | devils-advocate | (none) | **Every new idea and every new product, any venture, before it is built.** Every short idea (Shorts, Reels, short films). **WWD: anything that might be off brand** (verdict says whether it is off brand and whether it is still a good idea). Any hostile read before something ships. |
 
 ## Venture directors
@@ -48,6 +49,7 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 - social-media, video-ugc: through marketing-director. market-research: any director may call it, with a line to marketing-director.
 - wwd-vfx, wwd-color, wwd-run-sheet, wwd-pictures, wwd-clip-scout, wwd-sound, wwd-rights: through wwd-director. Standards page: `WWD\STANDARDS.md`. wwd-vfx may talk to graphic-design directly.
 - blender-asset-scout, blender-builder-props, blender-builder-characters, ue-scene-builder, ue-asset-integrator: through animation-director only. The two Blender builders and the two Unreal benches may talk to their sibling directly. Standards page: `ANIMATION\STANDARDS.md`. animation-director may call graphic-design, fact-research and devils-advocate like any director.
+- Point men on a studio project (video-ugc, animation-director, or another agent the studio-director appoints): through studio-director for that project. They may still call shared departments directly under the limits below.
 - ebay-researcher: through ebay-director, which sets its schedule.
 - shattered-empire-director and military-scifi-director: canon-keeper benches under fiction-director.
 

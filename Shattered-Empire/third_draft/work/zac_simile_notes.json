@@ -1,0 +1,580 @@
+{
+ "ch_02": [
+  {
+   "kind": "Keep",
+   "find": "Short and stocky, he was not built for intimidation, but the way he carried himself demanded respect all the same.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_03": [
+  {
+   "kind": "Find",
+   "find": "Luca had grown used to it the way you grow used to anything in this life, by deciding not to question it.",
+   "replace": "Luca had grown used to it by deciding not to question it.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He crouched to look at it properly, hands on his knees, the way you look at something you are not sure is real.",
+   "replace": "He crouched to look at it properly, hands on his knees, not sure it was real.",
+   "note": null
+  }
+ ],
+ "ch_04": [
+  {
+   "kind": "Find",
+   "find": "Weslin watched it the way you watch something you have seen a hundred times, with mild appreciation and no real surprise.",
+   "replace": "Weslin watched it with mild appreciation and no real surprise.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "The memories came slowly, the way they do when you have to relearn what you thought you already knew.",
+   "replace": "The memories came slowly, and he had to relearn what he thought he already knew.",
+   "note": null
+  }
+ ],
+ "ch_05": [
+  {
+   "kind": "Keep",
+   "find": "Harmon read it the way he read a battlefield.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He watched Edric's face the way a man watches weather on an open plain, looking for the signs before the storm arrives.",
+   "replace": "He watched Edric's face for the signs before the storm arrived.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "His jaw worked once, the way a man’s jaw works when he is deciding whether to say something he will not be able to unsay.",
+   "replace": "His jaw worked once, and he swallowed whatever he had been about to say.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Then he looked at Harmon the way you look at someone you have known your entire life and are not ready to stop knowing, and said nothing, because there was nothing left that the room could hear.",
+   "replace": "Then he looked at Harmon for a long moment and said nothing, because there was nothing left that the room could hear.",
+   "note": null
+  }
+ ],
+ "ch_06": [
+  {
+   "kind": "Find",
+   "find": "Two older pages had looked at him the way people look at someone they do not recognize and gone back to talking.",
+   "replace": "Two older pages had looked at him, failed to place him, and gone back to talking.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "His face was the face of someone performing indifference very carefully.",
+   "replace": "His face showed indifference, and it took effort.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "One of them was turning a playing card over and over in his fingers, slow and absent, like a man who does not know his hands are moving.",
+   "replace": "One of them was turning a playing card over and over in his fingers, slow and absent.",
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "They came faster now, none of them waiting, none of them announcing themselves, a page worrying about his aching back arriving in the same breath as something that felt l...",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "The thoughts tightened around him, not painful yet, but pressing, the way a crowd presses when it gets too close, when there is no longer enough air.",
+   "replace": "The thoughts tightened around him, not painful yet, but pressing close enough that he could not get a full breath.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "It pulled back slightly, the way a tide pulls back before it decides what to do next.",
+   "replace": "It pulled back slightly.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Then he exhaled once, slow and quiet, the way a man exhales when he has heard a true thing and is deciding how to carry it.",
+   "replace": "Then he exhaled once, slow and quiet. It was a true thing, and he was deciding how to carry it.",
+   "note": null
+  }
+ ],
+ "ch_07": [
+  {
+   "kind": "Find",
+   "find": "He was watching Harmon the way you watch something you have known a long time and thought you understood.",
+   "replace": "He watched Harmon, a man he had known a long time and thought he understood.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He was looking at the man the way you look at something you respect, even when you do not need it.",
+   "replace": "He looked at the man with a respect that held even when he did not need him.",
+   "note": null
+  }
+ ],
+ "ch_08": [
+  {
+   "kind": "Find",
+   "find": "The way a tracker faces the direction they are about to move before they commit to the step.",
+   "replace": null,
+   "note": "Note. Fragment standing alone. Cut it if the line before it already shows her stance. Keep only if it is the one beat that does."
+  },
+  {
+   "kind": "Find",
+   "find": "She materialized beside Harmon the way she always did, with the ease of someone who had never been told no in a way that stuck.",
+   "replace": "She materialized beside Harmon, easy as ever.",
+   "note": null
+  }
+ ],
+ "ch_09": [
+  {
+   "kind": "Find",
+   "find": "Harmon looked at him the way he looked at things.",
+   "replace": "Harmon looked at him and weighed him.",
+   "note": null
+  }
+ ],
+ "ch_10": [
+  {
+   "kind": "Find",
+   "find": "He looked at it the way a man looks at something that does not concern him.",
+   "replace": "He looked at it without interest.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Aurelia glanced around the table, measuring the room the way she measured people.",
+   "replace": "Aurelia glanced around the table, measuring the room.",
+   "note": null
+  }
+ ],
+ "ch_11": [
+  {
+   "kind": "Find",
+   "find": "Mind to mind, heart to heart, thread to thread, she murmured inwardly, invoking the discipline of connection the way she had been taught long ago.",
+   "replace": "Mind to mind, heart to heart, thread to thread, she murmured inwardly, invoking the discipline of connection she had been taught long ago.",
+   "note": null
+  }
+ ],
+ "ch_12": [
+  {
+   "kind": "Find",
+   "find": "And Dain had just invoked his name like someone who knew him.",
+   "replace": "And Dain had just invoked his name, and he had said it knowingly.",
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "His cloak hung low, brushing the dirty stone, and the way he wore it, angled to cover one side of his chest, suggested he might be hiding something beneath.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_13": [
+  {
+   "kind": "Find",
+   "find": "Not in the way Luca watched her, which was its own thing entirely, but the way a soldier watches someone they are deciding whether to trust with their flank.",
+   "replace": "Not in the way Luca watched her, which was its own thing entirely, but warily, deciding whether she could be trusted with a flank.",
+   "note": null
+  }
+ ],
+ "ch_14": [
+  {
+   "kind": "Keep",
+   "find": "Taerel gestured vaguely toward the way they'd come.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_15": [
+  {
+   "kind": "Find",
+   "find": "The first one stepped into the light like a shadow peeling from the wall, tall, lean, built like a man who lives on the road.",
+   "replace": "The first one stepped into the light like a shadow peeling from the wall, tall, lean, road-worn.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "The others had listened closely, eyes low or half-lidded from exhaustion, but all alert in the way people were when truths felt sharper than weapons.",
+   "replace": "The others had listened closely, eyes low or half-lidded from exhaustion, but all alert. Truths felt sharper than weapons.",
+   "note": null
+  }
+ ],
+ "ch_17": [
+  {
+   "kind": "Find",
+   "find": "The dark smudges beneath his eyes told of hours spent in silent calculation, and his jaw sat clenched in the low light like a man trying to hold an army back with his teeth.",
+   "replace": "The dark smudges beneath his eyes told of hours spent in silent calculation, and his jaw sat clenched in the low light.",
+   "note": null
+  }
+ ],
+ "ch_18": [
+  {
+   "kind": "Find",
+   "find": "Merrick leaned in, quiet now, like a man who has stopped needing volume.",
+   "replace": "Merrick leaned in, quiet now. He no longer needed volume.",
+   "note": null
+  }
+ ],
+ "ch_19": [
+  {
+   "kind": "Find",
+   "find": "She moved the way she always moved in rooms like this, like she was passing through rather than joining.",
+   "replace": "She moved through the room without joining it.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "The way a person turns when they have decided to stop pretending something is not happening.",
+   "replace": null,
+   "note": "Note. Fragment standing alone. Cut it if the line before it already shows the turn."
+  },
+  {
+   "kind": "Find",
+   "find": "He was watching Aurelia the way you watch someone you thought you knew do something you don't recognize.",
+   "replace": "He was watching Aurelia, and she was doing something he did not recognize.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "She said it the way you say something obvious.",
+   "replace": null,
+   "note": "Delete. Cut this line and keep the next one, which has the better image."
+  },
+  {
+   "kind": "Find",
+   "find": "The way you say the floor is stone or the sky is gray.",
+   "replace": "She said it the way you say the floor is stone or the sky is gray.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "A glass in front of him that he hadn't touched, one elbow on the wood, watching the room the way men like him always watch rooms, cataloguing without appearing to.",
+   "replace": "A glass in front of him that he hadn't touched, one elbow on the wood, watching the room and cataloguing without appearing to.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He crossed directly to them, reached into his coat without preamble, and set the folded parchment on the bar in front of Harmon the way a man sets down something he would rather not be carrying any longer.",
+   "replace": "He crossed directly to them, reached into his coat without preamble, and set the folded parchment on the bar in front of Harmon.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He looked at the note without touching it, the way you look at something that has already decided what it is going to cost you.",
+   "replace": "He looked at the note without touching it. Whatever it said, it was going to cost him.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Then he straightened slightly, the way someone does when they have decided to say a thing and are committing to it before the nerve runs out.",
+   "replace": "Then he straightened slightly, committing to the words before the nerve ran out.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Just moved to stand near the door the way she had stood near it before, and the room absorbed her the way it absorbs a drop of cold water, a small shift in temperature that everyone notices and nobody names.",
+   "replace": "Just moved to stand near the door again, and the room absorbed her like a drop of cold water, a small shift in temperature that everyone noticed and nobody named.",
+   "note": null
+  }
+ ],
+ "ch_20": [
+  {
+   "kind": "Find",
+   "find": "Then he sat back, spine straightening like a man about to carry a weight he’d dropped too long ago.",
+   "replace": "Then he sat back and straightened his spine, bracing.",
+   "note": null
+  }
+ ],
+ "ch_21": [
+  {
+   "kind": "Find",
+   "find": "She watched the rune warily, the way a fox might eye a trap.",
+   "replace": "She watched the rune warily.",
+   "note": null
+  }
+ ],
+ "ch_24": [
+  {
+   "kind": "Keep",
+   "find": "Not the way they should have.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_27": [
+  {
+   "kind": "Keep",
+   "find": "Look at the way they’re ordered, the precision.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_28": [
+  {
+   "kind": "Find",
+   "find": "He looked like a man trying to remember how to breathe normally.",
+   "replace": "He took a breath, then another, slower.",
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "The way he said it was flat.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He just exhaled slowly and looked away, the way people do when something they had been quietly dreading doesn’t happen after all.",
+   "replace": "He just exhaled slowly and looked away. Whatever he had been dreading had not happened.",
+   "note": null
+  }
+ ],
+ "ch_31": [
+  {
+   "kind": "Keep",
+   "find": "She looked at him for a moment, the way he moved toward the rifle without deliberating, and decided not to argue.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_33": [
+  {
+   "kind": "Find",
+   "find": "Dain noted it the way he noted a blade angled at someone else's throat.",
+   "replace": "Dain noted it and filed it.",
+   "note": null
+  }
+ ],
+ "ch_36": [
+  {
+   "kind": "Keep",
+   "find": "Reau glanced at him, noting the boy’s posture, the hunched shoulders, the clenched jaw, the way his hand trembled as it hovered near the yellow shard at his belt.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "Not just in the way Nyssa's hands twitched toward her belt pouch, or in the way Garr stood too still at the window, but in the way they all moved now, slower, stripped of...",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_39": [
+  {
+   "kind": "Find",
+   "find": "The way she looked at him was like he wasn’t just a killer.",
+   "replace": "She looked at him and saw more than a killer.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Beside her, Halden was already doing his rounds, checking a man's wrapped ankle and murmuring something low and steady, the way a priest talks to someone who already knows the verdict.",
+   "replace": "Beside her, Halden was already doing his rounds, checking a man's wrapped ankle and murmuring something low and steady.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "His eyes moved the way a marksman's do, always measuring distance.",
+   "replace": "His eyes were a marksman's, always measuring distance.",
+   "note": null
+  }
+ ],
+ "ch_41": [
+  {
+   "kind": "Keep",
+   "find": "Riven looked at her the way he always had when the words ran out.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_42": [
+  {
+   "kind": "Keep",
+   "find": "He got four paces before he stopped, tilting his head, the way he did when something he couldn't name told him to wait.",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_46": [
+  {
+   "kind": "Find",
+   "find": "His hand kept finding it the way a tongue finds a loose tooth, not to do anything, just to confirm it was there, and that the weight of it was now different from what it had been an hour ago.",
+   "replace": "His hand kept finding it, not to do anything, just to confirm it was there, and that the weight of it was now different from what it had been an hour ago.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He said the last part plainly, the way a man says something he has been trying to find a better explanation for and given up on.",
+   "replace": "He said the last part plainly. He had been trying to find a better explanation and had given up.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "His eyes came back slowly, the way a man pulls his attention from somewhere both distant and close at the same time.",
+   "replace": "His eyes came back slowly, from somewhere both distant and close at the same time.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Something older than either of those things, something that moved through his expression the way a current moves beneath ice, there and then controlled, but Garr had spent enough time around Harmon to know what the normal register looked like, and for three full seconds it had not looked like that.",
+   "replace": null,
+   "note": "Note. Delete only the phrase \"the way a current moves beneath ice\" and keep the rest of the sentence as written."
+  }
+ ],
+ "ch_47": [
+  {
+   "kind": "Find",
+   "find": "Aldrek took the second the way a man drives a nail, one motion, no hesitation, the mace landing where it needed to and not where it looked impressive.",
+   "replace": "Aldrek took the second in one motion, no hesitation, the mace landing where it needed to and not where it looked impressive.",
+   "note": null
+  }
+ ],
+ "ch_48": [
+  {
+   "kind": "Find",
+   "find": "He looked at the others the way a man looks when he needs them to understand something, while he is still deciding if he is injured.",
+   "replace": "He looked at the others, needing them to understand something while he decided whether he was injured.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He turned his palms over once, checking the damage the way a man checks for a hole in a boat, quickly, practically, hoping for less than he finds.",
+   "replace": "He turned his palms over once and checked the damage, quickly, practically, hoping for less than he found.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "She held her aunt’s hand with an iron grip, refusing to let go, the way a drowning swimmer might clutch to a drifting plank.",
+   "replace": "She held her aunt’s hand with an iron grip, refusing to let go.",
+   "note": null
+  }
+ ],
+ "ch_49": [
+  {
+   "kind": "Find",
+   "find": "Some questions were worth asking for the way he answered them, like he had never once considered saying anything else.",
+   "replace": "Some questions were worth asking for the answer he never thought twice about.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "But his hands were very still at his sides, the way a man's hands went still when he was holding something carefully that no one else could see.",
+   "replace": "But his hands were very still at his sides.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "The servant looked at the people around him the way a man looks at graves he has not yet dug.",
+   "replace": "The servant looked at the people around him.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He let his gaze drift upward the way a man's gaze drifts when he is only thinking.",
+   "replace": "He let his gaze drift upward, thinking.",
+   "note": null
+  }
+ ],
+ "ch_50": [
+  {
+   "kind": "Find",
+   "find": "Like a man who has not yet stopped living it.",
+   "replace": null,
+   "note": "Note. Fragment standing alone. Cut it if the line before it already lands."
+  },
+  {
+   "kind": "Find",
+   "find": "They walked him away slowly, and he kept his eyes on the ground, like a man who had already spent everything he had.",
+   "replace": "They walked him away slowly, and he kept his eyes on the ground.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He had borrowed that authority the way you borrowed a coat that wasn't yours, hoping it fit well enough to pass.",
+   "replace": "He had borrowed that authority, and he hoped it fit well enough to pass.",
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "Aymir remembered the way she’d stood her ground in the fight, quick and fierce and utterly without fear.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "What she'd offered were glimpses, the name of a city she sometimes pronounced differently when she thought no one noticed, the way her jaw had set when someone mentioned ...",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_51": [
+  {
+   "kind": "Find",
+   "find": "Ash sat a little apart, polishing soot from the metal buckles on his coat, his gaze slipping now and then to the tree line, the way a man watches when he's already decided something is out there.",
+   "replace": "Ash sat a little apart, polishing soot from the metal buckles on his coat, his gaze slipping now and then to the tree line, certain something was out there.",
+   "note": null
+  }
+ ],
+ "ch_52": [
+  {
+   "kind": "Keep",
+   "find": "The way he held himself was too still, the arm tucked slightly wrong.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "He'd been watching Riven since the prison break, the way he moved with Nyssa, easy and warm and utterly unguarded in a way that most people who'd survived what they'd sur...",
+   "replace": null,
+   "note": null
+  }
+ ],
+ "ch_53": [
+  {
+   "kind": "Keep",
+   "find": "Aldrek stood near the table, broad and steady on the surface, though the way he held himself told the truth to anyone paying attention.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Keep",
+   "find": "Every one of them was marked, some plainly in skin and sinew, some in the way they held their faces when they thought no one was watching.",
+   "replace": null,
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "He spoke it the way a man speaks something he's run through too many times in the dark to keep any illusions about.",
+   "replace": "He spoke it plainly, run through too many times in the dark to keep any illusions about it.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Taerel looked at it a beat in the way he looked at most things before he accepted them, then clasped it firmly, and the two shook once.",
+   "replace": "Taerel looked at it a beat, then clasped it firmly, and the two shook once.",
+   "note": null
+  },
+  {
+   "kind": "Find",
+   "find": "Garran's shoulders squared like a man who'd already decided.",
+   "replace": "Garran's shoulders squared. He had already decided.",
+   "note": null
+  }
+ ],
+ "ch_99_epilogue": [
+  {
+   "kind": "Keep",
+   "find": "Dain's crooked grin when he'd teased her at the tailor's, the way his eyes had flicked nervously after the words left his mouth, as though he hadn't expected her to answe...",
+   "replace": null,
+   "note": null
+  }
+ ]
+}

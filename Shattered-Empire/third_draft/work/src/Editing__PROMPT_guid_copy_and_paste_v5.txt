@@ -1,0 +1,499 @@
+PROMPT 1 — CONTEXT LOCK
+Act as a senior professional novelist and editor.
+Rules:
+• Preserve my voice and intent.
+• Do not simplify complexity.
+• Do not rewrite unless explicitly told.
+• Favor momentum, escalation, and clarity.
+• Treat this chapter as part of a continuous manuscript.
+
+Task: Senior-level editorial assessment focused on momentum and escalation only.
+
+PROMPT 2 — COMBINED DIAGNOSTIC + PATCH MAP
+
+Act as a senior developmental editor and professional novelist.
+This task has TWO PHASES.
+You MUST complete Phase 1 fully before starting Phase 2.
+
+GLOBAL RULES:
+• Do NOT rewrite the chapter.
+• Do NOT add new scenes, dialogue, or beats.
+• Preserve the author’s voice and tone.
+• Allowed: Line-level rewrites for clarity, momentum, or tone that do not alter meaning or story beats. Suggested fixes must be copy-paste ready unless deletion is specified.
+
+PHASE 1 — DIAGNOSTIC PASS (READ ONLY)
+Analyze the chapter and identify issues ONLY.
+Cover:
+1. Scene function
+2. Momentum & ending
+3. Dialogue & character
+4. Pacing
+5. World, logic & tone
+
+For EACH issue:
+• Quote the passage
+• Explain the problem
+• Assign severity
+Do NOT propose fixes in Phase 1.
+
+PHASE 2 — PATCH MAP
+Using ONLY flagged issues, create a patch map.
+For each fix, use:
+• Line before suggested fix
+• Original line
+• Suggested fix (or say "delete this line")
+• Line after suggested fix
+• Explanation
+
+End after Phase 2.
+
+
+PROMPT 3 — CHARACTER VOICE, ACCENT & REGISTER
+Act as a character voice and dialogue realism editor. Use the Master Voice Bible as immutable canon. Evaluate dialogue using THREE VOICE LAYERS
+Evaluate dialogue and immediate surrounding beats using FOUR INTERLOCKED LAYERS.
+This pass exists to ensure that every speaking character:
+Sounds distinct
+Sounds intelligent
+Sounds consistent with class, culture, and experience
+Sounds like a human voice, not just text on a page
+
+
+LAYER 1 — VOCAL TEXTURE & CADENCE
+What the voice sounds like when spoken aloud
+Rhythm, mouth-feel, and weight of phrasing
+Accent presence described indirectly (never modern nations)
+You may add or suggest bracketed cadence reminders, especially:
+  Use them more freely near character introductions or early chapters (prologue 1-20)
+  Use them sparingly later, once the voice is established (21 – 53 epilog)
+At emotional pivots 
+Rules for cadence reminders:
+Use when it improves immersion
+Never stack them
+Never repeat the same description verbatim
+
+LAYER 2 — LINGUISTIC REGISTER
+Class-appropriate vocabulary and grammar
+Formality vs familiarity
+Education, aspiration, restraint
+Enforce all character-specific rules from the Voice Bible
+(e.g., Taeral’s self-correction, Dain’s decorum, Harmon’s dry humor)
+
+LAYER 3 — PRESSURE DISTORTION
+How speech changes under stress, anger, fear, urgency
+Sharpened phrasing, clipped replies, dropped politeness
+Used only when the scene earns it
+
+LAYER 4 — PHYSICAL EXPRESSION & MICRO-BEHAVIOR (NEW)
+You may add brief physical actions that:
+Reinforce the existing emotional intent
+Do not add new information
+Do not change pacing or scene direction
+Examples of allowed additions:
+Hands thrown up in frustration
+Jaw tightening
+A breath released too sharply
+A step back, a lean forward, a look away
+These actions should:
+Be short
+Be specific
+Be human
+Sit adjacent to dialogue, not replace it
+
+OUTPUT RULES
+For each issue:
+Quote the original line
+Identify the character
+Identify the layer(s) involved
+Provide a full fix, which may include:
+Adjusted dialogue (same meaning)
+Added physical beat
+Added cadence reminder
+If a line is already alive and effective, say nothing.
+
+HARD RULES
+Do NOT change the meaning of the line
+Do NOT add new plot information
+Do NOT rewrite scenes
+No phonetic spelling
+Preserve momentum and escalation
+Avoid re-fixing previously corrected elements unless inconsistent
+
+FLAGGING RULE (IMPORTANT)
+If a character feels:
+Flat despite correct dialogue
+Emotionally present but physically absent
+Under-defined in early chapters
+Flag it for author review rather than inventing new traits.
+
+PROMPT 4 — CONTINUITY, TIME & LORE AUDIT
+Perform a continuity audit.
+Check:
+• Timeline
+• Character knowledge
+• Lore rules
+• Cause and effect
+For each issue:
+• Quote the passage
+• Explain the conflict
+• Classify the issue
+Do NOT rewrite
+PROMPT 5A — LOGIC STRESS TEST (CHAPTER-LEVEL / LITE)
+Purpose:
+Catch early logic cracks inside a single chapter without slowing drafting momentum.
+Use when:
+Introducing a plan
+Showing a system (city, prison, magic, politics)
+Characters make competence-signaling decisions
+Stakes shift or escalate
+
+PROMPT
+Act as a senior professional novelist and story logic analyst.
+Perform a Logic Stress Test on this chapter only.
+GLOBAL RULES:
+• Do NOT rewrite the chapter
+• Do NOT suggest fixes
+• Do NOT add new information
+• Treat all characters as intelligent and self-interested
+• Assume a hostile, attentive reader
+CHECK FOR:
+Character decision logic
+Cause-and-effect chains
+Convenience or assumption gaps
+System boundaries (magic, tech, politics, security)
+Reader exploit risks (“Why didn’t they just…?”)
+For EACH issue:
+• Quote the passage
+• Explain the logical pressure point
+• Classify the issue (decision logic / system logic / cause-effect / reader exploit)
+• Assign severity (minor / moderate / major)
+Do NOT propose solutions.
+End after the list.
+
+REVISED LOGIC STRESS TEST FIX PROMPT (v2)
+Task:
+Using the provided Logic Stress Test issues, perform a targeted narrative repair pass.
+This is not a full rewrite.
+This is structural repair with minimal disruption.
+
+GLOBAL RULES
+You MAY:
+Rewrite one to several consecutive lines if required to fully close the logic gap
+Adjust surrounding sentences only when necessary to preserve flow and continuity
+You MUST preserve:
+Meaning
+Character intent
+Tone and era
+Existing plot direction
+You MUST NOT:
+Add new plot beats
+Add new lore or world rules
+Add new characters
+Change outcomes or stakes
+Reorder scenes unless explicitly required by the fix
+
+FIX QUALITY REQUIREMENTS
+Each fix must:
+Close hostile-reader logic gaps
+Read as if it was always part of the paragraph
+Avoid modern phrasing or meta explanation
+Maintain pacing and narrative momentum
+Solve the cause of the issue, not just the symptom
+Do not “explain around” the problem.
+Do not dilute tension to achieve clarity.
+
+OUTPUT FORMAT (MANDATORY)
+For each issue, provide the following:
+
+Issue [Number]
+Original Severity:
+(Minor / Moderate / Major)
+
+Option A — Minimal Surgical Fix
+(copy-paste ready)
+Revised text (1–3 lines)
+Designed to close the logic gap with minimal surface change
+Resulting Severity After Fix:
+(e.g. Major → Moderate)
+
+Option B — Reinforced Structural Fix
+(copy-paste ready)
+Revised text (may include multiple consecutive lines)
+Addresses the logic issue more robustly while preserving flow
+Resulting Severity After Fix:
+(e.g. Major → Minor or Resolved)
+
+Placement
+Specify exactly where the fix should be inserted or replaced
+(e.g. “Replace the paragraph beginning with…”, “Insert after the line…”, etc.)
+
+Recommendation
+State which option you recommend
+Briefly explain why this option better balances clarity, tension, and continuity
+
+DELETION NOTICE (IF APPLICABLE)
+At the end of the response, list any lines that should be deleted entirely, quoted verbatim.
+
+FINAL CHECK
+Before outputting, verify:
+No new plot or lore was introduced
+Flow of the chapter remains intact
+Fix actually reduces the reader exploit risk
+Severity reduction is honest, not aspirational
+
+PROMPT 5B — LOGIC STRESS TEST (ARC-LEVEL / HEAVY)
+Purpose:
+Test whether logic holds across multiple chapters once plans, knowledge, and systems interact.
+Use when:
+Finishing a major operation or arc
+Reviewing 5–10 chapters together
+Before escalating stakes or triggering fallout
+
+PROMPT
+Act as a senior professional novelist and narrative systems analyst.
+Perform a Logic Stress Test across the following chapter range.
+GLOBAL RULES:
+• Do NOT rewrite scenes
+• Do NOT suggest fixes
+• Do NOT invent new information
+• Treat antagonists as competent and adaptive
+• Assume information propagates unless blocked
+ANALYZE FOR:
+Knowledge continuity across chapters
+Plan viability over time
+Enemy intelligence and response gaps
+Escalation realism
+Accumulated convenience or compression
+For EACH issue:
+• Quote the relevant passage(s)
+• Explain how the logic strain emerges across chapters
+• Classify the issue (knowledge leak / plan fragility / system failure / escalation break)
+• Assign severity
+Do NOT resolve the issues.
+End after analysis.
+
+
+PROMPT 5C — LOGIC STRESS TEST (FULL MANUSCRIPT / FINAL)
+Purpose:
+Ensure the completed book survives hostile intelligence, smart readers, and rereads.
+Use when:
+The full manuscript is assembled
+Before final line edits
+Before beta readers or publication
+
+PROMPT 
+Act as a senior professional novelist and adversarial story analyst.
+Perform a Full Manuscript Logic Stress Test.
+GLOBAL RULES:
+• Do NOT rewrite
+• Do NOT suggest fixes
+• Do NOT add lore
+• Treat all factions as intelligent and self-interested
+• Assume readers will reread and cross-reference
+TEST FOR:
+Antagonist competence over the entire story
+Information containment and leakage
+System boundaries and breaking points
+Reader out-thinking risk
+Solutions that rely on ignorance or timing coincidence
+For EACH issue:
+• Quote the relevant section(s)
+• Explain why the logic fails under pressure
+• Classify the failure type
+• Assign severity
+End with a Summary Risk Assessment only.
+No fixes. No commentary beyond analysis.
+
+HOW TO USE THESE IN PRACTICE (Quick Guide)
+Drafting / Revising a chapter: use 5A
+After a major mission or arc: use 5B
+Book is done: use 5C
+Think of them as:
+5A = early warning sensors
+5B = structural load testing
+5C = crash testing the entire story
+
+PROMPT 6 — FINAL CLEANUP PASS
+Act as a senior copy editor performing a grammar and spelling correction pass only.
+SCOPE
+Correct spelling, typos, missing words, duplicated words
+Correct grammar errors that disrupt clarity
+Correct punctuation errors that alter meaning or readability
+DO NOT
+Rewrite sentences for style
+Smooth prose
+Rephrase for elegance
+Simplify sentence structure
+Alter cadence, rhythm, or voice
+Remove stylistic fragments
+Normalize dialect, slang, or character-specific speech
+“Fix” dialogue that is intentionally informal, broken, or character-voiced
+Dialogue should only be corrected if:
+A typo makes the meaning unclear, OR
+A missing word breaks comprehension
+
+OUTPUT REQUIREMENTS (MANDATORY FORMAT)
+Provide one entry per error.
+If there are 12 errors, there must be 12 entries.
+For each correction, show:
+Original line (exact quote)
+What’s wrong (spelling / grammar / punctuation — brief, factual)
+Corrected line (copy-paste ready)
+Do not combine multiple fixes into one entry.
+Do not explain style choices.
+Do not add commentary.
+
+FINAL RULES
+Preserve author voice and cadence at all times
+Treat narration and dialogue differently
+Err on the side of leaving dialogue untouched
+When in doubt, do not change it
+Begin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Side prompts
+
+Chapter title
+Here’s Chapter [X]. Act as a professional novelist. Read the chapter carefully and suggest 3 possible titles that capture its essence. Each title should be:
+
+- Evocative, fitting the tone (dark, epic, or tense as appropriate).  
+- Short (2–6 words max).  
+- Unique (avoid clichés).  
+
+After listing the options, explain in 1–2 sentences why each could work, and recommend the strongest one.
+
+
+
+
+Jounry entery
+Here’s Chapter [X]. Summarize it in 1–2 sentences, written as if Harmon himself were writing a journal entry. Stay true to his Voice Bible:
+
+- Accent / Cadence: Grim, steady, clipped.  
+- Tone: Stern, authoritative, disciplined.  
+- Speech: Short, deliberate sentences. Weighed words, no wasted breath.  
+- Humor: Rare, dark, dry when it appears.  
+- Vocabulary: Martial, oath-bound, duty-driven.  
+
+The journal entry should sound like his private thoughts — honest, terse, and carrying the weight of command. Do not narrate like a storyteller, write like Harmon thinking on the page.
+
+Full Chapter
+Here is my full manuscript. Act as a professional developmental and line editor combined. 
+Using the Final Global Checklist, analyze the entire manuscript and tell me:
+
+1. Are all names, spellings, and lore details consistent? Flag contradictions.  
+2. Does the pacing balance Action / Intrigue / Dialogue / Exploration? Show me weak spots.  
+3. Do emotional arcs for each POV flow naturally? Identify any “whiplash” shifts.  
+4. Are all senses represented, or do I lean too heavily on sight/sound? Suggest where to add variety.  
+5. Are metaphors and imagery era-appropriate and consistent with POV voice? Flag any that feel modern or out of place.  
+6. Do voices remain distinct in dialogue-only form? Point out any lines that blur.  
+7. From a reader’s perspective, where would the book feel slow or drag?  
+8. Does the book have a clear hook and core stakes (query-ready)?  
+9. Are there subtle series seeds planted without leaving glaring loose ends?
+
+Give me a report with specific flagged examples and suggested fixes, but do not rewrite entire scenes. 
+Focus on precision feedback that will prepare the manuscript for its final polish.
+
+Map making
+Here are my chapters and my world guide. I want you to analyze them and then generate a second prompt that I can use to create a fantasy map of the world/region.
+
+When making this second prompt, you must:
+
+1. Extract all relevant geography from the text (cities, rivers, mountains, forests, seas, fortresses, etc.).  
+2. Place them in their correct relative positions (north/south/east/west relationships).  
+3. Note cultural or political boundaries (kingdom borders, regions, territories).  
+4. Include travel routes (roads, rivers, trade paths) that are referenced.  
+5. Suggest natural landmarks that would logically exist but may not have been named (like forests near rivers, passes through mountains, harbors on coasts).  
+6. Match the tone/era of the book (late medieval → early Victorian: castles, towns, early gunpowder fortresses).  
+
+Output a clean, detailed **map-building prompt** that I can feed into an image AI or illustrator. The prompt should be in natural language and describe the map visually, with compass directions, scale, and artistic style (fantasy parchment map, medieval cartography, etc.).
+
+Finally, summarize any gaps or unknowns from the chapters/lore and suggest 2–3 options for filling them (example: “The mountains in the north are unnamed — should they be jagged volcanic peaks or rolling highlands?”).
+
+ Cut fat
+You are acting as a professional developmental editor for an epic fantasy novel.
+Your role is to PRESERVE detail, not remove it.
+
+This is a DETAIL FUNCTION & LAYERING PASS.
+You are NOT allowed to cut descriptive material unless it is doing absolutely nothing.
+
+Here is Chapter [X].
+
+Your task is to analyze descriptive passages and ensure each one serves at least TWO functions:
+- Worldbuilding
+- Mood / atmosphere
+- Character emotion, bias, or perspective
+- Tension / stakes
+- Foreshadowing
+
+If a passage serves only ONE function, you must NOT delete it.
+Instead, you will suggest ways to LAYER an additional function onto the existing text.
+
+HARD RULES:
+- Do NOT reduce word count as a goal
+- Do NOT remove sensory detail
+- Do NOT rewrite the scene
+- Do NOT modernize language
+- Do NOT change plot, action, or meaning
+- All suggestions must be CUT-AND-PASTE READY
+- Preserve the author’s voice and tone
+
+MODERNIZED WORD & PHRASE CHECK (CRITICAL):
+- Scan the chapter for words, phrases, metaphors, or constructions that feel modern,
+  contemporary, or anachronistic to a late-medieval / early gunpowder fantasy world
+- This includes:
+  - Modern idioms
+  - Modern emotional shorthand
+  - Industrial, corporate, or technological language
+  - Contemporary metaphors that would not exist in this culture
+- For each flagged instance:
+  - Do NOT remove the line
+  - Suggest an era-appropriate alternative that preserves intent and tone
+- If a modern word is borderline but defensible, note it as “QUESTIONABLE” instead of forcing a change
+
+OUTPUT FORMAT (STRICT):
+
+SECTION: [Brief location identifier, e.g. “Opening description of the hall”]
+
+ORIGINAL TEXT:
+“[Paste the original paragraph or sentence exactly as written]”
+
+ISSUE:
+- What function(s) this passage currently serves
+- What function is missing or underutilized
+- Note any modernized or anachronistic language if present
+
+SUGGESTION OPTION A (Layered Enhancement):
+“[Revised version that adds a second function while preserving the original content and correcting any modern language if needed]”
+
+WHY THIS WORKS:
+- Explain what new function was added
+- Explain why this strengthens immersion without slowing pacing
+
+SUGGESTION OPTION B (Alternative Layering, if applicable):
+“[Alternate revision using a different added function, such as tension instead of emotion, or a different era-appropriate phrasing]”
+
+WHY THIS WORKS:
+- Explain the alternative benefit and when it might be preferable
+
+ADDITIONAL CHECKS:
+- Flag any descriptive passage that feels like neutral inventory rather than character-filtered perception
+- Flag any description that pauses momentum instead of quietly increasing pressure
+- Flag repeated modern phrasing patterns across the chapter
+- If a passage already serves multiple functions well and uses era-appropriate language, mark it STRONG and do not suggest changes
+
+EDITORIAL PHILOSOPHY:
+Detail is a feature, not a flaw.
+Immersion breaks when language breaks period.
+Your job is to make detail work harder while keeping the world intact.
+
+Now perform the Detail Function & Layering Pass on the following chapter:

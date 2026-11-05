@@ -1,0 +1,46 @@
+Updated Editing Calendar & Checklist (Sept 4 – Dec 31)
+This schedule reflects 53 chapters plus a Prologue and Epilogue (~55 total sections). It assigns specific prompts to each editing phase to reach completion by Dec 31.
+Stage 1: Structural & Flow Pass (Sept 4 – Oct 15)
+Goal: Ensure every scene changes something — no filler.
+Prompts: Scene Change Check (#2), Continuity & Timeline Check (#8).
+
+☐ Week 1 (Sept 4–10): Prologue + Chs 1–9 (10 sections).
+☐ Week 2 (Sept 11–17): Chs 10–19 (10 sections).
+☐ Week 3 (Sept 18–24): Chs 20–29 (10 sections).
+☐ Week 4 (Sept 25–Oct 1): Chs 30–39 (10 sections).
+☐ Week 5 (Oct 2–8): Chs 40–49 (10 sections).
+☐ Week 6 (Oct 9–15): Chs 50–53 + Epilogue (5 sections).
+Stage 2: Voice & Character Pass (Oct 16 – Nov 15)
+Goal: Distinct, consistent voices & accents.
+Prompts: Voice Bible Dialogue Alignment (#1), Character Consistency Audit (#5), Accent Authenticity Check (#6).
+
+☐ Week 1 (Oct 16–22): Prologue + Chs 1–14 (~15 sections).
+☐ Week 2 (Oct 23–29): Chs 15–28 (~14 sections).
+☐ Week 3 (Oct 30–Nov 5): Chs 29–42 (~14 sections).
+☐ Week 4 (Nov 6–12): Chs 43–53 + Epilogue (~13 sections).
+☐ Week 5 (Nov 13–15): Catch-up days + Accent Authenticity Check (Ash, Nyssa, Taeral, Aymir, Naevin).
+Stage 3: Immersion & Style Pass (Nov 16 – Dec 5)
+Goal: Prose is immersive but tight, no bloat.
+Prompts: Immersion/Tension/Momentum Pass (#4), Cut the Fat (#3), Combat & Action Flow Audit (#7).
+
+☐ Week 1 (Nov 16–22): Prologue + Chs 1–18 (~19 sections).
+☐ Week 2 (Nov 23–29): Chs 19–36 (~18 sections).
+☐ Week 3 (Nov 30–Dec 5): Chs 37–53 + Epilogue (~18 sections).
+Stage 4: Final Polish & Proof (Dec 6 – Dec 20)
+Goal: Professional-level finish.
+Prompts: Grammar/Word Choice Polish (#9), Strengths & Weaknesses Report (#10).
+Also run Dialogue-Only Read (from Habits Quick Sheet) on 3–5 random chapters.
+
+☐ Week 1 (Dec 6–12): Prologue + Chs 1–27 (~28 sections).
+☐ Week 2 (Dec 13–19): Chs 28–53 + Epilogue (~27 sections).
+☐ Week 3 (Dec 20): Final catch-up day.
+Stage 5: Wrap & Prep (Dec 21 – Dec 31)
+Goal: Complete manuscript ready for 2026.
+Tasks include merging into Master Document, global checks, and finishing touches.
+
+☐ Merge all chapters into one Master Document.
+☐ Run Final Global Checklist across full manuscript.
+☐ Generate Chapter Titles (Prompt: Chapter Title Generator).
+☐ Write Harmon’s Journal Entries for each chapter (Prompt: Harmon’s Journal Entry).
+☐ Export final manuscript in Word + PDF.
+☐ Backup in multiple locations (local, cloud, USB).

@@ -1,0 +1,210 @@
+Master Voice Bible
+Batch 1: Core Heroes
+
+### Ash Valen
+- Accent / Cadence: Clipped, fast, working-class edge. Almost like a dockworker or city-born soldier. Words tumble out, but never elegant.
+- Tone: Cynical, sardonic, yet quick to throw humor at any situation—jokes are his armor.
+- Speech Patterns: Uses contractions freely. Doesn’t speak in polished sentences—short, jagged phrases. Interrupts himself.
+- Humor / Emotional Range: Dry one-liners even under threat. Likes to make others roll their eyes. Rarely earnest for long.
+- Vocabulary: Rough, pragmatic, flavored with guild-and-barracks slang. Doesn’t wax poetic.
+- Example Lines:
+   - “Lovely. Nothing like dying in a sewer to brighten a man’s day.”
+   - “Hurry it up, or the guards’ll catch us standing here like fools.”
+
+### Weslin
+- Accent / Cadence: Young, unsteady, still finding his footing. Speech comes in bursts, sometimes too fast.
+- Tone: Eager, earnest, tinged with doubt. Always trying to prove he belongs.
+- Speech Patterns: Hesitates, backtracks, sometimes stammers. Asks questions more than he should.
+- Humor / Emotional Range: Nervous jokes at the wrong time; mostly serious but in a wide-eyed, “boy-trying-to-be-man” way.
+- Vocabulary: Simple, straightforward. Sometimes slips into stiff formality when he’s trying to sound older.
+- Example Lines:
+   - “I—I heard something. Did you hear that too?”
+   - “I can manage it, truly. Just… give me the chance.”
+
+### Nyssa Quill
+- Accent / Cadence: Quick, sly, playful—street-born confidence. Voice always dances like she’s one step ahead.
+- Tone: Mischievous, bold, confident in her wit. She enjoys poking holes in others’ pride.
+- Speech Patterns: Sharp quips, playful insults, rhetorical questions. Loves banter. Rarely stays serious unless it cuts deep.
+- Humor / Emotional Range: Flirtatious teasing, clever wordplay, sly humor. Keeps things light until trust or danger forces her hand.
+- Vocabulary: Streetwise and nimble. Uses common idioms of the time but bends them to her amusement.
+- Example Lines:
+   - “Keep staring, love—you’ll miss your purse slipping away.”
+   - “You call that sneaking? My grandmother makes less noise in her coffin.”
+
+### Dain Kerswell
+- Accent / Cadence: Smooth, composed, noble-born but not stiff. Can charm with honeyed words or drop into clipped, commanding orders.
+- Tone: Charismatic and silver-tongued in company—knows how to turn a phrase. In private or battle, he’s sharp, calculating, and coldly tactical.
+- Speech Patterns: Long, graceful sentences when persuading or leading socially. Short, precise commands when in danger. Can flip between charm and steel.
+- Humor / Emotional Range: Urbane wit when he wants to disarm. Rarely jokes crudely—his humor is sly, refined, even cutting.
+- Vocabulary: Educated, knightly, but not archaic. Balanced between noble courtesy and battlefield brevity.
+- Example Lines:
+   - (Social mask): “My lady, if I spoke truly of your beauty, the poets would weep from envy.”
+   - (Tactical core): “Shields high. Crossbows to the flank. No hesitation—strike on my word.”
+
+Batch 2: Mentors and Rogues
+
+### Aurelia
+- Accent / Cadence: Gentle, measured, with a teacher’s clarity. Never rushed, words chosen with care.
+- Tone: Compassionate, thoughtful, often soothing—though beneath it lies a current of regret.
+- Speech Patterns: Full sentences, deliberate pacing. Uses pauses to draw others in. Rarely sharp unless pressed.
+- Humor / Emotional Range: Soft, knowing humor—a smile in words, rarely biting. Carries empathy into every exchange.
+- Vocabulary: Learned but not ostentatious. Favors metaphors drawn from nature or memory. Avoids coarse terms.
+- Example Lines:
+   - “Every mind is a garden, Weslin. And even weeds, if tended, may bear fruit.”
+   - “Be still, and listen. The truth speaks quietly, but it always speaks.”
+
+### Brother Aldrek Thorne
+- Accent / Cadence: Deep, deliberate, like a sermon carried on gravel.
+- Tone: Stern, righteous, with weight in every word. Yet quieter now, more restrained than a zealot.
+- Speech Patterns: Sparse sentences; never wastes words. Uses scripture-like cadence. Prefers absolutes.
+- Humor / Emotional Range: Rare; when it comes, it’s grim or ironic. Mostly grave, with flashes of conviction.
+- Vocabulary: Religious, martial, direct. “Truth, fire, burden, oath” are common in his speech. Avoids frivolity.
+- Example Lines:
+   - “Steel may break, but vows endure.”
+   - “Mercy is a flame—precious, and too easily extinguished.”
+
+### Riven Duskwind
+- Accent / Cadence: Smooth, sly, conman’s polish. He speaks like a man who’s lied for a living—and gotten away with it.
+- Tone: Charming, mocking, never too serious unless the mask slips. Can pivot from warm to sharp in a heartbeat.
+- Speech Patterns: Loves wordplay. Uses rhetorical questions and playful misdirection. Keeps people guessing.
+- Humor / Emotional Range: Quick with a grin or a jab. Rarely sincere, but sincerity cuts deep when it surfaces.
+- Vocabulary: Theatrical, but not noble—he borrows the cadence of nobility to disguise his low roots. Will exaggerate or over-dramatize.
+- Example Lines:
+   - “Oh, come now—did you truly think I’d stay behind bars forever?”
+   - “Trust me, I’ve cheated men far cleverer than you, and walked away richer for it.”
+
+### Arin
+- Accent / Cadence: Earnest, steady. Speaks less to impress, more to be understood.
+- Tone: Loyal, practical, with a core of sincerity. Not flamboyant, but dependable.
+- Speech Patterns: Plain speech, no flourishes. Moderate pace, never rushed, never overly slow.
+- Humor / Emotional Range: Honest humor—warm chuckles, not sharp wit. Sincere emotion comes through when provoked.
+- Vocabulary: Straightforward, working or soldier-class. Rarely poetic, rarely complex.
+- Example Lines:
+   - “If the wall holds, so do we. If it fails… then we stand in its place.”
+   - “I’ve no gift for pretty words. Only the truth, and my blade.”
+
+Batch 3: Leaders and Lords
+
+### Lord Harmon Diem
+- Accent / Cadence: Deep, steady, clipped. A commander’s voice—no wasted breath.
+- Tone: Grim, disciplined, authoritative. A man who carries command like armor.
+- Speech Patterns: Short, direct orders in the field. In council, his voice is deliberate and heavy, as if each word is weighed before it leaves his mouth. Rarely emotional, though conviction burns beneath the surface.
+- Humor / Emotional Range: Rarely humorous; when it comes, it’s dark, dry, or cutting. Emotion appears only in fleeting cracks—loyalty, fury, or contempt.
+- Vocabulary: Martial, strategic, no excess flourish. Speaks like a soldier, not a courtier.
+- Example Lines:
+   - “Form ranks. Shields forward. We break them, or we break with them.”
+   - “The cost is mine to bear. Yours is only to follow.”
+
+### Reau
+- Accent / Cadence: Quiet, steady, watchful. Speaks with weight, though rarely at length.
+- Tone: Reserved, loyal, serious. More action than words.
+- Speech Patterns: Simple, sparse. Rarely volunteers speech unless asked. Pauses before speaking, as though considering every word.
+- Humor / Emotional Range: Almost none—occasional dry understatement. Most emotion conveyed through tone rather than wit.
+- Vocabulary: Plain, soldierly. His words are like his presence: unadorned, grounded.
+- Example Lines:
+   - “Not all battles are won with steel. Some are endured.”
+   - “You speak too quickly. Let silence teach you.”
+
+### Lord Merrick of Blackspire
+- Accent / Cadence: Smooth, refined, deliberate. A noble who clawed his way up and never forgets it.
+- Tone: Ambitious, manipulative, always masking menace with courtesy. His voice balances between courtly civility and predator’s patience.
+- Speech Patterns: Long, elegant sentences when in public or making speeches. In private, sharper and colder. Loves to draw others in with rhetorical flourishes.
+- Humor / Emotional Range: Polite chuckles or ironic jabs. Rarely laughs with warmth. When anger shows, it is measured, not explosive.
+- Vocabulary: Polished, aristocratic. Uses metaphors of power, conquest, and wealth. Never crass, always poised.
+- Example Lines:
+   - “Blackspire rose from stone and ash, as did I. Do not mistake endurance for weakness.”
+   - “The future belongs to those who dare shape it. The rest are dust beneath the wheel.”
+
+### King Edric Wymark
+- Accent / Cadence: Resonant, formal, and measured. His voice carries the weight of ceremony—trained to be heard across a hall or battlefield without shouting.
+- Tone: Stern but not cruel, authoritative without needing to bluster. His presence commands as much as his words.
+- Speech Patterns: Balanced, structured—his sentences often feel like proclamations. Prefers timeless, almost biblical phrasing. Rarely casual, even in private.
+- Humor / Emotional Range: Rare. At most, a cold irony or a dry remark. His anger is deliberate and chilling rather than explosive.
+- Vocabulary: Highborn, ceremonial, steeped in tradition. He speaks of duty, oath, crown, burden, realm, blood. Avoids slang or common phrasing.
+- Example Lines:
+   - “A crown is not a prize, but a yoke; it bends the neck until the flesh hardens or the man breaks.”
+   - “The Accord is written not only in ink, but in the blood of kings. Break it lightly, and you break kingdoms with it.”
+
+Batch 4: The Royal Batch
+
+### Governor Meridian Drake
+- Accent / Cadence: Polished but weary. Speaks like a man caught between statecraft and personal burden.
+- Tone: Diplomatic, measured, often guarded. When his family is mentioned, sincerity bleeds through.
+- Speech Patterns: Formal in public—speeches, polite turns of phrase. In private, clipped and urgent. Often pauses mid-sentence, as if weighing consequence.
+- Humor / Emotional Range: Rare, almost forced in public. Genuine warmth or grief only escapes in moments of vulnerability.
+- Vocabulary: Political, ceremonial. Uses words like accord, duty, safeguard, legacy.
+- Example Lines:
+   - “The Accord is a fragile bridge, and I stand upon it alone.”
+   - “They call me governor, yet in my own home I am but husband and father.”
+
+### Lady Elira Drake
+- Accent / Cadence: Graceful, low-voiced, courtly.
+- Tone: Gentle yet resilient. The quiet strength behind the governor. Her words carry subtle wisdom, though she rarely speaks at length in council.
+- Speech Patterns: Even, fluid sentences. Soft persuasion rather than commands. Often appeals to empathy.
+- Humor / Emotional Range: Wry humor with her children; protective warmth with her husband. Can be steel-sharp when family is threatened.
+- Vocabulary: Domestic and poetic rather than political. Home, hearth, trust, heart.
+- Example Lines:
+   - “A house is no fortress, husband, if its hearth grows cold.”
+   - “Do not mistake silence for surrender. Even roots unseen hold the earth firm.”
+
+### Callen Drake (Heir)
+- Accent / Cadence: Educated, practiced in the ways of court. Eager to project confidence.
+- Tone: Ambitious, somewhat impatient, desperate to prove himself.
+- Speech Patterns: Long, polished sentences in public, but betrays nerves in private. Prone to speaking too quickly.
+- Humor / Emotional Range: Youthful confidence, sometimes arrogant. Laughs too loud when trying to appear at ease.
+- Vocabulary: Bookish, noble. Uses too many big words at times.
+- Example Lines:
+   - “Aldoria must not bend to every shifting wind. We are the pillar others lean upon.”
+   - “Father, I am ready. You need only let me bear the weight.”
+
+### Selene Drake (Daughter)
+- Accent / Cadence: Light, airy, musical. Speaks like a court singer or poet.
+- Tone: Curious, idealistic, sometimes naive. Sees beauty where others see duty.
+- Speech Patterns: Flourished, imagistic language. Questions more than declarations.
+- Humor / Emotional Range: Innocent, whimsical humor. Deeply empathetic—emotions easily shown.
+- Vocabulary: Poetic, drawn from nature or romance.
+- Example Lines:
+   - “The gardens still bloom, even while soldiers march—does that not mean hope remains?”
+   - “Why must peace sound like iron and ink, and never laughter?”
+
+### Edric Drake Jr.
+- Accent / Cadence: Direct, childish but sharp for his age.
+- Tone: Bold, unfiltered honesty—often embarrassing his family in council.
+- Speech Patterns: Short, blunt, to the point. Lacks courtly polish.
+- Humor / Emotional Range: Quick to laugh, quick to pout. Comic relief in family scenes.
+- Vocabulary: Simple, plain. Mimics soldiers more than courtiers.
+- Example Lines:
+   - “Why do they call you governor? You’re just my father.”
+   - “If peace is so strong, why does it need guards with spears?”
+
+Batch 5: The Western Brothers & The Mountaineer
+
+### Taeral (Far West)
+- Accent / Cadence: Western rough-cut—hard consonants, clipped pace. Practical speech, lean and unsentimental.
+- Tone: Wry, sardonic, impatient with foolishness.
+- Speech Patterns: Drops small words in quick talk, compresses contractions (“reckon,” “ain’t,” “’til”). Uses cutting understatement.
+- Humor / Emotional Range: Dry and biting; punctures pomposity.
+- Vocabulary: Frontier pragmatism—tracks, trail, grit, weathered, rust, dust. Keeps it physical and immediate.
+- Example Lines:
+   - “Reckon that plan looks clever ’til arrows start flyin’.”
+   - “Steel’s fine. Sense is better.”
+
+### Aymir (Far West)
+- Accent / Cadence: Same Western root, steadier and more deliberate—the elder brother smoothing rough edges.
+- Tone: Stern, protective, patient; a watcher more than a talker.
+- Speech Patterns: Short, measured sentences; keeps the clipped Western flavor without Taeral’s bite.
+- Humor / Emotional Range: Rare, warm humor; speaks to steady rather than sting.
+- Vocabulary: Plain, grounded—road, camp, watchfire, sign, weather.
+- Example Lines:
+   - “Let him talk. Wind spends itself. We’ll save breath for the climb.”
+   - “Storm’s comin’. Best to lash what you mean to keep.”
+
+### Naevin Duskwind (Mountain Provinces—not West)
+- Accent / Cadence: High-country drawl with miner’s lilt—vowels stretched, consonants softened. Think old mountain folk, but tempered for court.
+- Tone: Polite on the surface, iron underneath; patient, canny, and hard to read.
+- Speech Patterns: Proverbs and ore talk—veins, seams, weight, pressure. Says “reckon,” “right enough,” “ain’t,” but trims it in formal rooms.
+- Humor / Emotional Range: Slow, knowing humor; lets a silence do the cutting.
+- Vocabulary: Miners’ metaphors adapted to politics—“vein’s played out,” “pressure in the stone,” “claim worth keepin’.”
+- Example Lines:
+   - “Press a mountain long enough, it groans back. Reckon folks do the same.”
+   - “Vein looks rich ’til you follow it into bad rock. Best test the weight before you stake your claim.”

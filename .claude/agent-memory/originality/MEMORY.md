@@ -1,1 +1,1 @@
-- [Known matches](reference_known_matches.md) — verified comps: Here (2024), Chevy holiday ads 2021-24, Gran Torino, veteran-tribute stock images
+- [Known matches](reference_known_matches.md) — verified comps: Here (2024), Chevy holiday ads 2021-24, Gran Torino, veteran-tribute stock images, Shining/Changeling ghost ball

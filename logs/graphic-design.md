@@ -1,0 +1,1 @@
+2026-11-04 | graphic-design | Ian Griffin trailer: wrote 04-stills-prompts.md (15 stills, continuity sheet, end card handling). Untested, no generation, no credits. Decisions WRENCH-2026-11-04-13, -11, -12 queued.

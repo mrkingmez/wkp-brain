@@ -1,0 +1,380 @@
+Good. I’ve ingested the full Voice Bible. 
+voice_bible_performance this one
+Now I’ll build complete idiom / lexical banks for all named major voices, aligned to:
+• Regional Baseline
+• Social Class Tier
+• Institutional Overlay
+• Stress Distortion
+No phonetic spelling.
+No caricature.
+No drift across class boundaries.
+This is structural voice ammunition.
+
+HARMON
+Educated Professional + Longevity Overlay
+Natural Vocabulary Tendencies
+“We move.”
+“Report.”
+“Clarify.”
+“We adapt.”
+“That is not acceptable.”
+“You misunderstand the scale.”
+“This ends now.”
+“That will not happen again.”
+Humor Register (rare, dry)
+“Try not to die.”
+“I expected better.”
+“I have buried enough heroes.”
+Under Stress
+Contractions drop.
+Lines shorten.
+Silence follows weight.
+“We move.”
+“Enough.”
+“I will not lose another.”
+
+ASH
+Common + Oppindale Cadence
+Natural Speech
+“Yeah, that’s ugly.”
+“Not ideal.”
+“Sure. Why not.”
+“That tracks.”
+“Seen worse.”
+“You’ve got to be kidding.”
+Deflection Humor
+“Oh good. More of that.”
+“This’ll go well.”
+“Fantastic.”
+Under Fear
+Humor thins.
+“That’s bad.”
+“We run.”
+“Now.”
+
+BROTHER ALDRICH
+Educated Professional + Faith Overlay
+Faith-Layered Statements
+“There is judgment.”
+“Stand firm.”
+“Peace requires sacrifice.”
+“You are not broken.”
+“We endure.”
+Moral Framing
+“Violence is a tool.”
+“That is not strength.”
+“That is cowardice.”
+Under Anger
+Volume lowers.
+“Enough.”
+“Stand.”
+“Kneel.”
+
+RIVEN
+Bridge Class — Agile Code-Switcher
+Charm Mode
+“Easy.”
+“Relax.”
+“Let’s talk.”
+“After you.”
+“Now we’re being honest.”
+Threat Mode
+“Careful.”
+“I wouldn’t.”
+“That would be unfortunate.”
+Under Real Threat
+Smile drops.
+“Run.”
+“Move.”
+“Now.”
+
+DAIN
+High Nobility Structure
+Noble Phrasing
+“That is unacceptable.”
+“You misunderstand.”
+“We do not gamble blindly.”
+“There are consequences.”
+“That reflects poorly.”
+Attempted Casual (slightly stiff)
+“Was that… inappropriate?”
+“I apologize.”
+Under Stress
+Compression.
+“No.”
+“Stand down.”
+“We move.”
+
+NYSSA
+Bridge + Educated Hybrid
+Social Control Language
+“How interesting.”
+“That would be unfortunate.”
+“Oh darling.”
+“You worry too much.”
+“Please.”
+Layered Subtext
+“Is that what you think?”
+“You could try.”
+“I suppose we’ll see.”
+Under Fear
+Humor drops.
+“Don’t.”
+“Not here.”
+“Now.”
+
+TAERAL
+Educated Professional + Aristocratic Precision
+Technical Framing
+“That is incorrect.”
+“No. Misaligned.”
+“Imprecise.”
+“That angle is wrong.”
+“Adjust.”
+Self-Correction Habit
+“No— that is not right.”
+“I misspoke.”
+Under Stress
+Corrections increase.
+“No.”
+“That is unacceptable.”
+
+AYMIR
+Grounded Warrior Calm
+Steady Speech
+“We do this clean.”
+“Then we go home.”
+“Easy.”
+“Hold.”
+“We’ve handled worse.”
+Deflection Humor
+“That’ll leave a mark.”
+“Not our first storm.”
+Under Loss
+Humor disappears.
+“We finish.”
+“Now.”
+
+REAU
+Oppindale Youth Plainness
+Direct Language
+“I just want the truth.”
+“What happened?”
+“That’s not right.”
+“I don’t understand.”
+Under Pressure
+Quieter.
+“No.”
+“Tell me.”
+No metaphor. Ever.
+
+WESLIN
+Educated Professional Becoming
+Natural Qualifiers
+“I think—”
+“There has to be a reason.”
+“That doesn’t fit.”
+“It suggests—”
+“Wait.”
+Intellectual Framing
+“There’s structure.”
+“That aligns.”
+“It’s not coincidence.”
+Under Stress
+Filler drops.
+“No.”
+“That’s wrong.”
+“Stop.”
+
+NAEVIN
+Common Mountaineer
+Land-Based Metaphor
+“That won’t hold.”
+“Ground’s loose.”
+“Storm’s building.”
+“Wind shifted.”
+“That slope slides.”
+Practical
+“Let it settle.”
+“Put weight on it.”
+“We’ll see.”
+“That’ll do.”
+Under Stress
+Compression.
+“Down.”
+“Move.”
+“Now.”
+
+ADIN
+Longevity Overlay — Ancient Stillness
+Declarative Weight
+“You misunderstand the scale.”
+“I have seen this before.”
+“This ends poorly.”
+“Do not mistake patience.”
+Calm Threat
+“You should reconsider.”
+“That is unwise.”
+Under Threat
+Contractions vanish.
+“This will end.”
+“Do not.”
+
+LYSANNA
+Ranger Edge + Warm Core
+Ranger Clarity
+“I can track it.”
+“Trust me.”
+“Stay close.”
+“Not that way.”
+Balanced Tone
+“Don’t mistake that.”
+“I’ve got it.”
+Under Danger
+Warmth gone.
+“Down.”
+“Behind me.”
+
+GARR
+Bridge Soldier Direct
+Tactical Simplicity
+“Hold.”
+“We wait.”
+“Not like that.”
+“They’re adjusting.”
+“Break it.”
+Under anger:
+“That won’t happen again.”
+
+LORD MERRICK
+High Nobility Surgical Politeness
+Court Language
+“How ambitious.”
+“You mistake ambition for capability.”
+“That is mercy.”
+“I assure you.”
+Dismissive Edge
+“Unfortunate.”
+“Predictable.”
+Under threat:
+“No.”
+“Enough.”
+
+GOVERNOR DRAKE
+Aldorian Discipline with Emotional Leakage
+Structured Phrasing
+“I am in control.”
+“This is contained.”
+“We proceed.”
+Under Strain
+“I—”
+“That is not—”
+“I am…”
+Tightness creeps in.
+
+KING EDRIC
+High Nobility with Warm Vision
+Legacy Language
+“My father dreamed—”
+“We must be prepared.”
+“It is not enough.”
+“I would rather win clean.”
+Private Warmth
+“I know.”
+“What has it cost?”
+
+QUEEN MIRELLE
+Silk & Steel
+Public
+“How fortunate.”
+“Unexpected.”
+“That is interesting.”
+Private
+“No.”
+“That is yours.”
+“Men are predictable.”
+Under stress:
+Quieter, not louder.
+
+LUCA (Pre-Lysanna Death)
+Compact Speech
+“We wait.”
+“Not yet.”
+“I gave my word.”
+“That’s not the same.”
+Under Anger
+Sharper.
+“No.”
+“Now.”
+
+RED CLOAK ADEPT
+Absolutes
+“The world must be remade.”
+“You cling to decay.”
+“Lucent returns.”
+Under Pressure
+Proclamation tone.
+“Kneel.”
+“You will.”
+
+BROTHERHOOD REMNANT
+Oath Language
+“That was the oath.”
+“We were meant to protect.”
+“We failed.”
+Tactical
+“Assess.”
+“Hold.”
+“We move.”
+
+MIND-CONTROLLED CITIZEN
+Flat Responses
+“It is fine.”
+“There is no concern.”
+“We are safe.”
+Deeper Influence
+“No concern. No concern.”
+“We are safe. We are safe.”
+
+MJAKAZI (MEURICK LUQUEST)
+Concrete Framing
+“Need bread?”
+“I failed.”
+“I am not sending him.”
+“You bring him back.”
+Shame Language
+“I did monstrous things.”
+“I remember.”
+Under Fracture
+“No.”
+(beat)
+“No.”
+
+CULTURE-WIDE BANKS
+Mountain Culture
+“Storm’s coming.”
+“Let it settle.”
+“That’ll hold.”
+Noble Court
+“Mind yourself.”
+“Choose carefully.”
+“We are observed.”
+Soldier Culture
+“Move.”
+“Hold.”
+“Clear.”
+Faith Culture
+“Stand firm.”
+“There is judgment.”
+Undercity
+“Not here.”
+“Keep walking.”
+“Too loud.”
+
+This is now canon-consistent with your Voice Bible. 
+voice_bible_performance this one
+If you’d like next:
+• I can create a “10-line Interchangeability Stress Test” tool
+• Or build stress-modifier examples per character
+• Or build insult banks specific to class tiers
+This is where voice stops being cosmetic and becomes architectural.
