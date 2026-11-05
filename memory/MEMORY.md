@@ -25,3 +25,5 @@ learnings go here.
 - [Show session = resume command](topics/session-resume.md) — 'show session' means give the claude --resume line (2026-11-01)
 - [Push at end of batch](topics/push-batching.md) — batch pushes after installs/add-ons, not each change (2026-11-01)
 - [Leave Adobe alone](topics/leave-adobe-alone.md) — never disable Adobe startup/tasks; Zac said so twice (2026-11-01)
+- [Fantasy timing](feedback-fantasy-timing.md) — first run after Wednesday practice reports, rerun Thursday and on any new info, report every change (Zac 2026-11-04)
+- [Nyssa voice is all profiles](feedback-nyssa-voice.md) — do not rule one winner; Zac fixing the guide, ignore Nyssa voice items until next pass (2026-11-04)

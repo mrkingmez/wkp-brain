@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winter Wolf's Den - Clip Scheduler v2</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&display=swap');
+  :root { --bg:#0a0a0f; --surface:#111118; --surface2:#1a1a24; --border:#2a2a3a; --accent:#7c3aed; --accent2:#a855f7; --hot:#f97316; --warm:#eab308; --cool:#3b82f6; --text:#e2e0ff; --muted:#6b6b8a; --success:#22c55e; --danger:#ef4444; --yt:#ff0000; --ig:#e1306c; --fb:#1877f2; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:'Barlow',sans-serif; min-height:100vh; }
+  .container { max-width:1100px; margin:0 auto; padding:0 24px 60px; }
+  header { padding:40px 0 32px; border-bottom:1px solid var(--border); margin-bottom:40px; }
+  .logo { font-family:'Bebas Neue',cursive; font-size:48px; letter-spacing:3px; background:linear-gradient(135deg,#a855f7,#7c3aed,#f97316); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; }
+  .tagline { font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--muted); letter-spacing:2px; margin-top:6px; text-transform:uppercase; }
+  .status-bar { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:14px 20px; margin-bottom:32px; display:flex; align-items:center; gap:12px; font-family:'Share Tech Mono',monospace; font-size:13px; }
+  .status-dot { width:8px; height:8px; border-radius:50%; background:var(--muted); flex-shrink:0; }
+  .status-dot.active { background:var(--success); } .status-dot.error { background:var(--danger); } .status-dot.loading { background:var(--accent2); }
+  .episode-banner { background:linear-gradient(135deg,rgba(124,58,237,0.15),rgba(249,115,22,0.1)); border:1px solid rgba(168,85,247,0.4); border-radius:12px; padding:24px 28px; margin-bottom:28px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .episode-banner-title { font-family:'Bebas Neue',cursive; font-size:22px; letter-spacing:1px; color:var(--accent2); margin-bottom:4px; }
+  .episode-banner-sub { font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--muted); }
+  .episode-input-row { display:flex; gap:10px; align-items:center; flex:2; min-width:260px; }
+  .episode-input-row input { flex:1; background:rgba(10,10,15,0.8); border:1px solid rgba(168,85,247,0.5); border-radius:6px; padding:12px 16px; color:var(--text); font-family:'Share Tech Mono',monospace; font-size:14px; outline:none; }
+  .section { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:28px; margin-bottom:24px; }
+  .section-header { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+  .section-num { font-family:'Bebas Neue',cursive; font-size:28px; color:var(--accent2); min-width:32px; }
+  .section-title { font-family:'Bebas Neue',cursive; font-size:22px; letter-spacing:1px; }
+  .section-sub { font-size:13px; color:var(--muted); margin-top:2px; }
+  label { display:block; font-size:12px; font-family:'Share Tech Mono',monospace; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  input, select, textarea { width:100%; background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:10px 14px; color:var(--text); font-family:'Share Tech Mono',monospace; font-size:13px; outline:none; }
+  textarea { min-height:110px; resize:vertical; }
+  input:focus, select:focus, textarea:focus { border-color:var(--accent); }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px; }
+  .form-group { margin-bottom:20px; }
+  .project-card { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:16px; margin-top:12px; display:none; gap:16px; align-items:center; }
+  .project-card.visible { display:flex; }
+  .project-info { flex:1; } .project-name { font-weight:600; font-size:14px; margin-bottom:4px; }
+  .project-meta { font-family:'Share Tech Mono',monospace; font-size:11px; color:var(--muted); }
+  .badge { padding:3px 10px; border-radius:20px; font-family:'Share Tech Mono',monospace; font-size:11px; background:rgba(34,197,94,0.15); color:var(--success); border:1px solid rgba(34,197,94,0.3); }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:6px; font-family:'Bebas Neue',cursive; font-size:18px; letter-spacing:1px; cursor:pointer; border:none; color:white; }
+  .btn-primary { background:linear-gradient(135deg,var(--accent),var(--accent2)); }
+  .btn-secondary { background:var(--surface2); border:1px solid var(--border); color:var(--text); font-size:14px; padding:10px 18px; }
+  .btn-success { background:linear-gradient(135deg,#16a34a,#22c55e); }
+  .btn-danger { background:rgba(239,68,68,0.15); border:1px solid var(--danger); color:var(--danger); font-size:14px; padding:10px 18px; }
+  .btn:disabled { opacity:0.5; cursor:not-allowed; }
+  .btn-group { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+  .clips-table-wrap { overflow-x:auto; border-radius:8px; border:1px solid var(--border); }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  thead { background:var(--surface2); }
+  th { padding:12px 16px; text-align:left; font-family:'Share Tech Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); border-bottom:1px solid var(--border); white-space:nowrap; }
+  td { padding:12px 16px; border-bottom:1px solid rgba(42,42,58,0.5); vertical-align:middle; }
+  .score-badge { display:inline-flex; align-items:center; justify-content:center; width:44px; height:24px; border-radius:4px; font-family:'Bebas Neue',cursive; font-size:16px; }
+  .score-hot { background:rgba(249,115,22,0.2); color:var(--hot); border:1px solid rgba(249,115,22,0.3); }
+  .score-warm { background:rgba(234,179,8,0.2); color:var(--warm); border:1px solid rgba(234,179,8,0.3); }
+  .score-cool { background:rgba(59,130,246,0.15); color:var(--cool); border:1px solid rgba(59,130,246,0.25); }
+  .clip-title { max-width:260px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .time-slot { font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--accent2); }
+  .day-badge { display:inline-block; padding:2px 8px; border-radius:4px; font-family:'Share Tech Mono',monospace; font-size:11px; background:var(--surface2); border:1px solid var(--border); color:var(--muted); }
+  .copy-tag { font-family:'Share Tech Mono',monospace; font-size:10px; padding:2px 6px; border-radius:4px; }
+  .copy-ok { background:rgba(34,197,94,0.15); color:var(--success); } .copy-opus { background:rgba(234,179,8,0.15); color:var(--warm); }
+  .stats-row { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-bottom:24px; }
+  .stat-card { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:16px; text-align:center; }
+  .stat-num { font-family:'Bebas Neue',cursive; font-size:36px; line-height:1; color:var(--accent2); }
+  .stat-label { font-size:11px; color:var(--muted); font-family:'Share Tech Mono',monospace; text-transform:uppercase; margin-top:4px; }
+  .day-header { display:flex; align-items:center; gap:12px; padding:10px 16px; background:var(--surface2); border:1px solid var(--border); border-radius:8px 8px 0 0; font-family:'Bebas Neue',cursive; font-size:20px; letter-spacing:1px; margin-top:20px; }
+  .day-count { font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--muted); margin-left:auto; }
+  .day-posts { border:1px solid var(--border); border-top:none; border-radius:0 0 8px 8px; }
+  .post-row { display:grid; grid-template-columns:55px 130px 1fr 28px; gap:14px; align-items:center; padding:12px 16px; border-bottom:1px solid rgba(42,42,58,0.5); }
+  .post-status { width:20px; height:20px; border-radius:50%; border:2px solid var(--border); text-align:center; font-size:10px; }
+  .post-status.scheduled { border-color:var(--success); color:var(--success); } .post-status.failed { border-color:var(--danger); color:var(--danger); }
+  .progress-wrap { background:var(--surface2); border-radius:4px; height:6px; overflow:hidden; margin-top:16px; }
+  .progress-bar { height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2)); width:0%; transition:width 0.3s; }
+  .alert { padding:14px 18px; border-radius:8px; font-size:13px; margin:12px 0; }
+  .alert-success { background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.3); color:var(--success); }
+  .alert-error { background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); color:var(--danger); }
+  .alert-warn { background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); color:var(--warm); }
+  .tabs { display:flex; gap:4px; margin-bottom:20px; border-bottom:1px solid var(--border); }
+  .tab { padding:10px 20px; font-family:'Bebas Neue',cursive; font-size:16px; letter-spacing:1px; color:var(--muted); cursor:pointer; border-bottom:2px solid transparent; }
+  .tab.active { color:var(--accent2); border-bottom-color:var(--accent2); }
+  .tab-content { display:none; } .tab-content.active { display:block; }
+  .log-box { background:#060608; border:1px solid var(--border); border-radius:8px; padding:16px; max-height:240px; overflow-y:auto; font-family:'Share Tech Mono',monospace; font-size:12px; }
+  .log-entry { padding:3px 0; display:flex; gap:12px; } .log-time { color:var(--muted); flex-shrink:0; }
+  .log-ok { color:var(--success); } .log-err { color:var(--danger); } .log-info { color:var(--accent2); } .log-warn { color:var(--warm); }
+  input[type="checkbox"] { width:16px; height:16px; accent-color:var(--accent); cursor:pointer; }
+  .opt-row { display:flex; gap:20px; flex-wrap:wrap; margin-top:14px; }
+  .opt-row label { display:flex; align-items:center; gap:8px; text-transform:none; letter-spacing:0; font-size:13px; color:var(--text); margin:0; cursor:pointer; }
+  .platform-selector { display:flex; gap:16px; padding:16px 20px; background:var(--surface2); border:1px solid var(--border); border-radius:8px; flex-wrap:wrap; }
+  .plat-check { display:flex; align-items:center; gap:8px; cursor:pointer; padding:8px 16px; border-radius:6px; border:1px solid var(--border); background:var(--bg); margin:0; }
+  .plat-check.yt { color:var(--yt); } .plat-check.ig { color:var(--ig); } .plat-check.fb { color:var(--fb); }
+  @media(max-width:700px){ .form-row{grid-template-columns:1fr;} .stats-row{grid-template-columns:repeat(2,1fr);} .post-row{grid-template-columns:50px 1fr;} }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo">Winter Wolf's Den</div>
+    <div class="tagline">// Opus Clip Scheduler v2 - heatmap slots, approved copy, saved cancel</div>
+  </header>
+
+  <div class="status-bar"><div class="status-dot loading" id="statusDot"></div><span id="statusText">Loading...</span></div>
+
+  <div class="episode-banner">
+    <div style="flex:1;min-width:200px">
+      <div class="episode-banner-title">This Week's FrostCast Episode</div>
+      <div class="episode-banner-sub">Paste the Project ID from your Opus Clip dashboard URL</div>
+    </div>
+    <div class="episode-input-row">
+      <input type="text" id="weeklyProjectId" placeholder="e.g. P30611031Tjr" />
+      <button class="btn btn-primary" id="loadEpisodeBtn" onclick="loadWeeklyEpisode()">Load Episode</button>
+    </div>
+    <div id="bannerAlert" style="width:100%"></div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">01</div><div><div class="section-title">Select Project & Date</div><div class="section-sub">Pick the episode and the Thursday that starts the posting week</div></div></div>
+    <div class="form-row">
+      <div class="form-group"><label>Choose Project</label>
+        <select id="projectDropdown" onchange="onProjectSelected()"><option value="">- Add an episode above first -</option></select></div>
+      <div class="form-group"><label>Schedule Start Date (a Thursday)</label><input type="date" id="startDate" onchange="onDateChanged()" /></div>
+    </div>
+    <div class="project-card" id="projectCard"><div class="project-info"><div class="project-name" id="projectCardName"></div><div class="project-meta" id="projectCardMeta"></div></div><span class="badge" id="projectCardBadge"></span></div>
+    <div id="alertBox"></div>
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="loadClips()" id="loadBtn" disabled>Load Clips from This Project</button>
+      <button class="btn btn-secondary" onclick="loadProjects()">Refresh List</button>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="section" id="clipsSection" style="display:none">
+    <div class="section-header"><div class="section-num">02</div><div><div class="section-title">Approved Copy & Clips</div><div class="section-sub">Paste the approved-copy block Claude gives you. Clips without it fall back to Opus's own text.</div></div></div>
+
+    <div class="form-group">
+      <label>Approved copy (JSON from Claude, optional)</label>
+      <textarea id="approvedBox" oninput="onApprovedChanged()" placeholder='{"clips":[{"id":"CLIP_ID","title":"...","description":"...","youtube":{"title":"..."},"instagram":{"description":"..."},"facebook":{"description":"..."}}]}'></textarea>
+      <div class="opt-row">
+        <label><input type="checkbox" id="requireApproved" onchange="onApprovedChanged()" /> Only schedule clips that have approved copy</label>
+      </div>
+      <div id="approvedStatus" class="project-meta" style="margin-top:8px"></div>
+    </div>
+
+    <div class="stats-row" id="statsRow"></div>
+    <div class="clips-table-wrap">
+      <table>
+        <thead><tr><th><input type="checkbox" id="selectAll" onchange="toggleAll(this)" checked /></th><th>Score</th><th>Title</th><th>Copy</th><th>Dur</th><th>Day</th><th>YT / IG / FB</th></tr></thead>
+        <tbody id="clipsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="section" id="scheduleSection" style="display:none">
+    <div class="section-header"><div class="section-num">03</div><div><div class="section-title">Generated Schedule</div><div class="section-sub">Best scores take the hottest windows. Thursday gets the lowest-rated clip. Same 31-slot week as always.</div></div></div>
+
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('schedule')">Schedule</div>
+      <div class="tab" onclick="switchTab('platforms')">By Platform</div>
+      <div class="tab" onclick="switchTab('log')">Activity Log</div>
+    </div>
+    <div class="tab-content active" id="tab-schedule"><div id="scheduleOutput"></div></div>
+    <div class="tab-content" id="tab-platforms"><div id="platformOutput"></div></div>
+    <div class="tab-content" id="tab-log"><div class="log-box" id="logBox"><div class="log-entry"><span class="log-time">--:--:--</span><span class="log-info">Log ready.</span></div></div></div>
+
+    <div class="progress-wrap" id="progressWrap" style="display:none"><div class="progress-bar" id="progressBar"></div></div>
+    <div id="scheduleAlert"></div>
+
+    <div style="margin-top:20px">
+      <label>Platforms</label>
+      <div class="platform-selector">
+        <label class="plat-check yt"><input type="checkbox" id="chk_youtube" checked onchange="refresh()" /> YouTube Shorts</label>
+        <label class="plat-check ig"><input type="checkbox" id="chk_instagram" checked /> Instagram Reels</label>
+        <label class="plat-check fb"><input type="checkbox" id="chk_facebook" checked /> Facebook</label>
+      </div>
+      <div class="opt-row">
+        <label><input type="checkbox" id="ytOnePerDay" checked onchange="refresh()" /> YouTube: one a day only (the day's best-scoring clip). Instagram and Facebook get every slot.</label>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-success" id="scheduleBtn" onclick="executeSchedule()">Auto-Schedule Selected Platforms</button>
+      <button class="btn btn-secondary" onclick="exportCSV()">Export CSV</button>
+      <button class="btn btn-danger" onclick="cancelAll()">Cancel All Scheduled For This Project</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Same 31 heatmap slots and weekly quota as v1. Do not change these without Zac's say.
+var HEATMAP_SLOTS = [
+  {day:0,hour:18,tier:1},{day:5,hour:18,tier:1},{day:6,hour:18,tier:1},{day:1,hour:19,tier:1},
+  {day:0,hour:20,tier:1},{day:5,hour:20,tier:1},{day:6,hour:20,tier:1},{day:1,hour:12,tier:1},
+  {day:0,hour:15,tier:2},{day:0,hour:12,tier:2},{day:5,hour:15,tier:2},{day:5,hour:12,tier:2},
+  {day:6,hour:15,tier:2},{day:6,hour:12,tier:2},{day:2,hour:18,tier:2},{day:2,hour:20,tier:2},
+  {day:1,hour:17,tier:2},{day:3,hour:18,tier:2},
+  {day:2,hour:15,tier:3},{day:2,hour:12,tier:3},{day:0,hour:9,tier:3},{day:5,hour:9,tier:3},
+  {day:6,hour:9,tier:3},{day:1,hour:9,tier:3},{day:3,hour:12,tier:3},{day:4,hour:18,tier:3},
+  {day:2,hour:9,tier:4},{day:0,hour:7,tier:4},{day:5,hour:7,tier:4},{day:6,hour:7,tier:4},{day:3,hour:15,tier:4}
+];
+var WEEKLY_QUOTA = {0:6,1:4,2:5,3:3,4:1,5:6,6:6};
+var DAY_NAMES = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var PLATFORM_DELAYS = {youtube:0,instagram:45,facebook:90};
+var PLATFORM_LABELS = {youtube:'YouTube Shorts',instagram:'Instagram Reels',facebook:'Facebook'};
+var PLATFORM_COLORS = {youtube:'var(--yt)',instagram:'var(--ig)',facebook:'var(--fb)'};
+
+var allProjects = [], selectedProject = null, clips = [], schedule = [], approved = {};
+
+window.onload = function() {
+  var today = new Date();
+  var daysUntil = (4 - today.getDay() + 7) % 7 || 7;
+  var next = new Date(today); next.setDate(today.getDate() + daysUntil);
+  document.getElementById('startDate').value = next.toISOString().split('T')[0];
+  loadProjects();
+};
+
+function onDateChanged() {
+  var v = document.getElementById('startDate').value;
+  if (v && new Date(v + 'T12:00:00').getDay() !== 4) showAlert('alertBox','warn','That date is not a Thursday. The week is built from the day you pick, so pick a Thursday.');
+  if (clips.length) refresh();
+}
+
+function getSelectedPlatforms() {
+  var p = [];
+  ['youtube','instagram','facebook'].forEach(function(k){ if (document.getElementById('chk_'+k).checked) p.push(k); });
+  return p;
+}
+
+// ---------- projects ----------
+function loadWeeklyEpisode() {
+  var id = document.getElementById('weeklyProjectId').value.trim();
+  if (!id) { showAlert('bannerAlert','warn','Paste a Project ID first.'); return; }
+  var btn = document.getElementById('loadEpisodeBtn'); btn.disabled = true; btn.textContent = 'Loading...';
+  setStatus('loading','Looking up project ' + id + '...');
+  google.script.run
+    .withSuccessHandler(function(r) {
+      btn.disabled = false; btn.textContent = 'Load Episode';
+      if (!r.success) { showAlert('bannerAlert','error', r.error || 'Could not load project.'); setStatus('error', r.error || 'Not found.'); return; }
+      var p = r.project;
+      if (!allProjects.some(function(x){ return x.id === p.id; })) allProjects.unshift(p);
+      fillDropdown(); document.getElementById('projectDropdown').value = p.id; onProjectSelected();
+      document.getElementById('weeklyProjectId').value = '';
+      showAlert('bannerAlert','success', p.name + ': ' + p.clipCount + ' clips found.');
+      setStatus('active', p.name + ' ready. Click Load Clips.');
+      addLog('ok','Episode loaded: ' + p.name + ' (' + p.clipCount + ' clips)');
+    })
+    .withFailureHandler(function(e){ btn.disabled = false; btn.textContent = 'Load Episode'; showAlert('bannerAlert','error', e.message); setStatus('error', e.message); })
+    .lookupProject(id);
+}
+
+function fillDropdown() {
+  var sel = document.getElementById('projectDropdown');
+  sel.innerHTML = '<option value="">- Select a project -</option>';
+  allProjects.forEach(function(p){ var o = document.createElement('option'); o.value = p.id; o.textContent = (p.name || p.id) + (p.clipCount ? ' (' + p.clipCount + ' clips)' : ''); sel.appendChild(o); });
+}
+
+function loadProjects() {
+  setStatus('loading','Loading saved projects...');
+  google.script.run
+    .withSuccessHandler(function(r){ allProjects = r.projects || []; fillDropdown();
+      setStatus('active', allProjects.length ? allProjects.length + ' project(s) saved. Select one.' : 'No projects yet. Paste a Project ID above.'); })
+    .withFailureHandler(function(e){ setStatus('error','Could not load projects: ' + e.message); })
+    .getProjects();
+}
+
+function onProjectSelected() {
+  var id = document.getElementById('projectDropdown').value;
+  if (!id) { document.getElementById('projectCard').classList.remove('visible'); document.getElementById('loadBtn').disabled = true; return; }
+  selectedProject = allProjects.filter(function(p){ return p.id === id; })[0] || {id:id,name:id};
+  document.getElementById('projectCard').classList.add('visible');
+  document.getElementById('projectCardName').textContent = selectedProject.name || selectedProject.id;
+  document.getElementById('projectCardMeta').textContent = 'ID: ' + selectedProject.id + (selectedProject.clipCount ? '  |  ' + selectedProject.clipCount + ' clips' : '');
+  document.getElementById('projectCardBadge').textContent = selectedProject.status || 'READY';
+  document.getElementById('loadBtn').disabled = false;
+}
+
+// ---------- clips ----------
+function loadClips() {
+  if (!selectedProject) return;
+  var btn = document.getElementById('loadBtn'); btn.disabled = true; btn.textContent = 'Loading...';
+  setStatus('loading','Fetching clips...');
+  google.script.run
+    .withSuccessHandler(function(r) {
+      btn.disabled = false; btn.textContent = 'Load Clips from This Project';
+      if (!r.success) { setStatus('error', r.error); showAlert('alertBox','error', r.error); addLog('err', r.error); return; }
+      clips = r.clips.map(function(c){ c.selected = true; return c; });
+      addLog('ok','Loaded ' + clips.length + ' clips. Top score: ' + (clips[0] ? clips[0].score : 'n/a'));
+      document.getElementById('clipsSection').style.display = 'block';
+      document.getElementById('scheduleSection').style.display = 'block';
+      onApprovedChanged();
+      google.script.run.withSuccessHandler(function(s){
+        if (s.items && s.items.length) showAlert('scheduleAlert','warn', s.items.length + ' posts are already scheduled for this project. Re-scheduling the same clip and platform will be refused.');
+      }).getScheduled(selectedProject.id);
+      setStatus('active', clips.length + ' clips loaded. Review the schedule below.');
+    })
+    .withFailureHandler(function(e){ btn.disabled = false; btn.textContent = 'Load Clips from This Project'; setStatus('error', e.message); showAlert('alertBox','error', e.message); })
+    .getClips(selectedProject.id);
+}
+
+// ---------- approved copy ----------
+function parseApproved() {
+  approved = {};
+  var raw = document.getElementById('approvedBox').value.trim();
+  var st = document.getElementById('approvedStatus');
+  if (!raw) { st.textContent = 'No approved copy pasted. Clips use Opus Clip text (not run through the writing gates).'; return; }
+  try {
+    var data = JSON.parse(raw), list = Array.isArray(data) ? data : (data.clips || []);
+    list.forEach(function(x){ if (x.id) approved[x.id] = x; if (x.curationId) approved[x.curationId] = x; });
+    st.textContent = 'Approved copy read: ' + list.length + ' entries.';
+  } catch (e) { st.textContent = 'Could not read that JSON: ' + e.message; }
+}
+
+function copyFor(c) { return approved[c.id] || approved[c.curationId] || null; }
+
+function onApprovedChanged() {
+  parseApproved();
+  var need = document.getElementById('requireApproved').checked;
+  clips.forEach(function(c){ c.copy = copyFor(c); c.selected = need ? !!c.copy : true; });
+  var matched = clips.filter(function(c){ return c.copy; }).length;
+  if (clips.length) document.getElementById('approvedStatus').textContent += '  Matched ' + matched + ' of ' + clips.length + ' clips.';
+  refresh();
+}
+
+function platformText(c, plat) {
+  var cp = c.copy, pc = cp && cp[plat] ? cp[plat] : {};
+  if (cp) {
+    return { title: pc.title || cp.title || c.title, desc: pc.description || cp.description || pc.title || cp.title || c.title, gated: true };
+  }
+  return { title: c.title, desc: (c.description || c.title) + '\n\n#WinterWolfsDen #FrostCast', gated: false };
+}
+
+// ---------- schedule build (same logic as v1) ----------
+function refresh() { buildSchedule(); renderClipsTable(); }
+
+function dayKeepers() {
+  // YouTube one-a-day: for each day, only the best-scoring scheduled clip.
+  var best = {};
+  clips.forEach(function(c,i){ var s = schedule[i]; if (!c.selected || !s) return;
+    if (best[s.day] === undefined || c.score > clips[best[s.day]].score) best[s.day] = i; });
+  var keep = {}; Object.keys(best).forEach(function(d){ keep[best[d]] = true; });
+  return keep;
+}
+function ytAllowed(i, keep) { return !document.getElementById('ytOnePerDay').checked || keep[i]; }
+
+function buildSchedule() {
+  var startVal = document.getElementById('startDate').value; if (!startVal) return;
+  var base = new Date(startVal + 'T12:00:00'), startDow = base.getDay();
+  function dateForDay(d){ var dt = new Date(base); dt.setDate(dt.getDate() + (d - startDow + 7) % 7); return dt; }
+  var q = {}; for (var k in WEEKLY_QUOTA) q[k] = WEEKLY_QUOTA[k];
+  var slots = [];
+  HEATMAP_SLOTS.forEach(function(s){ if (q[s.day] > 0) { slots.push({day:s.day,hour:s.hour,tier:s.tier,date:dateForDay(s.day)}); q[s.day]--; } });
+  schedule = new Array(clips.length).fill(null);
+  var order = clips.map(function(c,i){ return {i:i,score:c.score,sel:c.selected}; })
+    .filter(function(x){ return x.sel; }).sort(function(a,b){ return b.score - a.score; }).map(function(x){ return x.i; });
+  order.forEach(function(idx, n){ if (n < slots.length) schedule[idx] = slots[n]; });
+}
+
+function renderClipsTable() {
+  var avg = clips.length ? Math.round(clips.reduce(function(s,c){ return s + c.score; }, 0) / clips.length) : 0;
+  var placed = schedule.filter(function(s){ return s; }).length;
+  document.getElementById('statsRow').innerHTML = stat(clips.length,'Total Clips') + stat(clips[0] ? clips[0].score : 0,'Top Score') + stat(avg,'Avg Score') + stat(placed,'Slots Filled') + stat(clips.filter(function(c){ return c.copy; }).length,'Approved Copy');
+  var keep = dayKeepers(), html = '';
+  clips.forEach(function(c,i){
+    var s = schedule[i], sc = c.score >= 95 ? 'score-hot' : c.score >= 88 ? 'score-warm' : 'score-cool';
+    var yt = s && ytAllowed(i, keep) ? fmt(s.hour,0) : '-';
+    html += '<tr><td><input type="checkbox"' + (c.selected ? ' checked' : '') + ' onchange="toggleClip(' + i + ',this)" /></td>' +
+      '<td><span class="score-badge ' + sc + '">' + (c.score || '?') + '</span></td>' +
+      '<td><div class="clip-title" title="' + esc(c.title) + '">' + esc(c.title) + '</div></td>' +
+      '<td><span class="copy-tag ' + (c.copy ? 'copy-ok' : 'copy-opus') + '">' + (c.copy ? 'APPROVED' : 'OPUS') + '</span></td>' +
+      '<td class="project-meta">' + c.duration + 's</td>' +
+      '<td><span class="day-badge">' + (s ? DAY_NAMES[s.day] : '-') + '</span></td>' +
+      '<td>' + (s ? '<div class="time-slot">YT ' + yt + '</div><div class="time-slot" style="color:var(--ig)">IG ' + fmt(s.hour,45) + '</div><div class="time-slot" style="color:var(--fb)">FB ' + fmt(s.hour,90) + '</div>' : '-') + '</td></tr>';
+  });
+  document.getElementById('clipsBody').innerHTML = html;
+  renderScheduleView(keep);
+}
+
+function stat(n,l){ return '<div class="stat-card"><div class="stat-num">' + n + '</div><div class="stat-label">' + l + '</div></div>'; }
+
+function renderScheduleView(keep) {
+  var byDay = {};
+  clips.forEach(function(c,i){ if (!schedule[i] || !c.selected) return; var d = schedule[i].day; (byDay[d] = byDay[d] || []).push({c:c,s:schedule[i],i:i}); });
+  var html = '';
+  [4,5,6,0,1,2,3].forEach(function(d){
+    var posts = byDay[d]; if (!posts || !posts.length) return;
+    posts.sort(function(a,b){ return a.s.hour - b.s.hour; });
+    html += '<div class="day-header"><span>' + DAY_NAMES[d].toUpperCase() + '</span><span class="project-meta">' + posts[0].s.date.toLocaleDateString('en-US',{month:'short',day:'numeric'}) + '</span><span class="day-count">' + posts.length + ' clip' + (posts.length !== 1 ? 's' : '') + '</span></div><div class="day-posts">' +
+      posts.map(function(p){
+        var sc = p.c.score >= 95 ? 'score-hot' : p.c.score >= 88 ? 'score-warm' : 'score-cool';
+        return '<div class="post-row"><span class="score-badge ' + sc + '">' + (p.c.score || '?') + '</span><div><div class="time-slot">YT ' + (ytAllowed(p.i, keep) ? fmt(p.s.hour,0) : '-') + '</div><div class="time-slot" style="color:var(--ig)">IG ' + fmt(p.s.hour,45) + '</div><div class="time-slot" style="color:var(--fb)">FB ' + fmt(p.s.hour,90) + '</div></div><div class="clip-title" style="max-width:none">' + esc(p.c.title) + '</div><div class="post-status" id="ps_' + p.i + '"></div></div>';
+      }).join('') + '</div>';
+  });
+  document.getElementById('scheduleOutput').innerHTML = html || '<div class="project-meta" style="padding:30px;text-align:center">No schedule yet.</div>';
+
+  var ph = '';
+  ['youtube','instagram','facebook'].forEach(function(plat){
+    var rows = clips.map(function(c,i){ return {c:c,s:schedule[i],i:i}; }).filter(function(x){ return x.c.selected && x.s && (plat !== 'youtube' || ytAllowed(x.i, keep)); })
+      .sort(function(a,b){ var o = [4,5,6,0,1,2,3]; return o.indexOf(a.s.day) - o.indexOf(b.s.day) || a.s.hour - b.s.hour; });
+    ph += '<h3 style="font-family:\'Bebas Neue\',cursive;font-size:22px;color:' + PLATFORM_COLORS[plat] + ';margin:18px 0 10px">' + PLATFORM_LABELS[plat] + ' (' + rows.length + ')</h3><div class="clips-table-wrap"><table><thead><tr><th>#</th><th>Date</th><th>Time</th><th>Score</th><th>Title</th></tr></thead><tbody>' +
+      rows.map(function(x,n){ return '<tr><td>' + (n+1) + '</td><td><span class="day-badge">' + x.s.date.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}) + '</span></td><td class="time-slot">' + fmt(x.s.hour, PLATFORM_DELAYS[plat]) + '</td><td>' + (x.c.score || '?') + '</td><td class="clip-title">' + esc(platformText(x.c,plat).title) + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  });
+  document.getElementById('platformOutput').innerHTML = ph;
+}
+
+// ---------- execute ----------
+function executeSchedule() {
+  var platforms = getSelectedPlatforms();
+  if (!platforms.length) { showAlert('scheduleAlert','warn','Pick at least one platform.'); return; }
+  var keep = dayKeepers(), now = new Date(), queue = [], skipped = 0;
+  clips.forEach(function(c,i){
+    var s = schedule[i]; if (!c.selected || !s) return;
+    platforms.forEach(function(plat){
+      if (plat === 'youtube' && !ytAllowed(i, keep)) return;
+      var d = new Date(s.date); d.setHours(s.hour, PLATFORM_DELAYS[plat], 0, 0);
+      if (d <= now) { skipped++; addLog('warn','Skipped (time already passed): ' + PLATFORM_LABELS[plat] + ' "' + c.title.slice(0,40) + '"'); return; }
+      var t = platformText(c, plat);
+      queue.push({projectId:c.projectId, curationId:c.curationId, platform:plat, publishAt:d.toISOString(), title:t.title, desc:t.desc, gated:t.gated, clipIdx:i, label:PLATFORM_LABELS[plat]});
+    });
+  });
+  if (!queue.length) { showAlert('scheduleAlert','warn','Nothing to schedule.' + (skipped ? ' ' + skipped + ' posts were in the past.' : '')); return; }
+  var ungated = queue.filter(function(x){ return !x.gated; }).length;
+  var msg = 'Schedule ' + queue.length + ' posts to ' + platforms.map(function(p){ return PLATFORM_LABELS[p]; }).join(', ') + '?' +
+    (ungated ? '\n\n' + ungated + ' use Opus Clip text that has NOT been through the writing gates.' : '') + (skipped ? '\n\n' + skipped + ' skipped (time already passed).' : '');
+  askConfirm(msg, function(){ runQueue(queue); });
+}
+
+function runQueue(queue) {
+  var btn = document.getElementById('scheduleBtn'); btn.disabled = true; btn.textContent = 'Scheduling...';
+  document.getElementById('progressWrap').style.display = 'block';
+  setStatus('loading','Scheduling ' + queue.length + ' posts...');
+  var done = 0, ok = 0;
+  (function next(n){
+    if (n >= queue.length) {
+      btn.textContent = 'Scheduled (' + ok + '/' + queue.length + ')';
+      setStatus('active','Done. ' + ok + ' of ' + queue.length + ' scheduled.');
+      addLog('ok','COMPLETE: ' + ok + '/' + queue.length + ' scheduled');
+      showAlert('scheduleAlert', ok === queue.length ? 'success' : 'warn', ok + ' of ' + queue.length + ' posts scheduled. Check the Activity Log for any failures.');
+      switchTab('log'); return;
+    }
+    var it = queue[n];
+    google.script.run
+      .withSuccessHandler(function(r){
+        done++; document.getElementById('progressBar').style.width = (done / queue.length * 100) + '%';
+        var el = document.getElementById('ps_' + it.clipIdx);
+        if (r.success) { ok++; addLog('ok','OK [' + it.label + '] "' + it.title.slice(0,45) + '" at ' + new Date(it.publishAt).toLocaleString()); if (el) { el.className = 'post-status scheduled'; el.textContent = 'v'; } }
+        else { addLog('err','FAIL [' + it.label + '] ' + (r.error || '').slice(0,90)); if (el) { el.className = 'post-status failed'; el.textContent = 'x'; } }
+        setTimeout(function(){ next(n + 1); }, 400);
+      })
+      .withFailureHandler(function(e){ done++; addLog('err','FAIL [' + it.label + '] ' + e.message); setTimeout(function(){ next(n + 1); }, 400); })
+      .schedulePost(it.projectId, it.curationId, it.platform, it.publishAt, it.title, it.desc);
+  })(0);
+}
+
+// ---------- cancel (uses the saved log, so it works after a reload) ----------
+function cancelAll() {
+  if (!selectedProject) return;
+  google.script.run.withSuccessHandler(function(r){
+    var items = r.items || [];
+    if (!items.length) { showAlert('scheduleAlert','warn','Nothing saved as scheduled for this project.'); return; }
+    askConfirm('Cancel ' + items.length + ' scheduled posts for this project?', function(){
+    (function next(n){
+      if (n >= items.length) { showAlert('scheduleAlert','warn','Cancellation finished. See the Activity Log.'); document.getElementById('scheduleBtn').disabled = false; document.getElementById('scheduleBtn').textContent = 'Auto-Schedule Selected Platforms'; return; }
+      google.script.run.withSuccessHandler(function(x){ addLog(x.success ? 'warn' : 'err', (x.success ? 'Cancelled ' : 'Cancel failed ') + items[n].p + ' ' + items[n].s); next(n + 1); })
+        .withFailureHandler(function(e){ addLog('err', e.message); next(n + 1); })
+        .cancelScheduledPost(selectedProject.id, items[n].s);
+    })(0);
+    });
+  }).getScheduled(selectedProject.id);
+}
+
+function exportCSV() {
+  var keep = dayKeepers(), rows = [['Score','Title','Day','YouTube','Instagram','Facebook','Copy']];
+  clips.forEach(function(c,i){ var s = schedule[i]; if (!c.selected || !s) return;
+    rows.push([c.score, '"' + c.title.replace(/"/g,'""') + '"', DAY_NAMES[s.day], ytAllowed(i,keep) ? fmt(s.hour,0) : '', fmt(s.hour,45), fmt(s.hour,90), c.copy ? 'approved' : 'opus']); });
+  var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([rows.map(function(r){ return r.join(','); }).join('\n')], {type:'text/csv'})); a.download = 'winterwolf_schedule.csv'; a.click();
+}
+
+// ---------- helpers ----------
+// In-page Yes/No panel. Replaces the native confirm() box, which freezes browser automation.
+function askConfirm(msg, cb) {
+  var o = document.createElement('div');
+  o.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:99;display:flex;align-items:center;justify-content:center';
+  o.innerHTML = '<div style="background:#111118;border:1px solid #7c3aed;border-radius:12px;padding:24px;max-width:540px;width:90%">' +
+    '<div id="confirmMsg" style="white-space:pre-wrap;margin-bottom:18px;font-size:14px"></div>' +
+    '<div class="btn-group"><button class="btn btn-success" id="confirmYes">YES, GO</button><button class="btn btn-secondary" id="confirmNo">NO, GO BACK</button></div></div>';
+  document.body.appendChild(o);
+  document.getElementById('confirmMsg').textContent = msg;
+  document.getElementById('confirmYes').onclick = function(){ o.remove(); cb(); };
+  document.getElementById('confirmNo').onclick = function(){ o.remove(); };
+}
+function fmt(h, m){ if (m >= 60) { h += Math.floor(m / 60); m = m % 60; } h = h % 24; return (h % 12 || 12) + ':' + (m < 10 ? '0' : '') + m + ' ' + (h >= 12 ? 'PM' : 'AM'); }
+function esc(s){ return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function setStatus(t, m){ document.getElementById('statusDot').className = 'status-dot ' + t; document.getElementById('statusText').textContent = m; }
+function addLog(type, msg){ var box = document.getElementById('logBox'), d = document.createElement('div'); d.className = 'log-entry'; d.innerHTML = '<span class="log-time">' + new Date().toTimeString().slice(0,8) + '</span><span class="log-' + type + '">' + esc(msg) + '</span>'; box.insertBefore(d, box.firstChild); }
+function showAlert(id, type, msg){ var el = document.getElementById(id); if (!el) return; el.innerHTML = '<div class="alert alert-' + type + '">' + esc(msg) + '</div>'; setTimeout(function(){ el.innerHTML = ''; }, 9000); }
+function switchTab(n){ document.querySelectorAll('.tab').forEach(function(t,i){ t.classList.toggle('active', ['schedule','platforms','log'][i] === n); }); document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.toggle('active', c.id === 'tab-' + n); }); }
+function toggleAll(cb){ clips.forEach(function(c){ c.selected = cb.checked && (!document.getElementById('requireApproved').checked || !!c.copy); }); refresh(); }
+function toggleClip(i, cb){ clips[i].selected = cb.checked; refresh(); }
+</script>
+</body>
+</html>

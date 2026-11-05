@@ -127,6 +127,16 @@ Chrome/the claude-in-chrome extension isn't available or Zac isn't logged into
 Facebook when this step runs, flag it back to Zac rather than silently
 skipping the transcript delivery.
 
+7. **Shorts scheduling (added 2026-11-05, Zac).** After Zac uploads the episode
+   to Opus Clip and says it is done: read the clips, run the copy through the
+   writing room gates (script-room, marketing-director, no-ai-slop), save
+   `EPnnn-approved-copy.json` in `WWD\opusclip\`, then dry-run
+   `python WWD\opusclip\schedule_week.py <projectId> --copy <json> --start <Thursday>`.
+   Show Zac the plan. On his "go", rerun with `--go`. The 31-slot weekly volume
+   and YouTube one-a-day are locked. Spoiler clips go late in the week. Needs
+   OPUS_API_KEY in the user environment. Do not use the Opus connector to
+   schedule (it needs an approval click per post).
+
 **Status:** EP106 transcript generated 2026-08-09 (see TASKS.md). Speakers
 came back as Guest/Unknown â€” voiceprints still aren't enrolled, so it needs
 hand-mapping to Matt/Zac/Gabby before downstream use.
@@ -176,6 +186,7 @@ If an agent in the chain is unavailable, say so in the deliverable. Do not skip 
 **Wired 2026-10-20:** every venture director (wwd, etsy, kdp, paws, ebay, fiction, shattered-empire, military-scifi, fantasy-football) has a "Writing room and marketing" section and the Agent tool. Scripts go to `script-room`, public copy to `marketing-director`. A director that cannot reach one returns NEEDS WRITING ROOM or NEEDS MARKETING and the main session (Jarvis) runs it.
 **Org change, LOCKED 2026-10-29 (Zac):** the writing room (script-room) writes every word for every department except Zac's books (books only on request). Copywriting moved into the writing room. Marketing, graphic design, music, fact research, market research, and the new tracking department are shared and open to every director. Every new idea and every new product in any venture, every short idea (Shorts, Reels, short films), and anything that might be off brand for WWD goes to devils-advocate first. For WWD off-brand ideas it rules on both "off brand?" and "still a good idea?". Every music request goes to the `music` agent. Department boss approves, the ordering director accepts, at most one send-back each, then it goes to Zac. WWD thumbnails are Matt's. Full map: `AGENT-NETWORK.md`.
 **New shared department, LOCKED 2026-10-31 (Zac): Animation (3D, Blender and Unreal).** Boss `animation-director`, answers to WKP, open to every director. Blender section: `blender-asset-scout`, `blender-builder-props`, `blender-builder-characters`. Unreal section: `ue-scene-builder`, `ue-asset-integrator`. It checks every deliverable against `ANIMATION\STANDARDS.md` before it goes back to the requesting director. Free assets and free tools only, anything that costs money or credits goes to Zac first with the exact price. Folder `ANIMATION\`. Map in `AGENT-NETWORK.md`.
+**New shared department, LOCKED 2026-11-04 (Zac): Studio (Post-Production house).** Boss `studio-director`, the Head of Studio. Takes every video production job that is not a WWD review (client work, book trailers, promo video, short films, What If and other channel episodes once the channel starts), appoints ONE point man agent per project, orders the shared departments in sequence, gates the package, delivers a .docx production package. Marketing-director and video-ugc are the default point men for promo video. wkp-channel-director still owns what the channel covers. It does not promote any venture. Spec `.claudegents\studio-director.md`, loads at the next session start, Jarvis covers until then. Map in `AGENT-NETWORK.md`.
 **Direct handoffs, 2026-10-20 (Zac):** directors talk to each other without going through Jarvis. Protocol in `AGENT-NETWORK.md`. Departments and benches stay behind their boss.
 
 ## Output document format â€” LOCKED, repeated correction (again 12 SEP 26, folder rule added 5 OCT 26)

@@ -1,0 +1,50 @@
+PRIMARY OBJECTIVE
+Extract the 8 to 12 HIGHEST-QUALITY short clips from this FrostCast episode. Quality is the ONLY metric. Stop selecting when quality drops - even if you have not reached 8 clips. It is better to return 5 elite clips than 12 average ones. Do NOT fill a quota.
+
+EVERY CLIP SHOULD FEEL LIKE
+"I need to hear the rest of this." Find clips that maximize: viewer retention, rewatch potential, comments and debate, shares, emotional reaction, curiosity clicks.
+
+ABOUT THIS SHOW
+This is FrostCast - a pop culture commentary podcast hosted by Winter Wolf's Den. The hosts discuss Hollywood failures, franchise decay, and fan reactions across Star Wars, MCU, DC, LotR, GoT, Dr. Who, Star Trek, horror, and gaming.
+SKIP any moment where: hosts are agreeing without adding new information; someone is catching up on show logistics or housekeeping; a reference only makes sense to regular long-time viewers; energy is flat and no strong opinion is being expressed.
+
+CLIP TYPES TO FIND
+Let the episode content dictate the mix - do NOT force all categories if strong moments do not exist for them.
+1. Strong opinions or hot takes on a specific IP or studio decision. 2. Debate or genuine disagreement between hosts. 3. Emotional reactions - hype, anger, shock, or laughter. 4. Wait - what? Surprising or counterintuitive statements. 5. Predictions or theories about upcoming projects. 6. Rants or passionate criticism with sharp phrasing. 7. Industry commentary - box office, casting, behind-the-scenes drama. 8. Fast humor or sharp banter with a clear payoff.
+
+HOOK RULES - FIRST-3-WORDS TEST (MOST IMPORTANT)
+Each clip MUST hook within the FIRST 1 second. The test is concrete: the first THREE spoken words must contain an IP name, a verdict word, or an emotional spike. If the first three words fail this test - CUT THE CLIP.
+DO NOT start clips with: So... / Yeah... / I think... / Alright... / Welcome back... / long setup sentences or generic hosting lines / any moment where a host is warming up to their point.
+PRIORITIZE openings that name a specific IP, studio, or decision: "Disney just killed Star Wars again." / "Marvel has no idea what fans actually want." / "That scene broke the entire lore." / "They completely missed the point." / "No - that makes ZERO sense." / "That's why the fanbase is furious." / "You can't do that to a 40-year franchise." / "This changes everything going forward."
+
+ON-SCREEN HOOK TEXT (NEW)
+For every clip, provide a 4 to 8 word on-screen overlay title that names the IP and teases the take. The first frame must earn the pause on its own - assume the viewer sees the text before hearing a single word.
+GOOD: "Disney Just Broke Star Wars Canon" / "This Marvel Decision Killed The Hype". BAD: "Great Discussion" / "Hot Take Inside". No clickbait the clip does not pay off.
+
+MID-CLIP RETENTION RULE (NEW)
+A great hook with a dead middle still dies. Inside every clip: no pause over 2 seconds, no restated or repeated sentences, and the energy must hold or climb from start to finish. If the middle sags - cut the clip or tighten the selection window.
+
+ENDING + LOOP RULE (NEW)
+The last line of every clip must be a verdict, punchline, reaction, or debate trigger - never mid-sentence and never a trailing thought. Endings that loop naturally back to the opening hook earn replays, and replays are the strongest algorithm signal there is. When two candidate end points exist, choose the one that loops.
+
+PLATFORM TAGS - TAG EACH CLIP
+YouTube Shorts - 45 to 90 seconds. Best for strong rants, hot takes, or debate moments with a full arc.
+Instagram Reels - 30 to 59 seconds. HARD CAP at 59 seconds - Reels under 60 seconds get pushed to wider non-follower audiences. Fast hook, punchy ending, works without full context.
+TikTok - 15 to 45 seconds. Immediate tension, humor, or shock. Must land fast.
+Facebook Reels - 45 to 90 seconds. Similar to YouTube Shorts. Slightly more forgiving on pacing.
+A single clip can be tagged for multiple platforms if it fits naturally, but any clip tagged for Instagram must be 59 seconds or under.
+
+PACING AND STRUCTURE
+30 to 60 seconds preferred. 15 seconds minimum ONLY if the moment is exceptionally strong and self-contained. Avoid clips over 75 seconds unless energy stays consistently high throughout. Each clip must contain ONE clear idea - not two. Build tension or momentum toward an ending. Be fully understandable without watching the full episode.
+
+UNIQUENESS FILTER
+Every selected clip must feel DISTINCT from every other selected clip. DO NOT include multiple clips that repeat the same opinion or conclusion. DO NOT include clips that use the same emotional tone back to back. DO NOT include clips that cover the same IP or topic from slightly different angles. If two clips feel similar - keep the stronger one and cut the other.
+
+VIRALITY TEST
+Only keep clips that would realistically make a viewer comment, argue, share, replay, or tag a friend. The clip should trigger reactions like: "He's absolutely right." / "No way, I completely disagree." / "Marvel / Disney / DC really did that?" / "I never thought about it that way." / "This is exactly how I felt." / "The fans have been saying this for years." If the clip does NOT trigger a reaction like these - DO NOT INCLUDE IT.
+
+NEVER INCLUDE
+Intros or outros. Sponsor mentions. Recaps without a strong payoff. Slow explanations that build to nothing. Moments requiring full episode context to understand. Dead air or long pauses. Generic agreement with no new information. Any clip where the active speaker is off-camera for the hook or the majority of the clip. Any clip where the best moment comes after the 10-second mark with nothing strong before it.
+
+FINAL QUALITY RULE
+Return only clips you would confidently rate 8 out of 10 or higher, and STATE EACH CLIP'S SCORE (1 to 10) in the output so it lines up with the minimum-70 virality filter. If you are unsure whether a clip makes the cut - cut it. 8 elite clips will always outperform 25 average ones.
