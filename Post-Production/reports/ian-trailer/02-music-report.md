@@ -97,14 +97,14 @@ A free-generator path exists but is thin: see section 3.
 Method notes (community guides, not official, see `_spec\music-reference.md`): main genre and mood first in the Style box, 4 to 8 descriptors, positive replacement for each exclusion, section tags only in Lyrics box for an instrumental. Nobody can test these without Zac's credits. Sliders are starting points, not tested.
 Length target for all three: ask for 60 to 75 s of music so the swell lands near 43 s and you cut the tail in the edit. Suno often runs long, so plan to trim at the tap.
 
-**Prompt A, sustained cello (safe)**
+**Prompt A, sustained cello (lower creative risk)**
 - Instrumental mode: ON
 - Style box: `Solo bowed cello, long sustained notes, sparse warm pad underneath, 56 BPM, D minor, intimate and quiet, grief and memory, slow swell near the end, long reverb tail, instrumental`
 - Lyrics box: `[Intro: single low sustained note, very quiet] [Verse: slow cello line, sparse] [Build: gentle swell, pad rises] [Outro: hold final note and stop]`
 - Exclude: `acoustic guitar, drums, vocals`
 - Sliders to try: Style Influence about 65, Weirdness about 25.
 
-**Prompt B, low piano and pad (safe, second)**
+**Prompt B, low piano and pad (lower creative risk, second)**
 - Instrumental mode: ON
 - Style box: `Soft felt piano, low register, slow sparse notes with long silences, warm analog pad, 60 BPM, minor key, tender and restrained, quiet cinematic, instrumental`
 - Lyrics box: `[Intro: pad only, very quiet] [Verse: single low piano notes, wide spacing] [Build: one soft swell, pad opens] [Outro: piano note rings out and ends]`
@@ -136,7 +136,7 @@ The guide's beats are written for a 60 s master (`Ian-Wrench-Turner-Trailer-Guid
 |---|---|---|---|---|---|
 | A1 | 0:00 to 0:28 | Garage room tone, ball bounce, ratchet click, lamp buzz, engine that never quite starts. No music. | wwd-vfx, `P:\Sounds\Sound FX\` (not audited by music) | TBD (SFX not reviewed by me) | N |
 | M1 | 0:26 to 0:40 | Music enters very low under the hospital beat (-30 LUFS-ish feel), one sustained pad or single cello or piano note | See ranked picks | TBD | N |
-| M2 | 0:40 to 0:46 | Slow rise to the swell, peak at the present-day beat as grown Brandon is under the Mustang | Same track, fader automation | TBD | N |
+| M2 | 0:40 to 0:46 | Slow rise to the swell, peak at the present-day beat as grown Brandon is under the old car | Same track, fader automation | TBD | N |
 | X1 | about 0:46 to 0:47 | Ball taps his shoulder. Hard cut of music to true silence (no fade, no tail) | Sound design, one soft tap | Owned or recorded | N |
 | S1 | 0:47 to 0:56 | Silence plus faint room tone, back cover line cards, end card. No sting. | wwd-vfx | TBD | N |
 | ALT | any | A final soft single tone under the end card only if the client asks for one | Adobe `ArcoEb01.wav` (3.0 s) | LIKELY OK, readme not read | N |

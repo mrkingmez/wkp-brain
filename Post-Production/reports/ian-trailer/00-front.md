@@ -3,9 +3,9 @@ Client: Ian Griffin. Producer: WKP Post-Production (editor Zac). Built 2026-11-0
 
 ## START HERE (one page)
 
-**What this is.** One package, six parts. Part 1 is the script and beat sheet (locked, two writing room passes). Part 2 is music. Part 3 is the shot list, asset list, schedule, export steps, costs and risks. Part 4 is the AI picture prompts. Part 5 is the public copy for the posting sheet. Part 6 is the decision list.
+**What this is.** One package, six parts. Part 1 is the script and beat sheet (current version: two writing room passes plus a third read, fixes applied 2026-11-05; not cleared). Part 2 is music. Part 3 is the shot list, asset list, schedule, export steps, costs and risks. Part 4 is the AI picture prompts. Part 5 is the public copy for the posting sheet. Part 6 is the decision list.
 
-**The concept (locked).** Concept A, "The Ball." A worn plastic ball rolls through Brandon Turner's life at floor level. It ends in daylight, tapping grown Brandon's shoulder under the old car. He holds still. Cut. Ian narrates about 18 seconds. The plot secret never appears.
+**The concept (current).** Concept A, "The Ball." A worn plastic ball rolls through Brandon Turner's life at floor level. It ends in daylight, tapping grown Brandon's shoulder under the old car. He holds still. Cut. Ian narrates about 18 seconds. The plot secret never appears.
 
 **The day problem you need to know about.** The order said FrostCast is "tomorrow night, Wed 11/5." Today is Wed 11/4, and FrostCast EP119 is TONIGHT. 11/5 is a Thursday. The evening block in the schedule was already gone when this finished. So the schedule is shifted one day: Thursday 11/5 is the hard production day. Decision WRENCH-2026-11-04-30. If you meant the next FrostCast (Wed 11/11, also Veterans Day), the same shifted schedule works.
 
@@ -22,10 +22,12 @@ Client: Ian Griffin. Producer: WKP Post-Production (editor Zac). Built 2026-11-0
 | script-room | Script and beat sheet. Ran room-writer, dialogue-doctor, originality and clearance for TWO full passes, both logged | Part 1 |
 | music | Audited P:\Sounds\Music, free and paid sources, Suno terms, 3 Suno prompts, cue sheet | Part 2 |
 | graphic-design | 15 AI still prompts with settings, continuity sheet, end card handling | Part 4 |
-| copywriting (writing room) | Captions, pinned comment, hashtags, alt text, Veterans Day card, rollout lines, answers to the 6 gate questions. Ran no-ai-slop, came back clean | Part 5 |
+| copywriting (writing room) | Captions, pinned comment, hashtags, alt text, Veterans Day card, rollout lines, answers to the 6 gate questions. Ran no-ai-slop, no em dashes found | Part 5 |
 | studio-director | A new agent that appeared mid-run. Not used, because Zac named me lead for this job | none |
 
-All desks were reachable. No gate was skipped. One gap: the benches have not re-read the final script wording after the pass 2 fixes (decision 05, a cheap third read).
+All desks were reachable. No gate was skipped. A third read of the final script wording was run on 2026-11-05 (decision 05) and its fixes applied. The benches (dialogue, originality, clearance) re-read those fixes on 2026-11-05 (pass 4) and left open items, listed in Part 1 Section 5 and its change log.
+
+**Also in the folder:** `07-voiceover-east-texas.md`, a DRAFT voiceover recording sheet for Zac (East Texas delivery cues, scratch track until decision WRENCH-2026-11-05-01).
 
 ## DO THIS FIRST (in order, with times)
 
@@ -66,9 +68,9 @@ Note: graphic-design and video-ugc both first used IDs 10 to 12. Graphic-design'
 
 ## WHAT IS NOT CLEARED (read before anything goes to Ian)
 
-1. **Verbatim text.** The father's line, the back-cover sentence and Ian's banner line all need Ian's written OK that he holds the text rights. The SAFE version uses none of them.
+1. **Verbatim text.** The father's line, the back-cover sentence and Ian's banner line all need Ian's written OK that he holds the text rights. The base cut leaves out the father's line, but its draft default closing card (B1) is back-cover text, so it still needs Ian's OK too.
 2. **Ford marks** on the cover and any car we film. Not cleared. An attorney question. The first cut uses a type-only end card to avoid it.
-3. **The tap and the secret.** Whether the ball arriving in daylight points toward the book's secret is Ian's call, in writing. Test: show the master to one cold viewer and ask only "Where did the ball come from?"
+3. **The tap and the secret.** Whether the ball arriving in daylight points toward the book's secret is Ian's call, in writing. Test: show the master to one cold viewer and ask two questions, in order: "Where did the ball come from?" then "Does the father read as dead, or just away?" Run the same two questions on the 15 s cut with a different viewer. Rules in Part 1 Section 7.
 4. **Music and sound licenses.** No owned music track is cleared for client work. Plan B is the Adobe loops. Every owned sound effect is license-unknown for client work.
 5. **AI labels and platform specs.** All came from third-party sources. Check each platform's live page. Keep a list of which shots are AI.
 6. **Likeness.** No child face, no real person's likeness, no Army tapes, patches or rank.

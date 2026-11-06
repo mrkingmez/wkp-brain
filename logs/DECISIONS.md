@@ -1916,3 +1916,130 @@ B. Zac meant the next FrostCast, Wed 11/11 9 PM (also Veterans Day). Same shifte
 **Note:** graphic-design and video-ugc both used WRENCH-2026-11-04-10 to 12. Graphic-design entries renumbered to -13, -14, -15 (and in 04-stills-prompts.md). Video-ugc keeps -06 to -12. No action for Zac.
 
 **Status:** INFO
+
+## [EBAY-2026-11-05-01] 2026-11-05 | eBay | White label needs inventory up front and an overseas factory, which the locked rules do not allow
+
+**Context:** Zac asked for a white label scan (`ebay-dropship\reports\2026-11-05-white-label-scan.md`). Real white label means buying inventory before it sells (hundreds of dollars at the smallest MOQs found, 275 to 850 on the items checked) and usually buying from an overseas factory, then shipping from a US address. That conflicts with ebay-dropship rules 1 and 2 (US wholesale supplier, US warehouse, no overseas origin) and Zac's 2026-10-09 cash model (no float, pay per order). Zac is budget-tight. Nothing was bought, listed or contacted.
+
+**Options:**
+A. Keep the rules as written. White label limited to US-based suppliers that sell a private label program (only lead so far: MicrofiberWholesale, terms not retrieved). Zero float.
+B. Allow a capped test: Zac buys inventory, overseas factory is OK if stock lands at a US address and ships from the US. Needs a dollar cap, one item, and an answer on customs bond and duty before any order.
+C. Skip white label, stay on dropship and parts. Consider print on demand (Printify has an eBay US integration) as the no-inventory way to sell under Zac's own brand.
+
+**Recommendation:** A first (ask MicrofiberWholesale for price and MOQ, Zac's call to contact), then B only for one item with a hard cap if the numbers hold. The magnetic tool holder is the only organizer or auto item that clears the 5 dollar floor on assumptions, and its cost is unverified. Do not move on trunk organizers, seat gap fillers or sun shades; all four fail the floor on the assumptions in the report.
+
+**Also for ebay-director:** the 10/24 "max cost for 20% net" column in candidates.csv appears to subtract the margin twice (washer door boot 23.85 in file, 34.28 by formula). Re-run before rejecting any supplier on it.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-01] 2026-11-05 | marketing-director | Apply to OpusClip and vidIQ affiliate programs (first monetization test)?
+
+**Context:** Research in `WWD\reports\Monetization-Options.md`. Both are free signups for tools WWD already uses. OpusClip: 25% recurring, 20 dollar first payout, application reviewed, no paid ads with the link, deactivated after 6 months of no traffic. vidIQ: 15 to 25% lifetime recurring, 10 dollar payout, self-service. vidIQ sits under Matt's login, so that one is a joint call with Matt. Signup means entering an email and a PayPal address. Nothing was entered.
+
+**Options:** A. Apply to both, then wait four weeks. B. OpusClip only. C. Skip, nothing at this size pays.
+
+**Recommendation:** A, with Matt's yes on vidIQ. Expect tens of dollars at best, no income evidence exists for channels this size.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-02] 2026-11-05 | marketing-director | Amazon Associates or Bookshop.org storefront for Den Files book links?
+
+**Context:** Amazon closes a new application that does not drive 3 qualifying sales in 180 days (SECONDARY, verify on Amazon). Bookshop has no audience minimum, 48-hour attribution, non-bookstore rate unverified. Signup enters personal and payment data. Nothing entered.
+
+**Options:** A. Bookshop only, when a Den Files episode with a book is ready. B. Both. C. Neither.
+
+**Recommendation:** A. Skip Amazon until a video exists that sends real clicks.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-03] 2026-11-05 | marketing-director | Open a Ko-fi tip jar (and link it in descriptions)?
+
+**Context:** Free, no minimum, no fee on tips (SECONDARY). Joint with Matt since it touches branding. Real small movie-show Patreon pages show about 7 to 37 dollars a month. Not recommended: Patreon (10% fee plus extra bonus-episode workload).
+
+**Options:** A. Ko-fi page only. B. Skip. C. Patreon.
+
+**Recommendation:** A, low priority, after 01.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-04] 2026-11-05 | marketing-director | Two numbers only Zac can pull: YouTube Studio Earn tab and Spotify Monetize page
+
+**Context:** Which methods are even open (memberships, Shopping affiliate, merch shelf, Spotify ads) depends on WWD's YPP status, long-form watch hours, and Spotify audience. Not in any file. No signup, just a screenshot or one line.
+
+**Recommendation:** Do this first. Or ask tracking-director to add watch hours to the next pull.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-05] 2026-11-05 | market-research | Adopt the one-sponsor-line layout for WWD descriptions and pinned comments?
+
+**Context:** 15 channels read (`research\wwd-monetization\links-per-video.md`). Sponsored large-channel videos carry exactly 1 sponsor link on line 1, a pinned repeat, and no second commercial link. Shorts carry no third-party link.
+
+**Options:** A. Surfshark on line 1, at most 1 other link, sponsor-only pinned comment, no sponsor links on Shorts. B. Keep the current layout. C. Add more links.
+
+**Recommendation:** A. Copy goes to the writing room, then no-ai-slop.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-06] 2026-11-05 | market-research | Audit the spoken and on-screen sponsor reads of the sampled channels?
+
+**Context:** This pass read descriptions and pinned comments only. Spoken reads, cards and end screens were not watched. Transcripts could be pulled from VidIQ, which needs Zac's go-ahead and uses credits (0 until 11-11).
+
+**Options:** A. Skip. B. Do it after 11-11 for the 6 sponsored videos. C. Watch by hand.
+
+**Recommendation:** B only if the layout decision above is made and read length matters.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-07] 2026-11-05 | market-research | Check WWD's Studio Shopping eligibility
+
+**Context:** YouTube Studio redirected to the home page in the research Chrome session, so the Earn page could not be read. Shopping tab shows only if the channel is eligible. Details in `research\wwd-monetization\youtube-shopping.md`.
+
+**Options:** A. Zac opens Studio, Earn, and says whether a Shopping tab exists. B. Skip until YPP status is known (see WWD-2026-11-05-04).
+
+**Recommendation:** A, one minute, no clicks that change anything.
+
+**Status:** OPEN
+
+## [WWD-2026-11-05-08] 2026-11-05 | market-research | Amazon Associates or a print-on-demand store for WWD product tags?
+
+**Context:** Both need a signup, a POD store may cost money (prices not verified). Neither started. Only useful once WWD is in YPP.
+
+**Options:** A. Wait for the Studio check. B. Open an Amazon Associates account (Zac signs up). C. Open a free-to-start POD store such as Spring or Spreadshop (cost not verified).
+
+**Recommendation:** A first.
+
+**Status:** OPEN
+
+## [ANIM-2026-11-05-01] 2026-11-05 | animation-director | Keep the copyrighted starterKit images inside the git repo folder?
+
+**Context:** Zac's starterKit (3D Total planar head references, copyrighted, plus 5 kit images of unstated author) sits in `D:\WKP\ANIMATION\training\starterKit-2026-11-05\`. That folder is inside the repo and not gitignored (checked with git check-ignore, no match), so a normal commit and push would upload copyrighted images to GitHub (wkp-brain). Nothing was committed or ignored by me.
+
+**Options:** A. Add `ANIMATION/training/` to .gitignore (images stay on disk, never pushed). B. Move the folder outside the repo, for example `D:\Training Refs\`, and update the skill and asset log paths. C. Leave as is and accept pushing them (not recommended).
+
+**Recommendation:** A, one line, reversible.
+
+**Status:** OPEN
+
+## [ANIM-2026-11-05-02] 2026-11-05 | fact-research for animation-director | Tutorial picks: approve, and the boat gap
+
+**Context:** Picks file `research\animation\2026-11-05-tutorial-picks.md` (docx in `D:\WKP Reports\Animation Tutorial Picks\`). None of the five Blender channels has a boat or hull tutorial. Mesh Terrain (top landscape pick) is experimental in Unreal 5.8.
+
+**Options:** A. Approve the yes/no list at the top of the file, then transcripts are pulled for yes items only. B. For the boat topic, let the department search outside the five channels for one video and bring it back for approval. C. Use the Blenderfast track for the boat. D. Teach Mesh Terrain as main landscape route or classic Landscape only.
+
+**Recommendation:** A, B (one video, approval before any transcript), and teach both landscape routes with classic first for anything that must ship.
+
+**Status:** OPEN
+
+## [WRENCH-2026-11-05-01] 2026-11-05 | script-room | Ian Griffin trailer: Zac records the narration in an East Texas voice. Is that OK with Ian?
+
+**Context:** Zac will record the voiceover himself in an East Texas delivery (recording sheet `Post-Production\reports\ian-trailer\07-voiceover-east-texas.md`). The concept as written has Ian narrating: the register is "the author reading his own book", and the base cut and the recording instructions in 01 and 03 are addressed to Ian. Ian's voice is the concept's narrator and Ian has not been asked. Also unconfirmed: whether the book's setting or Brandon's voice is East Texas at all. Nobody has contacted Ian.
+
+**Options:**
+A. Zac records the final, Ian is told and agrees in writing (voice, dialect, reuse in cutdowns and later trailers). The "author reading his own book" register in 01 gets reworded.
+B. Zac's take is a scratch track only; Ian records the final in his own voice per the 01 spec.
+C. Zac's voice as the final, and Ian is also offered his own take to compare; Ian picks.
+D. Keep Ian as narrator and drop the East Texas idea.
+
+**Recommendation:** B or C. It costs nothing, fits the timing check, and keeps Ian's say on the one voice that carries his book. A is fine only with his written OK. Ask Ian in the same message as the question list (item 16 in 03 Section B(e)) once Zac decides.
+
+**Status:** OPEN

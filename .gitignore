@@ -20,3 +20,6 @@ ebay-dropship/tools/.env
 ebay-dropship/logs/*.log
 ebay-dropship/keysets.txt
 **/keysets*.txt
+
+# copyrighted training references, internal only (ANIM-2026-11-05-01)
+ANIMATION/training/

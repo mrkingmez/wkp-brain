@@ -1,7 +1,7 @@
 # THE WRENCH TURNER trailer: stills prompt pack (start frames)
 
 Owner: graphic-design. Ordered by marketing-director for the point man (video-ugc). Date: 2026-11-04.
-Source of truth for beats: `01-script-and-beat-sheet.md` (locked, no beat changed here).
+Source of truth for beats: `01-script-and-beat-sheet.md` (current version, no beat changed here).
 Status: PROMPTS ONLY. Nothing generated, no credits spent, nothing sent to Ian, nothing posted. Every prompt is UNTESTED until Zac generates and hands results back.
 
 ---

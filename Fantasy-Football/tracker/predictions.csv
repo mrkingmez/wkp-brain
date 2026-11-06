@@ -131,3 +131,4 @@ logged_at,season,week,game_id,away_team,home_team,source,pick_su,pick_ats,line_u
 2026-11-04T03:26:06.202977+00:00,2026,9,401856740,ALA,LSU,model,,LSU,4.5,frozen_card,0.526,True,,,,,,
 2026-11-04T03:26:06.202977+00:00,2026,9,401856852,COLO,ASU,model,,COLO,3.5,frozen_card,0.513,True,,,,,,
 2026-11-04T03:26:06.202977+00:00,2026,9,401858291,MIA,ND,model,,ND,3.5,frozen_card,0.551,True,,,,,,
+2026-11-05T16:12:19.049080+00:00,2026,9,401873048,ARI,SEA,model_thu_rerun,SEA,ARI,11.5,frozen_card,0.587,True,,,,,,

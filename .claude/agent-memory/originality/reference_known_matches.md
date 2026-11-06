@@ -21,3 +21,12 @@ Verified 2026-11-04 (Wrench Turner Draft 02, originality-pass2.md):
 - Chevrolet "Holiday Ride" 2021 garage beat = old man finds late wife's 66 Impala and her photo; no handwritten log. A stopped maintenance log is not that ad.
 - Fixing a ghost-ball read with "recognition" acting next to a dead father tips into "sign from Dad" = Field of Dreams register (weaker comp). Watch for over-correction.
 - Slotted plastic backyard ball = Wiffle Ball, Inc. name; keep "Wiffle" out of prompts and copy.
+
+Verified 2026-11-05 (Wrench Turner final, originality-pass3.md):
+- Unfinished last log/diary entry = TV Tropes "That Was the Last Entry" / "Dead Man Writing". Trope, no single owner. Not a finding.
+- Lesson: fixes made in the master often get undone in cutdowns, because cutting removes the buffer beats. Always check each cutdown's beat order on its own.
+
+Verified 2026-11-05 (Wrench Turner pass 4, originality-pass4.md):
+- Slow plainspoken heartland/Southern male voice over working hands = Ram Trucks "So God Made a Farmer" (Super Bowl XLVII 2013, Paul Harvey 1978 FFA speech recording over stills). Texas voice plus car also = McConaughey Lincoln ads (2014 on, not searched). Watch item for any drawl narrator over a car.
+- Southern Gothic drawl-as-dread = True Detective S1. Only a risk with menace imagery; daylight garage is clean.
+- Sam Elliott Ram narration: search did NOT confirm, do not cite.

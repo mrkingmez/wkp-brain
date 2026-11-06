@@ -225,3 +225,13 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 **Deliverables:** `D:\WKP\WWD\reports\Vision-Quest-5-6-Upload-Package.md`; `D:\WKP Reports\WWD Upload Packages\Vision Quest 5 and 6 Upload Package\2026-11-01 - Vision Quest 5 and 6 Upload Package.docx`; copies in the show folder; `AUDIO\Vision Quest Ep 5 and 6.mp3`; `shorts\clip1_tony_stark_origin`, `clip2_bones_should_break`, `clip3_my_hacks_have_hacks`, `clip4_not_your_fathers_vision`, `clip5_creepiest_scene` (.mp4 + _cover.png) in the show folder; rights note `D:\WKP\WWD\reports\Vision-Quest-5-6-Rights-Note.md`; copy working file `D:\WKP\scratch\vq56final\copy_final.md`.
 **Review gate:** devils-advocate not run (standard format, no new idea).
 **Flags for Zac:** title pick; 2 card destinations; release date (before Tue 11/3 or the "episode seven next week" line goes stale); opening flash 11.3 to 14.7 s has the Disney+ logo unblurred (cut it); Promo B (954 to 956 s) still shows its title text, re-crop; 3 pictures with no recorded source (top hat man 263 s, `lisa taken over.jpg` from `_unverified` 1086 s and the first 4 s of Short 5, red-arrow street frame 1265 s); picture 1 up 8.8 s; stuck tile captions "Strings..." and "This isn't goodbye, its see you later." in the video and all shorts; Next Up Vision Quest 7 card sits mid-goodbye at 27:44 to 27:50; "Kingsley and I" in the hook; listen check for trailer audio; opener/Next Up audio source and any music unnamed; tick altered-or-synthetic for the Firefly opener; calendar needs ep 7 on 11/3 and ep 8 the week after (calendar tool failed auth before); shorts reminder not set (no scheduler tool, main session to set it).
+
+### 2026-11-05 - Godzilla Minus Zero review intake
+**Status:** DONE (pictures PARTIAL)
+**Trigger:** Zac sees it Thu 11-05, records Fri 11-06. Review intake, prep brief, TASKS row draft.
+**Classification:** Review
+**Elapsed:** about 20 min
+**Actions taken:** Folder created `Raw Footage\Godzilla Minus Zero\USE\`. TMDb 403 (Cloudflare), IMDb 202 empty (WAF), no browser tool, so no stills pulled. Poster only from the Rotten Tomatoes one-sheet (675x1000), resized to `USE\1.png` 1920x1080 RGBA contain, original deleted, source list `scratch\godzilla_minus_zero_urls.txt`. Prep brief from Wikipedia and live RT page (RT critics 90% on 98, runtime 2h15m, R, wide Nov 6, audience score not available).
+**Deliverables:** `D:\WKP\WWD\reports\Godzilla-Minus-Zero-Prep.md`; `D:\WKP Reports\Review Prep\2026-11-05 - Godzilla Minus Zero Prep.docx`.
+**Review gate:** devils-advocate not run (standard review format).
+**Flags for Zac:** CALENDAR NEEDED (record Fri 11-06 evening, release TBD). NEEDS BROWSER PULL: 17 stills via IMDb/TMDb in Chrome (main session). Metacritic 75 only from Wikipedia.

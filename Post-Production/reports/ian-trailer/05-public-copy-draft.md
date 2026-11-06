@@ -1,10 +1,14 @@
 # THE WRENCH TURNER (Ian Griffin): Public Copy Draft
 
+**Changes 2026-11-05 (third-read fixes, full list in the CHANGE LOG at the top of `01-script-and-beat-sheet.md`).** In this file: a standing brand-rule line added under the fence, and the hashtag flags line extended to every car make, model or brand word and any ball brand. Not changed here but changed in 01, for this desk to re-read: caption C3 is now "His dad was there." (18 characters, 0:30.3 to 0:32.3), C4 now ends 0:36.0, the 15 s cut is retimed (its end card stays 0:12.5 to 0:15.0), and 01 Section 4 has a new gate question 7 (text on the logs) not answered in this file yet.
+
 **STATUS: DRAFT. Nothing publishes. Zac and Ian approve every line.**
 Desk: copywriting (writing room), 2026-11-04. Order from Zac via marketing-director.
 Built from: `01-script-and-beat-sheet.md` (Section 4 and the six gate questions), the old guide Section 9 (posting plan), and Ian's back-cover paragraph.
 
 **The fence.** One rule governs every line below: the viewer learns nothing about who sent the ball, no child other than what the trailer's own picture shows, no reveal, no hint that a reveal exists. No word from the book's plot secret is used or implied. The words "secret," "surprise," "twist," "reveal," "unexpected," "generations," "legacy," "kid," "boy," "grandson," "daughter" and any family-tree word stay out of every file, caption, hashtag, alt text, file name and .srt.
+
+**Brand rule (standing, added 2026-11-05).** No Ford, Mustang, or any car make, model or brand word, and no ball brand, in any caption, post copy, pinned comment, alt text, file name, project name or hashtag.
 
 **Placeholders used.** [BUY LINK FROM IAN], [HANDLE], [IAN'S OWN LINE], [REVIEW QUOTE + REVIEWER NAME], [COVER DESCRIPTION]. Nothing else is invented. No award, release date, retailer, review or sales claim appears anywhere.
 
@@ -150,7 +154,7 @@ Core set, five tags, same on every platform:
 Add on TikTok only: `#BookTok`
 Add on Instagram only: `#BookRecommendations`
 
-Flags: leave off every family, fatherhood, legacy or twist tag, they either hint at the reveal or draw the wrong reader. #VeteranFiction stays only because the lead is an Army veteran per the blurb; Ian confirms it fits the book as he'd describe it. No brand tags for the car.
+Flags: leave off every family, fatherhood, legacy or twist tag, they either hint at the reveal or draw the wrong reader. #VeteranFiction stays only because the lead is an Army veteran per the blurb; Ian confirms it fits the book as he'd describe it. No brand tags: no Ford, Mustang, or any car make, model or brand word, and no ball brand, in any hashtag.
 
 ### 3d. Alt text for the cover still
 

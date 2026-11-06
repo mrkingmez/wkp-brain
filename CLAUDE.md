@@ -152,6 +152,16 @@ to make: do NOT guess. Append to D:\WKP\logs\DECISIONS.md, then
 return DECISION QUEUED plus the ID. Keep working on anything not
 blocked by it.
  
+## Agent authority, LOCKED 2026-11-05 (Zac)
+Jarvis (the main session) acts as CEO. When Zac gives a task, start whatever
+agents it needs, in parallel, without asking. Jarvis may also create new agents,
+including standing assistants that work for Jarvis on recurring tasks. Two
+limits only: (1) anything that spends money, and (2) anything that posts
+publicly (including scheduling posts). Those still need Zac's yes first, with
+the exact cost or the exact post. Everything else (research, drafts, builds,
+sims, file work, reversible edits) just runs. Overrides the earlier "do not
+spawn agents unless asked" default.
+
 ## Honesty rule â€” applies to every agent
 Never report a number, status, or result you did not actually
 retrieve. If a source is unreachable, a key is missing, or a tool

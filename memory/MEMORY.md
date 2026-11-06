@@ -26,4 +26,5 @@ learnings go here.
 - [Push at end of batch](topics/push-batching.md) — batch pushes after installs/add-ons, not each change (2026-11-01)
 - [Leave Adobe alone](topics/leave-adobe-alone.md) — never disable Adobe startup/tasks; Zac said so twice (2026-11-01)
 - [Fantasy timing](feedback-fantasy-timing.md) — first run after Wednesday practice reports, rerun Thursday and on any new info, report every change (Zac 2026-11-04)
+- [Agent authority](feedback-agent-authority.md) — Jarvis is CEO: start any agents without asking, may create standing assistants; only money or public posting needs Zac's yes (2026-11-05)
 - [Nyssa voice is all profiles](feedback-nyssa-voice.md) — do not rule one winner; Zac fixing the guide, ignore Nyssa voice items until next pass (2026-11-04)

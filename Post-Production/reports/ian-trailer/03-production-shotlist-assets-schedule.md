@@ -1,11 +1,12 @@
 # THE WRENCH TURNER trailer: Production Package (03)
+**Changes 2026-11-05 (third-read fixes, full list in the CHANGE LOG at the top of `01-script-and-beat-sheet.md`).** In this file: "SAFE" renamed base cut (file names `IAN_Master_Base_v1.mp4`, `IAN_15s_Base_v1.mp4`, sequence `Master_Base`); "locked" wording on the beats changed to "current"; L2 is now "Two years. His dad was there." 0:28.4 to 0:32.0 in both versions (sound cue list, voice read list, one fewer read); 15 s export row retimed; brand rule and log-name rule added to the global rules, shot notes 7a and 8a, Phone QC and risks; second cold-viewer question added to Phone QC. **Pass 4, 2026-11-05 (01 change log items 25 to 29):** silent-cut beat 7 slide noted on shot 6; 15 s cold-viewer run added to Phone QC; voice ownership and attribution clause added to the scope note (B(e), Section E); message item 5 and two schedule lines reworded so nothing invites a clearance-style answer.
 Point man: video-ugc, appointed by marketing-director on Zac's order, 2026-11-04.
-Status: PLAN ONLY. Nothing filmed, generated, spent, sent, posted or pushed. Beats and lines are locked in `01-script-and-beat-sheet.md` and are not changed here.
+Status: PLAN ONLY. Nothing filmed, generated, spent, sent, posted or pushed. Beats and lines are set in `01-script-and-beat-sheet.md` (current version, with the 2026-11-05 third-read fixes) and are not changed here.
 Companion files: `01-script-and-beat-sheet.md` (script-room, DONE), `02-music-report.md` (music, DONE). **MISSING when this was written:** the graphic-design stills file `04-stills-prompts.md` (not in the folder yet) and the copywriting file. Everything below that needs them says so.
 
 ## READ FIRST (5 lines)
 1. **CALENDAR FLAG.** The brief called today "Tue 11/4" and the work day "Wed 11/5". Checked with a calendar: **11/4/2026 is a WEDNESDAY**, 11/11 (Veterans Day) is also a Wednesday. TASKS.md agrees (EP119 is Wed 11/4). So the FrostCast night Zac meant is **tonight, Wed 11/4**. This file uses the real weekdays. The "hard production block" is the evening of Wed 11/4, 6:00 to 8:30 PM, before the 9 PM recording.
-2. **Ian has not answered.** No files, no voice, no OKs. SAFE is the only buildable version. SLOT, the quote cards and the real cover wait on Ian.
+2. **Ian has not answered.** No files, no voice, no OKs. The base cut is the only buildable version. SLOT, the quote cards and the real cover wait on Ian.
 3. **Veterans Day verdict: unlikely, not impossible** (Section C). It works only if Ian's answers and voice file land by Fri 11/6 evening and he reviews within a day.
 4. **Biggest practical limit:** the night-friendly shots can be filmed tonight. Daylight shots (beat 9, 6, 8b) need a weekend morning, and Zac may have the delivery job then.
 5. **Cost so far: $0.** Seven new decisions logged (WRENCH-2026-11-04-06 to 12).
@@ -14,26 +15,26 @@ Companion files: `01-script-and-beat-sheet.md` (script-room, DONE), `02-music-re
 
 ## A. SHOT LIST
 
-**Shot IDs** = beat number plus letter from the beat sheet. Sub-shots (2-i, 2-ii) mark a split. Durations are the SAFE master times (SLOT differs on 2 and 3, noted).
+**Shot IDs** = beat number plus letter from the beat sheet. Sub-shots (2-i, 2-ii) mark a split. Durations are the base cut master times (SLOT differs on 2 and 3, noted).
 **Made from codes:** PH = practical, Zac films on phone. AI-V = AI video from a still start frame (Firefly). AI-S = AI still animated with parallax in Premiere/AE. OWN = owned P: material. GFX = graphic. TXT = text card.
 
-**Global rules for every shot (from the beat sheet, checked on every take):** same physical ball in every ball shot (faded off-white perforated plastic, about 3 inches, no maker mark, sand off or turn away any mark). Ball shots with the lens 2 to 4 inches off the floor. Boyhood garage = warm lamp. From 8a on = flat gray daylight, never golden hour. No Ford or Mustang marks, plates or tire lettering. No readable text anywhere. No real faces; mother is hands and back of head; grown Brandon is back of head. No child face. No uniform tapes, patches or rank. Present day: no second person, shadow or silhouette near the ball. Garage door never in frame in beat 9.
+**Global rules for every shot (from the beat sheet, checked on every take):** same physical ball in every ball shot (faded off-white perforated plastic, about 3 inches, no maker mark, sand off or turn away any mark). Ball shots with the lens 2 to 4 inches off the floor. Boyhood garage = warm lamp. From 8a on = flat gray daylight, never golden hour. No Ford or Mustang marks, plates or tire lettering. No Ford, Mustang, or any car make, model or brand word, and no ball brand, in any prompt, file name, project name, caption, post copy, pinned comment, alt text or hashtag. No readable text anywhere, and no readable or implied person's name on either log. No real faces; mother is hands and back of head; grown Brandon is back of head. No child face. No uniform tapes, patches or rank. Present day: no second person, shadow or silhouette near the ball. Garage door never in frame in beat 9.
 
 | ID | Time | Dur | Framing and camera | Action | MADE FROM | Continuity and notes |
 |---|---|---|---|---|---|---|
 | 1 | 0:00.0 to 0:03.0 | 3.0 | Floor level, lens 2 to 4 in up, locked, low wide on bare concrete and a dark front bumper edge. | Black, ball drops in, one bounce, wobbles low under the bumper, gone. | **PH** (tonight) | Any car will do, only the dark underside and bumper edge show. Tape over any badge or plate, or frame so none shows. Shop lamp low in frame. Film 6 takes, pick the best bounce. |
-| 2-i | 0:03.0 to 0:09.0 (SLOT to 0:10.0) | 6.0 | Side profile of an undercarriage, camera on the floor beside a creeper or blanket, locked. | A man's grease-dark hand works a ratchet. At 0:06.3 the hand stops and takes the wrench from the left, done by 0:06.8. | **PH** (tonight) for the man's hand and ratchet. | Zac's own hand, sleeve pushed up, a little grease or dark hand lotion is fine. Hand-off timing must be identical in SAFE and SLOT. Warm lamp from one side. |
+| 2-i | 0:03.0 to 0:09.0 (SLOT to 0:10.0) | 6.0 | Side profile of an undercarriage, camera on the floor beside a creeper or blanket, locked. | A man's grease-dark hand works a ratchet. At 0:06.3 the hand stops and takes the wrench from the left, done by 0:06.8. | **PH** (tonight) for the man's hand and ratchet. | Zac's own hand, sleeve pushed up, a little grease or dark hand lotion is fine. Hand-off timing must be identical in the base cut and SLOT. Warm lamp from one side. |
 | 2-ii | inside 2-i, 0:05.5 to 0:06.8 | about 1.3 | Same angle. | A small hand and slim wrist slide a wrench into frame from the left, hand only. | **AI-V** (needs a start still, 04 file) | Depends on Ian OK item 10 (boy's hand). **Fallback with no child element at all:** film only the wrench sliding in from the left on the floor with a string pull, small hand out of frame, the man's hand takes it. This is the recommended default, see decision WRENCH-2026-11-04-10. |
 | 3 | 0:09.0 to 0:11.0 (SLOT 0:10.0 to 0:11.0) | 2.0 | Floor level, side track as the ball crosses a garage floor, over the door lip, into dark grass. | Ball rolls out of the garage into dark grass. | **PH** (tonight, it is dark outside) | Use a work lamp or phone flashlight off frame for a soft pool of light. Roll it down a slight slope or give it a push off frame. Same ball. The lamp buzz sound cuts as it crosses the door line. |
 | 4 | 0:11.0 to 0:16.0 | 5.0 | Low, from the grass, truck tire in the frame, soft focus above. | Night pasture party. Ball stops against a truck tire. Above it, out of focus, a young woman's hand slides into another man's hand, held about 1.5 s. Then silhouettes against firelight turn loosely toward a point off lens. | **AI-V** (start still from 04 file). Fallback **AI-S** parallax with a flicker overlay. | Depends on Ian OK item 13. No faces, no uniform wave to the lens, no readable text on the truck, no brand on the tire sidewall. The ball must match the practical ball: put the practical ball in the still prompt as a light, faded off-white perforated plastic ball. Expect AI to drift on the ball: composite the practical ball clip over it if needed. |
 | 5a | 0:16.0 to 0:18.5 | 2.5 | Floor level, side view, boots in the foreground. | Ball rolls down a barracks floor between boots, past a blank footlocker with a card game on it (plain backs), hands only. | **PH** (tonight) | Boots = Zac's own plain boots, or plain tan or brown work boots. Footlocker = a plain plastic tote or cardboard box, no stencil, no text, turned so no printing shows. Cards: a deck with plain backs, or flip one over so no logo shows. Hands only. |
 | 5b | 0:18.5 to 0:21.0 | 2.5 | Floor level, dry cobblestones, flat overcast. | A woman's shoes stand still. The ball rolls away from her, out of frame. She does not follow. | **AI-V** (start still) | Depends on Ian OK item 13. Dry stone (no wet look, no rain). Shoes plain, no brand marks. Shoes never move. Fallback: AI-S still with a slow push and the practical ball composited rolling out. |
-| 6 | 0:21.0 to 0:27.0 | 6.0 | Floor level on sand, hard daylight, locked. | Ball rolls, slows, stops dead. A thin skin of dust settles. At the frame edge a boot lies on its side, heel toward us, trouser cuff bloused in, plain tan. | **AI-V** (start still), because tonight is dark. Optional practical re-shoot on a weekend (sand tray or sandy dirt, Zac's boot on its side, tan trousers). | Depends on Ian OK items 8 and 9. **NEEDS IAN OK.** Never upright or alone, no rifle or helmet, no tapes or marks. If Ian says no war on screen: dry dirt road or black. Hold 0.5 s longer in the silent cut (beat sheet 2d). |
-| 7a | 0:27.0 to 0:30.5 | 3.5 | Top-down or slightly angled on a clipboard, locked. Page never turns. | One page of a plain visitor log. Lines fill in by soft dissolve: same unreadable signature, month column moving forward, ink changing pen to pen. | **PH** (tonight) for the page, **GFX** for the fill-in dissolve built in Premiere from 4 to 6 photos of the same page with lines added in stages. | **NEEDS IAN OK.** Generic sheet, no seal, form number or facility name. Months only, no years. Signature scribble must not read as a name. Use 3 different pens. Cool white light. |
+| 6 | 0:21.0 to 0:27.0 | 6.0 | Floor level on sand, hard daylight, locked. | Ball rolls, slows, stops dead. A thin skin of dust settles. At the frame edge a boot lies on its side, heel toward us, trouser cuff bloused in, plain tan. | **AI-V** (start still), because tonight is dark. Optional practical re-shoot on a weekend (sand tray or sandy dirt, Zac's boot on its side, tan trousers). | Depends on Ian OK items 8 and 9. **NEEDS IAN OK.** Never upright or alone, no rifle or helmet, no tapes or marks. If Ian says no war on screen: dry dirt road or black. Hold 0.5 s longer in the silent cut (beat sheet 2d), so in the silent cut beat 7 slides 0.5 s later (7a about 0:27.5 to 0:31.0, 7b about 0:31.0 to 0:33.5) and captions C2 and C3 slide with it. |
+| 7a | 0:27.0 to 0:30.5 | 3.5 | Top-down or slightly angled on a clipboard, locked. Page never turns. | One page of a plain visitor log. Lines fill in by soft dissolve: same unreadable signature, month column moving forward, ink changing pen to pen. | **PH** (tonight) for the page, **GFX** for the fill-in dissolve built in Premiere from 4 to 6 photos of the same page with lines added in stages. | **NEEDS IAN OK.** Generic sheet, no seal, form number or facility name. Months only, no years. Signature scribble must not read as a name. No readable or implied person's name anywhere on the page (the dad's, the owner's, any of the book's characters', anyone's). Any text we set in edit on the page goes through the copy gate (marketing-director, copywriting, no-ai-slop) before it burns in. Use 3 different pens. Cool white light. |
 | 7b | 0:30.5 to 0:33.0 | 2.5 | Side on a chair beside a bed, hands in the foreground. | Gray-haired man's work-worn hands folded in his lap. Ball under the chair. | **PH** (tonight) | Zac's own hands, no face, no wedding detail that reads. If hands look too young, add a gray, desaturated grade. No facility sign. Ball under the chair, same ball. |
-| 8a | 0:33.0 to 0:36.0 | 3.0 | Static, bench level, flat gray light from one small window. No car body in frame. | Dad's ratchet lies still on the bench. A maintenance log taped above it, last entry broken off mid-line, pen across the page, dust over both. Ball rolls to rest against the bench leg. | **PH** (tonight with a fake window: cool white lamp bounced off a white sheet), better re-shot on a weekend in real overcast light. | **NEEDS IAN OK.** The broken-off line and the pen must sit in the center of frame, readable at phone size (also used in the 15 s cut for 1.5 s). Handwriting illegible or edit-set. No years, brands, mileage, plates or VINs. Dust: a little talc or flour on pen and page, brush off after. Do not reuse the warm lamp. |
+| 8a | 0:33.0 to 0:36.0 | 3.0 | Static, bench level, flat gray light from one small window. No car body in frame. | Dad's ratchet lies still on the bench. A maintenance log taped above it, last entry broken off mid-line, pen across the page, dust over both. Ball rolls to rest against the bench leg. | **PH** (tonight with a fake window: cool white lamp bounced off a white sheet), better re-shot on a weekend in real overcast light. | **NEEDS IAN OK.** The broken-off line and the pen must sit in the center of frame, readable at phone size (also used in the 15 s cut for 1.5 s, 0:05.0 to 0:06.5). Handwriting illegible or edit-set. No readable or implied person's name (the dad's, the owner's, any of the book's characters', anyone's). Any text we set in edit on the log goes through the copy gate (marketing-director, copywriting, no-ai-slop) before it burns in. No years, brands, mileage, plates or VINs. Dust: a little talc or flour on pen and page, brush off after. Do not reuse the warm lamp. |
 | 8b | 0:36.0 to 0:40.0 | 4.0 | Kitchen, from behind, flat daylight. | His mom from behind, hands and back of head only. Sets one plate with both hands, folds a napkin square, steps back a little. No ball. Kettle ticking as it cools. | **PH** on a weekend in daylight (a family member, back to camera, with a verbal OK). Fallback **AI-V**. | Depends on Ian OK items 11 and 12. No face. Plain plate, plain napkin, no logos. The kettle sound is recorded separately. If no volunteer: AI-V with a start still, hands and back of head only. |
-| 9 | 0:40.0 to 0:49.0 | 9.0 | Floor level, behind his head along his shoulder. Back of head, shoulder, raised arm, ratchet. Face never shown. Off frame right the garage door is open and a long band of plain daylight lies across the floor. | Late morning. Grown Brandon on his back on a creeper under the old car, working. At 0:45.0 the ball rolls in from the RIGHT through the daylight band, wobbles, taps his shoulder at 0:46.5. Ratchet stops mid-turn. Hand stays. Neutral pause only. Hold to 0:49.0, cut to black. | **PH** on a weekend morning (primary). Fallback **AI-V** (low confidence, the tap is hard to get right). | Daylight band stays empty, no shadow. No hand to chest, no head turn, no look to the door. Ball enters from the right (opposite to the boy's hand in beat 2). Split into **9-i** (0:40 to 0:45 working, 5 s), **9-ii** (0:45 to 0:46.5 ball rolls in, 1.5 s), **9-iii** (0:46.5 to 0:49 tap and hold, 2.5 s) only if you film in pieces. Ball delivery: a ramp (a board propped a few degrees) with a string release, or a helper off frame. SAFETY: never lie under a raised car or one on a jack. The car sits on its wheels, you lie beside the bumper edge only. |
+| 9 | 0:40.0 to 0:49.0 | 9.0 | Floor level, behind his head along his shoulder. Back of head, shoulder, raised arm, ratchet. Face never shown. Off frame right the garage door is open and a long band of plain daylight lies across the floor. | Late morning. Grown Brandon on his back on a creeper under the old car, working. At 0:45.0 the ball rolls in from the RIGHT through the daylight band, wobbles, taps his shoulder at 0:46.5. Ratchet stops mid-turn. Hand stays. Neutral pause only. Hold to 0:49.0, cut to black. | **PH** on a weekend morning (primary). Fallback **AI-V** (low confidence, the tap is hard to get right). | Daylight band stays empty, no shadow. No hand to chest, no head turn, no look to the door. Ball enters from the right (opposite to the boy's hand in beat 2). Split into **9-i** (0:40 to 0:45 working, 5 s), **9-ii** (0:45 to 0:46.5 ball rolls in, 1.5 s), **9-iii** (0:46.5 to 0:49 tap and hold, 2.5 s) only if you film in pieces. Ball delivery: a ramp (a board propped a few degrees) with a string release, or a helper off frame. **Physical safety:** never lie under a raised car or one on a jack. The car sits on its wheels, you lie beside the bumper edge only. |
 | 10 | 0:49.0 to 0:51.5 | 2.5 | Black card, centered type. | Closing card, slow fade up. Draft default B1, gate decides. | **TXT** (Premiere Essential Graphics) | Quote marks. Stand-in font, license saved. Hold until the gate picks B1, B2 or none. |
 | 11 | 0:51.5 to 0:56.0 | 4.5 | End card. | Draft: cover art, THE WRENCH TURNER, IAN GRIFFIN, iangriffinbooks.com. | **GFX** | Cover as printed shows Ford marks: ATTORNEY QUESTION. **Recommendation (decision 04): type-only end card for cut 1** (title, name, URL on black). One ratchet click as the title lands (OWN SFX). |
 
@@ -95,7 +96,7 @@ Source: `04-stills-prompts.md` from graphic-design (NOT in the folder when this 
 ### B(c). MUSIC (summary of `02-music-report.md`)
 - Pick order: **1)** build a bed from the Adobe pad and strings loops (`P:\Sounds\Music\adobe\Ambient\Pads_51BPM\StrngPad03.wav` looped, layered with `ChamStr01-D.wav` or `ChamStr05-D.wav`, `ArcoEb01.wav` for the swell accent). Best documented rights, but readme and EULA still to read. **2)** `P:\Sounds\Music\jdi-0414-eb-min-sad-cinematic-piano.mp3` only if Zac shows proof of source (decision 03). **3)** Fallback: silence-forward, garage ambience carries it, one quiet pad from 0:40 to 0:46.
 - Free options to audition (license page screenshot required, each dated): Pixabay, Mixkit, Free Music Archive CC0 filter. None named client work.
-- Cue plan: no music 0:00 to 0:26. A very low sustained note enters at 0:26 to 0:43 (beat sheet puts the cello at 0:43.0). Thins at 0:45.0 over 1.5 s. Returns under the closing card and resolves by 0:55.5. **The music report said "hard cut of music to silence on the tap" but the locked beat sheet says birds, road and room tone stay up and no dead silence: follow the beat sheet.**
+- Cue plan: no music 0:00 to 0:26. A very low sustained note enters at 0:26 to 0:43 (beat sheet puts the cello at 0:43.0). Thins at 0:45.0 over 1.5 s. Returns under the closing card and resolves by 0:55.5. **The music report said "hard cut of music to silence on the tap" but the current beat sheet says birds, road and room tone stay up and no dead silence: follow the beat sheet.**
 - What Zac must do: (1) listen to the Adobe loops and check D versus Eb keys by ear, do not mix them. (2) Read the Adobe readme in the library download and the EULA line on client work, screenshot it. (3) Fill the "Proof saved" column of the cue sheet in the music report. (4) Suno and paid library decisions are already queued as WRENCH-2026-11-04-01 to 03, not duplicated here.
 
 ### B(d). SOUND EFFECTS
@@ -110,11 +111,11 @@ Owned (all under `P:\Sounds\Sound FX\Adobe\` unless stated):
 - Ball (tennis files are felt, so they are backup only): `Household\Household Ball Roll On Cement 01.wav`, `Foley\Foley Tennis Ball  Bounce On Cement 01.wav` (two spaces), `Sports\Sports Ball Bounce Single Tennis Ball 01.wav`, `Sports\Sports Ball Bounce And Catch On Cement 01.wav`
 - Ambience: `Ambience_1\Ambience Auto Repair Shop 01.wav`, `Ambience Auto Repair Shop 180D 01.wav`, `Ambience_2\Ambience Parking Garage 01.wav`, `Ambience_2\Ambience Night Crickets And A Bullfrog 01.wav` (bullfrog may distract), `Ambience Wind With Crickets 01.wav` (possible for beats 3 and 4, check by ear)
 - Footsteps: `Foley Footsteps\` (20 concrete and tile files)
-- Metal: `Impacts\Impact Metal Drop And Roll On Concrete 01.wav` (not used in the locked beats, skip)
+- Metal: `Impacts\Impact Metal Drop And Roll On Concrete 01.wav` (not used in the current beats, skip)
 - Paper: `Foley\Foley Paper Slide And Grab 01.wav`, `Foley Paper Rustle Short 01.wav`
 - Cup (placeholder for a plate set down): `Household\Household Cup Coffee Cup Clank 02.wav`
 - Heartbeat: `P:\Sounds\Sound FX\heartbeat-slow_M1Vtl3VO.mp3`. Use ONLY as a tempo reference, it is a scary heartbeat.
-- Not needed by the locked beats: screen door file, wood creak, car engine.
+- Not needed by the current beats: screen door file, wood creak, car engine.
 
 **MISSING and how to get it free:**
 | Missing | Free way | License line |
@@ -130,11 +131,11 @@ Owned (all under `P:\Sounds\Sound FX\Adobe\` unless stated):
 | Cards slapped, locker door | Record on the phone: cards on the tote, the tote lid closing | Made by Zac |
 | Truck radio bed | Take an Adobe pad, band-limit it in Audition so it sounds like a small speaker, very low | Adobe (unconfirmed) |
 | Party voices, grass hush, city hum, sand and wind | NOT in my audit. Search the index for `Crowd`, `Walla`, `Grass`, `City`, `Wind`. If nothing fits, record a murmur with friends on the phone | Adobe unconfirmed, or made by Zac |
-| Classic car engine that almost starts | NOT in the locked beat sheet, skip it | n/a |
+| Classic car engine that almost starts | NOT in the current beat sheet, skip it | n/a |
 
 If Zac ever downloads a free file from the web, he must retrieve and screenshot the license page the same day. Never claim a license from memory.
 
-**SOUND CUE LIST (SAFE master, keyed to the beat sheet times)**
+**SOUND CUE LIST (base cut master, keyed to the beat sheet times)**
 | Time | Cue | Source |
 |---|---|---|
 | 0:00.0 | Black, silence | none |
@@ -142,7 +143,7 @@ If Zac ever downloads a free file from the web, he must retrieve and screenshot 
 | 0:00.0 on | Shop lamp low buzz, garage room tone, ratchet clicking steady under the car | Auto Repair Shop ambience, Ratchet Clicking 01 |
 | 0:03.1 to 0:06.2 | Narration L1a (Ian) | Ian |
 | 0:06.3 | Ratchet stops. 0:06.3 to 0:06.8 silence plus soft wrench clink | Wrench Set On Pavement 01 |
-| 0:07.5 | Ratchet resumes (SAFE). SLOT: Ian's line 0:06.8 to 0:09.3 max, ratchet restarts 0:09.5 | Ratchet Turn Single 01 |
+| 0:07.5 | Ratchet resumes (base cut). SLOT: Ian's line 0:06.8 to 0:09.3 max, ratchet restarts 0:09.5 | Ratchet Turn Single 01 |
 | 0:09.0 | Ball rolls on concrete, then grass hush, lamp buzz cuts at the door line | recorded ball, grass sound (missing) |
 | 0:11.0 | Party voices, truck radio (band-limited pad). Ducks to near nothing as heads turn | walla and Adobe pad |
 | 0:16.0 | Low laughter, cards slapped, locker door, ball roll between boots | recorded |
@@ -150,7 +151,7 @@ If Zac ever downloads a free file from the web, he must retrieve and screenshot 
 | 0:21.0 | Sand ambience, faint garage ratchet under it | wind (missing), Ratchet Clicking 01 |
 | 0:23.0 | Ratchet stops mid-turn, half click. 0:23.0 to 0:25.0 silence | edit the clip |
 | 0:25.0 | Monitor tone begins at exactly the ratchet's tempo | made in Audition |
-| 0:27.0 to 0:33.0 | Monitor, a pen scratch on each new line, far hallway PA, no readable word. Narration L2 0:27.6 to 0:33.0 | recorded |
+| 0:27.0 to 0:33.0 | Monitor, a pen scratch on each new line, far hallway PA, no readable word. Narration L2 "Two years. His dad was there." 0:28.4 to 0:32.0 in both versions ("His dad was there" from about 0:30.3, on 7b) | recorded |
 | 0:33.0 | Garage room tone, no lamp buzz, space sounds unused. Ball roll to the bench leg. L3 0:33.2 | Parking Garage ambience, ball roll |
 | 0:36.0 | Kettle ticking as it cools. Plate set down, napkin fold. "polite to him" ends by 0:40.0 | kettle recording, Cup Clank 02, Paper Rustle Short 01 |
 | 0:40.8 | Ratchet restarts at 0:41.0, slower than the dad's. Birds and far road throughout. L4 0:40.8 to 0:44.0 | recorded |
@@ -164,10 +165,10 @@ If Zac ever downloads a free file from the web, he must retrieve and screenshot 
 | 0:55.5 | Cello resolved and faded | music |
 
 ### B(e). THINGS ONLY IAN CAN SUPPLY
-Files and items: (1) his voice recording per the spec below, original file, untrimmed. (2) The exact father's line, word for word, plus written text-rights confirmation. (3) Original cover art, ideally a layered or type-less file, and who made it and under what license. (4) Cover font name and license. (5) A clean author portrait with written permission and the photographer's license, only if we use it (the trailer has none in the locked beats). (6) Crest source and permission. (7) Written OK on every verbatim quote and every invented element (the two logs, the boot, the boy's hand, the ball, the mom beat). (8) Where to buy, formats, release status, four handles, awards with years, review quotes with names. (9) His tone and deadline.
+Files and items: (1) his voice recording per the spec below, original file, untrimmed. (2) The exact father's line, word for word, plus written text-rights confirmation. (3) Original cover art, ideally a layered or type-less file, and who made it and under what license. (4) Cover font name and license. (5) A clean author portrait with written permission and the photographer's license, only if we use it (the trailer has none in the current beats). (6) Crest source and permission. (7) Written OK on every verbatim quote and every invented element (the two logs, the boot, the boy's hand, the ball, the mom beat). (8) Where to buy, formats, release status, four handles, awards with years, review quotes with names. (9) His tone and deadline.
 
 **Voice recording, plain-words version (Section 3 of the script file has the full list):**
-1. Read these in this order: "Brandon Turner grew up under a car." Then "Two years. His dad was there for all of it." Then "Two years. His dad was there." Then "He came home to his dad's tools. And his mom was polite to him." Then "So he went back under the car." Then "Brandon went back under the car." Then read each of those two more times.
+1. Read these in this order: "Brandon Turner grew up under a car." Then "Two years. His dad was there." Then "He came home to his dad's tools. And his mom was polite to him." Then "So he went back under the car." Then "Brandon went back under the car." Then read each of those two more times.
 2. Read his book line three times, as the dad talking to a small boy, sitting two hand-widths farther from the phone.
 3. Smallest, softest room. A closet full of clothes is perfect. No AC, fans, TV or dog.
 4. Voice memo app, airplane mode on, phone on a pillow or a stack of books.
@@ -188,7 +189,7 @@ Files and items: (1) his voice recording per the spec below, original file, untr
 >
 > **The story**
 > 4. What ball rolls under the car in the book (kind, size, color)? We plan a faded off-white plastic ball with holes, no logo.
-> 5. Is the car on the cover the book's car? Year, color, model. Is using the Ford and Mustang look on the cover cleared?
+> 5. Is the car on the cover the book's car? Year, color, model. Do you have any permission or license for the Ford and Mustang look on the cover? (A yes from you is not a trademark answer. That question stays with an attorney either way.)
 > 6. Year and place of the boyhood garage, and year, season, branch and job for Brandon's return. We will not invent any of it.
 > 7. Visitor log: OK to show one page filling with the dad's unreadable signature, months moving, no years? It is our idea, not from the book.
 > 8. Maintenance log: OK to show the dad's log over the bench with the last entry broken off mid-line and his pen lying on it under dust? Also our idea.
@@ -214,6 +215,8 @@ Files and items: (1) his voice recording per the spec below, original file, untr
 > 24. Deadline. Do you want a Veterans Day (Nov 11) version? Who approves, and are two revision rounds OK?
 
 Number check: this is 24 asks; the two source lists had 22 each and overlapped heavily.
+
+**Scope note (not part of the message):** the written client scope must say who owns Zac's voice recording, whether it may be reused, and that it is not fed to a voice-clone or AI voice tool without both men's written OK. Full clause in Section E price note.
 
 ---
 
@@ -258,7 +261,7 @@ If time runs short, drop the Firefly test, not the filming. The night shots are 
 ### Fri 11/6 (about 90 min)
 | Min | Task |
 |---|---|
-| 60 | Assemble the SAFE picture master in Premiere, vertical 1080x1920, to the beat sheet timings. Placeholders (black with a label) for anything missing. No text yet except captions. |
+| 60 | Assemble the base cut picture master in Premiere, vertical 1080x1920, to the beat sheet timings. Placeholders (black with a label) for anything missing. No text yet except captions. |
 | 30 | Place SFX per the cue list. |
 
 ### Sat 11/7 or Sun 11/8 (daylight window, about 2.5 hours; confirm the delivery job does not take it)
@@ -267,13 +270,13 @@ If time runs short, drop the Firefly test, not the filming. The night shots are 
 | 45 | Film beat 9 in late morning light, 6 to 8 takes (ramp or helper for the ball). |
 | 20 | Film 8b with a volunteer (back to camera), and re-shoot 8a in real overcast window light if time. |
 | 15 | Record birds, far road and one passing car (30 s each). |
-| 60 | Edit the new shots in, sound pass, first full SAFE rough with no narration. |
+| 60 | Edit the new shots in, sound pass, first full base cut rough with no narration. |
 
 ### Mon 11/9 to Tue 11/10
 | Min | Task |
 |---|---|
 | 45 | If Ian's voice file has arrived: clean in Audition, place L1a to L4, mix. |
-| 45 | Captions (C1 to C6 from 2d), end card (type-only unless Ian's cover and attorney path clear), cutdowns 15 s and 6 s. |
+| 45 | Captions (C1 to C6 from 2d), end card (type-only unless Ian's cover is in hand and the Ford question is settled with the attorney), cutdowns 15 s and 6 s. |
 | 60 | Reframes 16:9 and 4:5, cover still, clean no-text, .srt. |
 | 45 | Exports, phone QC (Section D), the cold-viewer test. |
 | 15 | Hand to copywriting and marketing gates, then to Zac. |
@@ -282,8 +285,8 @@ If time runs short, drop the Firefly test, not the filming. The night shots are 
 Ian has not answered. **Unlikely, not impossible.** The remaining work after Ian's voice and OKs arrive is about 6 to 7 hours of Zac time (roughly 3 evenings of 2 to 2.5 hours), and the old guide wants about 48 hours for Ian to review each cut. Zac also has FrostCast on Wed 11/11 at 9 PM. A trailer that is not approved in writing by Ian does not go to Ian's accounts. A VETERANS DAY CUT IS NOT PROMISED TO ANYONE. If it slips, a "Veterans Week" post on 11/12 to 11/15 is a fallback worth offering Ian (decision 11).
 
 ### Three tracks
-**Track 1: build with ZERO input from Ian (SAFE, internal only).** Practical shots, AI plates for 4 and 5b (the least sensitive), music bed, SFX, full picture edit, silent captioned cut, SAFE narration placeholder (Zac reads it as a scratch track, never delivered). Done by Sun 11/8 if the weekend daylight window exists. Not delivered to anyone, not posted, not shown to Ian until Checkpoint A is cleared.
-**Track 2: blocked on Ian.** Narration (SAFE or SLOT), the father's line and every quote card, AI clips 2-ii and 6 (his OKs), the two logs staying in (his OK), the end card cover and font, final text, posting sheet, the secret fence confirmation, the cold-viewer result relay, any posting.
+**Track 1: build with ZERO input from Ian (base cut, internal only).** Practical shots, AI plates for 4 and 5b (the least sensitive), music bed, SFX, full picture edit, silent captioned cut, base cut narration placeholder (Zac reads it as a scratch track, never delivered). Done by Sun 11/8 if the weekend daylight window exists. Not delivered to anyone, not posted, not shown to Ian until Checkpoint A is answered.
+**Track 2: blocked on Ian.** Narration (base cut or SLOT), the father's line and every quote card, AI clips 2-ii and 6 (his OKs), the two logs staying in (his OK), the end card cover and font, final text, posting sheet, the secret fence confirmation, the cold-viewer result relay, any posting.
 **Track 3: earliest honest delivery for each answer date** (answers plus voice file all in):
 | Ian's answers and voice file arrive | Cut 1 to Ian | Final delivered | Veterans Day 11/11? |
 |---|---|---|---|
@@ -302,8 +305,8 @@ All dates assume the Ford end-card question is handled by the type-only default 
 
 | Cut | Length | Frame | Notes |
 |---|---|---|---|
-| Master | 56 s (0:56.0) | 1080x1920 9:16 | SAFE until Ian's OKs. File `IAN_Master_SAFE_v1.mp4` |
-| 15 s | 15.0 s | 1080x1920 | Beat sheet 2b. Includes 8a for 1.5 s with the broken-off line centered. `IAN_15s_SAFE_v1.mp4` |
+| Master | 56 s (0:56.0) | 1080x1920 9:16 | Base cut until Ian's OKs. File `IAN_Master_Base_v1.mp4` |
+| 15 s | 15.0 s | 1080x1920 | Beat sheet 2b (retimed 2026-11-05). Beat 1 0:00.0 to 0:02.0, beat 6 0:02.0 to 0:03.5, beat 7a 0:03.5 to 0:05.0, 8a 0:05.0 to 0:06.5 (full 1.5 s, broken-off line centered), beat 9 daylight 0:06.5 to 0:12.5 with L4-cut 0:06.8 to 0:09.4, car passing about 0:09.8, ball in 0:10.8, tap 0:11.6, short end card 0:12.5 to 0:15.0. Silent caption 0:06.8 to 0:09.7. `IAN_15s_Base_v1.mp4` |
 | 6 s | 6.0 s | 1080x1920 | Beat sheet 2c, no narration. `IAN_6s_v1.mp4` |
 | Silent captioned | 56 s | 1080x1920 | Beat sheet 2d. SLOT line never captioned until Ian's written OK. `IAN_Master_Silent_v1.mp4` |
 | 16:9 | 56 s | 1920x1080 | Beat sheet 2e. Rebuild composition, not a crop, except where noted. `IAN_Master_169_v1.mp4` |
@@ -321,7 +324,7 @@ All dates assume the Ford end-card question is handled by the type-only default 
 6. Click the Audio tab. Format AAC, Sample Rate 48000 Hz, Channels Stereo, Bitrate 192 kbps.
 7. Click the Output Name blue text, choose the Exports folder, type the file name from the table.
 8. Click Export. (Do not use Queue unless you want Media Encoder.)
-9. Check loudness: in a terminal (ffmpeg is on PATH) run `ffmpeg -i "IAN_Master_SAFE_v1.mp4" -af ebur128=peak=true -f null -` and read "I:" near -14 and the true peak under -1.5. Fix in Audition if needed.
+9. Check loudness: in a terminal (ffmpeg is on PATH) run `ffmpeg -i "IAN_Master_Base_v1.mp4" -af ebur128=peak=true -f null -` and read "I:" near -14 and the true peak under -1.5. Fix in Audition if needed.
 
 **Reframe export (4:5 or 16:9):**
 1. In the Project panel, right-click the finished sequence > Duplicate. Rename it.
@@ -335,11 +338,12 @@ All dates assume the Ford end-card question is handled by the type-only default 
 - [ ] Captions readable at arm's length with no glare, none off the edge, none behind the app buttons.
 - [ ] Ball visible and the same ball in every shot.
 - [ ] No Ford mark, plate, badge, tire lettering anywhere (pause on every car frame).
-- [ ] No readable text in the logs, on the boot, truck, footlocker.
+- [ ] No readable text in the logs, on the boot, truck, footlocker. No readable or implied person's name on either log. Any text we set in edit on a log has been through the copy gate (marketing-director, copywriting, no-ai-slop).
+- [ ] No Ford, Mustang, or any car make, model or brand word, and no ball brand, in the file name, project name, captions, post copy, pinned comment, alt text or hashtags.
 - [ ] Beat 9: neutral pause, no hand to chest, no head turn, daylight band empty.
 - [ ] Sound: ratchet stops at 0:06.3, nothing drops to dead silence before the tap, tap is audible and small.
 - [ ] Loudness feels even against a normal video on the same phone.
-- [ ] Cold-viewer test with one person: "Where did the ball come from?" Write the answer word for word.
+- [ ] Cold-viewer test with one person (master): ask "Where did the ball come from?", then "Does the father read as dead, or just away?" Write both answers word for word. Run the same two questions on the 15 s cut with a different viewer who has not seen the master. Rules are in 01 Section 7: "his dad" to question 1, or "away" / "he got the call and ran" to question 2, means rework before delivery; anything else goes to Ian.
 - [ ] Secret fence check on the file name, project name, caption text and metadata.
 
 ---
@@ -364,7 +368,7 @@ Nothing is spent. "Source status" says how well each number is known.
 | Attorney on the Ford end card, text rights | Not priced | Decision 04 avoids it for cut 1 |
 | **Realistic WKP cash cost** | **0 to about 25 dollars** | Old guide figure, unverified. Anything above is Zac's call |
 
-**Price to charge Ian (guide, assumptions not quotes):** Good $250, Better $550, Best $950. Friend rate on Better $350. Extra revision $35/hour. Rush plus 25 percent. **Recommendation: the friend rate on Better at $350 with a written scope** (two revision rounds, Ian supplies everything on the list by a date, testimonial, portfolio and showreel permission, rights clause about platform claims and music, who pays for any label). Free is only for a written, capped portfolio piece. Logged as decision 06.
+**Price to charge Ian (guide, assumptions not quotes):** Good $250, Better $550, Best $950. Friend rate on Better $350. Extra revision $35/hour. Rush plus 25 percent. **Recommendation: the friend rate on Better at $350 with a written scope** (two revision rounds, Ian supplies everything on the list by a date, testimonial, portfolio and showreel permission, rights clause about platform claims and music, who pays for any label). **Voice clause (added 2026-11-05):** the written scope must also say who owns Zac's voice recording if he narrates or records a scratch track, whether it may be reused (cutdowns, later trailers, WKP portfolio), and that it is not fed to a voice-clone or AI voice tool without both men's written OK. If Zac narrates, nothing may say or imply "read by the author" or "narrated by Ian" (decision WRENCH-2026-11-05-01). Free is only for a written, capped portfolio piece. Logged as decision 06.
 
 **DECISIONS LOGGED IN `D:\WKP\logs\DECISIONS.md` this run:** WRENCH-2026-11-04-06 (price path), 07 (Checkpoint A vs generating plates), 08 (car, location, helper, permission for practical shots), 09 (Firefly credit cap), 10 (the boy's hand), 11 (Veterans Day target vs Veterans Week), 12 (send the Ian message and when). Existing 01 to 05 are not repeated.
 
@@ -373,7 +377,7 @@ Nothing is spent. "Source status" says how well each number is known.
 ## F. RISKS AND CLEARANCE FLAGS
 | Risk | Where | Plan |
 |---|---|---|
-| Ford marks (FORD letters, pony, plate) | Cover on the end card, any car shot, any generated frame | Type-only end card for cut 1 (decision 04). Tape over badges on the practical car. Check every frame in the QC list. ATTORNEY QUESTION stays open for the cover |
+| Ford marks (FORD letters, pony, plate) and brand words | Cover on the end card, any car shot, any generated frame; every text surface (prompts, post copy, captions, pinned comments, alt text, file names, project names, hashtags) | Type-only end card for cut 1 (decision 04). Tape over badges on the practical car. Check every frame in the QC list. No Ford, Mustang, or any car make, model or brand word, and no ball brand, in any text surface. ATTORNEY QUESTION stays open for the cover |
 | AI-content disclosure labels | AI clips 4, 5b, 6, 2-ii and any fallback | YouTube, TikTok, Instagram and Facebook label rules are from third-party sources, UNVERIFIED. Check each platform's live page before upload. Keep a shot-by-shot list of which are AI. If posted on a Zac-controlled account, add paid-promo disclosure |
 | Likeness | Everywhere | No real person's likeness. No realistic face anywhere. Mother hands and back of head only. No child face. The author's portrait is not in the trailer |
 | The secret | All text, file names, captions, .srt, hashtags, project names, metadata | Not named here on purpose. Ian reconfirms in writing. Cold-viewer test |
@@ -405,7 +409,7 @@ Nothing is spent. "Source status" says how well each number is known.
 4. Shot 5a: boots, tote with cards on top, roll the ball between the boots.
 5. Shot 7a: clipboard, plain paper. Take one photo of the page with no lines, then fill lines in stages (3 pens, scribble signatures only), photographing after each stage.
 6. Shot 7b: chair, your folded hands in the lap, ball under the chair.
-7. Shot 8a: bench, ratchet, a taped log with a line that stops in the middle of a sentence and a pen lying across it. Dust with a little flour or talc, brush off any extra. Cool white lamp bounced off a white sheet.
+7. Shot 8a: bench, ratchet, a taped log with a line that stops in the middle of a sentence and a pen lying across it (scribble only, no readable words and no name). Dust with a little flour or talc, brush off any extra. Cool white lamp bounced off a white sheet.
 8. Wild sound: 10 seconds each of ball bounce, ball roll, ratchet clicking slowly, pen scratch, cards slap, tote lid, kettle ticking.
 **File names (rename at the PC):** `IAN_<shot>_PH_t<take>.mp4`, for example `IAN_01_PH_t3.mp4`. Wild sound: `IAN_SFX_<what>.m4a`.
 **After:** copy the phone folder to `01 Phone`, then a second copy on another drive. Do not delete from the phone until both copies play.
@@ -427,7 +431,7 @@ Nothing is spent. "Source status" says how well each number is known.
 
 ### G(3). Edit order in Premiere
 1. New project `IAN_Wrench_Turner.prproj` in `05 Premiere`. Import all folders.
-2. New sequence: 1080x1920, 30 fps, 48 kHz audio. Name `Master_SAFE`.
+2. New sequence: 1080x1920, 30 fps, 48 kHz audio. Name `Master_Base`.
 3. Lay the picture first, in beat order, to the times in the Shot List. Use labeled black placeholders for anything missing.
 4. Trim each shot to its exact duration. Check the 9 to 2 side relationship: ball enters from the right in 9, hand from the left in 2.
 5. Add sound in order: room tone and ambience, ratchet, ball, wild tracks, the 0:06.3 clink, the 0:23.0 half click, monitor, kettle, birds and road, car at 0:44.0, tap at 0:46.5.
@@ -435,4 +439,4 @@ Nothing is spent. "Source status" says how well each number is known.
 7. Drop a scratch narration (Zac's voice, never delivered) only to check timing, label the track SCRATCH.
 8. Grade lightly: warm lamp for 1 to 7, flat gray from 8a. Same ball color across shots.
 9. Add captions and cards last. Stand-in font. Silent version is a duplicate sequence.
-10. Run the QC list, then export the SAFE internal master. Do not send anything out.
+10. Run the QC list, then export the base cut internal master. Do not send anything out.

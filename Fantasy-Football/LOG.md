@@ -68,6 +68,10 @@ Format per entry:
 
 <!-- New entries go above this line. -->
 
+## Week 9 (card locks Thu 2026-11-05 8:15 PM ET)
+
+2026-11-05 | WEEK 9 | Thursday rerun (Card + Lineup). One pick flips: ARI at SEA, SEA -11.5 becomes ARI +11.5 (market SEA -12.0 to -8.5, Darnold out, Lock Q). Logged to tracker as source model_thu_rerun before kickoff. 19 other picks and all SU picks unchanged; tiebreaker unchanged BUF 24 MIN 21 (45). Lineup 17 unchanged; Okereke now Q (foot), Flowers faces backup QB (Jackson out, Fagnano). Found main-session optimize ran on Week 6 roster by default (Croskey-Merritt/Jenkins came from that stale default sheet). Saved MFL lineup not readable via API. Reports: reports\Week9-Full-Simulation-2026-11-05-thu.md, reports\Week9-Lineup-2026-11-05.md; docx in D:\WKP Reports\Fantasy Simulator Report\Week 9 Full Simulation\ and D:\WKP Reports\Fantasy Lineup\.
+
 ## Week 7 (2026-10-25 slate, card locks Thu 10/22)
 
 2026-10-21 | WEEK 6 | Correction (Zac): the Week 6 card went 14 of 20 right, tied for the lead, lost the tiebreaker 50 vs 48. Tracker now covers all 20 games (college backfilled and graded 2026-10-21): model 12 of 20 ATS (NFL 8/14, college 4/6), 8 of 14 SU (NFL only). Zac's own card 14 of 20 ATS: same 4/6 on college, 10/14 on NFL (he beat the model on 5 of the 8 NFL games where they split, the model won 3). The 8/14 figures elsewhere in this log are NFL-only. | Zac, in session; D:\WKP\Fantasy-Football\tracker\predictions.csv

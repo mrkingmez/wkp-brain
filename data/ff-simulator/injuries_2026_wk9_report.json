@@ -1,20 +1,20 @@
 {
- "fetched_at": "2026-11-04T03:20Z",
+ "fetched_at": "2026-11-05T15:57Z",
  "sources": {
-  "MFL_players_refresh": "2708 players",
-  "MFL_INJ": "436 rows, response timestamp 2026-11-04T03:01Z, week 9",
-  "MFL_ROSTER": "28 fantasy-IR-slot rows (note only), pulled 2026-11-04T03:20Z",
-  "NFLV_INJ": "0 rows for week 9 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8)]), release updated 2026-11-03T14:59Z",
-  "NFLR_INJ": "0 rows for week 9 via nflreadpy",
-  "NFLV_ROST": "0 week-9 roster rows, 0 records, release updated 2026-11-03T15:06Z",
-  "ESPN_INJ": "800 rows, feed timestamp 2026-11-04T03:20Z",
-  "ESPN_TX": "98 team-transaction lines in last 10 days -> 218 player moves, feed timestamp 2026-11-04T03:15Z (dates are date-only, midnight ET)"
+  "MFL_players_refresh": "2709 players",
+  "MFL_INJ": "485 rows, response timestamp 2026-11-05T15:01Z, week 9",
+  "MFL_ROSTER": "28 fantasy-IR-slot rows (note only), pulled 2026-11-05T15:57Z",
+  "NFLV_INJ": "266 rows for week 9 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]), release updated 2026-11-05T15:22Z",
+  "NFLR_INJ": "266 rows for week 9 via nflreadpy",
+  "NFLV_ROST": "2396 week-9 roster rows, 2396 records, release updated 2026-11-05T15:26Z",
+  "ESPN_INJ": "800 rows, feed timestamp 2026-11-05T15:57Z",
+  "ESPN_TX": "111 team-transaction lines in last 10 days -> 244 player moves, feed timestamp 2026-11-05T15:45Z (dates are date-only, midnight ET)"
  },
- "merged_rows": 1065,
- "raw_rows": 1482,
- "unresolved_gsis": 11,
- "newest_as_of": "2026-11-04T03:07Z",
- "age_hours_of_newest": 0.2,
+ "merged_rows": 2529,
+ "raw_rows": 4485,
+ "unresolved_gsis": 10,
+ "newest_as_of": "2026-11-05T15:49Z",
+ "age_hours_of_newest": 0.1,
  "stale_over_24h": false,
- "conflicts": 8
+ "conflicts": 42
 }

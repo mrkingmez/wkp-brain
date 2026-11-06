@@ -1,0 +1,1 @@
+- [No clearance words](feedback_no_clearance_words.md) — never SAFE/LOCKED/clean/none-found as claims; fallback = "base cut"; secret wording repo-only

@@ -1,1 +1,1 @@
-- [Ian Griffin trailer client](project_ian_griffin_trailer.md) — retired CSM author; crest, cover license, Ford marks, secret fence; script passes 1 and 2 done 2026-11-04
+- [Ian Griffin trailer client](project_ian_griffin_trailer.md) — retired CSM author; crest, cover license, Ford marks, secret fence; script passes 1, 2 done 2026-11-04, pass 3 and pass 4 2026-11-05 (leaks sit in 05/00/06, not 01)
