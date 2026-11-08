@@ -2043,3 +2043,39 @@ D. Keep Ian as narrator and drop the East Texas idea.
 **Recommendation:** B or C. It costs nothing, fits the timing check, and keeps Ian's say on the one voice that carries his book. A is fine only with his written OK. Ask Ian in the same message as the question list (item 16 in 03 Section B(e)) once Zac decides.
 
 **Status:** OPEN
+
+---
+
+## [WWD-2026-11-08-01] 2026-11-08 | WWD | "Together" (2025) review recording deadline (Sat 10/31) passed 8 days ago, row still "Not Started," never logged
+
+**Blocked:** TASKS.md's WWD table carries "'Together' (2025) review
+recording" with deadline "Sat 2026-10-31 7:00 PM ET" (punted there
+2026-10-15 from Sun 10/18, Zac's call) and status still "Not Started."
+Today is 2026-11-08 — 8 days past that date. No commit in the repo
+since this row was last touched mentions "Together," a recording
+session, or any reason the date moved again. The row's own note flagged
+it as Halloween night and asked to "confirm Matt is free" — nothing
+records whether that was confirmed, whether the recording happened off
+-repo and just never got marked Done, or whether it slipped a third
+time with no new date set. This fits the same stale-deadline pattern
+already flagged repeatedly in this file for other WWD rows (e.g.
+WWD-2026-10-03-01, WWD-2026-10-17-01), but this specific item had not
+yet been cross-logged.
+
+**Options:**
+A. Assume it happened off-repo and TASKS.md simply wasn't updated
+   afterward (same explanation used for several prior WWD rows that
+   turned out to have shipped quietly) — low cost, risks masking a
+   real third slip if it didn't happen.
+B. Flag for Zac/wwd-director to confirm directly whether the Halloween-
+   night recording with Matt happened, and either mark the row Done or
+   set a real new date.
+C. Leave it — a single stale row isn't worth a queue entry on its own.
+
+**Recommendation:** B — same reasoning as the other stale-deadline
+entries in this file: nothing here distinguishes "quietly done" from
+"quietly dropped" without someone who was actually in the room
+confirming it, and this is the kind of row that keeps slipping
+unnoticed if nobody closes the loop.
+
+**Status:** OPEN
