@@ -1,0 +1,58 @@
+week,game,card_line_home,market_home,mkt_source,gap,side,p,tier,tiebreak,logged_pick,result,k,home_team,away_team,home_score,away_score,line_used,home_cov,mkt_wins,dog_wins,fav_wins
+6,SEA @ DEN,-3.5,-2.5,odds,1.0,DEN,0.53,SLIGHT,,DEN,correct,SEA @ DEN,DEN,SEA,17.0,14.0,-3.5,True,True,True,False
+6,HOU @ JAX,2.5,2.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: HOU (frozen underdog),JAX,incorrect,HOU @ JAX,JAX,HOU,31.0,34.0,2.5,False,True,True,False
+6,CHI @ ATL,-3.5,-1.0,odds,2.5,ATL,0.575,LEAN,,ATL,incorrect,CHI @ ATL,ATL,CHI,23.0,31.0,-3.5,False,False,False,True
+6,BAL @ CLE,-4.5,-4.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: CLE (frozen underdog),BAL,incorrect,BAL @ CLE,CLE,BAL,13.0,10.0,-4.5,True,True,True,False
+6,TEN @ IND,7.5,7.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: TEN (frozen underdog),IND,incorrect,TEN @ IND,IND,TEN,20.0,26.0,7.5,False,True,True,False
+6,NYJ @ NE,7.5,7.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: NYJ (frozen underdog),NE,incorrect,NYJ @ NE,NE,NYJ,26.0,19.0,7.5,False,True,True,False
+6,NO @ NYG,-1.5,-1.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: NYG (frozen underdog),NYG,incorrect,NO @ NYG,NYG,NO,27.0,34.0,-1.5,False,False,False,True
+6,CAR @ PHI,1.5,-3.5,odds,5.0,CAR,0.648,LEAN,,CAR,correct,CAR @ PHI,PHI,CAR,14.0,25.0,1.5,False,True,True,False
+6,PIT @ TB,-2.5,-2.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: TB (frozen underdog),PIT,correct,PIT @ TB,TB,PIT,19.0,26.0,-2.5,False,True,False,True
+6,ARI @ LAR,12.5,12.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: ARI (frozen underdog),ARI,correct,ARI @ LAR,LAR,ARI,16.0,18.0,12.5,False,True,True,False
+6,LAC @ KC,8.5,8.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: LAC (frozen underdog),KC,correct,LAC @ KC,KC,LAC,22.0,6.0,8.5,True,False,False,True
+6,BUF @ LV,-6.5,-4.5,odds,2.0,LV,0.56,LEAN,,LV,correct,BUF @ LV,LV,BUF,30.0,33.0,-6.5,True,True,True,False
+6,DAL @ GB,1.5,1.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: DAL (frozen underdog),GB,correct,DAL @ GB,GB,DAL,23.0,13.0,1.5,True,False,False,True
+6,WSH @ SF,7.5,7.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: WAS (frozen underdog),WSH,correct,WSH @ SF,SF,WSH,23.0,17.0,7.5,False,True,True,False
+7,NE @ CHI,2.5,3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: NE (frozen underdog),CHI,correct,NE @ CHI,CHI,NE,30.0,24.0,2.5,True,True,False,True
+7,PIT @ NO,-2.5,-3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: NO (frozen underdog),PIT,correct,PIT @ NO,NO,PIT,10.0,16.0,-2.5,False,True,False,True
+7,SF @ ATL,-4.5,-2.5,closing,2.0,ATL,0.56,LEAN,,ATL,correct,SF @ ATL,ATL,SF,29.0,20.0,-4.5,True,True,True,False
+7,CLE @ TEN,-1.5,-1.5,closing,0.0,NO EDGE,0.5,NO EDGE,if no read: TEN (frozen underdog),TEN,incorrect,CLE @ TEN,TEN,CLE,24.0,27.0,-1.5,False,True,False,True
+7,IND @ MIN,5.5,6.5,closing,1.0,MIN,0.53,SLIGHT,,MIN,correct,IND @ MIN,MIN,IND,16.0,10.0,5.5,True,True,False,True
+7,TB @ CAR,3.5,3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: TB (frozen underdog),TB,correct,TB @ CAR,CAR,TB,13.0,43.0,3.5,False,True,True,False
+7,CIN @ BAL,3.5,-3.0,closing,6.5,CIN,0.689,LEAN,,CIN,correct,CIN @ BAL,BAL,CIN,13.0,35.0,3.5,False,True,True,False
+7,NYG @ HOU,9.5,10.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: NYG (frozen underdog),HOU,incorrect,NYG @ HOU,HOU,NYG,21.0,27.0,9.5,False,False,True,False
+7,MIA @ NYJ,4.5,3.5,closing,1.0,MIA,0.53,SLIGHT,,NYJ,incorrect,MIA @ NYJ,NYJ,MIA,25.0,28.0,4.5,False,True,True,False
+7,DEN @ ARI,-4.5,-4.5,closing,0.0,NO EDGE,0.5,NO EDGE,if no read: ARI (frozen underdog),ARI,incorrect,DEN @ ARI,ARI,DEN,16.0,30.0,-4.5,False,True,False,True
+7,GB @ DET,2.5,3.5,closing,1.0,DET,0.53,SLIGHT,,DET,correct,GB @ DET,DET,GB,20.0,17.0,2.5,True,True,False,True
+7,LAR @ LV,-5.5,-3.5,closing,2.0,LV,0.56,LEAN,,LV,incorrect,LAR @ LV,LV,LAR,21.0,35.0,-5.5,False,False,False,True
+7,KC @ SEA,2.5,3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: KC (frozen underdog),KC,incorrect,KC @ SEA,SEA,KC,20.0,3.0,2.5,True,True,False,True
+7,DAL @ PHI,-4.5,-4.5,closing,0.0,NO EDGE,0.5,NO EDGE,if no read: PHI (frozen underdog),PHI,incorrect,DAL @ PHI,PHI,DAL,21.0,38.0,-4.5,False,True,False,True
+8,CAR @ GB,3.5,3.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: CAR (frozen underdog),CAR,incorrect,CAR @ GB,GB,CAR,27.0,19.0,3.5,True,False,False,True
+8,BAL @ BUF,3.5,3.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: BAL (frozen underdog),BAL,incorrect,BAL @ BUF,BUF,BAL,36.0,10.0,3.5,True,False,False,True
+8,TEN @ CIN,10.5,10.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: TEN (frozen underdog),CIN,incorrect,TEN @ CIN,CIN,TEN,43.0,36.0,10.5,False,True,True,False
+8,ARI @ DAL,6.5,7.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: ARI (frozen underdog),DAL,incorrect,ARI @ DAL,DAL,ARI,30.0,33.0,6.5,False,False,True,False
+8,MIN @ DET,3.5,3.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: MIN (frozen underdog),MIN,incorrect,MIN @ DET,DET,MIN,19.0,15.0,3.5,True,False,False,True
+8,LV @ NYJ,1.5,1.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: LV (frozen underdog),NYJ,incorrect,LV @ NYJ,NYJ,LV,33.0,38.0,1.5,False,True,True,False
+8,CLE @ PIT,3.5,3.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: CLE (frozen underdog),PIT,correct,CLE @ PIT,PIT,CLE,27.0,6.0,3.5,True,False,False,True
+8,ATL @ TB,2.5,2.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: ATL (frozen underdog),ATL,incorrect,ATL @ TB,TB,ATL,16.0,0.0,2.5,True,False,False,True
+8,IND @ JAX,7.5,10.0,odds,2.5,JAX,0.575,LEAN,,JAX,correct,IND @ JAX,JAX,IND,42.0,7.0,7.5,True,True,False,True
+8,LAC @ LAR,6.5,6.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: LAC (frozen underdog),LAR,correct,LAC @ LAR,LAR,LAC,24.0,9.0,6.5,True,False,False,True
+8,NE @ MIA,-7.5,-7.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: MIA (frozen underdog),MIA,correct,NE @ MIA,MIA,NE,19.0,24.0,-7.5,True,True,True,False
+8,KC @ DEN,-1.5,-1.5,odds,0.0,NO EDGE,0.5,NO EDGE,if no read: DEN (frozen underdog),DEN,correct,KC @ DEN,DEN,KC,28.0,24.0,-1.5,True,False,True,False
+8,PHI @ WSH,3.5,5.5,odds,2.0,WAS,0.56,LEAN,,WSH,correct,PHI @ WSH,WSH,PHI,27.0,10.0,3.5,True,True,False,True
+8,CHI @ SEA,2.5,3.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: CHI (frozen underdog),SEA,incorrect,CHI @ SEA,SEA,CHI,17.0,34.0,2.5,False,False,True,False
+9,JAX @ BAL,-8.5,-10.0,odds,1.5,JAX,0.545,SLIGHT,,JAX,correct,JAX @ BAL,BAL,JAX,10.0,33.0,-8.5,False,True,False,True
+9,DET @ MIA,-7.5,-7.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: MIA (frozen underdog),MIA,incorrect,DET @ MIA,MIA,DET,9.0,19.0,-7.5,False,False,False,True
+9,CIN @ ATL,-3.5,-3.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: ATL (frozen underdog),ATL,incorrect,CIN @ ATL,ATL,CIN,17.0,34.0,-3.5,False,False,False,True
+9,DAL @ IND,-6.5,-5.5,odds,1.0,IND,0.53,SLIGHT,,IND,correct,DAL @ IND,IND,DAL,23.0,27.0,-6.5,True,True,True,False
+9,NYJ @ KC,10.5,10.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: NYJ (frozen underdog),NYJ,incorrect,NYJ @ KC,KC,NYJ,35.0,12.0,10.5,True,False,False,True
+9,CLE @ NO,3.5,3.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: CLE (frozen underdog),CLE,correct,CLE @ NO,NO,CLE,23.0,22.0,3.5,False,True,True,False
+9,NYG @ PHI,-3.5,-3.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: PHI (frozen underdog),PHI,incorrect,NYG @ PHI,PHI,NYG,11.0,19.0,-3.5,False,False,False,True
+9,LAR @ WSH,-5.5,-4.5,odds,1.0,WAS,0.53,SLIGHT,,WSH,incorrect,LAR @ WSH,WSH,LAR,13.0,20.0,-5.5,False,False,False,True
+9,DEN @ CAR,-3.5,-2.5,odds,1.0,CAR,0.53,SLIGHT,,CAR,incorrect,DEN @ CAR,CAR,DEN,21.0,26.0,-3.5,False,False,False,True
+9,HOU @ LAC,-5.5,-4.5,odds,1.0,LAC,0.53,SLIGHT,,LAC,incorrect,HOU @ LAC,LAC,HOU,22.0,44.0,-5.5,False,False,False,True
+9,GB @ NE,3.5,3.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: GB (frozen underdog),GB,correct,GB @ NE,NE,GB,27.0,45.0,3.5,False,True,True,False
+9,LV @ SF,9.5,10.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: LV (frozen underdog),SF,correct,LV @ SF,SF,LV,38.0,17.0,9.5,True,True,False,True
+9,ARI @ SEA,11.5,8.5,odds,3.0,ARI,0.59,LEAN,,SEA,correct,ARI @ SEA,SEA,ARI,17.0,3.0,11.5,True,False,False,True
+9,TB @ CHI,5.5,6.0,odds,0.5,NO EDGE,0.5,NO EDGE,if no read: TB (frozen underdog),CHI,incorrect,TB @ CHI,CHI,TB,27.0,24.0,5.5,False,False,True,False
+9,BUF @ MIN,-2.5,-3.5,odds,1.0,BUF,0.53,SLIGHT,,BUF,correct,BUF @ MIN,MIN,BUF,6.0,23.0,-2.5,False,True,False,True

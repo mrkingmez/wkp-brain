@@ -1,0 +1,21 @@
+week,game,card_line_home,market_home,mkt_source,gap,side,p,tier,tiebreak,logged_pick,result
+7,NE @ CHI,2.5,3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: NE (frozen underdog),CHI,correct
+7,PIT @ NO,-2.5,-3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: NO (frozen underdog),PIT,correct
+7,SF @ ATL,-4.5,-2.5,closing,2.0,ATL,0.56,LEAN,,ATL,correct
+7,CLE @ TEN,-1.5,-1.5,closing,0.0,NO EDGE,0.5,NO EDGE,if no read: TEN (frozen underdog),TEN,incorrect
+7,IND @ MIN,5.5,6.5,closing,1.0,MIN,0.53,SLIGHT,,MIN,correct
+7,TB @ CAR,3.5,3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: TB (frozen underdog),TB,correct
+7,CIN @ BAL,3.5,-3.0,closing,6.5,CIN,0.689,LEAN,,CIN,correct
+7,NYG @ HOU,9.5,10.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: NYG (frozen underdog),HOU,incorrect
+7,MIA @ NYJ,4.5,3.5,closing,1.0,MIA,0.53,SLIGHT,,NYJ,incorrect
+7,DEN @ ARI,-4.5,-4.5,closing,0.0,NO EDGE,0.5,NO EDGE,if no read: ARI (frozen underdog),ARI,incorrect
+7,GB @ DET,2.5,3.5,closing,1.0,DET,0.53,SLIGHT,,DET,correct
+7,LAR @ LV,-5.5,-3.5,closing,2.0,LV,0.56,LEAN,,LV,incorrect
+7,KC @ SEA,2.5,3.0,closing,0.5,NO EDGE,0.5,NO EDGE,if no read: KC (frozen underdog),KC,incorrect
+7,DAL @ PHI,-4.5,-4.5,closing,0.0,NO EDGE,0.5,NO EDGE,if no read: PHI (frozen underdog),PHI,incorrect
+7,ARMY @ TLSA,1.5,,,,NO EDGE (no market data),0.5,NO EDGE,,ARMY,correct
+7,LSU @ AUB,-8.5,,,,NO EDGE (no market data),0.5,NO EDGE,,AUB,incorrect
+7,KSU @ ASU,-3.5,,,,NO EDGE (no market data),0.5,NO EDGE,,ASU,correct
+7,SDSU @ CSU,-2.5,,,,NO EDGE (no market data),0.5,NO EDGE,,CSU,correct
+7,GAST @ ARST,-2.5,,,,NO EDGE (no market data),0.5,NO EDGE,,ARST,correct
+7,HOU @ UTAH,6.5,,,,NO EDGE (no market data),0.5,NO EDGE,,HOU,incorrect
