@@ -2103,3 +2103,16 @@ unnoticed if nobody closes the loop.
 >>>>>>> 37dfd4287346b00969eff0371462f0f72599bf2d
 
 **Status:** OPEN
+
+## [INFRA-2026-11-11-01] 2026-11-11 | Nightly rollup | This file has unresolved git conflict markers committed and pushed to origin, right where this entry is
+
+**Context:** Merge commit `4451a07` (Tue 2026-11-10 21:06:52 -0500, "Merge branch 'main' of https://github.com/mrkingmez/wkp-brain") brought in a remote version of this file alongside a local version that had three new FF-* entries, and the merge was committed with literal `<<<<<<< HEAD` / `=======` / `>>>>>>> 37dfd4287346b00969eff0371462f0f72599bf2d` markers still in place (lines 2047, 2069, 2103 as of this commit) instead of being resolved. Two more commits landed on top of it afterward (`73697ec`, `7bf6602`), and the branch is pushed and in sync with `origin/main` at `7bf6602` — so the broken file is live on GitHub main right now, not just local. No content was lost: both sides' entries (FF-2026-11-10-01/02/03 on the HEAD side, WWD-2026-11-08-01 on the incoming side) are still fully present and readable, just wrapped in the raw markers. I did not touch this (my write access tonight is append-only, and fixing it means editing/deleting existing lines, which I'm not authorized to do), and a same-night read-only audit (`reports/fable-scan/2026-11-10-fable-scan.md`, item 2 in its "10 open loops" table) flagged the general risk of this merge happening sloppily before the merge itself was made, which is exactly what happened.
+
+**Options:**
+A. Any session with normal edit access opens `logs/DECISIONS.md`, deletes the three marker lines (`<<<<<<<`, `=======`, `>>>>>>>`) while keeping both sets of entries, and commits the cleanup with a plain message. Lowest-risk fix, nothing is lost either way.
+B. Leave it — the file still happens to parse today (grep for `Status:** OPEN` still found all 70 real entries), but any future merge touching this file, or any tool that parses on the `## [ID]` header pattern strictly, is one bad diff away from real corruption or from silently dropping one side.
+C. Add a repo rule (CLAUDE.md or a pre-commit hook) that refuses a commit containing `<<<<<<<` anywhere in the tree, so this can't happen again unnoticed.
+
+**Recommendation:** A now, and C as a cheap standing guard — this file is Zac's single queue for every agent's escalations, so it should never be the thing that's broken.
+
+**Status:** OPEN
