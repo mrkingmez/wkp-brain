@@ -1,1 +1,2 @@
-- [Ian Griffin trailer client](project_ian_griffin_trailer.md) — retired CSM author; crest, cover license, Ford marks, secret fence; script passes 1, 2 done 2026-11-04, pass 3 and pass 4 2026-11-05 (leaks sit in 05/00/06, not 01)
+- [Ian Griffin trailer client](project_ian_griffin_trailer.md) — retired CSM author; crest, cover license, Ford marks, secret fence; script passes 1, 2 done 2026-11-04, pass 3 and pass 4 2026-11-05 (leaks sit in 05/00/06, not 01); v2 draft-01 and draft-02 read 2026-11-10
+- [Name search limits](reference_name_search_limits.md) — USPTO/GA SOS not live-queryable here, use mirrors, PROOFED is a known conflict (2026-11-10)

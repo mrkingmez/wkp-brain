@@ -235,3 +235,49 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 **Deliverables:** `D:\WKP\WWD\reports\Godzilla-Minus-Zero-Prep.md`; `D:\WKP Reports\Review Prep\2026-11-05 - Godzilla Minus Zero Prep.docx`.
 **Review gate:** devils-advocate not run (standard review format).
 **Flags for Zac:** CALENDAR NEEDED (record Fri 11-06 evening, release TBD). NEEDS BROWSER PULL: 17 stills via IMDb/TMDb in Chrome (main session). Metacritic 75 only from Wikipedia.
+
+### 2026-11-07 13:10 - Godzilla Minus Zero review pipeline (PARTIAL, blocked on export)
+**Status:** BLOCKED (package text DONE, audio and shorts not run)
+**Trigger:** Zac: run the full wwd-review-pipeline on the final cut and its Premiere transcript.
+**Classification:** Review
+**Elapsed:** about 25 min
+**Actions taken:** ffprobe of the "final cut" mp4: 2776.1 s (46:16), vs transcript last block 00:28:28:29. Sampled frames and a GPU Whisper pass on the mp4: countdown at start, intro clip chatter, pre-show banter, review begins about 12:30, spoiler-card take after the sign-off. It is the raw StreamYard recording, not the edit. STOPPED audio extraction and Shorts (cutting from it would be wrong). Built package text from the 640-line transcript: 2 titles, description with QUICK ANSWERS, 13 chapters (draft timeline), tags 490 chars (python-verified), 5 hashtags, 3 cards from video-inventory, end screen, post sequence with 3 time options per day type (release date unknown, Sun 11/8 and Mon 11/9 given), FB and IG posts, 6 Shorts candidate windows (not cut), flags, caption fix list. Public copy: marketing-director routed copywriting (title, description) and social-media (FB, IG), edited by marketing-director, rules applied by hand. wwd-rights ran on the stills (note in WWD\reports\Godzilla-Minus-Zero-Rights-Note.md).
+**Deliverables:** `D:\WKP\WWD\reports\Godzilla-Minus-Zero-Upload-Package.md`; `D:\WKP Reports\WWD Upload Packages\Godzilla Minus Zero Upload Package\2026-11-07 - Godzilla Minus Zero Upload Package.docx`; copies (.md, .docx) in the movie folder; copy draft `WWD\reports\Godzilla-Minus-Zero-Copy-Draft.md`; rights note. No AUDIO mp3, no shorts.
+**Review gate:** devils-advocate not run (standard format). Formal no-ai-slop skill pass not run (rules applied by hand, grep: zero em dashes). Owed by main session.
+**Flags for Zac:** NEED THE EDIT EXPORT from Premiere (then audio, 5 Shorts, chapter re-time, card and rights check on render). Rights FAILS in USE: 10 named PNGs have no recorded source, wig clip-art picture is not from the film, dr noda pc1 and bw pc 2 are identical, three extra key-art images, a collage, (c) Toho mark on 4.png and 7.png. Release date, title pick, EP119 card swap. Garbles and on-air budget guess held out of copy. Ratings said on air, not used anywhere.
+
+### 2026-11-07 13:10 - [wwd-vfx] Godzilla Minus Zero: logo squash Firefly prompt + sound pack
+**Status:** DONE (nothing generated, nothing spent)
+**Trigger:** Zac via wwd-director, two deliverables for the Godzilla Minus Zero review
+**Actions taken:** Read burning logo clip (frames viewed) and Clayface docs, built black start frame, wrote 3 prompts + avoid list. Copied 47 owned sounds (incl. one derived 3-step clip) to P:\WWD Kit\Godzilla\Sounds\, ffprobed. Wrote sting sound plan and whole-video cue sheet from the cut transcript. Script make_godzilla_sound_pack.py.
+**Deliverables:** D:\WKP\WWD\reports\Godzilla-Logo-Squash-Firefly-Prompt.md and Godzilla-Sound-Cue-Sheet.md; docx in D:\WKP Reports\Godzilla Logo Squash Prompt\ and \Godzilla Sound Pack\; P:\WWD Kit\Godzilla\
+**Flags for Zac:** Prompts untested (credits). The mp4 in the folder is the raw 46:16 recording with a countdown, not the cut; timings come from the transcript, many marked est. No owned kaiju roar, ground crack, rimshot or mech sound (prompts written).
+
+### 2026-11-07 13:40 - Godzilla Minus Zero Edit Run Sheet
+**Status:** DONE (pictures and sting PARTIAL)
+**Trigger:** Zac: build the Edit Run Sheet for Godzilla Minus Zero, per current format, with sting, sound cues, rights fixes, missing pictures, clips, Next Up note, garbles.
+**Classification:** Review
+**Elapsed:** about 40 min
+**Actions taken:** Read STANDARDS, transcript, rights note, sound cue sheet, tags, Street Fighter and Clayface sheets. Viewed all 21 USE pictures and 9 loose files (contact sheets). Hash check (dup_check2): 1 of 21 flagged (Noda pair). IMDb 202 empty and TMDb 403 again from this agent, no browser, so the fresh pull was NOT done. wwd-clip-scout: 1 clip verified and written (dogfight, IMAX trailer, 1.1 s, muted), Ghidorah, gravity beam and first attack not offered. I drafted the sheet myself (wwd-run-sheet bench not used for the build), lint PASS: 41 stops, 18 pictures all different, 1 clip, 2 Cross Dissolves, 11 of 19 stops designed, longest hold 6 s. wwd-rights and wwd-sound launched for check lines.
+**Deliverables:** `D:\WKP\WWD\reports\Godzilla-Minus-Zero-Edit-Run-Sheet.md`; `D:\WKP Reports\Asset Placement Run Sheets\2026-11-07 - Godzilla Minus Zero Edit Run Sheet.docx`; copy `USE\timeline-placements.md`; `USE\tags.md` extended; `Video Clips\GMZ_dogfight_IMAXtrailer_kw0YhiqOPFg_f1309-1335_muted.mp4`.
+**Review gate:** devils-advocate not run (standard format, no new idea).
+**Flags for Zac:** NEEDS CHROME PULL (missing pictures list in the sheet, main session). Next Up card: ask what comes next. Sting clip not made (Firefly credits). OK the scratch trailer download in D:\WKP\scratch\gmz\ (official channel, not pre-approved). wig dropped, 7 pictures unsourced and flagged. Claims: emperor, ships and Russia, budget guess. Sound cue sheet times differ from the transcript at spoiler card, sticker and rating foot (sheet follows the transcript).
+
+### 2026-11-07 23:30 - Godzilla Minus Zero FINAL CUT pipeline
+**Status:** DONE
+**Trigger:** Zac via Jarvis: final cut landed, finish the review pipeline, new titles, copy from Copy-Final.
+**Classification:** Review
+**Elapsed:** several hours
+**Actions taken:** 2-speaker transcript (402 lines, labels inferred); 13 chapters re-timed; AUDIO mp3 (1733.6 s); 5 finished Shorts + covers (loudnorm, QC frames, check_clip); rights frame check, Noda duplicate claim corrected; package rebuilt from marketing-director copy (no-ai-slop passed), zero em dashes.
+**Deliverables:** WWD\reports\Godzilla-Minus-Zero-Upload-Package.md; movie folder package md/docx, AUDIO, shorts\ incl. Shorts Captions md/docx; D:\WKP Reports\WWD Upload Packages\Godzilla Minus Zero Upload Package\2026-11-07 - ... (final cut).docx (dated file locked by Word).
+**Review gate:** devils-advocate not run (standard format).
+**Flags for Zac:** loudness -24.7 LUFS / TP -2.4 not fixed (shorts about -15); about 18 s trailer footage, 5.1 s clip over 4 s rule; AI logo sting disclosure; Dr. Dune / Charles Magneto audio in Short 3; release date, title pick, card links, EP119 card swap; 10 unsourced pictures.
+
+### 2026-11-09 18:05 - Vision Quest ep 7 review intake, edit-prep (raw-recording run sheet)
+**Status:** DONE (edit-prep side), end card OPEN
+**Trigger:** Zac edits Vision Quest ep 7 tonight, run the review intake, transcript plus Edit Run Sheet.
+**Classification:** Review
+**Elapsed:** about 15 min (transcription 3.5 min on GPU)
+**Actions taken:** wwd-video-transcriber on the raw mp4 (42:55, --num-speakers 2, 739 lines); speakers mapped to the cams by loudness (Speaker 1 = KingZ, Speaker 2 = Winter Wolf), relabeled; run sheet v1 built by hand (9 stops, 2 pictures, 3 CAM, 1 sticker, 1 gag sound, logo slot, end card OPEN); lint PASS (stops 9, 0 cross dissolves, 1 of 2 picture stops designed). wwd-run-sheet bench not launched (I built it directly from the spec). devils-advocate not run (internal run sheet).
+**Deliverables:** transcript `L:\Winter Wolfs Den review show\Raw Footage\Vision Quest\EP 7\Vision Quest Review EP 7_transcript.txt`; `D:\WKP\WWD\reports\Vision-Quest-7-Edit-Run-Sheet.md`; `D:\WKP Reports\Asset Placement Run Sheets\2026-11-09 - Vision Quest EP 7 Edit Run Sheet.docx`; TASKS.md row added.
+**Flags for Zac:** all sheet times are RAW-recording times; cams are about 7 s shorter than the main file, sync first; end card for episode 8 does not exist (NEEDS WWD-VFX: "NEXT UP / VISION QUEST / EPISODE 8 // FINALE"); only 2 of 5 USE pictures verified (1, 2, 3 untagged, left out); main session to pull more pictures per the gap list in the sheet; raw 00:00 to 00:24 movie-quote montage unclear; opener assumed already in Zac's cut; no calendar or posting actions taken.

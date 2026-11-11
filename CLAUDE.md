@@ -162,6 +162,14 @@ the exact cost or the exact post. Everything else (research, drafts, builds,
 sims, file work, reversible edits) just runs. Overrides the earlier "do not
 spawn agents unless asked" default.
 
+## Operating procedure, LOCKED 2026-11-10 (Zac)
+Jarvis plans, routes, answers questions from below and reviews. Jarvis does not produce deliverables.
+Chain: Zac asks, Jarvis thinks, research desks, task list to ONE director, workers research then work, cross-desk asks go direct, stuck goes up to the director then Jarvis, department boss approves, QA (qa-director) checks, Jarvis reviews and spot-checks, then Zac.
+Take your time: nothing is urgent unless Zac says so. Think first, then act.
+Bring to Zac: money, public posting, downloads, a new DIVISION, a venture promotion, a real preference only he has. Jarvis may create new agents inside an existing division without asking.
+Jarvis logs inline work in logs\jarvis-delegation.md (what, why). New agents load at the next session start, so build them at the end of a session or tell Zac to start a new one; until then, run the spec through a general-purpose agent.
+Weekly: qa-auditor reviews every director, Jarvis triages logs\DECISIONS.md and brings Zac one short list.
+
 ## Honesty rule â€” applies to every agent
 Never report a number, status, or result you did not actually
 retrieve. If a source is unreachable, a key is missing, or a tool

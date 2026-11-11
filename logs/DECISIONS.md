@@ -2043,3 +2043,27 @@ D. Keep Ian as narrator and drop the East Texas idea.
 **Recommendation:** B or C. It costs nothing, fits the timing check, and keeps Ian's say on the one voice that carries his book. A is fine only with his written OK. Ask Ian in the same message as the question list (item 16 in 03 Section B(e)) once Zac decides.
 
 **Status:** OPEN
+
+## [FF-2026-11-10-01] 2026-11-10 | Fantasy Football (personal) | Bad closing line in the tracker: JAX at BAL Week 9 shows +3.0, the Odds API market was home -10
+
+**Context:** predictions.csv closing_line for game 401873037 is +3.0 (nflverse schedules), but the Thursday Odds API median in pickem_probs_2026_wk9.csv is home -10.0 and JAX won 33-10. A 13 point gap looks like a data error, not movement. Grading uses the frozen line so the 20 graded rows are unaffected; only gap diagnostics are. The other BAL game (Week 7 CIN at BAL, card +3.5, closing -3.0) may be real or may be a sign problem, not checked.
+**Options:** A. Leave predictions.csv alone (graded rows are locked) and have the labeling code prefer the Thursday Odds API market, falling back to nflverse only when none exists (already done in `fixes-2026-11-10\pickem_labels.py`). B. Also add a corrected closing column. C. Ignore.
+**Recommendation:** A. No graded row is changed.
+
+**Status:** OPEN
+
+## [FF-2026-11-10-02] 2026-11-10 | Fantasy Football (personal) | Notes from the Thursday 11-05 lunch with the friend who plays FanDuel are not in any file
+
+**Context:** TASKS.md says Zac was to be brought into the friend's system at lunch Thu 2026-11-05. No notes exist in TASKS.md, logs, memory or Fantasy-Football\LOG.md (searched). The DFS fix used only public research and in-house nflverse tests. Nothing about his method (stacks, ownership, slate choice, sizing) is reflected.
+**Options:** A. Zac gives the key points by voice or text and the DFS report is amended. B. Skip.
+**Recommendation:** A, five minutes, it is the only real-money-tested source in the whole DFS work.
+
+**Status:** OPEN
+
+## [FF-2026-11-10-03] 2026-11-10 | Fantasy Football (personal) | The two Week 9 DFS lineups do not reconcile: what was actually entered?
+
+**Context:** Zac reported 107 and 149. The saved csv lineups score 121.4 and 143.2 on realized DraftKings points before the DST (nflverse stats, DK scoring, my formula). Lineup 2 fits (about 6 for the DST). Lineup 1 cannot (the DST would be about -14). Most likely the entered lineup differed from the csv, or a player was swapped or did not play.
+**Options:** A. Zac sends the entered lineup. B. Leave the DFS comparison with one reconciled lineup only.
+**Recommendation:** A.
+
+**Status:** OPEN

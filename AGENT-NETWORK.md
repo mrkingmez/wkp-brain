@@ -16,16 +16,21 @@ Directors work with each other directly. Jarvis is not a switchboard.
 | Tracking | tracking-director | (none) | Every numbers pull and its schedule. Saves to `data\`. |
 | Animation (3D) | animation-director | Blender: blender-asset-scout, blender-builder-props, blender-builder-characters. Unreal: ue-scene-builder, ue-asset-integrator | **Every 3D model, character, creature, prop, rig, scene, turntable and render, built in Blender and Unreal.** Added 2026-10-31 (Zac). Answers to WKP, takes jobs from any director, gates the work against `ANIMATION\STANDARDS.md`, free and licensed assets only. |
 | Studio (video production, Post-Production house) | studio-director | (none yet; appoints one point man per project from existing agents) | **Every video production project that is not a WWD review**: client jobs, book trailers, promo video, short films, What If and other channel episodes once the channel starts. Added 2026-11-04 (Zac). Head of Studio. Picks the point man, orders the departments in sequence, gates the package, delivers it. wkp-channel-director owns what a channel covers, the studio owns producing it. |
+| QA (quality assurance) | qa-director | qa-documents, qa-claims, qa-media, qa-auditor | Independent check on every finished product before it reaches Jarvis and Zac. Reads and reports, never edits. Added 2026-11-10 (Zac). |
+| Software and Product | software-director | software-architect, software-engineer, data-sourcing, software-tester | Every app, tool, script suite, website or automation job, research to tested delivery. Free tools first. Added 2026-11-10 (Zac). |
 | Hostile review | devils-advocate | (none) | **Every new idea and every new product, any venture, before it is built.** Every short idea (Shorts, Reels, short films). **WWD: anything that might be off brand** (verdict says whether it is off brand and whether it is still a good idea). Any hostile read before something ships. |
 
 ## Venture directors
 
-wwd-director, wkp-channel-director (new 2026-10-29), etsy-director, ebay-director, fiction-director, kdp-director, paws-director, fantasy-football-director.
+wwd-director, wkp-channel-director (new 2026-10-29), etsy-director, ebay-director, fiction-director, kdp-director, paws-director, fantasy-football-director, trading-director (new 2026-11-10, Zac asked; Investing stays DORMANT until Zac says otherwise; paper only, never places orders).
+
+Venture directors send finished packages to `qa-director` before returning them to Jarvis (added 2026-11-10).
 
 ## Approval and send-backs (locked 2026-10-29)
 
 1. A director orders work from a department.
 2. The **department boss approves** it against the standard before it leaves the department.
+2a. **QA checks it.** `qa-director` returns PASS, PASS WITH NOTES or FAIL (added 2026-11-10). A FAIL is a send-back and counts toward the one send-back rule.
 3. The **ordering director accepts** it or sends it back with a specific reason.
 4. Either one may send it back **once**. After the **second send-back** the job stops and goes to Zac with both versions and what is wrong with each. No endless loops.
 5. Each boss keeps a short checklist of Zac's standard in its own file. "Not good enough" has to point at a line on that checklist or at a concrete problem.

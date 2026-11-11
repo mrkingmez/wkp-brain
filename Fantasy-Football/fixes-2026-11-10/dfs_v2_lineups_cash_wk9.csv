@@ -1,0 +1,91 @@
+lineup,pos,name,team,salary,avg
+1,QB,Malik Willis,MIA,5100,18.3
+1,RB,Jahmyr Gibbs,DET,10000,27.6
+1,RB,Chuba Hubbard,CAR,6500,16.1
+1,WR,Puka Nacua,LA,8800,22.7
+1,WR,Luther Burden III,CHI,6000,14.7
+1,WR,Chris Godwin Jr.,TB,4500,10.1
+1,TE,Dalton Schultz,HOU,3200,9.1
+1,TE,Greg Dulcich,MIA,3100,8.9
+1,DST,Vikings,MIN,2700,11.1
+2,QB,Bo Nix,DEN,5400,17.8
+2,RB,Jahmyr Gibbs,DET,10000,27.6
+2,RB,Rachaad White,WAS,5100,12.4
+2,WR,Puka Nacua,LA,8800,22.7
+2,WR,Luther Burden III,CHI,6000,14.7
+2,WR,Courtland Sutton,DEN,4400,9.4
+2,TE,T.J. Hockenson,MIN,4300,11.3
+2,TE,Dalton Schultz,HOU,3200,9.1
+2,DST,Vikings,MIN,2700,11.1
+3,QB,Malik Willis,MIA,5100,18.3
+3,RB,Jahmyr Gibbs,DET,10000,27.6
+3,RB,Tyler Allgeier,ARI,5400,12.5
+3,WR,Puka Nacua,LA,8800,22.7
+3,WR,Keenan Allen,IND,4900,11.2
+3,WR,Malik Washington,MIA,4700,10.8
+3,TE,Harold Fannin Jr.,CLE,4700,11.8
+3,TE,Dalton Schultz,HOU,3200,9.1
+3,DST,Vikings,MIN,2700,11.1
+4,QB,Malik Willis,MIA,5100,18.3
+4,RB,Jahmyr Gibbs,DET,10000,27.6
+4,RB,Kyren Williams,LA,7600,17.6
+4,WR,Luther Burden III,CHI,6000,14.7
+4,WR,Malik Washington,MIA,4700,10.8
+4,WR,Courtland Sutton,DEN,4400,9.4
+4,TE,Colston Loveland,CHI,4800,12.3
+4,TE,Harold Fannin Jr.,CLE,4700,11.8
+4,DST,Vikings,MIN,2700,11.1
+5,QB,C.J. Stroud,HOU,5900,18.6
+5,RB,Jahmyr Gibbs,DET,10000,27.6
+5,RB,Ashton Jeanty,LV,5900,14.4
+5,WR,Puka Nacua,LA,8800,22.7
+5,WR,Luther Burden III,CHI,6000,14.7
+5,WR,Kalif Raymond,CHI,3800,6.5
+5,TE,Tyler Higbee,LA,3700,8.3
+5,TE,Dalton Schultz,HOU,3200,9.1
+5,DST,Vikings,MIN,2700,11.1
+6,QB,Kirk Cousins,LV,5300,17.9
+6,RB,Jahmyr Gibbs,DET,10000,27.6
+6,RB,Chuba Hubbard,CAR,6500,16.1
+6,WR,Puka Nacua,LA,8800,22.7
+6,WR,Jaylen Waddle,DEN,5700,11.9
+6,WR,Rome Odunze,CHI,4300,8.6
+6,TE,Michael Mayer,LV,3400,8.4
+6,TE,Dalton Schultz,HOU,3200,9.1
+6,DST,Vikings,MIN,2700,11.1
+7,QB,Malik Willis,MIA,5100,18.3
+7,RB,Jahmyr Gibbs,DET,10000,27.6
+7,RB,Rachaad White,WAS,5100,12.4
+7,WR,Puka Nacua,LA,8800,22.7
+7,WR,Justin Jefferson,MIN,6800,14.1
+7,WR,Ted Hurst III,TB,3500,6.1
+7,TE,Harold Fannin Jr.,CLE,4700,11.8
+7,TE,Greg Dulcich,MIA,3100,8.9
+7,DST,Vikings,MIN,2700,11.1
+8,QB,Malik Willis,MIA,5100,18.3
+8,RB,Jahmyr Gibbs,DET,10000,27.6
+8,RB,Rhamondre Stevenson,NE,6100,13.7
+8,WR,Luther Burden III,CHI,6000,14.7
+8,WR,Keenan Allen,IND,4900,11.2
+8,WR,Rome Odunze,CHI,4300,8.6
+8,TE,Trey McBride,ARI,7700,18.6
+8,TE,Greg Dulcich,MIA,3100,8.9
+8,DST,Vikings,MIN,2700,11.1
+9,QB,C.J. Stroud,HOU,5900,18.6
+9,RB,Jahmyr Gibbs,DET,10000,27.6
+9,RB,Rhamondre Stevenson,NE,6100,13.7
+9,WR,Puka Nacua,LA,8800,22.7
+9,WR,Ryan Flournoy,DAL,4800,10.0
+9,WR,Caleb Douglas,MIA,4200,8.6
+9,TE,T.J. Hockenson,MIN,4300,11.3
+9,TE,Dalton Schultz,HOU,3200,9.1
+9,DST,Vikings,MIN,2700,11.1
+10,QB,Malik Willis,MIA,5100,18.3
+10,RB,Jahmyr Gibbs,DET,10000,27.6
+10,RB,Chuba Hubbard,CAR,6500,16.1
+10,RB,Ashton Jeanty,LV,5900,14.4
+10,WR,Luther Burden III,CHI,6000,14.7
+10,WR,Ryan Flournoy,DAL,4800,10.0
+10,WR,Caleb Douglas,MIA,4200,8.6
+10,TE,T.J. Hockenson,MIN,4300,11.3
+10,DST,Vikings,MIN,2700,11.1

@@ -1,0 +1,13 @@
+grp,n,proxy,actual,ratio,zero
+Doubtful / DNP,36.0,12.44,0.0,0.0,1.0
+Doubtful / FP,6.0,13.46,0.0,0.0,1.0
+Doubtful / LP,12.0,10.92,0.0,0.0,1.0
+Doubtful / NA,1.0,6.82,0.0,0.0,1.0
+Out / DNP,332.0,12.01,0.0,0.0,1.0
+Out / FP,3.0,8.83,0.0,0.0,1.0
+Out / LP,40.0,13.22,0.0,0.0,1.0
+Questionable / DNP,57.0,12.66,5.47,0.43,0.53
+Questionable / FP,71.0,11.7,8.44,0.72,0.24
+Questionable / LP,293.0,12.42,7.25,0.58,0.38
+Questionable / NA,6.0,12.33,6.15,0.5,0.33
+healthy (no report),5694.0,12.83,12.1,0.94,0.04

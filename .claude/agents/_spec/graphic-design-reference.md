@@ -18,3 +18,10 @@ To record after the first batch comes back: which views held consistent, whether
 Source: Post-Production\reports\ian-trailer\04-stills-prompts.md. Nothing generated yet, all untested.
 Design rules adopted: one style sentence prefix; ball-free plates plus one real photo of the prop ball composited in After Effects as the safest way to keep one ball; blank ruled forms for logs, scrawl added in edit because image models invent fake letters; subject kept in the center third so 9:16, 16:9 and 4:5 all survive; no make or model named for the car.
 To record after the first batch: did Firefly hold the ball, did it refuse a child's hand, did blank forms stay blank, did the Style Reference carry grain.
+
+## 2026-11-10: Side business brand kits (photo restore "Same Face", transcription "Listen Twice")
+Source: research\ventures\brand-kits\ (scripts\brand_kit.py, firefly-prompts.md, clearance-name-flags.md). Logos, covers and layouts built in Pillow with Poppins (OFL), nothing generated in Firefly, so Firefly prompts are untested.
+Adopted: marks that say the idea without faces or sector cliches (photo corners plus diagonal split; waveform turning into text lines); warm brown palette for photo, cool navy and teal for transcription so the two never look related; text always added in code, never by the model; Firefly asked only for faceless backgrounds with an empty left third; before/after panels contain-fit, never crop, SAMPLE files carry a visible placeholder label.
+Specs: Meta cover 851x315 and profile 320x320 OBSERVED on Meta's help page. Fiverr gig 1280x769 NOT observed directly (help pages gave HTTP 403), search summary only.
+Name flags: clearance ran web checks only; USPTO and Georgia SOS searches NOT AVAILABLE. Same Face and Listen Twice CLEAR, Proofed Word CONFLICT.
+To record after Zac generates: whether the backgrounds held an empty left third, which Firefly image model he used, and whether Fiverr accepted AI-made gig images.

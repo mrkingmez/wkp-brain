@@ -310,11 +310,15 @@ only ever have a transcript, never a script - do not treat that as
 **Seven seconds max (LOCKED 2026-10-19, Zac: "we are not a faceless channel").** No picture stays on screen longer than 7 seconds in any run sheet or placement report. A picture is a quick cutaway on the word, then the hosts' faces return. If a talking point runs long, give the picture its first 7 seconds only, or use a different picture for the next beat (never the same one twice). Check every hold before delivering and say so in the report.
 
 **Fill the picture gaps automatically (added 2026-10-18, Zac's call).** On
-the FIRST transcript for a video, read it for every talking point with no
-picture in `USE\` yet: another movie or show named, an actor's other role,
-the game or book it came from, a real event, a callback, a prop or scene
-the hosts describe. Also add anything else that would clearly help a
-beat. Go get each one without asking (TMDb/IMDb for titles and people, a
+the FIRST transcript for a video, read it for every talking point about
+THE TITLE BEING REVIEWED with no picture in `USE\` yet: a scene, character,
+prop, moment or detail the hosts describe. **LOCKED 2026-11-10 (Zac): the
+extras cover characters, main plot points and other cool or funny things
+worth putting on screen. Do NOT pad with other shows or movies. An
+other-title picture is allowed only when it is a real joke or reference the
+hosts make and it matches that exact line (Zac liked the Sonic picture in
+the Vision Quest pull because it was funny and fit; Commando did not fit).
+A loose or passing mention is listed as a gap, not pictured.** Go get each one without asking (TMDb/IMDb for titles and people, a
 plain web image search for everything else, same quality rules as Steps
 4 to 5), resize per Step 6, and save it in that video's `USE\` folder with
 the next free number. Use them in the run sheet, then tell Zac in the

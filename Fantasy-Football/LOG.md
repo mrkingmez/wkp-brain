@@ -11,6 +11,8 @@ in D:\WKP\logs\.
 Format per entry:
 `YYYY-MM-DD | WEEK N | action | result/pointer`
 
+2026-11-10 | WEEK 9 aftermath | Fixes 1-5 (calibration, injury rule, pick'em labels, Thursday screenshot workflow, DFS study): `reports\Fixes-2026-11-10-Report.md`, `reports\Fixes-2026-11-10-DFS.md`, code in `fixes-2026-11-10\`, docx in D:\WKP Reports\Fantasy Fixes\.
+
 2026-10-29 | WEEK 8 | Card | Zac's submitted card (Sanders_Week 8 Entry.xls) logged as assisted_card AND control_card (Zac: it is his P pick too; copied to Sanders_Week 8P Entry.xls). 20/20 picks, logged 7:37 PM ET, before kickoff. Differs from model on 3: DET -3.5 (model MIN), LV +1.5 (model NYJ), TB -2.5 (model ATL). Tiebreaker SEA 24 CHI 21 (45), same as model.
 
 2026-10-28 | WEEK 8 | Card Mode + Lineup Mode (sims). Fresh Odds API, MFL, merged injuries, nflverse through Week 7. ff-simulator 10k, ff-play-sim 1,500, blend QB .9/K .5/RB .15/WR .2/TE .2, IDP old sim. Lineup about 156 (win about 65% vs 0007); saved MFL lineup 126 (Sanker NO bye). Card: 20 ATS picks, edges Colorado +2.5 (flip, KSU QB injuries), JAX -7.5 (2.5), WAS -3.5 (2.0); tiebreaker SEA 24 CHI 21 (45); no EC (out of EC2). All 20 logged to predictions.csv pre-kickoff. Week 7 graded: model 11/20 ATS, 9/14 SU. full_week.py got a --roster flag and now reads the merged injury file. | D:\Documents\Pickups 2026\Week 8\Pickups 2026 - Week 8.docx; D:\WKP Reports\Fantasy Simulator Report\Week 8 Full Simulation\2026-10-28 - Week 8 Full Simulation.docx

@@ -30,3 +30,13 @@ Verified 2026-11-05 (Wrench Turner pass 4, originality-pass4.md):
 - Slow plainspoken heartland/Southern male voice over working hands = Ram Trucks "So God Made a Farmer" (Super Bowl XLVII 2013, Paul Harvey 1978 FFA speech recording over stills). Texas voice plus car also = McConaughey Lincoln ads (2014 on, not searched). Watch item for any drawl narrator over a car.
 - Southern Gothic drawl-as-dread = True Detective S1. Only a risk with menace imagery; daylight garage is clean.
 - Sam Elliott Ram narration: search did NOT confirm, do not cite.
+
+Verified 2026-11-10 (Wrench Turner v2 draft-01, writing-room\ian-trailer-v2\originality-01.md):
+- Searched for an ad pairing a veteran, a father's old car in a garage, and a "can be fixed" tagline: no specific ad found, only news restoration stories. Do not cite a car ad for that beat, tone-only.
+- Triangle-folded flag reads as a funeral to US viewers. In a living-father story it falsely implies a death. Flag it on meaning, not just as stock.
+- A 15s cutdown that drops the father becomes a generic veteran-PSA shape (helmet, duffel, slogan card).
+
+Verified 2026-11-10 (Wrench Turner v2 draft-02, originality-02.md):
+- Empty chair with a man's jacket on it = absence/memorial image (Missing Man Table). Like the folded flag, it falsely implies a living father died. Fixing one death signal often swaps in a quieter one; check the replacement object.
+- "Coming home is the hard part": searched, no owner, but it is the thesis line of reintegration docs (Searching for Home, When I Came Home 2006). Commonplace, not a finding.
+- Place names joined by a drawn line: clean as text; on a map it becomes the Raiders of the Lost Ark travel-map device.

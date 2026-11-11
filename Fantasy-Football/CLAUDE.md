@@ -178,6 +178,37 @@ week's .docx and the card .xls files (blank, Sanders, Sanders P). All of
 Claude's .md working copies live in `Claude MD Files\` there, never loose in
 the root or in a week folder. `dashboard\config.py` reads the week folders.
 
+## Weekly workflow fixes (locked 2026-11-10, Zac approved after a bad Week 9)
+Details, numbers and code: `Fantasy-Football\fixes-2026-11-10\` and `reports\Fixes-2026-11-10-Report.md`. Every rule below says what evidence
+supports it; the samples are small, so none is sold as a proven edge.
+
+**1. Thursday saved-lineup input (screenshot).** Every Thursday Zac sends a screenshot of his SAVED MFL lineup. The Thursday rerun
+(lineup and report) starts from that screenshot, not from the last known sheet. Order: (a) run
+`fixes-2026-11-10\read_saved_lineup.py <week>` first; it reads the saved starters through the read-only API (works from Tuesday, confirmed 2026-11-10;
+NOT yet confirmed for a lineup edited Thursday morning); (b) if the screenshot and the API disagree, trust the screenshot and say so;
+(c) if no screenshot has arrived by the time the Thursday rerun is due, run it anyway from the API read, label the report
+"SAVED LINEUP NOT CONFIRMED BY SCREENSHOT", list the swaps as "from the API read, last updated <time>", and ask for the screenshot in the first line of the output.
+Never assume the lineup on MFL is the lineup in the report (Week 9: the report's 17 and the saved 17 differed at TE and DL).
+
+**2. Pick'em labels.** Every game on the card gets: gap in points between the frozen card line and the current market, a probability
+(`pickem_labels.py`: Phi(gap/13.2)), and one of LEAN (gap 2+, about 56 to 60 percent), SLIGHT (gap 1 to 1.9, about 53 to 55 percent) or NO EDGE, COIN FLIP
+(gap under 1). A pick for a NO EDGE game is shown as "no edge", with Zac's own read in its own column; if Zac has no read, the long-run tiebreak is the frozen
+underdog (51.6 percent on half-point lines 2016 to 2025, n=1,358, not statistically separable from 50). College games have no market data in the tracker: always
+NO EDGE unless a gap is supplied. Never present an ATS pick as conviction; always show "expected right out of 20" (about 10.3, SD 2.2). Week 6 to 9 NFL
+games: 38 of 57 were NO EDGE.
+
+**3. Ranges, not points.** Every lineup projection is quoted with its range: one sigma 30 points on a 17-man lineup (80 percent range projection plus or minus 38),
+and head-to-head win probability = Phi((mine minus theirs) / 42). Run `fixes-2026-11-10\run_weekly_calibration.py <last completed week>` every Tuesday after MNF; it re-scores
+every projection against MFL results and appends to `calibration_log.csv`. Do NOT shrink sim means: weeks 6 to 9 show the means are unbiased (see report).
+
+**4. Injury rule for Thursday-lock slates.** Questionable and did NOT practice Wednesday: multiply the blend by 0.55 (exact-timing check: actual was 0.48 of
+projection, zero rate 67 percent, n=57). Questionable and limited or full on Wednesday: no change. Starting QB Out or Doubtful: multiply that team's RB/WR/TE
+by 0.86 (3 seasons n=113: 0.80 vs 0.93 healthy). In practice a Wednesday-DNP Questionable starts only when his blend is at least 1.8x the healthy bench alternative. Always list the player's Wednesday practice status
+in the status line.
+
+**5. Escalate data errors.** nflverse closing_line for JAX at BAL Week 9 is +3.0 against an Odds API market of home -10: treat nflverse closing lines as suspect when they
+differ from the Thursday pull by 5+ points (grading uses the frozen line, so grades are unaffected).
+
 ## Escalation
 Flag to Zac, don't guess, on: any player tagged questionable/doubtful
 with no clear source, any line move that looks like a data error rather

@@ -39,12 +39,15 @@ def load_salaries(site, path):
     d = pd.read_csv(path)
     if site == "dk":
         d = d.rename(columns={"Name": "name", "Position": "pos", "Salary": "salary", "TeamAbbrev": "team",
-                              "AvgPointsPerGame": "avg"})
-        d = d[["name", "pos", "salary", "team", "avg"]]
+                              "AvgPointsPerGame": "avg", "Status": "status"})
+        d = d[["name", "pos", "salary", "team", "avg", "status"]]
     else:
         d["name"] = (d["First Name"].fillna("") + " " + d["Last Name"].fillna("")).str.strip()
         d = d.rename(columns={"Position": "pos", "Salary": "salary", "Team": "team", "FPPG": "avg"})
         d = d[["name", "pos", "salary", "team", "avg"]]
+    if "status" not in d:
+        d["status"] = ""
+    d["status"] = d.status.fillna("").astype(str).str.upper()
     d["team"] = d.team.replace(TEAM_FIX)
     d["pos"] = d.pos.replace({"D": "DST", "DEF": "DST"})
     d["key"] = d.name.map(norm)
@@ -61,6 +64,9 @@ def main():
     ap.add_argument("--season", type=int, default=2026)
     ap.add_argument("--week", type=int, default=6)
     ap.add_argument("--tries", type=int, default=300)
+    ap.add_argument("--exclude", default="", help="comma list of player names to drop")
+    ap.add_argument("--force", default="", help="comma list of player names that must be in every lineup")
+    ap.add_argument("--all-qbs", action="store_true", help="keep backup QBs (default keeps only the highest-salary QB per team)")
     a = ap.parse_args()
 
     z = np.load(OUT / f"dfs_draws_{a.season}_wk{a.week}.npz")
@@ -69,6 +75,16 @@ def main():
     sim["key"] = sim.name.map(norm)
     sim["row"] = range(len(sim))
     sal = load_salaries(a.site, a.csv)
+    gone = sal.status.isin(["OUT", "IR", "O"])
+    if gone.any():
+        print("dropped OUT/IR:", ", ".join(sal[gone & (sal.salary >= 4000)].name.head(15)))
+    sal = sal[~gone]
+    if not a.all_qbs:
+        top = sal[sal.pos == "QB"].groupby("team").salary.transform("max")
+        sal = sal[(sal.pos != "QB") | (sal.salary == top.reindex(sal.index))]
+    ex = {norm(x) for x in a.exclude.split(",") if x.strip()}
+    sal = sal[~sal.key.isin(ex)]
+    forced = {norm(x) for x in a.force.split(",") if x.strip()}
     m = sal.merge(sim[["key", "team", "row"]], on=["key", "team"], how="left")
     miss = m[m.row.isna() & m.pos.isin(["QB", "RB", "WR", "TE"]) & (m.salary >= 4000)]
     m = m[m.row.notna() | (m.pos == "DST")].reset_index(drop=True)
@@ -79,6 +95,10 @@ def main():
         X[i] = D[int(r.row)] if pd.notna(r.row) else float(r.avg if pd.notna(r.avg) else 6.0)
     mean, p90 = X.mean(1), np.percentile(X, 90, axis=1)
     pos = m.pos.values
+    lb = m.key.isin(forced).values.astype(float)
+    missing = forced - set(m.key)
+    if missing:
+        raise SystemExit(f"forced player not found in the pool: {missing}")
     sa = m.salary.values.astype(float)
     print(f"{n} players matched to the simulation; {len(miss)} skill players over $4,000 had no match (no simulated game or bye): "
           + ", ".join(miss.name.head(12)))
@@ -99,7 +119,7 @@ def main():
                 row = np.zeros(n); row[list(prev)] = 1
                 A.append(row); lo.append(0); hi.append(len(prev) - 1)
         res = milp(-score, constraints=LinearConstraint(np.array(A), lo, hi), integrality=np.ones(n),
-                   bounds=Bounds(0, 1))
+                   bounds=Bounds(lb, 1))
         if not res.success:
             return None
         return tuple(np.where(res.x > 0.5)[0])
