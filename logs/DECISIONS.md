@@ -2044,6 +2044,7 @@ D. Keep Ian as narrator and drop the East Texas idea.
 
 **Status:** OPEN
 
+<<<<<<< HEAD
 ## [FF-2026-11-10-01] 2026-11-10 | Fantasy Football (personal) | Bad closing line in the tracker: JAX at BAL Week 9 shows +3.0, the Odds API market was home -10
 
 **Context:** predictions.csv closing_line for game 401873037 is +3.0 (nflverse schedules), but the Thursday Odds API median in pickem_probs_2026_wk9.csv is home -10.0 and JAX won 33-10. A 13 point gap looks like a data error, not movement. Grading uses the frozen line so the 20 graded rows are unaffected; only gap diagnostics are. The other BAL game (Week 7 CIN at BAL, card +3.5, closing -3.0) may be real or may be a sign problem, not checked.
@@ -2065,5 +2066,40 @@ D. Keep Ian as narrator and drop the East Texas idea.
 **Context:** Zac reported 107 and 149. The saved csv lineups score 121.4 and 143.2 on realized DraftKings points before the DST (nflverse stats, DK scoring, my formula). Lineup 2 fits (about 6 for the DST). Lineup 1 cannot (the DST would be about -14). Most likely the entered lineup differed from the csv, or a player was swapped or did not play.
 **Options:** A. Zac sends the entered lineup. B. Leave the DFS comparison with one reconciled lineup only.
 **Recommendation:** A.
+=======
+---
+
+## [WWD-2026-11-08-01] 2026-11-08 | WWD | "Together" (2025) review recording deadline (Sat 10/31) passed 8 days ago, row still "Not Started," never logged
+
+**Blocked:** TASKS.md's WWD table carries "'Together' (2025) review
+recording" with deadline "Sat 2026-10-31 7:00 PM ET" (punted there
+2026-10-15 from Sun 10/18, Zac's call) and status still "Not Started."
+Today is 2026-11-08 — 8 days past that date. No commit in the repo
+since this row was last touched mentions "Together," a recording
+session, or any reason the date moved again. The row's own note flagged
+it as Halloween night and asked to "confirm Matt is free" — nothing
+records whether that was confirmed, whether the recording happened off
+-repo and just never got marked Done, or whether it slipped a third
+time with no new date set. This fits the same stale-deadline pattern
+already flagged repeatedly in this file for other WWD rows (e.g.
+WWD-2026-10-03-01, WWD-2026-10-17-01), but this specific item had not
+yet been cross-logged.
+
+**Options:**
+A. Assume it happened off-repo and TASKS.md simply wasn't updated
+   afterward (same explanation used for several prior WWD rows that
+   turned out to have shipped quietly) — low cost, risks masking a
+   real third slip if it didn't happen.
+B. Flag for Zac/wwd-director to confirm directly whether the Halloween-
+   night recording with Matt happened, and either mark the row Done or
+   set a real new date.
+C. Leave it — a single stale row isn't worth a queue entry on its own.
+
+**Recommendation:** B — same reasoning as the other stale-deadline
+entries in this file: nothing here distinguishes "quietly done" from
+"quietly dropped" without someone who was actually in the room
+confirming it, and this is the kind of row that keeps slipping
+unnoticed if nobody closes the loop.
+>>>>>>> 37dfd4287346b00969eff0371462f0f72599bf2d
 
 **Status:** OPEN
