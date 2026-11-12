@@ -13,8 +13,8 @@ Saved before a computer restart so nothing from today's eBay talk is lost. "WKP 
 ## Where things stand
 **Done**
 - Scaffold built 2026-10-10 (agents, skills, data, tools, tests). Pricing tests pass.
-- Ranked shortlist of five product types (assumed costs): `D:\WKP Reports\eBay Margin Picks\2026-10-19 - eBay Margin Picks.docx`.
-- Privacy policy text written: `D:\WKP\ebay-dropship\reports\privacy-policy-text.md` and `D:\WKP Reports\eBay Privacy Policy\2026-10-19 - eBay Privacy Policy.docx`. You pasted it into a Google Doc and set it to "Anyone with the link, Viewer."
+- Ranked shortlist of five product types (assumed costs): `D:\WKP Reports\eBay\2026-10-19 - eBay Margin Picks.docx`.
+- Privacy policy text written: `D:\WKP\ebay-dropship\reports\privacy-policy-text.md` and `D:\WKP Reports\eBay\2026-10-19 - eBay Privacy Policy.docx`. You pasted it into a Google Doc and set it to "Anyone with the link, Viewer."
 - eBay Developer redirect form filled in at developer.ebay.com, User Tokens, Production: display title "WKP Commerce," privacy policy URL, accepted URL and declined URL all pointing at that Google Doc.
 - Token swap script written: `D:\WKP\ebay-dropship\tools\get_refresh_token.py`. It reads the keys from the environment, asks for your RuName and the address eBay sends you to, and saves the refresh token as a user environment variable without printing it.
 - Calendar reminder set for today 6:30 PM (popups at 6:20 and 6:30). TASKS.md row added.
@@ -102,7 +102,7 @@ Phases: 0 scaffold and sandbox (now), 1 gated live (goal: 25 clean orders), 2 pa
 - Start a new session in `D:\WKP`, say "pick up the eBay token step," and I will read this file, `TASKS.md` and the ebay-dropship folder.
 
 ## Where everything is
-- This file: `D:\WKP\ebay-dropship\reports\eBay-Status-2026-10-19.md` (Word copy in `D:\WKP Reports\eBay Status\`)
+- This file: `D:\WKP\ebay-dropship\reports\eBay-Status-2026-10-19.md` (Word copy in `D:\WKP Reports\eBay\`)
 - Venture rules and decisions: `D:\WKP\ebay-dropship\CLAUDE.md`, `decisions-queue.md`
 - Token script: `D:\WKP\ebay-dropship\tools\get_refresh_token.py`
 - Margin picks: `D:\WKP\ebay-dropship\reports\best-margin-picks-2026-10-19.md`

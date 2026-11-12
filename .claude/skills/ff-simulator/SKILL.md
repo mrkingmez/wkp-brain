@@ -32,7 +32,7 @@ Personal use, decision support only. Never submits anything.
 
 ## Where the report goes (LOCKED 2026-10-29, Zac)
 Every simulation report and its DFS projections csv go in a per-week folder inside the one simulator folder:
-`D:\WKP Reports\Fantasy Simulator Report\Week <N> Full Simulation\<YYYY-MM-DD> - Week <N> Full Simulation.docx`
+`D:\WKP Reports\Fantasy Football\Week <N> Full Simulation\<YYYY-MM-DD> - Week <N> Full Simulation.docx`
 (csv same folder, same date prefix). Never a week folder loose at the top of `D:\WKP Reports\`. The .md stays in `Fantasy-Football\reports\`.
 Other fantasy deliverables keep their own type folders: `Fantasy Pickups\`, `Fantasy Lineup\`, `Fantasy Trades\`.
 

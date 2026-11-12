@@ -25,3 +25,9 @@ Adopted: marks that say the idea without faces or sector cliches (photo corners 
 Specs: Meta cover 851x315 and profile 320x320 OBSERVED on Meta's help page. Fiverr gig 1280x769 NOT observed directly (help pages gave HTTP 403), search summary only.
 Name flags: clearance ran web checks only; USPTO and Georgia SOS searches NOT AVAILABLE. Same Face and Listen Twice CLEAR, Proofed Word CONFLICT.
 To record after Zac generates: whether the backgrounds held an empty left third, which Firefly image model he used, and whether Fiverr accepted AI-made gig images.
+
+
+## 2026-11-10 Veterans Day miss (Zac)
+- v1 brief (empty boots on a porch) and v2 (porch light, boots, mug) were rejected: no flag, no people, and the porch had nothing to do with Veterans Day.
+- Zac: "never leave out the flag." Correct brief: American flag always in, every generation and branch shown together (WWII, Korea, Vietnam, Gulf, Iraq/Afghanistan, newly enlisted), warm and proud. House rules are in graphic-design.md under HOUSE RULES FOR PATRIOTIC AND MILITARY ART.
+- Code-drawn cards (navy/gold, geometric wolf) were also rejected as amateur. Use image-model art, code for text only.

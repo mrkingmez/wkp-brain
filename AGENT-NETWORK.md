@@ -22,7 +22,7 @@ Directors work with each other directly. Jarvis is not a switchboard.
 
 ## Venture directors
 
-wwd-director, wkp-channel-director (new 2026-10-29), etsy-director, ebay-director, fiction-director, kdp-director, paws-director, fantasy-football-director, trading-director (new 2026-11-10, Zac asked; Investing stays DORMANT until Zac says otherwise; paper only, never places orders).
+wwd-director, wkp-channel-director (new 2026-10-29), etsy-director, fiction-director, kdp-director, paws-director, fantasy-football-director, trading-director (new 2026-11-10, Zac asked; Investing stays DORMANT until Zac says otherwise; paper only, never places orders).
 
 Venture directors send finished packages to `qa-director` before returning them to Jarvis (added 2026-11-10).
 
@@ -55,7 +55,7 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 - wwd-vfx, wwd-color, wwd-run-sheet, wwd-pictures, wwd-clip-scout, wwd-sound, wwd-rights: through wwd-director. Standards page: `WWD\STANDARDS.md`. wwd-vfx may talk to graphic-design directly.
 - blender-asset-scout, blender-builder-props, blender-builder-characters, ue-scene-builder, ue-asset-integrator: through animation-director only. The two Blender builders and the two Unreal benches may talk to their sibling directly. Standards page: `ANIMATION\STANDARDS.md`. animation-director may call graphic-design, fact-research and devils-advocate like any director.
 - Point men on a studio project (video-ugc, animation-director, or another agent the studio-director appoints): through studio-director for that project. They may still call shared departments directly under the limits below.
-- ebay-researcher: through ebay-director, which sets its schedule.
+- ebay-researcher: moved 2026-11-11 (Zac) under studio-director, Post-Production research desk. The eBay venture and ebay-director are archived.
 - shattered-empire-director and military-scifi-director: canon-keeper benches under fiction-director.
 
 ## Called by Jarvis only

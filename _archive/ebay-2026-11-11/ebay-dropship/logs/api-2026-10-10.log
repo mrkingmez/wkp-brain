@@ -1,0 +1,10 @@
+09:30:12 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+09:30:12 DRY-RUN {"module": "inventory", "method": "PUT", "path": "/sell/inventory/v1/inventory_item/TEST-SKU", "body": {"availability": {"shipToLocationAvailability": {"quantity": 1}}}}
+09:30:12 DRY-RUN {"module": "orders", "method": "POST", "path": "/sell/fulfillment/v1/order/TEST-ORDER/shipping_fulfillment", "body": {"lineItems": [{"lineItemId": "TEST-LINE", "quantity": 1}], "shippedDate": "2026-10-10T13:30:12.000Z", "shippingCarrierCode": "USPS", "trackingNumber": "9400TEST"}}
+09:30:12 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+09:30:12 SKIP {"module": "browse", "reason": "no token (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set)"}
+09:30:18 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+09:30:18 DRY-RUN {"module": "inventory", "method": "PUT", "path": "/sell/inventory/v1/inventory_item/TEST-SKU", "body": {"availability": {"shipToLocationAvailability": {"quantity": 1}}}}
+09:30:18 DRY-RUN {"module": "orders", "method": "POST", "path": "/sell/fulfillment/v1/order/TEST-ORDER/shipping_fulfillment", "body": {"lineItems": [{"lineItemId": "TEST-LINE", "quantity": 1}], "shippedDate": "2026-10-10T13:30:18.000Z", "shippingCarrierCode": "USPS", "trackingNumber": "9400TEST"}}
+09:30:18 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+09:30:18 SKIP {"module": "browse", "reason": "no token (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set)"}

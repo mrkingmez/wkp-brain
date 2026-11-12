@@ -1,0 +1,15 @@
+12:47:47 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+12:47:47 DRY-RUN {"module": "inventory", "method": "PUT", "path": "/sell/inventory/v1/inventory_item/TEST-SKU", "body": {"availability": {"shipToLocationAvailability": {"quantity": 1}}}}
+12:47:47 DRY-RUN {"module": "orders", "method": "POST", "path": "/sell/fulfillment/v1/order/TEST-ORDER/shipping_fulfillment", "body": {"lineItems": [{"lineItemId": "TEST-LINE", "quantity": 1}], "shippedDate": "2026-10-11T16:47:47.000Z", "shippingCarrierCode": "USPS", "trackingNumber": "9400TEST"}}
+12:47:47 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+12:47:47 SKIP {"module": "browse", "reason": "no token (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set)"}
+14:07:19 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+14:07:19 DRY-RUN {"module": "inventory", "method": "PUT", "path": "/sell/inventory/v1/inventory_item/TEST-SKU", "body": {"availability": {"shipToLocationAvailability": {"quantity": 1}}}}
+14:07:19 DRY-RUN {"module": "orders", "method": "POST", "path": "/sell/fulfillment/v1/order/TEST-ORDER/shipping_fulfillment", "body": {"lineItems": [{"lineItemId": "TEST-LINE", "quantity": 1}], "shippedDate": "2026-10-11T18:07:19.000Z", "shippingCarrierCode": "USPS", "trackingNumber": "9400TEST"}}
+14:07:19 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+14:07:19 SKIP {"module": "browse", "reason": "no token (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set)"}
+14:10:07 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+14:10:07 DRY-RUN {"module": "inventory", "method": "PUT", "path": "/sell/inventory/v1/inventory_item/TEST-SKU", "body": {"availability": {"shipToLocationAvailability": {"quantity": 1}}}}
+14:10:07 DRY-RUN {"module": "orders", "method": "POST", "path": "/sell/fulfillment/v1/order/TEST-ORDER/shipping_fulfillment", "body": {"lineItems": [{"lineItemId": "TEST-LINE", "quantity": 1}], "shippedDate": "2026-10-11T18:10:07.000Z", "shippingCarrierCode": "USPS", "trackingNumber": "9400TEST"}}
+14:10:07 SKIP {"module": "auth", "reason": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set"}
+14:10:07 SKIP {"module": "browse", "reason": "no token (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set)"}

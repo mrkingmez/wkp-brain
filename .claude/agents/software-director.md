@@ -12,7 +12,7 @@ You run software and product jobs from idea to a tested, documented product Zac 
 
 ## Read first
 1. `D:\WKP\CLAUDE.md`, `D:\WKP\AGENT-NETWORK.md`, `D:\WKP\LOCAL-PATHS.md`, `D:\WKP\ME.md`.
-2. `D:\WKP\spark-capture\` if the job touches the Android app, `D:\WKP\ebay-dropship\` if it touches eBay, `D:\WKP\Fantasy-Football\` for fantasy tools.
+2. `D:\WKP\spark-capture\` if the job touches the Android app, `D:\WKP\Fantasy-Football\` for fantasy tools.
 3. The task list Jarvis sent you.
 
 ## Pipeline (do not skip steps)

@@ -74,7 +74,7 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 **Trigger:** Run wwd-show-prep on Matt's EP117 list, topics 2, 3, 4, 6, 7, 9
 **Classification:** Other (show prep, single skill)
 **Actions taken:** Read list image; 3 research desks via general-purpose agents (Doomsday/Narnia, Clayface/DC villains, anthology/Crawlers). Crawlers verified as a real 2026 film (Oct 16, Roadside/Saban). Docx built from md.
-**Deliverables:** D:\WKP Reports\FrostCast Show Prep\2026-10-21 - FrostCast EP117 Show Prep.docx and Part 2; md at D:\WKP\WWD\reports\FrostCast-EP117-Show-Prep.md and -Part-2.md
+**Deliverables:** D:\WKP Reports\FrostCast\2026-10-21 - FrostCast EP117 Show Prep.docx and Part 2; md at D:\WKP\WWD\reports\FrostCast-EP117-Show-Prep.md and -Part-2.md
 **Flags for Zac:** Topics 1 (read as Wonder Woman/Arjona), 5 (Alcock Instagram deletions plus Gunn Threads reply; no Gunn Instagram post found), 8 (assumed Narnia) are guesses, Zac to confirm. Check Clayface critic aggregate before recording (opens Oct 23). Many trade originals paywalled, items marked via. Joker 2019 gross, Narnia and Doomsday budgets unverified. Devils-advocate review not run (time).
 **Docx note:** original EP117 docx files were open in Word (locked), so the all-9-topics versions were saved as '... v2.docx' beside them.
 
@@ -250,7 +250,7 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 **Status:** DONE (nothing generated, nothing spent)
 **Trigger:** Zac via wwd-director, two deliverables for the Godzilla Minus Zero review
 **Actions taken:** Read burning logo clip (frames viewed) and Clayface docs, built black start frame, wrote 3 prompts + avoid list. Copied 47 owned sounds (incl. one derived 3-step clip) to P:\WWD Kit\Godzilla\Sounds\, ffprobed. Wrote sting sound plan and whole-video cue sheet from the cut transcript. Script make_godzilla_sound_pack.py.
-**Deliverables:** D:\WKP\WWD\reports\Godzilla-Logo-Squash-Firefly-Prompt.md and Godzilla-Sound-Cue-Sheet.md; docx in D:\WKP Reports\Godzilla Logo Squash Prompt\ and \Godzilla Sound Pack\; P:\WWD Kit\Godzilla\
+**Deliverables:** D:\WKP\WWD\reports\Godzilla-Logo-Squash-Firefly-Prompt.md and Godzilla-Sound-Cue-Sheet.md; docx in D:\WKP Reports\Godzilla Minus Zero\ and \Godzilla Sound Pack\; P:\WWD Kit\Godzilla\
 **Flags for Zac:** Prompts untested (credits). The mp4 in the folder is the raw 46:16 recording with a countdown, not the cut; timings come from the transcript, many marked est. No owned kaiju roar, ground crack, rimshot or mech sound (prompts written).
 
 ### 2026-11-07 13:40 - Godzilla Minus Zero Edit Run Sheet
@@ -282,3 +282,25 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 **Deliverables:** transcript `L:\Winter Wolfs Den review show\Raw Footage\Vision Quest\EP 7\Vision Quest Review EP 7_transcript.txt`; `D:\WKP\WWD\reports\Vision-Quest-7-Edit-Run-Sheet.md`; `D:\WKP Reports\Asset Placement Run Sheets\2026-11-09 - Vision Quest EP 7 Edit Run Sheet.docx`; TASKS.md row added.
 **Flags for Zac:** all sheet times are RAW-recording times; cams are about 7 s shorter than the main file, sync first; end card for episode 8 does not exist (NEEDS WWD-VFX: "NEXT UP / VISION QUEST / EPISODE 8 // FINALE"); only 2 of 5 USE pictures verified (1, 2, 3 untagged, left out); main session to pull more pictures per the gap list in the sheet; raw 00:00 to 00:24 movie-quote montage unclear; opener assumed already in Zac's cut; no calendar or posting actions taken.
 2026-11-10 wwd-rights: Vision Quest EP7 final export rights note written, WWD/reports/Vision-Quest-7-Rights-Note.md. Verdict FLAG.
+
+### 2026-11-10 21:45 - Vision Quest EP 7 review pipeline (final cut)
+**Status:** DONE (fixes owed by Zac before upload)
+**Trigger:** Jarvis: run wwd-review-pipeline on VQ EP 7, final cut is in
+**Classification:** Review
+**Elapsed:** about 35 min
+**Actions taken:** Copied final export (23:55.5, 1920x1080 30fps H.264/AAC, size stable) into EP 7 folder as `... FINAL export.mp4`, original left in Godzilla Minus Zero folder. Loudness measured: -22.8 LUFS, TP -1.7 dBFS (about 8.8 dB under -14); a quick loudnorm fix hit +1.1 dBFS true peak, deleted, not offered. Transcribed the export (GPU, 2 speakers, 270 lines, Guest/Unknown labels). Frame scan of export: opener 0-11.5 s, 2.7 s Disney+ footage with unblurred bug 11.5-14.2 s, logo sting to 18.4 s, 8 pictures, 3 solo cams, Spoiler Alert and Wolfie stickers, Thanks card at 23:47.8 (no Next Up ep 8 card). Audio mp3 built (1435.53 s). 5 finished shorts built (21.9/24.3/48.2/49.7/48.3 s), edge-checked, frames viewed, clip 5 captions cleaned. Copy via marketing-director (copywriting + social-media desks); script-room NOT run as separate pass (stated in package). wwd-rights note written (verdict FLAG). Package md + docx built, 14 chapters, tags 464 chars verified, 5 hashtags, 3 cards from video-inventory, post sequence with 3 time options each.
+**Deliverables:** D:\WKP\WWD\reports\Vision-Quest-7-Upload-Package.md; D:\WKP Reports\WWD Upload Packages\Vision Quest 7 Upload Package\2026-11-10 - Vision Quest 7 Upload Package.docx; copies in L:\Winter Wolfs Den review show\Raw Footage\Vision Quest\EP 7\; AUDIO\Vision Quest Ep 7.mp3; shorts\clip1-5 (+covers); transcript; D:\WKP\WWD\reports\Vision-Quest-7-Rights-Note.md
+**Flags for Zac:** Disney+ bug block 11.5-14.2 s (cut or blur); 3 unsourced pictures (in shadow client, the client, Rocketman); CC BY-SA Spader credit; AI disclosure; unnamed music/sound sources; song mention 4:48-4:58; stale lines 22:36-22:43 and EP120 line; loudness -22.8 LUFS; no ep 8 end card (NEEDS WWD-VFX); video-inventory not refreshed (VidIQ credits 0 until 11-11). TASKS row and 3 reminder dates for shorts (Thu 11/12 to Mon 11/16) NEEDED by main session (director has no scheduler). Devils-advocate pass not run (fast turn, same format as VQ 5-6).
+
+### 2026-11-10 22:30 - FrostCast EP120 show prep
+**Status:** DONE
+**Trigger:** Jarvis: build EP120 show prep from Matt's list (recording Wed 11/11 9 PM, Veterans Day)
+**Classification:** FrostCast show prep (no transcript step)
+**Elapsed:** about 15 min
+**Actions taken:** Read topic photo (7 topics, clear). Three fact-research agents with live web research (Gunn/Wolverine/Driver; Blade Runner 2099/monsters/Nolan; Jimmy/Veterans Day). Prep built in wwd-show-prep format with OBSERVED/SECONDARY/NOT AVAILABLE labels. Zero em dashes checked by grep. devils-advocate not run (internal prep sheet).
+**Deliverables:** D:\WKP\WWD\reports\FrostCast-EP120-Show-Prep.md; D:\WKP Reports\FrostCast\2026-11-10 - FrostCast EP120 Show Prep.docx
+**Flags for Zac:** Gunn news broke 11/9, recheck the morning of the show; Jimmy RT score not retrievable, Odyssey current gross unpinned; Variety/THR/CBC text blocked, headlines only. Not committed or pushed. Not sent to Matt.
+
+2026-11-10 EP120 prep revised in place: Matt out, panel is KingZ and Oracle. Angles rebalanced, confirm lists redone, docx regenerated. Not committed.
+
+2026-11-10 EP120 prep revised in place: Matt out, panel is KingZ and Oracle. Angles rebalanced, confirm lists redone, docx regenerated. Not committed.

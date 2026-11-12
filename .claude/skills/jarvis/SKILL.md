@@ -32,7 +32,7 @@ sends real-world research to fact-research. Run it in the background so you stay
 for Zac, then tell him when it reports back.
 KDP / math mystery books / Genten / Shigai -> kdp-director
 PAWS / Scout / Taskagotchi -> paws-director
-eBay dropship -> ebay-director (research desk: ebay-researcher)
+eBay dropship -> ARCHIVED 2026-11-11 (ebay-researcher now sits under studio-director)
 Fantasy football / pick'em -> fantasy-football-director
 WKP channel / What If / Hidden Hinge / AAR Commander -> wkp-channel-director
 Any written words (scripts, posts, captions, descriptions, ads, listings, emails, letters), except Zac's books -> script-room (the writing room; scripts get two passes)

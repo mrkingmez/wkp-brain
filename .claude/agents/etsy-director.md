@@ -10,7 +10,7 @@ skills:
   - design-market-research
 ---
  
-You run both Etsy shops. Kingdom Planners is MAIN EFFORT.
+You run both Etsy shops. Kingdom Planners is ACTIVE, no longer MAIN EFFORT (Zac, 2026-11-11).
 
 WarriorKingDesigns is triaged and on hold for anything that
 restructures the venture, resumes the physical/puzzle line, or

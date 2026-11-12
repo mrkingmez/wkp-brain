@@ -9,5 +9,5 @@ Ran (all in Fantasy-Football\fixes-2026-11-10\, read-only against MFL and nflver
 - dfs_study.py, dfs_optimize_v2.py, dfs_eval_w9.py, dk_realized.py: correlations QB-WR1 +0.44 etc; proxy stacking backtest 35 slates; real slate n=1 (wk9): v2 lineups 98-108 vs Zac 121/143 (no DST). Refreshed nflverse stats_player 2026 cache (week 8 to 9) via nfl_data.py (shared cache, intended use).
 - Delegated: market-research (research\fantasy\2026-11-10-dfs-methods-market-research.md), fact-research (...-dfs-facts-brief.md). Both mostly SECONDARY.
 Found: nflverse closing_line JAX@BAL wk9 = +3.0 vs market home -10 (FF-2026-11-10-01). Lunch notes not in any file (FF-2026-11-10-02). Zac's wk9 DFS lineup 1 (107) does not reconcile with the csv (FF-2026-11-10-03). Week 9 report's 17 differed from the saved lineup at TE and DL.
-Changed: Fantasy-Football\CLAUDE.md (new section "Weekly workflow fixes"). New: reports\Fixes-2026-11-10-Report.md and -DFS.md, docx in D:\WKP Reports\Fantasy Fixes\.
+Changed: Fantasy-Football\CLAUDE.md (new section "Weekly workflow fixes"). New: reports\Fixes-2026-11-10-Report.md and -DFS.md, docx in D:\WKP Reports\Fantasy Football\.
 Not done: no git commit or push, nothing in DraftKings/FanDuel/MFL.

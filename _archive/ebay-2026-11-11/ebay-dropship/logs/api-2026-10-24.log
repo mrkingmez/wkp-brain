@@ -1,0 +1,6 @@
+15:57:18 auth {"result": "token obtained", "grant": "refresh"}
+15:57:18 DRY-RUN {"module": "inventory", "method": "PUT", "path": "/sell/inventory/v1/inventory_item/TEST-SKU", "body": {"availability": {"shipToLocationAvailability": {"quantity": 1}}}}
+15:57:18 DRY-RUN {"module": "orders", "method": "POST", "path": "/sell/fulfillment/v1/order/TEST-ORDER/shipping_fulfillment", "body": {"lineItems": [{"lineItemId": "TEST-LINE", "quantity": 1}], "shippedDate": "2026-10-24T19:57:18.000Z", "shippingCarrierCode": "USPS", "trackingNumber": "9400TEST"}}
+15:57:19 auth {"result": "token obtained", "grant": "client"}
+15:57:36 auth {"result": "token obtained", "grant": "refresh"}
+15:57:37 auth {"result": "token obtained", "grant": "refresh"}

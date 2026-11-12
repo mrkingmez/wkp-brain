@@ -84,9 +84,10 @@ see Kingdom-Planners\CLAUDE.md Products table.)
 ## Spark Capture
 Spark Capture (Android app scaffold): D:\WKP\spark-capture\
 
-## eBay Dropship (working name WKP Commerce)
-eBay dropship venture = D:\WKP\ebay-dropship
-eBay API keys: environment variables only (EBAY_ENV, EBAY_CLIENT_ID, EBAY_CLIENT_SECRET, EBAY_REFRESH_TOKEN), never in files
+## eBay (ARCHIVED 2026-11-11, Zac: declutter)
+eBay archive = D:\WKP\_archive\ebay-2026-11-11  (folder, build file, director, 4 skills, old task rows)
+eBay reports archive = D:\WKP Reports\_Archive\eBay
+(User env vars EBAY_* are still set on this machine. Zac decides whether to remove them.)
 
 ## PAWS
 PAWS venture = D:\WKP\PAWS

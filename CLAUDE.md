@@ -25,7 +25,6 @@ Top-level routing intelligence for all WKP ventures. Any session that starts her
 | Cyber Security (day job practice) | ./Cyber-Security/ | 9 |
 | Investing challenge | ./Investing/ | 10 |
 | KDP Publishing (math mystery + puzzle books) | ./KDP/ | active-unscheduled (was 1b, downgraded 1 SEP 26) |
-| eBay Dropship (working name WKP Commerce) | ./ebay-dropship/ | Phase 0, scaffold built, awaiting Zac setup items (not yet placed in a venture-status category, Zac decides) |
 
 ## Standing rules
 
@@ -201,7 +200,7 @@ decisions) are exempt.
 2. **Scripts.** Every script goes through the writing room TWICE (two full passes: structure, dialogue, originality, clearance as `script-room` runs them) before it is called final. Log both passes.
 3. **Teasers, not verdicts.** Promo copy leads with the hook and never hands over the answer the video exists to give.
 If an agent in the chain is unavailable, say so in the deliverable. Do not skip a gate silently or hand-write around it.
-**Wired 2026-10-20:** every venture director (wwd, etsy, kdp, paws, ebay, fiction, shattered-empire, military-scifi, fantasy-football) has a "Writing room and marketing" section and the Agent tool. Scripts go to `script-room`, public copy to `marketing-director`. A director that cannot reach one returns NEEDS WRITING ROOM or NEEDS MARKETING and the main session (Jarvis) runs it.
+**Wired 2026-10-20:** every venture director (wwd, etsy, kdp, paws, fiction, shattered-empire, military-scifi, fantasy-football) has a "Writing room and marketing" section and the Agent tool. Scripts go to `script-room`, public copy to `marketing-director`. A director that cannot reach one returns NEEDS WRITING ROOM or NEEDS MARKETING and the main session (Jarvis) runs it.
 **Org change, LOCKED 2026-10-29 (Zac):** the writing room (script-room) writes every word for every department except Zac's books (books only on request). Copywriting moved into the writing room. Marketing, graphic design, music, fact research, market research, and the new tracking department are shared and open to every director. Every new idea and every new product in any venture, every short idea (Shorts, Reels, short films), and anything that might be off brand for WWD goes to devils-advocate first. For WWD off-brand ideas it rules on both "off brand?" and "still a good idea?". Every music request goes to the `music` agent. Department boss approves, the ordering director accepts, at most one send-back each, then it goes to Zac. WWD thumbnails are Matt's. Full map: `AGENT-NETWORK.md`.
 **New shared department, LOCKED 2026-10-31 (Zac): Animation (3D, Blender and Unreal).** Boss `animation-director`, answers to WKP, open to every director. Blender section: `blender-asset-scout`, `blender-builder-props`, `blender-builder-characters`. Unreal section: `ue-scene-builder`, `ue-asset-integrator`. It checks every deliverable against `ANIMATION\STANDARDS.md` before it goes back to the requesting director. Free assets and free tools only, anything that costs money or credits goes to Zac first with the exact price. Folder `ANIMATION\`. Map in `AGENT-NETWORK.md`.
 **New shared department, LOCKED 2026-11-04 (Zac): Studio (Post-Production house).** Boss `studio-director`, the Head of Studio. Takes every video production job that is not a WWD review (client work, book trailers, promo video, short films, What If and other channel episodes once the channel starts), appoints ONE point man agent per project, orders the shared departments in sequence, gates the package, delivers a .docx production package. Marketing-director and video-ugc are the default point men for promo video. wkp-channel-director still owns what the channel covers. It does not promote any venture. Spec `.claudegents\studio-director.md`, loads at the next session start, Jarvis covers until then. Map in `AGENT-NETWORK.md`.
@@ -242,8 +241,8 @@ Maximum 3 new listings per day, maximum 8 per week, across both
 shops combined. Anti-suspension rule, not a preference.
  
 ## Venture status â€” set 15 AUG 26, amended 24 AUG 26, amended 1 SEP 26, review 15 NOV 26
-MAIN EFFORT: Kingdom Planners
-ACTIVE: WWD/FrostCast, Shattered Empire, Cyber Security,
+MAIN EFFORT: none set. Kingdom Planners was removed as main effort 2026-11-11 (Zac's call). Zac names the next one if he wants one.
+ACTIVE: WWD/FrostCast, Kingdom Planners (moved down from main effort 2026-11-11), Shattered Empire, Cyber Security,
         WarriorKingDesigns (triage complete, hold), PAWS (director:
         paws-director, character locked - Scout, an original dog,
         not the WWD wolf - hardware direction locked - fused

@@ -34,3 +34,6 @@ learnings go here.
 - [Operating procedure](feedback-operating-procedure.md) — Jarvis delegates, QA checks everything, take your time, new divisions go to Zac (2026-11-10)
 - [Secondary pictures](feedback-secondary-pictures.md) — gap-fill pictures come from the title being reviewed, not other shows, unless a major feature point (Zac 2026-11-10)
 - [Design skills installed](project-design-skills-installed.md) — Taste + Impeccable in, Impeccable engine/hooks left out, others not installed (2026-11-10)
+- [Veterans Day tone](feedback-veterans-day-tone.md) — celebrate service, honor the living; fallen-led tone is Memorial Day (Zac 2026-11-10)
+- [Always include the flag](feedback-always-include-flag.md) — patriotic and military graphics always show the American flag, never "no flag" prompts (Zac 2026-11-10)
+- [Code-made art](feedback-code-made-art.md) — drawn-in-code artwork looked amateur; real image-model art for public graphics, code only for text overlay (Zac 2026-11-10)
