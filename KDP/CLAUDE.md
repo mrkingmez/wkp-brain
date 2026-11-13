@@ -21,12 +21,10 @@ topics, grade levels, how many titles, listing/keyword work) is on us, not
 the app.
 
 ## Priority
-Zac's call, set 2026-08-24: **1b** — immediately behind Kingdom Planners
-(current MAIN EFFORT), ahead of other ACTIVE ventures. Goal is reaching
-actual profit soon, not just standing the venture up. See root CLAUDE.md
-venture status board — this venture was previously listed there as DORMANT
-("KDP"); that entry is now stale and should read ACTIVE/high-priority per
-this decision.
+ACTIVE-UNSCHEDULED. Downgraded from priority 1b by Zac on 2026-09-01 (he is
+pivoting away from it). The 2026-08-24 "1b, behind Kingdom Planners" text that
+used to sit here is superseded. No agent, no schedule, does not surface in
+daily planning. See root CLAUDE.md venture status.
 
 ## Current Reality (as of 2026-08-24 build-up)
 - Zero books published. Zero KDP catalog presence. This is a from-scratch

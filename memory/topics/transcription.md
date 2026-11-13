@@ -41,7 +41,10 @@ RAM-hungry enough that running alongside a game can trigger an out-of-memory
 kill. Launch detached, and treat a silent death with no error as memory pressure
 rather than a script bug.
 
-## Voiceprints not yet enrolled [2026-08-06]
+## Voiceprints ENROLLED [2026-11-11] (the section below is history, 2026-08-06)
+Zac, Matt and Gabby enrolled in D:\WKPoiceprints\ from solo cams and labeled episodes (see CLAUDE.md and researchoiceprints6-11-11-voiceprints.md). Always pass --num-speakers. Match floor now 0.50, --map-seconds 60.
+
+## (old) Voiceprints not yet enrolled [2026-08-06]
 `voiceprints/` is empty, so every speaker returns as `Guest/Unknown [n]`.
 Enrolling Matt, Zac, and Gabby requires a clean solo audio clip of each. Until
 then, speaker mapping has to be done by hand after transcription.

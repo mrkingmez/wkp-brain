@@ -1,0 +1,100 @@
+{
+  "_comment": "Per-machine config for system_check.py. Key = COMPUTERNAME (upper case). Add a block per machine. Paths use forward slashes (Windows accepts them). Env var NAMES only, never values. local_paths_section must match a '## MACHINE:' header in LOCAL-PATHS.md. safe_fixes block: absent or enabled=false means NO fixes. mode is dry-run (default) or live. Kill switch: D:/WKP/data/system-check-fixes.disabled.",
+  "default": {
+    "label": "UNCONFIGURED MACHINE",
+    "local_paths_section": null,
+    "repo": "D:/WKP",
+    "drives": [
+      "C",
+      "D"
+    ],
+    "watch_drives": [],
+    "reports_dir": null,
+    "tools": {},
+    "env_names": [],
+    "env_prefixes": [],
+    "task_prefixes": [
+      "WKP"
+    ],
+    "disk_warn_free_pct": 15,
+    "disk_red_free_pct": 5,
+    "event_days": 14
+  },
+  "machines": {
+    "DESKTOP-2FI1EG2": {
+      "label": "MAIN DESKTOP (Windows 11)",
+      "local_paths_section": "MAIN DESKTOP",
+      "repo": "D:/WKP",
+      "drives": [
+        "C",
+        "D",
+        "E",
+        "I",
+        "L",
+        "P"
+      ],
+      "watch_drives": [
+        "I"
+      ],
+      "reports_dir": "D:/WKP Reports",
+      "tools": {
+        "python": "C:/Users/kingz/AppData/Local/Programs/Python/Python312/python.exe",
+        "ffmpeg": "C:/Users/kingz/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+        "ffprobe": "C:/Users/kingz/AppData/Local/Microsoft/WinGet/Links/ffprobe.exe",
+        "blender": "C:/Blender/5.2.4/blender.exe",
+        "unreal_engine": "D:/Epic/UE_5.8",
+        "openmontage_python": "D:/Tools/OpenMontage/.venv/Scripts/python.exe",
+        "premiere_pro_install_dir": "glob:C:/Program Files/Adobe/Adobe Premiere Pro*",
+        "voiceprints": "D:/WKP/voiceprints/zac.npy"
+      },
+      "env_names": [
+        "OPUS_API_KEY",
+        "HF_TOKEN",
+        "UE-LocalDataCachePath"
+      ],
+      "env_prefixes": [
+        "EBAY_"
+      ],
+      "task_prefixes": [
+        "WKP"
+      ],
+      "disk_warn_free_pct": 15,
+      "disk_red_free_pct": 5,
+      "event_days": 14,
+      "info_only_drives": [
+        "E"
+      ],
+      "info_only_note": "retired archive drive, near full by design, stays untouched (Zac)",
+      "accepted_task_failures": {
+        "WKP-Monday-Brief": "11/09/2026"
+      },
+      "retired_tasks": [
+        "WKP-daily-brief"
+      ],
+      "primary": true,
+      "safe_fixes": {
+        "enabled": true,
+        "mode": "dry-run",
+        "max_files": 3000,
+        "max_bytes": 5368709120,
+        "actions": {
+          "scratch": {
+            "enabled": true,
+            "older_than_days": 14
+          },
+          "temp": {
+            "enabled": true,
+            "older_than_days": 7
+          },
+          "pycache": {
+            "enabled": true
+          },
+          "logrotate": {
+            "enabled": true,
+            "older_than_days": 90
+          }
+        }
+      }
+    }
+  }
+}

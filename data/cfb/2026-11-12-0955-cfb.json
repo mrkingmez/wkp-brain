@@ -1,0 +1,5061 @@
+{
+ "taken_at": "2026-11-12 09:55",
+ "source": "ESPN site.api.espn.com college-football (unofficial, keyless)",
+ "contains_injury_data": false,
+ "injury_notice": "NO INJURY DATA: this snapshot carries no injuries, starting QBs or depth charts. Injury and QB status must come from the conference availability reports (Big Ten, SEC) read by hand and labeled SECONDARY.",
+ "calls_made": 12,
+ "not_retrieved": [],
+ "games": [
+  {
+   "game_id": "401856849",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "BYU",
+   "home": "UTAH",
+   "away_name": "BYU Cougars",
+   "home_name": "Utah Utes",
+   "away_rank": 9,
+   "home_rank": 3,
+   "away_score": "20",
+   "home_score": "28",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856743",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "TEX",
+   "home": "MIZ",
+   "away_name": "Texas Longhorns",
+   "home_name": "Missouri Tigers",
+   "away_rank": 7,
+   "home_rank": 18,
+   "away_score": "34",
+   "home_score": "20",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858512",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "UCLA",
+   "home": "MINN",
+   "away_name": "UCLA Bruins",
+   "home_name": "Minnesota Golden Gophers",
+   "away_rank": 8,
+   "home_rank": null,
+   "away_score": "34",
+   "home_score": "20",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856853",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "ISU",
+   "home": "BAY",
+   "away_name": "Iowa State Cyclones",
+   "home_name": "Baylor Bears",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "31",
+   "home_score": "42",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858285",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "CLEM",
+   "home": "SYR",
+   "away_name": "Clemson Tigers",
+   "home_name": "Syracuse Orange",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "18",
+   "home_score": "13",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858289",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "FSU",
+   "home": "BC",
+   "away_name": "Florida State Seminoles",
+   "home_name": "Boston College Eagles",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "31",
+   "home_score": "24",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858292",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "UNC",
+   "home": "CONN",
+   "away_name": "North Carolina Tar Heels",
+   "home_name": "UConn Huskies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "38",
+   "home_score": "21",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401862822",
+   "kickoff": "2026-11-07T17:00Z",
+   "state": "post",
+   "away": "TLSA",
+   "home": "TULN",
+   "away_name": "Tulsa Golden Hurricane",
+   "home_name": "Tulane Green Wave",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "60",
+   "home_score": "10",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858286",
+   "kickoff": "2026-11-07T17:30Z",
+   "state": "post",
+   "away": "DUKE",
+   "home": "NCSU",
+   "away_name": "Duke Blue Devils",
+   "home_name": "NC State Wolfpack",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "41",
+   "home_score": "3",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858515",
+   "kickoff": "2026-11-07T17:30Z",
+   "state": "post",
+   "away": "MD",
+   "home": "PUR",
+   "away_name": "Maryland Terrapins",
+   "home_name": "Purdue Boilermakers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "34",
+   "home_score": "29",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856738",
+   "kickoff": "2026-11-07T17:45Z",
+   "state": "post",
+   "away": "ARK",
+   "home": "AUB",
+   "away_name": "Arkansas Razorbacks",
+   "home_name": "Auburn Tigers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "23",
+   "home_score": "26",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856854",
+   "kickoff": "2026-11-07T18:00Z",
+   "state": "post",
+   "away": "OKST",
+   "home": "KSU",
+   "away_name": "Oklahoma State Cowboys",
+   "home_name": "Kansas State Wildcats",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "66",
+   "home_score": "28",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401869945",
+   "kickoff": "2026-11-07T18:00Z",
+   "state": "post",
+   "away": "ODU",
+   "home": "CCU",
+   "away_name": "Old Dominion Monarchs",
+   "home_name": "Coastal Carolina Chanticleers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "21",
+   "home_score": "8",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401869927",
+   "kickoff": "2026-11-07T19:30Z",
+   "state": "post",
+   "away": "GAST",
+   "home": "APP",
+   "away_name": "Georgia State Panthers",
+   "home_name": "App State Mountaineers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "39",
+   "home_score": "23",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856744",
+   "kickoff": "2026-11-07T20:00Z",
+   "state": "post",
+   "away": "TA&M",
+   "home": "SC",
+   "away_name": "Texas A&M Aggies",
+   "home_name": "South Carolina Gamecocks",
+   "away_rank": null,
+   "home_rank": 21,
+   "away_score": "9",
+   "home_score": "17",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401869936",
+   "kickoff": "2026-11-07T20:00Z",
+   "state": "post",
+   "away": "ULM",
+   "home": "ARST",
+   "away_name": "UL Monroe Warhawks",
+   "home_name": "Arkansas State Red Wolves",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "19",
+   "home_score": "17",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401871073",
+   "kickoff": "2026-11-07T20:00Z",
+   "state": "post",
+   "away": "DEL",
+   "home": "KENN",
+   "away_name": "Delaware Blue Hens",
+   "home_name": "Kennesaw State Owls",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "40",
+   "home_score": "42",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856740",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "ALA",
+   "home": "LSU",
+   "away_name": "Alabama Crimson Tide",
+   "home_name": "LSU Tigers",
+   "away_rank": 5,
+   "home_rank": 14,
+   "away_score": "31",
+   "home_score": "13",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858514",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "ORE",
+   "home": "OSU",
+   "away_name": "Oregon Ducks",
+   "home_name": "Ohio State Buckeyes",
+   "away_rank": 23,
+   "home_rank": 12,
+   "away_score": "41",
+   "home_score": "28",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858290",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "MRMK",
+   "home": "WAKE",
+   "away_name": "Merrimack Warriors",
+   "home_name": "Wake Forest Demon Deacons",
+   "away_rank": null,
+   "home_rank": 16,
+   "away_score": "0",
+   "home_score": "77",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856851",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "CIN",
+   "home": "HOU",
+   "away_name": "Cincinnati Bearcats",
+   "home_name": "Houston Cougars",
+   "away_rank": null,
+   "home_rank": 17,
+   "away_score": "24",
+   "home_score": "31",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858516",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "PSU",
+   "home": "WASH",
+   "away_name": "Penn State Nittany Lions",
+   "home_name": "Washington Huskies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "28",
+   "home_score": "25",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401862819",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "CLT",
+   "home": "UAB",
+   "away_name": "Charlotte 49ers",
+   "home_name": "UAB Blazers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "12",
+   "home_score": "23",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401862820",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "TEM",
+   "home": "NAVY",
+   "away_name": "Temple Owls",
+   "home_name": "Navy Midshipmen",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "35",
+   "home_score": "42",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401869951",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "MRSH",
+   "home": "GASO",
+   "away_name": "Marshall Thundering Herd",
+   "home_name": "Georgia Southern Eagles",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "13",
+   "home_score": "49",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401871076",
+   "kickoff": "2026-11-07T20:30Z",
+   "state": "post",
+   "away": "WKU",
+   "home": "MTSU",
+   "away_name": "Western Kentucky Hilltoppers",
+   "home_name": "Middle Tennessee Blue Raiders",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "42",
+   "home_score": "51",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856850",
+   "kickoff": "2026-11-07T20:45Z",
+   "state": "post",
+   "away": "UCF",
+   "home": "KU",
+   "away_name": "UCF Knights",
+   "home_name": "Kansas Jayhawks",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "33",
+   "home_score": "32",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401862821",
+   "kickoff": "2026-11-07T21:00Z",
+   "state": "post",
+   "away": "RICE",
+   "home": "UNT",
+   "away_name": "Rice Owls",
+   "home_name": "North Texas Mean Green",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "23",
+   "home_score": "52",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401864534",
+   "kickoff": "2026-11-07T21:00Z",
+   "state": "post",
+   "away": "NIU",
+   "home": "SJSU",
+   "away_name": "Northern Illinois Huskies",
+   "home_name": "San Jos\u00e9 State Spartans",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "19",
+   "home_score": "30",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401871074",
+   "kickoff": "2026-11-07T21:00Z",
+   "state": "post",
+   "away": "MOST",
+   "home": "FIU",
+   "away_name": "Missouri State Bears",
+   "home_name": "Florida International Panthers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "20",
+   "home_score": "23",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401871098",
+   "kickoff": "2026-11-07T21:00Z",
+   "state": "post",
+   "away": "LT",
+   "home": "TROY",
+   "away_name": "Louisiana Tech Bulldogs",
+   "home_name": "Troy Trojans",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "41",
+   "home_score": "17",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856742",
+   "kickoff": "2026-11-07T21:15Z",
+   "state": "post",
+   "away": "VAN",
+   "home": "MSST",
+   "away_name": "Vanderbilt Commodores",
+   "home_name": "Mississippi State Bulldogs",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "25",
+   "home_score": "23",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858517",
+   "kickoff": "2026-11-07T21:15Z",
+   "state": "post",
+   "away": "RUTG",
+   "home": "WIS",
+   "away_name": "Rutgers Scarlet Knights",
+   "home_name": "Wisconsin Badgers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "10",
+   "home_score": "31",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401869968",
+   "kickoff": "2026-11-07T22:00Z",
+   "state": "post",
+   "away": "USA",
+   "home": "UL",
+   "away_name": "South Alabama Jaguars",
+   "home_name": "Louisiana Ragin' Cajuns",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "26",
+   "home_score": "28",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401860911",
+   "kickoff": "2026-11-07T23:00Z",
+   "state": "post",
+   "away": "BOIS",
+   "home": "CSU",
+   "away_name": "Boise State Broncos",
+   "home_name": "Colorado State Rams",
+   "away_rank": 25,
+   "home_rank": null,
+   "away_score": "64",
+   "home_score": "38",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856745",
+   "kickoff": "2026-11-07T23:15Z",
+   "state": "post",
+   "away": "UK",
+   "home": "TENN",
+   "away_name": "Kentucky Wildcats",
+   "home_name": "Tennessee Volunteers",
+   "away_rank": 6,
+   "home_rank": 13,
+   "away_score": "6",
+   "home_score": "34",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401871075",
+   "kickoff": "2026-11-08T00:00Z",
+   "state": "post",
+   "away": "SHSU",
+   "home": "JXST",
+   "away_name": "Sam Houston Bearkats",
+   "home_name": "Jacksonville State Gamecocks",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "14",
+   "home_score": "47",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858291",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "MIA",
+   "home": "ND",
+   "away_name": "Miami Hurricanes",
+   "home_name": "Notre Dame Fighting Irish",
+   "away_rank": 1,
+   "home_rank": 11,
+   "away_score": "24",
+   "home_score": "31",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856741",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "UGA",
+   "home": "MISS",
+   "away_name": "Georgia Bulldogs",
+   "home_name": "Ole Miss Rebels",
+   "away_rank": 2,
+   "home_rank": 10,
+   "away_score": "42",
+   "home_score": "7",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858513",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "IOWA",
+   "home": "NU",
+   "away_name": "Iowa Hawkeyes",
+   "home_name": "Northwestern Wildcats",
+   "away_rank": 19,
+   "home_rank": null,
+   "away_score": "24",
+   "home_score": "10",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856852",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "COLO",
+   "home": "ASU",
+   "away_name": "Colorado Buffaloes",
+   "home_name": "Arizona State Sun Devils",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "10",
+   "home_score": "20",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858287",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "LOU",
+   "home": "GT",
+   "away_name": "Louisville Cardinals",
+   "home_name": "Georgia Tech Yellow Jackets",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "44",
+   "home_score": "17",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401858511",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "MSU",
+   "home": "MICH",
+   "away_name": "Michigan State Spartans",
+   "home_name": "Michigan Wolverines",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "15",
+   "home_score": "6",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401862823",
+   "kickoff": "2026-11-08T00:30Z",
+   "state": "post",
+   "away": "AFA",
+   "home": "ARMY",
+   "away_name": "Air Force Falcons",
+   "home_name": "Army Black Knights",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "24",
+   "home_score": "21",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856739",
+   "kickoff": "2026-11-08T00:45Z",
+   "state": "post",
+   "away": "OU",
+   "home": "FLA",
+   "away_name": "Oklahoma Sooners",
+   "home_name": "Florida Gators",
+   "away_rank": null,
+   "home_rank": 24,
+   "away_score": "23",
+   "home_score": "7",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401870795",
+   "kickoff": "2026-11-08T01:00Z",
+   "state": "post",
+   "away": "LIB",
+   "home": "NMSU",
+   "away_name": "Liberty Flames",
+   "home_name": "New Mexico State Aggies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "30",
+   "home_score": "14",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401856856",
+   "kickoff": "2026-11-08T02:30Z",
+   "state": "post",
+   "away": "WVU",
+   "home": "TTU",
+   "away_name": "West Virginia Mountaineers",
+   "home_name": "Texas Tech Red Raiders",
+   "away_rank": null,
+   "home_rank": 15,
+   "away_score": "48",
+   "home_score": "53",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401860913",
+   "kickoff": "2026-11-08T02:30Z",
+   "state": "post",
+   "away": "FRES",
+   "home": "USU",
+   "away_name": "Fresno State Bulldogs",
+   "home_name": "Utah State Aggies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "10",
+   "home_score": "17",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401864532",
+   "kickoff": "2026-11-08T02:30Z",
+   "state": "post",
+   "away": "HAW",
+   "home": "UTEP",
+   "away_name": "Hawai'i Rainbow Warriors",
+   "home_name": "UTEP Miners",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "17",
+   "home_score": "14",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401860912",
+   "kickoff": "2026-11-08T03:30Z",
+   "state": "post",
+   "away": "TXST",
+   "home": "ORST",
+   "away_name": "Texas State Bobcats",
+   "home_name": "Oregon State Beavers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "42",
+   "home_score": "21",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401864535",
+   "kickoff": "2026-11-08T03:30Z",
+   "state": "post",
+   "away": "WYO",
+   "home": "UNLV",
+   "away_name": "Wyoming Cowboys",
+   "home_name": "UNLV Rebels",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "41",
+   "home_score": "35",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401866458",
+   "kickoff": "2026-11-11T00:00Z",
+   "state": "post",
+   "away": "WMU",
+   "home": "AKR",
+   "away_name": "Western Michigan Broncos",
+   "home_name": "Akron Zips",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "42",
+   "home_score": "14",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401866459",
+   "kickoff": "2026-11-11T00:00Z",
+   "state": "post",
+   "away": "KENT",
+   "home": "BGSU",
+   "away_name": "Kent State Golden Flashes",
+   "home_name": "Bowling Green Falcons",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "28",
+   "home_score": "33",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401866460",
+   "kickoff": "2026-11-11T01:00Z",
+   "state": "post",
+   "away": "OHIO",
+   "home": "M-OH",
+   "away_name": "Ohio Bobcats",
+   "home_name": "Miami (OH) RedHawks",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "17",
+   "home_score": "34",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401866461",
+   "kickoff": "2026-11-12T00:30Z",
+   "state": "post",
+   "away": "BUFF",
+   "home": "BALL",
+   "away_name": "Buffalo Bulls",
+   "home_name": "Ball State Cardinals",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "28",
+   "home_score": "7",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401866462",
+   "kickoff": "2026-11-12T00:30Z",
+   "state": "post",
+   "away": "SAC",
+   "home": "CMU",
+   "away_name": "Sacramento State Hornets",
+   "home_name": "Central Michigan Chippewas",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "7",
+   "home_score": "28",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401866463",
+   "kickoff": "2026-11-12T00:30Z",
+   "state": "post",
+   "away": "MASS",
+   "home": "TOL",
+   "away_name": "Massachusetts Minutemen",
+   "home_name": "Toledo Rockets",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "24",
+   "odds": null,
+   "leaders": {
+    "away": {},
+    "home": {}
+   }
+  },
+  {
+   "game_id": "401862824",
+   "kickoff": "2026-11-13T01:00Z",
+   "state": "pre",
+   "away": "MEM",
+   "home": "USF",
+   "away_name": "Memphis Tigers",
+   "home_name": "South Florida Bulls",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MEM -3.5",
+    "spread_home": -3.5,
+    "open_spread_home": -6.0,
+    "total": 50.5,
+    "open_total": 49.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Marcus Stokes",
+      "pos": "QB",
+      "line": "179/259, 2532 YDS, 25 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Jaylin Carter",
+      "pos": "RB",
+      "line": "151 CAR, 929 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "Hunter Tipton",
+      "pos": "TE",
+      "line": "35 REC, 495 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Michael Van Buren Jr.",
+      "pos": "QB",
+      "line": "116/181, 1273 YDS, 6 TD"
+     },
+     "rushingLeader": {
+      "player": "D.J. Crowther",
+      "pos": "RB",
+      "line": "138 CAR, 689 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Bryson Rodgers",
+      "pos": "WR",
+      "line": "38 REC, 395 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401869969",
+   "kickoff": "2026-11-13T02:00Z",
+   "state": "pre",
+   "away": "UL",
+   "home": "ULM",
+   "away_name": "Louisiana Ragin' Cajuns",
+   "home_name": "UL Monroe Warhawks",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UL -10",
+    "spread_home": -10.0,
+    "open_spread_home": -10.5,
+    "total": 47.5,
+    "open_total": 48.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Lunch Winfield",
+      "pos": "QB",
+      "line": "140/209, 1599 YDS, 7 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Lunch Winfield",
+      "pos": "QB",
+      "line": "129 CAR, 567 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "KeDarius Wade",
+      "pos": "WR",
+      "line": "16 REC, 300 YDS, 2 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Aidan Armenta",
+      "pos": "QB",
+      "line": "126/202, 1413 YDS, 10 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Austin Carlisle",
+      "pos": "QB",
+      "line": "65 CAR, 363 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Marcellus Jackson",
+      "pos": "WR",
+      "line": "35 REC, 370 YDS, 1 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858293",
+   "kickoff": "2026-11-14T00:00Z",
+   "state": "pre",
+   "away": "FSU",
+   "home": "PITT",
+   "away_name": "Florida State Seminoles",
+   "home_name": "Pittsburgh Panthers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "PITT -3.5",
+    "spread_home": 3.5,
+    "open_spread_home": 3.0,
+    "total": 53.5,
+    "open_total": 53.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Ashton Daniels",
+      "pos": "QB",
+      "line": "142/240, 2146 YDS, 14 TD, 12 INT"
+     },
+     "rushingLeader": {
+      "player": "Ousmane Kromah",
+      "pos": "RB",
+      "line": "114 CAR, 609 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Micahi Danzy",
+      "pos": "WR",
+      "line": "30 REC, 487 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Mason Heintschel",
+      "pos": "QB",
+      "line": "98/148, 1304 YDS, 14 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Damon Ferguson Jr.",
+      "pos": "RB",
+      "line": "123 CAR, 662 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Cataurus Hicks",
+      "pos": "WR",
+      "line": "34 REC, 698 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858526",
+   "kickoff": "2026-11-14T02:00Z",
+   "state": "pre",
+   "away": "ILL",
+   "home": "UCLA",
+   "away_name": "Illinois Fighting Illini",
+   "home_name": "UCLA Bruins",
+   "away_rank": null,
+   "home_rank": 4,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UCLA -10",
+    "spread_home": 10.0,
+    "open_spread_home": 12.5,
+    "total": 47.5,
+    "open_total": 47.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Katin Houser",
+      "pos": "QB",
+      "line": "162/252, 1955 YDS, 16 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Aidan Laughery",
+      "pos": "RB",
+      "line": "100 CAR, 615 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Collin Dixon",
+      "pos": "WR",
+      "line": "68 REC, 910 YDS, 12 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Ty Dieffenbach",
+      "pos": "QB",
+      "line": "67/116, 986 YDS, 6 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Wayne Knight",
+      "pos": "RB",
+      "line": "128 CAR, 789 YDS, 13 TD"
+     },
+     "receivingLeader": {
+      "player": "Semaj Morgan",
+      "pos": "WR",
+      "line": "37 REC, 469 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856860",
+   "kickoff": "2026-11-14T03:15Z",
+   "state": "pre",
+   "away": "HOU",
+   "home": "COLO",
+   "away_name": "Houston Cougars",
+   "home_name": "Colorado Buffaloes",
+   "away_rank": 14,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "HOU -9.5",
+    "spread_home": -9.5,
+    "open_spread_home": -10.5,
+    "total": 51.5,
+    "open_total": 47.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Conner Weigman",
+      "pos": "QB",
+      "line": "170/257, 2280 YDS, 22 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Makhi Hughes",
+      "pos": "RB",
+      "line": "129 CAR, 606 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Amare Thomas",
+      "pos": "WR",
+      "line": "47 REC, 698 YDS, 8 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Isaac Wilson",
+      "pos": "QB",
+      "line": "111/180, 1412 YDS, 8 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "JaQuail Smith",
+      "pos": "RB",
+      "line": "81 CAR, 384 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Joseph Williams",
+      "pos": "WR",
+      "line": "58 REC, 853 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858296",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "DUKE",
+   "home": "MIA",
+   "away_name": "Duke Blue Devils",
+   "home_name": "Miami Hurricanes",
+   "away_rank": null,
+   "home_rank": 7,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MIA -13.5",
+    "spread_home": 13.5,
+    "open_spread_home": 20.5,
+    "total": 54.5,
+    "open_total": 55.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Walker Eget",
+      "pos": "QB",
+      "line": "155/246, 1849 YDS, 10 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Nate Sheppard",
+      "pos": "RB",
+      "line": "191 CAR, 1189 YDS, 17 TD"
+     },
+     "receivingLeader": {
+      "player": "Jonah Burton",
+      "pos": "WR",
+      "line": "27 REC, 360 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Darian Mensah",
+      "pos": "QB",
+      "line": "212/276, 2694 YDS, 28 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Mark Fletcher Jr.",
+      "pos": "RB",
+      "line": "107 CAR, 514 YDS, 9 TD"
+     },
+     "receivingLeader": {
+      "player": "Malachi Toney",
+      "pos": "WR",
+      "line": "73 REC, 1027 YDS, 13 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858301",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "WAKE",
+   "home": "SMU",
+   "away_name": "Wake Forest Demon Deacons",
+   "home_name": "SMU Mustangs",
+   "away_rank": 13,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "SMU -1.5",
+    "spread_home": 1.5,
+    "open_spread_home": -3.5,
+    "total": 60.5,
+    "open_total": 55.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Gio Lopez",
+      "pos": "QB",
+      "line": "153/228, 2176 YDS, 18 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Ty Clark III",
+      "pos": "RB",
+      "line": "86 CAR, 416 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Carlos Hernandez",
+      "pos": "WR",
+      "line": "61 REC, 945 YDS, 7 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Kevin Jennings",
+      "pos": "QB",
+      "line": "209/283, 2764 YDS, 25 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Kendrick Raphael",
+      "pos": "RB",
+      "line": "150 CAR, 755 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "Yamir Knight",
+      "pos": "WR",
+      "line": "50 REC, 626 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858522",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "NU",
+   "home": "OSU",
+   "away_name": "Northwestern Wildcats",
+   "home_name": "Ohio State Buckeyes",
+   "away_rank": null,
+   "home_rank": 20,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "OSU -14",
+    "spread_home": 14.0,
+    "open_spread_home": 9.5,
+    "total": 44.5,
+    "open_total": 48.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Aidan Chiles",
+      "pos": "QB",
+      "line": "139/202, 1898 YDS, 13 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Caleb Komolafe",
+      "pos": "RB",
+      "line": "111 CAR, 643 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Griffin Wilde",
+      "pos": "WR",
+      "line": "49 REC, 813 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Julian Sayin",
+      "pos": "QB",
+      "line": "131/192, 2007 YDS, 19 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Bo Jackson",
+      "pos": "RB",
+      "line": "139 CAR, 685 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Jeremiah Smith",
+      "pos": "WR",
+      "line": "69 REC, 1200 YDS, 14 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856859",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "CIN",
+   "home": "ISU",
+   "away_name": "Cincinnati Bearcats",
+   "home_name": "Iowa State Cyclones",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "ISU -3",
+    "spread_home": 3.0,
+    "open_spread_home": 1.5,
+    "total": 59.5,
+    "open_total": 60.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "JC French IV",
+      "pos": "QB",
+      "line": "162/243, 1990 YDS, 15 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Cole Tabb",
+      "pos": "RB",
+      "line": "91 CAR, 812 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "JV Gibson",
+      "pos": "WR",
+      "line": "39 REC, 515 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Jaylen Raynor",
+      "pos": "QB",
+      "line": "133/223, 1672 YDS, 12 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Aiden Flora",
+      "pos": "RB",
+      "line": "157 CAR, 1119 YDS, 9 TD"
+     },
+     "receivingLeader": {
+      "player": "Jamal Polite Jr.",
+      "pos": "WR",
+      "line": "17 REC, 321 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856886",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "AUB",
+   "home": "MSST",
+   "away_name": "Auburn Tigers",
+   "home_name": "Mississippi State Bulldogs",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "AUB -2.5",
+    "spread_home": -2.5,
+    "open_spread_home": -3.5,
+    "total": 50.5,
+    "open_total": 51.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Byrum Brown",
+      "pos": "QB",
+      "line": "182/281, 1740 YDS, 11 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Byrum Brown",
+      "pos": "QB",
+      "line": "162 CAR, 605 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Keshaun Singleton",
+      "pos": "WR",
+      "line": "45 REC, 491 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Kamario Taylor",
+      "pos": "QB",
+      "line": "104/159, 1460 YDS, 17 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Fluff Bothwell",
+      "pos": "RB",
+      "line": "122 CAR, 613 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Anthony Evans III",
+      "pos": "WR",
+      "line": "61 REC, 711 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858300",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "SYR",
+   "home": "NCSU",
+   "away_name": "Syracuse Orange",
+   "home_name": "NC State Wolfpack",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "SYR -3",
+    "spread_home": -3.0,
+    "open_spread_home": -1.5,
+    "total": 53.5,
+    "open_total": 56.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Steve Angeli",
+      "pos": "QB",
+      "line": "116/212, 1450 YDS, 8 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Tylik Hill",
+      "pos": "RB",
+      "line": "100 CAR, 531 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Umari Hatcher",
+      "pos": "WR",
+      "line": "62 REC, 964 YDS, 8 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "CJ Bailey",
+      "pos": "QB",
+      "line": "171/268, 2078 YDS, 13 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Davion Gause",
+      "pos": "RB",
+      "line": "95 CAR, 378 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Keenan Jackson",
+      "pos": "WR",
+      "line": "31 REC, 477 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858520",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "WIS",
+   "home": "MD",
+   "away_name": "Wisconsin Badgers",
+   "home_name": "Maryland Terrapins",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "WIS -8.5",
+    "spread_home": -8.5,
+    "open_spread_home": -7.5,
+    "total": 42.5,
+    "open_total": 43.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Colton Joseph",
+      "pos": "QB",
+      "line": "104/187, 1346 YDS, 11 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Colton Joseph",
+      "pos": "QB",
+      "line": "91 CAR, 371 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Tyrell Henry",
+      "pos": "WR",
+      "line": "33 REC, 410 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Malik Washington",
+      "pos": "QB",
+      "line": "187/308, 2058 YDS, 11 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "DeJuan Williams",
+      "pos": "RB",
+      "line": "71 CAR, 437 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Chris Durr Jr.",
+      "pos": "WR",
+      "line": "62 REC, 765 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401861967",
+   "kickoff": "2026-11-14T17:00Z",
+   "state": "pre",
+   "away": "JMU",
+   "home": "CONN",
+   "away_name": "James Madison Dukes",
+   "home_name": "UConn Huskies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "JMU -4",
+    "spread_home": -4.0,
+    "open_spread_home": -1.5,
+    "total": 57.5,
+    "open_total": 56.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Camden Coleman",
+      "pos": "QB",
+      "line": "149/241, 1814 YDS, 17 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "George Pettaway",
+      "pos": "RB",
+      "line": "124 CAR, 824 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Corey Scott",
+      "pos": "WR",
+      "line": "33 REC, 524 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Kalieb Osborne",
+      "pos": "QB",
+      "line": "146/250, 2102 YDS, 16 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Cyncir Bowers",
+      "pos": "RB",
+      "line": "97 CAR, 639 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Ryder Treadway",
+      "pos": "WR",
+      "line": "24 REC, 346 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858297",
+   "kickoff": "2026-11-14T17:30Z",
+   "state": "pre",
+   "away": "GT",
+   "home": "CLEM",
+   "away_name": "Georgia Tech Yellow Jackets",
+   "home_name": "Clemson Tigers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "CLEM -13.5",
+    "spread_home": 13.5,
+    "open_spread_home": 13.5,
+    "total": 47.5,
+    "open_total": 49.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Alberto Mendoza",
+      "pos": "QB",
+      "line": "182/265, 1943 YDS, 11 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Justice Haynes",
+      "pos": "RB",
+      "line": "124 CAR, 635 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Jordan Allen",
+      "pos": "WR",
+      "line": "49 REC, 576 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Tait Reynolds",
+      "pos": "QB",
+      "line": "155/240, 1446 YDS, 3 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Gideon Davidson",
+      "pos": "RB",
+      "line": "105 CAR, 528 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Bryant Wesco Jr.",
+      "pos": "WR",
+      "line": "44 REC, 511 YDS"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858525",
+   "kickoff": "2026-11-14T17:30Z",
+   "state": "pre",
+   "away": "NEB",
+   "home": "RUTG",
+   "away_name": "Nebraska Cornhuskers",
+   "home_name": "Rutgers Scarlet Knights",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NEB -14.5",
+    "spread_home": -14.5,
+    "open_spread_home": -12.5,
+    "total": 51.5,
+    "open_total": 54.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Anthony Colandrea",
+      "pos": "QB",
+      "line": "193/306, 2109 YDS, 16 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Jamal Rule",
+      "pos": "RB",
+      "line": "88 CAR, 532 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Kwazi Gilmer",
+      "pos": "WR",
+      "line": "46 REC, 603 YDS, 7 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Dylan Lonergan",
+      "pos": "QB",
+      "line": "74/127, 1066 YDS, 10 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Antwan Raymond",
+      "pos": "RB",
+      "line": "149 CAR, 789 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "KJ Duff",
+      "pos": "WR",
+      "line": "45 REC, 774 YDS, 9 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856889",
+   "kickoff": "2026-11-14T17:45Z",
+   "state": "pre",
+   "away": "ALA",
+   "home": "VAN",
+   "away_name": "Alabama Crimson Tide",
+   "home_name": "Vanderbilt Commodores",
+   "away_rank": 3,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "ALA -17.5",
+    "spread_home": -17.5,
+    "open_spread_home": -19.5,
+    "total": 50.5,
+    "open_total": 54.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Keelon Russell",
+      "pos": "QB",
+      "line": "165/245, 2263 YDS, 18 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Trae'shawn Brown",
+      "pos": "RB",
+      "line": "75 CAR, 359 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Rico Scott",
+      "pos": "WR",
+      "line": "31 REC, 501 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Jared Curtis",
+      "pos": "QB",
+      "line": "145/224, 1657 YDS, 8 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Sedrick Alexander",
+      "pos": "RB",
+      "line": "85 CAR, 333 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Junior Sherrill",
+      "pos": "WR",
+      "line": "56 REC, 747 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401862825",
+   "kickoff": "2026-11-14T18:00Z",
+   "state": "pre",
+   "away": "ECU",
+   "home": "CLT",
+   "away_name": "East Carolina Pirates",
+   "home_name": "Charlotte 49ers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "ECU -11.5",
+    "spread_home": -11.5,
+    "open_spread_home": -13.5,
+    "total": 45.5,
+    "open_total": 47.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Emory Williams",
+      "pos": "QB",
+      "line": "92/144, 891 YDS, 9 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "TJ Engleman Jr.",
+      "pos": "RB",
+      "line": "110 CAR, 695 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Ray Ray Joseph Jr.",
+      "pos": "WR",
+      "line": "40 REC, 365 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Conner Harrell",
+      "pos": "QB",
+      "line": "89/139, 1006 YDS, 6 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Henry Rutledge",
+      "pos": "RB",
+      "line": "77 CAR, 454 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Jaden Barnes",
+      "pos": "WR",
+      "line": "54 REC, 542 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401862829",
+   "kickoff": "2026-11-14T18:00Z",
+   "state": "pre",
+   "away": "UAB",
+   "home": "TEM",
+   "away_name": "UAB Blazers",
+   "home_name": "Temple Owls",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TEM -2.5",
+    "spread_home": 2.5,
+    "open_spread_home": 2.5,
+    "total": 48.5,
+    "open_total": 51.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Ryder Burton",
+      "pos": "QB",
+      "line": "121/223, 1474 YDS, 6 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Rod Robinson II",
+      "pos": "RB",
+      "line": "122 CAR, 551 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "CJ Smith",
+      "pos": "WR",
+      "line": "23 REC, 437 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Ajani Sheppard",
+      "pos": "QB",
+      "line": "85/140, 1245 YDS, 8 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Keveun Mason",
+      "pos": "RB",
+      "line": "108 CAR, 588 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Colin Chase",
+      "pos": "WR",
+      "line": "24 REC, 381 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401869937",
+   "kickoff": "2026-11-14T18:00Z",
+   "state": "pre",
+   "away": "ARST",
+   "home": "CCU",
+   "away_name": "Arkansas State Red Wolves",
+   "home_name": "Coastal Carolina Chanticleers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "CCU -1.5",
+    "spread_home": 1.5,
+    "open_spread_home": 1.5,
+    "total": 51.5,
+    "open_total": 50.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Trey Owens",
+      "pos": "QB",
+      "line": "175/262, 2133 YDS, 12 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Solomon Baggett",
+      "pos": "RB",
+      "line": "76 CAR, 344 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Jaylen Bonelli",
+      "pos": "WR",
+      "line": "34 REC, 518 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Deuce Bailey",
+      "pos": "QB",
+      "line": "149/270, 2178 YDS, 19 TD, 9 INT"
+     },
+     "rushingLeader": {
+      "player": "Dominic Lee-Knicely",
+      "pos": "RB",
+      "line": "102 CAR, 498 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Clayton Coppock Jr.",
+      "pos": "WR",
+      "line": "24 REC, 408 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856862",
+   "kickoff": "2026-11-14T19:00Z",
+   "state": "pre",
+   "away": "KSU",
+   "home": "TCU",
+   "away_name": "Kansas State Wildcats",
+   "home_name": "TCU Horned Frogs",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TCU -10.5",
+    "spread_home": 10.5,
+    "open_spread_home": 9.5,
+    "total": 45.5,
+    "open_total": 45.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Avery Johnson",
+      "pos": "QB",
+      "line": "118/187, 1301 YDS, 10 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Rodney Fields Jr.",
+      "pos": "RB",
+      "line": "113 CAR, 574 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Jaron Tibbs",
+      "pos": "WR",
+      "line": "45 REC, 421 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Jaden Craig",
+      "pos": "QB",
+      "line": "203/310, 2439 YDS, 12 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Jeremy Payne",
+      "pos": "RB",
+      "line": "88 CAR, 429 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Kari Ashley",
+      "pos": "TE",
+      "line": "52 REC, 655 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401862828",
+   "kickoff": "2026-11-14T19:00Z",
+   "state": "pre",
+   "away": "TULN",
+   "home": "RICE",
+   "away_name": "Tulane Green Wave",
+   "home_name": "Rice Owls",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "RICE -2.5",
+    "spread_home": 2.5,
+    "open_spread_home": -1.5,
+    "total": 47.5,
+    "open_total": 46.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Trace Johnson",
+      "pos": "QB",
+      "line": "76/125, 818 YDS, 2 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Johnnie Daniels",
+      "pos": "RB",
+      "line": "89 CAR, 542 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Destyn Hill",
+      "pos": "WR",
+      "line": "36 REC, 445 YDS, 2 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Jacurri Brown",
+      "pos": "QB",
+      "line": "40/83, 478 YDS, 3 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Jacurri Brown",
+      "pos": "QB",
+      "line": "124 CAR, 686 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Jordan Clark",
+      "pos": "WR",
+      "line": "20 REC, 257 YDS"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401870769",
+   "kickoff": "2026-11-14T19:00Z",
+   "state": "pre",
+   "away": "KENN",
+   "home": "SHSU",
+   "away_name": "Kennesaw State Owls",
+   "home_name": "Sam Houston Bearkats",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "KENN -7.5",
+    "spread_home": -7.5,
+    "open_spread_home": -7.5,
+    "total": 46.5,
+    "open_total": 44.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Rickie Collins",
+      "pos": "QB",
+      "line": "165/236, 1687 YDS, 7 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Boogie Woods III",
+      "pos": "RB",
+      "line": "100 CAR, 448 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Brayden Munroe",
+      "pos": "WR",
+      "line": "28 REC, 440 YDS"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Landyn Locke",
+      "pos": "QB",
+      "line": "163/257, 1779 YDS, 13 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Alton McCaskill",
+      "pos": "RB",
+      "line": "62 CAR, 235 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Chris Reed",
+      "pos": "WR",
+      "line": "28 REC, 437 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856888",
+   "kickoff": "2026-11-14T20:00Z",
+   "state": "pre",
+   "away": "TENN",
+   "home": "TA&M",
+   "away_name": "Tennessee Volunteers",
+   "home_name": "Texas A&M Aggies",
+   "away_rank": 8,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TENN -2.5",
+    "spread_home": -2.5,
+    "open_spread_home": 9.5,
+    "total": 43.5,
+    "open_total": 55.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "George MacIntyre",
+      "pos": "QB",
+      "line": "78/117, 853 YDS, 2 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "DeSean Bishop",
+      "pos": "RB",
+      "line": "196 CAR, 1066 YDS, 13 TD"
+     },
+     "receivingLeader": {
+      "player": "Mike Matthews",
+      "pos": "WR",
+      "line": "37 REC, 566 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Marcel Reed",
+      "pos": "QB",
+      "line": "151/265, 1641 YDS, 8 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Rueben Owens II",
+      "pos": "RB",
+      "line": "97 CAR, 469 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Isaiah Horton",
+      "pos": "WR",
+      "line": "28 REC, 392 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401870796",
+   "kickoff": "2026-11-14T20:00Z",
+   "state": "pre",
+   "away": "NMSU",
+   "home": "MOST",
+   "away_name": "New Mexico State Aggies",
+   "home_name": "Missouri State Bears",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MOST -1.5",
+    "spread_home": 1.5,
+    "open_spread_home": 1.5,
+    "total": 49.5,
+    "open_total": 50.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Trey Hedden",
+      "pos": "QB",
+      "line": "84/153, 1162 YDS, 7 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "James Jones",
+      "pos": "RB",
+      "line": "154 CAR, 940 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "AJ Williams III",
+      "pos": "WR",
+      "line": "25 REC, 409 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Henry Belin IV",
+      "pos": "QB",
+      "line": "104/162, 1302 YDS, 8 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Connor Lair",
+      "pos": "RB",
+      "line": "82 CAR, 325 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Isaiah Myers",
+      "pos": "WR",
+      "line": "46 REC, 941 YDS, 8 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401871060",
+   "kickoff": "2026-11-14T20:00Z",
+   "state": "pre",
+   "away": "FIU",
+   "home": "DEL",
+   "away_name": "Florida International Panthers",
+   "home_name": "Delaware Blue Hens",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "DEL -4.5",
+    "spread_home": 4.5,
+    "open_spread_home": 6.5,
+    "total": 53.5,
+    "open_total": 50.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "JJ Kohl",
+      "pos": "QB",
+      "line": "172/283, 2035 YDS, 11 TD, 10 INT"
+     },
+     "rushingLeader": {
+      "player": "Devonte Lyons",
+      "pos": "RB",
+      "line": "118 CAR, 650 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Maguire Anderson",
+      "pos": "WR",
+      "line": "44 REC, 610 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Nick Minicucci",
+      "pos": "QB",
+      "line": "146/224, 1885 YDS, 16 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Jo Silver",
+      "pos": "RB",
+      "line": "93 CAR, 416 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Sean Wilson",
+      "pos": "WR",
+      "line": "46 REC, 639 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856883",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "MIZ",
+   "home": "UGA",
+   "away_name": "Missouri Tigers",
+   "home_name": "Georgia Bulldogs",
+   "away_rank": 22,
+   "home_rank": 1,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UGA -15.5",
+    "spread_home": 15.5,
+    "open_spread_home": 12.5,
+    "total": 47.5,
+    "open_total": 46.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Austin Simmons",
+      "pos": "QB",
+      "line": "175/283, 2204 YDS, 18 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Jamal Roberts",
+      "pos": "RB",
+      "line": "209 CAR, 1071 YDS, 9 TD"
+     },
+     "receivingLeader": {
+      "player": "Cayden Lee",
+      "pos": "WR",
+      "line": "62 REC, 835 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Gunner Stockton",
+      "pos": "QB",
+      "line": "139/196, 1857 YDS, 20 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Dwight Phillips Jr.",
+      "pos": "RB",
+      "line": "66 CAR, 481 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Talyn Taylor",
+      "pos": "WR",
+      "line": "25 REC, 426 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858294",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "BC",
+   "home": "ND",
+   "away_name": "Boston College Eagles",
+   "home_name": "Notre Dame Fighting Irish",
+   "away_rank": null,
+   "home_rank": 5,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "ND -29.5",
+    "spread_home": 29.5,
+    "open_spread_home": 31.5,
+    "total": 52.5,
+    "open_total": 52.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Mason McKenzie",
+      "pos": "QB",
+      "line": "131/229, 1616 YDS, 10 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Mason McKenzie",
+      "pos": "QB",
+      "line": "145 CAR, 676 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Javarius Green",
+      "pos": "WR",
+      "line": "31 REC, 322 YDS, 2 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "CJ Carr",
+      "pos": "QB",
+      "line": "177/262, 2168 YDS, 21 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Nolan James Jr.",
+      "pos": "RB",
+      "line": "106 CAR, 571 YDS, 9 TD"
+     },
+     "receivingLeader": {
+      "player": "Jordan Faison",
+      "pos": "WR",
+      "line": "44 REC, 574 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858518",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "USC",
+   "home": "IU",
+   "away_name": "USC Trojans",
+   "home_name": "Indiana Hoosiers",
+   "away_rank": 18,
+   "home_rank": 9,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "IU -10",
+    "spread_home": 10.0,
+    "open_spread_home": 10.5,
+    "total": 50.5,
+    "open_total": 58.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Jayden Maiava",
+      "pos": "QB",
+      "line": "198/296, 2524 YDS, 20 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "King Miller",
+      "pos": "RB",
+      "line": "138 CAR, 680 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Trent Mosley",
+      "pos": "WR",
+      "line": "32 REC, 512 YDS, 6 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Josh Hoover",
+      "pos": "QB",
+      "line": "124/206, 1860 YDS, 19 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Turbo Richard",
+      "pos": "RB",
+      "line": "113 CAR, 745 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Charlie Becker",
+      "pos": "WR",
+      "line": "50 REC, 875 YDS, 9 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856858",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "BAY",
+   "home": "BYU",
+   "away_name": "Baylor Bears",
+   "home_name": "BYU Cougars",
+   "away_rank": null,
+   "home_rank": 10,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BYU -7.5",
+    "spread_home": 7.5,
+    "open_spread_home": 7.5,
+    "total": 48.5,
+    "open_total": 47.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "DJ Lagway",
+      "pos": "QB",
+      "line": "145/270, 1900 YDS, 15 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Caden Knighten",
+      "pos": "RB",
+      "line": "80 CAR, 361 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Gavin Freeman",
+      "pos": "WR",
+      "line": "69 REC, 852 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Bear Bachmeier",
+      "pos": "QB",
+      "line": "156/249, 2022 YDS, 13 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Bear Bachmeier",
+      "pos": "QB",
+      "line": "88 CAR, 395 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Legend Glasker",
+      "pos": "WR",
+      "line": "39 REC, 703 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858523",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "MICH",
+   "home": "ORE",
+   "away_name": "Michigan Wolverines",
+   "home_name": "Oregon Ducks",
+   "away_rank": null,
+   "home_rank": 16,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "ORE -11.5",
+    "spread_home": 11.5,
+    "open_spread_home": 13.5,
+    "total": 38.5,
+    "open_total": 53.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Bryce Underwood",
+      "pos": "QB",
+      "line": "72/124, 924 YDS, 5 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Savion Hiter",
+      "pos": "RB",
+      "line": "93 CAR, 331 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "JJ Buchanan",
+      "pos": "WR",
+      "line": "40 REC, 646 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Dylan Raiola",
+      "pos": "QB",
+      "line": "121/185, 1354 YDS, 11 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Dierre Hill Jr.",
+      "pos": "RB",
+      "line": "96 CAR, 474 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Dakorien Moore",
+      "pos": "WR",
+      "line": "48 REC, 601 YDS, 7 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856857",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "ASU",
+   "home": "UCF",
+   "away_name": "Arizona State Sun Devils",
+   "home_name": "UCF Knights",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UCF -3",
+    "spread_home": 3.0,
+    "open_spread_home": 2.5,
+    "total": 48.5,
+    "open_total": 52.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Cutter Boley",
+      "pos": "QB",
+      "line": "105/173, 1360 YDS, 13 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Cardae Mack",
+      "pos": "RB",
+      "line": "102 CAR, 603 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Reed Harris",
+      "pos": "WR",
+      "line": "52 REC, 907 YDS, 9 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Keyone Jenkins",
+      "pos": "QB",
+      "line": "122/180, 1181 YDS, 11 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Duke Watson",
+      "pos": "RB",
+      "line": "94 CAR, 596 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Josh Derry",
+      "pos": "WR",
+      "line": "45 REC, 571 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858295",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "CAL",
+   "home": "UVA",
+   "away_name": "California Golden Bears",
+   "home_name": "Virginia Cavaliers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UVA -10",
+    "spread_home": 10.0,
+    "open_spread_home": 12.5,
+    "total": 46.5,
+    "open_total": 47.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Jaron-Keawe Sagapolutele",
+      "pos": "QB",
+      "line": "178/264, 1751 YDS, 11 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Adam Mohammed",
+      "pos": "RB",
+      "line": "82 CAR, 363 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Chase Hendricks",
+      "pos": "WR",
+      "line": "61 REC, 565 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Beau Pribula",
+      "pos": "QB",
+      "line": "139/212, 1581 YDS, 14 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Jekail Middlebrook",
+      "pos": "RB",
+      "line": "105 CAR, 513 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Da'Shawn Martin",
+      "pos": "WR",
+      "line": "26 REC, 366 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401862826",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "FAU",
+   "home": "TLSA",
+   "away_name": "Florida Atlantic Owls",
+   "home_name": "Tulsa Golden Hurricane",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TLSA -6",
+    "spread_home": 6.0,
+    "open_spread_home": 5.5,
+    "total": 74.5,
+    "open_total": 66.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Caden Veltkamp",
+      "pos": "QB",
+      "line": "244/341, 2746 YDS, 27 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Leonard Farrow",
+      "pos": "RB",
+      "line": "88 CAR, 479 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Easton Messer",
+      "pos": "WR",
+      "line": "81 REC, 983 YDS, 12 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Baylor Hayes",
+      "pos": "QB",
+      "line": "148/228, 1681 YDS, 14 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Damari Alston",
+      "pos": "RB",
+      "line": "117 CAR, 481 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Oran Singleton Jr.",
+      "pos": "WR",
+      "line": "56 REC, 712 YDS, 7 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401864536",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "NEV",
+   "home": "NIU",
+   "away_name": "Nevada Wolf Pack",
+   "home_name": "Northern Illinois Huskies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NEV -7",
+    "spread_home": -7.0,
+    "open_spread_home": -10.5,
+    "total": 47.5,
+    "open_total": 46.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Carter Jones",
+      "pos": "QB",
+      "line": "53/89, 654 YDS, 3 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Dominic Kelley",
+      "pos": "RB",
+      "line": "122 CAR, 584 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Gary Givens III",
+      "pos": "WR",
+      "line": "20 REC, 308 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Taron Dickens",
+      "pos": "QB",
+      "line": "183/283, 1876 YDS, 9 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Telly Johnson Jr.",
+      "pos": "RB",
+      "line": "110 CAR, 629 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "DeAree Rogers",
+      "pos": "WR",
+      "line": "70 REC, 719 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401869952",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "GASO",
+   "home": "GAST",
+   "away_name": "Georgia Southern Eagles",
+   "home_name": "Georgia State Panthers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "GASO -6",
+    "spread_home": -6.0,
+    "open_spread_home": -5.5,
+    "total": 56.5,
+    "open_total": 55.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Max Johnson",
+      "pos": "QB",
+      "line": "208/304, 2195 YDS, 15 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "David Mbadinga",
+      "pos": "RB",
+      "line": "50 CAR, 273 YDS"
+     },
+     "receivingLeader": {
+      "player": "Alex Taylor",
+      "pos": "WR",
+      "line": "38 REC, 529 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Cameran Brown",
+      "pos": "QB",
+      "line": "110/166, 1356 YDS, 14 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Lanear McCrary Jr.",
+      "pos": "RB",
+      "line": "105 CAR, 526 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Rodshaun Dorsey",
+      "pos": "WR",
+      "line": "29 REC, 476 YDS, 9 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401870752",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "JXST",
+   "home": "WKU",
+   "away_name": "Jacksonville State Gamecocks",
+   "home_name": "Western Kentucky Hilltoppers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "JXST -7.5",
+    "spread_home": -7.5,
+    "open_spread_home": -6.0,
+    "total": 54.5,
+    "open_total": 52.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Caden Creel",
+      "pos": "QB",
+      "line": "158/237, 1987 YDS, 15 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Caden Creel",
+      "pos": "QB",
+      "line": "139 CAR, 800 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Deondre Johnson",
+      "pos": "WR",
+      "line": "26 REC, 520 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Brock Glenn",
+      "pos": "QB",
+      "line": "105/188, 1039 YDS, 7 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Ajay Allen",
+      "pos": "RB",
+      "line": "109 CAR, 535 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Jonathan Stafford Jr.",
+      "pos": "WR",
+      "line": "54 REC, 523 YDS, 1 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401871061",
+   "kickoff": "2026-11-14T20:30Z",
+   "state": "pre",
+   "away": "MTSU",
+   "home": "LIB",
+   "away_name": "Middle Tennessee Blue Raiders",
+   "home_name": "Liberty Flames",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "LIB -21",
+    "spread_home": 21.0,
+    "open_spread_home": 20.5,
+    "total": 53.5,
+    "open_total": 54.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Roman Gagliano",
+      "pos": "QB",
+      "line": "177/299, 1899 YDS, 16 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Antonio Martin",
+      "pos": "RB",
+      "line": "128 CAR, 711 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Cam'ron Lacy",
+      "pos": "WR",
+      "line": "54 REC, 579 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Deshawn Purdie",
+      "pos": "QB",
+      "line": "115/180, 1705 YDS, 11 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Kam Davis",
+      "pos": "RB",
+      "line": "102 CAR, 666 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Makai Jackson",
+      "pos": "WR",
+      "line": "35 REC, 702 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401860916",
+   "kickoff": "2026-11-14T21:00Z",
+   "state": "pre",
+   "away": "FRES",
+   "home": "TXST",
+   "away_name": "Fresno State Bulldogs",
+   "home_name": "Texas State Bobcats",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TXST -9.5",
+    "spread_home": 9.5,
+    "open_spread_home": 7.0,
+    "total": 59.5,
+    "open_total": 58.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Jayden Mandal",
+      "pos": "QB",
+      "line": "156/251, 1857 YDS, 11 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Bryson Donelson",
+      "pos": "RB",
+      "line": "87 CAR, 422 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Josiah Freeman",
+      "pos": "WR",
+      "line": "46 REC, 647 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Brad Jackson",
+      "pos": "QB",
+      "line": "172/252, 2147 YDS, 19 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Torrance Burgess Jr.",
+      "pos": "RB",
+      "line": "157 CAR, 1118 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Chris Dawn Jr.",
+      "pos": "WR",
+      "line": "48 REC, 515 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856887",
+   "kickoff": "2026-11-14T21:15Z",
+   "state": "pre",
+   "away": "MISS",
+   "home": "OU",
+   "away_name": "Ole Miss Rebels",
+   "home_name": "Oklahoma Sooners",
+   "away_rank": 19,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "OU -1.5",
+    "spread_home": 1.5,
+    "open_spread_home": 4.0,
+    "total": 49.5,
+    "open_total": 53.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Trinidad Chambliss",
+      "pos": "QB",
+      "line": "207/330, 2359 YDS, 18 TD, 9 INT"
+     },
+     "rushingLeader": {
+      "player": "Kewan Lacy",
+      "pos": "RB",
+      "line": "78 CAR, 388 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Deuce Alexander",
+      "pos": "WR",
+      "line": "48 REC, 669 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "John Mateer",
+      "pos": "QB",
+      "line": "183/280, 2042 YDS, 15 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Lloyd Avant",
+      "pos": "RB",
+      "line": "92 CAR, 394 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Isaiah Sategna III",
+      "pos": "WR",
+      "line": "49 REC, 625 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858521",
+   "kickoff": "2026-11-14T21:15Z",
+   "state": "pre",
+   "away": "WASH",
+   "home": "MSU",
+   "away_name": "Washington Huskies",
+   "home_name": "Michigan State Spartans",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "WASH -3.5",
+    "spread_home": -3.5,
+    "open_spread_home": -3.5,
+    "total": 42.5,
+    "open_total": 45.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Demond Williams Jr.",
+      "pos": "QB",
+      "line": "142/220, 1667 YDS, 11 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Brian Bonner Jr.",
+      "pos": "RB",
+      "line": "72 CAR, 318 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Chris Lawson",
+      "pos": "WR",
+      "line": "49 REC, 727 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Alessio Milivojevic",
+      "pos": "QB",
+      "line": "142/217, 1451 YDS, 7 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Jaziun Patterson",
+      "pos": "RB",
+      "line": "76 CAR, 327 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Chrishon McCray",
+      "pos": "WR",
+      "line": "35 REC, 381 YDS, 1 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401871099",
+   "kickoff": "2026-11-14T22:00Z",
+   "state": "pre",
+   "away": "USM",
+   "home": "LT",
+   "away_name": "Southern Miss Golden Eagles",
+   "home_name": "Louisiana Tech Bulldogs",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "LT -17.5",
+    "spread_home": 17.5,
+    "open_spread_home": 18.5,
+    "total": 56.5,
+    "open_total": 54.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Landry Lyddy",
+      "pos": "QB",
+      "line": "116/200, 1326 YDS, 8 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Steven Robinson",
+      "pos": "RB",
+      "line": "157 CAR, 782 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "Mario Sanders",
+      "pos": "WR",
+      "line": "50 REC, 698 YDS, 6 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Blake Baker",
+      "pos": "QB",
+      "line": "122/168, 1504 YDS, 14 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Andrew Burnette",
+      "pos": "RB",
+      "line": "97 CAR, 385 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Jalen Mickens",
+      "pos": "WR",
+      "line": "48 REC, 628 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856861",
+   "kickoff": "2026-11-14T22:30Z",
+   "state": "pre",
+   "away": "KU",
+   "home": "WVU",
+   "away_name": "Kansas Jayhawks",
+   "home_name": "West Virginia Mountaineers",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "WVU -3",
+    "spread_home": 3.0,
+    "open_spread_home": 2.5,
+    "total": 67.5,
+    "open_total": 64.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Isaiah Marshall",
+      "pos": "QB",
+      "line": "126/228, 1716 YDS, 11 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Dylan Edwards",
+      "pos": "RB",
+      "line": "138 CAR, 595 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Nik McMillan",
+      "pos": "WR",
+      "line": "31 REC, 497 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Michael Hawkins Jr.",
+      "pos": "QB",
+      "line": "101/175, 1901 YDS, 12 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Cam Cook",
+      "pos": "RB",
+      "line": "209 CAR, 1072 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "DJ Epps",
+      "pos": "WR",
+      "line": "23 REC, 564 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401860914",
+   "kickoff": "2026-11-14T23:00Z",
+   "state": "pre",
+   "away": "ORST",
+   "home": "BOIS",
+   "away_name": "Oregon State Beavers",
+   "home_name": "Boise State Broncos",
+   "away_rank": null,
+   "home_rank": 24,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BOIS -15.5",
+    "spread_home": 15.5,
+    "open_spread_home": 4.5,
+    "total": 65.5,
+    "open_total": 62.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Braden Atkinson",
+      "pos": "QB",
+      "line": "242/368, 3169 YDS, 25 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "AJ Newberry",
+      "pos": "RB",
+      "line": "81 CAR, 506 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Jesse Legree",
+      "pos": "WR",
+      "line": "61 REC, 1209 YDS, 14 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Maddux Madsen",
+      "pos": "QB",
+      "line": "148/222, 1681 YDS, 15 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Dylan Riley",
+      "pos": "RB",
+      "line": "184 CAR, 1241 YDS, 11 TD"
+     },
+     "receivingLeader": {
+      "player": "Rasean Jones",
+      "pos": "WR",
+      "line": "44 REC, 670 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401869928",
+   "kickoff": "2026-11-14T23:00Z",
+   "state": "pre",
+   "away": "APP",
+   "home": "MRSH",
+   "away_name": "App State Mountaineers",
+   "home_name": "Marshall Thundering Herd",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "APP -1.5",
+    "spread_home": -1.5,
+    "open_spread_home": -2.5,
+    "total": 54.5,
+    "open_total": 53.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Malachi Singleton",
+      "pos": "QB",
+      "line": "177/271, 2156 YDS, 11 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Jaquari Lewis",
+      "pos": "RB",
+      "line": "94 CAR, 462 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Sam Pickett III",
+      "pos": "WR",
+      "line": "40 REC, 590 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Carlos Del Rio-Wilson",
+      "pos": "QB",
+      "line": "93/149, 1107 YDS, 6 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Judah Price",
+      "pos": "RB",
+      "line": "63 CAR, 358 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Xayvion Turner-Bradshaw",
+      "pos": "WR",
+      "line": "28 REC, 397 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856884",
+   "kickoff": "2026-11-14T23:15Z",
+   "state": "pre",
+   "away": "FLA",
+   "home": "UK",
+   "away_name": "Florida Gators",
+   "home_name": "Kentucky Wildcats",
+   "away_rank": null,
+   "home_rank": 11,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UK -3.5",
+    "spread_home": 3.5,
+    "open_spread_home": 1.5,
+    "total": 52.5,
+    "open_total": 55.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Aaron Philo",
+      "pos": "QB",
+      "line": "110/156, 1367 YDS, 9 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Jadan Baugh",
+      "pos": "RB",
+      "line": "160 CAR, 836 YDS, 14 TD"
+     },
+     "receivingLeader": {
+      "player": "Dallas Wilson",
+      "pos": "WR",
+      "line": "35 REC, 465 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Kenny Minchey",
+      "pos": "QB",
+      "line": "186/266, 1979 YDS, 14 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "CJ Baxter",
+      "pos": "RB",
+      "line": "99 CAR, 541 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Kenny Darby",
+      "pos": "WR",
+      "line": "45 REC, 576 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858298",
+   "kickoff": "2026-11-15T00:00Z",
+   "state": "pre",
+   "away": "LOU",
+   "home": "UNC",
+   "away_name": "Louisville Cardinals",
+   "home_name": "North Carolina Tar Heels",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "LOU -3.5",
+    "spread_home": -3.5,
+    "open_spread_home": -2.5,
+    "total": 60.5,
+    "open_total": 59.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Lincoln Kienholz",
+      "pos": "QB",
+      "line": "158/233, 2276 YDS, 14 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Isaac Brown",
+      "pos": "RB",
+      "line": "99 CAR, 745 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Tre Richardson",
+      "pos": "WR",
+      "line": "44 REC, 685 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Billy Edwards Jr.",
+      "pos": "QB",
+      "line": "178/273, 2127 YDS, 18 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Benjamin Hall",
+      "pos": "RB",
+      "line": "69 CAR, 377 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Jordan Shipp",
+      "pos": "WR",
+      "line": "50 REC, 642 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858524",
+   "kickoff": "2026-11-15T00:00Z",
+   "state": "pre",
+   "away": "MINN",
+   "home": "PSU",
+   "away_name": "Minnesota Golden Gophers",
+   "home_name": "Penn State Nittany Lions",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "PSU -9.5",
+    "spread_home": 9.5,
+    "open_spread_home": 7.0,
+    "total": 41.5,
+    "open_total": 43.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Drake Lindsey",
+      "pos": "QB",
+      "line": "180/296, 1797 YDS, 11 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "TJ Thomas",
+      "pos": "RB",
+      "line": "69 CAR, 400 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Javon Tracy",
+      "pos": "WR",
+      "line": "49 REC, 485 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Rocco Becht",
+      "pos": "QB",
+      "line": "164/261, 2079 YDS, 15 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Carson Hansen",
+      "pos": "RB",
+      "line": "103 CAR, 493 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Chase Sowell",
+      "pos": "WR",
+      "line": "38 REC, 635 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401864538",
+   "kickoff": "2026-11-15T00:00Z",
+   "state": "pre",
+   "away": "SJSU",
+   "home": "AFA",
+   "away_name": "San Jos\u00e9 State Spartans",
+   "home_name": "Air Force Falcons",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "AF -12.5",
+    "spread_home": 12.5,
+    "open_spread_home": 10.5,
+    "total": 47.5,
+    "open_total": 49.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Luke Weaver",
+      "pos": "QB",
+      "line": "154/242, 1810 YDS, 11 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Jabari Bates",
+      "pos": "RB",
+      "line": "163 CAR, 682 YDS, 1 TD"
+     },
+     "receivingLeader": {
+      "player": "Carson Clark",
+      "pos": "WR",
+      "line": "61 REC, 689 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Liam Szarka",
+      "pos": "QB",
+      "line": "19/38, 296 YDS, 1 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Evan Medders",
+      "pos": "QB",
+      "line": "86 CAR, 549 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Simon Kibbee",
+      "pos": "TE",
+      "line": "10 REC, 166 YDS, 1 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401871100",
+   "kickoff": "2026-11-15T00:00Z",
+   "state": "pre",
+   "away": "TROY",
+   "home": "USA",
+   "away_name": "Troy Trojans",
+   "home_name": "South Alabama Jaguars",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "USA -3",
+    "spread_home": 3.0,
+    "open_spread_home": 2.5,
+    "total": 55.5,
+    "open_total": 56.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Goose Crowder",
+      "pos": "QB",
+      "line": "102/183, 1162 YDS, 9 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Gavin Griffin",
+      "pos": "RB",
+      "line": "108 CAR, 465 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "TK Keyes",
+      "pos": "WR",
+      "line": "14 REC, 319 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Jared Hollins",
+      "pos": "QB",
+      "line": "82/156, 1195 YDS, 9 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Keenan Phillips",
+      "pos": "RB",
+      "line": "116 CAR, 595 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Brendan Jenkins",
+      "pos": "WR",
+      "line": "33 REC, 552 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856864",
+   "kickoff": "2026-11-15T00:30Z",
+   "state": "pre",
+   "away": "UTAH",
+   "home": "ARIZ",
+   "away_name": "Utah Utes",
+   "home_name": "Arizona Wildcats",
+   "away_rank": 2,
+   "home_rank": 23,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UTAH -2.5",
+    "spread_home": -2.5,
+    "open_spread_home": -1.5,
+    "total": 54.5,
+    "open_total": 51.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Devon Dampier",
+      "pos": "QB",
+      "line": "172/253, 2053 YDS, 20 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Wayshawn Parker",
+      "pos": "RB",
+      "line": "123 CAR, 762 YDS, 9 TD"
+     },
+     "receivingLeader": {
+      "player": "Braden Pegan",
+      "pos": "WR",
+      "line": "44 REC, 591 YDS, 8 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Noah Fifita",
+      "pos": "QB",
+      "line": "224/307, 2794 YDS, 21 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Kedrick Reescano",
+      "pos": "RB",
+      "line": "99 CAR, 373 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Isaiah Mizell",
+      "pos": "WR",
+      "line": "40 REC, 753 YDS, 7 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856885",
+   "kickoff": "2026-11-15T00:30Z",
+   "state": "pre",
+   "away": "TEX",
+   "home": "LSU",
+   "away_name": "Texas Longhorns",
+   "home_name": "LSU Tigers",
+   "away_rank": 6,
+   "home_rank": 21,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "LSU -4",
+    "spread_home": 4.0,
+    "open_spread_home": -3.0,
+    "total": 46.5,
+    "open_total": 54.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Arch Manning",
+      "pos": "QB",
+      "line": "168/254, 2024 YDS, 18 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Raleek Brown",
+      "pos": "RB",
+      "line": "109 CAR, 537 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Ryan Wingo",
+      "pos": "WR",
+      "line": "42 REC, 523 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Sam Leavitt",
+      "pos": "QB",
+      "line": "215/303, 2553 YDS, 17 TD, 9 INT"
+     },
+     "rushingLeader": {
+      "player": "Dilin Jones",
+      "pos": "RB",
+      "line": "166 CAR, 713 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Jackson Harris",
+      "pos": "WR",
+      "line": "47 REC, 800 YDS, 7 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858519",
+   "kickoff": "2026-11-15T00:30Z",
+   "state": "pre",
+   "away": "PUR",
+   "home": "IOWA",
+   "away_name": "Purdue Boilermakers",
+   "home_name": "Iowa Hawkeyes",
+   "away_rank": null,
+   "home_rank": 15,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "IOWA -17.5",
+    "spread_home": 17.5,
+    "open_spread_home": 16.5,
+    "total": 47.5,
+    "open_total": 45.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Ryan Browne",
+      "pos": "QB",
+      "line": "179/288, 2260 YDS, 11 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Fame Ijeboi",
+      "pos": "RB",
+      "line": "160 CAR, 620 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "Asaad Waseem",
+      "pos": "WR",
+      "line": "43 REC, 709 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Hank Brown",
+      "pos": "QB",
+      "line": "125/190, 1316 YDS, 9 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Kamari Moulton",
+      "pos": "RB",
+      "line": "86 CAR, 541 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Tony Diaz",
+      "pos": "WR",
+      "line": "35 REC, 504 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401858299",
+   "kickoff": "2026-11-15T00:30Z",
+   "state": "pre",
+   "away": "STAN",
+   "home": "VT",
+   "away_name": "Stanford Cardinal",
+   "home_name": "Virginia Tech Hokies",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "VT -14.5",
+    "spread_home": 14.5,
+    "open_spread_home": 16.5,
+    "total": 58.5,
+    "open_total": 59.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Davis Warren",
+      "pos": "QB",
+      "line": "186/308, 2203 YDS, 14 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Micah Ford",
+      "pos": "RB",
+      "line": "156 CAR, 751 YDS, 8 TD"
+     },
+     "receivingLeader": {
+      "player": "Caden High",
+      "pos": "WR",
+      "line": "33 REC, 449 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Ethan Grunkemeyer",
+      "pos": "QB",
+      "line": "215/300, 2431 YDS, 18 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Jeffrey Overton Jr.",
+      "pos": "RB",
+      "line": "126 CAR, 762 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Que'Sean Brown",
+      "pos": "WR",
+      "line": "60 REC, 722 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401864539",
+   "kickoff": "2026-11-15T00:30Z",
+   "state": "pre",
+   "away": "UNLV",
+   "home": "UNM",
+   "away_name": "UNLV Rebels",
+   "home_name": "New Mexico Lobos",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UNM -14",
+    "spread_home": 14.0,
+    "open_spread_home": 13.5,
+    "total": 46.5,
+    "open_total": 47.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Jackson Arnold",
+      "pos": "QB",
+      "line": "135/230, 1738 YDS, 15 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Jai'Den Thomas",
+      "pos": "RB",
+      "line": "144 CAR, 753 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Kayden McGee",
+      "pos": "WR",
+      "line": "22 REC, 475 YDS, 6 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Toa Fa'avae",
+      "pos": "QB",
+      "line": "72/121, 1041 YDS, 7 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Scottre Humphrey",
+      "pos": "RB",
+      "line": "128 CAR, 647 YDS, 13 TD"
+     },
+     "receivingLeader": {
+      "player": "Cade Keith",
+      "pos": "TE",
+      "line": "26 REC, 358 YDS, 4 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856882",
+   "kickoff": "2026-11-15T00:45Z",
+   "state": "pre",
+   "away": "SC",
+   "home": "ARK",
+   "away_name": "South Carolina Gamecocks",
+   "home_name": "Arkansas Razorbacks",
+   "away_rank": 17,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "SC -7",
+    "spread_home": -7.0,
+    "open_spread_home": -8.5,
+    "total": 51.5,
+    "open_total": 51.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "LaNorris Sellers",
+      "pos": "QB",
+      "line": "172/274, 2100 YDS, 17 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "LaNorris Sellers",
+      "pos": "QB",
+      "line": "104 CAR, 637 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Mazeo Bennett Jr.",
+      "pos": "WR",
+      "line": "38 REC, 497 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "KJ Jackson",
+      "pos": "QB",
+      "line": "165/279, 1853 YDS, 8 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Cam Settles",
+      "pos": "RB",
+      "line": "71 CAR, 314 YDS, 2 TD"
+     },
+     "receivingLeader": {
+      "player": "Chris Marshall",
+      "pos": "WR",
+      "line": "48 REC, 698 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401862827",
+   "kickoff": "2026-11-15T02:00Z",
+   "state": "pre",
+   "away": "UNT",
+   "home": "UTSA",
+   "away_name": "North Texas Mean Green",
+   "home_name": "UTSA Roadrunners",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UNT -2.5",
+    "spread_home": -2.5,
+    "open_spread_home": -1.5,
+    "total": 76.5,
+    "open_total": 75.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Tayven Jackson",
+      "pos": "QB",
+      "line": "211/298, 2880 YDS, 23 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Jahiem White",
+      "pos": "RB",
+      "line": "163 CAR, 1186 YDS, 16 TD"
+     },
+     "receivingLeader": {
+      "player": "Justin Stevenson",
+      "pos": "WR",
+      "line": "55 REC, 898 YDS, 8 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Owen McCown",
+      "pos": "QB",
+      "line": "189/278, 2016 YDS, 13 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Will Henderson III",
+      "pos": "RB",
+      "line": "120 CAR, 682 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Mekhi Anderson",
+      "pos": "WR",
+      "line": "35 REC, 434 YDS, 5 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401856863",
+   "kickoff": "2026-11-15T02:30Z",
+   "state": "pre",
+   "away": "TTU",
+   "home": "OKST",
+   "away_name": "Texas Tech Red Raiders",
+   "home_name": "Oklahoma State Cowboys",
+   "away_rank": 12,
+   "home_rank": 25,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "OKST -3.5",
+    "spread_home": 3.5,
+    "open_spread_home": -15.5,
+    "total": 72.5,
+    "open_total": 61.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Will Hammond",
+      "pos": "QB",
+      "line": "139/205, 1561 YDS, 6 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "J'Koby Williams",
+      "pos": "RB",
+      "line": "119 CAR, 954 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Kenny Johnson",
+      "pos": "WR",
+      "line": "40 REC, 632 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Drew Mestemaker",
+      "pos": "QB",
+      "line": "206/309, 2962 YDS, 29 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Caleb Hawkins",
+      "pos": "RB",
+      "line": "187 CAR, 1081 YDS, 7 TD"
+     },
+     "receivingLeader": {
+      "player": "Justin Bowick",
+      "pos": "WR",
+      "line": "44 REC, 790 YDS, 10 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401860915",
+   "kickoff": "2026-11-15T02:30Z",
+   "state": "pre",
+   "away": "USU",
+   "home": "SDSU",
+   "away_name": "Utah State Aggies",
+   "home_name": "San Diego State Aztecs",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "USU -2.5",
+    "spread_home": -2.5,
+    "open_spread_home": -2.5,
+    "total": 42.5,
+    "open_total": 44.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Grady Brosterhous",
+      "pos": "QB",
+      "line": "99/178, 1120 YDS, 7 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "Javen Jacobs",
+      "pos": "RB",
+      "line": "106 CAR, 527 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Eli Wood",
+      "pos": "WR",
+      "line": "37 REC, 479 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Jayden Denegal",
+      "pos": "QB",
+      "line": "83/151, 899 YDS, 7 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Javion Kinnard",
+      "pos": "RB",
+      "line": "108 CAR, 613 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Jaylon Hawkins",
+      "pos": "WR",
+      "line": "21 REC, 357 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401864540",
+   "kickoff": "2026-11-15T03:00Z",
+   "state": "pre",
+   "away": "WYO",
+   "home": "UTEP",
+   "away_name": "Wyoming Cowboys",
+   "home_name": "UTEP Miners",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "WYO -7.5",
+    "spread_home": -7.5,
+    "open_spread_home": -10.0,
+    "total": 39.5,
+    "open_total": 43.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Tyler Hughes",
+      "pos": "QB",
+      "line": "113/181, 1238 YDS, 6 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "Tyler Hughes",
+      "pos": "QB",
+      "line": "113 CAR, 676 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Jake Wilson",
+      "pos": "TE",
+      "line": "24 REC, 298 YDS, 3 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "EJ Colson Jr.",
+      "pos": "QB",
+      "line": "66/99, 687 YDS, 7 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Raymond Moore III",
+      "pos": "QB",
+      "line": "77 CAR, 522 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Jaden Smith",
+      "pos": "WR",
+      "line": "36 REC, 303 YDS, 1 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401860917",
+   "kickoff": "2026-11-15T03:30Z",
+   "state": "pre",
+   "away": "CSU",
+   "home": "WSU",
+   "away_name": "Colorado State Rams",
+   "home_name": "Washington State Cougars",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "WSU -9.5",
+    "spread_home": 9.5,
+    "open_spread_home": 6.5,
+    "total": 66.5,
+    "open_total": 62.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Hauss Hejny",
+      "pos": "QB",
+      "line": "104/159, 1391 YDS, 16 TD, 2 INT"
+     },
+     "rushingLeader": {
+      "player": "Mel Brown",
+      "pos": "RB",
+      "line": "54 CAR, 456 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "RJ Vick",
+      "pos": "WR",
+      "line": "32 REC, 463 YDS, 4 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Caden Pinnick",
+      "pos": "QB",
+      "line": "110/178, 952 YDS, 3 TD, 5 INT"
+     },
+     "rushingLeader": {
+      "player": "Kirby Vorhees",
+      "pos": "RB",
+      "line": "66 CAR, 292 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Branden Ganashamoorthy",
+      "pos": "WR",
+      "line": "34 REC, 459 YDS, 3 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401864537",
+   "kickoff": "2026-11-15T04:00Z",
+   "state": "pre",
+   "away": "NDSU",
+   "home": "HAW",
+   "away_name": "North Dakota State Bison",
+   "home_name": "Hawai'i Rainbow Warriors",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NDSU -6.5",
+    "spread_home": -6.5,
+    "open_spread_home": -9.5,
+    "total": 38.5,
+    "open_total": 42.5
+   },
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Nathan Hayes",
+      "pos": "QB",
+      "line": "145/228, 1710 YDS, 13 TD, 8 INT"
+     },
+     "rushingLeader": {
+      "player": "Myles Mitchell",
+      "pos": "RB",
+      "line": "94 CAR, 403 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Jackson Williams",
+      "pos": "WR",
+      "line": "42 REC, 614 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Micah Alejado",
+      "pos": "QB",
+      "line": "228/376, 2489 YDS, 10 TD, 7 INT"
+     },
+     "rushingLeader": {
+      "player": "DeVon Rice",
+      "pos": "RB",
+      "line": "92 CAR, 444 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Kainoa Carvalho",
+      "pos": "WR",
+      "line": "38 REC, 421 YDS"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401866465",
+   "kickoff": "2026-11-17T23:00Z",
+   "state": "pre",
+   "away": "EMU",
+   "home": "WMU",
+   "away_name": "Eastern Michigan Eagles",
+   "home_name": "Western Michigan Broncos",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": null,
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Noah Kim",
+      "pos": "QB",
+      "line": "169/285, 1678 YDS, 11 TD, 4 INT"
+     },
+     "rushingLeader": {
+      "player": "Amareon Blue",
+      "pos": "RB",
+      "line": "87 CAR, 447 YDS, 3 TD"
+     },
+     "receivingLeader": {
+      "player": "Harold Mack",
+      "pos": "WR",
+      "line": "38 REC, 392 YDS, 5 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Broc Lowry",
+      "pos": "QB",
+      "line": "136/209, 1546 YDS, 12 TD, 3 INT"
+     },
+     "rushingLeader": {
+      "player": "Jalen Buckley",
+      "pos": "RB",
+      "line": "167 CAR, 832 YDS, 10 TD"
+     },
+     "receivingLeader": {
+      "player": "Aveion Chenault",
+      "pos": "WR",
+      "line": "35 REC, 566 YDS, 2 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401866464",
+   "kickoff": "2026-11-18T00:00Z",
+   "state": "pre",
+   "away": "BALL",
+   "home": "OHIO",
+   "away_name": "Ball State Cardinals",
+   "home_name": "Ohio Bobcats",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": null,
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "Keldric Luster",
+      "pos": "QB",
+      "line": "170/277, 1618 YDS, 10 TD, 6 INT"
+     },
+     "rushingLeader": {
+      "player": "TJ Horton",
+      "pos": "RB",
+      "line": "83 CAR, 528 YDS, 9 TD"
+     },
+     "receivingLeader": {
+      "player": "Donovan Hamilton",
+      "pos": "WR",
+      "line": "39 REC, 458 YDS, 1 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Nick Poulos",
+      "pos": "QB",
+      "line": "90/157, 1171 YDS, 8 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Duncan Brune",
+      "pos": "RB",
+      "line": "104 CAR, 510 YDS, 5 TD"
+     },
+     "receivingLeader": {
+      "player": "Riley Neer",
+      "pos": "WR",
+      "line": "47 REC, 625 YDS, 6 TD"
+     }
+    }
+   }
+  },
+  {
+   "game_id": "401866466",
+   "kickoff": "2026-11-18T00:00Z",
+   "state": "pre",
+   "away": "M-OH",
+   "home": "KENT",
+   "away_name": "Miami (OH) RedHawks",
+   "home_name": "Kent State Golden Flashes",
+   "away_rank": null,
+   "home_rank": null,
+   "away_score": "0",
+   "home_score": "0",
+   "odds": null,
+   "leaders": {
+    "away": {
+     "passingLeader": {
+      "player": "David McComb",
+      "pos": "QB",
+      "line": "65/103, 1121 YDS, 7 TD, 1 INT"
+     },
+     "rushingLeader": {
+      "player": "Rodney Nelson",
+      "pos": "RB",
+      "line": "101 CAR, 474 YDS, 4 TD"
+     },
+     "receivingLeader": {
+      "player": "Maleek Huggins",
+      "pos": "WR",
+      "line": "30 REC, 534 YDS, 2 TD"
+     }
+    },
+    "home": {
+     "passingLeader": {
+      "player": "Dru DeShields",
+      "pos": "QB",
+      "line": "159/289, 1961 YDS, 11 TD, 9 INT"
+     },
+     "rushingLeader": {
+      "player": "Dru DeShields",
+      "pos": "QB",
+      "line": "88 CAR, 295 YDS, 6 TD"
+     },
+     "receivingLeader": {
+      "player": "Wayne Harris",
+      "pos": "WR",
+      "line": "51 REC, 817 YDS, 7 TD"
+     }
+    }
+   }
+  }
+ ],
+ "rankings": [
+  {
+   "poll": "Playoff Committee Rankings",
+   "headline": "2026 CFP Rankings: Week 11",
+   "date": "2026-11-10T08:00Z",
+   "ranks": [
+    {
+     "rank": 1,
+     "team": "UGA",
+     "record": "8-1"
+    },
+    {
+     "rank": 2,
+     "team": "UTAH",
+     "record": "9-0"
+    },
+    {
+     "rank": 3,
+     "team": "ALA",
+     "record": "7-2"
+    },
+    {
+     "rank": 4,
+     "team": "UCLA",
+     "record": "9-0"
+    },
+    {
+     "rank": 5,
+     "team": "ND",
+     "record": "8-1"
+    },
+    {
+     "rank": 6,
+     "team": "TEX",
+     "record": "7-2"
+    },
+    {
+     "rank": 7,
+     "team": "MIA",
+     "record": "8-1"
+    },
+    {
+     "rank": 8,
+     "team": "TENN",
+     "record": "7-2"
+    },
+    {
+     "rank": 9,
+     "team": "IU",
+     "record": "8-1"
+    },
+    {
+     "rank": 10,
+     "team": "BYU",
+     "record": "7-2"
+    },
+    {
+     "rank": 11,
+     "team": "UK",
+     "record": "7-2"
+    },
+    {
+     "rank": 12,
+     "team": "TTU",
+     "record": "8-1"
+    },
+    {
+     "rank": 13,
+     "team": "WAKE",
+     "record": "8-1"
+    },
+    {
+     "rank": 14,
+     "team": "HOU",
+     "record": "7-2"
+    },
+    {
+     "rank": 15,
+     "team": "IOWA",
+     "record": "7-2"
+    },
+    {
+     "rank": 16,
+     "team": "ORE",
+     "record": "6-3"
+    },
+    {
+     "rank": 17,
+     "team": "SC",
+     "record": "6-3"
+    },
+    {
+     "rank": 18,
+     "team": "USC",
+     "record": "7-2"
+    },
+    {
+     "rank": 19,
+     "team": "MISS",
+     "record": "6-3"
+    },
+    {
+     "rank": 20,
+     "team": "OSU",
+     "record": "6-3"
+    },
+    {
+     "rank": 21,
+     "team": "LSU",
+     "record": "6-3"
+    },
+    {
+     "rank": 22,
+     "team": "MIZ",
+     "record": "6-3"
+    },
+    {
+     "rank": 23,
+     "team": "ARIZ",
+     "record": "7-2"
+    },
+    {
+     "rank": 24,
+     "team": "BOIS",
+     "record": "8-1"
+    },
+    {
+     "rank": 25,
+     "team": "OKST",
+     "record": "6-3"
+    }
+   ]
+  },
+  {
+   "poll": "AP Top 25",
+   "headline": "2026 AP Poll: Week 11",
+   "date": "2026-11-08T08:00Z",
+   "ranks": [
+    {
+     "rank": 1,
+     "team": "UGA",
+     "record": "8-1"
+    },
+    {
+     "rank": 2,
+     "team": "UTAH",
+     "record": "9-0"
+    },
+    {
+     "rank": 3,
+     "team": "ND",
+     "record": "8-1"
+    },
+    {
+     "rank": 4,
+     "team": "UCLA",
+     "record": "9-0"
+    },
+    {
+     "rank": 5,
+     "team": "MIA",
+     "record": "8-1"
+    },
+    {
+     "rank": 6,
+     "team": "IU",
+     "record": "8-1"
+    },
+    {
+     "rank": 7,
+     "team": "ALA",
+     "record": "7-2"
+    },
+    {
+     "rank": 8,
+     "team": "TEX",
+     "record": "7-2"
+    },
+    {
+     "rank": 9,
+     "team": "TENN",
+     "record": "7-2"
+    },
+    {
+     "rank": 10,
+     "team": "TTU",
+     "record": "8-1"
+    },
+    {
+     "rank": 11,
+     "team": "WAKE",
+     "record": "8-1"
+    },
+    {
+     "rank": 12,
+     "team": "BYU",
+     "record": "7-2"
+    },
+    {
+     "rank": 13,
+     "team": "UK",
+     "record": "7-2"
+    },
+    {
+     "rank": 14,
+     "team": "HOU",
+     "record": "7-2"
+    },
+    {
+     "rank": 15,
+     "team": "USC",
+     "record": "7-2"
+    },
+    {
+     "rank": 16,
+     "team": "IOWA",
+     "record": "7-2"
+    },
+    {
+     "rank": 17,
+     "team": "BOIS",
+     "record": "8-1"
+    },
+    {
+     "rank": 18,
+     "team": "ORE",
+     "record": "6-3"
+    },
+    {
+     "rank": 19,
+     "team": "MISS",
+     "record": "6-3"
+    },
+    {
+     "rank": 20,
+     "team": "SC",
+     "record": "6-3"
+    },
+    {
+     "rank": 21,
+     "team": "OSU",
+     "record": "6-3"
+    },
+    {
+     "rank": 22,
+     "team": "ARIZ",
+     "record": "7-2"
+    },
+    {
+     "rank": 23,
+     "team": "UNM",
+     "record": "8-1"
+    },
+    {
+     "rank": 24,
+     "team": "LSU",
+     "record": "6-3"
+    },
+    {
+     "rank": 25,
+     "team": "SMU",
+     "record": "7-2"
+    }
+   ]
+  },
+  {
+   "poll": "AFCA Coaches Poll",
+   "headline": "2026 AFCA Coaches Poll: Week 11",
+   "date": "2026-11-08T08:00Z",
+   "ranks": [
+    {
+     "rank": 1,
+     "team": "UGA",
+     "record": "8-1"
+    },
+    {
+     "rank": 2,
+     "team": "UTAH",
+     "record": "9-0"
+    },
+    {
+     "rank": 3,
+     "team": "ND",
+     "record": "8-1"
+    },
+    {
+     "rank": 4,
+     "team": "UCLA",
+     "record": "9-0"
+    },
+    {
+     "rank": 5,
+     "team": "IU",
+     "record": "8-1"
+    },
+    {
+     "rank": 6,
+     "team": "MIA",
+     "record": "8-1"
+    },
+    {
+     "rank": 7,
+     "team": "ALA",
+     "record": "7-2"
+    },
+    {
+     "rank": 8,
+     "team": "TEX",
+     "record": "7-2"
+    },
+    {
+     "rank": 9,
+     "team": "TENN",
+     "record": "7-2"
+    },
+    {
+     "rank": 10,
+     "team": "TTU",
+     "record": "8-1"
+    },
+    {
+     "rank": 11,
+     "team": "WAKE",
+     "record": "8-1"
+    },
+    {
+     "rank": 12,
+     "team": "BYU",
+     "record": "7-2"
+    },
+    {
+     "rank": 13,
+     "team": "UK",
+     "record": "7-2"
+    },
+    {
+     "rank": 14,
+     "team": "USC",
+     "record": "7-2"
+    },
+    {
+     "rank": 15,
+     "team": "IOWA",
+     "record": "7-2"
+    },
+    {
+     "rank": 16,
+     "team": "HOU",
+     "record": "7-2"
+    },
+    {
+     "rank": 17,
+     "team": "MISS",
+     "record": "6-3"
+    },
+    {
+     "rank": 18,
+     "team": "BOIS",
+     "record": "8-1"
+    },
+    {
+     "rank": 19,
+     "team": "ORE",
+     "record": "6-3"
+    },
+    {
+     "rank": 20,
+     "team": "OSU",
+     "record": "6-3"
+    },
+    {
+     "rank": 21,
+     "team": "ARIZ",
+     "record": "7-2"
+    },
+    {
+     "rank": 22,
+     "team": "LSU",
+     "record": "6-3"
+    },
+    {
+     "rank": 23,
+     "team": "SMU",
+     "record": "7-2"
+    },
+    {
+     "rank": 24,
+     "team": "SC",
+     "record": "6-3"
+    },
+    {
+     "rank": 25,
+     "team": "UNM",
+     "record": "8-1"
+    }
+   ]
+  }
+ ]
+}

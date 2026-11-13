@@ -46,6 +46,8 @@ if __name__ == "__main__":
     ap.add_argument("--every", type=int, default=20, help="minutes between checks")
     ap.add_argument("--until", help="give up at this local time, YYYY-MM-DD HH:MM")
     ap.add_argument("--no-run", action="store_true", help="only report when the gate opens")
+    ap.add_argument("--roster", help="this week's MFL roster json; needed for the optimize step (2026-11-12: without it "
+                                     "optimize.py used to fall back to the Week 6 roster file without saying so)")
     a = ap.parse_args()
     need = playing(a.season, a.week)
     stop = dt.datetime.fromisoformat(a.until) if a.until else None
@@ -69,4 +71,7 @@ if __name__ == "__main__":
     step("build_injuries.py", str(a.season), str(a.week))
     step("fetch_odds.py", odds)
     step("run_week.py", str(a.season), str(a.week), "--odds", odds)
-    step("optimize.py", str(a.season), str(a.week))
+    if a.roster:
+        step("optimize.py", str(a.season), str(a.week), "--roster", a.roster)
+    else:
+        print("No --roster given: sim saved, lineup step skipped.", flush=True)

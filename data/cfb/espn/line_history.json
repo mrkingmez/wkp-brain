@@ -1,0 +1,978 @@
+{
+ "401862824": {
+  "away": "MEM",
+  "home": "USF",
+  "kickoff": "2026-11-13T01:00Z",
+  "open_spread_home": -6.0,
+  "open_total": 49.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -4.0,
+    "total": 49.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401869969": {
+  "away": "UL",
+  "home": "ULM",
+  "kickoff": "2026-11-13T02:00Z",
+  "open_spread_home": -10.5,
+  "open_total": 48.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -10.5,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858293": {
+  "away": "FSU",
+  "home": "PITT",
+  "kickoff": "2026-11-14T00:00Z",
+  "open_spread_home": 3.0,
+  "open_total": 53.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.5,
+    "total": 52.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858526": {
+  "away": "ILL",
+  "home": "UCLA",
+  "kickoff": "2026-11-14T02:00Z",
+  "open_spread_home": 12.5,
+  "open_total": 47.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 10.0,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856860": {
+  "away": "HOU",
+  "home": "COLO",
+  "kickoff": "2026-11-14T03:15Z",
+  "open_spread_home": -10.5,
+  "open_total": 47.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -9.5,
+    "total": 51.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858296": {
+  "away": "DUKE",
+  "home": "MIA",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": 20.5,
+  "open_total": 55.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 13.5,
+    "total": 54.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858301": {
+  "away": "WAKE",
+  "home": "SMU",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": -3.5,
+  "open_total": 55.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 1.5,
+    "total": 60.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858522": {
+  "away": "NU",
+  "home": "OSU",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": 9.5,
+  "open_total": 48.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 14.0,
+    "total": 44.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856859": {
+  "away": "CIN",
+  "home": "ISU",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": 1.5,
+  "open_total": 60.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.0,
+    "total": 59.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856886": {
+  "away": "AUB",
+  "home": "MSST",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": -3.5,
+  "open_total": 51.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -2.5,
+    "total": 50.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858300": {
+  "away": "SYR",
+  "home": "NCSU",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": -1.5,
+  "open_total": 56.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -3.0,
+    "total": 53.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858520": {
+  "away": "WIS",
+  "home": "MD",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": -7.5,
+  "open_total": 43.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -8.5,
+    "total": 42.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401861967": {
+  "away": "JMU",
+  "home": "CONN",
+  "kickoff": "2026-11-14T17:00Z",
+  "open_spread_home": -1.5,
+  "open_total": 56.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -4.0,
+    "total": 57.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858297": {
+  "away": "GT",
+  "home": "CLEM",
+  "kickoff": "2026-11-14T17:30Z",
+  "open_spread_home": 13.5,
+  "open_total": 49.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 13.5,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858525": {
+  "away": "NEB",
+  "home": "RUTG",
+  "kickoff": "2026-11-14T17:30Z",
+  "open_spread_home": -12.5,
+  "open_total": 54.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -14.5,
+    "total": 51.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856889": {
+  "away": "ALA",
+  "home": "VAN",
+  "kickoff": "2026-11-14T17:45Z",
+  "open_spread_home": -19.5,
+  "open_total": 54.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -17.5,
+    "total": 50.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401862825": {
+  "away": "ECU",
+  "home": "CLT",
+  "kickoff": "2026-11-14T18:00Z",
+  "open_spread_home": -13.5,
+  "open_total": 47.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -11.5,
+    "total": 45.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401862829": {
+  "away": "UAB",
+  "home": "TEM",
+  "kickoff": "2026-11-14T18:00Z",
+  "open_spread_home": 2.5,
+  "open_total": 51.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 2.5,
+    "total": 48.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401869937": {
+  "away": "ARST",
+  "home": "CCU",
+  "kickoff": "2026-11-14T18:00Z",
+  "open_spread_home": 1.5,
+  "open_total": 50.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 1.5,
+    "total": 51.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856862": {
+  "away": "KSU",
+  "home": "TCU",
+  "kickoff": "2026-11-14T19:00Z",
+  "open_spread_home": 9.5,
+  "open_total": 45.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 10.5,
+    "total": 44.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401862828": {
+  "away": "TULN",
+  "home": "RICE",
+  "kickoff": "2026-11-14T19:00Z",
+  "open_spread_home": -1.5,
+  "open_total": 46.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 2.5,
+    "total": 48.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401870769": {
+  "away": "KENN",
+  "home": "SHSU",
+  "kickoff": "2026-11-14T19:00Z",
+  "open_spread_home": -7.5,
+  "open_total": 44.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -7.0,
+    "total": 46.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856888": {
+  "away": "TENN",
+  "home": "TA&M",
+  "kickoff": "2026-11-14T20:00Z",
+  "open_spread_home": 9.5,
+  "open_total": 55.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -2.5,
+    "total": 43.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401870796": {
+  "away": "NMSU",
+  "home": "MOST",
+  "kickoff": "2026-11-14T20:00Z",
+  "open_spread_home": 1.5,
+  "open_total": 50.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 1.5,
+    "total": 49.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401871060": {
+  "away": "FIU",
+  "home": "DEL",
+  "kickoff": "2026-11-14T20:00Z",
+  "open_spread_home": 6.5,
+  "open_total": 50.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 4.5,
+    "total": 53.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856883": {
+  "away": "MIZ",
+  "home": "UGA",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 12.5,
+  "open_total": 46.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 15.5,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858294": {
+  "away": "BC",
+  "home": "ND",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 31.5,
+  "open_total": 52.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 29.5,
+    "total": 52.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858518": {
+  "away": "USC",
+  "home": "IU",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 10.5,
+  "open_total": 58.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 8.5,
+    "total": 50.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856858": {
+  "away": "BAY",
+  "home": "BYU",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 7.5,
+  "open_total": 47.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 7.5,
+    "total": 49.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858523": {
+  "away": "MICH",
+  "home": "ORE",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 13.5,
+  "open_total": 53.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 10.5,
+    "total": 38.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856857": {
+  "away": "ASU",
+  "home": "UCF",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 2.5,
+  "open_total": 52.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.0,
+    "total": 48.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858295": {
+  "away": "CAL",
+  "home": "UVA",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 12.5,
+  "open_total": 47.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 10.0,
+    "total": 46.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401862826": {
+  "away": "FAU",
+  "home": "TLSA",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 5.5,
+  "open_total": 66.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 5.5,
+    "total": 73.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401864536": {
+  "away": "NEV",
+  "home": "NIU",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": -10.5,
+  "open_total": 46.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -7.0,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401869952": {
+  "away": "GASO",
+  "home": "GAST",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": -5.5,
+  "open_total": 55.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -6.0,
+    "total": 56.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401870752": {
+  "away": "JXST",
+  "home": "WKU",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": -6.0,
+  "open_total": 52.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -7.5,
+    "total": 54.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401871061": {
+  "away": "MTSU",
+  "home": "LIB",
+  "kickoff": "2026-11-14T20:30Z",
+  "open_spread_home": 20.5,
+  "open_total": 54.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 21.0,
+    "total": 53.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401860916": {
+  "away": "FRES",
+  "home": "TXST",
+  "kickoff": "2026-11-14T21:00Z",
+  "open_spread_home": 7.0,
+  "open_total": 58.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 9.5,
+    "total": 59.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856887": {
+  "away": "MISS",
+  "home": "OU",
+  "kickoff": "2026-11-14T21:15Z",
+  "open_spread_home": 4.0,
+  "open_total": 53.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 1.5,
+    "total": 49.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858521": {
+  "away": "WASH",
+  "home": "MSU",
+  "kickoff": "2026-11-14T21:15Z",
+  "open_spread_home": -3.5,
+  "open_total": 45.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -3.5,
+    "total": 42.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401871099": {
+  "away": "USM",
+  "home": "LT",
+  "kickoff": "2026-11-14T22:00Z",
+  "open_spread_home": 18.5,
+  "open_total": 54.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 17.5,
+    "total": 56.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856861": {
+  "away": "KU",
+  "home": "WVU",
+  "kickoff": "2026-11-14T22:30Z",
+  "open_spread_home": 2.5,
+  "open_total": 64.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.0,
+    "total": 67.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401860914": {
+  "away": "ORST",
+  "home": "BOIS",
+  "kickoff": "2026-11-14T23:00Z",
+  "open_spread_home": 4.5,
+  "open_total": 62.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 14.5,
+    "total": 63.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401869928": {
+  "away": "APP",
+  "home": "MRSH",
+  "kickoff": "2026-11-14T23:00Z",
+  "open_spread_home": -2.5,
+  "open_total": 53.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -1.5,
+    "total": 54.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856884": {
+  "away": "FLA",
+  "home": "UK",
+  "kickoff": "2026-11-14T23:15Z",
+  "open_spread_home": 1.5,
+  "open_total": 55.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.5,
+    "total": 52.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858298": {
+  "away": "LOU",
+  "home": "UNC",
+  "kickoff": "2026-11-15T00:00Z",
+  "open_spread_home": -2.5,
+  "open_total": 59.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -3.5,
+    "total": 59.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858524": {
+  "away": "MINN",
+  "home": "PSU",
+  "kickoff": "2026-11-15T00:00Z",
+  "open_spread_home": 7.0,
+  "open_total": 43.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 9.5,
+    "total": 41.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401864538": {
+  "away": "SJSU",
+  "home": "AFA",
+  "kickoff": "2026-11-15T00:00Z",
+  "open_spread_home": 10.5,
+  "open_total": 49.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 12.5,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401871100": {
+  "away": "TROY",
+  "home": "USA",
+  "kickoff": "2026-11-15T00:00Z",
+  "open_spread_home": 2.5,
+  "open_total": 56.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.0,
+    "total": 55.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856864": {
+  "away": "UTAH",
+  "home": "ARIZ",
+  "kickoff": "2026-11-15T00:30Z",
+  "open_spread_home": -1.5,
+  "open_total": 51.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -2.5,
+    "total": 54.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856885": {
+  "away": "TEX",
+  "home": "LSU",
+  "kickoff": "2026-11-15T00:30Z",
+  "open_spread_home": -3.0,
+  "open_total": 54.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 4.0,
+    "total": 46.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858519": {
+  "away": "PUR",
+  "home": "IOWA",
+  "kickoff": "2026-11-15T00:30Z",
+  "open_spread_home": 16.5,
+  "open_total": 45.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 17.5,
+    "total": 47.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401858299": {
+  "away": "STAN",
+  "home": "VT",
+  "kickoff": "2026-11-15T00:30Z",
+  "open_spread_home": 16.5,
+  "open_total": 59.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 15.5,
+    "total": 58.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401864539": {
+  "away": "UNLV",
+  "home": "UNM",
+  "kickoff": "2026-11-15T00:30Z",
+  "open_spread_home": 13.5,
+  "open_total": 47.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 14.5,
+    "total": 46.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856882": {
+  "away": "SC",
+  "home": "ARK",
+  "kickoff": "2026-11-15T00:45Z",
+  "open_spread_home": -8.5,
+  "open_total": 51.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -7.0,
+    "total": 51.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401862827": {
+  "away": "UNT",
+  "home": "UTSA",
+  "kickoff": "2026-11-15T02:00Z",
+  "open_spread_home": -1.5,
+  "open_total": 75.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -2.5,
+    "total": 76.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401856863": {
+  "away": "TTU",
+  "home": "OKST",
+  "kickoff": "2026-11-15T02:30Z",
+  "open_spread_home": -15.5,
+  "open_total": 61.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 3.5,
+    "total": 72.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401860915": {
+  "away": "USU",
+  "home": "SDSU",
+  "kickoff": "2026-11-15T02:30Z",
+  "open_spread_home": -2.5,
+  "open_total": 44.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -2.5,
+    "total": 42.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401864540": {
+  "away": "WYO",
+  "home": "UTEP",
+  "kickoff": "2026-11-15T03:00Z",
+  "open_spread_home": -10.0,
+  "open_total": 43.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -8.5,
+    "total": 39.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401860917": {
+  "away": "CSU",
+  "home": "WSU",
+  "kickoff": "2026-11-15T03:30Z",
+  "open_spread_home": 6.5,
+  "open_total": 62.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": 9.5,
+    "total": 66.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ },
+ "401864537": {
+  "away": "NDSU",
+  "home": "HAW",
+  "kickoff": "2026-11-15T04:00Z",
+  "open_spread_home": -9.5,
+  "open_total": 42.5,
+  "history": [
+   {
+    "seen": "2026-11-12 16:27",
+    "spread_home": -6.5,
+    "total": 38.5,
+    "provider": "DraftKings",
+    "state": "pre"
+   }
+  ]
+ }
+}

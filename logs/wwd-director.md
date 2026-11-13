@@ -304,3 +304,42 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 2026-11-10 EP120 prep revised in place: Matt out, panel is KingZ and Oracle. Angles rebalanced, confirm lists redone, docx regenerated. Not committed.
 
 2026-11-10 EP120 prep revised in place: Matt out, panel is KingZ and Oracle. Angles rebalanced, confirm lists redone, docx regenerated. Not committed.
+
+### 2026-11-11 22:40 - FrostCast EP 120 transcript, chapters, audio cut
+**Status:** DONE (steps 1 to 5; Messenger send left for main session)
+**Trigger:** Jarvis: run FrostCast Transcription Workflow steps 1 to 5 for EP 120, Zac and Gabby only, --num-speakers 2
+**Classification:** FrostCast
+**Elapsed:** about 25 min (audio extract 3 s, transcribe plus diarize 5.5 min on GPU)
+**Actions taken:** Confirmed mp4 size stable (2,800,804,177 bytes, unchanged over 6+ min). Extracted 16 kHz mono wav (runtime 01:20:31). Ran transcribe.py detached, --num-speakers 2, default voiceprints, map-seconds 60, threshold 0.50. Confidence: SPEAKER_00 -> Gabby/Oracle 0.73, SPEAKER_01 -> Zac/KingZ 0.82. Output 979 lines (Zac 716, Gabby 262, Guest/Unknown 1). Read the full transcript for spot-check and chapters. wwd-frostcast-chapters rules: 12 chapters. wwd-audio-cut: computed finished runtime 62:37, 15 cuts, cold open 00:24:53 to 00:25:11.
+**Spot-check:** Zac and Gabby labels hold in the first minutes and across the show by context. Wrong: Winter Wolf's phone-in cameos at 00:04:11 to 00:04:32 and 01:04:01 to 01:05:19 are labeled Zac (forced 2-speaker), intro montage and trailer audio labeled as hosts. Not audio-verified. Garbles: "Roland Thames" 00:01:02, "Latchman" 00:09:42.
+**Poll in transcript:** introduced 00:40:46 (Full Metal Jacket, Platoon, Patton, American Sniper), vote call 00:41:23, "poll never went live" glitch 00:43:13, results 01:12:46 to 01:13:21 (Patton 0%, Platoon 14%, American Sniper and Full Metal Jacket 43% each).
+**Deliverables:** L:\Winter Wolfs Den review show\Frost-Cast\EP 120\James Gunn is James GONE _ FrostCast Episode 120_transcript.txt; same folder FrostCast Episode 120 - Chapters.txt; L:\Winter Wolfs Den review show\Audio\podcast Frostcast audio files\FrostCast ep 120 2026-11-11.md; scratch D:\WKP\scratch\ep120\
+**Flags for Zac:** DELIVER TRANSCRIPT TO MATT VIA MESSENGER (path above), main session sends. Opus Clip not touched. Finished runtime is computed, no audio rendered. Run clearance or fact-research before using real-person claims (The Rock, Imitation Game) in copy.
+
+### 2026-11-11 23:30 - EP 120 chapters and audio cut re-run (Jarvis steps 4 and 5)
+**Status:** DONE
+**Trigger:** Jarvis: chapters to EP120-chapters.txt, audio cut doc, poll timecode, human-check list. Transcript done, no re-run.
+**Classification:** FrostCast
+**Actions taken:** Read all 979 lines. Ran wwd-frostcast-chapters rules: 13 chapters, saved EP120-chapters.txt. Found the 22:40 run already wrote FrostCast ep 120 2026-11-11.md (15 cuts, 62:37, cold open 00:24:53 to 00:25:11) and an older 12-chapter file; built an independent cut list (14 cuts, about 64:13, cold open 02:32 to 02:48), compared, kept the existing audio cut (consistent math, better cold open, trailer cut), did not overwrite. Appended a human-check list to it. No send, no post.
+**Deliverables:** L:\Winter Wolfs Den review show\Frost-Cast\EP 120\EP120-chapters.txt; L:\Winter Wolfs Den review show\Audio\podcast Frostcast audio files\FrostCast ep 120 2026-11-11.md (addendum appended)
+**Flags for Zac:** Two chapter files now exist in EP 120 (older "FrostCast Episode 120 - Chapters.txt", 12 entries, and EP120-chapters.txt, 13 entries). Pick one. Messenger send of transcript still open from the 22:40 entry. Finished runtime is computed, not rendered.
+
+### 2026-11-11 - EP120 shorts scheduling dry run
+**Status:** DONE (dry run only, nothing scheduled)
+**Trigger:** Jarvis, CLAUDE.md step 7 for FrostCast EP 120, Opus project P3111203h4MR
+**Classification:** FrostCast
+**Actions taken:** read 42 Opus clips against transcript; picked 18; script-room (copywriting, originality, clearance) then marketing-director; no-ai-slop done as a manual read by wwd-director (skill not callable here); dropped 5 clips; dry run of schedule_week.py with --start 2026-11-12, no --go.
+**Deliverables:** D:\WKP\WWD\opusclip\EP120-approved-copy.json, D:\WKP\WWD\opusclip\plan-P3111203h4MR.csv
+**Flags for Zac:** fact-check file D:\WKP\research\wwd\2026-11-11-ep120-fact-check.md did not exist when run; clip audio items need a listen; see report.
+
+### 2026-11-12 03:30 - EP 120 shorts redo (locked cadence, plan mode)
+**Status:** DONE (dry run only, nothing scheduled)
+**Trigger:** Jarvis: redo EP 120 shorts schedule on Zac's 2026-11-11 cadence, pool to 23-28 clips
+**Classification:** FrostCast (shorts)
+**Actions taken:** re-vetted 24 skipped Opus clips against the EP 120 fact table, transcript and Wikipedia checks (Bond stunt, Mr. Sinister, Stewart 80 films, Hawkgirl, Black Adam cast); brought back 8 (pool 18 to 26); copy via marketing-director then script-room, no-ai-slop applied by a general-purpose agent (no Skill tool), clearance and originality read inline by script-room, fixes merged; fixed puaU6xXOnG copy (described audio not in the clip); backed up schedule_week.py and EP120-approved-copy.json; added --plan-csv mode; dry run, no --go.
+**Deliverables:** D:\WKP\WWD\opusclip\plan-P3111203h4MR-v2.csv (59 posts), plan-input-P3111203h4MR-v2.csv, EP120-approved-copy.json (26 clips), schedule_week.py (+ .orig-2026-11-11), EP120-approved-copy.json.orig-2026-11-12
+**Flags for Zac:** Zac says go before any --go. No opusclip trim tool available, so no trims were made. devils-advocate verdict not run (no new format, only more clips).
+
+### 2026-11-12 - EP 120 chain closed (added by Jarvis relay of Zac's confirmation)
+**Status:** DONE
+Opus Clip shorts for EP 120 are scheduled on Zac's go (59 posts, log `WWD\opusclip\schedule-log\P3111203h4MR.json`). Matt received the EP 120 transcript. Nothing from the EP 120 chain remains open in this log except Zac's spot-check of one scheduled post in Opus before Thu 6 PM and the two-chapter-file pick (older "FrostCast Episode 120 - Chapters.txt" vs EP120-chapters.txt). Earlier entries in this log that say "Messenger send left for main session" or "dry run only, nothing scheduled" are superseded by this entry.

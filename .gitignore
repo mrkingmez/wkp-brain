@@ -23,3 +23,16 @@ ebay-dropship/keysets.txt
 
 # copyrighted training references, internal only (ANIM-2026-11-05-01)
 ANIMATION/training/
+
+# speaker voiceprints = biometric data of Matt, Zac and Gabby. Local only, never commit (2026-11-11)
+/voiceprints/
+.claude/skills/wwd-video-transcriber/voiceprints/
+
+
+# Teacher course: local progress data and build output, never commit (2026-11-12)
+Teacher/data/
+Teacher/site/.venv/
+Teacher/site/build/
+
+# Teacher vendored third-party course repo, never commit (2026-11-12)
+Teacher/vendor/

@@ -19,7 +19,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 import run_week as rw
 
 season, week = int(sys.argv[1]), int(sys.argv[2])
-odds = sys.argv[sys.argv.index("--odds") + 1] if "--odds" in sys.argv else r"D:\WKP\scratch\wk6_odds.json"
+if "--odds" not in sys.argv:              # 2026-11-12: the default used to be the Week 6 odds file
+    raise SystemExit("pickem_probs.py needs --odds <this week's Odds API json>")
+odds = sys.argv[sys.argv.index("--odds") + 1]
 Phi = lambda x: 0.5 * (1 + erf(x / sqrt(2)))
 
 g = pd.read_parquet(r"D:\WKP\data\nfl\schedules\games.parquet")

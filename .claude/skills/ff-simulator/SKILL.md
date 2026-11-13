@@ -30,6 +30,38 @@ Personal use, decision support only. Never submits anything.
 5. `coach_table.py <season> <week>` writes the current coaching tendency table.
 6. `backtest_coach.py` and `backtest_sim.py` test the models against real results.
 
+## Changes from the 2026-11-12 audit (report: `Fantasy-Football\reports\Fantasy-Sim-Audit-2026-11-12.md`)
+- **No defaults.** `run_week.py`, `full_week.py`, `pickem_probs.py` need `--odds`; `optimize.py` and `full_week.py` need `--roster`;
+  `full_week.py` needs `--md`. The old defaults were the Week 6 files. `wait_and_run.py` takes `--roster` for its lineup step.
+- **Refresh the id bridge too:** `nfl-data\scripts\nfl_data.py get players players.parquet --season <yr>` and `get schedules games.parquet`
+  before step 0. A stale `players.parquet` drops new players from every lineup without an error.
+- **Trades.** `build_injuries.py` reads "Acquired X from Y" lines and sets `roster_team` at once (list printed as `trades_in`). The sim then
+  moves defenders and quarterbacks to the new team with their own rates. Runners and receivers on a new team are NOT simulated; they are
+  printed as `transfers_not_simulated` and in the report. Check that list every week.
+- **Overrides file** `data\ff-simulator\overrides_<season>_wk<week>.json`: `players` (status facts) and a new `qbs` block,
+  `{"BAL": {"gsis_id": "...", "name": "...", "source": "..."}}`, the named starter by team. Both sims read it.
+- **Injury file** has a `practice` column (latest nflverse practice status). Rule 4 in the venture CLAUDE.md is still applied by hand.
+- **Seeds.** One random stream per game, so an untouched game gives the same numbers run to run. Use `--sims 20000` for the official run (12 seconds).
+- **Tests:** `python -I scripts\test_sim_fixes.py` (6 tests, needs the nflverse cache, no network).
+
+## Standing weekly doc format (Zac, relayed by Jarvis 2026-11-12)
+One doc a week: `D:\WKP Reports\Fantasy Football\YYYY-MM-DD - Week N Picks and Lineup.docx` (md in `Fantasy-Football\reports\`).
+Same layout every week, model file `reports\Week10-Picks-and-Lineup-2026-11-12-thu-v2.md`: what changed on top in 5 lines or fewer,
+the saved-lineup screenshot line, MFL swaps table, lineup table with a status on every name, close calls, before-lock checklist,
+20 numbered picks with labels and the market now, tiebreaker, straight-up list, weather flags, not available list.
+A rerun is a new version (v2, v3) with a changed-since-last-run note on top. Plain words, no em dashes.
+
+## Round two, 2026-11-12 afternoon (each with a before/after test, see the audit report)
+- Injury file: Questionable and no practice plays 0.40 (`Q_DNP_PLAY_PROB`), limited or full stays 0.75. `run_week.py` reads the file's play chance.
+- `build_injuries.py --check-franchise 0012` (default on) asks ESPN which team each rostered player is on and prints disagreements.
+- `simulate.TOTAL_SD = 13.2` (was 9.0). `run_week.OFFENSE_WIDEN` stays 1.3.
+- Traded RB/WR/TE: simulated at 0.6 of the old target share and 0.3 of the carries, listed as `transfers_reduced_share`.
+- `optimize.py --blend <roster_compare csv> --opp <json list of the opponent's starter gsis ids>`.
+- `cover_table.py`: `cover_prob(card_home, market_home)` and `pick_side(...)` (LEAN, SLIGHT, HOOK, NO EDGE). Use it for every NFL card label.
+- `ff-play-sim\scripts\weather.py <season> <week>`: kickoff weather flags for outdoor games.
+- `tracker\cfb_snapshot.py` now adds a CFBD block (two-book lines with the open, SP+, Elo, FPI; 5 calls; `--no-cfbd` to skip).
+- `dfs_optimize.py` needs `--week`.
+
 ## Where the report goes (LOCKED 2026-10-29, Zac)
 Every simulation report and its DFS projections csv go in a per-week folder inside the one simulator folder:
 `D:\WKP Reports\Fantasy Football\Week <N> Full Simulation\<YYYY-MM-DD> - Week <N> Full Simulation.docx`

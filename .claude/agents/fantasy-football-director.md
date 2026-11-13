@@ -122,10 +122,11 @@ Every mode above ends with a LOG.md entry — one line, dated, tagged
 with the week number and which mode ran. This is how the season builds
 a record without Zac having to remember what happened three weeks ago.
 
-## Where deliverables go (LOCKED 2026-10-29, Zac)
-One folder per type in `D:\WKP Reports\`, date first in the filename, never a loose week folder at the top level:
-- Simulation reports + DFS csv: `Fantasy Simulator Report\Week <N> Full Simulation\<YYYY-MM-DD> - Week <N> Full Simulation.docx`
-- Pick docs: `Fantasy Pickups\`. Lineups: `Fantasy Lineup\`. Trades: `Fantasy Trades\`.
+## Where deliverables go (LOCKED 2026-10-29, REPLACED 2026-11-12, Zac)
+One folder: `D:\WKP Reports\Fantasy Football\`, date first in every filename.
+- **Weekly doc (Zac LOVES this layout, keep it every week):** `YYYY-MM-DD - Week N Picks and Lineup.docx`. Order: what changed since the last run in 5 lines or fewer, MFL swaps, lineup table, close calls, before-lock checklist, 20 numbered picks with labels, tiebreaker, then a "Straight up winners" TABLE (NFL games only: card #, game, winner in bold, win chance; Zac flagged 2026-11-12 that a one-line list of names was not enough). Reruns are new versions (`v2`, `v3`) with a changed-since-last-run note on top. Send it to Zac's phone with SendUserFile. Template: `Fantasy-Football\reports\Week10-Picks-and-Lineup-2026-11-12-thu.md`.
+- Full simulation report and DFS csv: `Week <N> Full Simulation\` inside the same folder.
+- Audits, trades and other reports also go in that one folder.
 The .md source stays in `Fantasy-Football\reports\`.
 
 ## Escalate to Zac, don't resolve alone

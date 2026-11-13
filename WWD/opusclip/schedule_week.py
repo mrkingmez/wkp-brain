@@ -7,6 +7,11 @@ Times are America/New_York. Posts go straight to the Opus API, no approval click
 
 Key: environment variable OPUS_API_KEY (user scope). Never put it in a file or in chat.
 
+PLAN MODE (added 2026-11-12, Zac's locked cadence): --plan-csv FILE posts exactly the rows in the CSV
+(date,time_et,platform,clip_id,title), no SLOTS table, no quota, no +45/+90 stagger. The 31-slot table below is the
+OLD logic, kept only for the legacy mode. Backup of the original: schedule_week.py.orig-2026-11-11.
+  python schedule_week.py PROJECT_ID --copy EP120-approved-copy.json --plan-csv plan-input.csv --plan-out plan-v2.csv
+
 Usage (dry run is the default, nothing is posted):
   python schedule_week.py PROJECT_ID --copy EP119-approved-copy.json --start 2026-11-12
   python schedule_week.py PROJECT_ID --copy ... --start ... --go        # really schedule
@@ -143,6 +148,51 @@ def plan(clips, copy, start, spoilers_late, yt_one_a_day, platforms, require_cop
     return posts, len(chosen), len(assign)
 
 
+def plan_from_csv(path, clips, copy, require_copy):
+    """Explicit plan mode (added 2026-11-12). Reads exact posts from a CSV instead of the SLOTS table.
+    Columns: date (YYYY-MM-DD), time_et (HH:MM, 24h, America/New_York), platform, clip_id (Opus curationId), title (ignored,
+    for humans; the posted title comes from the approved copy). No stagger, no quota: each row is one post at that minute."""
+    by_id = {}
+    for c in clips:
+        by_id[c["id"]] = c
+        if c["curationId"]:
+            by_id[c["curationId"]] = c
+    posts, problems = [], []
+    with open(path, newline="", encoding="utf-8") as f:
+        for n, r in enumerate(csv.DictReader(f), start=2):
+            plat = (r.get("platform") or "").strip().lower()
+            cid = (r.get("clip_id") or "").strip()
+            if plat not in ACCOUNTS:
+                problems.append(f"row {n}: unknown platform {plat!r}"); continue
+            c = by_id.get(cid)
+            if not c:
+                problems.append(f"row {n}: clip id {cid!r} not in this Opus project"); continue
+            c = dict(c)
+            c["copy"] = copy.get(c["id"]) or copy.get(c["curationId"])
+            if require_copy and not c["copy"]:
+                problems.append(f"row {n}: clip {cid} has no approved copy"); continue
+            try:
+                when = datetime.strptime(f"{r['date'].strip()} {r['time_et'].strip()}", "%Y-%m-%d %H:%M").replace(tzinfo=ET)
+            except (ValueError, KeyError):
+                problems.append(f"row {n}: bad date or time_et"); continue
+            title, desc = text_for(c, plat)
+            posts.append({"clip": c, "platform": plat, "when": when, "title": title, "desc": desc})
+    seen, yt_days = set(), {}
+    for p in posts:
+        k = (p["clip"]["curationId"], p["platform"])
+        if k in seen:
+            problems.append(f"duplicate post {k}")
+        seen.add(k)
+        if p["platform"] == "youtube":
+            d = p["when"].date()
+            yt_days[d] = yt_days.get(d, 0) + 1
+    for d, n in yt_days.items():
+        if n > 1:
+            problems.append(f"{n} YouTube posts on {d} (rule is one a day)")
+    posts.sort(key=lambda p: (p["when"], p["platform"]))
+    return posts, problems
+
+
 def text_for(c, plat):
     cp = c.get("copy")
     if cp:
@@ -181,6 +231,9 @@ def main():
     ap.add_argument("--allow-opus-copy", action="store_true", help="also schedule clips with no approved copy")
     ap.add_argument("--no-spoilers-late", action="store_true")
     ap.add_argument("--no-yt-one-a-day", action="store_true")
+    ap.add_argument("--plan-csv", help="EXPLICIT PLAN MODE: CSV of exact posts (date,time_et,platform,clip_id,title). "
+                                       "Bypasses the SLOTS table, quota and the +45/+90 stagger. --start is not needed.")
+    ap.add_argument("--plan-out", help="where plan mode saves the checked plan CSV (default plan-PROJECT-planmode.csv)")
     ap.add_argument("--cancel-all", action="store_true")
     ap.add_argument("--show-log", action="store_true")
     a = ap.parse_args()
@@ -206,16 +259,25 @@ def main():
         write_log(a.project, keep)
         return
 
-    if not a.start:
-        sys.exit("Give --start with the Thursday that starts the week.")
-    start = datetime.strptime(a.start, "%Y-%m-%d").date()
-    if start.weekday() != 3:
-        sys.exit(f"{a.start} is not a Thursday.")
     platforms = [p.strip() for p in a.platforms.split(",") if p.strip()]
     clips = get_clips(a.project)
     copy = load_copy(a.copy)
-    posts, nclips, nplaced = plan(clips, copy, start, not a.no_spoilers_late, not a.no_yt_one_a_day,
-                                  platforms, not a.allow_opus_copy)
+    if a.plan_csv:
+        posts, problems = plan_from_csv(a.plan_csv, clips, copy, not a.allow_opus_copy)
+        for pr in problems:
+            print("PROBLEM:", pr)
+        if problems and a.go:
+            sys.exit("Plan has problems. Fix the CSV before --go.")
+        nclips = len({p["clip"]["curationId"] for p in posts})
+        nplaced = nclips
+    else:
+        if not a.start:
+            sys.exit("Give --start with the Thursday that starts the week (or use --plan-csv).")
+        start = datetime.strptime(a.start, "%Y-%m-%d").date()
+        if start.weekday() != 3:
+            sys.exit(f"{a.start} is not a Thursday.")
+        posts, nclips, nplaced = plan(clips, copy, start, not a.no_spoilers_late, not a.no_yt_one_a_day,
+                                      platforms, not a.allow_opus_copy)
     now = datetime.now(ET)
     logged = {(i["c"], i["p"]) for i in read_log(a.project)}
     print(f"Project {a.project}: {len(clips)} clips from Opus, {nclips} with approved copy, {nplaced} placed in slots.")
@@ -233,9 +295,17 @@ def main():
             todo.append(p)
     for r in rows:
         print(" | ".join(str(x) for x in r))
-    out = HERE / f"plan-{a.project}.csv"
-    with open(out, "w", newline="", encoding="utf-8") as f:
-        csv.writer(f).writerows([["when", "platform", "score", "flag", "title", "state"]] + rows)
+    if a.plan_csv:
+        out = Path(a.plan_out) if a.plan_out else HERE / f"plan-{a.project}-planmode.csv"
+        prow = [[p["when"].strftime("%Y-%m-%d"), p["when"].strftime("%H:%M"), p["platform"], p["clip"]["curationId"],
+                 p["title"], p["clip"]["score"], "spoiler" if (p["clip"].get("copy") or {}).get("spoiler") else "", r[-1]]
+                for p, r in zip(posts, rows)]
+        with open(out, "w", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerows([["date", "time_et", "platform", "clip_id", "title", "score", "flag", "state"]] + prow)
+    else:
+        out = HERE / f"plan-{a.project}.csv"
+        with open(out, "w", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerows([["when", "platform", "score", "flag", "title", "state"]] + rows)
     print(f"\n{len(todo)} posts would be scheduled. Plan saved to {out}")
     if not a.go:
         print("DRY RUN. Nothing posted. Add --go to schedule.")

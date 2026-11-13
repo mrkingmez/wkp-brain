@@ -32,13 +32,13 @@ Movies and shows in the nerd-verse. Tone benchmark is the Spider-Noir review: gr
 FROSTCAST
 Weekly podcast, Wednesdays 9pm. News, trailers, books, games in the same space.
 
-Currently at **episode 106** (recorded Wednesday, August 5, 2026). Episode 100 was recorded live in Worcester, MA — the first time Zac and Matt saw each other in person in over 20 years. Worth referencing in show framing/promo where relevant.
+Currently at **episode 120** (recorded Wednesday, November 11, 2026, Zac and Gabby only, no Matt). Episode 100 was recorded live in Worcester, MA - the first time Zac and Matt saw each other in person in over 20 years. Worth referencing in show framing/promo where relevant.
 
-Recording is every Wednesday 9-11pm, scheduled on the Winter Wolf's Den calendar through episode 114 (Sep 30, 2026). This line should be bumped by 1 automatically the Thursday after each scheduled Wednesday slot, assuming the recording happened as planned — flag it here and to Zac if a week's recording didn't happen on schedule instead of silently bumping the count.
+Recording is every Wednesday 9-11pm. The episode count above is bumped after each recording (check the WWD calendar and `L:\Winter Wolfs Den review show\Frost-Cast\` for the real latest EP folder; flag it to Zac if a week's recording did not happen instead of silently bumping).
 
 **Source video location convention:** every episode's raw download lives at `L:\Winter Wolfs Den review show\Frost-Cast\EP <number>\`, confirmed consistent back through EP 1. When Zac says an episode is downloaded, look in that episode's folder for the video file — no need to ask for the full path.
 
-**Cold open:** a new cold open replaces the current one starting around **episode 112** (roughly mid-to-late September 2026) — pushed 2 weeks from the prior ~episode 110 / early-September target, Zac's call 2026-09-01. This is the FrostCast cold open — distinct from the Den Files cold open template, do not confuse the two.
+**Cold open:** the new FrostCast cold open has not shipped. Earlier targets (~episode 110, then ~112) passed. Shot list is blocked on Zac (see TASKS.md, WWD section). This is the FrostCast cold open, distinct from the Den Files cold open template, do not confuse the two.
 
 FrostCast Intel briefing docs in this folder are the prep format.
 
@@ -73,7 +73,7 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 - 5 to 7 clips per source video
 
 ## Related Skills
-- wwd-video-transcriber (`skills/wwd-video-transcriber/` in this repo) — turns a downloaded episode video into a diarized, speaker-labeled transcript. Requires one-time setup (Python/ffmpeg/torch — done on the Main Desktop machine as of Aug 2026) and voiceprint enrollment for Matt/Zac/Gabby (not yet done — currently runs with everyone labeled Guest/Unknown until enrolled). Standing rule: the output transcript always saves into the same EP folder as the source video, never a separate outputs/transcripts location — overrides the skill's own doc default.
+- wwd-video-transcriber (`skills/wwd-video-transcriber/` in this repo) — turns a downloaded episode video into a diarized, speaker-labeled transcript. Requires one-time setup (Python/ffmpeg/torch — done on the Main Desktop machine as of Aug 2026). Voiceprints for Zac, Matt and Gabby ENROLLED 2026-11-11 (`D:\WKP\voiceprints\`, gitignored); always pass `--num-speakers` (2 for Zac+Matt or Zac+Gabby, 3 for full FrostCast); EP106 and earlier transcripts still show Guest/Unknown. How-to: `.claude\skills\wwd-video-transcriber\references\voiceprints-howto.md`. Standing rule: the output transcript always saves into the same EP folder as the source video, never a separate outputs/transcripts location — overrides the skill's own doc default.
 - wwd-review-pipeline — replaces the old wwd-video-upload-package / wwd-shorts-clip-factory names (2026-09-04, those never existed as real skills — see decision WWD-2026-08-31-01). Real installed skill now: reads the Premiere transcript for a finished review, produces the full upload package (SEO/GEO title, description, chapters, backend tags under 500 characters, hashtags, thumbnail concept, cards, end screen, FB/IG posts, posting schedule), extracts audio-only to `\AUDIO`, cuts vertical Shorts/Reels to `\shorts`, and writes per-clip titles/captions. Trigger on "I just finished [title]," "run the review pipeline on [title]," "work up [title]."
 - wwd-broll-prep (`skills/wwd-broll-prep/` in this repo) — turns a mixed-source B-Roll folder (screenshots, posters, clippings, Google Images grabs) into numbered, frame-ready 1920x1080 PNGs in a `USE\` folder, sequenced to match the episode/review script. Works for Den Files and standard review videos. Local Pillow script, not the Adobe connection — Adobe's batch tools cap around 20 files and can't auto-upload local files. Trigger on "resize the B-Roll" / "get these images ready for the edit."
 
@@ -93,8 +93,8 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 - FrostCast has been inactive on the audio/podcast side for ~18 months even while the show continued — relaunch strategy is a "We're Back" episode cross-posted to YouTube and audio simultaneously.
 
 ## Open
-[EP 106 transcript blocked mid-run — see TASKS.md for full status and the exact resume command. Everything is debugged and working (script, HF licenses, GPU/CUDA); it just needs the actual run repeated after Zac's computer restart.]
-[FILL IN — new FrostCast cold open: written? recorded? needs building before ep 110]
+[EP 106 transcript blocker is old and resolved (transcriber works, EP 120 ran 2026-11-11). Line kept for history only.]
+[Cold open: not shipped, shot list blocked on Zac, see TASKS.md.]
 [FILL IN — Den Files topic queue beyond episode 1, once selected from the pipeline candidates above]
 [DECIDED 2026-09-04 — podcast host staying on Spotify for Creators (free) for now]
 [FILL IN — Spotify metadata fix, flagged as open in TASKS.md — brand name typo "Winters" vs "Winter," inconsistent episode title formatting]

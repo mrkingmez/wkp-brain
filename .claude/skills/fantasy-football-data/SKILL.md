@@ -209,3 +209,6 @@ GitHub. Every one of them targets ESPN-hosted leagues and wants
 `espn_s2` and `SWID` cookies plus an ESPN league ID. The IRFL is on
 MyFantasyLeague. They provide nothing here. Only ESPN's public *sports*
 API is in scope, and that is a different service with no auth.
+
+### College snapshot (Thursday-morning use)
+Run `cfb_snapshot.py` (in `Fantasy-Football\tracker\`, interpreter per LOCAL-PATHS.md) each Wednesday and Thursday to save the ESPN college lines, rankings, schedule and leaders to `data\cfb\` and print line moves of 1 point or more versus the last snapshot; it carries NO injury data, so injuries and QB status come from the Big Ten and SEC availability reports, labeled SECONDARY.

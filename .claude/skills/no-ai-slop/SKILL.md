@@ -64,6 +64,14 @@ generic - cut it or make it specific to WKP/WWD. Concretely:
   fluent - not like a brand voice guide's idea of "casual and fun." If a line
   could be read by any YouTuber on any channel, it's not specific enough yet.
 
+## Script for agents that cannot call this skill (added 2026-11-12)
+
+Subagents cannot call skills. Any agent can run the mechanical pass from Bash:
+
+    python D:\WKP\.claude\skills\no-ai-slop\scripts\slop_check.py <file>
+
+(Interpreter per LOCAL-PATHS.md: `C:\Users\kingz\AppData\Local\Programs\Python\Python312\python.exe`. Use `-` to read stdin, `--json` for machine output.) It flags em and en dashes, `--` dashes, the banned word and phrase list above, rhetorical-question hooks and hedge words, with line numbers and suggestions. Exit code 1 means hits: fix them and rerun until it exits 0. The script is the mechanical pass only. The judgment pass (Rule 2: generic, voice) is still done by the main session or marketing-director.
+
 ## How to run it
 
 1. Read the full draft once for content, not editing yet.

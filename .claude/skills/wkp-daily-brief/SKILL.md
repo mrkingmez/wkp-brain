@@ -1,11 +1,13 @@
 ---
 name: wkp-daily-brief
-description: The single-screen daily rundown, ready when Zac walks
+description: RETIRED 2026-11-12 (Zac, no more daily briefs; only the Monday brief and the Saturday wrap remain). Do not run, do not schedule. Kept for reference. Was - the single-screen daily rundown, ready when Zac walks
   into the office. Short. Trigger on 'daily brief', 'what's today',
   'my day'.
 ---
  
 # WKP Daily Brief
+
+> **RETIRED 2026-11-12.** Zac's call: no more daily briefs. Use `wkp-monday-brief` (Monday) and `wkp-saturday-wrap` (Saturday). Scheduled task `WKP-daily-brief` should be disabled (command in the 2026-11-12 report, Zac or Jarvis runs it).
  
 ## Shape
 This fits on one screen. If it does not fit, it is too long.

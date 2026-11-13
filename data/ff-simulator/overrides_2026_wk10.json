@@ -1,0 +1,59 @@
+{
+ "week": 10,
+ "note": "Built 2026-11-12 (Thursday audit run). players: status facts that beat the merged table. qbs: this week's starting quarterback by team, used by run_week.py, full_week.py and run_week_play.py.",
+ "players": [
+  {
+   "name": "Deshaun Watson",
+   "team": "CLE",
+   "category": "ACTIVE",
+   "play_prob": 1.0,
+   "source": "ESPN player note 2026-11-11T14:38Z: Browns announced Watson will start Sunday vs HOU",
+   "note": "ESPN's status field still says Out; the dated note is newer in substance."
+  },
+  {
+   "name": "Aidan O'Connell",
+   "team": "LV",
+   "category": "ACTIVE",
+   "play_prob": 1.0,
+   "source": "ESPN player note 2026-11-11T19:12Z: moves to QB2 behind Mendoza",
+   "note": "ESPN's status field says Out, the note describes a healthy backup."
+  }
+ ],
+ "qbs": {
+  "BAL": {
+   "gsis_id": "00-0033119",
+   "name": "Jacoby Brissett",
+   "source": "ESPN 11/09: coach Minter 'I expect (Brissett) to be our starter' Monday vs LAC. Lamar Jackson on IR."
+  },
+  "MIN": {
+   "gsis_id": "00-0029604",
+   "name": "Kirk Cousins",
+   "source": "ESPN 11/11: Cousins acquired 11/10; one note says he is expected to start Sunday, a later note says O'Connell is not ready to commit. NOT CONFIRMED. Wentz Questionable (limited), Murray Doubtful."
+  },
+  "LV": {
+   "gsis_id": "00-0041562",
+   "name": "Fernando Mendoza",
+   "source": "ESPN 11/10: Mendoza takes over as starter after the Cousins trade."
+  },
+  "ARI": {
+   "gsis_id": "00-0041561",
+   "name": "Carson Beck",
+   "source": "ESPN 11/11 per last night's notes: Beck will start; Minshew on IR."
+  },
+  "MIA": {
+   "gsis_id": "00-0040014",
+   "name": "Kyle McCord",
+   "source": "ESPN 11/10 per last night's notes: McCord starts; Willis on IR."
+  },
+  "SEA": {
+   "gsis_id": "00-0035704",
+   "name": "Drew Lock",
+   "source": "Darnold Out. Lock Questionable (oblique), limited Wednesday. If Lock sits the sim moves to the next quarterback."
+  },
+  "CLE": {
+   "gsis_id": "00-0033537",
+   "name": "Deshaun Watson",
+   "source": "ESPN 11/11: the Browns announced Watson (concussion) will start Sunday."
+  }
+ }
+}

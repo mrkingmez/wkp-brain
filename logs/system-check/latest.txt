@@ -1,0 +1,1 @@
+YELLOW | DESKTOP-2FI1EG2 | 2026-11-12 | I: watch: 16 disk-class error/warning events in last 14 days (none name I: directly, see report); Backups: D:\WKP Reports (167 deliverable files) is not in git and has no second copy; Backups: 126 uncommitted changes; Scheduled tasks: WKP-daily-brief is RETIRED but still enabled (Zac approves the disable command)

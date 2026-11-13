@@ -70,6 +70,7 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 4. Peers do not give each other orders about priority, money, schedule, or what Zac decided. Those go to Jarvis and Zac.
 5. Decisions still go to `logs\DECISIONS.md`. Nobody answers one for Zac.
 6. Review gates still apply (root CLAUDE.md). Scripts: two passes through the writing room. Public copy: written by the writing room, then no-ai-slop. Short ideas: devils-advocate first.
+6b. Slop gate for every agent (2026-11-12): subagents cannot call the `no-ai-slop` skill, so run `python D:\WKP\.claude\skills\no-ai-slop\scripts\slop_check.py <file>` on any public copy before handing it back (exit code 1 = fix and rerun). It is the mechanical pass only. The judgment pass is still the main session or marketing-director.
 7. Zac's rules travel with the task: no em dashes, never invent lines in his writing, draft only, Zac posts.
 
 ## Reporting

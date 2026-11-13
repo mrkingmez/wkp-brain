@@ -24,7 +24,7 @@ Agents append. Zac clears. Nothing else writes.
 **Options:** A. Reading (a), keep Draft 3.1 as written. B. Reading (b), drop S4 and S6 and use the swap written under the beat sheet (Section 3 of `Post-Production\reports\Ian-Wrench-Turner-Trailer-Draft3-1.md`).
 **Recommendation:** A, and Zac confirms with Ian in one text before clips V4 to V6 are generated. Stills can start now.
 
-**Status:** OPEN
+**Status:** RESOLVED 2026-11-12 as a MISREAD (Jarvis, per Zac's correction). Zac: the secret is that Brandon is a father and the kid near the end is his, not Brandon's own dad. Ian's "the father must not be revealed" meant Brandon must not be revealed as a father and his child must not be seen or hinted. Brandon's own dad in the memory shots is fine. Draft 3.2 corrected the same day (Section 0 fence). No hold on V4 to V6. Options A and B are void.
 
 ---
 
@@ -130,7 +130,7 @@ to note that the 48-hour commit drought tonight means literally nothing
 in the repo moved to check against, not to manufacture urgency on a
 question CS-2026-10-15-01 already asked correctly.
 
-**Status:** OPEN
+**Status:** DECIDED 2026-11-12 (Zac, relayed by Jarvis): the CySA+ exam is punted because of the exam cost, no new date. Option C: stop re-flagging the date. Root CLAUDE.md, Cyber-Security/CLAUDE.md and TASKS.md updated the same day. The structural gap (no Cyber Security task table) is closed with a TASKS.md row. CLOSED.
 ## WWD-2026-10-27-01 - Vision Quest eps 3 and 4: end card and sheet density
 **Raised by:** wwd-director, 2026-10-27
 **Question:** (1) What follows eps 3 and 4 for the end card (stop 24 is an empty marked slot)? (2) The sheet has 24 stops, not 35 to 40, because only 10 of 38 stills are verified. Pull verified Paladin, Edith, Friday, Jarvis, pirate ship and gala pictures (IMDb per-actor galleries, needs a browser session) to add about 8 stops? (3) Wrong-name tally sticker for stop 18: series count 4, 5, 6 or "THIS VIDEO" 1, 2, 3? (4) Reuse eps 1-2 opener?
@@ -283,7 +283,7 @@ C. Drop the idea for now — slow season, free competition already covers most o
 
 **Recommendation:** A, with Matt's yes on vidIQ. Expect tens of dollars at best, no income evidence exists for channels this size.
 
-**Status:** OPEN
+**Status:** OPEN for vidIQ and the Matt call. UPDATE 2026-11-12: Zac received the OpusClip affiliate link (the OpusClip half of option A/B is effectively done). The link itself, terms and disclosure wording are not yet in the repo, see TASKS.md row and `memory\topics\marketing-sponsors.md`.
 
 ---
 
@@ -372,3 +372,116 @@ C. Drop the idea for now — slow season, free competition already covers most o
 ## [INFRA-2026-11-11-01] 2026-11-11 | Nightly rollup | Conflict markers in this file (flagged by the nightly rollup)
 
 **Status:** RESOLVED (option A done 2026-11-11 during the Zac-approved cleanup: markers removed, both sides' entries kept, full old file archived at `_archive/cleanup-2026-11-11/DECISIONS-full-before.md`). Option C (a hook or rule refusing a commit that contains `<<<<<<<`) is still optional, Zac's call.
+
+---
+
+## [FF-2026-11-11-01] 2026-11-11 | fantasy-football-director | Taxi promotion rule and cost for Derrick Moore (DET DL)
+
+**Context:** Wonnum (Q, concussion) 2.6 vs Moore (taxi) 2.9 at DL2. Director does not know the taxi activation rule, roster room or cap effect. Promotion is not a drop, no dead cap.
+
+**Options:** A. Promote Moore if free. B. Keep Wonnum, rely on Thursday report.
+
+**Recommendation:** A if the promotion is free, low confidence. Decide before Thursday 8:15 PM ET.
+
+**Status:** OPEN
+
+---
+
+## [FF-2026-11-11-02] 2026-11-11 | fantasy-football-director | Is Zac in an Elimination Challenge this week?
+
+**Context:** Zac was out of EC2 as of Week 8, a leftover "new EC" line is unconfirmed. If yes, JAX (about 79.5 percent) is the safest pick and is already the ATS pick.
+
+**Status:** OPEN
+
+---
+
+## [FF-2026-11-11-03] 2026-11-11 | fantasy-football-director | No Week 10 DFS salary file
+
+**Context:** Latest DK/FD file on disk is the Week 9 slate (11/7). No DFS lineup built, only projections csv.
+
+**Options:** A. Zac drops the Week 10 salary file, director rebuilds. B. Skip DFS this week.
+
+**Status:** OPEN
+
+---
+
+## [SW-2026-11-11-01] 2026-11-11 | software-director | College football data for the pick'em card
+**Context:** Report `research\fantasy\2026-11-11-college-football-data-sources.md`. ESPN unofficial scoreboard gives 2026 schedule, results and odds keyless, but odds vanish when games finish, and injuries and depth charts are unusable.
+**Options:** A. Build a small weekly ESPN snapshot script (lines history, rankings, leaders), about 20 calls a week, no cost. B. Also request a free CFBD key (Zac, email only, collegefootballdata.com/key). C. Do nothing, keep the 9-book line only.
+**Recommended:** A now, B optional. ESPN API is unofficial with no published terms for it, Zac's call on that risk.
+**Status:** IMPLEMENTED 2026-11-12 (Zac chose A). Code and tests: `software\cfb-espn-snapshot\` (builds on `Fantasy-Football\tracker\cfb_snapshot.py`). Output: `data\cfb\espn\YYYY-MM-DD\HHMM.json` plus `data\cfb\espn\line_history.json`. Scheduling is NOT registered, needs Zac's yes. CFBD key (option B) was already working.
+
+---
+
+## [FF-2026-11-12-01] 2026-11-12 | Fantasy Football (personal) | Play chance by practice status, in code, instead of rule 4 by hand
+
+**Context:** Audit `Fantasy-Football\reports\Fantasy-Sim-Audit-2026-11-12.md`, finding 4. The sim plays every Questionable at 75 percent. The 11/10 study: Questionable and no Wednesday practice scored zero 53 to 67 percent of the time, Questionable and limited 13 to 38 percent. Rule 4 (locked 11/10) is applied by hand and was missed on Okereke Wednesday night (status unconfirmed, he did not practice). The injury file now carries a `practice` column, no behavior change yet.
+**Options:** A. Put it in code: Questionable and no practice plays 0.40, Questionable and limited or full plays 0.85, rerun the 11/10 backtest first. B. Keep rule 4 by hand. C. A, but only the no-practice half.
+**Recommendation:** A. It changes a locked rule, so it needs Zac's yes.
+
+**Status:** IMPLEMENTED 2026-11-12 afternoon on Jarvis's relay of Zac's approval. Built as option C: no practice 0.40 (backtest error 65.2 to 64.0); the 0.85 for limited or full FAILED its backtest (68.8) and was not adopted. Zac confirmed in chat 2026-11-12 ("do all that is proposed"). `Fantasy-Football\CLAUDE.md` amended 2026-11-12 with the rule 4 text. CLOSED.
+
+---
+
+## [FF-2026-11-12-02] 2026-11-12 | Fantasy Football (personal) | Pick label percentages: use real-game cover rates by line band, and drop the play sim tilt
+
+**Context:** Same audit, finding 5. The label uses a smooth curve; real scores bunch on 3, 7 and 10. This week: Seattle -3.5 label 59.0, real games 63.3 (n=390); Rams -7.5 label 56.0, real 49.2 (n=120). Separately, Wednesday's straight-up side leaned 15 percent on the play sim margin, which carries no information beyond the market (coefficient 0.18, error 0.19). Thursday used the market alone; no pick changed.
+**Options:** A. Blend the curve with the real-game table and remove the tilt. B. Remove the tilt only. C. Leave both.
+**Recommendation:** A. About 2 hours. Labels change, the LEAN, SLIGHT, NO EDGE gap rule does not.
+
+**Status:** IMPLEMENTED 2026-11-12 afternoon on Jarvis's relay of Zac's approval. `ff-simulator\scripts\cover_table.py`, plus a HOOK rule for coin-flip games (walk-forward 54.1 vs 51.8 percent). Week 10 game 8 flipped to Detroit -2.5. Zac confirmed in chat 2026-11-12. `Fantasy-Football\CLAUDE.md` amended 2026-11-12 with the rule 2 text. CLOSED.
+
+---
+
+## [FF-2026-11-12-03] 2026-11-12 | Fantasy Football (personal) | Backfill the tracker for Weeks 2, 3 and 5
+
+**Context:** `tracker\predictions.csv` holds Week 1 (6 games) and Weeks 6 to 10. The model doc and both of Zac's cards exist for Weeks 2, 3 and 5 in `D:\Documents\Pickups 2026\`. There is no Week 4 folder. No market pull was saved for those weeks, so a backfill adds graded picks but no line-gap data. Not done in the 11/12 run.
+**Options:** A. Backfill 2, 3 and 5, labelled BACKFILL. B. Skip. Also: does a Week 4 card exist anywhere?
+**Recommendation:** A, about 1 hour, low urgency.
+
+**Status:** OPEN. Approved per Jarvis's relay 2026-11-12 but NOT done: the logger refuses post-kickoff rows by design and a safe backfill needs its own pass.
+
+---
+
+## DECISIONS RECORDED 2026-11-12 (Zac, picked from a choice list)
+- WWD-2026-11-05-01: Ask Matt about vidIQ using Zac's email, and marketing-director builds a full OpusClip affiliate push research packet (ideas, scripts, assets needed vs on hand). Packet in progress at `WWD\reports\OpusClip-Affiliate-Push-Packet.md`. Matt's yes still needed for vidIQ.
+- WWD-2026-11-05-02: DECIDED, both Bookshop.org and Amazon Associates for Den Files book links. Signups are Zac's, when an episode with a book is ready.
+- WWD-2026-11-05-03: DECIDED, Ko-fi tip jar, low priority, joint with Matt.
+- WWD-2026-11-05-05: DECIDED, adopt the one-sponsor-line layout. Copy goes to the writing room, then the slop check, before anything posts.
+- WWD-2026-11-05-06: DECIDED, skip the sponsor-read audit.
+- WWD-2026-11-05-08: DECIDED, wait for the Studio check.
+- WWD-2026-11-05-04 and -07: STILL OPEN. Zac chose "Claude checks in Chrome." Studio redirected to a channel-creation page in the Chrome profile (no WWD channel on that login), so it could not be read. Needs Zac to open Studio on the WWD account, or send a screenshot.
+
+## DECISIONS RECORDED 2026-11-12, batch 2 (Zac, picked from a choice list)
+- FF-2026-11-11-01: DECIDED, do not promote Moore. Jordan Davis (traded PHI to JAX) is not on bye, so Zac starts him. Lineup unchanged. CLOSED.
+- FF-2026-11-11-02: Zac answered "No EC2 is still going." Read as: no new Elimination Challenge, EC2 still running. Whether Zac is still alive in EC2 is not confirmed (he was out as of Week 8). No pick change either way, JAX is already the ATS pick. Closed unless Zac says he is in.
+- FF-2026-11-11-03: DECIDED, DFS Week 10 is a Saturday task. Zac gets the salary file then.
+- ETSY-2026-11-02-01: Zac said "put it on pause." Read as: no renewal decision now, shop stays on hold, the cap lapses 2026-11-15 as scheduled and is re-set the day a listing batch is planned. Confirm if he meant something else.
+
+## DECISIONS RECORDED 2026-11-12, batch 3 (Zac, picked from a choice list)
+- ANIM-2026-11-05-01: DECIDED, gitignore `ANIMATION/training/`. It was already ignored (line 25 of .gitignore) and nothing in it is tracked, verified with git check-ignore and git ls-files. CLOSED.
+- VENTURE-2026-11-05-01: DECIDED, drop the Fort Gordon newcomer guide for now. CLOSED.
+- ANIM-2026-11-05-02: Zac wants to see the picks list again. Docx re-sent to his phone 2026-11-12. Still OPEN until he answers.
+- SW-2026-11-11-01: DECIDED, build the ESPN snapshot too (option A plus the CFBD key already in use). IMPLEMENTED 2026-11-12, softwareb-espn-snapshot. Scheduling needs Zac yes.
+- WWD-2026-11-05-02 UPDATE 2026-11-12: Zac reports the Amazon Associates signup is DONE. Bookshop.org signup still to do when a Den Files episode with a book is ready. Needed from Zac: tracking ID and which account, so the disclosure line and link format can be locked. The 180-day, 3-sale clock is running from approval.
+- FF-2026-11-10-01: DECIDED, ignore. Tracker closing line for JAX at BAL Week 9 stays as is. CLOSED.
+- FF-2026-11-10-02: Lunch with the FanDuel friend was postponed (he got called into something). No notes yet. Revisit when it happens. Leave OPEN, not urgent.
+- FF-2026-11-10-03: Zac sends the entered Week 9 lineup Saturday with the Week 10 salary file. OPEN until then.
+- FF-2026-11-12-03: DECIDED, backfill Weeks 2, 3, 5 labeled BACKFILL, after the Thursday lock. Needs its own pass because the logger refuses post-kickoff rows. Open task.
+- ANIM-2026-11-02-01 (three sign-offs): (1) STANDARDS.md markup, later when animation restarts. (2) Pipeline add-on (xavier150, GPL-3.0), HOLD, nothing installed. (3) Network ports: localhost-only Unreal bridges are fine for agents to enable, anything wider needs Zac's yes each time. Items 1 and 2 stay open as a parked animation restart list, item 3 is a standing rule now. Zac's call 2026-11-12.
+- WWD-2026-11-05-04 (Spotify half): ANSWERED by Zac 2026-11-12. No WWD podcast is posted on Spotify yet, so there is no Spotify monetization to check. Spotify ads and Monetize page are moot until the audio-only podcast is back (TASKS: "Bring back audio-only podcast; fix Spotify metadata"). The YouTube Studio Earn tab half is still OPEN, as are -07 and -08.
+- KINGDOM PLANNERS: Zac 2026-11-12 ("the back back burner"): moved to ACTIVE-UNSCHEDULED, back burner. Payhip test on ice. No agent, no schedule, not surfaced in planning. Root CLAUDE.md and TASKS.md updated.
+- LLC: Zac 2026-11-12: the LLC is Matt's to handle, not Zac's (voice-to-text, which entity was said is not certain, likely the WWD one). No Warrior King Productions LLC until WKP is actually putting product out. TASKS row set to On ice. Open question only if it matters: confirm which entity Matt is forming.
+- LLC CONFIRMED 2026-11-12 (Zac): it is the WWD LLC, handled by Matt.
+- WWD-2026-11-05-01 UPDATE 2026-11-12 (Zac): Matt gave his YES on both vidIQ and OpusClip. Next per the push packet: copy through the gates (judgment pass, QA, originality and clearance re-read), then the fit poll, then Zac's yes on the exact public post. vidIQ signup (email and PayPal) is Zac's or Matt's action, not an agent's.
+- WWD earnings, Zac 2026-11-12: about $4 a month for WWD right now, $0 for WKP. Source is Zac's word, no file. Closes the "no income evidence" question for the monetization plan: baseline is about $4 a month.
+
+---
+
+## [INFRA-2026-11-12-01] 2026-11-12 | Daily rollup | System check YELLOW: three items need Zac's yes
+
+**Context:** `logs\system-check\latest.txt` is YELLOW. (1) WKP-daily-brief is retired but its scheduled task is still enabled. (2) `D:\WKP Reports` (167 deliverables) is not in git and has no second copy. (3) 126 uncommitted changes in the repo. The I: drive disk-event watch continues (no event names I: directly). Adobe stays off limits.
+**Options:** A. Approve the disable command, a backup copy of `D:\WKP Reports`, and a commit and push. B. Pick some. C. Leave.
+**Recommendation:** A. All reversible, no spend. The backup is the one that matters, since lost deliverables already happened once.
+
+**Status:** OPEN

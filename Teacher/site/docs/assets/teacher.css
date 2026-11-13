@@ -1,0 +1,14 @@
+#quiz { margin: 1.5rem 0; }
+#quiz .q { border: 1px solid var(--md-default-fg-color--lighter); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; }
+#quiz .q p { font-weight: 600; margin-top: 0; }
+#quiz label { display: block; padding: 0.3rem 0; cursor: pointer; }
+#quiz .fb { margin-top: 0.5rem; font-size: 0.9rem; }
+#quiz .ok { color: #1b7f3a; }
+#quiz .no { color: #b3261e; }
+#quiz button { padding: 0.5rem 1.2rem; font-size: 1rem; cursor: pointer; }
+#quiz .result { font-weight: 700; margin-top: 1rem; }
+#practice-done { margin: 1rem 0; }
+#practice-done button { padding: 0.5rem 1.2rem; font-size: 1rem; cursor: pointer; }
+#practice-done .result { font-weight: 700; margin-top: 0.6rem; }
+.tc-locked { opacity: 0.55; }
+#tc-lock { padding: 1rem 0; }

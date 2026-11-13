@@ -85,3 +85,5 @@ See [[wkp-ops]].
 ## Zac never picks against Detroit (2026-10-29)
 Zac's own card always takes the Lions unless he knows they are bad that year. It is loyalty, not a read on the game. Week 8 he took DET -3.5 when the model had MIN +3.5.
 **Why:** his team. **How to apply:** the model card still picks Detroit games on the numbers. Do not argue Zac off Detroit. When grading model vs Zac, call out Detroit games separately so the loyalty pick does not skew the read on his other calls.
+
+- 2026-11-11 (Zac): college football weeks run one ahead of NFL. The pick em card for NFL Week N uses CFB Week N+1 (Week 10 card = CFB Week 11, matches CFBD calendar). Not a mismatch. Kept in sync via cfb_snapshot.py week lookup.

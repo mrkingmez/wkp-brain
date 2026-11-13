@@ -1,4 +1,4 @@
-"""Game-by-game Monte Carlo for the IRFL lineup and pick'em model.
+﻿"""Game-by-game Monte Carlo for the IRFL lineup and pick'em model.
 
 For one week it simulates every game thousands of times:
   1. Game script: final margin and total drawn around the market line.
@@ -28,6 +28,7 @@ DATA = Path(r"D:\WKP\data\nfl")
 WINDOW_GAMES = 14        # last N team games feed usage and efficiency
 DECAY = 0.88             # weight per game back
 MISS_WEIGHT = 0.4        # weight of a game where the player has no stat line (see build_players)
+TOTAL_SD = 13.2          # spread of a game total around the market total. Was 9.0 until 2026-11-12; real games 2016 to 2025: 13.2. Backtest (22 weeks): 10th-90th coverage 79.5 to 80.0 percent, error unchanged.
 
 # ---------------------------------------------------------------- offensive line layer (ol_model.py)
 # OL_SCALE multiplies the data-fitted effect sizes in ol_coefs.json. 0 = layer off (Week 6 behaviour, default).
@@ -131,6 +132,7 @@ class TeamModel:
             ypc=(tot("ryd") + 100 * L["ypc"]) / (max(tot("car"), 1) + 100),
         )
         self.avail = {}                      # player_id -> chance he plays (set by the runner)
+        self.qb1 = None                      # named starting QB for this week (overrides file), else most attempts
         self.ol_missing = 0.0                # share of usual starting-OL snaps unavailable (0..1), set by the runner
         self.team_tgt = max(tot("tgt"), 1)
         self.team_car = max(tot("car"), 1)
@@ -159,6 +161,17 @@ class TeamModel:
         for i in gone:
             del self.players[i]
         return gone
+
+    def set_qb(self, pid, name):
+        """Name this week's starting quarterback (2026-11-12). A QB with no history on this team (traded in, or a
+        rookie making his first start) gets a blank entry so the team's simulated passing is credited to him."""
+        if pid not in self.players:
+            self.players[pid] = dict(
+                name=name, pos="QB", group="QB", games=0, window=0, wsum=0.0, tgt_share=0.0, car_share=0.0,
+                rec_td_share=0.0, rush_td_share=0.0, catch=0.66, ypr=11.0, ypc=4.3, fum=0.0, solo=0.0, ast=0.0,
+                sacks=0.0, dint=0.0, pd=0.0, ff=0.0, fr=0.0, dtd=0.0, fgm=0.0, xpm=0.0, att=0.0, att_total=0.0,
+                qb_share=0.0, new_team=True)
+        self.qb1 = pid
 
     def build_players(self):
         r = self.rows
@@ -221,7 +234,7 @@ def simulate_game(home: TeamModel, away: TeamModel, spread_home: float, total: f
     (box[pid] = dict of arrays) and box["_game"] with the margin, total, team points and team stats,
     so a full box score and DraftKings/FanDuel scoring can be built from the same simulated games."""
     margin = rng.normal(spread_home, 13.2, S)
-    tot = np.clip(rng.normal(total, 9.0, S), 17, None)
+    tot = np.clip(rng.normal(total, TOTAL_SD, S), 17, None)
     pts = {home.team: np.clip((tot + margin) / 2, 0, None), away.team: np.clip((tot - margin) / 2, 0, None)}
     ctx = {}
     teams = ((home, away, margin), (away, home, -margin))
@@ -324,6 +337,8 @@ def simulate_game(home: TeamModel, away: TeamModel, spread_home: float, total: f
         # that sim (his availability), then the next in line takes the whole game.
         qbs = sorted([k for k in skill if pl[k]["group"] == "QB" and pl[k]["att_total"] > 15],
                      key=lambda k: -pl[k]["att_total"])[:3]
+        if getattr(off, "qb1", None) in pl:              # the named starter goes first, the rest are his backups
+            qbs = [off.qb1] + [k for k in qbs if k != off.qb1][:2]
         if qbs:
             taken = np.zeros(len(s["att"]), dtype=bool)
             for i, k in enumerate(qbs):
@@ -352,7 +367,10 @@ def simulate_game(home: TeamModel, away: TeamModel, spread_home: float, total: f
         for k, v in pl.items():
             if v["pos"] != "K":
                 continue
-            ratio = s["fgm"] / max(float(s["fgm"].mean()), 0.3)
+            # 2026-11-12 fix: the rate used to be scaled by the team's already-random field goal COUNT and then drawn again,
+            # so the dice were rolled twice. Sim kicker spread was 7.7 points against a real 4.35 (30 kickers, 2026).
+            # Now the rate follows the team's simulated points (the game script) and is drawn once. The average is unchanged.
+            ratio = pts[off.team] / max(float(pts[off.team].mean()), 1.0)
             n_fg = rng.poisson(np.maximum(v["fgm"], 0.3) * ratio)
             pts_ = n_fg * PTS["fg_avg"] + s["xpm"] * PTS["xp"]
             out[k] = (v["name"], off.team, "K", pts_.astype(np.float32))

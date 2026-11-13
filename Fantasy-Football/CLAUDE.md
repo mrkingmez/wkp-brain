@@ -197,6 +197,8 @@ underdog (51.6 percent on half-point lines 2016 to 2025, n=1,358, not statistica
 NO EDGE unless a gap is supplied. Never present an ATS pick as conviction; always show "expected right out of 20" (about 10.3, SD 2.2). Week 6 to 9 NFL
 games: 38 of 57 were NO EDGE.
 
+**AMENDED 2026-11-12 (Zac approved the audit proposals in chat, "do all that is proposed").** Rule 2: probability now comes from `ff-simulator\scripts\cover_table.py` (real games with the same closing line, blended with the curve). LEAN and SLIGHT are unchanged. A game under 1 point is HOOK when the table gives one side 53 percent or more (take that side), otherwise NO EDGE and the frozen underdog. Straight-up picks use the market only (play-sim tilt removed). Rule 3: lineups score about 13 points above the sim because managers start the players who beat their number, so do not correct for it in head to head. Rule 4: Questionable and no practice now has a 40 percent play chance from the injury file (replaces the 0.55 multiplier); limited or full stays at 75 percent; the 1.8x bench rule is retired because the optimizer sees the risk directly. Backtests in `reports\Fantasy-Sim-Audit-2026-11-12.md`.
+
 **3. Ranges, not points.** Every lineup projection is quoted with its range: one sigma 30 points on a 17-man lineup (80 percent range projection plus or minus 38),
 and head-to-head win probability = Phi((mine minus theirs) / 42). Run `fixes-2026-11-10\run_weekly_calibration.py <last completed week>` every Tuesday after MNF; it re-scores
 every projection against MFL results and appends to `calibration_log.csv`. Do NOT shrink sim means: weeks 6 to 9 show the means are unbiased (see report).

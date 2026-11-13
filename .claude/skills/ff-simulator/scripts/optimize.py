@@ -23,13 +23,19 @@ import pandas as pd
 
 season, week = int(sys.argv[1]), int(sys.argv[2])
 allow_taxi = "--taxi" in sys.argv
-ROSTER = r"D:\WKP\scratch\wk6_roster.json"      # default keeps Week 6 usage unchanged
 SHEET = None                                      # optional: JSON list of player names currently set on MFL
-if "--roster" in sys.argv:
-    ROSTER = sys.argv[sys.argv.index("--roster") + 1]
+if "--roster" not in sys.argv:                    # 2026-11-12: the default used to be the Week 6 roster file
+    raise SystemExit("optimize.py needs --roster <this week's MFL roster json>")
+ROSTER = sys.argv[sys.argv.index("--roster") + 1]
 if "--sheet" in sys.argv:
     SHEET = sys.argv[sys.argv.index("--sheet") + 1]
 SUF = sys.argv[sys.argv.index("--suffix") + 1] if "--suffix" in sys.argv else ""
+# 2026-11-12: --blend <roster_compare csv from run_week_play.py> scales each player's draws to the BLEND average, so the
+# lineup is picked on the same numbers the report shows (before this the optimizer used the old sim alone).
+# --opp <json list of the opponent's starters as gsis ids> scores them on the same simulated games and prints the
+# chance each lineup wins. Both sides use the same dice, so shared games are handled properly.
+BLEND = sys.argv[sys.argv.index("--blend") + 1] if "--blend" in sys.argv else None
+OPP = sys.argv[sys.argv.index("--opp") + 1] if "--opp" in sys.argv else None
 base = Path(r"D:\WKP\data\ff-simulator") / f"sim_{season}_wk{week}{SUF}"
 z = np.load(str(base) + ".npz")
 ids, names, teams, groups, D = z["ids"], z["names"], z["teams"], z["groups"], z["draws"]
@@ -54,6 +60,15 @@ for pos, name, nfl, status, sal, cy, proj, inj, mfl, espn in rows:
         missing.append(f"{name} ({nfl}, {g}, {status})")
 
 S = D.shape[1]
+if BLEND:
+    D = D.astype(np.float32).copy()
+    bl = pd.read_csv(BLEND)
+    bmean = dict(zip(bl.name, bl.blend))
+    for p in pool:
+        b, mu = bmean.get(p["name"]), float(D[p["row"]].mean())
+        if b == b and b is not None and mu > 0:
+            D[p["row"]] *= float(b) / mu
+    print("draws scaled to the blend averages from", BLEND)
 for p in pool:
     d = D[p["row"]]
     p.update(mean=float(d.mean()), sd=float(d.std()), p10=float(np.percentile(d, 10)), p90=float(np.percentile(d, 90)))
@@ -108,18 +123,24 @@ L = {
     "UPSIDE": best_lineup(lambda p: p["p90"]),
 }
 tots = {k: show(k, v) for k, v in L.items()}
+if OPP:
+    oids = json.load(open(OPP))
+    have = [i for i in oids if i in idx]
+    ot = sum(z["draws"][idx[i]].astype(np.float64) for i in have)
+    print(f"\nOPPONENT: {len(have)} of {len(oids)} starters have a simulation (the rest count zero). "
+          f"mean {ot.mean():.1f} | 10th {np.percentile(ot, 10):.1f} | 90th {np.percentile(ot, 90):.1f} (old sim, no blend for them)")
+    for k, t in tots.items():
+        print(f"   {k}: wins {np.mean(t > ot):.1%} of simulated weeks (average margin {t.mean() - ot.mean():+.1f})")
 
 # the lineup from the Week 6 pick sheet, scored by the same simulation
-doc = json.load(open(SHEET)) if SHEET else ["Brissett, Jacoby", "Croskey-Merritt, Jacory", "White, Rachaad", "Flowers, Zay", "Allen, Keenan",
-       "Flournoy, Ryan", "Goedert, Dallas", "Schultz, Dalton", "Folk, Nick", "Davis, Jordan", "Kancey, Calijah",
-       "Okereke, Bobby", "Strnad, Justin", "Dodson, Tyrel", "Kinchens, Kamren", "Jenkins, Rayshawn", "Mukuba, Andrew"]
+doc = json.load(open(SHEET)) if SHEET else []
 cur = [p for p in pool if p["name"] in doc]
-if len(cur) == len(doc):
-    t = show("SHEET LINEUP (what the Week 6 sheet recommended)", cur)
+if doc and len(cur) == len(doc):
+    t = show("SAVED LINEUP (the --sheet file)", cur)
     ex = tots["EXPECTED"]
     print(f"\nExpected lineup beats the sheet lineup in {np.mean(ex > t):.0%} of simulated weeks; "
           f"average gain {ex.mean() - t.mean():+.1f} points.")
-else:
-    print("\n(sheet lineup not fully found in pool:", [d for d in doc if d not in [p['name'] for p in pool]], ")")
+elif doc:
+    print("\n(saved lineup not fully found in pool, these score zero:", [d for d in doc if d not in [p['name'] for p in pool]], ")")
 
 json.dump({k: [p["name"] for p in v] for k, v in L.items()}, open(str(base) + "_lineups.json", "w"), indent=1)

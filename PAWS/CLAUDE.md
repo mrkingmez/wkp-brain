@@ -62,6 +62,16 @@ and queue a decision rather than design around them.
    time. Neither blocks the other.
 4. Companion app (Android) once the state machine proves out.
 
+## STATUS: PAUSED (Zac's call, 2026-11-12)
+
+PAWS is moved from ACTIVE to ACTIVE-UNSCHEDULED. Reasons: (1) paused until Zac
+has hardware to run a real test on, and (2) Zac saw the Scout dog render as a
+jumble of pixels on the screen, so the interface needs rework. Video editing
+(Post-Production) is his first focus. Character lock, the fused
+personality-device-plus-USB-C-hub direction, child-safety gates and the
+Columbia County network rule are all unchanged. No purchases, no firmware work.
+Open item: Scout pixel interface rework (see TASKS.md), waits on hardware.
+
 ## Open decisions
 
 See decisions\DECISIONS.md for the full list and current status.

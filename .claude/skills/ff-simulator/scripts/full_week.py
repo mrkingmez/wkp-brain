@@ -11,6 +11,7 @@ One pass of the game simulator keeps every simulated stat line, so the same 4,00
 Roster and statuses: D:\\WKP\\scratch\\wk6_roster.json (MFL pull). Golden is treated as active (signed 2026-10-15).
 """
 import argparse
+import datetime as dt
 import itertools
 import json
 import sys
@@ -64,10 +65,13 @@ def main():
     ap.add_argument("season", type=int)
     ap.add_argument("week", type=int)
     ap.add_argument("--sims", type=int, default=4000)
-    ap.add_argument("--odds", default=r"D:\WKP\scratch\wk6_odds.json")
-    ap.add_argument("--md", default=r"D:\WKP\Fantasy-Football\reports\Week6-Full-Simulation-2026-10-15.md")
+    # 2026-11-12: no defaults. The old defaults were the Week 6 odds, roster and report path, so a forgotten flag
+    # would quietly simulate this week on October's lines or overwrite the Week 6 report.
+    ap.add_argument("--odds", required=True)
+    ap.add_argument("--md", required=True)
     ap.add_argument("--seed", type=int, default=2026)
-    ap.add_argument("--roster", default=r"D:\WKP\scratch\wk6_roster.json", help="MFL roster json (added 2026-10-28)")
+    ap.add_argument("--roster", required=True, help="MFL roster json for this week")
+    ap.add_argument("--sheet", default=None, help="optional json list of the names saved on MFL, scored for comparison")
     a = ap.parse_args()
     season, week = a.season, a.week
 
@@ -75,8 +79,12 @@ def main():
     lines = rw.market_lines(a.odds)
     drops, quest = rw.injury_sets(season, week)   # 2026-10-28: use this week's merged injury file when it exists
     boxes = {}
+    notes = {}
+    # 2026-11-12: team_now was not passed here, so the report sim kept traded players on their old teams
+    # (Keenan Allen stayed a Colt and took targets from the receivers who are really there).
     ids, results, M, envs, dropped = rw.simulate_week(season, week, lines, tg, lg, pw, defs, lg_def, sched, drops, quest,
-                                                      a.sims, a.seed, boxes=boxes)
+                                                      a.sims, a.seed, boxes=boxes, team_now=rw.current_teams(season, week),
+                                                      qb_start=rw.qb_starts(season, week), notes=notes)
     S = M.shape[1]
     idx = {i: n for n, i in enumerate(ids)}
     rng = np.random.default_rng(7)
@@ -165,13 +173,13 @@ def main():
         "4 SWING (90th percentile, for an underdog)": best(lambda p: p["p90"]),
         "5 CONTINGENCY (every Questionable out)": best(lambda p: p["mean"], exclude_quest=True),
     }
+    LU = {k: v for k, v in LU.items() if v is not None}   # 2026-11-11: skip a lineup that cannot be filled (Week 10 contingency had no healthy QB or 2nd DL)
     order = ["QB", "RB", "WR", "TE", "PK", "DL", "LB", "DB"]
     lu_tot = {k: sum(M[p["row"]].astype(np.float64) for p in v) for k, v in LU.items()}
-    doc = ["Brissett, Jacoby", "Croskey-Merritt, Jacory", "White, Rachaad", "Flowers, Zay", "Allen, Keenan", "Flournoy, Ryan",
-           "Goedert, Dallas", "Schultz, Dalton", "Folk, Nick", "Davis, Jordan", "Kancey, Calijah", "Okereke, Bobby",
-           "Strnad, Justin", "Dodson, Tyrel", "Kinchens, Kamren", "Jenkins, Rayshawn", "Mukuba, Andrew"]
+    doc = json.load(open(a.sheet)) if a.sheet else []
     sheet = [p for p in pool if p["name"] in doc]
-    sheet_tot = sum(M[p["row"]].astype(np.float64) for p in sheet) if len(sheet) == len(doc) else None
+    sheet_missing = [n for n in doc if n not in {p["name"] for p in pool}]      # saved starters with no sim score zero
+    sheet_tot = sum(M[p["row"]].astype(np.float64) for p in sheet) if doc and sheet else None
 
     # ------------------------------------------------ pick'em tables
     pk = pd.read_csv(OUT / f"pickem_probs_{season}_wk{week}.csv")
@@ -188,9 +196,9 @@ def main():
     # ------------------------------------------------ write markdown
     L = []
     w = L.append
-    w(f"# Week {week} Full Simulation Report - 15 OCT 2026")
+    w(f"# Week {week} Full Simulation Report - {dt.date.today():%d %b %Y}")      # 2026-11-12: was hard-coded "15 OCT 2026"
     w("")
-    w("Decision support only. Nothing was submitted anywhere. Every number comes from 4,000 simulated versions of each game, "
+    w(f"Decision support only. Nothing was submitted anywhere. Every number comes from {a.sims:,} simulated versions of each game, "
       "built from the live betting line, each coach's own tendencies, injuries as of this pull, and each player's recent usage.")
     w("")
     w("## 1. Winners and pick'em")
@@ -218,20 +226,23 @@ def main():
             w(f"**Flag:** the straight-up pick {x.su_pick} in {x.game} is the market underdog ({x.p_win:.1%}). "
               f"It is a coin flip; the other side is the market favorite. Your call.")
             w("")
-    w("**Eliminator (fresh start this week, every team open):** best win chances are LA Rams 83.7%, KC 73.5%, SF 72.2%, "
-      "IND and NE 70.9%. Surviving all season means saving the biggest favorites for the weeks with weaker options, "
-      "so the Rams are the safe pick now but not automatically the smart one. I can plan the full 18 weeks once the schedule "
-      "odds are loaded.")
+    # 2026-11-12: this paragraph was hard-coded Week 6 text (Rams 83.7 percent) and printed every week since.
+    favs = sorted([(max(r.p_home, 1 - r.p_home), r.home if r.p_home >= 0.5 else r.away) for r in gdf.itertuples()], reverse=True)[:5]
+    w("**Eliminator:** biggest favorites this week by win chance: " + ", ".join(f"{t} {p:.1%}" for p, t in favs)
+      + ". Teams already used are not tracked here, check FUTURES-PICKS.md.")
     w("")
 
-    w("## 2. Five IRFL lineups (Golden active)")
+    w("## 2. IRFL lineups")
     w("")
     w("| Lineup | Average | 10th | 90th |")
     w("|---|---|---|---|")
     for k, t in lu_tot.items():
         w(f"| {k} | {t.mean():.1f} | {np.percentile(t, 10):.1f} | {np.percentile(t, 90):.1f} |")
     if sheet_tot is not None:
-        w(f"| Week 6 sheet lineup (for comparison) | {sheet_tot.mean():.1f} | {np.percentile(sheet_tot, 10):.1f} | {np.percentile(sheet_tot, 90):.1f} |")
+        w(f"| Saved MFL lineup (for comparison) | {sheet_tot.mean():.1f} | {np.percentile(sheet_tot, 10):.1f} | {np.percentile(sheet_tot, 90):.1f} |")
+    if doc and sheet_missing:
+        w("")
+        w("Saved starters with no simulation, counted as zero: " + "; ".join(sheet_missing) + ".")
     w("")
     base = LU["1 EXPECTED (highest average)"]
     base_names = {p["name"] for p in base}
@@ -249,15 +260,21 @@ def main():
     same = [(keys[i][0], keys[j][0]) for i in range(len(keys)) for j in range(i + 1, len(keys))
             if {p["name"] for p in LU[keys[i]]} == {p["name"] for p in LU[keys[j]]}]
     if same:
-        w("Lineups " + "; ".join(f"{x} and {y} are identical" for x, y in same) + ". Your roster has few real choices this week "
-          "(the only live decisions are QB, the last DB slot and the last WR slot), so the five lineups collapse. "
-          "Averages shift by about half a point between runs because the dice differ.")
+        w("Lineups " + "; ".join(f"{x} and {y} are identical" for x, y in same) + ". Where they match, the roster has no real choice between safe and swing this week.")
         w("")
-    w(f"Not simulated this week (bye, no team, or no recent usage): {'; '.join(missing)}.")
+    w(f"Not simulated this week (bye, no team, new team, or no recent usage, check each one): {'; '.join(missing)}.")
     w("")
-    w("When the two free agents land (a safety and a defensive end), I will add them for Week 7. Defensive line is the thinnest group: "
-      "Davis and Kancey are the only two playable linemen this week.")
-    w("")
+    if notes.get("transfers_added"):
+        w("Changed teams and simulated on the new team with his own old-team rates: "
+          + "; ".join(f"{n} ({g}, {prev} to {t})" for t, n, g, prev in notes["transfers_added"]) + ".")
+        w("")
+    if notes.get("transfers_reduced_share"):
+        w("Changed teams, simulated at a REDUCED share (first game on a new team: 0.6 of his old target share, 0.3 of his carries, thin evidence): "
+          + "; ".join(f"{n} ({g}, {prev} to {t})" for t, n, g, prev in notes["transfers_reduced_share"]) + ".")
+        w("")
+    if notes.get("qb_named"):
+        w("Starting quarterbacks named by hand in the overrides file: " + "; ".join(f"{t} {n}" for t, n in notes["qb_named"]) + ".")
+        w("")
 
     w("## 3. Game by game: simulated box scores")
     w("")
@@ -330,7 +347,7 @@ def main():
     w("- The coaching table covers head coaches. nflverse has no play-caller field, so a coordinator who calls plays is "
       "not separated out, and first-year head coaches (BAL, CLE, LV, MIA) lean on team history.")
     w("- Backtest (18 weeks, 14,848 player-weeks): 3 to 6 percent less error than a recent average for QB, RB, WR, TE and K; a tie on defenders.")
-    w("- Injury statuses came from MFL at the time of the pull. Re-run Thursday morning and Sunday morning for fresh news.")
+    w("- Injury statuses come from the merged injury file (MFL, nflverse, ESPN, transactions) at the time of the pull. Re-run when news lands.")
     w("- Weather, referee tendencies and in-game injuries are not modeled.")
     Path(a.md).write_text("\n".join(L), encoding="utf-8")
     json.dump({k: [p["name"] for p in v] for k, v in LU.items()}, open(OUT / f"lineups5_{season}_wk{week}.json", "w"), indent=1)

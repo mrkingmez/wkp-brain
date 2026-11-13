@@ -30,7 +30,7 @@ import time
 
 import numpy as np
 
-MATCH_THRESHOLD = 0.70  # cosine similarity floor before we trust a name match
+MATCH_THRESHOLD = 0.50  # cosine similarity floor before we trust a name match (was 0.70 until 2026-11-11, see --match-threshold)
 
 NAME_MAP = {
     "matt": "Matt/Winter Wolf",
@@ -66,7 +66,8 @@ def main():
     parser.add_argument("--output", required=True, help="Path to write the final transcript")
     parser.add_argument(
         "--voiceprints-dir",
-        default=os.path.join(os.path.dirname(__file__), "..", "voiceprints"),
+        # Changed 2026-11-11: voiceprints live in D:\WKP\voiceprints (gitignored, biometric).
+        default=os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "voiceprints")),
     )
     parser.add_argument("--model", default="large-v3", help="Whisper model size")
     parser.add_argument(
@@ -103,6 +104,14 @@ def main():
     )
     parser.add_argument("--num-speakers", type=int, default=None,
         help="Exact speaker count if known (e.g. 2 for a two-host review). Stops pyannote inventing extra speakers.")
+    parser.add_argument("--map-seconds", type=float, default=60.0,
+        help=("Seconds of each speaker cluster's longest turns to embed when matching voiceprints. "
+              "Added 2026-11-11: the old behavior (first 5 segments, often 3-5 s total) scored 0.19 "
+              "against a correct voiceprint and never matched. 0 restores the old first-5-segments behavior."))
+    parser.add_argument("--match-threshold", type=float, default=MATCH_THRESHOLD,
+        help=("Cosine floor for trusting a voiceprint match. Default lowered 0.70 -> 0.50 on 2026-11-11: "
+              "measured correct matches scored 0.71-0.89 on held-out episodes, wrong people scored 0.22 or less, "
+              "and a real run put Zac at 0.71, one hair over the old floor."))
     args = parser.parse_args()
 
     hf_token = os.environ.get("HF_TOKEN")
@@ -216,7 +225,20 @@ def main():
     for cluster in diarized_speakers:
         # Pull a representative chunk of this cluster's audio to embed.
         # Concatenate the first few segments belonging to this speaker.
-        cluster_segments = [s for s in result["segments"] if s.get("speaker") == cluster][:5]
+        cluster_segments = [s for s in result["segments"] if s.get("speaker") == cluster]
+        if args.map_seconds and args.map_seconds > 0:
+            # Longest turns first (>= 1 s) until map_seconds of audio is collected.
+            picked, acc = [], 0.0
+            for s in sorted(cluster_segments, key=lambda s: -(s["end"] - s["start"])):
+                if s["end"] - s["start"] < 1.0:
+                    continue
+                picked.append(s)
+                acc += s["end"] - s["start"]
+                if acc >= args.map_seconds:
+                    break
+            cluster_segments = picked
+        else:
+            cluster_segments = cluster_segments[:5]  # old behavior
         if not cluster_segments:
             cluster_labels[cluster] = None
             continue
@@ -234,7 +256,7 @@ def main():
             if score > best_score:
                 best_name, best_score = name, score
 
-        if best_name and best_score >= MATCH_THRESHOLD:
+        if best_name and best_score >= args.match_threshold:
             cluster_labels[cluster] = best_name
             print(f"  {cluster} -> {NAME_MAP[best_name]} (confidence {best_score:.2f})")
         else:

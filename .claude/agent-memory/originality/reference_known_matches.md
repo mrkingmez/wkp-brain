@@ -40,3 +40,14 @@ Verified 2026-11-10 (Wrench Turner v2 draft-02, originality-02.md):
 - Empty chair with a man's jacket on it = absence/memorial image (Missing Man Table). Like the folded flag, it falsely implies a living father died. Fixing one death signal often swaps in a quieter one; check the replacement object.
 - "Coming home is the hard part": searched, no owner, but it is the thesis line of reintegration docs (Searching for Home, When I Came Home 2006). Commonplace, not a finding.
 - Place names joined by a drawn line: clean as text; on a map it becomes the Raiders of the Lost Ark travel-map device.
+
+Verified 2026-11-11 (EP120 shorts copy, writing-room\ep120-shorts\originality-01.md):
+- Adam Driver "Star Wars is over" (Rich Eisen, Nov 2026) = trade headline wording: Netflix Junkie "It's Over", Geeks and Gamers "Declares Star Wars Career Is Over", Cosmic Book News "Adam Driver Done With Star Wars".
+- "Was Adam Driver the only one who tried" and "who follows Hugh Jackman as Wolverine": searched, no owning headline, fan commonplace only.
+- "Most realistic war movies / hardest to watch" = ranked-list vocabulary (Slashfilm, Cinemablend, WatchMojo). Generic, not a lift.
+- For shorts copy batches, the main failure is template sameness across clips (question-mark titles, "[host] on why", "the one X"), not lifted headlines. Count constructions per platform.
+
+Verified 2026-11-12 (Opus affiliate how-to, writing-room\opus-push\originality-01.md):
+- "One episode, N shorts/posts" = Opus Clip's own homepage tagline "1 long video, 10 viral clips" (opus.pro) plus the repurposing-blog headline genre built on it. On an Opus affiliate video it reads as the vendor ad. Check hook, loop close, thumbnail and titles together.
+- A "score out of ten" on screen over Opus footage gets read as Opus's own virality score.
+- Disclosure boilerplate ("we get commissions for purchases made through this link") is plain on purpose. Not a finding.

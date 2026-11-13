@@ -1,0 +1,9 @@
+HOW TO STOP THE TEACHER SERVER
+
+Pick any one:
+ 1. Close the black server window (click the X). Done.
+ 2. Click in the black window and press Ctrl+C.
+ 3. Double-click stop_teacher.bat in this folder.
+
+After stopping, the website no longer answers on the home network.
+If the window is already gone and the site still answers, restart the PC.

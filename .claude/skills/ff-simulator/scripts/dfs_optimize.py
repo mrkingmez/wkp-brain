@@ -62,7 +62,7 @@ def main():
     ap.add_argument("--stack", action="store_true")
     ap.add_argument("--mode", choices=["gpp", "cash"], default="gpp")
     ap.add_argument("--season", type=int, default=2026)
-    ap.add_argument("--week", type=int, default=6)
+    ap.add_argument("--week", type=int, required=True)   # 2026-11-12: the default was Week 6, a missing flag built lineups on October draws
     ap.add_argument("--tries", type=int, default=300)
     ap.add_argument("--exclude", default="", help="comma list of player names to drop")
     ap.add_argument("--force", default="", help="comma list of player names that must be in every lineup")

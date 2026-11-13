@@ -39,12 +39,21 @@ NFLV = "https://github.com/nflverse/nflverse-data/releases/download"
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl"
 UA = {"User-Agent": "wkp-ff-injury-layer/1.0"}
 
+BAD_KEYS = {"nan", "None", "", "<NA>", "NaN"}
+LOC2ABBR = {"Arizona": "ARI", "Atlanta": "ATL", "Baltimore": "BAL", "Buffalo": "BUF", "Carolina": "CAR", "Chicago": "CHI",
+            "Cincinnati": "CIN", "Cleveland": "CLE", "Dallas": "DAL", "Denver": "DEN", "Detroit": "DET", "Green Bay": "GB",
+            "Houston": "HOU", "Indianapolis": "IND", "Jacksonville": "JAX", "Kansas City": "KC", "Las Vegas": "LV",
+            "Miami": "MIA", "Minnesota": "MIN", "New England": "NE", "New Orleans": "NO", "Philadelphia": "PHI",
+            "Pittsburgh": "PIT", "San Francisco": "SF", "Seattle": "SEA", "Tampa Bay": "TB", "Tennessee": "TEN",
+            "Washington": "WAS", "New York Giants": "NYG", "New York Jets": "NYJ", "Los Angeles Rams": "LA",
+            "Los Angeles Chargers": "LAC", "N.Y. Giants": "NYG", "N.Y. Jets": "NYJ", "L.A. Rams": "LA", "L.A. Chargers": "LAC"}
 TEAM_FIX = {"WSH": "WAS", "LAR": "LA", "JAC": "JAX", "ARZ": "ARI", "BLT": "BAL", "CLV": "CLE", "HST": "HOU", "SD": "LAC",
             "STL": "LA", "OAK": "LV"}
 # category -> probability he plays (None = not in play)
 PLAY_PROB = {"ACTIVE": 1.0, "QUESTIONABLE": 0.75, "DOUBTFUL": 0.25, "OUT": 0.0, "IR": 0.0, "PUP": 0.0, "NFI": 0.0,
              "SUSPENDED": 0.0, "HOLDOUT": 0.0, "RETIRED": 0.0, "CUT": 0.0, "PRACTICE_SQUAD": 0.0, "INACTIVE": 0.0,
              "RESERVE": 0.0, "NONE": 1.0}
+Q_DNP_PLAY_PROB = 0.40
 RECORDS = []
 CLASS = {c: "UNAVAILABLE" for c in ("OUT", "IR", "PUP", "NFI", "RESERVE", "SUSPENDED", "HOLDOUT", "RETIRED", "CUT", "PRACTICE_SQUAD", "INACTIVE")}
 CLASS.update({"DOUBTFUL": "DOUBTFUL", "QUESTIONABLE": "QUESTIONABLE", "ACTIVE": "ACTIVE", "NONE": "NONE"})
@@ -90,7 +99,42 @@ def refresh_mfl_players():
     return d
 
 
-def build(season, week, tx_days):
+def espn_team_check(franchise, out, mfl_by_id, ros, e2g):
+    """2026-11-12: ask ESPN's athlete page which team each player on one fantasy roster is on, and list every
+    disagreement with the merged table. Nothing is changed automatically (ESPN's page can be stale too): it is a
+    loud list to read before the lineup is built. One call per player, about 60 calls."""
+    import time
+    fix = {"WSH": "WAS", "LAR": "LA"}
+    rt = dict(zip(out.gsis_id, out.roster_team))
+    flags = []
+    for f in ros["rosters"]["franchise"]:
+        if f["id"] != franchise:
+            continue
+        pl = f.get("player", [])
+        for r in ([pl] if isinstance(pl, dict) else pl):
+            p = mfl_by_id.get(r["id"], {})
+            e = str(p.get("espn_id") or "")
+            if not e:
+                flags.append(f"{p.get('name', r['id'])}: no ESPN id, team not checked")
+                continue
+            try:
+                a = requests.get(f"https://site.web.api.espn.com/apis/common/v3/sports/football/nfl/athletes/{e}", timeout=20).json().get("athlete", {})
+                et = (a.get("team") or {}).get("abbreviation")
+                et = fix.get(et, et)
+            except Exception as ex:
+                flags.append(f"{p.get('name')}: ESPN not retrieved ({type(ex).__name__})")
+                continue
+            ours = rt.get(e2g.get(e))
+            if et and isinstance(ours, str) and et != ours:
+                flags.append(f"{p.get('name')}: ESPN says {et}, merged table says {ours}, MFL says {p.get('team')}")
+            elif et and not isinstance(ours, str) and tm(p.get("team")) not in (et, "FA") and (a.get("status") or {}).get("name") != "Free Agent":
+                flags.append(f"{p.get('name')}: ESPN says {et}, MFL says {p.get('team')}, no roster row this week")
+            time.sleep(0.2)
+    print("ESPN TEAM CHECK for franchise", franchise, "->", flags or "all teams agree")
+    return flags
+
+
+def build(season, week, tx_days, check_franchise=None):
     now = dt.datetime.now(dt.timezone.utc)
     report = {"fetched_at": now.strftime("%Y-%m-%dT%H:%MZ"), "sources": {}}
     import mfl_client as m
@@ -102,17 +146,26 @@ def build(season, week, tx_days):
     report["sources"]["MFL_players_refresh"] = f"{len(plist)} players"
     npl = pd.read_parquet(PLAYERS_PQ)
     npl["espn_id"] = npl.espn_id.astype(str).str.replace(r"\.0$", "", regex=True)
-    e2g = dict(zip(npl.espn_id, npl.gsis_id))
+    # 2026-11-12 fix: 8,395 players have no ESPN id. astype(str) turned those into the key "nan", so every record that
+    # could not be matched was given one bogus shared player id (about 100 records a week collapsed into one row).
+    e2g = {e: g for e, g in zip(npl.espn_id, npl.gsis_id) if e not in BAD_KEYS and g == g}
 
     # nflverse weekly roster (week) -- also the name/team lookup for transactions
     rw_url = f"{NFLV}/weekly_rosters/roster_weekly_{season}.csv"
     rw = pd.read_csv(io.StringIO(get(rw_url).text), low_memory=False)
     rw_rel = get("https://api.github.com/repos/nflverse/nflverse-data/releases/tags/weekly_rosters").json()
     rw_ts = max(iso(a["updated_at"]) for a in rw_rel["assets"] if f"_{season}." in a["name"])
+    # every real gsis id a name has carried this season, any team (used to find a traded player under his old team)
+    name_any, last_team = {}, {}
+    for r in rw.sort_values("week").itertuples():
+        if isinstance(r.gsis_id, str) and r.gsis_id.startswith("00-"):
+            name_any.setdefault(norm(r.full_name), set()).add(r.gsis_id)
+            if r.week < week:
+                last_team[r.gsis_id] = tm(r.team)
     rw = rw[rw.week == week].copy()
     rw["espn_id"] = rw.espn_id.astype(str).str.replace(r"\.0$", "", regex=True)
     for e, g in zip(rw.espn_id, rw.gsis_id):
-        if g == g and e not in e2g:
+        if g == g and e not in e2g and e not in BAD_KEYS:
             e2g[e] = g
     rw["team"] = rw.team.map(tm)
     rw["key"] = rw.full_name.map(norm)
@@ -254,11 +307,36 @@ def build(season, week, tx_days):
     nm_re = re.compile(rf"\b({POS})\s+((?:[A-Z][\w'’.\-]*)(?:\s+(?:[A-Z][\w'’.\-]*|Jr\.|Sr\.|III|II|IV|V))*)")
     sent_re = re.compile(r"(?<=\.)\s+(?=(?:Placed|Designated|Activated|Signed|Released|Waived|Elevated|Claimed|Suspended|Reinstated|"
                          r"Traded|Re-signed|Reverted|Removed|Retired|Added|Agreed|Acquired|Cut)\b)")
+    trade_in = {}                  # gsis -> (new team, when): a trade in the transaction feed moves the player at once
     for t in tx:
         team = tm(t["team"]["abbreviation"])
         when = iso(t["date"])
         for s in sent_re.split(t["description"]):
             low = s.lower()
+            if low.startswith("acquired"):
+                # "Acquired DT X from Philadelphia for a pick": X arrives. "Acquired a pick from Y for WR Z": Z LEAVES.
+                # Before 2026-11-12 both were logged as "signed" with this team, and a traded-in player whose nflverse
+                # row still had a placeholder id was lost (Jordan Davis PHI to JAX, Week 10).
+                head = re.split(r"\bfrom\b", s, maxsplit=1)[0]
+                mfrom = re.search(r"\bfrom (?:the )?([A-Z][A-Za-z. ]+?)(?= for\b| in exchange\b|,|\.|$)", s)
+                old = None
+                if mfrom:
+                    loc = mfrom.group(1).strip()
+                    old = LOC2ABBR.get(loc) or next((v for k, v in LOC2ABBR.items() if loc.startswith(k)), None)
+                for pos, nm in nm_re.findall(head):
+                    nm = nm.strip().rstrip(".")
+                    cands = name_any.get(norm(nm), set())
+                    g = next((c for c in cands if old and last_team.get(c) == old), None)
+                    if g is None and len(cands) == 1:
+                        g = next(iter(cands))
+                    if g is None:
+                        g = name_team.get((norm(nm), team))
+                    add("ESPN_TX", when, nm, team, "acquired by trade", "ACTIVE", g, pos,
+                        note=f"ESPN transaction {when:%Y-%m-%d}: {s.strip()[:180]}")
+                    if isinstance(g, str) and g.startswith("00-"):
+                        trade_in[g] = (team, when)
+                    n += 1
+                continue
             if low.startswith("placed") and "injured reserve" in low and "practice squad" not in low:
                 cat, st = "IR", "placed on injured reserve"
             elif "pup" in low or "physically unable" in low:
@@ -287,7 +365,7 @@ def build(season, week, tx_days):
             else:
                 continue
             for pos, nm in nm_re.findall(s):
-                nm = nm.strip()
+                nm = nm.strip().rstrip(".")
                 g = name_team.get((norm(nm), team))
                 add("ESPN_TX", when, nm, team, st, cat, g, pos, note=f"ESPN transaction {when:%Y-%m-%d}: {s.strip()[:180]}")
                 n += 1
@@ -299,7 +377,7 @@ def build(season, week, tx_days):
     df["gsis_id"] = df.gsis_id.where(df.gsis_id.notna(), None)
     # fill missing gsis from espn_id / mfl bridge / name+team
     miss = df.gsis_id.isna()
-    df.loc[miss, "gsis_id"] = df.loc[miss, "espn_id"].map(e2g)
+    df.loc[miss, "gsis_id"] = [e2g.get(e) if isinstance(e, str) and e not in BAD_KEYS else None for e in df.loc[miss, "espn_id"]]
     miss = df.gsis_id.isna()
     df.loc[miss, "gsis_id"] = [name_team.get((norm(a), b)) for a, b in zip(df.loc[miss, "player"], df.loc[miss, "team"])]
     df["asof_dt"] = pd.to_datetime(df.as_of.replace("not available", pd.NA), utc=True, errors="coerce")
@@ -307,6 +385,7 @@ def build(season, week, tx_days):
     merged = []
     mon = (now - dt.timedelta(days=now.weekday())).replace(hour=4, minute=0, second=0, microsecond=0)
     cycle_start = pd.Timestamp(mon)      # Monday 00:00 ET of this NFL week: designations since then are "this week's"
+    rw_lag = pd.Timestamp(rw_ts) - pd.Timedelta(hours=60)
     for key, g in df.groupby("key"):
         # status-bearing records only (a bare 'NONE' practice row never overrides a designation)
         gg = g.sort_values("asof_dt", ascending=False)
@@ -317,6 +396,15 @@ def build(season, week, tx_days):
             gg = gg[~((gg.source == "NFLV_ROST") & (gg.category == "ACTIVE"))]
         real = gg[gg.category != "NONE"]
         top = real.iloc[0] if len(real) else gg.iloc[0]
+        # 2026-11-12: the nflverse roster file is stamped with its release time but trails real moves by a day or more
+        # (Nick Folk waived 11/11, roster still ACT on 11/12). A release, IR or suspension in the transaction feed inside
+        # the 60 hours before the roster stamp wins, unless a newer ESPN note has him active again.
+        if top.source == "NFLV_ROST" and top.category == "ACTIVE":
+            txs = gg[gg.source == "ESPN_TX"]
+            if len(txs) and txs.iloc[0].category in ("CUT", "IR", "SUSPENDED") and txs.iloc[0].asof_dt >= rw_lag:
+                newer_ok = gg[(gg.source == "ESPN_INJ") & (gg.category == "ACTIVE") & (gg.asof_dt > txs.iloc[0].asof_dt)]
+                if not len(newer_ok):
+                    top = txs.iloc[0]
         cats = {}
         for r in gg.itertuples():
             if r.category != "NONE":
@@ -330,8 +418,16 @@ def build(season, week, tx_days):
         merged.append(dict(player=top.player, team=team, status=top.status, source=top.source, as_of=top.as_of,
                            note=(top.note or "") + conflict + (" | " + extra if extra else ""),
                            gsis_id=top.gsis_id if top.gsis_id == top.gsis_id else None, pos=top.pos, category=top.category,
-                           roster_team=gsis_info.get(top.gsis_id, (None, None, None))[1],
+                           roster_team=(trade_in[top.gsis_id][0] if top.gsis_id in trade_in
+                                        else gsis_info.get(top.gsis_id, (None, None, None))[1]),
+                           practice=next((str(r.note).split("practice '")[1].split("'")[0] for r in gg.itertuples()
+                                          if r.source == "NFLV_INJ" and "practice '" in str(r.note)), ""),
                            play_prob=PLAY_PROB.get(top.category, 1.0), n_sources=len({r.source for r in gg.itertuples()})))
+        # 2026-11-12 (FF-2026-11-12-01): a Questionable player who did not practice plays far less than 75 percent.
+        # Three seasons, n=57: zero 53 percent of the time, 0.39 of his usual points. Limited and full stay at 0.75
+        # (raising them to 0.85 made the backtest worse: MSE 65.2 flat, 64.0 with this rule, 68.8 with 0.85).
+        if merged[-1]["category"] == "QUESTIONABLE" and str(merged[-1]["practice"]).startswith("Did Not"):
+            merged[-1]["play_prob"] = Q_DNP_PLAY_PROB
     out = pd.DataFrame(merged).sort_values(["team", "player"])
     OUT.mkdir(parents=True, exist_ok=True)
     base = OUT / f"injuries_{season}_wk{week}"
@@ -345,6 +441,9 @@ def build(season, week, tx_days):
     report["age_hours_of_newest"] = round((now - newest).total_seconds() / 3600, 1)
     report["stale_over_24h"] = report["age_hours_of_newest"] > 24
     report["conflicts"] = int(out.note.str.contains("CONFLICT").sum())
+    report["trades_in"] = {gsis_info[g][0] if g in gsis_info else g: t for g, (t, _w) in trade_in.items()}
+    if check_franchise:
+        report["espn_team_check"] = espn_team_check(check_franchise, out, mfl_by_id, ros, e2g)
     json.dump(report, open(str(base) + "_report.json", "w"), indent=1)
     print(json.dumps(report, indent=1))
     return out
@@ -355,5 +454,6 @@ if __name__ == "__main__":
     ap.add_argument("season", type=int)
     ap.add_argument("week", type=int)
     ap.add_argument("--tx-days", type=int, default=10)
+    ap.add_argument("--check-franchise", default="0012", help="fantasy franchise whose players get the ESPN team check ('' to skip)")
     a = ap.parse_args()
-    build(a.season, a.week, a.tx_days)
+    build(a.season, a.week, a.tx_days, a.check_franchise or None)

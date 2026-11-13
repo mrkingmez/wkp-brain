@@ -120,6 +120,8 @@ no microphone, no LLM, no data collection on any device a person under
 18 touches, and nothing from this venture ever touches the Columbia
 County network.
 
+**PAUSED 2026-11-12 (Zac's own call), now ACTIVE-UNSCHEDULED.** Paused until he has hardware to run a real test. He saw the Scout dog render as a jumble of pixels on the screen, so the interface needs rework. Video editing (Post-Production) is his first focus.
+
 **Currently blocked on PAWS-001 and PAWS-004** (task source, and hours
 per week) — see `PAWS\decisions\DECISIONS.md`. PAWS-001 blocks all
 firmware work. PAWS-002 (venture/product naming) and PAWS-005

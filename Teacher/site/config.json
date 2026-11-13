@@ -1,0 +1,6 @@
+{
+  "port": 8800,
+  "bind_address": "auto",
+  "progress_viewer_enabled": false,
+  "unlock_enabled": true
+}

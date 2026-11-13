@@ -93,6 +93,13 @@ shares were each tested and do not change the slope.
   defender points are mostly noise. Use the old sim or the plain average for IDP, the play sim is for what-if (a teammate out, a matchup).**
 - Week 7 rosters: both sims agree on Zac's IDP lineup (no change). Blend weights for DL/LB/DB stay 0 on the new sim in `run_week_play.py`.
 
+## Changes from the 2026-11-12 audit
+- `run_week_play.py` needs `--roster` (the default was the Week 7 file). It reads `data\ff-simulator\overrides_<season>_wk<week>.json`:
+  `players` status facts are applied, and the `qbs` block names the starting quarterback by team. Without a name the sim can only pick a
+  passer who has thrown FOR THAT TEAM, so a quarterback traded in last week is never chosen (Week 10: Fagnano instead of Brissett).
+- A Questionable or Doubtful quarterback's points are scaled by his play chance (the engine itself plays him every snap).
+- Each game has its own fixed seed, so an injury in one game no longer changes the dice in the others.
+
 ## Not done yet
 - NGS-based player ratings, a scheme-conditioned completion layer, a wind adjustment, participation/PFR-based defender roles.
 - Totals are still about 1.3 points per team light (see the known gap above).

@@ -1,0 +1,36 @@
+{
+ "fetched_at": "2026-11-12T17:46Z",
+ "sources": {
+  "MFL_players_refresh": "2716 players",
+  "MFL_INJ": "479 rows, response timestamp 2026-11-12T17:01Z, week 10",
+  "MFL_ROSTER": "28 fantasy-IR-slot rows (note only), pulled 2026-11-12T17:46Z",
+  "NFLV_INJ": "276 rows for week 10 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10)]), release updated 2026-11-12T15:56Z",
+  "NFLR_INJ": "276 rows for week 10 via nflreadpy",
+  "NFLV_ROST": "2264 week-10 roster rows, 2263 records, release updated 2026-11-12T15:58Z",
+  "ESPN_INJ": "800 rows, feed timestamp 2026-11-12T17:46Z",
+  "ESPN_TX": "139 team-transaction lines in last 10 days -> 289 player moves, feed timestamp 2026-11-12T17:03Z (dates are date-only, midnight ET)"
+ },
+ "merged_rows": 2533,
+ "raw_rows": 4411,
+ "unresolved_gsis": 88,
+ "newest_as_of": "2026-11-12T17:32Z",
+ "age_hours_of_newest": 0.2,
+ "stale_over_24h": false,
+ "conflicts": 63,
+ "trades_in": {
+  "Josh Downs": "KC",
+  "Amani Hooker": "BUF",
+  "Daiyan Henley": "DEN",
+  "Kirk Cousins": "MIN",
+  "Keenan Allen": "SF",
+  "Jordan Davis": "JAX",
+  "Jessie Bates": "JAX",
+  "Andre Cisco": "DET",
+  "Davon Godchaux": "JAX",
+  "Jacoby Brissett": "BAL"
+ },
+ "espn_team_check": [
+  "Demercado, Emari: ESPN says DAL, merged table says HOU, MFL says HOU",
+  "Kancey, Calijah: ESPN says TB, MFL says TBB, no roster row this week"
+ ]
+}

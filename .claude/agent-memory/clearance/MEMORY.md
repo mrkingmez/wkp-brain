@@ -1,2 +1,4 @@
 - [Ian Griffin trailer client](project_ian_griffin_trailer.md) — retired CSM author; crest, cover license, Ford marks, secret fence; script passes 1, 2 done 2026-11-04, pass 3 and pass 4 2026-11-05 (leaks sit in 05/00/06, not 01); v2 draft-01 and draft-02 read 2026-11-10
+- [WWD shorts clearance method](project_wwd_shorts_clearance.md) — read clip AUDIO in range plus edges, not just copy; EP120 read 2026-11-11
 - [Name search limits](reference_name_search_limits.md) — USPTO/GA SOS not live-queryable here, use mirrors, PROOFED is a known conflict (2026-11-10)
+- [Opus affiliate push](project_opus_affiliate_push.md) — clearance-01 2026-11-12: process-claim accuracy is the exposure; Opus terms bar paid ads
