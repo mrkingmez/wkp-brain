@@ -1,0 +1,33 @@
+# FAKE TEST LINEUPS, made up by the Fantasy director on 2026-11-13 to test dfs_compare.py. NOT the friend's lineups.
+Lineup 1
+Tyler Shough
+Chuba Hubbard
+Ollie Gordon II
+Chris Olave
+Drake London
+Jakobi Meyers
+Tyler Warren
+Kyle Pitts Sr.
+Colts
+
+Lineup 2
+Josh Allen
+James Cook III
+Ollie Gordon II
+Justin Jefferson
+Khalil Shakir
+Jakobi Meyers
+Tyler Warren
+Kyle Pitts Sr.
+Bills
+
+Lineup 3
+Jordan Love
+James Cook III
+Ollie Gordon II
+Christian Watson
+Matthew Golden
+Jakobi Meyers
+Tyler Warren
+Kyle Pitts Sr.
+Packers

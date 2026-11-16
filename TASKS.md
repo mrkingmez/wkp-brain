@@ -18,8 +18,8 @@ MAIN EFFORT: none set (Kingdom Planners removed 2026-11-11). Standing: FrostCast
 | Spoiler fence corrected (Zac 2026-11-12): the secret is that Brandon is a father and the kid near the end is his. POST-2026-11-11-01 closed as a misread | Done 2026-11-12 | Draft 3.2 Section 0 holds the fence and the shot audit. No hold on V4 to V6. Memory boy is now about nine, older man beside him, S5 caption rewritten. Docx regenerated. |
 | Check the buy link on a phone | Waiting on Zac | Site lists the book but showed no buy button. |
 | Pick music, prove the license | Waiting on Zac | P: `searching-for-hope` (no license file on disk) or Alex Morgan FMA (CC BY, track page and AI label unchecked). `research\music\2026-11-11-ian-trailer-music.md`. |
-| Ask Ian: cover maker and zoom/video use OK, who the man and the toddler on the cover are, back-cover line yes, where to buy | Waiting on Zac | One text, Draft 3.2 Section 11 Session 0. Do not mention the secret in writing. |
-| Run the stills (5 vertical R1 to R5, wide R1w, R2w, R5w, V7 and V7w), then the Veo clips (21 planned: 16 at 9:16, 5 true 16:9, 3 reserve, stop 24) | Not Started | Zac clicks generate. Read the credit cost off the first run and check the balance (Draft 3.2 Section 3c). Copy-and-paste sheet in Draft 3.2 Section 5. |
+| Ask Ian: cover maker and zoom/video use OK, who the man and the toddler on the cover are, back-cover line yes, where to buy, AND the battle-buddy-in-crisis scene (Zac 2026-11-13: Ian told him about it, Zac wants a beat for it, and a homecoming beat; also longer than 45 s?). Ask Ian how the book treats it and whether he wants it in the trailer | Waiting on Zac | One text, Draft 3.2 Section 11 Session 0. Do not mention the secret in writing. |
+| Run the stills (5 vertical R1 to R5, wide R1w, R2w, R5w, V7 and V7w), then the Veo clips (21 planned: 16 at 9:16, 5 true 16:9, 3 reserve, stop 24) | Not Started | PROGRESS 2026-11-13 (Zac's word): about 2,000 credits spent, two good shots in hand (V1w wrench and look, second-in-list baseball roll). STOP buying video runs, finish the rest with stills, push-ins and the phone shoot. Zac clicks generate. Read the credit cost off the first run and check the balance (Draft 3.2 Section 3c). Copy-and-paste sheet in Draft 3.2 Section 5. |
 | Rough cut in two sequences (1080x1920 and 1920x1080), end card for each (cover unedited, AVAILABLE NOW, URL in Premiere) | Not Started | Draft 3.2 Sections 6 and 11. |
 | Gates after the rough cut: script-room 2 passes, clearance (Ford), marketing-director, no-ai-slop, qa-director | Not Started | |
 | Tell Ian about the AI label toggle (his accounts, his call) | Waiting on Zac | Recommend on for all three. TikTok and Facebook rules not verified. Ian said no label needed, but the toggle is the poster's duty. |
@@ -54,7 +54,7 @@ eports\OpusClip-Affiliate-Push-Packet.md`. Next: Zac asks Matt, then the fit pol
 | Kingdom Planners on Payhip test | On ice | Zac 2026-11-12: Kingdom Planners goes to the back burner. Test not run. VA tables still go stale Dec 1 2026 if it ever restarts. `D:\WKP Reports\Kingdom Planners Payhip Test\`. |
 | Kingdom Planners (BACK BURNER, Zac 2026-11-12) | On ice | No agent, no schedule, does not surface in planning. Old state: Etsy shop blocked on $29, Complete Budget System file lost, listing photos and Sheets pass not done. |
 | WarriorKingDesigns weekly batch | Hold | Etsy listing cap (3 a day, 8 a week) expires 11/15 (ETSY-2026-11-02-01). Manual Friday data pull has lapsed. |
-| Transcription side business | On ice | HOLD per devils-advocate. Test only after photo restore week. |
+| Transcription side business | In Progress | Zac 2026-11-13: build it, FOUR Fiverr gigs (sermons, podcasts, video captions, general). Overrides the old HOLD. System built and tested with a fake job: `Transcription\CLAUDE.md`, `SOP.md`, scripts, jobs in `D:\Transcription Jobs\`, tracker in `D:\WKP Reports\Transcription Tracker\`. Next for Zac: check Fiverr's rules on AI-assisted delivery, write the four gig pages, start a job with `new_job.py`. |
 | CMMC Level 1 kit | On ice | Market not shown. |
 | Fiverr and outreach, side business brand kits | Waiting on Zac | Names pick, USPTO and Georgia SOS checks owed. |
 | LLC formation | On ice | Zac 2026-11-12: the LLC is not on Zac, it is on Matt (confirmed by Zac: the WWD LLC). A Warrior King Productions LLC waits until WKP is actually putting product out. Old research: GA $110, $60 a year, EIN free. |
@@ -69,7 +69,8 @@ eports\OpusClip-Affiliate-Push-Packet.md`. Next: Zac asks Matt, then the fit pol
 ## Studio, Animation, Software, QA
 | Task | Status | Notes |
 |---|---|---|
-| Animation: tutorial picks, STANDARDS.md markup, pipeline repo pick, port yeses | Waiting on Zac | ANIM decisions in DECISIONS.md. Nothing installed or enabled. Free only. |
+| Animation tutorials: Zac yes 2026-11-13 to S2, L1, H1, B1, U1, U2 (S1 and R1 not on his list). Boat decision: search outside the five channels plus good sci-fi ship tutorials. Teach BOTH Mesh Terrain and classic Landscape. Version-tag every tutorial and close the version gap | In Progress | Two agents running: boat and sci-fi ship picks (back to Zac for a yes before transcripts), and transcripts, version tags and delta sheets for the six approved. Then the three skills and graded drills. |
+| Animation: STANDARDS.md markup, pipeline repo pick, port yeses | Waiting on Zac | ANIM decisions in DECISIONS.md. Nothing installed or enabled. Free only. |
 | QA and Software departments | Built | Specs load at next session start. First runs offered: qa-director over Ian trailer and Godzilla package. |
 | Weekly qa-auditor director review and Task Observer review | Not Started | Runs with the Monday brief. |
 | Saturday week-wrap (NEW, replaces the daily brief) | Built 2026-11-12 | Skill spec `.claude\skills\wkp-saturday-wrap\SKILL.md`. Output .docx in `D:\WKP Reports\Saturday Wrap\`, .md in `reports\saturday\`. First run Sat 11/14 if Zac wants it, task registration needs his yes (command in the 2026-11-12 report). Daily brief RETIRED, `WKP-daily-brief` task still enabled until Zac approves the disable. |
@@ -81,12 +82,13 @@ eports\OpusClip-Affiliate-Push-Packet.md`. Next: Zac asks Matt, then the fit pol
 ## Teacher (opened 2026-11-12, Zac yes)
 | Task | Status | Notes |
 |---|---|---|
-| Teacher: course site on the home network for Zac's wife, how to use AI the right way | In Progress | `Teacher\CLAUDE.md`. Runs only when Zac starts it, $0 to run. Skeleton plus one lesson first. |
+| Teacher: course site on the home network for Zac's wife, how to use AI the right way | In Progress | `Teacher\CLAUDE.md`. Runs only when Zac starts it, $0 to run. Skeleton plus one lesson first. 2026-11-13 Zac (insulted by the safety-only first build): rebuild as four tracks she can choose from: Start Here (what AI and Claude are, prompting basics to advanced), Make Things (pictures, video, postcards, printables to sell), Build and Automate (development, automation, advanced doorway), Stay Safe (short). Model after what excited her: TripleTen AI Software Engineering Bootcamp. Site restructure and course-outline research running, then writing room writes the lessons. |
 | Ask her whether Zac may see her progress | Waiting on Zac | She has not been asked. Viewer stays off until she says yes. |
 | Verify the AI Fluency OER license before copying any text | Not Started | Link only until then. |
 | Teacher: add the AI-engineering-from-scratch repo as an advanced track, plus practical exercises and lesson unlocking | In Progress | Zac 2026-11-12. Agent verifies license and size before cloning. Writing room and QA gates apply. |
 | Agent working standard (ledger, one change at a time, budgets) | Done 2026-11-12 | Root CLAUDE.md section, `logs\agent-runs.md`. Next: apply one-change-at-a-time to the fantasy sim and system-check tuning. |
 | Tutor panel (Claude API) | On ice | Costs money, needs Zac's yes and a monthly cap. |
+| Teacher: Claude power tools section, YouTube video picks (2026-11-14) | In Progress | Drafts in `Teacherdraftspower-tools` (safety for tools that act, Projects and memory, Skills, quizzes): fixed after QA FAIL, not rechecked, ~100 words over target, nothing on the site. Fact pack `research	eacher2026-11-14-claude-power-tools-fact-pack.md`, coverage map and video picks (only 11 videos checked, YouTube 429) in `research	eacher`. Open: her paid plan, Windows or Mac, real accounts or made-up only (TEACHER-2026-11-14-QA-01). Still to write: Connectors and MCP, Agents, Evaluating outputs, Scams. |
 
 ## Infrastructure
 | Task | Status | Notes |
@@ -103,6 +105,7 @@ eports\OpusClip-Affiliate-Push-Packet.md`. Next: Zac asks Matt, then the fit pol
 |---|---|---|
 | Fantasy football weekly cycle | In Progress | Next: Week 10 card and lineup. Open: FF-2026-11-10-01 to 03 in DECISIONS.md, tracker backfill Weeks 2 to 5, ff-simulator and ff-play-sim tuning, FanDuel lunch notes. |
 | Fantasy DFS Week 10 | Saturday 2026-11-14 | Waiting on Zac | Zac gets the DK/FD salary file Saturday, then the director builds lineups (FF-2026-11-11-03). |
+| DFS: friend's DK Early-slate process (Zac 2026-11-13, parts 1 and 2 of 3 received: process text, then the projections CSV saved in `data\dfs-friend\`, gitignored) | Waiting on Zac | Process saved in `Fantasy-Football\reports\DFS-Friend-Process-1-of-3-2026-11-13.md`. Part 3 received. Zac 2026-11-13: the cap is the $3 already in DK, three entries reserved, three lineups. His friend sends his three lines Sunday 12 PM ET for comparison. Workflow build (loader, three-lineup builder, compare tool, tracker, Sunday runbook) running under fantasy-football-director. Salary file saved to `data\dfs-friend\`. Refresh at 11:30 AM ET Sunday with the new projections file, lock 1:00 PM ET. Agents never enter lineups or spend. |
 | Fantasy tracker backfill Weeks 2, 3, 5 | Not Started | Zac yes 2026-11-12 (FF-2026-11-12-03). Label BACKFILL, after the Thursday lock. Needs a safe pass around the logger refusing post-kickoff rows. Also Zac sends the Week 9 entered DFS lineup Saturday (FF-2026-11-10-03). |
 | King Debt Planner | In Progress | Needs APRs, living costs, due days. File `D:\WKP Reports\King Debt Planner\`. Personal, never in the repo. |
 | Log package-delivery mileage | Not Started | |

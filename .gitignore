@@ -36,3 +36,15 @@ Teacher/site/build/
 
 # Teacher vendored third-party course repo, never commit (2026-11-12)
 Teacher/vendor/
+
+# Transcription business: client audio and anything private, never commit (2026-11-13). Job folders live in D:\Transcription Jobs, outside the repo.
+Transcription/_private/
+Transcription/**/*.wav
+Transcription/**/*.mp3
+Transcription/**/*.m4a
+Transcription/**/*.mp4
+Transcription/scripts/__pycache__/
+research/animation/transcripts/
+
+# friend DFS projections (not ours to publish)
+data/dfs-friend/

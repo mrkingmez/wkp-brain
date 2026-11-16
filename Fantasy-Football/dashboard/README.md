@@ -95,3 +95,23 @@ SKILL.md. Never written into any file here, never into `state.json`
   that blocks Python's `requests` regardless of UA (TLS fingerprint,
   not header-based) but never blocks `curl`. `espn_client.news_headlines()`
   shells out to `curl` for this one call.
+
+## DFS Entries panel (added 2026-11-13)
+
+A panel at the bottom of the page records Zac's DraftKings entries. The dashboard never enters a lineup, never spends, never contacts DraftKings. It reads and writes `..\tracker\dfs_tracker.csv` through `dfs_entries.py`.
+
+**Start it (DFS only, no poller):**
+```
+cd D:\WKP\Fantasy-Football\dashboard
+set DASHBOARD_NO_POLLER=1
+python server.py
+```
+Open `http://localhost:8787`. Leave `DASHBOARD_NO_POLLER` unset on a real Sunday and server.py starts the poller as before. Other settings: `DASHBOARD_PORT` (default 8787), `DFS_TRACKER_PATH` and `DFS_BACKUP_DIR` (point at a copy for testing), `DFS_BANKROLL` (default 3.00).
+
+**What it shows:** each entry's slate, line (our A/B/C, friend 1/2/3, or own), contest name or id, entry fee, status (entered or not entered), the nine names, actual points, rank, profit or loss. Above the table: bankroll ($3), spent (fees on entered rows), reserved (fees set on rows not yet entered), left. A row with no fee counts for nothing.
+
+**Add or edit:** open "Add or edit an entry". Pick a line, press "Fill names from the chosen line" (reads our three and the friend's three from `D:\WKP\data\dfs-friend\`), set fee and status, Save. After the slate use Edit on the row to type points, rank, profit or loss. Every save copies the csv to `..\tracker\backups\dfs_tracker_<timestamp>.csv` first, then replaces the file in one step. Editing a row changes only the fields the form sends. Our A/B/C rows use the ids OA/OB/OC and the friend's F1/F2/F3, the same ids `dfs\dfs_review.py` uses, so one row per lineup. New own lineups get OWN-1, OWN-2 per date.
+
+**Columns added to dfs_tracker.csv:** `line_label`, `lineup_players` (nine names joined by " | "), `status`. Rank uses the existing `finish` column. `dfs_review.py` COLS was extended with the same three so it no longer drops them when it rewrites the file.
+
+**Safety:** the server binds to 127.0.0.1, accepts POST only from localhost on `/api/dfs`, caps the body at 20 KB.

@@ -41,5 +41,6 @@ learnings go here.
 - [Fantasy picks format](feedback-fantasy-picks-format.md) — keep the Week 10 Picks and Lineup phone doc layout every week (Zac 2026-11-12)
 - [Shorts cadence](feedback-shorts-cadence.md) — YouTube 1/day incl Thu 6 to 7 PM; FB+IG Thu 1 at 6 PM, 4 to 5/day Fri to Tue, Wed 1 morning + 1 afternoon; 31-slot logic retired (Zac 2026-11-11, final)
 - [Own the operation](feedback-own-the-operation.md) — research agents resolve flags first, Jarvis decides, never bring judgment calls or unchecked flags to Zac; Wednesday chain must just run (Zac 2026-11-11)
+- [Zac's Fiverr history](user-fiverr-history.md) — established seller, over $7,000 since 2016 (his word); not a new seller (2026-11-13)
 - [Opus clips settled](feedback-opus-clips-settled.md) — EP 120 shorts approved, never re-ask or list a spot-check (Zac, 3 times, 2026-11-12)
 - [Take initiative](feedback-take-initiative.md) — build plans and fix known gaps unprompted, look on disk before asking Zac, report results (Zac 2026-11-11)

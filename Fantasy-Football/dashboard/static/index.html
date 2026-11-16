@@ -3,15 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sunday Dashboard — Caerellius Lions</title>
+<title>Sunday Dashboard, Caerellius Lions</title>
+<meta name="color-scheme" content="dark light">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <h1>IRFL Sunday Dashboard</h1>
+    <div class="topbar-id">
+      <h1>IRFL Sunday Dashboard</h1>
+      <div id="hdr-week" class="hdr-week">Week ...</div>
+    </div>
     <div class="topbar-right">
-      <div id="global-meta" class="meta"></div>
-      <div id="data-age" class="data-age">--</div>
+      <div id="gen-line" class="gen-line" role="status">Data updated at ...</div>
+      <div id="data-age" class="data-age">...</div>
+      <div id="global-meta" class="meta" hidden></div>
     </div>
   </header>
 
@@ -23,18 +28,18 @@
       <div class="matchup-body">
         <div class="side" id="side-mine">
           <div class="label">Caerellius Lions</div>
-          <div class="score" id="my-score">--</div>
-          <div class="sub">MFL projected: <span id="my-proj-mfl">--</span></div>
-          <div class="sub">IRFL-scoring projected: <span id="my-proj-irfl">--</span></div>
-          <div class="sub">Players yet to play: <span id="my-ytp">--</span></div>
+          <div class="score" id="my-score">...</div>
+          <div class="sub">MFL projected: <span id="my-proj-mfl">...</span></div>
+          <div class="sub">IRFL-scoring projected: <span id="my-proj-irfl">...</span></div>
+          <div class="sub">Players yet to play: <span id="my-ytp">...</span></div>
         </div>
         <div class="vs">vs</div>
         <div class="side" id="side-opp">
           <div class="label" id="opp-label">Opponent</div>
-          <div class="score" id="opp-score">--</div>
-          <div class="sub">MFL projected: <span id="opp-proj-mfl">--</span></div>
-          <div class="sub">IRFL-scoring projected: <span id="opp-proj-irfl">--</span></div>
-          <div class="sub">Players yet to play: <span id="opp-ytp">--</span></div>
+          <div class="score" id="opp-score">...</div>
+          <div class="sub">MFL projected: <span id="opp-proj-mfl">...</span></div>
+          <div class="sub">IRFL-scoring projected: <span id="opp-proj-irfl">...</span></div>
+          <div class="sub">Players yet to play: <span id="opp-ytp">...</span></div>
         </div>
       </div>
       <div id="proj-disagreements" class="disagreements"></div>
@@ -51,24 +56,75 @@
     </section>
 
     <section class="panel panel-scoreboard" id="panel-scoreboard">
-      <h2>Full Scoreboard — Live</h2>
-      <div class="note">Every game in progress, pro and college, regardless of whether it's on the card. Card games are highlighted.</div>
+      <h2>Live scoreboard</h2>
+      <div class="note">Every game in progress, pro and college. Games on your card are tinted blue.</div>
       <div id="scoreboard-games"></div>
       <div class="panel-age" data-source="espn_scoreboard"></div>
     </section>
 
     <section class="panel panel-news" id="panel-news">
-      <h2>News (roster-filtered)</h2>
-      <div class="note">Free feed — can run minutes to a half hour behind breaking news. Not a first-alert source.</div>
+      <h2>News for your roster</h2>
+      <div class="note">Free feed. It can run minutes to half an hour behind breaking news, so do not use it as a first alert.</div>
       <ul id="news-relevant"></ul>
       <details>
-        <summary>Everything else</summary>
+        <summary>Everything else in the feed</summary>
         <ul id="news-other"></ul>
       </details>
       <div class="panel-age" data-source="espn_news"></div>
     </section>
+
+    <section class="panel panel-dfs" id="panel-dfs">
+      <h2>DFS Entries</h2>
+      <div class="note">You enter lineups on DraftKings by hand. This panel only records them. Saved to <span id="dfs-path" class="path">tracker\dfs_tracker.csv</span> with a backup first.</div>
+      <label class="slate-pick">Slate date <select id="dfs-date"></select></label>
+      <div id="dfs-summary" class="dfs-summary">Loading entries</div>
+      <div class="dfs-scroll">
+        <table id="dfs-table" class="dfs-table">
+          <thead><tr><th>Slate</th><th>Line</th><th>Contest</th><th class="num">Fee</th><th>Status</th><th>Lineup</th><th class="num">Points</th><th class="num">Rank</th><th class="num">P/L</th><th><span class="sr-only">Action</span></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <details id="dfs-form-wrap">
+        <summary>Add or edit an entry</summary>
+        <form id="dfs-form" class="dfs-form" autocomplete="off">
+          <input type="hidden" name="lineup_id">
+          <div class="wide form-group">Entry</div>
+          <label>Date <input name="date" placeholder="2026-11-15" required></label>
+          <label>Slate <input name="slate" placeholder="NFL Early 2026-11-15"></label>
+          <label>Line
+            <select name="line_label">
+              <option value="A">Our A</option><option value="B">Our B</option><option value="C">Our C</option>
+              <option value="F1">Friend 1</option><option value="F2">Friend 2</option><option value="F3">Friend 3</option>
+              <option value="own">Own lineup</option>
+            </select>
+          </label>
+          <label>Contest name or id <input name="contest"></label>
+          <label>Entry fee ($) <input name="entry_fee" inputmode="decimal" placeholder="1.00"></label>
+          <label>Status
+            <select name="status"><option value="not entered">not entered</option><option value="entered">entered</option></select>
+          </label>
+          <label class="wide">Lineup, 9 names, one per line <span class="hint">QB, RB, RB, WR, WR, WR, TE, FLEX, DST</span>
+            <textarea name="lineup_players" rows="9"></textarea>
+          </label>
+          <div class="wide form-group">Results, after the slate</div>
+          <label>Actual points <input name="actual_score" inputmode="decimal"></label>
+          <label>Rank <input name="finish" inputmode="numeric"></label>
+          <label>Cash line <input name="cash_line" inputmode="decimal"></label>
+          <label>Profit or loss ($) <input name="profit_loss" inputmode="decimal"></label>
+          <label class="wide">Notes <input name="notes"></label>
+          <div class="wide dfs-buttons">
+            <button type="submit" class="btn-primary">Save entry</button>
+            <button type="button" id="dfs-fill" class="btn-secondary">Fill names from the chosen line</button>
+            <button type="button" id="dfs-clear" class="btn-quiet">Clear form</button>
+          </div>
+          <div id="dfs-msg" class="dfs-msg"></div>
+        </form>
+      </details>
+    </section>
   </main>
 
   <script src="app.js"></script>
+  <script src="dfs.js"></script>
+  <script src="header.js"></script>
 </body>
 </html>

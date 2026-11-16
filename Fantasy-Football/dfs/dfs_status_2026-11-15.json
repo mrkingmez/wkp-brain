@@ -1,0 +1,27 @@
+{
+  "_about": "Hand-maintained current-status input for dfs_build.py. Refresh at 11:30 AM ET Sunday from inactives and the final injury report. Edit practice and qb_start, rerun dfs_build.py.",
+  "_source": "NFL.com Week 10 2026 injury report (https://www.nfl.com/injuries/league/2026/reg10), fetched 2026-11-13 by WebFetch summary; the page gives one practice status per player, the day of the report is not stated and no game designations were shown for these 14 teams. Beat news via web search 2026-11-13.",
+  "practice": {
+    "Bhayshul Tuten": "DNP", "Garrett Wilson": "Limited", "Tony Pollard": "DNP", "Woody Marks": "DNP", "David Montgomery": "Limited",
+    "Denzel Boston": "DNP", "Chris Rodriguez Jr.": "Limited", "Dalton Kincaid": "Limited", "Harold Fannin Jr.": "Limited",
+    "Carson Wentz": "Limited", "Tyjae Spears": "Limited", "T.J. Hockenson": "DNP", "Jakobi Meyers": "Limited", "Marvin Harrison Jr.": "DNP",
+    "CJ Donaldson": "DNP", "Jaydn Ott": "Limited", "Savion Williams": "Limited", "Jauan Jennings": "DNP", "Jared Wayne": "Limited",
+    "Will Kacmarek": "Limited", "Josh Whyle": "DNP", "Brevin Jordan": "DNP"
+  },
+  "qb_start": {
+    "Josh Allen": [true, "EXPECTED: not on the NFL.com Week 10 injury report (fetched 2026-11-13); no change-of-starter news found; depth chart not verified"],
+    "Tyler Shough": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13); no change-of-starter news found; depth chart not verified"],
+    "Trevor Lawrence": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13); no change-of-starter news found; depth chart not verified"],
+    "Patrick Mahomes": [true, "EXPECTED: listed Full practice on the NFL.com Week 10 report (2026-11-13)"],
+    "Bryce Young": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13); no change-of-starter news found"],
+    "C.J. Stroud": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13); the Stroud concussion stories found were Week 10 of 2025, ignored"],
+    "Jordan Love": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13); no change-of-starter news found"],
+    "Michael Penix Jr.": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13); searches returned only 2025 Penix knee stories, nothing for 2026 Week 10"],
+    "Deshaun Watson": [false, "UNCONFIRMED: out of concussion protocol, did not play Week 9 (Sanders started the 23-22 OT loss to NO); ESPN/Bleacher Report said CLE turns back to Watson, but a 2026-11-09 item says Monken was not naming a starter. Not on the NFL.com injury report 2026-11-13"],
+    "Geno Smith": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13)"],
+    "Kirk Cousins": [false, "UNCONFIRMED: traded from LV to MIN on 2026-11-10 (2027 third-round pick; MPR, NFL.com, AP report, pending physical). Kyler Murray DNP (Grade 2 hamstring, week to week, left off the slate as D), Wentz Limited. No source found naming Sunday's MIN starter"],
+    "Cam Ward": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13)"],
+    "Daniel Jones": [true, "EXPECTED: not on the NFL.com Week 10 injury report (2026-11-13)"],
+    "Kyle McCord": [true, "EXPECTED: MIA QB after Malik Willis went to IR (salary file 2026-11-13); no beat source found"]
+  }
+}

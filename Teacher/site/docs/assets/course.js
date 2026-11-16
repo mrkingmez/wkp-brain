@@ -1,12 +1,12 @@
 // The course map. Edit this when a lesson is added. Order here is the unlock order.
-// A module with no lessons is "not written yet" and cannot be finished, so what comes after it stays locked.
+// Unlocking is OFF (unlock_enabled false in config.json), so tracks can be taken in any order.
+// If it is ever turned back on, a track with no lessons cannot be finished, so nothing requires another track.
 window.TEACHER_COURSE = {
   modules: [
-    { id: "module-1", title: "Module 1: Is it right?", lessons: [
-      { key: "module-1/lesson-1", title: "How to check what AI tells you" } ] },
-    { id: "module-2", title: "Module 2: Privacy", lessons: [] },
-    { id: "module-3", title: "Module 3: Scams and fakes", lessons: [] },
-    { id: "module-4", title: "Module 4: When not to use AI", lessons: [] },
-    { id: "module-5", title: "Module 5: Advanced track", lessons: [], requires: [0, 1, 2, 3] }
+    { id: "start-here", title: "Start Here", lessons: [], requires: [] },
+    { id: "make-things", title: "Make Things", lessons: [], requires: [] },
+    { id: "build-automate", title: "Build and Automate", lessons: [], requires: [] },
+    { id: "stay-safe", title: "Stay Safe", lessons: [
+      { key: "stay-safe/check-what-ai-tells-you", title: "How to check what AI tells you" } ], requires: [] }
   ]
 };

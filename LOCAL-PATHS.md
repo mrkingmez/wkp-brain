@@ -81,6 +81,12 @@ not exist on this machine, confirmed by direct check. Complete Budget System's
 .xlsx is not in the files.zip above or anywhere else found on C:/D:/E:/L: —
 see Kingdom-Planners\CLAUDE.md Products table.)
 
+## Transcription (Fiverr side business, 2026-11-13)
+transcription venture (repo, SOP, scripts) = D:\WKP\Transcription
+transcription jobs (client files, OUTSIDE repo and scratch, never commit) = D:\Transcription Jobs\
+                 (_template = new-job template, _no-voiceprints = empty folder so client audio is never matched to WWD voices)
+transcription tracker = D:\WKP Reports\Transcription Tracker\Transcription Tracker.xlsx (+ .csv mirror)
+
 ## Spark Capture
 Spark Capture (Android app scaffold): D:\WKP\spark-capture\
 

@@ -30,3 +30,20 @@ software-director builds, script-room writes lessons, qa-director checks, Zac ap
 - Module 5, Advanced track: links page to rohitg00/ai-engineering-from-scratch (MIT, verified from the repo LICENSE and the GitHub API). Local copy in `vendor\` (gitignored, never run, no pip or npx). Opens after Modules 1 to 4.
 - Practice pattern in `PRACTICE-PATTERN.md`. Lesson 1 practice written (3 tasks).
 - Unlocking: `unlock_enabled` in `site\config.json`, default true. Progress viewer still OFF.
+
+
+## Her tools (Zac, 2026-11-13)
+She has FREE Claude (used once, a prompt Zac wrote to clean out her email) and FREE ChatGPT. Nothing paid. Lessons must work on the free tiers of both, with no paid features, and must not use the shared WWD Firefly/Veo credits. Free-tier limits and image features are unverified until a fact-research pass checks the vendors own pages.
+
+## Restructured 2026-11-13 (Zac: first build was only safety lessons, he found that insulting)
+- Home page is now a pick-your-path page with four tracks: 1 Start Here (what AI is, what Claude is, prompting basics to advanced), 2 Make Things (pictures, video, postcards, printables, selling), 3 Build and Automate (advanced end = old Module 5 doorway, `build-automate/advanced.md`), 4 Stay Safe (short).
+- Only one lesson exists: "How to check what AI tells you", now `stay-safe/check-what-ai-tells-you.md`, quiz and practice intact. Other Stay Safe lessons are placeholders. Tracks 1 to 3 list working titles as "Coming soon". Writing room writes the lessons after the research report lands.
+- `unlock_enabled` is false, nothing locked. Unlock code kept. Progress viewer still OFF.
+- Old module-N URLs redirect (301) via `OLD_URLS` in `site\serve.py`. Quiz progress key changed to `stay-safe/check-what-ai-tells-you`.
+
+## Update 2026-11-14 (Zac)
+She WILL have a paid version of Claude (plan not yet named by Zac: ask which). Add a "Claude power tools" section covering Projects, Skills and connectors (MCP), written only from primary-source facts about the paid plan, every paid-only feature marked as paid. Earlier lessons stay free-tier safe. The four GitHub repos Zac sent were meant as a scope map ("what people put in their teaching repos") so the course is fully inclusive, not as content to copy. Zac also wants vetted YouTube videos that give correct information, linked per lesson (link only, checked against official docs, dated).
+
+## Answers 2026-11-14 (Zac)
+- Her plan: Claude Pro, same as Zac. Her computer: Mac. Real accounts: Zac believes yes, the course may teach connecting her real accounts (his hedged word, "I believe"; confirm with her before she connects anything). Safety design stays: read-only first, one account at a time, approve every action, she decides, never Zac or an agent connecting for her.
+- Effect: lessons can name Pro, use Mac steps (Command, TextEdit Make Plain Text, Finder), Mac-only Skill recording in Cowork is now in scope as an optional lesson. Research, Projects, Skills, connectors, memory all assumed available on Pro, still "check your own screen" for menu names and the pack conflicts.

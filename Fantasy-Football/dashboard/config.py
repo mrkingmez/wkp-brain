@@ -71,7 +71,7 @@ MFL_PLAYERS_CACHE = FF_DATA_SKILL_DIR / "players-cache.json"
 SLEEPER_PLAYERS_CACHE = FF_DATA_SKILL_DIR / "sleeper-players-cache.json"
 NFL_TEAMS_CACHE = DASHBOARD_DIR / "espn-nfl-teams-cache.json"
 
-PORT = 8787
+PORT = int(os.environ.get("DASHBOARD_PORT", "8787"))
 
 # Verified 2026-09-12 against MFL's own api_info page: MFL does not
 # publish a fixed request-per-minute number ("not fixed and will vary").
@@ -97,3 +97,14 @@ BACKOFF_MULTIPLIER = 2
 BACKOFF_CAP_SECONDS = 20 * 60
 
 STALE_WARNING_MINUTES = 15  # a panel older than this shows the stale banner
+
+# --- DFS entries panel (added 2026-11-13) -----------------------------------
+# Local-only. The dashboard records and shows Zac's DraftKings entries. It never
+# enters a lineup or spends money. DFS_TRACKER_PATH env var points the server at a
+# copy of the data for testing.
+DFS_TRACKER_PATH = Path(os.environ.get("DFS_TRACKER_PATH", str(FF_ROOT / "tracker" / "dfs_tracker.csv")))
+DFS_BACKUP_DIR = Path(os.environ.get("DFS_BACKUP_DIR", str(FF_ROOT / "tracker" / "backups")))
+DFS_BANKROLL = float(os.environ.get("DFS_BANKROLL", "3.00"))  # the $3 already in DraftKings (Zac 2026-11-13)
+DFS_DATA_DIR = Path(r"D:\WKP\data\dfs-friend")  # gitignored, local only
+DFS_OUR_LINES_CSV = DFS_DATA_DIR / "our_three_lineups_2026-11-15.csv"
+DFS_FRIEND_LINES_TXT = DFS_DATA_DIR / "friend_lineups_2026-11-13.txt"

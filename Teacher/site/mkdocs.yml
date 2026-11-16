@@ -7,8 +7,18 @@ theme:
   name: material
   font: false
   palette:
-    scheme: default
-    primary: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - navigation.sections
     - content.code.copy
@@ -25,10 +35,14 @@ markdown_extensions:
       custom_checkbox: true
 nav:
   - Home: index.md
-  - "1. Is it right?":
-      - module-1/index.md
-      - "How to check what AI tells you": module-1/lesson-1.md
-  - "2. Privacy": module-2/index.md
-  - "3. Scams and fakes": module-3/index.md
-  - "4. When not to use AI": module-4/index.md
-  - "5. Advanced track": module-5/index.md
+  - "1. Start Here": start-here/index.md
+  - "2. Make Things": make-things/index.md
+  - "3. Build and Automate":
+      - build-automate/index.md
+      - "Advanced doorway": build-automate/advanced.md
+  - "4. Stay Safe":
+      - stay-safe/index.md
+      - "How to check what AI tells you": stay-safe/check-what-ai-tells-you.md
+      - "Privacy (not written yet)": stay-safe/privacy.md
+      - "Scams and fakes (not written yet)": stay-safe/scams.md
+      - "When not to use AI (not written yet)": stay-safe/when-not-to-use.md

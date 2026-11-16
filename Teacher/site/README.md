@@ -31,7 +31,7 @@ Her consent has not been asked yet. In `config.json`, `progress_viewer_enabled` 
 - `port`: 8800
 - `bind_address`: `auto` picks this PC's private home-network address (10.x, 172.16 to 31.x, 192.168.x). The server refuses public addresses and refuses all-addresses. Tailscale addresses (100.x) are not used.
 - `progress_viewer_enabled`: false
-- `unlock_enabled`: true (lessons open in order). Lesson N+1 and the next module open after the quiz is passed (2 of 3) or the practice button is pressed. Set to `false` and restart to open everything. It is a soft lock in the browser, for a family site, not security. If the check for finished lessons cannot reach the server, nothing is locked.
+- `unlock_enabled`: false (Zac 2026-11-13: nothing is locked, she picks any track). The unlock code is still in place. Set to `true` and restart to bring back the soft lock. It is a soft lock in the browser, for a family site, not security.
 
 ## First-time setup (already done on this PC)
 A private Python environment is in `.venv` (MkDocs Material 9.8.1, installed with pip, free, MIT). To rebuild it: `python -m venv .venv`, then `.venv\Scripts\python.exe -m pip install mkdocs-material`.
@@ -40,8 +40,10 @@ A private Python environment is in `.venv` (MkDocs Material 9.8.1, installed wit
 Lessons are Markdown in `docs\`. Quiz questions are in `docs\assets\quizzes.js`. Start again to rebuild.
 
 ## Known limits
-- Only module 1, lesson 1 is written, with its practice. Modules 2 to 4 are placeholders. Because an unwritten module cannot be finished, Modules 3, 4 and 5 stay locked until the ones before them exist. Set `unlock_enabled` to `false` to look at them.
-- Module 5 (Advanced track) is a links page to the free MIT-licensed course "AI Engineering from Scratch". A copy is in `D:\WKP\Teacher\vendor\` (gitignored, never run, nothing installed). The site links to GitHub, it does not serve the copy.
+- Structure (2026-11-13): four tracks, Start Here, Make Things, Build and Automate, Stay Safe. Only one lesson is written, "How to check what AI tells you" (Stay Safe, with practice and quiz). The three other Stay Safe lessons are placeholders. Start Here, Make Things and Build and Automate have index pages listing working titles as "Coming soon".
+- The advanced doorway (`build-automate/advanced.md`) is a links page to the free MIT-licensed course "AI Engineering from Scratch". A copy is in `D:\WKP\Teacherendor\` (gitignored, never run, nothing installed). The site links to GitHub, it does not serve the copy.
+- Old first-build URLs (`/module-1/`, `/module-1/lesson-1/`, `/module-2/` to `/module-5/`) redirect (301) to the new pages. The redirect map is `OLD_URLS` in `serve.py`.
+- Progress for the lesson is now saved under the key `stay-safe/check-what-ai-tells-you` (it was `module-1/lesson-1`). Rows saved earlier under the old key stay in the file but are not matched to the new page.
 - `/unlock-state` gives the learner's browser only the list of finished lessons. It is not the progress viewer, which stays off.
 - Quiz results are stored by lesson only, with no student name (one learner).
 - No password. Anyone on the home network who knows the address can open it.

@@ -2,7 +2,7 @@
 // State comes from GET /unlock-state (quiz passed or practice marked done). If that call fails, nothing is locked.
 (function () {
   function keyOf(path) {
-    var m = /(module-\d+(?:\/lesson-\d+)?)\/?$/.exec(String(path).replace(/index\.html$/, ""));
+    var m = /((?:start-here|make-things|build-automate|stay-safe)(?:\/[a-z0-9-]+)?)\/?$/.exec(String(path).replace(/index\.html$/, ""));
     return m ? m[1] : null;
   }
 

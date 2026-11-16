@@ -58,6 +58,12 @@ Rails: mode `dry-run` (default, deletes nothing) or `live`. Hard cap per run `ma
 
 Logging: section 13 of the day's report, plus an append-only `logs\system-check\YYYY-MM-DD-fixes.md` so a rerun never erases what a live run did. Counts and bytes are real (what the OS handled); dry-run numbers are labelled "would be freed".
 
+Protect list (2026-11-13, scratch action only): never deletes anything under `scratch\ian\`, any folder or file whose name contains photo, restore, client, ian, dk or salaries, or any folder containing a `.keep` or `.protect` file (whole subtree). Configurable in machines.json `safe_fixes.protect` (paths, name_contains, markers, match_filenames), unioned with the built-in defaults so config can add but never remove. Reason: an earlier live test deleted 2.49 GB (1,032 files) from scratch with no itemized log.
+
+Item log: every run, dry or live, writes `logs\system-checkixes-items-YYYYMMDD-HHMMSS-dry|live.tsv` (action, status, path, size, age_days, note; includes PROTECTED rows), created exclusively so it is never overwritten.
+
+Live gate (hard rule): a live run refuses unless a dry-run item log from the same day exists for the same action set and the planned deletions equal it exactly. During the live run, any file not in that log is skipped. Run dry and live with the same `--fixes-only`.
+
 Flags: `--fixes-dry-run` (force list-only), `--fixes-live` (force live, still needs `enabled`), `--fixes-only scratch,temp,pycache,logrotate`.
 
 To go live nightly: in machines.json set `"mode": "live"`. To stop: the kill switch file, or `"enabled": false`.

@@ -1,5 +1,5 @@
 window.TEACHER_QUIZZES = {
-  "module-1/lesson-1": {
+  "stay-safe/check-what-ai-tells-you": {
     pass: 2,
     questions: [
       {

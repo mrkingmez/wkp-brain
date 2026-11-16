@@ -5,6 +5,8 @@ external API calls, on purpose (see SUNDAY-DASHBOARD-BUILD.md Section 1:
 "the browser must never trigger a data pull").
 """
 import http.server
+import json
+import os
 import socketserver
 import subprocess
 import sys
@@ -12,6 +14,7 @@ import time
 from pathlib import Path
 
 import config
+import dfs_entries
 
 STATIC_DIR = config.DASHBOARD_DIR / "static"
 
@@ -59,11 +62,63 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(STATIC_DIR), **kwargs)
 
+    def _host_ok(self):
+        # exact Host match (name and port), blocks DNS-rebinding style requests
+        allowed = {f"localhost:{config.PORT}", f"127.0.0.1:{config.PORT}"}
+        return (self.headers.get("Host") or "").lower() in allowed
+
+    def _origin_ok(self):
+        origin = self.headers.get("Origin")
+        if not origin:
+            return True
+        return origin.lower() in {f"http://localhost:{config.PORT}", f"http://127.0.0.1:{config.PORT}"}
+
     def do_GET(self):
+        if not self._host_ok():
+            self._json(403, {"error": "not allowed"})
+            return
         if self.path == "/state.json":
             self._serve_state()
             return
+        if self.path.split("?")[0] == "/api/dfs":
+            from urllib.parse import urlparse, parse_qs
+            q = parse_qs(urlparse(self.path).query)
+            self._json(200, dfs_entries.entries((q.get("date") or [None])[0]))
+            return
+        if self.path == "/api/dfs/lines":
+            self._json(200, dfs_entries.lines())
+            return
         super().do_GET()
+
+    def _json(self, code, obj):
+        body = json.dumps(obj).encode("utf-8")
+        self.send_response(code)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_POST(self):
+        # Only the DFS entry form writes anything, and only to the local tracker csv (backup first).
+        ctype = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+        if self.path != "/api/dfs" or not self._host_ok() or not self._origin_ok():
+            self._json(403, {"error": "not allowed"})
+            return
+        if ctype != "application/json":
+            self._json(415, {"error": "Content-Type must be application/json"})
+            return
+        try:
+            n = int(self.headers.get("Content-Length") or 0)
+            data = json.loads(self.rfile.read(min(n, 20000)).decode("utf-8"))
+        except (ValueError, UnicodeDecodeError):
+            self._json(400, {"error": "bad request body"})
+            return
+        res, err = dfs_entries.save_entry(data)
+        if err:
+            self._json(400, {"error": err})
+        else:
+            self._json(200, res)
 
     def _serve_state(self):
         if not config.STATE_PATH.exists():
@@ -87,7 +142,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 def main():
     if not STATIC_DIR.exists():
         raise SystemExit(f"{STATIC_DIR} does not exist -- static assets missing.")
-    _ensure_poller_running()
+    if os.environ.get("DASHBOARD_NO_POLLER") != "1":  # set to 1 to serve the page without starting the poller (tests, DFS-only use)
+        _ensure_poller_running()
     with socketserver.TCPServer(("127.0.0.1", config.PORT), Handler) as httpd:
         print(f"Sunday Dashboard serving at http://localhost:{config.PORT} (Ctrl+C to stop)", flush=True)
         try:

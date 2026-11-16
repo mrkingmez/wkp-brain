@@ -76,6 +76,17 @@ def read_progress():
         return json.load(f)
 
 
+# Old URLs from the first build, sent to their new homes.
+OLD_URLS = {
+    "/module-1": "/stay-safe/",
+    "/module-1/lesson-1": "/stay-safe/check-what-ai-tells-you/",
+    "/module-2": "/stay-safe/privacy/",
+    "/module-3": "/stay-safe/scams/",
+    "/module-4": "/stay-safe/when-not-to-use/",
+    "/module-5": "/build-automate/advanced/",
+}
+
+
 def make_handler(cfg):
     class Handler(SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
@@ -91,6 +102,15 @@ def make_handler(cfg):
 
         def do_GET(self):
             path = self.path.split("?")[0]
+            old = path.rstrip("/")
+            if old.endswith("/index.html"):
+                old = old[: -len("/index.html")]
+            if old in OLD_URLS:
+                self.send_response(301)
+                self.send_header("Location", OLD_URLS[old])
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return
             if path == "/progress-view":
                 if not cfg["progress_viewer_enabled"]:
                     return self._send(404, "Not found", "text/plain")

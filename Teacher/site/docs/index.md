@@ -1,23 +1,32 @@
 # Teacher
 
-A short, private course on using AI the right way. It starts from one question: what is AI good at, and what is it bad at? You find your own uses along the way.
+Pick the path you want. You can start with any of them, in any order. Nothing is locked.
 
-You do not need any background. You do need an AI chat open in another tab, because the exercises are hands-on.
+<div class="tc-cards">
+<a class="tc-card" href="start-here/">
+<h2>1. Start Here</h2>
+<p>What AI is, what Claude is, and how to ask well, from basics to advanced.</p>
+<p class="tc-status">Lessons coming soon</p>
+</a>
+<a class="tc-card" href="make-things/">
+<h2>2. Make Things</h2>
+<p>Pictures, video, postcards and printables, and how to sell what you make.</p>
+<p class="tc-status">Lessons coming soon</p>
+</a>
+<a class="tc-card" href="build-automate/">
+<h2>3. Build and Automate</h2>
+<p>Make things work for you, automate tasks, build small tools. Its advanced end is a free outside course.</p>
+<p class="tc-status">Lessons coming soon. The advanced doorway is open.</p>
+</a>
+<a class="tc-card" href="stay-safe/">
+<h2>4. Stay Safe</h2>
+<p>Checking what AI tells you, privacy, scams, and when not to use it. Short and practical.</p>
+<p class="tc-status">1 lesson ready, with practice and quiz</p>
+</a>
+</div>
 
-## The course
+## What exists right now
 
-| Module | What it covers | Status |
-|---|---|---|
-| [1. Is it right?](module-1/index.md) | Checking what AI tells you | Lesson 1 ready, with practice |
-| [2. Privacy](module-2/index.md) | What not to paste, and why | Not written yet |
-| [3. Scams and fakes](module-3/index.md) | Fake voices, fake messages, fake photos | Not written yet |
-| [4. When not to use AI](module-4/index.md) | Where a person has to decide | Not written yet |
-| [5. Advanced track](module-5/index.md) | Optional: a free builder course made by someone else | Opens after Modules 1 to 4 |
-
-## Start here
-
-[Lesson 1: How to check what AI tells you](module-1/lesson-1.md){ .md-button .md-button--primary }
-
-Each lesson has practice you do in your own AI chat. The next lesson opens when you pass the quiz (2 of 3) or press the practice button.
+Only one lesson is written so far: [How to check what AI tells you](stay-safe/check-what-ai-tells-you.md), in the Stay Safe track. The other lessons are planned and listed on each track page as "Coming soon". They will appear here when they are written.
 
 This site runs on one computer in the house. Nothing on it goes to the internet.

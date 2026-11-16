@@ -485,3 +485,51 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Recommendation:** A. All reversible, no spend. The backup is the one that matters, since lost deliverables already happened once.
 
 **Status:** OPEN
+
+---
+
+## [ANIM-2026-11-05-02] RESOLVED 2026-11-13 | Zac's answers on the tutorial picks
+
+**Resolution (Zac, 2026-11-13):**
+- YES list: S2 (Grant Abbitt, Master Blender Sculpting), L1 (Unreal Sensei, Mesh Terrain landscape), H1 (Ryan King Art, Stylized Low Poly Wooden Cabin), B1 (Blender Guru, private jet, hull method), U1 (Unreal Sensei, UE5 Starter Course 2026, chapters only), U2 (William Faucher, Lighting in Unreal Engine 5 for Beginners).
+- NOT on the yes list, so not processed: S1 (Ryan King Art sculpting) and R1 (Ryan King Art retopology). Zac can add them. Retopology and baking have no approved source until then.
+- Boat gap: option B. A separate agent searched outside the five channels, report `research\animation\2026-11-13-boat-and-scifi-ship-picks.md`. Boat pick and sci-fi ship picks still need Zac's approval before any caption pull.
+- **Boat and sci-fi ship picks answered 2026-11-13 (Zac):** REJECTED BH3, SF4, SF5. APPROVED BH1, BH2, SF1, SF2, SF3. Captions pulled for the five approved (H1 retried, still HTTP 429, not worked around). Tags and delta sheets for the five: `researchnimation6-11-13-version-tags-and-delta-sheets.md` section 5.
+- Landscape: teach BOTH routes. Experimental Mesh Terrain (L1) and classic Landscape (U1 chapters at 1:56:50 and 2:08:16). L2 not approved.
+- Version tagging: "Be sure to tag the version trained on and then find a way to close the gap between the versions." Method written at `ANIMATION\VERSION-GAP-METHOD.md`.
+- Caption files for the six approved videos pulled (5 of 6, H1 blocked by HTTP 429 rate limit), saved under `research\animation\transcripts\<id>\`, gitignored.
+- Version tags and delta sheets: `research\animation\2026-11-13-version-tags-and-delta-sheets.md`. Docx: `D:\WKP Reports\Animation Tutorial Picks\2026-11-13 - Animation Training Version Tags.docx`.
+
+**Follow-ups still open:** (1) retry H1 captions later. (2) Blender MCP link was down, so Blender UI paths and shortcuts need one live pass in a scratch scene. (3) Enabling Mesh Terrain plugins in Unreal needs Zac's yes at the time. (4) Licenses to read and log: Poliigon files (B1), Sensei downloads (L1, U1), blueprints (B1). (5) DONE 2026-11-13, boat and sci-fi picks answered (see the bullet above). (6) New: licenses to read and log for SF1 texture sources, SF2 and SF3 Gumroad and kitbash downloads, Ucupaint (already on disk, GPL-3.0-or-later, not in the asset log).
+
+**Status:** RESOLVED (picks); follow-ups above open
+
+---
+
+## [ANIM-2026-11-13-01] 2026-11-13 | Daily rollup | Animation research blocked items and no QA on it
+
+**Context:** Animation research jobs ran 2026-11-13. (1) H1 (Ryan King Art cabin) captions hit HTTP 429 twice, not worked around. (2) Blender MCP link was down, so every Blender menu path and shortcut is UI-UNVERIFIED. (3) No qa-director verdict on the version tags and delta sheets. (4) Licenses still unread: Poliigon, Sensei downloads, SF1 to SF3 Gumroad and kitbash files, Ucupaint not in the asset log.
+**Options:** A. Let animation-director retry H1 later, run the live Blender pass when the MCP link is up, and send the research to qa-director. B. Skip QA, research only. C. Hold all of it.
+**Recommendation:** A. No spend, all reversible. License logging is the one that must happen before any asset is used.
+
+**Status:** OPEN
+
+---
+
+## [INFRA-2026-11-13-01] 2026-11-13 | Daily rollup | Transcription system and Teacher site: unverified, no QA
+
+**Context:** The Transcription (Fiverr) system passed a fake-job test only, no real client audio and no qa-director verdict. Fiverr AI-delivery rules unchecked (Zac's step). The Teacher site was restructured and restyled with no judgment pass or QA on the new index pages, and has not been tried from her phone. Also INFRA-2026-11-12-01 still open: system check is YELLOW again (176 deliverables uncopied, 63 uncommitted changes, WKP-daily-brief task still enabled).
+**Options:** A. Run qa-director over the Transcription system and the Teacher index pages, and Zac tests the Teacher link from her phone. B. Wait until real jobs exist. C. Leave.
+**Recommendation:** A, plus approve INFRA-2026-11-12-01 option A. The backup of D:\WKP Reports is the one that matters.
+
+**Status:** OPEN
+
+## TEACHER-2026-11-14-QA-01 (qa-director)
+**Decision needed:** Which paid Claude plan will Zac's wife have, which computer (Windows or Mac), and may the course teach connecting her real accounts or made-up ones only?
+**Context:** QA of the power-tools drafts. Skills Task 3 (custom upload) and the safe-tools lesson depend on it. Anthropic pages disagree on whether free plans can upload custom Skills. Drafts currently assume paid and keep all practice on made-up material.
+**Options:** A. Name the plan and OS, keep practice made-up only. B. Teach real connections with Zac's explicit list of accounts. C. Keep everything free-safe until she is on paid.
+**Recommendation:** A.
+
+**Status:** OPEN
+
+- TEACHER-2026-11-14-QA-01 ANSWERED by Zac 2026-11-14: plan Pro, Mac, real accounts allowed ("I believe"), read-only first with approvals.

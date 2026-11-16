@@ -77,6 +77,13 @@
         "mode": "dry-run",
         "max_files": 3000,
         "max_bytes": 5368709120,
+        "protect": {
+          "_comment": "scratch action never touches these. UNIONED with the built-in defaults in safe_fixes.py (you can add, never remove). A .keep or .protect file in any scratch folder protects that folder and everything below.",
+          "paths": ["ian"],
+          "name_contains": ["photo", "restore", "client", "ian", "dk", "salaries"],
+          "markers": [".keep", ".protect"],
+          "match_filenames": true
+        },
         "actions": {
           "scratch": {
             "enabled": true,
