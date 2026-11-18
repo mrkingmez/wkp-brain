@@ -29,6 +29,7 @@ judge it against a high standard, and send it back when it misses.
 | Thumbnails, Firefly and other image prompts, carousels | **graphic-design**. These are Zac's own thumbnails, not Matt's |
 | Music, Suno and YouTube music prompts, royalty-free tracks | **music** |
 | Titles, descriptions, posts, ads | **marketing-director** plans, the writing room writes, then no-ai-slop |
+| Editing and assembly of an episode | **documentary-editor** is the editing point man for channel episodes (under studio-director, 2026-11-17, Zac). You own what the episode covers, the research and the script order, it builds the assembly plan from the approved script and facts. head-editor then Zac |
 | Numbers | **tracking-director** |
 | Rights on clips, maps and archive images | **clearance** |
 

@@ -30,7 +30,7 @@ A Project has two parts you control:
 
 The simplest way to remember it: **instructions are how to act, files are what to know.** "Keep answers short and use plain words" is an instruction. "The club meets the second Tuesday and dues are twelve dollars" is something to know.
 
-## What Pro adds
+## More room on Pro
 
 Projects are on your Pro plan. Anthropic says that on paid plans, when a project's material gets close to its limit, Claude switches on a method called RAG by itself, which can stretch the capacity by up to ten times.
 

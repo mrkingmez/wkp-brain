@@ -123,7 +123,14 @@ Make me a one-page Word document called "Garden Club Schedule" with a simple tab
 
 **Do this:** first, in a new chat, run the reminder request from Task 3 with no Skill and keep the answer for later. Then paste the prompt below into a new chat and read what comes back with the checklist in mind. If anything is off, tell Claude what to change.
 
-If Claude does not offer a download, stop here and come back to this task later with Zac. Do not build the folder yourself.
+If Claude offers no download, stop and ask Zac. Do not try a workaround, and do not build the folder yourself. Claude cannot always hand over a zip.
+
+**Finding the download on your Mac:**
+
+1. Click the download link Claude gives you.
+2. Open Finder from the Dock (the blue smiling face), or open any Finder window.
+3. Click **Downloads** in the Finder sidebar on the left. The newest file is usually at the top.
+4. Look for a file ending in `.zip`. If you only see a folder named friendly-reminder-notes, your Mac unpacked it. Right-click the folder and choose **Compress**. That makes a .zip next to it.
 
 ```text
 Using file creation, make a simple Skill called friendly-reminder-notes and give it to me as a downloadable zip file. The zip must contain one folder named friendly-reminder-notes, and that folder must contain only a file named SKILL.md. Put a name and description at the top of SKILL.md. Rules: warm greeting with the person's name, one sentence for the reminder with date and place, one friendly closing line, under 60 words not counting the final line, never invent a date, time or place, and end with this exact line on its own: Reminder card ready. No scripts, no extra files, no links. Do not add anything I did not ask for.

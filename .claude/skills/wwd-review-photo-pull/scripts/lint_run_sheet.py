@@ -32,11 +32,11 @@ for s in stops:
     num, t = m.group(1), secs(m.group(2)); times.append((num, t))
     for n in re.findall(r"PNG (\d+)", head):
         pngs.setdefault(n, []).append(num)
-    pic = re.search(r"Picture `USE\\(\d+)\.png` (?:from \d{1,2}:\d{2} )?to (\d{1,2}:\d{2})", s)
+    pic = re.search(r"Picture `USE\\(\d+)(?: [^`]*)?\.png` (?:from \d{1,2}:\d{2} )?to (\d{1,2}:\d{2})", s)
     if pic:
         end = secs(pic.group(2))
         start = t
-        frm = re.search(r"Picture `USE\\\d+\.png` from (\d{1,2}:\d{2})", s)
+        frm = re.search(r"Picture `USE\\\d+(?: [^`]*)?\.png` from (\d{1,2}:\d{2})", s)
         if frm: start = secs(frm.group(1))
         if end - start > 7:
             fails.append(f"stop {num}: picture on screen {end - start}s, limit is 7s")

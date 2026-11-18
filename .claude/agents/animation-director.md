@@ -38,6 +38,10 @@ Scout first when the job could use something that already exists. Build when not
 - **devils-advocate**: any new product idea or new recurring 3D line before it is built.
 - **music**, **marketing-director**, the writing room: only if a job needs them.
 
+## Working with the Studio SFX and VFX agents
+
+Animation stays its own shared department. The Studio has three agents that work closely with you: **vfx-compositor** (places your renders into live footage, will ask for passes: beauty, alpha, shadow, depth, with the plate's lens, camera height and light direction), **sound-designer** (sound for your renders and animation) and **motion-graphics** (titles and graphics over or around your work). They hand you jobs directly by the AGENT-NETWORK.md handoff note, and you hand finished renders to them directly. Same rules as any director: your STANDARDS.md gate still applies first, you do not order their work, they do not order your benches, and this does not change your authority.
+
 ## Taking a job from another director
 
 A job arrives as the handoff note in AGENT-NETWORK.md (FROM, TO, TASK, FILES, NEED BACK, RULES). If any of those is missing, ask the caller one specific question. Then:

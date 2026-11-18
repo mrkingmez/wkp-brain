@@ -343,3 +343,58 @@ Ran wwd-review-pipeline. Package (.md/.docx), AUDIO mp3 (35:25, matches source),
 ### 2026-11-12 - EP 120 chain closed (added by Jarvis relay of Zac's confirmation)
 **Status:** DONE
 Opus Clip shorts for EP 120 are scheduled on Zac's go (59 posts, log `WWD\opusclip\schedule-log\P3111203h4MR.json`). Matt received the EP 120 transcript. Nothing from the EP 120 chain remains open in this log except Zac's spot-check of one scheduled post in Opus before Thu 6 PM and the two-chapter-file pick (older "FrostCast Episode 120 - Chapters.txt" vs EP120-chapters.txt). Earlier entries in this log that say "Messenger send left for main session" or "dry run only, nothing scheduled" are superseded by this entry.
+
+### 2026-11-17 - Vision Quest EP 8 (finale "Forever") picture and clip pull
+**Status:** DONE (pictures and placements), run sheet not requested
+**Trigger:** Zac: picture and video pull for EP 8 from the first transcript, placement list, no posting or spending
+**Classification:** Review (transcript supplied, not transcribed)
+**Elapsed:** about 25 min wall (wwd-pictures the long pole)
+**Actions taken:** wwd-pictures: 29 numbered 1920x1080 RGBA PNGs in USE, 6 held in USE\_unverified, tags and placements written. wwd-clip-scout: checked the two premiere-era trailers on disk by frames, no verified match, recommends no clips.
+**Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\Vision Quest\Vision Quest ep 8\USE\ (29 PNGs, pictures-tags.md, timeline-placements.md); D:\WKP\WWD\reports\Vision-Quest-8-Clip-Scout.md; URL list D:\WKP\scratch\vq8_ep8_urls.txt
+**Flags for Zac:** IMDb blocked, no per-actor galleries, 11 pictures are CONTEXT not caption-verified (see tags; wwd-pictures check line received: 29 distinct, no twins by dHash and correlation, 2 ep 7 repeats swapped out); Lisa, Vision-as-waiter, Edith lines have no picture; optional pre-finale teaser download for a clip; no devils-advocate or rights pass run (no clips, run sheet not built).
+
+### 2026-11-17 - Vision Quest EP 8 (finale) sound cue plan (wwd-sound)
+**Status:** DONE (plan only, audio not heard)
+**Trigger:** wwd-director handoff, sound cues for the EP 8 Edit Run Sheet
+**Actions taken:** read STANDARDS.md and transcript; 5 gag cues, 2 deliberate no-cue calls on heavy or dark lines, 8 transition-sound candidates (paths verified with ls); ffmpeg ebur128 on the opener and end card MP4s.
+**Measured:** opener -16.5 LUFS, LRA 9.6, true peak -0.2 dBFS (11.5 s); end card -17.7 LUFS, LRA 9.1, true peak -2.6 dBFS (12.0 s).
+**Deliverables:** none on disk, table returned to wwd-director.
+**Flags for Zac:** opener peaks -0.2 dBFS, check the export true peak; sound picks are by file name, not heard.
+
+### 2026-11-17 - [wwd-vfx] Vision Quest EP 8 (finale) kit check for the Edit Run Sheet
+**Status:** DONE (check only, no new kit built, no credits)
+**Trigger:** wwd-director handoff: end card check, applicable kit pieces, Modern transitions list for S01E08 "Forever"
+**Actions taken:** ffprobe on 19 kit files (Cards, Vision Quest, Stickers, Transitions), all exist; pulled and looked at End Card - Vision Quest Finale (MP4) at 0.5 s, 6 s, 11.8 s and Next Up - Vision Quest 8 Finale (MP4) at 0.3 s, 3 s, 5.8 s; alpha composites of Spoiler Alert, AI Tag - EDITH, Recommend Watch on grey. Read the full transcript and the VQ 1-2, 3-4, 5-6, 7 run sheets. Result: end card = End Card - Vision Quest Finale (MP4) 12.0 s; Next Up - Vision Quest 8 Finale (MP4) is the EP 7 end card (wrong here); Spoiler Alert at 02:28 and 18:45; Recommend Watch at about 23:32 to 23:53; no Wrong Name Counter; AI tags optional (Edith at 17:05).
+**Deliverables:** none on disk beyond frames in D:\WKP\scratch\vq8kit\; table returned to wwd-director
+**Flags for Zac:** opener (11.5 s) in his cut or not is unknown, same as EP 7; whether the post-goodbye tail exists is unknown; audio not heard; transcript has machine name errors (Terry Metallic, Jakarta, Tron).
+
+### 2026-11-17 - [wwd-pictures] Vision Quest EP 8 gap fill (30 and 31) and dup re-check
+**Status:** DONE, partial gap coverage (2 of 8 priority lines filled)
+**Trigger:** wwd-director handoff: fill no-picture lines from this title, promote verifiable _unverified items, rerun dup check incl. EP 7 USE
+**Actions taken:** fetched press pages (telltaletv, gizmodo, bamsmackpow, butwhytho, fangirlish, readysteadycut, hellomagazine, serienjunkies, scifi-universe, comicbookmovie) for image URLs with captions or alt text; downloaded and viewed two Edith candidates; resized 30 with resize_broll.py; promoted U1 to 31 on But Why Tho alt text; dup_check3.py over EP 8 USE plus EP 7 USE; looked at contact sheets of both folders and a side-by-side of #5 vs EP 7 "in shadow client".
+**Deliverables:** USE\30 edith hugging vision.png, USE\31 virgil horton at the dinner table.png; pictures-tags.md and timeline-placements.md updated (31 placements, fit table rows added, gaps list updated).
+**Flags:** #5 and EP 7 "in shadow client.png" are two frames of the same Client-in-the-park scene (hash did not flag, eye did), director's call. Edith picture is an embrace, not the Paladin talk-down. Lisa, waiter, Ultron dispatched, slit, drone set, unicorn plane, Jocasta memory stick: no captioned source found, left as spoken only. IMDb not retried.
+
+### 2026-11-17 - [wwd-run-sheet] Vision Quest EP 8 (finale "Forever") Edit Run Sheet v1
+**Status:** DONE (lint PASS, audio not heard, Premiere not opened)
+**Trigger:** wwd-director handoff: build the EP 8 Edit Run Sheet from the edited-cut transcript (27:57, 164 blocks), 31 USE pictures, kit and sound reports
+**Actions taken:** read STANDARDS, WWD CLAUDE, EP 7 and EP 5-6 sheets, tags and placements, premiere-transitions; re-estimated every picture start from word position (search words grepped once each); built 42 stops (31 picture, 4 CAM, 3 sticker, 2 sound only, opener, end card); 15 of 31 picture stops designed, Cross Dissolve 2, no repeated neighbors; moved picture 7 earlier to clear the KingZ cam; no CAM overlaps a picture hold; lint regex widened to accept real USE file names like `USE\01 poster.png` (lint_run_sheet.py); docx made with md_to_docx.py.
+**Deliverables:** D:\WKP\WWD\reports\Vision-Quest-8-Edit-Run-Sheet.md; D:\WKP Reports\Asset Placement Run Sheets\2026-11-17 - Vision Quest EP 8 Edit Run Sheet.docx
+**Flags for Zac:** opener in cut or not; cams not synced; tail after 27:57 unknown; end card FrostCast line to confirm; picture 5 near-twin of EP 7; spoiler and sticker .mov playback untested; sound picks not auditioned.
+
+### 2026-11-17 - [wwd-rights] Vision Quest EP 8 rights note
+**Status:** DONE (risk flag, not legal advice)
+**Trigger:** wwd-director handoff: fair use and clearance check before the upload package
+**Actions taken:** read STANDARDS, run sheet (42 stops), pictures-tags (31 rows), kit and Sounds folders, media-map, p-drive index; searched P:\Sounds for license files (found only 3 in unused folders); fetched the Commons page for Gage Skidmore's photo (CC BY-SA 2.0 confirmed).
+**Deliverables:** D:\WKP\WWD\reports\Vision-Quest-8-Rights-Note.md
+**Flags:** unrecorded source pages on #14, 20, 21, 23, 24, 27 (and #1); #28 Disney+ watermark; Audioblocks-style mp3s have no license file, plan not verified; Firefly opener needs AI disclosure decision; CC BY-SA credit required in description; share-alike reach is an attorney question. Not opened: kit video files, Premiere, audio.
+
+### 2026-11-17 19:00 - Vision Quest EP 8 (finale) Edit Run Sheet, picture and video pull finished
+**Status:** DONE (rights flags and open items for Zac below)
+**Trigger:** Jarvis, from Zac's 2026-11-16 sleep-work doc: first transcript for EP 8, picture and video pull, build the run sheet
+**Classification:** Review (Premiere transcript supplied, NOT transcribed)
+**Elapsed:** about 40 min wall
+**Transcript status:** `Vision Quest .txt` in the ep 8 folder is Zac's Premiere transcript of his EDITED CUT (27:57, 164 blocks, 2 speakers, Speaker 1 = Winter Wolf, 2 = KingZ, one Speaker 3 block at 05:19 is a blip). The mass recording (Vision Quest and Maybe AKT.mp4, 6452.7 s) was not transcribed, per the rule never to transcribe or build from a raw recording. So no new chapter timecodes were made. Where the cut sits in the mass recording is not known (needs transcription or Zac's sequence); sheet times are CUT times.
+**Actions taken:** wwd-pictures gap fill (added 30 edith hugging vision, 31 virgil horton at the dinner table, 31 distinct, dup check 55 images flagged 1 false positive); wwd-vfx kit check (end card verified by frames, opener, Spoiler Alert x2, Recommend Watch, Next Up 8 Finale card is EP 7's and not used); wwd-sound cue plan (4 gag cues, 8 transition sounds, opener -16.5 LUFS/-0.2 dBTP, end card -17.7 LUFS/-2.6 dBTP measured); wwd-run-sheet built the sheet; I ran lint again (PASS) and proofread (fixed one garbled Gaps line, checked 6 CAM and block times against the transcript); wwd-rights note. devils-advocate not run (no new format, internal editing doc).
+**Deliverables:** D:\WKP\WWD\reports\Vision-Quest-8-Edit-Run-Sheet.md (42 stops: 31 picture, 4 CAM, 3 sticker, 2 sound only, 1 opener, 1 end card); D:\WKP Reports\Asset Placement Run Sheets\2026-11-17 - Vision Quest EP 8 Edit Run Sheet.docx; USE folder (31 PNGs, pictures-tags.md, timeline-placements.md); D:\WKP\WWD\reports\Vision-Quest-8-Rights-Note.md. Lint line: stops 42 | cross dissolves 2 | stops with a designed transition 15 of 31 | trailer clips 0. RESULT: PASS.
+**Flags for Zac:** opener in the cut or not; cams not synced (both about 6.5 s short of the main recording); tail after 27:57?; confirm FrostCast line on the end card; picture 5 near-twin of EP 7's client frame (kept); rights: pictures 14, 20, 21, 23, 24, 27 no source page, 28 Disney+ mark, audioblocks-style sounds license unconfirmed, Firefly opener AI label; CC BY-SA credit for Olsen photo in the description. No trailer clip (rune-room teaser optional, needs Zac's download). TASKS.md row still says the end card does not exist (it does, made 2026-11-15); not edited by me.

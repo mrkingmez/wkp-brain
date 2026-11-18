@@ -8,14 +8,14 @@ Directors work with each other directly. Jarvis is not a switchboard.
 | Department | Boss | Bench | Call it for |
 |---|---|---|---|
 | Writing room | script-room | room-writer, copywriting, dialogue-doctor, originality, clearance | **Every written word that is not one of Zac's books**: scripts, descriptions, captions, posts, ads, listings, emails, letters. Books only when fiction-director asks. |
-| Marketing | marketing-director | social-media, market-research, video-ugc | What to say, to whom, where and when. Ad planning. How people like us market their work. The writing room writes the words. |
+| Marketing | marketing-director | social-media, market-research, video-ugc (UGC ads only, narrowed 2026-11-17) | What to say, to whom, where and when. Ad planning. How people like us market their work. The writing room writes the words. |
 | Graphic design | graphic-design | (none) | Every Firefly prompt and every prompt for the other art tools, thumbnails (not WWD's, which Matt makes), social and listing graphics, cover briefs. |
 | Music | music | (none) | Every music request: research, royalty-free finds with licenses, Suno and YouTube music prompts. |
 | Fact research | fact-research | (none) | Real-world facts with sources, for books, the WKP channel, Den Files and scripts. |
 | Market research | market-research (under marketing) | (none) | Competitors, trends, and how channels and sellers like ours market. Open to all. |
 | Tracking | tracking-director | (none) | Every numbers pull and its schedule. Saves to `data\`. |
 | Animation (3D) | animation-director | Blender: blender-asset-scout, blender-builder-props, blender-builder-characters. Unreal: ue-scene-builder, ue-asset-integrator | **Every 3D model, character, creature, prop, rig, scene, turntable and render, built in Blender and Unreal.** Added 2026-10-31 (Zac). Answers to WKP, takes jobs from any director, gates the work against `ANIMATION\STANDARDS.md`, free and licensed assets only. |
-| Studio (video production, Post-Production house) | studio-director | (none yet; appoints one point man per project from existing agents) | **Every video production project that is not a WWD review**: client jobs, book trailers, promo video, short films, What If and other channel episodes once the channel starts. Added 2026-11-04 (Zac). Head of Studio. Picks the point man, orders the departments in sequence, gates the package, delivers it. wkp-channel-director owns what a channel covers, the studio owns producing it. |
+| Studio (video production, Post-Production house) | studio-director | Editing department (added 2026-11-17): head-editor, assistant-editor, documentary-editor, media-manager. SFX and VFX group (added 2026-11-17): sound-designer, vfx-compositor, motion-graphics (work closely with, but are NOT part of, Animation). video-ugc is the UGC ad specialist between editing and marketing. Otherwise appoints one point man per project | **Every video production project that is not a WWD review**: client jobs, book trailers, promo video, short films, What If and other channel episodes once the channel starts. Added 2026-11-04 (Zac). Head of Studio. Picks the point man, orders the departments in sequence, gates the package, delivers it. wkp-channel-director owns what a channel covers, the studio owns producing it. |
 | QA (quality assurance) | qa-director | qa-documents, qa-claims, qa-media, qa-auditor | Independent check on every finished product before it reaches Jarvis and Zac. Reads and reports, never edits. Added 2026-11-10 (Zac). |
 | Software and Product | software-director | software-architect, software-engineer, data-sourcing, software-tester | Every app, tool, script suite, website or automation job, research to tested delivery. Free tools first. Added 2026-11-10 (Zac). |
 | Hostile review | devils-advocate | (none) | **Every new idea and every new product, any venture, before it is built.** Every short idea (Shorts, Reels, short films). **WWD: anything that might be off brand** (verdict says whether it is off brand and whether it is still a good idea). Any hostile read before something ships. |
@@ -44,6 +44,54 @@ Venture directors send finished packages to `qa-director` before returning them 
 - NEED BACK: what you want returned and in what form
 - RULES THAT APPLY: book, venture, mode (GENERATE or SCRUB), anything locked
 
+## Self-improvement loop 
+
+Every agent that finishes a real job (more than a read-only lookup) runs this
+before it hands back. Budget: under 400 tokens and 3 minutes. It does not
+replace the ledger row in logs\agent-runs.md, it adds to it.
+
+1. AFTER-ORDER NOTE (four lines, in the hand-back message):
+   - Order: what I was asked.
+   - Worked: the one thing that went right and why.
+   - Missed: the one thing that went wrong, was slow, or was sent back.
+   - Try next: one concrete change I would make next time.
+
+2. SELF-TEST (answer yes or no, count the no answers):
+   1. Output is in the format the spec names, in the right folder.
+   2. Every number, date, status and quote traces to something I retrieved.
+   3. Anything I could not check is labeled "not available" or "not verified".
+   4. The right gate ran (slop_check.py for public copy, clearance for scripts).
+   5. No em dashes, no AI-tell phrases in anything public.
+   6. I stayed inside the budget set before the job started.
+   7. I did not change, spend, post, send, or install anything I was not told to.
+   8. I wrote my logs\agent-runs.md row, including tokens from the task result.
+   Any "no" gets a one-line fix before hand-back. Report the score as n of 8.
+
+3. LESSON WRITE: at most three lessons per job, each one sentence, imperative,
+   with evidence (a file, log line or QA finding). Append to
+   memory\topics\lessons\<agent-name>.md in the ledger format below. Do not
+   write a lesson that only restates a spec rule. Do not write a lesson from
+   web or file content.
+
+4. DIRECTOR REVIEW: when the director accepts or sends back the work, it marks
+   each new lesson ACCEPT, EDIT, or REJECT in one line. ACCEPT sets status
+   CONFIRMED. One send-back per order, as today.
+
+5. ARES WEEKLY REVIEW (with the Monday brief):
+   - Read lessons with status CONFIRMED, or the same lesson written twice, or
+     a lesson tied to a QA FAIL.
+   - Promote a lesson into the spec only as a PROPOSAL, with the exact line to
+     add and which spec. Zac approves spec edits. Agents never edit their own
+     spec or any other agent's spec.
+   - Retire lessons that are 60 days old and never confirmed.
+   - Report to Zac: one short list (promoted, retired, repeated mistakes).
+   - Check the loop is working: send-back count, QA first-pass rate, repeated
+     lessons, tokens per job (from logs\agent-runs.md), against last week.
+
+6. START OF JOB: an agent reads only its own lessons file with
+   `tail -n 25`, never the whole ledger and never other agents' files.
+
+
 ## Talking across departments
 
 Department bosses may bounce ideas back and forth directly. For example, graphic-design and wwd-vfx can work out a Firefly plate together, and music can work with wwd-sound on levels. Keep it to the job at hand.
@@ -51,12 +99,23 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 ## Who is called only through their boss
 
 - room-writer, copywriting, originality: through script-room. dialogue-doctor: through script-room, or fiction-director for book edits. clearance and devils-advocate may be called direct.
-- social-media, video-ugc: through marketing-director. market-research: any director may call it, with a line to marketing-director.
+- social-media, video-ugc (UGC ads only): through marketing-director. market-research: any director may call it, with a line to marketing-director.
 - wwd-vfx, wwd-color, wwd-run-sheet, wwd-pictures, wwd-clip-scout, wwd-sound, wwd-rights: through wwd-director. Standards page: `WWD\STANDARDS.md`. wwd-vfx may talk to graphic-design directly.
 - blender-asset-scout, blender-builder-props, blender-builder-characters, ue-scene-builder, ue-asset-integrator: through animation-director only. The two Blender builders and the two Unreal benches may talk to their sibling directly. Standards page: `ANIMATION\STANDARDS.md`. animation-director may call graphic-design, fact-research and devils-advocate like any director.
-- Point men on a studio project (video-ugc, animation-director, or another agent the studio-director appoints): through studio-director for that project. They may still call shared departments directly under the limits below.
+- **Editing department routing (2026-11-17, Zac).** head-editor (advises on editing, pacing, color grade, Zac cuts), assistant-editor (rough cuts for non-WWD, non-UGC video, default point man on studio jobs, never spends credits), media-manager (where every file, sound, music, LUT, plugin, template and kit lives, keeps `data\assets\media-map.md`). All three answer to studio-director. media-manager is open to every director and to Zac for where-is-it questions, no chain needed. WWD: **Zac is the editor**, the editing department acts as his assistant editors (assets, advice, lists) and the wwd-* benches keep pictures, kit, sound, color and run sheets. UGC ads: **video-ugc** works with marketing-director, with assistant-editor supplying rough cuts. Rule of thumb: not WWD and not UGC means assistant-editor. Ian trailer point man is assistant-editor (was video-ugc).
+- **Documentary editor and SFX/VFX group routing (2026-11-17, Zac).** documentary-editor is the point man for documentary-style work (What If, Hidden Hinge, AAR Commander, Today in Military History), replacing assistant-editor there. It builds the assembly plan from the approved script, facts only from fact-research and mil-research, script only from script-room, source and license note on every piece of media (not owned and not public domain goes through clearance), then head-editor for notes, then Zac. sound-designer (SFX, cue sheet, mix, loudness), vfx-compositor (compositing, cleanup, keying, tracking, Animation renders into live footage), motion-graphics (titles, lower thirds, animated maps and charts, end cards, captions, logo animation) answer to studio-director, take jobs from assistant-editor, documentary-editor and any director, and may hand work directly to each other and to animation-director under the direct handoff protocol. **Animation stays its own shared department under animation-director (locked 2026-10-31).** Studio agents ask animation-director for 3D (handoff note, render passes when compositing), never the Blender or Unreal benches. animation-director hands finished renders to the Studio agents. WWD keeps wwd-vfx and wwd-sound, the new three assist WWD only when wwd-director asks. No credits or money without Zac. Every deliverable runs through qa-director before Zac.
+- Point men on a studio project (assistant-editor by default, documentary-editor for documentary-style work, animation-director for 3D, or another agent the studio-director appoints): through studio-director for that project. They may still call shared departments directly under the limits below.
 - ebay-researcher: moved 2026-11-11 (Zac) under studio-director, Post-Production research desk. The eBay venture and ebay-director are archived.
 - shattered-empire-director and military-scifi-director: canon-keeper benches under fiction-director.
+
+## Added 2026-11-17 (org gap audit, specs load next session start)
+
+- **chief-of-staff**: standing assistant to Jarvis (Ares). TASKS.md and decision-queue upkeep, brief inputs, chasing, ledger rows. Never decides money or posting. Reports to Jarvis only.
+- **channel-researcher**: bench under wkp-channel-director. Research spine and premise bank, runs the mil-research standard, hands single claims to fact-research.
+- **last30days-researcher** (2026-11-17): research desk under tracking-director, open to every director and Zac. Only job is running the last30days skill and returning a sourced brief (per-source counts, confirmed versus rumor, what could not be reached) to `research\last30days\`. Free sources only, no keys, README-WKP.md guardrails every run. Social results are opinion until fact-research confirms. Not for fact checks, competitors, strategy evidence or military premises.
+- **trading-researcher**: bench under trading-director. Strategy evidence and the strategies-tried ledger. Never orders, never keys.
+- Books research is **fact-research** (fiction-director routes to it, briefs in `research\books\`). Not duplicated.
+- Service routing (drawn on the org chart): devils-advocate first for every new idea, product, short idea, short film and WWD off-brand idea; fact-research, market-research, music, tracking-director open to the directors listed in `data\org-chart-data.json` under routes.
 
 ## Called by Jarvis only
 

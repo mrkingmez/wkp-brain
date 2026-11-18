@@ -1,0 +1,1957 @@
+{
+ "generated": "2026-11-17",
+ "agents": [
+  {
+   "id": "jarvis",
+   "job": "CEO: plans, routes, reviews",
+   "desc": "The main session. Plans, routes work to directors, answers questions from below, reviews and spot-checks, then hands to Zac. Does not produce deliverables.",
+   "reports_to": "Zac",
+   "status": "main",
+   "spec_exists": false,
+   "tools": "n/a",
+   "model": "n/a",
+   "spec_file": ""
+  },
+  {
+   "id": "claude-code-guide",
+   "job": "Looks up Claude Code answers",
+   "desc": "Built-in research helper that answers questions about Claude Code, the Agent SDK and the Claude API. Not a WKP repo spec.",
+   "reports_to": "jarvis",
+   "status": "builtin",
+   "spec_exists": false,
+   "tools": "n/a",
+   "model": "n/a",
+   "spec_file": ""
+  },
+  {
+   "id": "wwd-director",
+   "job": "Runs WWD and FrostCast",
+   "desc": "Runs Winter Wolf's Den and FrostCast production end to end, classifies each status, routes to benches and skills, logs.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-director.md"
+  },
+  {
+   "id": "wwd-vfx",
+   "job": "Cards, stings, kit pieces",
+   "desc": "Builds the P:\\WWD Kit (cards, stickers, stings, openers, transitions), writes video-gen prompts, matches sounds.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-vfx.md"
+  },
+  {
+   "id": "wwd-color",
+   "job": "Color match and LUTs",
+   "desc": "Color correction, shot matching and grading looks, delivered as .cube LUTs and CDL values.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-color.md"
+  },
+  {
+   "id": "wwd-run-sheet",
+   "job": "Builds edit run sheets",
+   "desc": "Owns the timeline-order Edit Run Sheet format, gathers inputs, builds .md and .docx, lints before the director sees it.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-run-sheet.md"
+  },
+  {
+   "id": "wwd-pictures",
+   "job": "Verified picture sets",
+   "desc": "Pulls the 18-picture set plus transcript extras, tags, dedupes, checks each picture against its transcript line.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-pictures.md"
+  },
+  {
+   "id": "wwd-clip-scout",
+   "job": "Finds trailer clips",
+   "desc": "Finds and converts trailer clips, maps shots, returns exact in and out timecodes within fair use limits.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-clip-scout.md"
+  },
+  {
+   "id": "wwd-sound",
+   "job": "Sound match, loudness",
+   "desc": "Sound effect matching per cue, level and loudness targets, mix checks on the finished export.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-sound.md"
+  },
+  {
+   "id": "wwd-rights",
+   "job": "Fair use rights gate",
+   "desc": "Fair use and clearance check on clips, stills, music and sounds before the upload package goes out.",
+   "reports_to": "wwd-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wwd-rights.md"
+  },
+  {
+   "id": "etsy-director",
+   "job": "Both Etsy shops, listings",
+   "desc": "Runs WarriorKingDesigns and Kingdom Planners: listing copy, tags, photo sets, pricing, weekly batch planning.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\etsy-director.md"
+  },
+  {
+   "id": "kdp-director",
+   "job": "Math mystery books, KDP",
+   "desc": "Runs KDP Publishing (Math Case Files via Genten Royalty, Shigai sudoku mysteries): naming, listings, pricing, tracker.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\kdp-director.md"
+  },
+  {
+   "id": "paws-director",
+   "job": "Desk device hardware",
+   "desc": "Runs the PAWS hardware venture: build guides, BOM, sourcing, firmware planning, enclosures, education variants.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\paws-director.md"
+  },
+  {
+   "id": "fiction-director",
+   "job": "Books career, edits, queries",
+   "desc": "Owns Zac's whole book career: editing passes, canon, covers, readers, query letters, publishing path.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "opus",
+   "spec_file": ".claude\\agents\\fiction-director.md"
+  },
+  {
+   "id": "shattered-empire-director",
+   "job": "Shattered Empire canon keeper",
+   "desc": "Owns Shattered Empire canon across both books, routes edit passes and alpha feedback. Never decides for the author.",
+   "reports_to": "fiction-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\shattered-empire-director.md"
+  },
+  {
+   "id": "military-scifi-director",
+   "job": "Military sci-fi canon keeper",
+   "desc": "Owns the military sci-fi novel's canon. Separate universe from Shattered Empire.",
+   "reports_to": "fiction-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\military-scifi-director.md"
+  },
+  {
+   "id": "wkp-channel-director",
+   "job": "What If, Hidden Hinge, AAR",
+   "desc": "Directs the WKP military history channel: episodes, research spine, orders scripts, art, music and promotion.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\wkp-channel-director.md"
+  },
+  {
+   "id": "fantasy-football-director",
+   "job": "Weekly fantasy and pick'em",
+   "desc": "Owns the weekly cycle for the IRFL dynasty league and pick'em pool. Decision support only, never submits.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "not set",
+   "spec_file": ".claude\\agents\\fantasy-football-director.md"
+  },
+  {
+   "id": "trading-director",
+   "job": "Paper trades, watcher, scorecards",
+   "desc": "Runs the Trading department: watch week, paper-trade log, grading, go-live checklist. Never places orders.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\trading-director.md"
+  },
+  {
+   "id": "script-room",
+   "job": "Writing room boss, all words",
+   "desc": "Runs the WRITING ROOM. Every written word that is not one of Zac's books: scripts and, via copywriting, all public copy.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\script-room.md"
+  },
+  {
+   "id": "room-writer",
+   "job": "Drafts scripts, structure reads",
+   "desc": "Drafts scripts from a pitch and diagnoses structure in existing pages.",
+   "reports_to": "script-room",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep",
+   "model": "opus",
+   "spec_file": ".claude\\agents\\room-writer.md"
+  },
+  {
+   "id": "copywriting",
+   "job": "Public copy, listings, captions",
+   "desc": "Writes every public word that is not a script or book: descriptions, posts, captions, ads, emails, listings.",
+   "reports_to": "script-room",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\copywriting.md"
+  },
+  {
+   "id": "dialogue-doctor",
+   "job": "Dialogue and exposition editor",
+   "desc": "Line-level dialogue editor for scripts and books. Flags exposition dumps and AI slop. Suggests, never rewrites book prose.",
+   "reports_to": "script-room",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Grep",
+   "model": "opus",
+   "spec_file": ".claude\\agents\\dialogue-doctor.md"
+  },
+  {
+   "id": "originality",
+   "job": "Derivative or generic check",
+   "desc": "Adversarial read on whether a script is derivative, generic, or a version of something already made.",
+   "reports_to": "script-room",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Grep, WebSearch",
+   "model": "opus",
+   "spec_file": ".claude\\agents\\originality.md"
+  },
+  {
+   "id": "clearance",
+   "job": "Copyright and fair use flags",
+   "desc": "Flags reproduced material, trademark use and fair use exposure on scripts and video content. Not legal advice.",
+   "reports_to": "script-room",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Grep, WebSearch",
+   "model": "opus",
+   "spec_file": ".claude\\agents\\clearance.md"
+  },
+  {
+   "id": "marketing-director",
+   "job": "Strategy, campaigns, ad plans",
+   "desc": "Decides what to say, to whom, where and when. Campaign and ad planning, marketing calendar. The writing room writes the words.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\marketing-director.md"
+  },
+  {
+   "id": "social-media",
+   "job": "Posts and posting schedules",
+   "desc": "Drafts posts, plans platform strategy and posting schedules for Facebook, Instagram and YouTube community.",
+   "reports_to": "marketing-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\social-media.md"
+  },
+  {
+   "id": "market-research",
+   "job": "Competitors, trends, audience",
+   "desc": "Researches competitors, trending formats and audience and keyword data. Open to every department.",
+   "reports_to": "marketing-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\market-research.md"
+  },
+  {
+   "id": "video-ugc",
+   "job": "Shorts, Reels, UGC ads",
+   "desc": "Plans and produces short-form video, Shorts and Reels cutdowns and UGC-style promo content.",
+   "reports_to": "marketing-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\video-ugc.md"
+  },
+  {
+   "id": "graphic-design",
+   "job": "Image prompts, thumbnails, covers",
+   "desc": "Writes every Firefly and image-tool prompt, designs thumbnails (not WWD's), social graphics, listing images, cover briefs.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "All tools (no tools line)",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\graphic-design.md"
+  },
+  {
+   "id": "music",
+   "job": "Find music, check licenses",
+   "desc": "Every music request: researches tracks, checks licenses, audits P:\\Sounds\\Music, writes Suno and YouTube music prompts.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\music.md"
+  },
+  {
+   "id": "fact-research",
+   "job": "Sourced fact briefs",
+   "desc": "Looks up real-world facts (history, military, science, law, publishing) and returns a sourced brief. Read-only on manuscripts.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\fact-research.md"
+  },
+  {
+   "id": "tracking-director",
+   "job": "Numbers pulls and rollups",
+   "desc": "Owns every numbers pull and its schedule (VidIQ, Composio, manual Etsy and KDP files), saves to D:\\WKP\\data. Read-only.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\tracking-director.md"
+  },
+  {
+   "id": "animation-director",
+   "job": "3D boss, Blender and Unreal",
+   "desc": "Boss of the Animation department. Takes 3D jobs from any director, gates work against ANIMATION\\STANDARDS.md.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent, mcp__blender__get_addon_status, mcp__blender__get_scene_info, mcp__blender__look",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\animation-director.md"
+  },
+  {
+   "id": "blender-asset-scout",
+   "job": "Finds licensed 3D assets",
+   "desc": "Finds existing models, materials and HDRIs, logs licenses exactly, imports keepers. Free assets only.",
+   "reports_to": "animation-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, mcp__blender__get_addon_status, mcp__blender__get_scene_info, mcp__blender__execute_blender_code, mcp__blender__look, mcp__blender__search_assets, mcp__blender__import_asset",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\blender-asset-scout.md"
+  },
+  {
+   "id": "blender-builder-props",
+   "job": "Props, vehicles, environments",
+   "desc": "Builds props, hard-surface models, weapons, vehicles and set pieces with clean topology and UVs, ready for Unreal.",
+   "reports_to": "animation-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, mcp__blender__get_addon_status, mcp__blender__get_scene_info, mcp__blender__execute_blender_code, mcp__blender__look",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\blender-builder-props.md"
+  },
+  {
+   "id": "blender-builder-characters",
+   "job": "Characters and creatures",
+   "desc": "Builds characters and creatures from a reference or brief: anatomy, faces, armor fitting, fur, rigging, posing.",
+   "reports_to": "animation-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, mcp__blender__get_addon_status, mcp__blender__get_scene_info, mcp__blender__execute_blender_code, mcp__blender__look",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\blender-builder-characters.md"
+  },
+  {
+   "id": "ue-scene-builder",
+   "job": "Unreal levels, lighting, renders",
+   "desc": "Builds Unreal projects, levels, lighting, cameras, Sequencer shots and final renders.",
+   "reports_to": "animation-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\ue-scene-builder.md"
+  },
+  {
+   "id": "ue-asset-integrator",
+   "job": "Blender to Unreal imports",
+   "desc": "Moves assets from Blender into Unreal 5.8 correctly: export settings, scale, collision, LODs, validation.",
+   "reports_to": "animation-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, mcp__blender__get_addon_status, mcp__blender__get_scene_info, mcp__blender__execute_blender_code, mcp__blender__look",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\ue-asset-integrator.md"
+  },
+  {
+   "id": "studio-director",
+   "job": "Video production head",
+   "desc": "Head of Studio. Runs every video job that is not a WWD review, appoints one point man per project, gates the package.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\studio-director.md"
+  },
+  {
+   "id": "ebay-researcher",
+   "job": "Post-production research desk",
+   "desc": "Researches editing and post-production questions: tools, plugins, codecs, export settings, workflows. Read-only.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash, Agent",
+   "model": "not set",
+   "spec_file": ".claude\\agents\\ebay-researcher.md"
+  },
+  {
+   "id": "head-editor",
+   "job": "Primary editor, advises edits, grade",
+   "desc": "Zac's primary editor on staff. Advises on structure, pacing, retention and how to color grade (Lumetri, Resolve). Advises, Zac cuts. Answers to studio-director.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\head-editor.md"
+  },
+  {
+   "id": "assistant-editor",
+   "job": "Rough cuts, non-WWD video",
+   "desc": "Cuts the rough cut for any video outside WWD and UGC (trailers, client work, channel episodes). Answers to studio-director; head-editor gives notes.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\assistant-editor.md"
+  },
+  {
+   "id": "media-manager",
+   "job": "Knows where every file lives",
+   "desc": "Knows where every video, sound, music track, LUT, plugin and template lives on every drive and pulls exact paths with license notes. Answers to studio-director.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\media-manager.md"
+  },
+  {
+   "id": "documentary-editor",
+   "job": "Documentary assembly, What If",
+   "desc": "Point man for documentary-style work (What If, Today in Military History). Builds the assembly plan: archive, maps, narration pacing, source and license notes. Facts from fact-research, script from the writing room.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\documentary-editor.md"
+  },
+  {
+   "id": "sound-designer",
+   "job": "SFX, cue sheet, mix, loudness",
+   "desc": "SFX and sound design for non-WWD video: finds and layers SFX via media-manager, ElevenLabs prompts (never run without Zac), cue sheet, mix notes, measured loudness.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\sound-designer.md"
+  },
+  {
+   "id": "vfx-compositor",
+   "job": "Composites, keying, tracking",
+   "desc": "Compositing, cleanup, plates, keying, tracking, places Animation renders into live footage and matches light and grade. After Effects and Premiere steps spelled out.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\vfx-compositor.md"
+  },
+  {
+   "id": "motion-graphics",
+   "job": "Titles, maps, charts, end cards",
+   "desc": "Titles, lower thirds, animated maps and charts, end cards, captions, simple logo animation. After Effects, Premiere Essential Graphics or remotion code. Free tools first.",
+   "reports_to": "studio-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\motion-graphics.md"
+  },
+  {
+   "id": "software-director",
+   "job": "Apps and tools boss",
+   "desc": "Head of Software and Product. Runs any app, tool, script suite or website job from research to tested delivery. Never deploys.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\software-director.md"
+  },
+  {
+   "id": "software-architect",
+   "job": "Designs the product",
+   "desc": "Turns a researched idea into a design: data model, stack, hosting, security, build order.",
+   "reports_to": "software-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\software-architect.md"
+  },
+  {
+   "id": "software-engineer",
+   "job": "Writes and tests code",
+   "desc": "Writes and fixes code in small tested steps in D:\\WKP\\software. Python first, free libraries.",
+   "reports_to": "software-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\software-engineer.md"
+  },
+  {
+   "id": "data-sourcing",
+   "job": "Finds legal data sources",
+   "desc": "Finds what data a product needs and where it can legally come from, with limits and cost. Read-only research.",
+   "reports_to": "software-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\data-sourcing.md"
+  },
+  {
+   "id": "software-tester",
+   "job": "Tests, security pass",
+   "desc": "Runs tests, edge cases, clean-checkout run and a security pass. Reports only, never fixes.",
+   "reports_to": "software-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\software-tester.md"
+  },
+  {
+   "id": "qa-director",
+   "job": "Independent quality check boss",
+   "desc": "QA boss. Independent check on every finished product before Jarvis and Zac. PASS, PASS WITH NOTES or FAIL. Never edits.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash, Agent",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\qa-director.md"
+  },
+  {
+   "id": "qa-documents",
+   "job": "Docs and copy checks",
+   "desc": "Checks .docx and .md deliverables for layout, print-readiness, placeholders, em dashes, AI-tell phrases.",
+   "reports_to": "qa-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\qa-documents.md"
+  },
+  {
+   "id": "qa-claims",
+   "job": "Traces claims to sources",
+   "desc": "Traces every number, date, quote and done claim back to something actually retrieved.",
+   "reports_to": "qa-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash, WebSearch, WebFetch",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\qa-claims.md"
+  },
+  {
+   "id": "qa-media",
+   "job": "Video and audio specs",
+   "desc": "Checks video and audio with ffprobe and ffmpeg: duration, loudness, frames, captions, cover frames.",
+   "reports_to": "qa-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\qa-media.md"
+  },
+  {
+   "id": "qa-auditor",
+   "job": "Weekly director performance review",
+   "desc": "Reviews how each director performs: first-pass quality, rework, skipped gates, honesty misses. Reports only.",
+   "reports_to": "qa-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\qa-auditor.md"
+  },
+  {
+   "id": "devils-advocate",
+   "job": "Hostile review of ideas",
+   "desc": "Adversarial reviewer. Mandatory gate for every short idea and new product. Argues the case against any draft or plan.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Glob, Grep",
+   "model": "opus",
+   "spec_file": ".claude\\agents\\devils-advocate.md"
+  },
+  {
+   "id": "venture-scout",
+   "job": "New venture research",
+   "desc": "Searches for underserved niches and returns a ranked, sourced shortlist of businesses. Read-only. Called by Jarvis only.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash",
+   "model": "not set",
+   "spec_file": ".claude\\agents\\venture-scout.md"
+  },
+  {
+   "id": "chief-of-staff",
+   "job": "Jarvis (Ares) assistant",
+   "desc": "Standing assistant to Jarvis: keeps TASKS.md and the decision queue current, preps brief inputs, chases stale items, files the ledger rows. Never decides money or posting.",
+   "reports_to": "jarvis",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\chief-of-staff.md"
+  },
+  {
+   "id": "channel-researcher",
+   "job": "Channel research spine",
+   "desc": "Runs the mil-research standard, builds the sourced research spine and premise bank for What If, Hidden Hinge, AAR Commander. Hands single claims to fact-research.",
+   "reports_to": "wkp-channel-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\channel-researcher.md"
+  },
+  {
+   "id": "trading-researcher",
+   "job": "Strategy evidence, lessons ledger",
+   "desc": "Researches strategy evidence, stocks versus crypto, keeps the strategies-tried ledger. Never places orders or touches keys.",
+   "reports_to": "trading-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\trading-researcher.md"
+  },
+  {
+   "id": "last30days-researcher",
+   "job": "Last 30 days research (last30days only)",
+   "desc": "Only job: runs the last30days skill and returns a sourced brief of what people say in the last 30 days, with per-source counts, confirmed versus rumor, and what could not be reached. Free sources only, no keys. Not a fact-checker.",
+   "reports_to": "tracking-director",
+   "status": "live",
+   "spec_exists": true,
+   "tools": "Read, Write, Glob, Grep, Bash",
+   "model": "sonnet",
+   "spec_file": ".claude\\agents\\last30days-researcher.md"
+  }
+ ],
+ "departments": [
+  {
+   "id": "etsy",
+   "name": "ETSY (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "etsy-director",
+   "sections": []
+  },
+  {
+   "id": "wwd",
+   "name": "WINTER WOLF'S DEN / FROSTCAST (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 2,
+   "boss": "wwd-director",
+   "sections": [
+    {
+     "agents": [
+      "wwd-vfx",
+      "wwd-color",
+      "wwd-run-sheet",
+      "wwd-pictures",
+      "wwd-clip-scout",
+      "wwd-sound",
+      "wwd-rights"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "channel",
+   "name": "WKP CHANNEL (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "wkp-channel-director",
+   "sections": [
+    {
+     "agents": [
+      "channel-researcher"
+     ]
+    },
+    {
+     "note": "facts: fact-research (shared)"
+    }
+   ]
+  },
+  {
+   "id": "fiction",
+   "name": "BOOKS / FICTION (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "fiction-director",
+   "sections": [
+    {
+     "agents": [
+      "shattered-empire-director",
+      "military-scifi-director"
+     ]
+    },
+    {
+     "note": "dialogue-doctor (writing room) edits chapters"
+    },
+    {
+     "note": "research bot: fact-research (shared)"
+    }
+   ]
+  },
+  {
+   "id": "fantasy",
+   "name": "FANTASY FOOTBALL (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "fantasy-football-director",
+   "sections": []
+  },
+  {
+   "id": "trading",
+   "name": "TRADING (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "trading-director",
+   "sections": [
+    {
+     "agents": [
+      "trading-researcher"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kdp",
+   "name": "KDP PUBLISHING (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "kdp-director",
+   "sections": []
+  },
+  {
+   "id": "paws",
+   "name": "PAWS HARDWARE (venture)",
+   "kind": "venture",
+   "row": "B",
+   "cols": 1,
+   "boss": "paws-director",
+   "sections": []
+  },
+  {
+   "id": "writing",
+   "name": "WRITING ROOM (shared)",
+   "kind": "shared",
+   "row": "C1",
+   "cols": 2,
+   "boss": "script-room",
+   "sections": [
+    {
+     "agents": [
+      "room-writer",
+      "copywriting",
+      "dialogue-doctor",
+      "originality",
+      "clearance"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marketing",
+   "name": "MARKETING (shared)",
+   "kind": "shared",
+   "row": "C1",
+   "cols": 1,
+   "boss": "marketing-director",
+   "sections": [
+    {
+     "agents": [
+      "social-media",
+      "market-research",
+      "video-ugc"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "graphic",
+   "name": "GRAPHIC DESIGN (shared)",
+   "kind": "shared",
+   "row": "C1",
+   "cols": 1,
+   "boss": "graphic-design",
+   "sections": []
+  },
+  {
+   "id": "software",
+   "name": "SOFTWARE AND PRODUCT (shared)",
+   "kind": "shared",
+   "row": "C1",
+   "cols": 2,
+   "boss": "software-director",
+   "sections": [
+    {
+     "agents": [
+      "software-architect",
+      "software-engineer",
+      "data-sourcing",
+      "software-tester"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "studio",
+   "name": "STUDIO / POST-PRODUCTION (shared)",
+   "kind": "shared",
+   "row": "C1",
+   "cols": 2,
+   "boss": "studio-director",
+   "sections": [
+    {
+     "agents": [
+      "ebay-researcher"
+     ]
+    },
+    {
+     "frame": "EDITING DEPARTMENT",
+     "agents": [
+      "head-editor",
+      "documentary-editor",
+      "assistant-editor",
+      "media-manager"
+     ],
+     "ref": {
+      "id": "video-ugc",
+      "note": "sits between editing and marketing"
+     }
+    },
+    {
+     "frame": "SFX AND VFX GROUP",
+     "agents": [
+      "sound-designer",
+      "vfx-compositor",
+      "motion-graphics"
+     ]
+    },
+    {
+     "note": "Works closely with ANIMATION, a separate shared department. Not part of Studio."
+    }
+   ]
+  },
+  {
+   "id": "animation",
+   "name": "ANIMATION 3D (shared)",
+   "kind": "shared",
+   "row": "C1",
+   "cols": 2,
+   "boss": "animation-director",
+   "sections": [
+    {
+     "frame": "BLENDER SECTION",
+     "agents": [
+      "blender-asset-scout",
+      "blender-builder-props",
+      "blender-builder-characters"
+     ]
+    },
+    {
+     "frame": "UNREAL SECTION",
+     "agents": [
+      "ue-scene-builder",
+      "ue-asset-integrator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "qa",
+   "name": "QUALITY ASSURANCE (shared)",
+   "kind": "shared",
+   "row": "C2",
+   "cols": 2,
+   "boss": "qa-director",
+   "sections": [
+    {
+     "agents": [
+      "qa-documents",
+      "qa-claims",
+      "qa-media",
+      "qa-auditor"
+     ]
+    },
+    {
+     "note": "Checks every deliverable before Jarvis and Zac."
+    }
+   ]
+  },
+  {
+   "id": "music",
+   "name": "MUSIC (shared)",
+   "kind": "shared",
+   "row": "C2",
+   "cols": 1,
+   "boss": "music",
+   "sections": []
+  },
+  {
+   "id": "fact",
+   "name": "FACT RESEARCH (shared)",
+   "kind": "shared",
+   "row": "C2",
+   "cols": 1,
+   "boss": "fact-research",
+   "sections": []
+  },
+  {
+   "id": "tracking",
+   "name": "TRACKING (shared)",
+   "kind": "shared",
+   "row": "C2",
+   "cols": 1,
+   "boss": "tracking-director",
+   "sections": [
+    {
+     "agents": [
+      "last30days-researcher"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hostile",
+   "name": "HOSTILE REVIEW (shared)",
+   "kind": "shared",
+   "row": "C2",
+   "cols": 1,
+   "boss": "devils-advocate",
+   "sections": []
+  },
+  {
+   "id": "scout",
+   "name": "NEW VENTURES (Jarvis only)",
+   "kind": "shared",
+   "row": "C2",
+   "cols": 1,
+   "boss": "venture-scout",
+   "sections": []
+  }
+ ],
+ "skill_groups": {
+  "wwd": {
+   "name": "WWD skills",
+   "color": "#D55E00",
+   "targets": [
+    "wwd-director"
+   ]
+  },
+  "etsy": {
+   "name": "Etsy and Kingdom Planners",
+   "color": "#E69F00",
+   "targets": [
+    "etsy-director"
+   ]
+  },
+  "channel": {
+   "name": "WKP channel formats",
+   "color": "#CC79A7",
+   "targets": [
+    "wkp-channel-director"
+   ]
+  },
+  "fiction": {
+   "name": "Fiction and books",
+   "color": "#7B4B2A",
+   "targets": [
+    "fiction-director"
+   ]
+  },
+  "fantasy": {
+   "name": "Fantasy football",
+   "color": "#2AA8E0",
+   "targets": [
+    "fantasy-football-director"
+   ]
+  },
+  "trading": {
+   "name": "Trading (trader-*)",
+   "color": "#0058A6",
+   "targets": [
+    "trading-director"
+   ]
+  },
+  "writing": {
+   "name": "Writing and slop gate",
+   "color": "#7A3FC4",
+   "targets": [
+    "script-room",
+    "marketing-director"
+   ]
+  },
+  "design": {
+   "name": "Design, video, studio",
+   "color": "#8FB300",
+   "targets": [
+    "graphic-design",
+    "software-director",
+    "studio-director"
+   ]
+  },
+  "anim": {
+   "name": "3D: Blender and Unreal",
+   "color": "#00945E",
+   "targets": [
+    "animation-director"
+   ]
+  },
+  "jarvis": {
+   "name": "Jarvis and operations",
+   "color": "#222222",
+   "targets": [
+    "jarvis"
+   ]
+  }
+ },
+ "skills": [
+  {
+   "group": "wwd",
+   "name": "wwd-audio-cut",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-broll-prep",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-frostcast-chapters",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-review-photo-pull",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-review-pipeline",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-show-prep",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-video-transcriber",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-vidiq-pull",
+   "source": "repo",
+   "also": "tracking-director",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-weekly-planner",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-shorts-clip-factory",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "wwd",
+   "name": "wwd-video-upload-package",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "kp-generator",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "kp-ledger",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "kp-planner",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "kp-prep",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "kp-recon",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "kp-reviews",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "wkd-weekly-batch",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "etsy",
+   "name": "listing-factory-weekly-batch-skill",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "channel",
+   "name": "whatif-format",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "channel",
+   "name": "hiddenhinge-format",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "channel",
+   "name": "aar-format",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "channel",
+   "name": "mil-research",
+   "source": "repo",
+   "also": "fact-research",
+   "note": ""
+  },
+  {
+   "group": "fiction",
+   "name": "fiction-alpha-feedback",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "fiction",
+   "name": "fiction-editing",
+   "source": "account (not in repo)",
+   "also": "shattered-empire-director, military-scifi-director",
+   "note": ""
+  },
+  {
+   "group": "fantasy",
+   "name": "fantasy-football-data",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "fantasy",
+   "name": "ff-play-sim",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "fantasy",
+   "name": "ff-simulator",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "fantasy",
+   "name": "nfl-data",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-alerts",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-analyst",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-broker",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-budget",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-entry",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-exit",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-news",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-pelosi",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-risk",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-scanner",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "trading",
+   "name": "trader-timemachine",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "writing",
+   "name": "no-ai-slop",
+   "source": "repo",
+   "also": "every agent that writes public copy (mechanical script)",
+   "note": ""
+  },
+  {
+   "group": "writing",
+   "name": "stop-slop",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "design",
+   "name": "design-taste-frontend",
+   "source": "repo",
+   "also": "software-director",
+   "note": ""
+  },
+  {
+   "group": "design",
+   "name": "impeccable",
+   "source": "repo",
+   "also": "software-director",
+   "note": ""
+  },
+  {
+   "group": "design",
+   "name": "remotion-motion-graphics",
+   "source": "repo",
+   "also": "studio-director, motion-graphics",
+   "note": ""
+  },
+  {
+   "group": "design",
+   "name": "media-manager",
+   "source": "repo",
+   "also": "",
+   "note": "finds owned media for the editing department and the SFX and VFX group (media-manager agent)"
+  },
+  {
+   "group": "design",
+   "name": "graphic-designer",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "design",
+   "name": "youtube-thumbnail",
+   "source": "account (not in repo)",
+   "also": "",
+   "note": "WWD thumbnails are Matt's"
+  },
+  {
+   "group": "anim",
+   "name": "blender-asset-quality",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "blender-asset-sourcing",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "blender-character-craft",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "blender-mcp-ops",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "blender-planar-head-modeling",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "ue-import-pipeline",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "ue-mcp-and-automation",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "anim",
+   "name": "ue-scene-lighting-render",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "jarvis",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "wkp-monday-brief",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "wkp-saturday-wrap",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "wkp-system-check",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "wkp-update",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "task-observer",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "canary",
+   "source": "repo",
+   "also": "",
+   "note": ""
+  },
+  {
+   "group": "jarvis",
+   "name": "wkp-daily-brief",
+   "source": "repo",
+   "also": "",
+   "note": "RETIRED 2026-11-12, do not run"
+  },
+  {
+   "group": "jarvis",
+   "name": "tuesday-intell-tool",
+   "source": "repo",
+   "also": "",
+   "note": "folder exists but holds no SKILL.md (empty)"
+  },
+  {
+   "group": "design",
+   "name": "ffmpeg",
+   "source": "repo",
+   "also": "studio-director, qa-director, wwd-director",
+   "note": "tested recipes, added 2026-11-17"
+  }
+ ],
+ "connectors": [
+  {
+   "name": "Gmail",
+   "status": "connected",
+   "used_by": "Jarvis, wwd-director, Shipping",
+   "basis": "wwd-director spec names it; others inferred",
+   "note": ""
+  },
+  {
+   "name": "Google Calendar",
+   "status": "connected",
+   "used_by": "Jarvis, wwd-director, marketing-director",
+   "basis": "wwd-director and marketing-director specs",
+   "note": ""
+  },
+  {
+   "name": "Google Drive (claude.ai)",
+   "status": "connected",
+   "used_by": "Shipping (reference copies), Jarvis, shattered-empire-director",
+   "basis": "claude.ai Google Drive connector, tools: search, read, create, update, copy, share, trash. Replaced plugin:small-business:google-drive, now disconnected",
+   "note": "Reference storage only. Never create operational files through the Drive API (CLAUDE.md rule: it converts markdown to Google Docs and breaks @-imports)"
+  },
+  {
+   "name": "Composio",
+   "status": "connected",
+   "used_by": "tracking-director",
+   "basis": "tracking-director spec (Instagram and Facebook numbers)",
+   "note": ""
+  },
+  {
+   "name": "ElevenLabs",
+   "status": "connected",
+   "used_by": "graphic-design, studio-director",
+   "basis": "graphic-design and studio-director specs",
+   "note": "Three ElevenLabs entries exist: two with full tools, one authenticate-only. Never run generations without Zac's yes (credits)"
+  },
+  {
+   "name": "Higgsfield",
+   "status": "connected",
+   "used_by": "animation-director, graphic-design, video-ugc",
+   "basis": "specs of all three",
+   "note": ""
+  },
+  {
+   "name": "OpenWhisper",
+   "status": "connected",
+   "used_by": "Zac (voice input), Jarvis",
+   "basis": "inferred from ME.md and LOCAL-PATHS",
+   "note": ""
+  },
+  {
+   "name": "OpusClip",
+   "status": "connected",
+   "used_by": "wwd-director, video-ugc",
+   "basis": "CLAUDE.md shorts rules; scheduling uses the API script, not the connector",
+   "note": ""
+  },
+  {
+   "name": "VidIQ",
+   "status": "connected",
+   "used_by": "tracking-director, market-research, wwd-director",
+   "basis": "tracking-director and market-research specs",
+   "note": ""
+  },
+  {
+   "name": "ESPN",
+   "status": "connected",
+   "used_by": "fantasy-football-director",
+   "basis": "inferred",
+   "note": ""
+  },
+  {
+   "name": "Claude in Chrome",
+   "status": "connected",
+   "used_by": "wwd-director, wwd-pictures, Jarvis",
+   "basis": "CLAUDE.md Messenger step; wwd-pictures inferred",
+   "note": ""
+  },
+  {
+   "name": "Blender MCP",
+   "status": "connected",
+   "used_by": "animation-director and its benches",
+   "basis": "specs list the blender tools",
+   "note": ""
+  },
+  {
+   "name": "Desktop Commander",
+   "status": "connected",
+   "used_by": "Jarvis, software-director",
+   "basis": "inferred",
+   "note": ""
+  },
+  {
+   "name": "Claude Docs",
+   "status": "connected",
+   "used_by": "Jarvis (no department assigned yet)",
+   "basis": "inferred",
+   "note": ""
+  },
+  {
+   "name": "Shopify",
+   "status": "connected",
+   "used_by": "none assigned (Etsy is the store)",
+   "basis": "tools callable, no spec uses it",
+   "note": ""
+  },
+  {
+   "name": "Adobe for creativity (connector)",
+   "status": "connected",
+   "used_by": "graphic-design, wwd-vfx, wwd-director, studio-director, assistant-editor, motion-graphics, media-manager (asset lookups)",
+   "basis": "Verified 2026-11-17 in Jarvis session: get_account_type returned a signed-in account, asset_search returned 3 Firefly generations. 100+ tools (image edits, background removal, PDF, fonts, Adobe Stock search, video quick cut and resize, speech enhancement, Firefly Boards, Express designs)",
+   "note": "Generative fills and Firefly generations can spend credits, need Zac's yes. Firefly video generation credits are at zero. Old plugin copy (plugin:adobe-for-creativity:Adobe, authenticate tools only) is still present, ignore it."
+  },
+  {
+   "name": "Adobe Firefly (web account)",
+   "status": "web account, not an MCP",
+   "used_by": "graphic-design, wwd-vfx, wwd-director, studio-director",
+   "basis": "specs mention Firefly prompts",
+   "note": "Firefly video generation credits are at zero (2026-11-17). Prompts only until Zac says otherwise"
+  },
+  {
+   "name": "Canva",
+   "status": "installed, not authorized",
+   "used_by": "graphic-design (none yet)",
+   "basis": "only authenticate tools seen this session",
+   "note": ""
+  }
+ ],
+ "not_authorized": [
+  "Slack",
+  "Notion",
+  "Stripe",
+  "Square",
+  "PayPal",
+  "QuickBooks",
+  "Mailchimp",
+  "Airwallex",
+  "Apollo.io",
+  "Atlassian",
+  "Clay",
+  "Emergent",
+  "Expensify",
+  "Gusto",
+  "monday.com",
+  "MYOB",
+  "Ramp",
+  "RingEx chat",
+  "TikTok",
+  "Trello",
+  "Wix",
+  "Zapier",
+  "Zoho Books",
+  "Zoho CRM",
+  "Zoho Desk",
+  "Zoho Projects",
+  "Amplitude",
+  "Amplitude EU",
+  "ClickUp",
+  "Figma",
+  "Fireflies",
+  "Intercom",
+  "Linear",
+  "Pendo",
+  "Similarweb"
+ ],
+ "other_connectors": [
+  "Carta (investor skills only, not WKP relevant)",
+  "S&P Global (authenticate only, not WKP relevant)"
+ ],
+ "shipping": [
+  {
+   "id": "ship-reports",
+   "name": "D:\\WKP Reports",
+   "job": "Zac's one delivery folder (.docx)",
+   "status": "live"
+  },
+  {
+   "id": "ship-gmail",
+   "name": "Gmail",
+   "job": "Email deliverables and drafts",
+   "status": "live"
+  },
+  {
+   "id": "ship-drive",
+   "name": "Google Drive (claude.ai)",
+   "job": "Reference copies only, never operational files",
+   "status": "live"
+  },
+  {
+   "id": "ship-zac",
+   "name": "Hand to Zac",
+   "job": "Zac posts, agents never post",
+   "status": "live"
+  },
+  {
+   "id": "ship-ian",
+   "name": "Ian posts",
+   "job": "Book trailer files go to Ian",
+   "status": "live"
+  },
+  {
+   "id": "ship-matt",
+   "name": "Matt posts",
+   "job": "WWD files, shared channel",
+   "status": "live"
+  },
+  {
+   "id": "ship-phys",
+   "name": "Physical products",
+   "job": "LATER (far future)",
+   "status": "later"
+  }
+ ],
+ "notes": [
+  "Reporting lines come from AGENT-NETWORK.md and each spec description. Chain of command is Zac, Jarvis, directors, benches.",
+  "Connector status is what was callable in the agent session that built this chart, not read from a settings file. D:\\WKP\\.mcp.json does not exist and the user settings file has no mcpServers block.",
+  "Used-by links for connectors come from specs where the basis column says so, otherwise they are inferred.",
+  "Skills marked account are in the Claude account skill list, not in D:\\WKP\\.claude\\skills.",
+  "Connector rule: operational files (CLAUDE.md, TASKS.md, memory) are never created through the Google Drive connector. Create locally in D:\\WKP, commit, push.",
+  "Local tool versions on the TOOLS strip were verified by running each version command or reading Build.version on 2026-11-17.",
+  "Agent status: every agent with a spec file on disk is listed live (all appear in the live agent list as of 2026-11-17). jarvis is the main session, claude-code-guide is built-in."
+ ],
+ "repos": {
+  "installed": [
+   {
+    "name": "calesthio/OpenMontage",
+    "serves": "Studio, WWD",
+    "note": "D:\\Tools\\OpenMontage, audited, no paid keys"
+   },
+   {
+    "name": "msrbuilds/voice-studio",
+    "serves": "Studio, Music",
+    "note": "D:\\Tools\\Voice Studio v0.7.2"
+   },
+   {
+    "name": "rohitg00/ai-engineering-from-scratch",
+    "serves": "Teacher",
+    "note": "in Teacher\\vendor, never run"
+   },
+   {
+    "name": "MCP for Blender addon 1.8",
+    "serves": "Animation",
+    "note": "localhost:9876 (also a connector)"
+   },
+   {
+    "name": "Taste skill + Impeccable",
+    "serves": "Software, Graphic design",
+    "note": "engine and hooks left out"
+   },
+   {
+    "name": "yt-dlp, WhisperX, pyannote, faster-whisper",
+    "serves": "WWD, Transcription",
+    "note": "Python 3.12 packages"
+   },
+   {
+    "name": "ffmpeg (WinGet)",
+    "serves": "Studio, WWD, QA, Software",
+    "note": "see the ffmpeg skill"
+   },
+   {
+    "name": "mvanhorn/last30days-skill",
+    "serves": "Market research, Channel, Tracking",
+    "note": "installed 2026-11-17, commit a854f3b, free sources only, .claude\\skills\\last30days"
+   },
+   {
+    "name": "jarrodwatts/claude-hud",
+    "serves": "Jarvis (Ares)",
+    "note": "installed 2026-11-17, pinned commit 9d2b6fa, plugin plus status line, auto-update off"
+   }
+  ],
+  "approved": [
+   {
+    "name": "obra/superpowers (3 skills only)",
+    "serves": "all directors (self-test)",
+    "note": "TRY, copy text, no plugin"
+   },
+   {
+    "name": "heygen-com/hyperframes, bangtutorial/bang-motion",
+    "serves": "Studio, WWD cards",
+    "note": "TRY, one test clip each"
+   },
+   {
+    "name": "Graphify-Labs/graphify",
+    "serves": "Books (canon)",
+    "note": "TRY later, package only"
+   },
+   {
+    "name": "Hallmark, anatomy, emilkowalski/skills",
+    "serves": "Graphic design, Teacher",
+    "note": "TRY, low"
+   },
+   {
+    "name": "Blender-to-Unreal pipeline repo",
+    "serves": "Animation",
+    "note": "not chosen, Zac picks"
+   }
+  ],
+  "keep_out": "claude-mem, claude-task-master, ruflo, caveman, ponytail, OpenHands, hermes-agent, crewAI, aider, langgraph, agentic-inbox, browser-use, openworker, gstack, Open-Generative-AI, Claude-BugHunter, ui-ux-pro-max-skill, React Bits, paint-mv-skills, hand-drawn-explainer, claude-remotion-skill. (Source: reports\\Skills-Repos-and-Limits-2026-11-16.md)"
+ },
+ "routes": [
+  {
+   "id": "devils-advocate",
+   "color": "#C0392B",
+   "what": "Every new idea, product, short idea and short film first; WWD off-brand ideas; phase gates",
+   "to": [
+    "etsy-director",
+    "wwd-director",
+    "wkp-channel-director",
+    "fiction-director",
+    "fantasy-football-director",
+    "trading-director",
+    "kdp-director",
+    "paws-director",
+    "marketing-director",
+    "software-director",
+    "studio-director"
+   ]
+  },
+  {
+   "id": "fact-research",
+   "color": "#6A3D9A",
+   "what": "Sourced facts for books, channel, Den Files, scripts, 3D",
+   "to": [
+    "fiction-director",
+    "wkp-channel-director",
+    "wwd-director",
+    "script-room",
+    "animation-director"
+   ]
+  },
+  {
+   "id": "market-research",
+   "color": "#B15928",
+   "what": "Competitors and trends, any director may call",
+   "to": [
+    "etsy-director",
+    "kdp-director",
+    "wwd-director",
+    "wkp-channel-director"
+   ]
+  },
+  {
+   "id": "music",
+   "color": "#E7298A",
+   "what": "Every music request",
+   "to": [
+    "wwd-director",
+    "wkp-channel-director",
+    "studio-director"
+   ]
+  },
+  {
+   "id": "tracking-director",
+   "color": "#1B9E77",
+   "what": "Every numbers pull",
+   "to": [
+    "wwd-director",
+    "etsy-director",
+    "kdp-director",
+    "wkp-channel-director",
+    "marketing-director"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "ffmpeg 9.0 (Gyan full build)",
+   "where": "WinGet Links, on PATH",
+   "serves": "Studio, WWD, QA, Software"
+  },
+  {
+   "name": "ffprobe 9.0 (Gyan full build)",
+   "where": "same folder as ffmpeg",
+   "serves": "qa-media, Studio"
+  },
+  {
+   "name": "Python 3.12.10",
+   "where": "Python312 under AppData\\Local\\Programs",
+   "serves": "scripts, transcriber, slop_check"
+  },
+  {
+   "name": "Blender 5.2.4 LTS RC",
+   "where": "C:\\Blender\\5.2.4",
+   "serves": "Animation"
+  },
+  {
+   "name": "Unreal Engine 5.8.4",
+   "where": "D:\\Epic\\UE_5.8",
+   "serves": "Animation"
+  },
+  {
+   "name": "Microsoft Edge 157 (headless)",
+   "where": "Program Files (x86)",
+   "serves": "this chart builder (PNG)"
+  }
+ ]
+}

@@ -44,3 +44,7 @@ learnings go here.
 - [Zac's Fiverr history](user-fiverr-history.md) — established seller, over $7,000 since 2016 (his word); not a new seller (2026-11-13)
 - [Opus clips settled](feedback-opus-clips-settled.md) — EP 120 shorts approved, never re-ask or list a spot-check (Zac, 3 times, 2026-11-12)
 - [Take initiative](feedback-take-initiative.md) — build plans and fix known gaps unprompted, look on disk before asking Zac, report results (Zac 2026-11-11)
+- [Agent learning goal](feedback-agent-learning-goal.md) — every agent improves each run, directors wire departments, never repeat a failure; plus yes/no first on capability questions (Zac 2026-11-17)
+- [Household money reports](feedback-household-money-reports.md) — wife reads them; forward-looking only, no blame or history (Zac 2026-11-17)
+- [2027 debt payoff](project-2027-debt-payoff.md) — all-in on debt in 2027, new loan 11/18, cut courses/games/apps, small fun allowance (Zac 2026-11-17)
+- [Ian trailer settled](project-ian-trailer-settled.md) — Polaroid is past Brandon + dad, fence is present-day child only, Adobe SFX free, ElevenLabs for missing sounds, no credits, cover is its own story piece, V4 cut (Zac 2026-11-17)

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARES | Command Desk (mockup)</title>
+<style>
+:root{
+  --bg:#050b1a; --panel:#08142b; --panel2:#0b1b38; --line:#12315f;
+  --cyan:#27d8ff; --cyan-d:#0f7fa6; --ink:#d6ecff; --mute:#6f8db3;
+  --good:#2de2a0; --warn:#ffc24a; --bad:#ff5c7c;
+  --mono:Consolas,"Cascadia Mono","SFMono-Regular",Menlo,monospace;
+  --sans:"Segoe UI",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100%}
+body{background:radial-gradient(1200px 600px at 20% -10%,#0a2350 0%,transparent 60%),var(--bg);padding:18px}
+.top{display:flex;align-items:center;gap:16px;padding:10px 16px;border:1px solid var(--line);border-bottom:1px solid var(--cyan-d);background:linear-gradient(180deg,#0a1f45,#071530);border-radius:10px;box-shadow:0 0 24px #0a3d6b55}
+.logo{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;background:var(--cyan);color:#021226;font-weight:800;font-family:var(--mono)}
+.top h1{font-size:18px;letter-spacing:.18em;font-weight:700}
+.top small{display:block;font:10px var(--mono);color:var(--mute);letter-spacing:.2em}
+.spacer{flex:1}
+.clock{font:600 20px var(--mono);color:var(--cyan);text-shadow:0 0 10px #27d8ff88}
+.nav{display:flex;gap:6px;margin:12px 0;flex-wrap:wrap}
+.nav a{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);text-decoration:none;padding:7px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.nav a.on{color:#021226;background:var(--cyan);border-color:var(--cyan);box-shadow:0 0 14px #27d8ff66}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-left:3px solid var(--cyan-d);border-radius:8px;padding:12px 14px;min-width:0}
+.card h2{font:700 10px var(--mono);letter-spacing:.22em;color:var(--cyan);text-transform:uppercase;display:flex;justify-content:space-between;margin-bottom:10px}
+.card h2 span{color:var(--mute);font-weight:400}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c8{grid-column:span 8}.c12{grid-column:span 12}
+@media(max-width:1100px){.c3,.c4,.c5,.c6,.c8{grid-column:span 12}}
+.big{font:700 34px var(--mono);color:#fff;text-shadow:0 0 14px #27d8ff77}
+.sub{font:11px var(--mono);color:var(--mute);margin-top:2px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;font:11px var(--mono)}
+.stats b{display:block;font-size:15px;color:var(--ink)}
+.stats i{font-style:normal;color:var(--mute);font-size:9px;letter-spacing:.16em}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tile{border:1px solid var(--line);background:#071329;border-radius:6px;padding:9px 10px;font:11px var(--mono)}
+.tile.on{border-color:var(--cyan);box-shadow:inset 0 0 12px #27d8ff22}
+.tile b{display:flex;align-items:center;gap:6px;letter-spacing:.14em;font-size:11px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--good);box-shadow:0 0 8px var(--good)}
+.dot.w{background:var(--warn);box-shadow:0 0 8px var(--warn)}
+.dot.o{background:#3a4d6e;box-shadow:none}
+.tile span{display:block;color:var(--mute);margin-top:5px;font-size:10px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{font:9px var(--mono);letter-spacing:.18em;color:var(--mute);text-align:left;text-transform:uppercase;padding:0 6px 6px}
+td{padding:7px 6px;border-top:1px solid #0f2a52;vertical-align:top}
+td.m{font:11px var(--mono);color:var(--mute);white-space:nowrap}
+.pill{font:9px var(--mono);letter-spacing:.14em;padding:2px 7px;border-radius:10px;border:1px solid;white-space:nowrap}
+.p-go{color:var(--good);border-color:#1b6b53}.p-wait{color:var(--warn);border-color:#7a5c1c}.p-ice{color:var(--mute);border-color:#2a3f63}.p-prog{color:var(--cyan);border-color:var(--cyan-d)}
+.gauge{display:grid;place-items:center}
+.gauge svg{width:100%;max-width:230px}
+.row{display:flex;justify-content:space-between;font:11px var(--mono);padding:5px 0;border-top:1px solid #0f2a52;color:var(--mute)}
+.row b{color:var(--ink);font-weight:600}
+.bars{display:flex;align-items:flex-end;gap:6px;height:80px;margin-top:6px}
+.bars div{flex:1;background:linear-gradient(180deg,var(--cyan),#0b4a6e);border-radius:2px 2px 0 0;position:relative}
+.bars div.lo{background:linear-gradient(180deg,#ff7c96,#5c1c30)}
+.bars em{position:absolute;bottom:-16px;left:0;right:0;text-align:center;font:9px var(--mono);color:var(--mute);font-style:normal}
+.sample{display:inline-block;font:9px var(--mono);letter-spacing:.14em;color:#1a1200;background:var(--warn);padding:1px 6px;border-radius:3px;margin-left:6px}
+.real{display:inline-block;font:9px var(--mono);letter-spacing:.14em;color:#021a12;background:var(--good);padding:1px 6px;border-radius:3px;margin-left:6px}
+.na{color:var(--mute);font:11px var(--mono);padding:10px;border:1px dashed var(--line);border-radius:6px;text-align:center}
+.foot{margin-top:14px;font:10px var(--mono);color:var(--mute);letter-spacing:.1em;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.meter{height:8px;background:#061024;border:1px solid var(--line);border-radius:5px;overflow:hidden;margin-top:6px}
+.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan-d),var(--cyan))}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="logo">A</div>
+  <div><h1>ARES</h1><small>WKP COMMAND DESK &middot; LOCAL ONLY</small></div>
+  <div class="spacer"></div>
+  <div style="text-align:right"><div class="clock" id="clock">--:--:--</div><small>MON 2026-11-16 &middot; DESKTOP-2FI1EG2</small></div>
+</header>
+
+<nav class="nav">
+  <a class="on" href="#">Command</a><a href="#">Ventures</a><a href="#">Agents</a><a href="#">Tasks</a><a href="#">Decisions</a><a href="#">Numbers</a><a href="#">Calendar</a><a href="#">Meter</a><a href="#">Fantasy</a><a href="#">Trading</a>
+</nav>
+
+<main class="grid">
+
+  <!-- Status -->
+  <section class="card c4">
+    <h2>System status <span>logs\system-check\latest.txt</span></h2>
+    <div class="big" style="color:var(--warn);text-shadow:0 0 14px #ffc24a77">YELLOW</div>
+    <div class="sub">Nightly check, 2026-11-16, DESKTOP-2FI1EG2 <span class="real">REAL</span></div>
+    <div class="stats">
+      <div><i>AGENT SPECS</i><b>52</b></div>
+      <div><i>OPEN DECISIONS</i><b>28</b></div>
+      <div><i>TOTAL LOGGED</i><b>33</b></div>
+    </div>
+    <div class="row" style="margin-top:12px"><span>Flag 1</span><b>I: drive disk-class events (13 in 14 days)</b></div>
+    <div class="row"><span>Flag 2</span><b>D:\WKP Reports not in git</b></div>
+  </section>
+
+  <!-- Agents -->
+  <section class="card c4">
+    <h2>Agents <span>.claude\agents\ (52 specs)</span></h2>
+    <div class="tiles">
+      <div class="tile on"><b><i class="dot"></i>ARES</b><span>command layer (was Jarvis)</span></div>
+      <div class="tile"><b><i class="dot w"></i>SOFTWARE</b><span>this plan</span></div>
+      <div class="tile"><b><i class="dot o"></i>WWD</b><span>idle, next EP 121 Wed</span></div>
+      <div class="tile"><b><i class="dot o"></i>QA</b><span>idle</span></div>
+      <div class="tile"><b><i class="dot o"></i>FANTASY</b><span>Wk 10 lineups saved</span></div>
+      <div class="tile"><b><i class="dot o"></i>STUDIO</b><span>Ian trailer, waiting on Zac</span></div>
+    </div>
+    <div class="sub" style="margin-top:8px">Live running/idle state: sample logic. Step 4 reads logs\agent-runs.md and the newest log file per agent.<span class="sample">SAMPLE STATE</span></div>
+  </section>
+
+  <!-- Gauge -->
+  <section class="card c4">
+    <h2>Zac queue pressure <span>decisions open / logged</span></h2>
+    <div class="gauge">
+      <svg viewBox="0 0 220 130" aria-label="28 of 33 decisions open">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#27d8ff"/><stop offset="1" stop-color="#ff5c7c"/></linearGradient></defs>
+        <path d="M20 115 A90 90 0 0 1 200 115" fill="none" stroke="#0e2a52" stroke-width="14" stroke-linecap="round"/>
+        <path d="M20 115 A90 90 0 0 1 200 115" fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="43"/>
+        <text x="110" y="100" text-anchor="middle" fill="#fff" font-family="Consolas,monospace" font-size="34" font-weight="700">28</text>
+        <text x="110" y="122" text-anchor="middle" fill="#6f8db3" font-family="Consolas,monospace" font-size="10" letter-spacing="2">OPEN OF 33</text>
+      </svg>
+    </div>
+    <div class="sub" style="text-align:center">Counted from logs\DECISIONS.md headers and OPEN status lines <span class="real">REAL</span></div>
+  </section>
+
+  <!-- Tasks -->
+  <section class="card c8">
+    <h2>Task list <span>TASKS.md &middot; today and this week</span></h2>
+    <table>
+      <tr><th>Task</th><th>When</th><th>Status</th></tr>
+      <tr><td>FrostCast EP 121 recording</td><td class="m">Wed 11/18 9 PM</td><td><span class="pill p-go">STANDING</span></td></tr>
+      <tr><td>Photo restore side income, groups list stop rule</td><td class="m">Fri 11/13 (passed)</td><td><span class="pill p-prog">IN PROGRESS</span></td></tr>
+      <tr><td>Fantasy DFS Week 10, friend's process, three lineups</td><td class="m">Sun 11/15</td><td><span class="pill p-wait">WAITING ON ZAC</span></td></tr>
+      <tr><td>Ian trailer: pick music, prove the license</td><td class="m">no date</td><td><span class="pill p-wait">WAITING ON ZAC</span></td></tr>
+      <tr><td>Transcription side business, four Fiverr gigs</td><td class="m">no date</td><td><span class="pill p-prog">IN PROGRESS</span></td></tr>
+      <tr><td>Kingdom Planners</td><td class="m">back burner</td><td><span class="pill p-ice">ON ICE</span></td></tr>
+    </table>
+    <div class="sub" style="margin-top:8px">Rows copied from TASKS.md as of this build <span class="real">REAL</span></div>
+  </section>
+
+  <!-- Numbers -->
+  <section class="card c4">
+    <h2>Weekly numbers <span>data\weekly-2026-11-13.md</span></h2>
+    <div class="big">744</div>
+    <div class="sub">WWD subscribers, all-time <span class="real">REAL</span></div>
+    <div class="bars" style="margin-bottom:22px">
+      <div class="lo" style="height:32%"><em>11/06-11</em></div>
+      <div style="height:100%"><em>10/30-11/05</em></div>
+    </div>
+    <div class="row"><span>Views, 6 days to 11/11</span><b>1,398</b></div>
+    <div class="row"><span>Views, prior 7 days</span><b>4,370</b></div>
+    <div class="row"><span>Subs gained, 6 days</span><b>1</b></div>
+    <div class="sub" style="margin-top:6px">YouTube data lagged 2 days at pull time. Etsy: no recent file, shown as not available.</div>
+  </section>
+
+  <!-- Ventures -->
+  <section class="card c6">
+    <h2>Ventures <span>CLAUDE.md status block</span></h2>
+    <table>
+      <tr><th>Venture</th><th>State</th></tr>
+      <tr><td>WWD / FrostCast</td><td><span class="pill p-go">ACTIVE</span></td></tr>
+      <tr><td>Shattered Empire</td><td><span class="pill p-go">ACTIVE</span></td></tr>
+      <tr><td>WarriorKingDesigns</td><td><span class="pill p-wait">HOLD</span></td></tr>
+      <tr><td>Kingdom Planners, PAWS, KDP, Spark Capture</td><td><span class="pill p-ice">ACTIVE-UNSCHEDULED</span></td></tr>
+      <tr><td>Investing, Stellar Dominion</td><td><span class="pill p-ice">DORMANT</span></td></tr>
+    </table>
+  </section>
+
+  <!-- Meter -->
+  <section class="card c3">
+    <h2>Token and limit meter</h2>
+    <div class="big" style="font-size:26px">--</div>
+    <div class="sub">Local usage readout from Claude Code session files. Plan limit itself is not readable from disk: shown as not available.</div>
+    <div class="meter"><i style="width:42%"></i></div>
+    <div class="sub" style="margin-top:6px">Bar is placeholder.<span class="sample">SAMPLE</span></div>
+  </section>
+
+  <!-- Calendar -->
+  <section class="card c3">
+    <h2>Calendar</h2>
+    <div class="row" style="border:0"><span>Wed 11/18 9 PM</span><b>FrostCast EP 121</b></div>
+    <div class="row"><span>Sat 11/14</span><b>Saturday wrap</b></div>
+    <div class="na" style="margin-top:8px">Live calendar needs a source decision (see plan, section 6).</div>
+  </section>
+
+  <!-- Fantasy -->
+  <section class="card c6">
+    <h2>Fantasy <span>data\dfs-friend\ &middot; data\ff-simulator\</span></h2>
+    <div class="row" style="border:0"><span>Week</span><b>10</b></div>
+    <div class="row"><span>Our three lineups file</span><b>our_three_lineups_2026-11-15.csv, on disk</b></div>
+    <div class="row"><span>Friend's lines</span><b>friend_lineups_2026-11-13.txt, on disk</b></div>
+    <div class="row"><span>Entry cap</span><b>$3 already in DraftKings, agents never enter</b></div>
+    <div class="sub" style="margin-top:8px">Step 8 reads the CSVs and renders the lineup table and compare view.</div>
+  </section>
+
+  <!-- Trading -->
+  <section class="card c6">
+    <h2>Trading paper log <span>Investing\ &middot; trader-* skills</span></h2>
+    <div class="na">No paper-trade log file exists on disk yet (watch week not run). Panel stays empty until trading-director writes one. Equity curve below is the look only.</div>
+    <div class="bars" style="margin:12px 0 22px">
+      <div style="height:30%"><em>1</em></div><div style="height:46%"><em>2</em></div><div class="lo" style="height:20%"><em>3</em></div><div style="height:60%"><em>4</em></div><div style="height:72%"><em>5</em></div>
+    </div>
+    <div class="sub">Shape only, no values.<span class="sample">SAMPLE</span> Paper only. ARES never places an order and never touches keys.</div>
+  </section>
+
+</main>
+
+<div class="foot"><span>ARES MOCKUP v0 &middot; STATIC FILE &middot; NO NETWORK CALLS &middot; NO SECRETS</span><span>Green tag = copied from a repo file. Amber tag = sample.</span></div>
+
+<script>
+(function(){var c=document.getElementById('clock');function t(){c.textContent=new Date().toLocaleTimeString('en-GB')}t();setInterval(t,1000)})();
+</script>
+</body>
+</html>

@@ -494,7 +494,7 @@ C. Drop the idea for now — slow season, free competition already covers most o
 - YES list: S2 (Grant Abbitt, Master Blender Sculpting), L1 (Unreal Sensei, Mesh Terrain landscape), H1 (Ryan King Art, Stylized Low Poly Wooden Cabin), B1 (Blender Guru, private jet, hull method), U1 (Unreal Sensei, UE5 Starter Course 2026, chapters only), U2 (William Faucher, Lighting in Unreal Engine 5 for Beginners).
 - NOT on the yes list, so not processed: S1 (Ryan King Art sculpting) and R1 (Ryan King Art retopology). Zac can add them. Retopology and baking have no approved source until then.
 - Boat gap: option B. A separate agent searched outside the five channels, report `research\animation\2026-11-13-boat-and-scifi-ship-picks.md`. Boat pick and sci-fi ship picks still need Zac's approval before any caption pull.
-- **Boat and sci-fi ship picks answered 2026-11-13 (Zac):** REJECTED BH3, SF4, SF5. APPROVED BH1, BH2, SF1, SF2, SF3. Captions pulled for the five approved (H1 retried, still HTTP 429, not worked around). Tags and delta sheets for the five: `researchnimation6-11-13-version-tags-and-delta-sheets.md` section 5.
+- **Boat and sci-fi ship picks answered 2026-11-13 (Zac):** REJECTED BH3, SF4, SF5. APPROVED BH1, BH2, SF1, SF2, SF3. Captions pulled for the five approved (H1 retried, still HTTP 429, not worked around). Tags and delta sheets for the five: `research\animation6-11-13-version-tags-and-delta-sheets.md` section 5.
 - Landscape: teach BOTH routes. Experimental Mesh Terrain (L1) and classic Landscape (U1 chapters at 1:56:50 and 2:08:16). L2 not approved.
 - Version tagging: "Be sure to tag the version trained on and then find a way to close the gap between the versions." Method written at `ANIMATION\VERSION-GAP-METHOD.md`.
 - Caption files for the six approved videos pulled (5 of 6, H1 blocked by HTTP 429 rate limit), saved under `research\animation\transcripts\<id>\`, gitignored.
@@ -533,3 +533,48 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Status:** OPEN
 
 - TEACHER-2026-11-14-QA-01 ANSWERED by Zac 2026-11-14: plan Pro, Mac, real accounts allowed ("I believe"), read-only first with approvals.
+
+## [INFRA-2026-11-16-01] 2026-11-16 | Daily rollup | Monday brief and Saturday wrap tasks returned nonzero
+**Decision needed:** Look into why WKP-Monday-Brief (last run 11/16 05:30) and WKP-Saturday-Wrap (last run 11/14 05:30) both ended with result 1, and whether the .docx files were made.
+**Context:** logs\system-check\2026-11-16.md, scheduled tasks section. Not investigated, rollup does not start new work. The Saturday wrap was registered only on Zac's yes, so this may be a task-setup issue or the skill failing.
+**Options:** A. Have software-director read the task logs and the two skill specs and report the cause. B. Zac checks D:\WKP Reports\Monday Brief and Saturday Wrap for a file first. C. Leave.
+**Recommendation:** B first (30 seconds), then A only if the files are missing.
+
+**Status:** OPEN
+
+## [POST-2026-11-16-01] 2026-11-16 | Post-Production | Ian trailer: push into the cover past 100 percent?
+**Decision needed:** Draft 3.2 Section 6 says never push in on the cover past 100. The cover opener needs a view-only push toward the car grille (never the toddler) to match clip V2. The artwork file is never changed.
+**Options:** A. Yes, view-only push. B. No, hold the cover and dip to black into V2 (strict fallback in the plan).
+**Recommendation:** A. DECISION QUEUED. Plan: `Post-Production\reports\Ian-Trailer-Asset-Review-and-Cover-Opener-2026-11-16.md` Section 3.
+**Status:** OPEN
+
+## [POST-2026-11-16-02] 2026-11-16 | Post-Production | Ian trailer: animate the cover artwork by splitting it into layers?
+**Decision needed:** Cutting the car, man and toddler out of the cover to move them alters Ian's cover, singles out the toddler, needs Ian's OK and may need credits.
+**Recommendation:** NO. DECISION QUEUED.
+**Status:** OPEN
+
+## [POST-2026-11-16-03] 2026-11-16 | Post-Production | Ian trailer: make wide stills R1w and R5w in Firefly?
+**Decision needed:** R1, R3, R5 are vertical only, 768 px wide. In 16:9 they show as strips. Credit cost per image run NOT RETRIEVED.
+**Recommendation:** Try the blur-sides frame in the rough cut first, decide after Zac sees it. DECISION QUEUED.
+**Status:** OPEN
+
+## [WWD-2026-11-17-01] 2026-11-17 | market-research | VidIQ go-ahead for the retention pull
+**Decision needed:** Zac's explicit yes to spend VidIQ credits on a fresh WWD pull (per-video retention, traffic sources, outliers, competitor review channels).
+**Context:** The retention plan was built from existing pulls (2026-11-02, 2026-11-13, 2026-10-26). An agent's request is not Zac's consent, so no VidIQ tool was called. Retention curves and click-through rate were never in those pulls. Studio (free) shows curves and Earn tab status.
+**Options:** A. Zac reads Studio retention for the last 6 reviews and the Earn tab, no credits. B. Zac okays a VidIQ pull with a credit cap. C. Both.
+**Recommendation:** A first.
+**Status:** OPEN. Plan: `WWD\reports\WWD-Retention-Plan-2026-11-17.md`
+
+## [ORG-2026-11-17-01] 2026-11-17 | org gap audit | Pilot the agent self-improvement loop?
+**Decision needed:** Zac's yes to pilot the loop in `reports\Skills-Repos-and-Limits-2026-11-16.md` Part C (after-order note, 8-question self-test, lessons to `memory\topics\lessons\<agent>.md`, director review, Ares weekly review) on a few agents first.
+**Context:** Zac asked for agents that get better each run (2026-11-16, 2026-11-17). Not built: the proposal says it needs his yes. chief-of-staff only lists lessons, it does not start the loop.
+**Options:** A. Pilot on 3 agents (trading-researcher, channel-researcher, one WWD bench). B. Hold. C. Roll to all.
+**Recommendation:** A.
+**Status:** OPEN
+
+## [ORG-2026-11-17-02] 2026-11-17 | org gap audit | Install last30days (and claude-hud)?
+**Decision needed:** Zac said "a hard yes" to last30days on 2026-11-16. Installing runs third-party code, so the install commands in report section A7 need his go. claude-hud is ADOPT in the same report, no yes on record.
+**Context:** Org chart shelf 3 lists last30days as approved, not installed.
+**Options:** A. Install both after the A6 pre-install checks. B. last30days only. C. Wait.
+**Recommendation:** B.
+**Status:** last30days part DONE 2026-11-17 (Zac's direct yes, installed as a skill by copy at commit a854f3bc, vet note `reports\2026-11-17-last30days-vet.md`, rules in `.claude\skills\last30days\README-WKP.md`). claude-hud part DONE 2026-11-17 (Zac's direct yes, vetted CLEAN, plugin pinned at commit 9d2b6fa, statusLine added to user settings.json with backup, auto-update off, no --extra-cmd; vet note and undo steps in `reports6-11-17-claude-hud-vet.md`). Zac only needs to start a new session to see it. ORG-2026-11-17-02 is fully closed.

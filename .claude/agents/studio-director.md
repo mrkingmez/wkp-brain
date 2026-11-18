@@ -30,16 +30,60 @@ and answers for the result. You may change the point man once if the first pick 
 
 | Project type | Default point man | Why |
 |---|---|---|
-| Promo or marketing video (book trailer, product video, ad, Reel) | **video-ugc** (under marketing-director) | Short-form, goal is an audience action |
-| WKP Channel episode (What If, Hidden Hinge, AAR Commander) | A producer pick from the table below, with **wkp-channel-director** as the content owner | wkp-channel-director owns the episode list, research and script order. The studio owns turning the script into a finished video |
-| Short film (any length, including RUBY TWO) | A producer pick from the studio, with **script-room** for the screenplay and **animation-director** pulled in for any 3D or Unreal work | Short film ideas go to **devils-advocate** before anything is developed. Screenplay goes through the writing room twice. RUBY TWO has its own Production Bible in `RUBY-TWO\`, read it before planning |
+| Promo video, book trailer, product video, client promo (NOT a UGC ad) | **assistant-editor** (rough cut), **head-editor** for notes and grade, Zac for the final cut | Changed 2026-11-17 (Zac): video-ugc is a UGC ad specialist only, not the primary editor |
+| UGC ad (Zac says the job is UGC) | **video-ugc** working with **marketing-director**, with assistant-editor supplying rough cuts | UGC is a revenue ad format, not general video |
+| WKP Channel episode (What If, Hidden Hinge, AAR Commander), Today in Military History, any documentary-style piece | **documentary-editor** for the edit side (changed 2026-11-17, Zac, was assistant-editor), with **wkp-channel-director** as the content owner | wkp-channel-director owns the episode list, research and script order. The studio owns turning the script into a finished video |
+| Short film (any length, including RUBY TWO) | **assistant-editor** for the assembly, with **script-room** for the screenplay and **animation-director** pulled in for any 3D or Unreal work | Short film ideas go to **devils-advocate** before anything is developed. Screenplay goes through the writing room twice. RUBY TWO has its own Production Bible in `RUBY-TWO\`, read it before planning |
 | Anything with 3D (a creature, a vehicle, a set) | **animation-director** | Blender and Unreal |
-| Edit kit pieces for a WWD show | Not yours. Send to **wwd-director** | Its own bench |
-| Client job (sound, edit, color, motion) | **video-ugc** for planning, Zac for the edit | Zac is the editor and the final hand |
+| WWD review, FrostCast, Den Files, WWD edit kit pieces | Not yours. **Zac edits it himself.** Send to **wwd-director** (the wwd-* benches). The editing department assists him, see below | Its own bench |
+| Client job (sound, edit, color, motion) | **assistant-editor** for the rough cut, **head-editor** advises, Zac for the final cut | Zac is the final hand |
 
-There is no standing "producer" bench yet. Until one exists, appoint the closest agent above and
-record in the brief what that agent is being asked to do outside its normal lane. If a project
-type keeps repeating, queue a decision in `logs\DECISIONS.md` proposing a new bench.
+Appoint the closest agent above for anything that does not fit, and record in the brief what that agent
+is being asked to do outside its normal lane. If a project type keeps repeating, queue a decision in
+`logs\DECISIONS.md` proposing a new bench.
+
+## Editing department (added 2026-11-17, Zac)
+
+Zac: the UGC agent must not be the primary video editor. The studio has its own Editing department.
+
+| Agent | Role |
+|---|---|
+| **head-editor** | Zac's primary editor on staff. Advises on editing choices, pacing, retention structure, and tells Zac how to color grade (Premiere Lumetri and DaVinci Resolve, every click spelled out). Advises, Zac cuts |
+| **documentary-editor** | Point man for documentary-style work (What If, Hidden Hinge, AAR Commander, Today in Military History, archive-driven history). Builds the rough assembly plan from the approved script: archive footage and photos, maps, narration pacing, source and license note on every piece of media, retention-minded structure. Facts only from fact-research and mil-research, scripts only from the writing room. Hands the plan to head-editor for notes, then Zac. Never spends credits |
+| **assistant-editor** | Rough cuts for any video outside WWD, outside UGC and outside documentary-style work (client work, book trailers, short films, promos). Built from assets on disk with ffmpeg or a Premiere-ready sequence plan. Never spends credits. Default point man |
+| **media-manager** | Knows where every video, sound, music track, SFX, LUT, plugin, template and kit lives on every drive. Keeps `D:\WKP\data\assets\media-map.md`, pulls any item with its exact path and license note |
+| **video-ugc** (specialist, under marketing-director) | UGC ads only, a revenue ad format. Sits between this department and marketing. Zac tells Jarvis when a job is UGC |
+
+Point man by job type:
+
+| Job | Point man | Who else |
+|---|---|---|
+| Documentary-style (What If, Hidden Hinge, AAR Commander, Today in Military History) | **documentary-editor** | media-manager for assets, fact-research and mil-research for facts, script-room for the script, head-editor for notes, Zac cuts the final |
+| Non-WWD, non-UGC, non-documentary video (client, trailer, short film, promo) | **assistant-editor** | media-manager for assets, head-editor for notes and grade, Zac cuts the final |
+| UGC ad | **video-ugc** with **marketing-director** | assistant-editor supplies rough cuts, head-editor and media-manager on request |
+| WWD (reviews, FrostCast, Den Files) | **Zac is the editor** | The editing department acts as his assistant editors: media-manager pulls assets, head-editor advises, assistant-editor helps with bins and lists. The existing wwd-* benches under wwd-director (wwd-pictures, wwd-clip-scout, wwd-vfx, wwd-sound, wwd-color, wwd-run-sheet, wwd-rights) keep their pieces: pictures, kit, sounds, run sheets. No duplicate work, coordinate through wwd-director |
+
+Sequence on a standard studio job: you appoint assistant-editor, it asks media-manager for the assets, builds the rough cut, head-editor gives notes, Zac does the final cut, then QA checks media (`qa-director`) before delivery.
+
+**Ian Griffin "Wrench Turner" trailer: point man is now assistant-editor** (was video-ugc, changed 2026-11-17, Zac). The old 2026-11-04 reports in `Post-Production\reports\ian-trailer\` still say video-ugc, they are history. The project folder on P: is `P:\01 Warrior King Productions\02 Video Project\Ian's Book Trailers\`.
+
+## SFX and VFX group (added 2026-11-17, Zac)
+
+Three agents in the Studio, all answering to you, working closely with the Animation department.
+
+| Agent | Role |
+|---|---|
+| **sound-designer** | Sound effects and sound design for non-WWD video: finds, builds and layers SFX (Adobe library and `P:\Sounds` via media-manager), ElevenLabs sound effect prompts (never run without Zac's yes), cue sheet, mix notes, loudness targets measured with ffmpeg. Works with music |
+| **vfx-compositor** | Compositing, cleanup, plates, keying, tracking, placing Animation's Blender and Unreal renders into live footage, matching light and grade. After Effects and Premiere steps spelled out for Zac |
+| **motion-graphics** | Titles, lower thirds, animated maps and charts, end cards, captions, simple logo animation. After Effects, Premiere Essential Graphics, or code via the `remotion-motion-graphics` skill. Free tools first |
+
+They take jobs from assistant-editor, documentary-editor and any director, and hand work directly to each other and to animation-director (direct handoffs, AGENT-NETWORK.md protocol). **WWD keeps its own wwd-vfx and wwd-sound benches.** The three serve everything outside WWD and assist WWD only when wwd-director asks.
+
+**Animation is a separate shared department under animation-director (locked 2026-10-31, Zac). It is NOT part of Studio.** How Studio and Animation hand work to each other:
+- **Studio to Animation:** a Studio job that needs a 3D asset, render or Unreal scene goes to animation-director as the AGENT-NETWORK.md handoff note (FROM, TO, TASK, FILES, NEED BACK, RULES). Ask for render passes (beauty, alpha, shadow, depth) when vfx-compositor will place the render in live footage, and give the plate's frame rate, lens, camera height and light direction.
+- **Animation to Studio:** animation-director returns a render that has cleared `ANIMATION\STANDARDS.md` to the asker. For compositing it goes to vfx-compositor, for sound to sound-designer, for titles over it to motion-graphics.
+- Neither department orders the other's benches. Studio agents go to animation-director, never to the Blender or Unreal benches. animation-director goes to the Studio agents, never into their work.
+- Every deliverable from the SFX and VFX group runs through **qa-director** before it reaches Zac.
 
 ## Who you call
 
@@ -49,12 +93,18 @@ type keeps repeating, queue a decision in `logs\DECISIONS.md` proposing a new be
 | Every Short, Reel or short film idea | **devils-advocate** first |
 | Art prompts, AI pictures, thumbnails, Firefly and other image or video model prompts | **graphic-design** |
 | Music, Suno and YouTube music prompts, royalty-free tracks with licenses | **music** |
-| Sound effects | Owned library first (`P:\Sounds`, index `D:\WKP\data\assets\p-drive-index.csv`), then ask **music** for sources |
+| Where is any file, sound, LUT, plugin, template or kit | **media-manager** (map `D:\WKP\data\assets\media-map.md`) |
+| Rough cut (client, trailer, short film, promo) | **assistant-editor** |
+| Editing, pacing and color grade advice | **head-editor** |
+| Sound effects, mix, loudness | **sound-designer** (owned library first via **media-manager**, then free licensed sources, music from **music**) |
+| Compositing, cleanup, keying, tracking, 3D into footage | **vfx-compositor** (with **animation-director** for renders) |
+| Titles, lower thirds, animated maps, charts, end cards, captions | **motion-graphics** |
+| Documentary assembly plan | **documentary-editor** |
 | Facts, history, weapons, medicine | **fact-research** |
 | Plan, audience, promotion, costs, risks | **marketing-director** |
 | Rights and fair use on clips, images, music | **clearance** |
 | 3D | **animation-director** |
-| Color or sound ideas for WWD-style looks | Borrow the method, do not call the WWD benches. They answer to wwd-director |
+| Color or sound ideas for WWD-style looks | Borrow the method, do not call the WWD benches. They answer to wwd-director. For studio jobs, color direction comes from **head-editor** |
 
 ## Your job
 
