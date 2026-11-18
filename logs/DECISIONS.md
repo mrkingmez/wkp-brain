@@ -578,3 +578,13 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Options:** A. Install both after the A6 pre-install checks. B. last30days only. C. Wait.
 **Recommendation:** B.
 **Status:** last30days part DONE 2026-11-17 (Zac's direct yes, installed as a skill by copy at commit a854f3bc, vet note `reports\2026-11-17-last30days-vet.md`, rules in `.claude\skills\last30days\README-WKP.md`). claude-hud part DONE 2026-11-17 (Zac's direct yes, vetted CLEAN, plugin pinned at commit 9d2b6fa, statusLine added to user settings.json with backup, auto-update off, no --extra-cmd; vet note and undo steps in `reports6-11-17-claude-hud-vet.md`). Zac only needs to start a new session to see it. ORG-2026-11-17-02 is fully closed.
+
+---
+
+## [INFRA-2026-11-18-01] 2026-11-18 | Nightly rollup | The rollup's own stored scheduled-task prompt is out of date against current venture status
+
+**Blocked:** Tonight's nightly rollup prompt (the stored instructions this scheduled task fires) states step 5 as: "MAIN EFFORT is Kingdom Planners; ACTIVE ventures are WWD/FrostCast, Shattered Empire, Cyber Security, WarriorKingDesigns." Root `CLAUDE.md` as it stands tonight says the opposite on both counts: "MAIN EFFORT: none set. Kingdom Planners was removed as main effort 2026-11-11 (Zac's call)," and ACTIVE is "WWD/FrostCast, Shattered Empire, WarriorKingDesigns (triage complete, hold)" with Cyber Security under ACTIVE-UNSCHEDULED (CySA+ punted 2026-11-12, already closed in CS-2026-10-28-01 above). Both of those venture-status changes are themselves already decided and logged (see the KINGDOM PLANNERS and CS-2026-10-28-01 entries above, both 2026-11-12). The scheduled task's stored prompt was evidently written before those calls and never updated, so every future nightly run risks misreading which ventures to surface or suppress unless whoever reads this rollup's output catches the mismatch by hand, as done tonight. I have no tool to edit a scheduled task's stored prompt from inside a read-only rollup run.
+**Options:** A. Zac (or chief-of-staff, next session) updates the nightly-rollup scheduled task's stored prompt to reference current CLAUDE.md venture status by name, or better, to say "read venture status fresh from root CLAUDE.md each run" instead of hardcoding a venture list that will drift again. B. Leave it — tonight's run caught the drift and followed the live CLAUDE.md instead of the stale prompt, so no harm was done this cycle. C. Ignore, re-check manually each night.
+**Recommendation:** A (the "read it fresh" phrasing specifically, so this exact drift can't recur) — cheap, one-time, prevents a repeat of tonight's silent-mismatch risk on every future rollup.
+
+**Status:** OPEN
