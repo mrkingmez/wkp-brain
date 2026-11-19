@@ -588,3 +588,18 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Recommendation:** A (the "read it fresh" phrasing specifically, so this exact drift can't recur) — cheap, one-time, prevents a repeat of tonight's silent-mismatch risk on every future rollup.
 
 **Status:** OPEN
+
+---
+
+## [PHOTO-2026-11-19-01] 2026-11-19 | Nightly rollup | Photo Restore side income: stop rule (Fri 11/13) is 6 days overdue, no record either way
+
+**Blocked:** TASKS.md's "Photo restore (side income, first)" row still reads "Stop rule Fri 11/13 | In Progress | Zac: groups list with member counts and selling rules by 11/13 or it stops. Also 3-photo quality test, Photoshop practice photo, timed EP 89 transcript check, payment app, names, Firefly backgrounds yes/no." Today is 2026-11-19, six days past that deadline. `git log` shows the repo was essentially quiet in that window (no commits 2026-11-13 to 2026-11-15, nothing substantive 2026-11-17 evening through tonight) — no groups list, quality test, payment app, names or Firefly yes/no appear to have landed (checked for new commits/files only, not confirmed negative beyond that, per the Honesty rule). Nothing in `logs\DECISIONS.md` or `memory\MEMORY.md` addresses whether the stop rule actually triggered, was met some other way (text/voice to Zac that never made it into a file), or was waived. This is Zac's own stated rule for this venture, so whether it stops or continues is not mine to decide.
+
+**Options:**
+A. Treat the rule as triggered — the venture stops as of 11/13 until Zac explicitly restarts it with the missing pieces (groups list, selling rules, payment app, names, Firefly yes/no).
+B. Zac confirms the groups list/selling rules were supplied some other way that never made it into a file, and the venture continues — needs that confirmation captured in TASKS.md or memory.
+C. Zac extends the deadline.
+
+**Recommendation:** A by default, since nothing on file shows the rule was met, but this is Zac's rule to enforce or waive, not an agent's call — flagging rather than assuming either way.
+
+**Status:** OPEN
