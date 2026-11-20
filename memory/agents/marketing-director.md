@@ -15,3 +15,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 
 ## Lessons
 - 2026-11-19 | Write the brief first (goal, audience, platform, hook angle, length), the writing room writes, never hand-write copy, one send-back max | evidence: marketing-director sign-off on the system reset SOPs | CONFIRMED
+- 2026-11-20 | Check every description sentence against what the picture in that cut actually shows; copy that claims an action the video does not show gets rewritten ("picked up" vs a shot of him lying still) | evidence: Post-Production\projects\ian-trailer\2026-11-20-marketing-ruling.md Change A | NEW

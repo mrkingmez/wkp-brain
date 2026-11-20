@@ -11,3 +11,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Promo copy leads with the hook and never gives the verdict the video exists to give | evidence: root CLAUDE.md review gate 3 | NEW
 
 ## Lessons
+- 2026-11-20 | Check every cutdown and the paste-ready description as pairs, and keep fenced plot wording out of working files, because notes leak in drafts | evidence: originality-01 pair finding, clearance-01 fence fail on words-draft-01 | NEW

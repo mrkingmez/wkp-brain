@@ -13,3 +13,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | WWD thumbnails are Matt's; never design them | evidence: root CLAUDE.md org change 2026-10-29 | NEW
 
 ## Lessons
+- 2026-11-20 | For a morph or hand-off still, align by uploading the prior still as a Composition reference and pre-write a text-only fallback and an edit-the-original fallback, and tag every still-panel tip UNTESTED because no Firefly Image notes exist in data\firefly-prompt-guide | evidence: Post-Production\projects\ian-trailer\2026-11-20-firefly-prompts.md | NEW

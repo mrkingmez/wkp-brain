@@ -12,3 +12,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 
 ## Lessons
 - 2026-11-20 | Finished WWD exports live in each movie folder under L:\Winter Wolfs Den review show\Raw Footage\<title>\ (names ending ed, FINAL export, or the review title), not in ...\Final (newest file there is 2024); E:\01 Warrior King Productions Archive opens read only with ffprobe | evidence: editor study file search 2026-11-19 | NEW
+- 2026-11-20 | Check the project's Audio\Sound FX\Made folder before saying made SFX are missing; the long versions and room tone landed after the cue sheet was written, and P:\Sounds\Sound FX\ElevenLabs does not exist | evidence: Ian Draft 3.3 asset list, Made folder listing 2026-11-20 | NEW

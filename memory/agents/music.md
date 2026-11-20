@@ -14,3 +14,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Music is intro and outro only, never a bed under the talk | evidence: WWD\CLAUDE.md lock 2026-10-17 | CONFIRMED
 
 ## Lessons
+- 2026-11-20 | Open the individual track page, not the album page, for the license and AI label: FMA Alex Morgan Vol. 3 album showed no AI label but each track page says 'AI generated? Yes'. Prior 2026-11-11 pick was wrong on that | evidence: Post-Production\projects\ian-trailer\2026-11-20-music.md | NEW

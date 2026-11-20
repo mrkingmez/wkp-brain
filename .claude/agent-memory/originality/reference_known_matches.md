@@ -41,6 +41,13 @@ Verified 2026-11-10 (Wrench Turner v2 draft-02, originality-02.md):
 - "Coming home is the hard part": searched, no owner, but it is the thesis line of reintegration docs (Searching for Home, When I Came Home 2006). Commonplace, not a finding.
 - Place names joined by a drawn line: clean as text; on a map it becomes the Raiders of the Lost Ark travel-map device.
 
+Verified 2026-11-20 (Wrench Turner words draft 01, Post-Production\projects\ian-trailer\originality-01.md):
+- "The car was the easy part" and "He came home from the war": no tagline owner found. "Home was harder": no exact owner, but genre thesis. Taglines on record: Man Down 2015 "He's coming home to the war he never left"; Home of the Brave 2006 "The final test of courage is coming home"; Landing Home "the hardest mission is the one that begins when you come home".
+
+Verified 2026-11-20 (Wrench Turner words draft 02, Post-Production\projects\ian-trailer\originality-02.md):
+- "The wrench still fit his hand", "His hands knew the car", "he was the Wrench Turner": no owners. "His hands remembered/knew" is a common mechanic-prose phrase family, not a lift.
+- Book-market premise neighbor: Tom Fowler, The Mechanic (John Tyler thriller, 2020), Army veteran with PTSD working as a classic car mechanic. Relevant to store blurbs and keywords, not trailer words.
+
 Verified 2026-11-11 (EP120 shorts copy, writing-room\ep120-shorts\originality-01.md):
 - Adam Driver "Star Wars is over" (Rich Eisen, Nov 2026) = trade headline wording: Netflix Junkie "It's Over", Geeks and Gamers "Declares Star Wars Career Is Over", Cosmic Book News "Adam Driver Done With Star Wars".
 - "Was Adam Driver the only one who tried" and "who follows Hugh Jackman as Wolverine": searched, no owning headline, fan commonplace only.

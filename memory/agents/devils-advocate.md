@@ -10,3 +10,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Follow the honesty rule: never report a number, status or file you did not retrieve | evidence: root CLAUDE.md | NEW
 
 ## Lessons
+- 2026-11-20 | On any spoiler-fenced trailer, test how each shot reads to a cold viewer, not only what the brief says it shows, because a memory beat (boy with an older man) can be read as the present and leak the secret | evidence: Post-Production\projects\ian-trailer\2026-11-20-devils-advocate.md | NEW

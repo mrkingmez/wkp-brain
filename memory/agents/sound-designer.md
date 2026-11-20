@@ -11,3 +11,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Nobody can hear audio: say 'not heard' for every sound claim | evidence: agent-runs.md rows 2026-11-17 and 2026-11-18 | NEW
 
 ## Lessons
+- 2026-11-20 | Check a Made take prompt for words that break the fence (the garage room tone prompt says "distant dog") before putting it in a cue sheet, and give every ratchet cue a stop point before each dissolve | evidence: Post-Production\projects\ian-trailer\2026-11-20-sfx-cue-sheet.md | NEW
