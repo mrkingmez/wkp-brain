@@ -1,0 +1,11 @@
+# Overnight progress
+- 2026-11-19: step 3 launched, no phase finished yet.
+- 2026-11-20 00:00: studio-director picked up step 3. Budget 4 hrs, ~350k tokens, $0. Working dir D:\WKP\Post-Production\research\editing-study\ and D:\WKP\scratch\editor-study\.
+- 2026-11-20 00:16: phase A in progress (8 of 19 caption pulls done, notes file started Post-Production\research\editing-study\2026-11-19-pro-editing-study-notes.md). Phase B measurements running (scratch\editor-study\out\*.json).
+- 2026-11-20 00:25: PHASE B DONE. Measurements for 8 WWD reviews plus 4 P:/E: samples saved: Post-Production\research\editing-study\2026-11-19-zac-work-measurements.md. Phase A: 16 of 19 caption sources read, 3 retries running (429s).
+- 2026-11-20 00:29: PHASE A DONE (17 of 19 sources read, 2 blocked by YouTube 429, last30days run, fact-research brief D:\WKP\research\editing-study\2026-11-20-premiere-youtube-fact-check.md). Notes: Post-Production\research\editing-study\. Starting phase C (style sheet).
+- 2026-11-20 00:33: PHASE C DONE (draft). Style sheet md Post-Production\reports\Zac-Style-Sheet-2026-11-19.md, docx D:\WKP Reports\Editor Style Sheet\2026-11-19 - Zac Style Sheet and Improvement List.docx. slop_check clean. Next: head-editor notes, then qa-director (phase D).
+- 2026-11-20 00:40: head-editor notes applied (loudness standard, 60 s rule, recipe fixes, rule clashes, claims reworded, -35 dB pass added). docx rebuilt. Sent to qa-director.
+- 2026-11-20 07:28: resumed after token reset; first qa-director run died on the usage limit with no report, QA relaunched.
+- 2026-11-20 07:31: QA FAIL (B1: cam advice clashed with locked 'a few solo cams' rule) plus 6 notes; all fixed, docx rebuilt, slop clean, sent for QA recheck.
+- 2026-11-20 07:32: STEP 3 COMPLETE. QA recheck PASS WITH NOTES (last note fixed), docx rebuilt, phase E done (lessons, agent-runs, jarvis-delegation, TASKS). Committed locally, not pushed.

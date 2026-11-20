@@ -14,3 +14,6 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 
 ## Lessons
 - 2026-11-19 | Re-signoff found studio-director.md still said "Not yours" for WWD; reworded to "Not your gate": wwd-director owns WWD, the editing department does the prep job, studio-director neither gates nor logs it | evidence: readiness pass re-signoff 2026-11-19 | NEW
+- 2026-11-20 | Space YouTube caption pulls at 40 s or more; 429s began after about 8 pulls and two retries 3 minutes apart still failed, so pick 2 or 3 spare sources up front and log blocked ones honestly | evidence: Post-Production\research\editing-study\sources.md (17 of 19 pulled) | NEW
+- 2026-11-20 | Grep the venture's STANDARDS.md and the owning bench's spec before calling something a missing target; send every draft through head-editor before QA (its notes caught the loudness standard, a recipe that would ghost the hosts through a poster, and two rule clashes) | evidence: head-editor notes 2026-11-20 on Post-Production\reports\Zac-Style-Sheet-2026-11-19.md | NEW
+- 2026-11-20 | Read the full locked-rule list (WWD\STANDARDS.md items 1 to 12) before proposing any pacing rule; 'cut to solo cam on every long turn' broke the locked 'a few solo cams, only on a good point' rule and failed QA | evidence: logs\qa\2026-11-20-zac-style-sheet.md B1 | NEW

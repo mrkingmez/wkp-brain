@@ -11,3 +11,5 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 
 ## Lessons
 - 2026-11-19 | In Bash heredocs run Python from a script file, since inline backslash patterns collapse and broke my first path check | evidence: readiness pass QA, first pc.py attempt | NEW
+- 2026-11-20 | Check a style or workflow doc against the "few solo cams, not every long turn" rule in WWD CLAUDE.md before passing, since a sheet can claim locked rules win and still omit one | evidence: logs\qa\2026-11-20-zac-style-sheet.md B1 | NEW
+- 2026-11-20 | On a recheck, grep the docx text for the removed phrasing as well as reading the md, since the docx is what Zac prints | evidence: style sheet recheck | NEW

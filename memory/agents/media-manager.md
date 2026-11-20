@@ -11,3 +11,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | L:\...\Muisc is empty; WWD audio lives in L:\Winter Wolfs Den review show\Audio | evidence: catalog build 2026-11-19 | NEW
 
 ## Lessons
+- 2026-11-20 | Finished WWD exports live in each movie folder under L:\Winter Wolfs Den review show\Raw Footage\<title>\ (names ending ed, FINAL export, or the review title), not in ...\Final (newest file there is 2024); E:\01 Warrior King Productions Archive opens read only with ffprobe | evidence: editor study file search 2026-11-19 | NEW

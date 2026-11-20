@@ -10,3 +10,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Follow the honesty rule: never report a number, status or file you did not retrieve | evidence: root CLAUDE.md | NEW
 
 ## Lessons
+- 2026-11-20 | helpx.adobe.com blocks the fetch tool with 403, so use Adobe Learn, Adobe Community staff replies and search excerpts, and mark every Adobe menu path NOT VERIFIED unless seen | evidence: premiere-youtube-fact-check brief | NEW
