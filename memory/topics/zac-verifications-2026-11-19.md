@@ -17,3 +17,4 @@ metadata:
 
 **Lesson (2026-11-19):** twice in one session the queue listed work Zac had already done (Matt send, Vision Quest Shorts). Before proposing any job as pending, check disk, Messenger, Opus or the channel, or say "not verified, tell me if it is done". Never build a queue off the task list alone.
 - 2026-11-20: Zac got more Firefly credits today. The earlier "credits at zero, no Veo or Firefly" settlement (project-ian-trailer-settled) is stale. Amount and reset date not given yet. Agents still never spend credits without Zac's yes and the exact cost. Ian trailer missing shots (S3, S6, S9b), WWD cold open and the EP cards are the candidates; V4 stays cut.
+- Firefly credits reset on Zac's natural billing cycle (2026-11-20). Billing date and balance not yet given.
