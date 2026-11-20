@@ -18,3 +18,5 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Order the editing department's PREP stringout after the run sheet passes lint | evidence: SOP-Editing-Department 2026-11-19 | NEW
 
 ## Lessons
+
+- 2026-11-20 (Zac correction): Zac's Wednesday 2026-11-18 command to send upload packages and Shorts to Google Drive (N:) was never written down, so nothing copied. Rule now in SOP-Output-Locations-and-Formats.md and LOCAL-PATHS.md. Final step of every review: mirror to N:\My Drive\01 Warrior King Productions\WWD\Upload Packages\<Movie>\ and verify the files open. When Zac gives a standing command, write it to the right file the same turn.

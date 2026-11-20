@@ -190,3 +190,7 @@ wkd delivery     D:\04 New Warrior King Designs\_Print Exports
 
 
 
+
+## Google Drive mirror (Zac 2026-11-18 command, recorded 2026-11-20)
+google drive (Drive for desktop) = N:\My Drive   (mapped as N:)
+wwd upload packages mirror = N:\My Drive\01 Warrior King Productions\WWD\Upload Packages\<Movie>\  (docx packages plus a shorts\ subfolder with the finished Shorts videos, covers and captions docx)

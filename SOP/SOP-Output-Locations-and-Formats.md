@@ -79,3 +79,6 @@ Zac's complaint that started this: "formats changing, saving stuff to new places
 
 In use: Asset Placement Run Sheets, WWD Upload Packages, WWD Shorts Copy, Music Prompts, FrostCast, Review Prep, Monday Brief, Ian Book Trailer, System Reset (created 2026-11-19), and one folder per Zac-named report type. Planned, created on first use: Saturday Wrap (and `reports\saturday\`), and `D:\WKP\WKP-CHANNEL\reports\`.
 Near-duplicates found 2026-11-19 (left in place, nothing moved, new files follow the rule above): `Ian Book Trailer Draft 3` (new Ian files go to `Ian Book Trailer`), `Godzilla Minus Zero` (per-title folder, new WWD files go to their type folder), `WWD Social Captions` (new files go to `WWD Shorts Copy`).
+
+## Drive mirror rule (Zac gave this command Wednesday 2026-11-18, it was never written down, recorded 2026-11-20)
+Every WWD review's finished upload package .docx, Shorts titles and captions .docx, and the finished Shorts videos with covers are COPIED (never moved) to `N:\My Drive\01 Warrior King Productions\WWD\Upload Packages\<Movie>\` with Shorts in a `shorts\` subfolder, as the last step of the review workflow. The D:\WKP Reports and L: copies stay the source. Operational repo files never go to Drive (root CLAUDE.md rule stays). Copy with `cp -n` or robocopy, no overwrite of Zac's edits.
