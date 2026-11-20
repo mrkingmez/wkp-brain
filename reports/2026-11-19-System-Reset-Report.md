@@ -1,107 +1,70 @@
-# System Reset Report, 19 November 2026
+# System Reset Report, 19 November 2026 (FINAL)
 
-Short version: the agents were not broken one at a time. The system around them was. Rules lived in four places that disagreed, almost no agent read memory, and the WWD chain started too late. All of that is fixed. Nothing was spent, posted or pushed.
+Short version: the system is ready for the next session. Two passes ran today: the reset, then a readiness pass that closed every open item and rechecked the reset. Nothing was spent, posted or pushed. The first version of this report is kept as `D:\WKP Reports\System Reset\2026-11-19 - System Reset Report.docx`.
 
-## 1. Your questions, answered
-
-| Question | Answer |
-|---|---|
-| Does the music agent have a research partner? | **It did not. Now it does.** New bench `music-researcher` checks tool terms, licenses, free libraries and reference tempos for it. |
-| Does he know the music we have? | **Only partly before, yes now.** He had a raw file list and missed the channel theme on L:. Your A Knight's Tale run sheet said "intro/outro music not found." There is now a music catalog of 5,450 owned audio files, with lengths. He reads it first on every job. |
-| Can he create his own music? | **No, and nothing here can.** He writes prompts for Suno and ElevenLabs. He can also cut stings and outros from music you own, for free. A new generation costs credits, so it needs your yes, and he always hands you a free fallback cut. |
-| Do the editor and assistant editor help WWD? | **They did not. Now they do.** The old spec told them WWD was off limits. Now every review gets a prep job from them. You still make the cut. |
-| Can the editor practice on WWD stuff? | **Yes, and it already has.** A Knight's Tale has a prep stringout ready to drop on V2 (details in section 3). |
-| Why was A Knight's Tale slow? | **The agents were not the slow part.** Their prep took about 48 minutes. Three things slowed you down. The chain only started after your edited transcript came in. The clip rule changed in the middle of the job, so the clips were cut twice. And you had to place all 49 stops by hand. |
-| Is there memory for everyone? | **There was not, and now there is.** Before today, only 1 of 62 agents was told to read memory. Now every agent has its own lessons file. It reads that before each job and writes a new lesson after. |
-
-## 2. What was there (the problems)
+## 1. What was there
 
 | Problem | Evidence |
 |---|---|
 | Agents started every job cold | Only 1 of 62 specs mentioned `memory\MEMORY.md`. The learning loop pointed at `memory\topics\lessons\`, which never existed. |
-| Old rules outlived your corrections | `WWD\STANDARDS.md` still said 4 s clips and a 30 s cap after you changed it. The 6 s intro rule lived only in a memory file. |
-| Files saved to different places | 15 path and format conflicts were found. Examples: run sheets named "Image Placement" vs "Edit Run Sheet". Root CLAUDE.md still said deliverables go to L:. Upload packages had two .md copies. Shorts captions had two homes. |
-| WWD prep waited on the edit | The chain began only once your edited transcript existed. Vision Quest EP 8 sat about 46 hours between transcript and run sheet. |
-| Editing department idle on WWD | The specs told head-editor and assistant-editor that WWD "is not yours." |
-| Stale status lines | 14 specs said "loads next session" even though they were already live. |
-| Specs point to missing files | Seven paths in five specs do not exist, for example `SciFi-Novel\` (the real folder is `SCI-FI Novel`) and `Shattered-Empire\world-bible.md`. Each is logged as a lesson for its owner. |
-| Logging uneven | WWD benches and music wrote only to the WWD log. The root rule says every agent also gets a row in the ledger. |
+| Old rules outlived your corrections | `WWD\STANDARDS.md` still said 4 s clips and a 30 s cap. The 6 s intro rule lived only in a memory file. |
+| Files saved to different places | 15 path and format conflicts, for example "Image Placement" vs "Edit Run Sheet" and two homes for shorts captions. |
+| WWD prep waited on the edit | Vision Quest EP 8 sat about 46 hours between transcript and run sheet. |
+| Editing department idle on WWD | head-editor and assistant-editor specs said WWD "is not yours". |
+| Music did not know the owned tracks | The A Knight's Tale run sheet said intro and outro music "not found". The channel theme was on L: all along. |
+| Specs pointed at files that did not exist | A fresh script found 41 real misses in 134 spec and skill files, for example `SciFi-Novel\` (real folder `SCI-FI Novel`), `Watershed-SOP-v3.md` (renamed `WhatIf-SOP-v3.md`), `Shattered-Empire\world-bible.md`. |
+| Decision queue clogged | 30 rows still said OPEN, most already answered by you or stale. |
 
-## 3. What changed
+## 2. What changed
 
-**New files**
-- `D:\WKP\SOP\`: six SOPs.
-  - Master workflow
-  - Output locations and formats, one table plus 15 conflict rulings
-  - Agent memory and learning
-  - WWD review workflow
-  - Editing department
-  - Music department
-- `D:\WKP\memory\agents\`: one lessons file for each of the 63 agents. Each is seeded from your corrections and locked rules.
-- `.claude\agents\music-researcher.md`: the new music research bench.
-- `data\assets\music-catalog.md` and `.csv`, plus the script that rebuilds them, `.claude\skills\media-manager\scripts\build_music_catalog.py`. The script is read-only on P: and L:.
-- A Knight's Tale prep:
-  - Stringout: `L:\Winter Wolfs Den review show\Raw Footage\A Knights tale\prep\A-Knights-Tale-PREP-Stringout-v1.mp4` (36:37, 30 fps, silent, 31 pictures and 5 clips at their run-sheet times).
-  - Plan: `WWD\reports\A-Knights-Tale-Prep-Assembly-Plan.md`, with head-editor notes.
-  - Sound plan copied to `WWD\reports\A-Knights-Tale-Sound-Plan.md`.
+**Pass 1, the reset**
+- Six SOPs in `D:\WKP\SOP\`: master workflow, output locations and formats, agent memory and learning, WWD review workflow, editing department, music department.
+- One lessons file per agent in `memory\agents\` (63). Every spec now reads its lessons file before a job and writes one lesson after.
+- New bench `music-researcher`. Owned music catalog `data\assets\music-catalog.md` and `.csv` with 5,450 files.
+- The editing department now does a WWD prep job on every review. You still make the cut.
+- Stale rules fixed (clip rule 6 to 8 s, 12 s max; shorts count; deliverables path).
+- A Knight's Tale prep stringout v1 built for V2.
 
-**Edited**
-- Every agent spec (62) now has a "Memory and learning" section, and 14 status lines were set to LIVE.
-- `music.md` now has:
-  - the research partner
-  - the catalog as the first thing he reads
-  - a plain "can and cannot make" section
-  - the 6 s intro cap
-  - "owned, license unproven" wording for files with no license proof
-  - ledger logging
-- `assistant-editor.md`, `head-editor.md`, `media-manager.md` and `studio-director.md` now carry the WWD prep job rule.
-- `wwd-director.md`:
-  - A reset section: start early, order music and kit at intake, pull clip stock the day after recording, order the prep job.
-  - The dead older chain was removed.
-  - The no-raw-transcript lock stays in place.
-- `WWD\STANDARDS.md`: clip rule is now 6 to 8 s, 12 s max.
-- `WWD\CLAUDE.md`: shorts count fixed, SOP pointer added.
-- Root `CLAUDE.md`: deliverables line fixed, SOPs section added.
-- `wwd-review-photo-pull\SKILL.md`: the "Image Placement" doc and the "lean on Cross Dissolve" line are gone.
-- `wwd-audio-cut\SKILL.md`: the cut doc now gets a .docx too.
-- `AGENT-NETWORK.md`: lessons path, spec-edit rule, music bench, and the new additions.
-- `memory\MEMORY.md`: one pointer line.
-- `memory\topics\wwd-skill-formats.md`: the captions line.
-- `_spec\music-reference.md`.
-- `TASKS.md` (A Knight's Tale row plus four new rows), `logs\agent-runs.md`, `logs\jarvis-delegation.md`.
+**Pass 2, the readiness pass**
+- **Spec paths:** new script `.claude\skills\wkp-system-check\scripts\spec_paths_check.py` checks every path in every spec and skill. 1,055 paths: all exist, except 9 known with a written reason (examples, download targets, a kill-switch file). 9 path fixes, 14 missing homes made, each with a header saying what it is for. The Shattered Empire `world-bible.md` and `characters.md` are pointer stubs to your real canon folder. They hold no canon.
+- **Frontmatter:** new `spec_frontmatter_check.py`. All 63 specs pass. All 63 are live in the agent list, music-researcher included. 7 agents have no tools line on purpose, which gives them every tool.
+- **A Knight's Tale stringout:** qa-media checked all 36 picture and clip stops, not 3. All 36 land on their run-sheet frame and match their source. 1920x1080, 30 fps, H.264, 36:37, no audio by design. No black or frozen span inside any stop. v1 stands, no v2 needed. Report `WWD\reports\A-Knights-Tale-Stringout-QA-2026-11-19.md`.
+- **End card and Next Up cards:** built free with ffmpeg and Pillow, no credits, not a fallback. All are in `P:\WWD Kit\Cards\`:
+  - `End Card - A Knights Tale` (12 s, .mp4, .mov, .png)
+  - `Next Up - Percy Jackson Season 3` (6 s)
+  - A generic `Next Up - Next Review` (6 s). Use it if the next review is not Percy Jackson, because the hosts did not name one on the recording.
+- **Sign-off notes fixed:** studio-director's WWD row, marketing-director's writing order, documentary-editor routes creative calls to wkp-channel-director, music's catalog line, wwd-director's old "email step" line, and the photo-pull skill now only flags calendar entries.
+- **Decisions:** ORG-2026-11-17-01 closed, because the loop is now live for every agent. POST-2026-11-16-01 to 03 closed in your 11/17 words. Every other row triaged into `reports\2026-11-19-Decisions-Triage.md`.
+- **TASKS.md:** refreshed to 11/19. The EP 121 chain was checked on disk and is all done except the Messenger send to Matt. That send is staged as the first job next session.
+- **Session start:** new `SOP\SOP-Session-Start-Checklist.md`. A dry run was done today. The system check was saved to `logs\system-check\2026-11-19.md`: YELLOW, no RED.
+- **Learning loop proven:** music's lessons file has the owned-tracks lesson, and `music.md` line 95 tells it to read that file first. The editors' WWD-scope lesson was missing from both editor files and was added. `assistant-editor.md` line 83 and `head-editor.md` line 105 tell them to read it.
 
-**How learning works now**
-1. Before every job, an agent reads its lessons file.
-2. After every job, it writes one lesson.
-3. When you correct something, it is written down as a lesson the same turn.
-4. If an agent makes the same mistake twice, its director fixes that agent's spec the same day. This does not come to you.
+## 3. Sign-off (rerun against the final SOPs and specs)
 
-## 4. Sign-off: is everyone happy?
+| Agent | First verdict | Rerun verdict | Notes from the rerun | Fixed? |
+|---|---|---|---|---|
+| wwd-director | AGREE WITH CHANGES | AGREE WITH NOTES | All 5 objections fixed. It flagged the old "email step" line and the photo-pull skill still writing calendar entries | Both fixed. The two skills it thought were missing are real synced skills |
+| studio-director | AGREE WITH CHANGES | AGREE WITH NOTES | All 3 fixed. One "Not yours" line was left, and its lessons file had no reset lesson | Both fixed |
+| music | AGREE WITH CHANGES | AGREE WITH NOTES | All 4 fixed (loudness is measured per pick, not stored in the catalog). It asked for a plain "you know the owned tracks" line | Added |
+| wkp-channel-director | AGREE WITH CHANGES | AGREE WITH NOTES | All 4 fixed. documentary-editor sent creative calls straight to you | Now routed through wkp-channel-director |
+| marketing-director | AGREE WITH CHANGES | AGREE WITH NOTES | Both fixed. A review-gates line did not name the writing room | Fixed |
+| qa-director | PASS WITH NOTES | PASS WITH NOTES | Both check scripts exit 0. Catalog: 5,450 in the header and 5,450 in the csv. The stubs hold no canon. Nothing was wrongly closed or sent to you. Some stale TASKS lines | TASKS lines and the root CLAUDE.md SOP list fixed. Lesson labels left as written |
 
-| Agent | Verdict | Objections | Resolved? |
-|---|---|---|---|
-| qa-director | PASS WITH NOTES | 2 folders listed as "in use" do not exist yet; "revise in place" clashed with dated versions of recurring reports; seeded lessons marked CONFIRMED come from locked rules, not from new statements by you | First two fixed: folders marked "planned", and revise-in-place is scoped to working docs. The third is noted here. |
-| wwd-director | AGREE WITH CHANGES | Calendar entries must be a flag plus a check that they exist; the skill must not hand-write copy; the audio-cut .docx should not need backfill; the FrostCast Messenger step was missing; the old chain was still in its spec | All 5 fixed |
-| studio-director | AGREE WITH CHANGES | Its own spec still said WWD was off limits; prep needed a time budget; logging needed to be stated | All 3 fixed. Studio jobs win when they collide with WWD prep. |
-| music | AGREE WITH CHANGES | The catalog has no loudness; the Adobe and Storyblocks licenses are unproven; 352 junk Mac files were counted; the researcher needed web fetch | All 4 fixed. Junk removed, count is now 5,450. |
-| wkp-channel-director | AGREE WITH CHANGES | No row for its log; it approves documentary plans first; creative calls should go through it first; rows needed for research, scripts and art prompts | All 4 fixed |
-| marketing-director | AGREE WITH CHANGES | The SOP had the writing order backwards (marketing writes the brief, then the writing room writes); the Opus copy row had no gates | All fixed, and a lesson was added to its file |
+**QA note:** the seeded lessons marked CONFIRMED came from locked rules and existing memory files, not from new statements by you. QA read 14 of the 63 files line by line and grepped the rest, and found no invented quotes.
 
-The sign-offs happened before the fixes. I did not run them again after fixing.
+## 4. What still needs you
 
-## 5. What still needs you
+1. **Push to GitHub.** Everything is committed on this machine.
+2. **Delete the A Knight's Tale `_src\` folder** (23.9 MB, `L:\Winter Wolfs Den review show\Raw Footage\A Knights tale\_src\`).
+3. **Run two commands the permission check blocked for agents** (reversible, no money): `Disable-ScheduledTask -TaskName "WKP-daily-brief"` and `robocopy "D:\WKP Reports" "L:\WKP Reports Backup" /E /XO`.
+4. **Optional credit ask:** one ElevenLabs Music generation of the 60 s "Long build" prompt in `reports\music-stomp-clap-prompt-2026-11-19.md`, cut into an intro of 6 s or less and an outro. The cost was not retrieved. A free cut from music you own already exists.
 
-1. **Push to GitHub.** Everything is committed on this machine but not pushed.
-2. **ElevenLabs intro and outro for A Knight's Tale** (decision WWD-2026-11-19-02, already in the queue). It is optional, because a free fallback cut from music you own already exists.
+## 5. What is not verified
 
-That's all. Your edit of A Knight's Tale is the next step in that pipeline. Posting stays with you, as always.
-
-## 6. What I could not verify
-
-- Nobody played or listened to the stringout. Only 3 of its 36 stops were checked by eye.
-- The catalog only knows names, lengths and folders. It does not know mood, loudness or tempo.
-- New agent specs (music-researcher) load at the next session start. Until then, run them through a general-purpose agent.
-- I have not seen a live agent read its lessons file at the start of a job. That needs a new session.
-- QA read only 3 of the 63 lessons files.
-- The `_src\` cleanup in the A Knight's Tale folder (23.9 MB) is still pending, because the delete was blocked by a permission check. I did not move or delete any of your media.
-- The end card and Next Up card for A Knight's Tale are not built yet. They are on the team's list for wwd-vfx.
+- Nobody has heard any audio: the stringout is silent by design, and the new cards' sounds were checked only by level.
+- The Next Up title (Percy Jackson) comes from TASKS.md, not from the recording.
+- Vision Quest EP 8 going live at 10:30 on 11/19 was not checked on YouTube.
+- No live agent has yet been seen reading its lessons file at the start of a job. That needs a new session.
+- 49 of the 63 lessons files were grepped, not read line by line.
+- Why the Monday and Saturday tasks return result 1 is still open. The Monday .docx was made anyway. The Saturday wrap made no file. software-director is staged to find out before Saturday 05:30.
+- The nightly rollup's stored prompt is a cloud routine and was not reached from here. chief-of-staff is staged to fix it.

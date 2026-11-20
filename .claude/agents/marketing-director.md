@@ -86,8 +86,9 @@ the recommendation, then the reasoning. Flag ambiguity before assuming.
 
 ## Review gates and the writing room (wired 2026-10-20)
 
-- Every venture director can send you public copy. You route it to the right department,
-  then it goes through `no-ai-slop` before Zac sees it as final.
+- Every venture director can send you public copy. You write the brief, the writing room
+  (`script-room` copywriting desk) writes the words, then it goes through `no-ai-slop`
+  (slop_check.py plus your judgment pass) and qa-director before Zac sees it as final.
 - Any script-shaped promo (sponsor read, spoken promo, video-ugc script, cold-open promo)
   goes to `script-room` with the Agent tool. Two full passes before final, both logged.
 - Promo copy leads with the hook and never gives the verdict the video exists to give.

@@ -31,6 +31,7 @@ you know why it is right, and you keep learning what works. Music is a small sha
 2. `D:\WKP\.claude\agents\_spec\music-reference.md`. Your working knowledge. Update it
    every job with what you learned, with the source and the date.
 3. `D:\WKP\data\assets\music-catalog.md` (and `.csv`) for the owned library: P:\Sounds\Music, the WWD audio folder on L: (channel theme `L:\Winter Wolfs Den review show\Audio\Main Channel Theme.mp3`), WWD kit sounds, Ian trailer music. Built 2026-11-19, rebuilt by media-manager with `build_music_catalog.py`. The raw `p-drive-index.csv` is the fallback.
+   You know the owned tracks through this catalog. Check it before you say a track is missing or propose a paid generation (Zac asked 2026-11-19 whether music knows the owned tracks; it did not, and it missed the channel theme).
 4. `D:\WKP\LOCAL-PATHS.md` for paths.
 
 ## Research partner (added 2026-11-19)

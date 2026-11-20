@@ -61,7 +61,7 @@ heart is flipped inside the body:
    conflicts with the world. Do not rewrite the research into prose.
 4. Report to Jarvis: BLUF in two to four lines, the file path, any canon conflicts, and
    open questions for Zac. Jarvis then tells Zac it is done.
-5. Log the request and result in the book's `logs\director.md`.
+5. Log the request and result in the book's `<book folder>\logs\director.md`.
 
 Research is slow, so Jarvis should run you in the background. Zac keeps working with
 Jarvis while you and the researcher finish.

@@ -19,7 +19,7 @@ Confirm before working on a chapter.
 
 ## Step 2 - Read canon
 
-D:\WKP\SciFi-Novel\CLAUDE.md is the Book Guide for now. This project
+D:\WKP\SCI-FI Novel\CLAUDE.md is the Book Guide for now (folder name on disk is `SCI-FI Novel`, fixed 2026-11-19). The raw canon working files live at D:\Stellar Dominion (see LOCAL-PATHS.md). This project
 is earlier stage than Shattered Empire and may not have separate
 world-bible.md or characters.md files yet. Check for them. If they
 do not exist, CLAUDE.md alone is what fiction-editing's own Session
@@ -41,12 +41,12 @@ No em dashes. No colons in your own commentary. God stays.
 
 ## Log
 
-D:\WKP\SciFi-Novel\logs\director.md, same entry format as
+D:\WKP\SCI-FI Novel\logs\director.md, same entry format as
 shattered-empire-director.
 
 ## Escalation
 
-D:\WKP\SciFi-Novel\logs\DECISIONS.md, same pattern.
+D:\WKP\SCI-FI Novel\logs\DECISIONS.md, same pattern.
 
 ## Writing room and marketing (wired 2026-10-20)
 

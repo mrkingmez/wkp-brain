@@ -540,7 +540,9 @@ def sec_repo(repo):
         add(YELLOW, "Repo hygiene", "%d large untracked file(s) that would be committed by 'git add -A' (e.g. %s)" % (len(big), big[0][1]))
     # secrets-shaped filenames tracked
     rc, out, err = git(repo, "ls-files")
-    risky = [f for f in out.splitlines() if re.search(r"(^|/)(\.env|.*secret.*|.*credentials.*|.*\.pem|.*\.key)$", f, re.I)]
+    # Known false positive, checked by hand 2026-11-19: a story-spoiler note (Ian trailer plot), no credentials.
+    not_secrets = {"memory/project-ian-trailer-secret.md"}
+    risky = [f for f in out.splitlines() if re.search(r"(^|/)(\.env|.*secret.*|.*credentials.*|.*\.pem|.*\.key)$", f, re.I) and f not in not_secrets]
     L.append("Tracked files with secret-shaped names: %d" % len(risky))
     for f in risky[:5]:
         L.append("  - %s" % f)

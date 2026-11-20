@@ -93,7 +93,7 @@ Tested result: scenes back to the original, zero TEST_ objects or meshes, `bpy.d
 - Enum reads under-report (engine example above). Use try/except to discover.
 - `bpy.ops.object.transform_apply` on multi-user mesh data fails; use `isolate_users=True` (argument confirmed in 5.2.4) or `make_single_user` first.
 - The Skin modifier's per-vertex data is `mesh.skin_vertices[0].data[i]` (radius, use_root, use_loose), not an attribute named skin.
-- Rigify is bundled (`scripts/addons_core/rigify`) but enabling it in a background run raised a preferences KeyError; enable via the GUI add-ons panel. `pose.rigify_generate` exists once enabled.
+- Rigify is bundled (`C:\Blender\5.2.4\5.2\scripts\addons_core\rigify`) but enabling it in a background run raised a preferences KeyError; enable via the GUI add-ons panel. `pose.rigify_generate` exists once enabled.
 - Cycles `compute_device_type` enum read empty in background; read it in the live session before assuming OptiX. Zac's machine has an RTX 5060 and Cycles OptiX was configured earlier (TASKS.md 2026-10-31). Setting it: `prefs = bpy.context.preferences.addons['cycles'].preferences; prefs.compute_device_type = 'OPTIX'; prefs.get_devices()` then enable each device (UNVERIFIED sequence in 5.2.4). This is a user preference, so ask Zac before changing it.
 - Importing assets changes the file. Do it in your own scene or collection and name-prefix.
 - Huge prints get truncated or cost tokens: print counts and short lists.

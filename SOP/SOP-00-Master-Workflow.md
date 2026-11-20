@@ -15,6 +15,7 @@ The decisions behind the rules still live in CLAUDE.md files (routing rule uncha
 | SOP-WWD-Review-Workflow.md | A WWD review start to finish (A Knight's Tale is the model) |
 | SOP-Editing-Department.md | head-editor, assistant-editor, media-manager, documentary-editor, WWD prep jobs |
 | SOP-Music-Department.md | music, music-researcher, owned catalog, what can and cannot be made for free |
+| SOP-Session-Start-Checklist.md | What Jarvis reads and checks at the start of every session, plus staged jobs (added 2026-11-19) |
 
 ## The chain (locked 2026-11-10, restated)
 

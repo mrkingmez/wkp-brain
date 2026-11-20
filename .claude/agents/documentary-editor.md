@@ -52,7 +52,7 @@ When asked, build a rough assembly with ffmpeg from files on disk (contain and f
 1. Read the brief, the approved script (two writing room passes logged) and the fact-research brief. If any is missing, say so and stop that part.
 2. Ask **media-manager** for owned assets and paths. Ask **fact-research** or **mil-research** for any missing fact. Ask **graphic-design** for maps and art prompts.
 3. Build the plan. Self-check: every narration line has a picture, total runtime against target, no repeated picture, every media row has a source and license note, every on-screen fact traces to a research brief.
-4. Hand the plan (and rough assembly if built) to **head-editor** for notes (pacing, structure, grade direction). Apply clear fixes. Creative calls go to Zac with the options and your pick.
+4. Hand the plan (and rough assembly if built) to **head-editor** for notes (pacing, structure, grade direction). Apply clear fixes. Creative calls go to **wkp-channel-director** first with the options and your pick (SOP-Editing-Department), and it brings anything only Zac can decide to Zac.
 5. Send maps, titles, lower thirds, charts and end cards to **motion-graphics**, sound to **sound-designer**, any 3D or composite to **vfx-compositor** or **animation-director**. Direct handoffs, AGENT-NETWORK.md protocol.
 6. Return through **studio-director**. Every deliverable runs through **qa-director** before it reaches Zac. Then Zac.
 

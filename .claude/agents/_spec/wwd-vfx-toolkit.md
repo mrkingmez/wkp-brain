@@ -159,7 +159,7 @@ Provenance warning: files named YTDown.com_YouTube_* (5 mp4 in Sound FX, 1 in St
 | Adobe Creative Cloud | 6.10.0.252 | |
 | DaVinci Resolve | 20.2.3.6 (registry 20.2.30006), Blackmagic RAW 5.1 | C:\Program Files\Blackmagic Design\DaVinci Resolve |
 | Cinema 4D | 2026.3.1, 2025.3.3, 2024, 2023, S22, R25, R21 | C:\Program Files\Maxon Cinema 4D <year> (2026 folder has Cinema 4D.exe and c4dpy.exe) |
-| Blender | 2.93 (old) | C:\Program Files\Blender Foundation\Blender 2.93 |
+| Blender | 2.93 (old) | Not found on disk 2026-11-19 (the old Blender 2.93 install folder under Program Files is gone). Current Blender: C:\Blender\5.2.4\blender.exe |
 | Red Giant | Magic Bullet Suite, Magic Bullet Looks, Neutrino 1.4 | C:\Program Files\Red Giant |
 | OBS Studio | exe says 29.1.3, registry says 28.0.1 (mismatch, unresolved) | C:\Program Files\obs-studio |
 | VLC | 3.0.23 | |

@@ -105,7 +105,7 @@ Decision: final render in Blender (offline) means hair curves plus geometry node
 
 ## 9. Rigging basics
 
-- Rigify: VERIFIED present in 5.2.4 at `scripts/addons_core/rigify`, bundled. Enabling it in a background run threw a preferences KeyError (a headless quirk; enable in the GUI via Preferences > Add-ons, UNVERIFIED in GUI). Once enabled the operators `object.armature_human_metarig_add` and `pose.rigify_generate` exist (VERIFIED). Rigify provides human and basic animal metarigs (Rigify 'Basic Quadruped' is the nearest for wolf; UNVERIFIED which metarigs ship in 5.2).
+- Rigify: VERIFIED present in 5.2.4 at `C:\Blender\5.2.4\5.2\scripts\addons_core\rigify`, bundled. Enabling it in a background run threw a preferences KeyError (a headless quirk; enable in the GUI via Preferences > Add-ons, UNVERIFIED in GUI). Once enabled the operators `object.armature_human_metarig_add` and `pose.rigify_generate` exist (VERIFIED). Rigify provides human and basic animal metarigs (Rigify 'Basic Quadruped' is the nearest for wolf; UNVERIFIED which metarigs ship in 5.2).
 - Manual armature: bones along the real joint centres (knee/elbow bent slightly in rest pose so IK knows the bend direction), root bone at the world origin, a clean parent chain: root > pelvis > spine > chest > neck > head, root > pelvis > thigh > shin > foot > toe.
 - FK for arms and tails (natural overlap); IK for legs and planted feet; pole targets in front of the knee. Add IK constraint chain length 2 on the shin, with a pole target.
 - Naming: `Name_L` / `Name_R` or `.L` / `.R` (Blender mirrors with `.L`/`.R`).

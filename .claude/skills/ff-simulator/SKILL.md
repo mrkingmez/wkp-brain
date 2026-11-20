@@ -46,7 +46,7 @@ Personal use, decision support only. Never submits anything.
 
 ## Standing weekly doc format (Zac, relayed by Jarvis 2026-11-12)
 One doc a week: `D:\WKP Reports\Fantasy Football\YYYY-MM-DD - Week N Picks and Lineup.docx` (md in `Fantasy-Football\reports\`).
-Same layout every week, model file `reports\Week10-Picks-and-Lineup-2026-11-12-thu-v2.md`: what changed on top in 5 lines or fewer,
+Same layout every week, model file `Fantasy-Football\reports\Week10-Picks-and-Lineup-2026-11-12-thu-v2.md`: what changed on top in 5 lines or fewer,
 the saved-lineup screenshot line, MFL swaps table, lineup table with a status on every name, close calls, before-lock checklist,
 20 numbered picks with labels and the market now, tiebreaker, straight-up list, weather flags, not available list.
 A rerun is a new version (v2, v3) with a changed-since-last-run note on top. Plain words, no em dashes.

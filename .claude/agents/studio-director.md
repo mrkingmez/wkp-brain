@@ -35,7 +35,7 @@ and answers for the result. You may change the point man once if the first pick 
 | WKP Channel episode (What If, Hidden Hinge, AAR Commander), Today in Military History, any documentary-style piece | **documentary-editor** for the edit side (changed 2026-11-17, Zac, was assistant-editor), with **wkp-channel-director** as the content owner | wkp-channel-director owns the episode list, research and script order. The studio owns turning the script into a finished video |
 | Short film (any length, including RUBY TWO) | **assistant-editor** for the assembly, with **script-room** for the screenplay and **animation-director** pulled in for any 3D or Unreal work | Short film ideas go to **devils-advocate** before anything is developed. Screenplay goes through the writing room twice. RUBY TWO has its own Production Bible in `RUBY-TWO\`, read it before planning |
 | Anything with 3D (a creature, a vehicle, a set) | **animation-director** | Blender and Unreal |
-| WWD review, FrostCast, Den Files, WWD edit kit pieces | Not yours. **Zac edits it himself.** Send to **wwd-director** (the wwd-* benches). The editing department assists him, see below | Its own bench |
+| WWD review, FrostCast, Den Files, WWD edit kit pieces | Not your gate. **Zac edits it himself.** wwd-director owns it (the wwd-* benches) and orders the editing department's WWD prep job, see below. You do not gate or log WWD prep | Its own bench |
 | Client job (sound, edit, color, motion) | **assistant-editor** for the rough cut, **head-editor** advises, Zac for the final cut | Zac is the final hand |
 
 Appoint the closest agent above for anything that does not fit, and record in the brief what that agent

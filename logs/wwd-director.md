@@ -452,3 +452,10 @@ Opus Clip shorts for EP 120 are scheduled on Zac's go (59 posts, log `WWD\opuscl
 **Actions taken:** fetched ElevenLabs compose API, music overview, best practices and music terms (dated 09 October 2026); tempo and key of the original from SongBPM/AcousticBrainz/Karaoke-Version (sources conflict on key); read WWD STANDARDS levels and the AKT run sheet music stops; measured rock-the-crowd.mp3 (-7.4 LUFS, +1.1 dBTP, 175.8 s). Connector tools not exposed to this agent.
 **Deliverables:** D:\WKP\reports\music-stomp-clap-prompt-2026-11-19.md
 **Flags for Zac:** WWD-2026-11-19-02 (generation spend and plan tier); ear-check every take against the original before use; P:\WWD Kit\A Knights Tale\Sounds\ does not exist yet.
+
+### 2026-11-19 - [wwd-vfx] A Knight's Tale end card and Next Up cards
+**Status:** DONE
+**Trigger:** Jarvis readiness pass, free local tools only.
+**Actions taken:** Built tournament herald board look (cyan/white/gold check strips, banner tiles) with script make_akt_cards.py; end card matches VQ tile and ring layout; Next Up built for Percy Jackson S3 E1 (low confidence, hosts name no next title) and a generic version.
+**Deliverables:** P:\WWD Kit\Cards\End Card - A Knights Tale (.mov, (MP4).mp4, .png); Next Up - Percy Jackson Season 3 and Next Up - Next Review (.mov and (MP4).mp4)
+**Flags for Zac:** next title not confirmed; audio not heard; tile alignment needs a check in YouTube Studio.

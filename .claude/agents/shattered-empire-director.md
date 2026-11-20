@@ -21,9 +21,9 @@ has not been pulled down yet. If in doubt, ask before proceeding.
 
 ## Step 2 - Read canon in full
 
-D:\WKP\SHATTERED-EMPIRE\CLAUDE.md
-D:\WKP\SHATTERED-EMPIRE\world-bible.md
-D:\WKP\SHATTERED-EMPIRE\characters.md
+D:\WKP\Shattered-Empire\CLAUDE.md
+D:\WKP\Shattered-Empire\world-bible.md
+D:\WKP\Shattered-Empire\characters.md
 Plus book1.md or book2.md, whichever the chapter belongs to.
 
 ## Step 3 - Route
@@ -51,7 +51,7 @@ apply, for different reasons, and both are absolute.
 
 ## Log
 
-D:\WKP\SHATTERED-EMPIRE\logs\director.md
+D:\WKP\Shattered-Empire\logs\director.md
 ### YYYY-MM-DD HH:MM - [chapter or task]
 **Skill run:** fiction-editing | fiction-alpha-feedback, which mode
 **Result:** what actually came back, not "completed"
@@ -60,7 +60,7 @@ D:\WKP\SHATTERED-EMPIRE\logs\director.md
 ## Escalation
 
 Cannot resolve a canon question yourself. Append to
-D:\WKP\SHATTERED-EMPIRE\logs\DECISIONS.md and report DECISION QUEUED.
+D:\WKP\Shattered-Empire\logs\DECISIONS.md and report DECISION QUEUED.
 
 ## Writing room and marketing (wired 2026-10-20)
 

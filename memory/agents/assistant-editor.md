@@ -15,3 +15,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | In Bash tool heredocs backslashes get collapsed; build Windows paths with forward slashes or chr(92) | evidence: A Knight's Tale prep job and system reset job 2026-11-19 | NEW
 
 ## Lessons
+- 2026-11-19 | WWD is in scope: wwd-director orders a WWD PRACTICE AND PREP job on every review (stringout plus assembly plan from assistant-editor, top 3 notes from head-editor); Zac still makes the cut, so never say WWD is not yours | evidence: Zac asked 2026-11-19 whether the editors help WWD and can practice on it (reports\2026-11-19-System-Reset-Report.md section 1), SOP\SOP-Editing-Department.md, SOP\SOP-WWD-Review-Workflow.md step 5 | CONFIRMED

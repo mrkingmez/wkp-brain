@@ -45,18 +45,21 @@ Zac opens with "we are doing a review on <title>" and gives the recording
 date, filming date, and release date (if he leaves one out, ask in one line).
 Run all of this without further prompting:
 
-1. **Calendar.** Put the dates on the **Winter Wolf's Den** Google Calendar
+1. **Calendar (FLAG ONLY, changed 2026-11-19 per SOP-WWD-Review-Workflow).** Agents
+   do not write calendar entries. Write a CALENDAR NEEDED line in your report with the
+   exact events below; Jarvis adds them and lists the calendar to confirm they exist.
+   Never report an entry as made. The events go on the **Winter Wolf's Den** Google Calendar
    (id `thewinterwolfsden@gmail.com`, not the primary or the WKP one). Follow the
    existing pattern on that calendar: a timed `<Title> - Record Review` event
    (Sunday-night recording convention is 7 to 9 PM ET unless he says a
    different time) and an all-day `<Title> - Review Release` event on the
-   release date. Check `list_events` first so you never double-book an entry.
+   release date. Jarvis checks `list_events` first so nothing is double-booked.
    If the movie's own theatrical-release entry already exists (e.g.
    `Other Mommy - Movie`), leave it alone, it is a different event.
 2. **Folder, photos, resize** - Steps 1 to 7 below, unchanged.
 3. **Delete the originals (Step 7.5).** Only after Step 7 verification passes.
 4. **Report back** with the real count and mix, anything flagged, and the
-   calendar entries made. Then wait for the transcript.
+   CALENDAR NEEDED line (never "entries made"). Then wait for the transcript.
 5. **When Zac hands over the transcript** (he edits first, cutting the
    banter and life talk, so never transcribe or build from the raw recording
    before he says the cut is ready), run Step 8 and hand the placements to

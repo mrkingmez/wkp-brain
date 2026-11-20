@@ -8,8 +8,8 @@ description: Format B. The battle everyone credits versus the lesser
 
 # Hidden Hinge - Format B
 
-Full SOP: D:\WKP\WKP-CHANNEL\Watershed-SOP-v3.md
-Worksheet tab: Watershed-Predictive-Model.xlsx, "Hidden Hinge
+Full SOP: D:\WKP\WKP-CHANNEL\WhatIf-SOP-v3.md ("Watershed" is the retired name, files renamed, path fixed 2026-11-19)
+Worksheet tab: D:\WKP\WKP-CHANNEL\models\WhatIf-Predictive-Model.xlsx, "Hidden Hinge
 Worksheet"
 
 ## What defines this format

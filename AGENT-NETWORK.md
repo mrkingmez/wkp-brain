@@ -113,9 +113,17 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 ## Added 2026-11-19 (system reset)
 
 - **SOPs**: `D:\WKP\SOP\` is the single source for the job chain, output paths and formats, agent memory, the WWD review flow, the editing department and the music department.
-- **music-researcher** (new spec, loads next session start): research bench under music. Tool terms, licenses, free libraries, reference tempos, craft. Updates `_spec\music-reference.md`. music now has the Agent tool to call it.
+- **music-researcher** (LIVE, confirmed in the session agent list 2026-11-19 readiness pass): research bench under music. Tool terms, licenses, free libraries, reference tempos, craft. Updates `_spec\music-reference.md`. music now has the Agent tool to call it.
 - **Editing department and WWD**: assistant-editor takes a WWD PRACTICE AND PREP job on every review when wwd-director orders it (stringout plus assembly plan in the movie folder `prep\`), media-manager supplies the asset list and keeps the music catalog, head-editor gives notes and later compares the prep to Zac's final export. Zac still cuts, wwd-director still owns WWD, the wwd-* benches keep their jobs.
 - **Owned music catalog**: `data\assets\music-catalog.md` plus `.csv`, built by `.claude\skills\media-manager\scripts\build_music_catalog.py` (read-only).
+
+## Added 2026-11-19 (readiness pass)
+
+- **Session start**: Jarvis runs `SOP\SOP-Session-Start-Checklist.md` at the start of every session (reads, checks, staged jobs).
+- **Spec health scripts** in `.claude\skills\wkp-system-check\scripts\`: `spec_paths_check.py` (every path in every spec and skill exists; known exceptions with reasons in `spec_paths_allow.txt`) and `spec_frontmatter_check.py` (name, description, name equals filename; no tools line means all tools, by design). Both exit 0 as of 2026-11-19. Run them after any spec or skill edit.
+- **Count**: 63 agent specs on disk, all 63 in the live agent list (checked 2026-11-19).
+- **Routing fixes**: documentary-editor sends creative calls to wkp-channel-director first; marketing-director writes the brief and script-room's copywriting desk writes the words; wwd-review-photo-pull only FLAGS calendar entries (Jarvis adds and confirms them).
+- **New homes made** (each with a header saying what it is for): `research\channel\premise-bank.md`, `research\facts\`, `research\trading\`, `Investing\research\strategies-tried.md`, `Investing\watch-week\`, `Post-Production\projects\`, `logs\wkp-channel-director.md`, `SCI-FI Novel\logs\` and `alpha-feedback\`, `Shattered-Empire\logs\DECISIONS.md`, `WWD\audio\`. `Shattered-Empire\world-bible.md` and `characters.md` are POINTER STUBS to the real canon in `D:\The Shaterred Empire Series`, never canon themselves.
 
 ## Added 2026-11-17 (org gap audit, specs load next session start)
 

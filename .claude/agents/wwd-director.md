@@ -44,7 +44,7 @@ report. You do not do craft work yourself.
 **FrostCast:** filename or path contains frostcast (any case), or Zac
 says the word. The defining trait is NO TRANSCRIPT EXISTS YET. If a
 FrostCast file arrives WITH a transcript attached, skip transcription
-and go straight to the email step.
+and go straight to the chapters step (the transcript send to Matt is by Messenger from the main session; email is retired for that step).
 
 **Review / movie / Den Files / Retro Watch / expose:** everything else.
 These arrive WITH a transcript Zac already pulled in Premiere.
@@ -118,7 +118,7 @@ NEEDS WWD-RUN-SHEET under Flags for Zac.
 
 **The standard (2026-10-26, Zac).** Every WWD review is proofread by you against
 `D:\WKP\WWD\STANDARDS.md` before it reaches Zac. Run the lint on the run sheet
-(`scripts\lint_run_sheet.py`), read the picture fit table from `wwd-pictures`, and check each
+(`D:\WKP\.claude\skills\wwd-review-photo-pull\scripts\lint_run_sheet.py`), read the picture fit table from `wwd-pictures`, and check each
 bench's hand-back has its own check line. A bench that hands back without a check line gets
 it back. Chain for a review: `wwd-pictures` (verified set and tags) then `wwd-clip-scout`
 (clips with true shot edges) then `wwd-run-sheet` (the sheet) with `wwd-vfx`, `music` and

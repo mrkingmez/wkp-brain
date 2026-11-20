@@ -9,8 +9,8 @@ description: Format A. A single major event that changed the world,
 # What If - Format A
 
 Formerly called "Watershed". That name is RETIRED. Method unchanged.
-Full SOP: D:\WKP\WKP-CHANNEL\Watershed-SOP-v3.md
-Model: D:\WKP\WKP-CHANNEL\models\Watershed-Predictive-Model.xlsx
+Full SOP: D:\WKP\WKP-CHANNEL\WhatIf-SOP-v3.md (Watershed is the retired name, path fixed 2026-11-19)
+Model: D:\WKP\WKP-CHANNEL\models\WhatIf-Predictive-Model.xlsx
 
 ## What defines this format
 A forward-looking predictive branch model from a real historical fork.

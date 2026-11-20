@@ -196,7 +196,7 @@ failed, say "not available" and name what is missing.
 - Paths and interpreters: read LOCAL-PATHS.md. Never hardcode.
 
 ## SOPs (added 2026-11-19, system reset)
-`D:\WKP\SOP\` holds the standard operating procedures: master workflow, output locations and formats, agent memory and learning, WWD review workflow, editing department, music department. Every agent reads the master workflow and the output SOP; if a skill or spec line disagrees, the SOP wins until Zac says otherwise. Per-agent lessons live in `memory\agents\<agent>.md`.
+`D:\WKP\SOP\` holds the standard operating procedures: master workflow, output locations and formats, agent memory and learning, WWD review workflow, editing department, music department, and the session start checklist (Jarvis runs it at every session start, added 2026-11-19). Every agent reads the master workflow and the output SOP; if a skill or spec line disagrees, the SOP wins until Zac says otherwise. Per-agent lessons live in `memory\agents\<agent>.md`.
 
 ## File retention
 Any file produced in a chat gets downloaded to disk the same session it

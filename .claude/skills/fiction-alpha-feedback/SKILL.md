@@ -66,7 +66,7 @@ One worksheet per round, chapters ascending.
 ## Save location
 
 Shattered Empire: D:\WKP\SHATTERED-EMPIRE\alpha-feedback\book[N]-round[N]-worksheet.md
-Sci-Fi: D:\WKP\SciFi-Novel\alpha-feedback\ same pattern
+Sci-Fi: D:\WKP\SCI-FI Novel\alpha-feedback\ same pattern
 
 ## Rules
 

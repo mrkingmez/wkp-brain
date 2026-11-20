@@ -15,3 +15,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Check every show has its end card and Next Up card at intake; A Knight's Tale had neither when the run sheet was built | evidence: logs\wwd-director.md 2026-11-19 | NEW
 
 ## Lessons
+- 2026-11-19 | When the hosts name no next title, build a generic Next Up beside the best guess and say how unsure the guess is; reuse make_arcade_kit.render and the VQ end card tile coordinates so end-screen slots stay identical | evidence: make_akt_cards.py, run sheet Still open 2 | NEW

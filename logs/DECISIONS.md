@@ -546,17 +546,17 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Decision needed:** Draft 3.2 Section 6 says never push in on the cover past 100. The cover opener needs a view-only push toward the car grille (never the toddler) to match clip V2. The artwork file is never changed.
 **Options:** A. Yes, view-only push. B. No, hold the cover and dip to black into V2 (strict fallback in the plan).
 **Recommendation:** A. DECISION QUEUED. Plan: `Post-Production\reports\Ian-Trailer-Asset-Review-and-Cover-Opener-2026-11-16.md` Section 3.
-**Status:** OPEN
+**Status:** CLOSED 2026-11-19 (moot), settled by Zac 2026-11-17 per `memory\project-ian-trailer-settled.md`: "The cover is NOT the trailer opener. It is its own 9:16 Facebook or Instagram story piece: garage door opens, man comes home, the cover comes alive into the man working on the car." No cover push opens the trailer.
 
 ## [POST-2026-11-16-02] 2026-11-16 | Post-Production | Ian trailer: animate the cover artwork by splitting it into layers?
 **Decision needed:** Cutting the car, man and toddler out of the cover to move them alters Ian's cover, singles out the toddler, needs Ian's OK and may need credits.
 **Recommendation:** NO. DECISION QUEUED.
-**Status:** OPEN
+**Status:** CLOSED 2026-11-19, settled by Zac 2026-11-17 per `memory\project-ian-trailer-settled.md`: the cover is its own story piece where "the cover comes alive into the man working on the car", and "No Veo or Firefly credits left. Work from what is on disk." Built as the 9:16 cover story animatic from what is on disk; no credits.
 
 ## [POST-2026-11-16-03] 2026-11-16 | Post-Production | Ian trailer: make wide stills R1w and R5w in Firefly?
 **Decision needed:** R1, R3, R5 are vertical only, 768 px wide. In 16:9 they show as strips. Credit cost per image run NOT RETRIEVED.
 **Recommendation:** Try the blur-sides frame in the rough cut first, decide after Zac sees it. DECISION QUEUED.
-**Status:** OPEN
+**Status:** CLOSED 2026-11-19, settled by Zac 2026-11-17 per `memory\project-ian-trailer-settled.md`: "No Veo or Firefly credits left. Work from what is on disk." No wide stills get made; blur-sides framing is the route.
 
 ## [WWD-2026-11-17-01] 2026-11-17 | market-research | VidIQ go-ahead for the retention pull
 **Decision needed:** Zac's explicit yes to spend VidIQ credits on a fresh WWD pull (per-video retention, traffic sources, outliers, competitor review channels).
@@ -570,7 +570,7 @@ C. Drop the idea for now — slow season, free competition already covers most o
 **Context:** Zac asked for agents that get better each run (2026-11-16, 2026-11-17). Not built: the proposal says it needs his yes. chief-of-staff only lists lessons, it does not start the loop.
 **Options:** A. Pilot on 3 agents (trading-researcher, channel-researcher, one WWD bench). B. Hold. C. Roll to all.
 **Recommendation:** A.
-**Status:** OPEN
+**Status:** CLOSED 2026-11-19. Zac ordered it on 2026-11-19: "formalise everything... agents are supposed to learn." The system reset of 2026-11-19 put the loop in place for ALL agents (option C, not a pilot): one lessons file per agent in `memory\agents\` (63 files), every spec has a "Memory and learning" section (read lessons before a job, write one after), same-mistake-twice rule fixes the spec the same day, protocol in `SOP\SOP-Agent-Memory-and-Learning.md`. Path is `memory\agents\<agent>.md`, not the proposal's `memory\topics\lessons\`.
 
 ## [ORG-2026-11-17-02] 2026-11-17 | org gap audit | Install last30days (and claude-hud)?
 **Decision needed:** Zac said "a hard yes" to last30days on 2026-11-16. Installing runs third-party code, so the install commands in report section A7 need his go. claude-hud is ADOPT in the same report, no yes on record.
@@ -623,3 +623,37 @@ C. Zac extends the deadline.
 **Question:** May the A Knight's Tale intro (12 s) and outro (18 s) be generated in ElevenLabs Music (music_v2_5), and which ElevenLabs plan is Zac on? Free plan cannot download and needs attribution; Starter and up can download, no attribution. Prompts ready in `reports\music-stomp-clap-prompt-2026-11-19.md`.
 **Cost:** credits per generation, exact figure not retrieved. **Blocks:** the new intro and outro only. Owned fallback named in the same file.
 **Status:** OPEN
+
+---
+
+## READINESS PASS 2026-11-19 (Jarvis closing agent): triage of every open row
+
+Rule used: only money, public posting or a preference only Zac holds goes to Zac. Everything else was decided by the owning director or Jarvis and is logged here. Zac's short list: `reports\2026-11-19-Decisions-Triage.md`.
+
+- POST-2026-11-11-01, CS-2026-10-28-01, INFRA-2026-11-11-01, ORG-2026-11-17-02, FF-2026-11-12-01, FF-2026-11-12-02, SW-2026-11-11-01, ANIM-2026-11-05-02 (picks): already closed in their own rows. No change.
+- ORG-2026-11-17-01, POST-2026-11-16-01, -02, -03: CLOSED in their rows today (see above).
+- FF-2026-11-10-01: CLOSED (Zac 2026-11-12, "ignore", batch 3).
+- FF-2026-11-10-03: CLOSED, stale (fantasy-football-director). Week 9 is three weeks past; the DFS comparison keeps the one reconciled lineup (option B). Reopen only if Zac sends the entered lineup.
+- FF-2026-11-11-01, -02, -03: CLOSED (Zac 2026-11-12, batch 2).
+- FF-2026-11-12-03: DECIDED by Zac 2026-11-12, now a task (TASKS Personal, tracker backfill). Not a decision any more.
+- FF-2026-11-10-02: PARKED, not a decision. Notes exist only when the FanDuel lunch happens. Zac mentions it if it does.
+- ETSY-2026-11-02-01: CLOSED. Zac said "put it on pause" 2026-11-12; the cap lapsed 2026-11-15 as scheduled; etsy-director sets a new cap the day a listing batch is planned.
+- WWD-2026-10-27-01: CLOSED, superseded (wwd-director). Vision Quest EP 7 is uploaded and EP 8 is in release; the eps 3 and 4 card and sheet questions are past.
+- PAWS-2026-10-31-01: CLOSED (visibility flag only). PAWS is paused (Zac 2026-11-12); PAWS-001 and PAWS-004 live in `PAWS\decisions\DECISIONS.md`.
+- ANIM-2026-11-02-01: CLOSED (Zac 2026-11-12, batch 3): STANDARDS markup and pipeline add-on parked for the animation restart, port rule is a standing rule.
+- ANIM-2026-11-05-01: CLOSED (Zac 2026-11-12, already gitignored).
+- ANIM-2026-11-13-01: DECIDED A (animation-director): retry H1 captions later, live Blender pass when the MCP link is up, licenses logged before any asset is used, qa-director over the research. Task, no spend.
+- VENTURE-2026-11-03-01: CLOSED. The day-job outside-work check is settled (Zac 2026-11-10, `memory\project-day-job-outside-work-cleared.md`, "do not ask again"). The CMMC kit itself stays On ice in TASKS (market not shown).
+- VENTURE-2026-11-05-01: CLOSED (Zac 2026-11-12, dropped).
+- WWD-2026-11-05-02, -03, -05, -06, -08: CLOSED (Zac 2026-11-12, batch 1). The open action from -02 (Amazon tracking ID) is a TASKS row.
+- WWD-2026-11-05-01: CLOSED as a decision (Matt said yes 2026-11-12). Remaining steps run through marketing-director; the vidIQ signup is Zac's or Matt's account action and any public post is Zac's yes.
+- WWD-2026-11-05-04 (Earn tab half), -07 (Shopping tab) and WWD-2026-11-17-01 option A: MERGED into one free Zac look at YouTube Studio (optional, not blocking). The VidIQ credit pull (option B) stays a money item.
+- TEACHER-2026-11-14-QA-01: CLOSED (Zac answered 2026-11-14: Pro, Mac, real accounts, read-only first).
+- INFRA-2026-11-12-01: DECIDED by Jarvis (reversible, no spend, consistent with Zac retiring the daily brief 2026-11-12): (1) disable the WKP-daily-brief task, (2) additive copy of `D:\WKP Reports` (276 files, 28.5 MB, measured 2026-11-19) to `L:\WKP Reports Backup`, (3) commit locally, push stays Zac's. Steps 1 and 2 were attempted 2026-11-19 and BLOCKED by the permission classifier, not run. Exact commands are on Zac's list. The task is still Ready, last result 1 on 11/19 05:30 (checked).
+- INFRA-2026-11-13-01: DECIDED A (Jarvis): qa-director over the Transcription system and the Teacher index pages next session; the phone test is her call. TASKS rows.
+- INFRA-2026-11-16-01: DECIDED (Jarvis): the Monday Brief 11/16 .docx exists although the task returned 1; the Saturday Wrap 11/14 made no file (its folder did not exist until 2026-11-19). software-director reads the task setup and the skill and reports the cause before Sat 11/21 05:30. TASKS row.
+- INFRA-2026-11-18-01: DECIDED A (Jarvis): the rollup's stored prompt is not on this machine (searched the repo and ~/.claude). chief-of-staff checks the cloud routine list with the schedule skill next session and changes the prompt to "read venture status fresh from root CLAUDE.md each run". Not Zac's.
+- PHOTO-2026-11-19-01: DECIDED by Zac's own rule as written ("by 11/13 or it stops"): Photo restore is STOPPED as of 2026-11-13 and restarts only when Zac says so. One line to Zac, not a question.
+- WWD-2026-11-18-01: DECIDED A (wwd-director): Jarvis runs the Messenger send to Matt as the first job of the next session with the Chrome tool and screenshots "Sent" with the filename. Staged in `SOP\SOP-Session-Start-Checklist.md`.
+- WWD-2026-11-19-01: ON ZAC'S LIST (attorney cost). Does not block the edit.
+- WWD-2026-11-19-02: ON ZAC'S LIST (credits). Note: the prompt file still says a 12 s intro. Zac locked intros at 6 s or less on 2026-11-19 (`memory\feedback-intro-length.md`) and prefers one generation cut into intro and outro, so the ask is ONE ElevenLabs Music generation of the 60 s "Long build" prompt in `reports\music-stomp-clap-prompt-2026-11-19.md`, cut to an intro of 6 s or less and an outro. Credit cost not retrieved. A free owned fallback exists.

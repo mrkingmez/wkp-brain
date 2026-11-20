@@ -13,3 +13,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Ian trailer: no credits, V4 cut, cover is its own story piece, Adobe SFX free, ElevenLabs only with Zac's yes | evidence: memory\project-ian-trailer-settled.md | CONFIRMED
 
 ## Lessons
+- 2026-11-19 | Re-signoff found studio-director.md still said "Not yours" for WWD; reworded to "Not your gate": wwd-director owns WWD, the editing department does the prep job, studio-director neither gates nor logs it | evidence: readiness pass re-signoff 2026-11-19 | NEW

@@ -1,0 +1,11 @@
+# Known path references that are allowed to not exist. One per line: path<TAB>reason. Read by spec_paths_check.py.
+# Every entry needs a reason. Added 2026-11-19 (readiness pass).
+D:\Blender Projects\Crate	worked example in an audit sample, not a real file
+D:\Blender Projects\Plaster	output target of a drill, made when the drill runs
+D:\WKP\assets\animation\	free-asset download target, made on first licensed download; animation-director owns the path
+D:\Unreal Projects\_Incoming\SM_Crate.fbx	worked example in an import walkthrough
+E:\Puzzle	retired E: path, the skill line itself says it is stale (LOCAL-PATHS: E: retired 2026-10-03)
+D:\04	line-wrapped path, real path D:\04 New Warrior King Designs\_Print Exports verified present 2026-11-19
+D:\WKP\data\system-check-fixes.disabled	kill-switch file, must NOT exist unless Zac turns fixes off
+P:\Sounds\Sound FX\Mixkit\	download target, made on first Mixkit download (free, YouTube-cleared)
+L:\Winter	line-wrapped path, real path L:\Winter Wolfs Den review show\Frost-Cast\FrostCast Show docs\Pictures\ verified present 2026-11-19

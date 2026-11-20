@@ -10,3 +10,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Follow the honesty rule: never report a number, status or file you did not retrieve | evidence: root CLAUDE.md | NEW
 
 ## Lessons
+- 2026-11-19 | In Bash heredocs run Python from a script file, since inline backslash patterns collapse and broke my first path check | evidence: readiness pass QA, first pc.py attempt | NEW
