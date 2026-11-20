@@ -663,3 +663,8 @@ Rule used: only money, public posting or a preference only Zac holds goes to Zac
 - WWD-2026-11-19-02: still OPEN as a spend ask, now with the plan facts. ElevenLabs has a free tier, but downloading the music likely needs the $11 package (Starter) (Zac). Not approved. Owned fallback stays in use until Zac says buy.
 - Percy Jackson confirmed as the next Next Up card.
 - Vision Quest EP 8 is live. Shorts and social posts not done yet.
+
+## [WWD-2026-11-19-03] 2026-11-19 | Nightly rollup (from wwd-director log) | A Knight's Tale on-air errors: cut, keep or correct
+**Blocked:** The wwd-director flags list (2026-11-19 21:25 entry) names on-air errors in the transcript (Colville is Prince Edward per fact-research but the hosts disagree, 1999, $244M, "Heelan", "Shannon Lord", runtime "hour and 29") and asks Zac to cut, keep or correct each. Not queued before tonight, so the edit could go out with them.
+**Recommendation:** A. Zac rules each one while he edits (they are his words on air). Per the zero-question rule on-air chat answers are context, but these are facts in a public video. Brief: `D:\WKP\scratch\akt\facts.md`.
+**Status:** OPEN
