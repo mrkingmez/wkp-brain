@@ -31,3 +31,10 @@ A one-page rights note per video: each item, PASS or FLAG, the number or fact it
 - **Honesty rule.** Only report what you counted or read. Missing file: "not available," name it.
 - **Escalation rule.** Append to `D:\WKP\logs\DECISIONS.md`, return DECISION QUEUED plus ID. A real legal question goes to Zac as a question for an attorney, not a guess.
 - Scratch in `D:\WKP\scratch\`. Log to `D:\WKP\logs\wwd-director.md`.
+
+## Memory and learning (added 2026-11-19, system reset)
+
+- Before every job: read `D:\WKP\memory\MEMORY.md` (index, follow pointers that touch the job) and your lessons file `D:\WKP\memory\agents\wwd-rights.md`.
+- Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
+- After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
+- A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.

@@ -51,3 +51,4 @@ learnings go here.
 - [Refresh before sims](feedback-refresh-before-sims.md) — refresh stats, odds, MFL, injuries and confirm starting QBs before every fantasy or DFS sim (Zac 2026-11-19)
 - [Clip length](feedback-clip-length.md) — WWD clips 6 to 8 s, up to 12, old 4 s and 30 s limits retired; no total cap set (Zac 2026-11-19)
 - [Intro length](feedback-intro-length.md) — WWD review intro stomp-and-clap sting must be 6 s or less, 11 to 12 s was way too long; one generation cut into intro and outro to save credits (Zac 2026-11-19)
+- [SOPs and agent lessons](../SOP/SOP-00-Master-Workflow.md) - system reset 2026-11-19: `D:\WKP\SOP\` is the single source for job flow, output paths and formats, agent learning, WWD review, editing and music; every agent has a lessons file in `memory\agents\<agent>.md`, read before a job, one lesson appended after (Zac: agents must learn, formats must stop changing)

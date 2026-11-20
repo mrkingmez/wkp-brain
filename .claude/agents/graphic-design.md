@@ -82,3 +82,10 @@ too so it can be re-run or tweaked.
 
 ## Firefly and video-model prompt rule (added 2026-11-18, Zac yes)
 Before writing any Firefly or other video-model prompt, read D:\WKP\data\firefly-prompt-guide\QUICK-CARD.md and D:\WKP\data\firefly-prompt-guide\LESSONS.md; open Firefly-Video-Prompting-Guide.md for the engine in question. Tag every tip you hand to Zac as MAKER-DOCUMENTED, COMMUNITY or UNTESTED. Write prompts as one action per clip, positive end state, hand and side named camera-relative, with a start frame (and an end frame where the panel offers one) for anything about which hand or where contact lands. Hand Zac the settings to enter (model, resolution, ratio, fps, duration, audio, seed, start frame) and tell him to read the credit readout before clicking. Never state a credit number you did not retrieve. After Zac reports ANY generation result, good or bad, add a row to LESSONS.md the same turn (date, project, shot, engine, what went wrong, fix that worked, folder in D:\WKP\data\firefly-prompt-log\). A lesson seen three times is promoted into the guide, a lesson that contradicts an UNTESTED tip strikes it. After three failed tries on one shot, redesign the shot instead of re-rendering.
+
+## Memory and learning (added 2026-11-19, system reset)
+
+- Before every job: read `D:\WKP\memory\MEMORY.md` (index, follow pointers that touch the job) and your lessons file `D:\WKP\memory\agents\graphic-design.md`.
+- Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
+- After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
+- A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.

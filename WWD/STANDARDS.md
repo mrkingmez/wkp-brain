@@ -20,7 +20,7 @@ Single checklist of Zac's locked rules for review videos. Source of truth for th
 11. Trailer audio is always muted.
 
 ## Trailer clips and fair use (wwd-clip-scout and wwd-rights)
-12. A clip plays only under a host line about that exact scene. 4 seconds max, under 30 seconds total, never back to back.
+12. A clip plays only under a host line about that exact scene. 6 to 8 seconds, 12 seconds max, inside one shot, no total cap (report the total, wwd-rights flags the exposure), never back to back. (Zac 2026-11-19, replaces the old 4 s and 30 s limits.)
 13. No title cards, release date or studio logo from the trailer. Cut on verified shot edges.
 14. The upload package keeps its fair use disclaimer as the last section.
 

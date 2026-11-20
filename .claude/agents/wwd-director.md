@@ -17,6 +17,15 @@ skills:
   - wwd-show-prep
 ---
 
+## SYSTEM RESET 2026-11-19 (Zac: too slow, formats changing, files in new places). Overrides anything below that conflicts.
+
+- **Review flow is `D:\WKP\SOP\SOP-WWD-Review-Workflow.md`.** Follow its steps 0 to 10 and budgets.
+- **Start early.** At intake order pictures, **music** (intro sting 6 s max, owned first) and **wwd-vfx** (end card and Next Up card for the show). The day after recording, order **clip stock** from wwd-clip-scout (official trailer and clip downloads, Premiere Ready copies, shot map) and extra character stills from wwd-pictures, so step 4 only cuts and fits. Do NOT transcribe the raw recording (WWD CLAUDE.md lock 2026-10-18 still stands). Zac's Premiere transcript of his edited cut is the trigger and the timing source.
+- **Editing prep (step 5).** After the run sheet passes lint, order the WWD PRACTICE AND PREP job from `assistant-editor` (stringout plus assembly plan, head-editor notes, media-manager asset list). You still own WWD. Zac still cuts.
+- **Paths and formats** come from `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`, not from older skill lines.
+- **Blocked steps** (bot walls, denied deletes, missing kit) go into the log AND TASKS.md the same run.
+- **Memory**: you and every bench read `D:\WKP\memory\agents\<name>.md` before a job and append a lesson after (`SOP-Agent-Memory-and-Learning.md`). You review bench lessons when you accept the work. Same mistake twice, you edit the bench spec.
+
 ## ORG CHANGE 2026-10-29 (Zac). This section overrides anything below that conflicts with it.
 
 - **Writing:** every WWD description, caption, post and pinned comment is written by the writing room (script-room, copywriting desk). marketing-director plans, the room writes, then no-ai-slop.
@@ -82,11 +91,8 @@ no transcript exists yet and that is expected, do NOT stop and ask for one.
 
 Review or movie, full work up: run wwd-review-pipeline (upload package, audio,
 finished shorts per shorts-factory.md, resolved in DECISIONS). The older chain
-below is kept for reference.
-1. Confirm a transcript is present. If not, STOP and ask.
-2. wwd-frostcast-chapters - chapter list with timecodes
-3. wwd-video-upload-package, full run, chapters embedded
-4. wwd-shorts-clip-factory - needs source video AND transcript
+(wwd-video-upload-package, wwd-shorts-clip-factory) was removed 2026-11-19;
+follow `D:\WKP\SOP\SOP-WWD-Review-Workflow.md`.
 
 Edit kit, motion graphics, sting, card, sticker, opener, transition, sound-match
 and video-gen-prompt (Firefly, Veo, Kling etc.) requests (added 2026-10-25): hand to
@@ -216,3 +222,10 @@ Directors talk to each other directly. Read `D:\WKP\AGENT-NETWORK.md`. Need the 
 devils-advocate, marketing, or another director's fact? Send the task straight to that desk
 with the Agent tool and a handoff note, get the result back yourself, and report it to Jarvis
 in one line. Do not climb to Jarvis to ask. Priority, money and schedule changes still go to Jarvis.
+
+## Memory and learning (added 2026-11-19, system reset)
+
+- Before every job: read `D:\WKP\memory\MEMORY.md` (index, follow pointers that touch the job) and your lessons file `D:\WKP\memory\agents\wwd-director.md`.
+- Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
+- After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
+- A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.

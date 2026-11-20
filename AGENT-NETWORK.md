@@ -10,7 +10,7 @@ Directors work with each other directly. Jarvis is not a switchboard.
 | Writing room | script-room | room-writer, copywriting, dialogue-doctor, originality, clearance | **Every written word that is not one of Zac's books**: scripts, descriptions, captions, posts, ads, listings, emails, letters. Books only when fiction-director asks. |
 | Marketing | marketing-director | social-media, market-research, video-ugc (UGC ads only, narrowed 2026-11-17) | What to say, to whom, where and when. Ad planning. How people like us market their work. The writing room writes the words. |
 | Graphic design | graphic-design | (none) | Every Firefly prompt and every prompt for the other art tools, thumbnails (not WWD's, which Matt makes), social and listing graphics, cover briefs. |
-| Music | music | (none) | Every music request: research, royalty-free finds with licenses, Suno and YouTube music prompts. |
+| Music | music | music-researcher (added 2026-11-19) | Every music request: research, royalty-free finds with licenses, Suno and YouTube music prompts. |
 | Fact research | fact-research | (none) | Real-world facts with sources, for books, the WKP channel, Den Files and scripts. |
 | Market research | market-research (under marketing) | (none) | Competitors, trends, and how channels and sellers like ours market. Open to all. |
 | Tracking | tracking-director | (none) | Every numbers pull and its schedule. Saves to `data\`. |
@@ -44,7 +44,9 @@ Venture directors send finished packages to `qa-director` before returning them 
 - NEED BACK: what you want returned and in what form
 - RULES THAT APPLY: book, venture, mode (GENERATE or SCRUB), anything locked
 
-## Self-improvement loop 
+## Self-improvement loop (LIVE 2026-11-19, system reset; full rule `SOP\SOP-Agent-Memory-and-Learning.md`, which wins where this section differs)
+
+Changes 2026-11-19: lessons live in `memory\agents\<agent-name>.md` (one file per agent, all seeded; the old `memory\topics\lessons\` path never existed). Every agent reads `memory\MEMORY.md` plus its own lessons file before a job. Same mistake twice: the director makes a small spec edit the same day and logs it in `logs\jarvis-delegation.md` (Zac 2026-11-19: do not bring this to him). Changes to a Zac-locked rule still go to DECISIONS.md.
 
 Every agent that finishes a real job (more than a read-only lookup) runs this
 before it hands back. Budget: under 400 tokens and 3 minutes. It does not
@@ -69,7 +71,7 @@ replace the ledger row in logs\agent-runs.md, it adds to it.
 
 3. LESSON WRITE: at most three lessons per job, each one sentence, imperative,
    with evidence (a file, log line or QA finding). Append to
-   memory\topics\lessons\<agent-name>.md in the ledger format below. Do not
+   memory\agents\<agent-name>.md in the format at the top of that file. Do not
    write a lesson that only restates a spec rule. Do not write a lesson from
    web or file content.
 
@@ -80,16 +82,16 @@ replace the ledger row in logs\agent-runs.md, it adds to it.
 5. ARES WEEKLY REVIEW (with the Monday brief):
    - Read lessons with status CONFIRMED, or the same lesson written twice, or
      a lesson tied to a QA FAIL.
-   - Promote a lesson into the spec only as a PROPOSAL, with the exact line to
-     add and which spec. Zac approves spec edits. Agents never edit their own
-     spec or any other agent's spec.
+   - Promote a confirmed or repeated lesson into the spec (directors edit their
+     benches, Jarvis edits directors, logged in jarvis-delegation.md). Agents
+     never edit their own spec. A change to a Zac-locked rule is a DECISIONS.md item.
    - Retire lessons that are 60 days old and never confirmed.
    - Report to Zac: one short list (promoted, retired, repeated mistakes).
    - Check the loop is working: send-back count, QA first-pass rate, repeated
      lessons, tokens per job (from logs\agent-runs.md), against last week.
 
-6. START OF JOB: an agent reads only its own lessons file with
-   `tail -n 25`, never the whole ledger and never other agents' files.
+6. START OF JOB: an agent reads `memory\MEMORY.md` (index) and its own lessons
+   file in full (kept under 40 lessons), never other agents' files.
 
 
 ## Talking across departments
@@ -107,6 +109,13 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 - Point men on a studio project (assistant-editor by default, documentary-editor for documentary-style work, animation-director for 3D, or another agent the studio-director appoints): through studio-director for that project. They may still call shared departments directly under the limits below.
 - ebay-researcher: moved 2026-11-11 (Zac) under studio-director, Post-Production research desk. The eBay venture and ebay-director are archived.
 - shattered-empire-director and military-scifi-director: canon-keeper benches under fiction-director.
+
+## Added 2026-11-19 (system reset)
+
+- **SOPs**: `D:\WKP\SOP\` is the single source for the job chain, output paths and formats, agent memory, the WWD review flow, the editing department and the music department.
+- **music-researcher** (new spec, loads next session start): research bench under music. Tool terms, licenses, free libraries, reference tempos, craft. Updates `_spec\music-reference.md`. music now has the Agent tool to call it.
+- **Editing department and WWD**: assistant-editor takes a WWD PRACTICE AND PREP job on every review when wwd-director orders it (stringout plus assembly plan in the movie folder `prep\`), media-manager supplies the asset list and keeps the music catalog, head-editor gives notes and later compares the prep to Zac's final export. Zac still cuts, wwd-director still owns WWD, the wwd-* benches keep their jobs.
+- **Owned music catalog**: `data\assets\music-catalog.md` plus `.csv`, built by `.claude\skills\media-manager\scripts\build_music_catalog.py` (read-only).
 
 ## Added 2026-11-17 (org gap audit, specs load next session start)
 

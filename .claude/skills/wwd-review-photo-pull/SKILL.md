@@ -59,8 +59,9 @@ Run all of this without further prompting:
    calendar entries made. Then wait for the transcript.
 5. **When Zac hands over the transcript** (he edits first, cutting the
    banter and life talk, so never transcribe or build from the raw recording
-   before he says the cut is ready), run Step 8 and deliver the placement
-   report with transitions to `D:\WKP Reports\`.
+   before he says the cut is ready), run Step 8 and hand the placements to
+   wwd-run-sheet, which delivers the Edit Run Sheet to
+   `D:\WKP Reports\Asset Placement Run Sheets\` (SOP-Output-Locations-and-Formats).
 
 Resolve the title first (Step 2). A just-released film is the normal case
 here, so expect TMDb to be thin. Report the real count, never pad.
@@ -352,19 +353,21 @@ against, not just a folder of extra pictures. Example line:
 **Transition recommendations (added 2026-10-11).** Every placement line also
 gets a transition suggestion and a duration in frames, picked ONLY from the
 Premiere built-ins in [premiere-transitions.md](premiere-transitions.md)
-(Zac is on the Adobe defaults). Follow that file's table, lean on hard cuts and
-Cross Dissolve, and never recommend anything from its avoid list. Extended
+(Zac is on the Adobe defaults). Follow that file's table: about half the
+placements get a designed Modern transition with a paired sound, Cross Dissolve
+on 3 stops at most (Zac 2026-10-14, corrected 2026-11-19), and never recommend
+anything from its avoid list. Extended
 example line:
 
 ```
 [14:32-14:58] "the liquid nitrogen scene where he just shatters" -> frozen.png | in: Cross Dissolve 12f, out: hard cut | matches the exact FX beat being described
 ```
 
-**Deliverable: the placement report (.docx).** Per the root CLAUDE.md output
-rule this goes to `D:\WKP Reports\Asset Placement Run Sheets\<YYYY-MM-DD> - <Title>
-Image Placement.docx` (the one delivery folder). Keep the matching `.md` in
-`WWD\reports\`. Also keep the `timeline-placements.md` next to the images in
-`USE\`.
+**Deliverable (corrected 2026-11-19, system reset).** The placement list is a
+WORKING file only: `USE\timeline-placements.md`. The deliverable is the ONE
+Edit Run Sheet built by the `wwd-run-sheet` bench (.md `WWD\reports\<Movie>-Edit-Run-Sheet.md`,
+.docx `D:\WKP Reports\Asset Placement Run Sheets\<YYYY-MM-DD> - <Movie> Edit Run Sheet.docx`).
+Never write a separate "Image Placement" docx. Paths: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`.
 
 **Format: one Edit Run Sheet in video order (LOCKED 2026-10-18, Zac).** The
 whole report is one list of numbered stops, top to bottom in the order of

@@ -42,6 +42,10 @@ YYYY-MM-DD is today's date, the date the document is created.
 
 Example: FrostCast ep 107 2026-08-25.md
 
+Also save a .docx beside it with the same name (root CLAUDE.md .docx rule,
+SOP-Output-Locations-and-Formats ruling 13, 2026-11-19). The .md stays the
+working source.
+
 
 
 If the episode number cannot be determined, STOP and ask. Do not

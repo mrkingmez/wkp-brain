@@ -70,7 +70,10 @@ The clip extraction spec lives in this folder and is authoritative. Core rules:
 - Mid-clip retention beat required
 - Ending plus loop rule — the clip must end in a way that loops back
 - Every candidate clip scored 1 to 10; only elite clips ship
-- 5 to 7 clips per source video
+- Review shorts: 5 max per review (shorts-factory.md, 2026-10-14). FrostCast Opus: the weekly cadence in root CLAUDE.md (2026-11-11). The old "5 to 7 clips per source video" line is retired (2026-11-19 system reset).
+
+## SOPs (2026-11-19)
+Review flow, output paths and agent learning are in `D:\WKP\SOP\` (`SOP-WWD-Review-Workflow.md`, `SOP-Output-Locations-and-Formats.md`). If a skill line disagrees with them, the SOP wins.
 
 ## Related Skills
 - wwd-video-transcriber (`skills/wwd-video-transcriber/` in this repo) — turns a downloaded episode video into a diarized, speaker-labeled transcript. Requires one-time setup (Python/ffmpeg/torch — done on the Main Desktop machine as of Aug 2026). Voiceprints for Zac, Matt and Gabby ENROLLED 2026-11-11 (`D:\WKP\voiceprints\`, gitignored); always pass `--num-speakers` (2 for Zac+Matt or Zac+Gabby, 3 for full FrostCast); EP106 and earlier transcripts still show Guest/Unknown. How-to: `.claude\skills\wwd-video-transcriber\references\voiceprints-howto.md`. Standing rule: the output transcript always saves into the same EP folder as the source video, never a separate outputs/transcripts location — overrides the skill's own doc default.

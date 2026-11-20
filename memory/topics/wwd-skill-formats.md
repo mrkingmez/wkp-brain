@@ -131,7 +131,7 @@ Review shorts are now BUILT, not just cut. Source of truth is `.claude/skills/ww
 
 - Five clips max, all finished, ship floor 7. No HOLD FOR RE-TRIM. The old reason (block-level timecodes can't resolve mid-block in-points) was wrong, silencedetect (-32dB, 0.28s) solves it.
 - Length: YouTube Shorts and Instagram Reels are 3 min now (Oct 2024, Jan 2025). Working target 30 to 75s, floor 20s. Facebook Reels unverified, assume 90s. The old 59s Instagram cap is retired.
-- Every clip: blurred-fill 1080x1920 (never center crop), burned-in Poppins captions, timed hook text, film tag strip, cover PNG plus one-frame prepend. Output doc is `[Title] - Shorts Captions.md/.docx`, replaces shorts_manifest.txt.
+- Every clip: blurred-fill 1080x1920 (never center crop), burned-in Poppins captions, timed hook text, film tag strip, cover PNG plus one-frame prepend. Captions now live inside the upload package (one doc, Zac 2026-10-18); the separate `[Title] - Shorts Captions` doc is retired (corrected 2026-11-19).
 - Gotcha found in testing: the one-frame cover clip carries about 1s of silent audio unless capped with `-t 0.0334`, which breaks head-silence QC and adds a second of length.
 - Gotcha: PowerShell 5.1 `Set-Content -Encoding utf8` writes a BOM, so JSON specs are read with utf-8-sig.
 - Additions beyond Zac's spec (flagged for veto): film tag strip, hook fade, background darken, -14 LUFS loudness normalize.

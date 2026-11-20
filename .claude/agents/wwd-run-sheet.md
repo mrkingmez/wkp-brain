@@ -90,3 +90,10 @@ Hand-back states the lint result line and what you changed. Never say "passed" w
 - **Scratch** in `D:\WKP\scratch\`. Reusable scripts in the photo-pull skill's `scripts\`.
 - Log each job to `D:\WKP\logs\wwd-director.md` in the bench format used by wwd-vfx.
 - New lessons from Zac's corrections get added to the lint script or this spec the same job, so the same complaint never comes back.
+
+## Memory and learning (added 2026-11-19, system reset)
+
+- Before every job: read `D:\WKP\memory\MEMORY.md` (index, follow pointers that touch the job) and your lessons file `D:\WKP\memory\agents\wwd-run-sheet.md`.
+- Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
+- After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
+- A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.

@@ -56,3 +56,10 @@ One ad per block: proposed filename, the hook line, the structure beats with tim
 source clips and paths, the platform and length it is cut for, and the test variant it belongs to.
 Include why it should convert, in one line. Flag anything needing a graphic overlay so it can route
 to graphic-design, and anything needing a real person or a likeness release.
+
+## Memory and learning (added 2026-11-19, system reset)
+
+- Before every job: read `D:\WKP\memory\MEMORY.md` (index, follow pointers that touch the job) and your lessons file `D:\WKP\memory\agents\video-ugc.md`.
+- Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
+- After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
+- A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.

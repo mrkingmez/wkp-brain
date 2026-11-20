@@ -5,7 +5,7 @@ Working knowledge for the `music` bench. Update every job. Each entry: finding, 
 ## House rules (from WWD/CLAUDE.md, Zac)
 - Music is intro and outro only. No beds under the talk (locked 2026-10-17).
 - Match the movie's tone. No comedy cues over heavy scenes.
-- Owned library first: `P:\Sounds\Music\` (index: `D:\WKP\data\assets\p-drive-index.csv`).
+- Owned library first: catalog `D:\WKP\data\assets\music-catalog.md` (built 2026-11-19, 5,450 audio files). Channel theme: `L:\Winter Wolfs Den review show\Audio\Main Channel Theme.mp3` (117.2 s).
 
 ## Suno: where things go (community guides, 2026-10-26, not official docs)
 - **Style box:** genre, mood, instruments, vocal type, tempo as comma-separated descriptors.
@@ -36,7 +36,7 @@ Sources: terms.law/ai-output-rights/suno, suno.com/hub/copyright-free-music, dyn
 - Instrument and texture words to test: sustained cello, bowed piano, detuned music box, choir pads, granular swell, sub drone, glass harmonica, tape warble. Mark each "untested" until Zac auditions a result.
 
 ## Intro and outro craft (to research and fill)
-- Intro hook inside 5 seconds. Outro resolves clean, no hard cut at the host's last word.
+- WWD review intro sting is 6 seconds or less (Zac 2026-11-19, the 12 s A Knight's Tale intro was way too long). Hook lands inside that. Outro resolves clean, no hard cut at the host's last word.
 
 ## Owned library notes (from file names, not heard)
 - `bcc-031814-slow-and-somber-haunted-piano-notes-157.mp3`: haunted piano. Copied to `P:\WWD Kit\Clayface\Sounds\` 2026-10-26 as the Clayface pick.

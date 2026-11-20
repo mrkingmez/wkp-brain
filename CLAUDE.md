@@ -192,8 +192,11 @@ failed, say "not available" and name what is missing.
 ## Scratch and output routing
 - Scratch: D:\WKP\scratch\ (gitignored). Never system Temp.
 - Reusable scripts: the owning skill's scripts\ folder.
-- Deliverables: L:\ per LOCAL-PATHS.md, with a log line in logs\.
+- Deliverables: D:\WKP Reports\ (see "Output document format" below and `SOP\SOP-Output-Locations-and-Formats.md`), with a log line in logs\. L:\ is raw media only (corrected 2026-11-19).
 - Paths and interpreters: read LOCAL-PATHS.md. Never hardcode.
+
+## SOPs (added 2026-11-19, system reset)
+`D:\WKP\SOP\` holds the standard operating procedures: master workflow, output locations and formats, agent memory and learning, WWD review workflow, editing department, music department. Every agent reads the master workflow and the output SOP; if a skill or spec line disagrees, the SOP wins until Zac says otherwise. Per-agent lessons live in `memory\agents\<agent>.md`.
 
 ## File retention
 Any file produced in a chat gets downloaded to disk the same session it
