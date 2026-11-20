@@ -657,3 +657,9 @@ Rule used: only money, public posting or a preference only Zac holds goes to Zac
 - WWD-2026-11-18-01: DECIDED A (wwd-director): Jarvis runs the Messenger send to Matt as the first job of the next session with the Chrome tool and screenshots "Sent" with the filename. Staged in `SOP\SOP-Session-Start-Checklist.md`.
 - WWD-2026-11-19-01: ON ZAC'S LIST (attorney cost). Does not block the edit.
 - WWD-2026-11-19-02: ON ZAC'S LIST (credits). Note: the prompt file still says a 12 s intro. Zac locked intros at 6 s or less on 2026-11-19 (`memory\feedback-intro-length.md`) and prefers one generation cut into intro and outro, so the ask is ONE ElevenLabs Music generation of the 60 s "Long build" prompt in `reports\music-stomp-clap-prompt-2026-11-19.md`, cut to an intro of 6 s or less and an outro. Credit cost not retrieved. A free owned fallback exists.
+
+## ZAC ANSWERS 2026-11-19 (verification notes)
+- INFRA-2026-11-16-01: CLOSED. Cause is no tokens when the Monday brief and Saturday wrap tasks ran (Zac). Not a task setup bug. Same family as the 2026-11-09 missed brief in root CLAUDE.md: acceptable, do not alert-engineer.
+- WWD-2026-11-19-02: still OPEN as a spend ask, now with the plan facts. ElevenLabs has a free tier, but downloading the music likely needs the $11 package (Starter) (Zac). Not approved. Owned fallback stays in use until Zac says buy.
+- Percy Jackson confirmed as the next Next Up card.
+- Vision Quest EP 8 is live. Shorts and social posts not done yet.

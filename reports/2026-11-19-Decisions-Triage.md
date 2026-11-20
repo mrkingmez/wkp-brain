@@ -12,7 +12,7 @@ Every open row in `logs\DECISIONS.md` was read. Only money, public posting, or a
 
 ## Optional spends (nothing is blocked)
 
-4. **ElevenLabs Music, A Knight's Tale intro and outro (WWD-2026-11-19-02).** One generation of the 60 s "Long build" prompt in `reports\music-stomp-clap-prompt-2026-11-19.md`, cut into an intro of 6 s or less and an outro. The credit cost was not retrieved. A free cut from music you own already exists.
+4. **ElevenLabs Music, A Knight's Tale intro and outro (WWD-2026-11-19-02).** One generation of the 60 s "Long build" prompt in `reports\music-stomp-clap-prompt-2026-11-19.md`, cut into an intro of 6 s or less and an outro. Zac says the free tier likely cannot download, so the $11 package would be needed (his word, not checked by us). A free cut from music you own already exists.
 5. **VidIQ credits for a retention pull (WWD-2026-11-17-01 B).** The free route comes first: look at YouTube Studio once, with retention for the last 6 reviews, the Earn tab, and whether a Shopping tab shows. That one look also closes WWD-2026-11-05-04 and -07.
 6. **Attorney question (WWD-2026-11-19-01).** Does blacking out the Movieclips logo bar matter? It does not block the edit.
 
