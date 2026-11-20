@@ -1,7 +1,7 @@
 # Overnight queue (set 2026-11-19, Zac go). Run in order after tokens return. No money, no public posting, no push, never touch E: (read only), never replace Zac's cut.
 
 1. DONE, REMOVED: EP 121 transcript was already sent to Matt last night (Zac 2026-11-19). Do not resend.
-2. Vision Quest EP 8 Shorts copy through script-room, marketing-director, no-ai-slop. DRY-RUN Opus plan only.
+2. DONE, REMOVED: Vision Quest EP 8 Shorts and social copy already handled by Zac (2026-11-19). Do not rebuild.
 3. EDITOR STUDY PHASE (studio-director appoints head-editor lead, media-manager supplies paths, assistant-editor supports; Zac's job order 2026-11-19):
    a. Pro editing study: free route only (yt-dlp captions, last30days, local transcriber). Space pulls out (YouTube 429s). Version-tag every source. No VidIQ credits.
    b. Zac's work study: last 5 to 8 WWD reviews on L:\Winter Wolfs Den review show\, plus P:\01 Warrior King Productions, P:\Warrior King Productions, P:\WWD Kit, and archive E:\01 Warrior King Productions Archive\ (READ ONLY, confirm files open first). Measure cut rhythm, picture pace, sound use, intro hit, with ffprobe and frame checks.

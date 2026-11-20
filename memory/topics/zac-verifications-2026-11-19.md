@@ -13,3 +13,6 @@ metadata:
 **Why:** the reset report listed these as "not verified"; Zac answered them.
 **How to apply:** treat as settled. Do not re-ask. Spend on ElevenLabs still needs his yes. See [[feedback-intro-length]].
 - EP 121 transcript was already sent to Matt the night of 2026-11-18. Zac corrected this; the queue had it as pending. Check Messenger or ask before re-sending any "pending" send.
+- Vision Quest EP 8 Shorts and social posts are also already done by Zac (said later 2026-11-19, after first saying none yet). Nothing owed.
+
+**Lesson (2026-11-19):** twice in one session the queue listed work Zac had already done (Matt send, Vision Quest Shorts). Before proposing any job as pending, check disk, Messenger, Opus or the channel, or say "not verified, tell me if it is done". Never build a queue off the task list alone.
