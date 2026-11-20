@@ -45,3 +45,13 @@ Sources: terms.law/ai-output-rights/suno, suno.com/hub/copyright-free-music, dyn
 
 ## Learning log
 - 2026-10-26: reference created from three web searches. Next: horror scoring research, the YouTube Audio Library filters, and a first audit with ffprobe and ebur128 of every track in the owned library.
+
+## ElevenLabs Music (official docs, fetched 2026-11-19)
+- Model ids: music_v2_5 (newest), music_v2; music_v1 deprecated, removed 2027-01-31, and is still the API default, so set the model on purpose. Source: elevenlabs.io/docs/overview/capabilities/music and /docs/api-reference/music/compose. Official.
+- Compose settings: prompt OR composition_plan; music_length_ms 3,000 to 600,000 (overview page says 3 s to 5 min, conflict); force_instrumental (prompt only); seed (not with a prompt); store_for_inpainting; output mp3 or WAV. Official.
+- Prompting: state genre, mood, instruments, tempo as a number, key ("in A minor"), "instrumental only", narrate the arrangement in time order ("start with", "then", "bring in"), give a length. Source: /docs/overview/capabilities/music/best-practices. Official. Untested by us.
+- Terms (eleven-music-model-specific-terms, dated 09 October 2026): no artist, song, album, label names or distinctive lyrics in prompts; Free plan no downloads and attribution required; Starter and up no attribution; commercial use online and offline allowed except film, TV, radio, studio games; no indemnity, user clears output. Official. Older Nov 2025 version reported stricter (search summary only, not opened).
+- Connector tools (creative_get_model_guide, get_model_schema) were not exposed to the music subagent on 2026-11-19.
+
+## Learning log (cont.)
+- 2026-11-19: A Knight's Tale stomp and clap job. Original song tempo about 81 BPM (162 double time), key reported D major, D minor or E minor depending on tool. Our difference plan: 108 BPM, four-beat pattern with a late second stomp, G Dorian, horns and war drums. Prompts in reports\music-stomp-clap-prompt-2026-11-19.md. Owned rock-the-crowd.mp3 measured -7.4 LUFS, +1.1 dBTP: generated and library tracks run hot, always measure.

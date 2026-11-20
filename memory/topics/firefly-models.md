@@ -16,3 +16,6 @@ Zac sent a photo of the Firefly Generate video model menu and said to remember i
 **Why this matters:** I earlier guessed at the menu; this is the real list. Veo 3.1 is the realism pick, Kling 3.0 for start-frame fidelity and morphs. Pick per shot. Not verified which models take an end frame, check the panel.
 
 Related: [[wwd-skill-formats]], logo prompts in `WWD/reports/Clayface-Logo-Firefly-Prompts.md`.
+
+## Credits and plan (Zac, 2026-11-18)
+Zac gets 11,000 Firefly credits a month: 4,000 from his normal Adobe plan plus 7,000 from the Firefly extra (unlimited-type) plan. The extra plan is free this month and next (retention offer), normally about $21 after taxes. On 2026-11-17 the balance read as zero, so the reset date is unknown: check the Firefly account page. Zac's pain is wrong results (wrong hand on the wrench, ball hitting a toe instead of the foot, one video re-rendered nine times), not output quality. He wants per-engine prompting research stored for Jarvis.

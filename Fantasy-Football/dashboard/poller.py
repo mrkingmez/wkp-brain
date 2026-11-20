@@ -97,7 +97,9 @@ class Source:
 
     def record_error(self, now: float, err: str):
         self.last_error = err
-        self.next_due = now + self.current_interval
+        # Network blips (DNS, timeouts) must not freeze a source for a whole idle interval:
+        # retry within 30 s. 429 throttling keeps its own backoff in record_throttle.
+        self.next_due = now + min(self.current_interval, 30)
         log(f"{self.name}: error -- {err}")
 
     def age_seconds(self, now: float) -> float | None:
@@ -437,8 +439,14 @@ def build_pickem_panel(week: int, nfl_scoreboard: dict, cfb_scoreboard_data: dic
 
         # Display fields computed here, not in the browser -- state.json
         # stays self-describing and app.js stays a thin renderer.
-        pick_line = -g["spread"] if g["pick"] == "favored" else g["spread"]
-        pick_display = f"{g['pick_team']} {pick_line:+g}" if g["pick_team"] and g["spread"] is not None else g["pick_team"]
+        # A card row with no readable spread (typo, blank cell, file mid-save) must not
+        # crash the whole poll cycle: show the pick without a line instead.
+        if g["spread"] is None:
+            pick_line = None
+            pick_display = g["pick_team"]
+        else:
+            pick_line = -g["spread"] if g["pick"] == "favored" else g["spread"]
+            pick_display = f"{g['pick_team']} {pick_line:+g}" if g["pick_team"] else g["pick_team"]
 
         game_display, leader_abbr, clock_display = None, None, None
         if fav_status or dog_status:

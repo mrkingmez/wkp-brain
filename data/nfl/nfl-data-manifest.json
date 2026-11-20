@@ -1,5 +1,5 @@
 {
-  "discovered_at": "2026-10-22T18:50:21.432614+00:00",
+  "discovered_at": "2026-11-19T12:10:37.839507+00:00",
   "season_filter": null,
   "releases": {
     "pbp": {
@@ -152,64 +152,16 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2002.qs"
         },
         {
-          "name": "play_by_play_2013.rds",
-          "size": 13759140,
-          "updated_at": "2024-08-13T15:36:05Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.rds"
-        },
-        {
-          "name": "play_by_play_2013.csv",
-          "size": 95406631,
-          "updated_at": "2024-08-13T15:36:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.csv"
-        },
-        {
           "name": "play_by_play_2013.qs",
           "size": 8550397,
           "updated_at": "2024-08-13T15:36:17Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.qs"
         },
         {
-          "name": "play_by_play_2013.csv.gz",
-          "size": 18339628,
-          "updated_at": "2024-08-13T15:36:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.csv.gz"
-        },
-        {
-          "name": "play_by_play_2014.rds",
-          "size": 13623443,
-          "updated_at": "2024-08-13T15:37:46Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.rds"
-        },
-        {
-          "name": "play_by_play_2014.csv",
-          "size": 94445465,
-          "updated_at": "2024-08-13T15:37:52Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.csv"
-        },
-        {
           "name": "play_by_play_2014.qs",
           "size": 8475632,
           "updated_at": "2024-08-13T15:38:00Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.qs"
-        },
-        {
-          "name": "play_by_play_2014.csv.gz",
-          "size": 18202391,
-          "updated_at": "2024-08-13T15:38:05Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.csv.gz"
-        },
-        {
-          "name": "play_by_play_2013.parquet",
-          "size": 19521610,
-          "updated_at": "2024-08-25T12:30:13Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.parquet"
-        },
-        {
-          "name": "play_by_play_2014.parquet",
-          "size": 19360792,
-          "updated_at": "2024-08-25T12:30:16Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.parquet"
         },
         {
           "name": "play_by_play_2001.qs",
@@ -248,46 +200,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_1999.qs"
         },
         {
-          "name": "play_by_play_2006.csv",
-          "size": 90988506,
-          "updated_at": "2025-04-30T06:33:18Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.csv"
-        },
-        {
           "name": "play_by_play_2006.qs",
           "size": 8153531,
           "updated_at": "2025-04-30T06:33:16Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.qs"
-        },
-        {
-          "name": "play_by_play_2006.csv.gz",
-          "size": 17478126,
-          "updated_at": "2025-04-30T06:33:16Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.csv.gz"
-        },
-        {
-          "name": "play_by_play_2006.rds",
-          "size": 13041176,
-          "updated_at": "2025-04-30T06:33:16Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.rds"
-        },
-        {
-          "name": "play_by_play_2006.parquet",
-          "size": 18555685,
-          "updated_at": "2025-04-30T06:33:16Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.parquet"
-        },
-        {
-          "name": "play_by_play_2012.parquet",
-          "size": 19322039,
-          "updated_at": "2025-04-30T06:33:24Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.parquet"
-        },
-        {
-          "name": "play_by_play_2012.rds",
-          "size": 13633357,
-          "updated_at": "2025-04-30T06:33:24Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.rds"
         },
         {
           "name": "play_by_play_2012.qs",
@@ -296,58 +212,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.qs"
         },
         {
-          "name": "play_by_play_2012.csv.gz",
-          "size": 18195788,
-          "updated_at": "2025-04-30T06:33:24Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv.gz"
-        },
-        {
-          "name": "play_by_play_2012.csv",
-          "size": 94766379,
-          "updated_at": "2025-04-30T06:33:25Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv"
-        },
-        {
-          "name": "play_by_play_2015.csv",
-          "size": 95599819,
-          "updated_at": "2025-04-30T06:33:29Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.csv"
-        },
-        {
-          "name": "play_by_play_2015.csv.gz",
-          "size": 18392969,
-          "updated_at": "2025-04-30T06:33:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.csv.gz"
-        },
-        {
-          "name": "play_by_play_2015.parquet",
-          "size": 19545842,
-          "updated_at": "2025-04-30T06:33:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.parquet"
-        },
-        {
-          "name": "play_by_play_2015.rds",
-          "size": 13786480,
-          "updated_at": "2025-04-30T06:33:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.rds"
-        },
-        {
           "name": "play_by_play_2015.qs",
           "size": 8585701,
           "updated_at": "2025-04-30T06:33:27Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.qs"
-        },
-        {
-          "name": "play_by_play_2008.csv",
-          "size": 90634341,
-          "updated_at": "2025-04-30T06:34:17Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.csv"
-        },
-        {
-          "name": "play_by_play_2008.csv.gz",
-          "size": 17469625,
-          "updated_at": "2025-04-30T06:34:15Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.csv.gz"
         },
         {
           "name": "play_by_play_2008.qs",
@@ -356,52 +224,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.qs"
         },
         {
-          "name": "play_by_play_2008.rds",
-          "size": 13090967,
-          "updated_at": "2025-04-30T06:34:15Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.rds"
-        },
-        {
-          "name": "play_by_play_2008.parquet",
-          "size": 18565820,
-          "updated_at": "2025-04-30T06:34:15Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.parquet"
-        },
-        {
-          "name": "play_by_play_2016.csv.gz",
-          "size": 18230362,
-          "updated_at": "2025-04-30T06:34:28Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.csv.gz"
-        },
-        {
-          "name": "play_by_play_2016.csv",
-          "size": 94657991,
-          "updated_at": "2025-04-30T06:34:30Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.csv"
-        },
-        {
-          "name": "play_by_play_2016.parquet",
-          "size": 19344382,
-          "updated_at": "2025-04-30T06:34:29Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.parquet"
-        },
-        {
           "name": "play_by_play_2016.qs",
           "size": 8514107,
           "updated_at": "2025-04-30T06:34:28Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.qs"
-        },
-        {
-          "name": "play_by_play_2016.rds",
-          "size": 13654320,
-          "updated_at": "2025-04-30T06:34:29Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.rds"
-        },
-        {
-          "name": "play_by_play_2010.csv",
-          "size": 92828310,
-          "updated_at": "2025-04-30T06:34:43Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.csv"
         },
         {
           "name": "play_by_play_2010.qs",
@@ -410,76 +236,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.qs"
         },
         {
-          "name": "play_by_play_2010.csv.gz",
-          "size": 17960191,
-          "updated_at": "2025-04-30T06:34:42Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.csv.gz"
-        },
-        {
-          "name": "play_by_play_2010.parquet",
-          "size": 19059048,
-          "updated_at": "2025-04-30T06:34:41Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.parquet"
-        },
-        {
-          "name": "play_by_play_2010.rds",
-          "size": 13461173,
-          "updated_at": "2025-04-30T06:34:41Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.rds"
-        },
-        {
           "name": "play_by_play_2003.qs",
           "size": 6029240,
           "updated_at": "2025-04-30T06:35:51Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.qs"
-        },
-        {
-          "name": "play_by_play_2003.rds",
-          "size": 10510678,
-          "updated_at": "2025-04-30T06:35:51Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.rds"
-        },
-        {
-          "name": "play_by_play_2003.csv",
-          "size": 75192880,
-          "updated_at": "2025-04-30T06:35:53Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.csv"
-        },
-        {
-          "name": "play_by_play_2003.csv.gz",
-          "size": 14381489,
-          "updated_at": "2025-04-30T06:35:51Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.csv.gz"
-        },
-        {
-          "name": "play_by_play_2003.parquet",
-          "size": 14620361,
-          "updated_at": "2025-04-30T06:35:51Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.parquet"
-        },
-        {
-          "name": "play_by_play_2009.rds",
-          "size": 13356955,
-          "updated_at": "2025-04-30T06:36:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.rds"
-        },
-        {
-          "name": "play_by_play_2009.parquet",
-          "size": 18905386,
-          "updated_at": "2025-04-30T06:36:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.parquet"
-        },
-        {
-          "name": "play_by_play_2009.csv",
-          "size": 92145410,
-          "updated_at": "2025-04-30T06:36:11Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.csv"
-        },
-        {
-          "name": "play_by_play_2009.csv.gz",
-          "size": 17819486,
-          "updated_at": "2025-04-30T06:36:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.csv.gz"
         },
         {
           "name": "play_by_play_2009.qs",
@@ -494,64 +254,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.qs"
         },
         {
-          "name": "play_by_play_2004.csv",
-          "size": 75071343,
-          "updated_at": "2025-04-30T06:37:56Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.csv"
-        },
-        {
-          "name": "play_by_play_2004.csv.gz",
-          "size": 14348591,
-          "updated_at": "2025-04-30T06:37:54Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.csv.gz"
-        },
-        {
-          "name": "play_by_play_2004.parquet",
-          "size": 14568240,
-          "updated_at": "2025-04-30T06:37:54Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.parquet"
-        },
-        {
-          "name": "play_by_play_2004.rds",
-          "size": 10479140,
-          "updated_at": "2025-04-30T06:37:54Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.rds"
-        },
-        {
-          "name": "play_by_play_2005.rds",
-          "size": 10504519,
-          "updated_at": "2025-04-30T06:38:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.rds"
-        },
-        {
-          "name": "play_by_play_2005.csv.gz",
-          "size": 14373053,
-          "updated_at": "2025-04-30T06:38:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.csv.gz"
-        },
-        {
           "name": "play_by_play_2005.qs",
           "size": 6028756,
           "updated_at": "2025-04-30T06:38:09Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.qs"
-        },
-        {
-          "name": "play_by_play_2005.parquet",
-          "size": 14612857,
-          "updated_at": "2025-04-30T06:38:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.parquet"
-        },
-        {
-          "name": "play_by_play_2005.csv",
-          "size": 75097123,
-          "updated_at": "2025-04-30T06:38:11Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.csv"
-        },
-        {
-          "name": "play_by_play_2011.parquet",
-          "size": 19117830,
-          "updated_at": "2025-04-30T06:38:47Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.parquet"
         },
         {
           "name": "play_by_play_2011.qs",
@@ -560,64 +266,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.qs"
         },
         {
-          "name": "play_by_play_2011.csv",
-          "size": 93746818,
-          "updated_at": "2025-04-30T06:38:49Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.csv"
-        },
-        {
-          "name": "play_by_play_2011.csv.gz",
-          "size": 18021304,
-          "updated_at": "2025-04-30T06:38:47Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.csv.gz"
-        },
-        {
-          "name": "play_by_play_2011.rds",
-          "size": 13504797,
-          "updated_at": "2025-04-30T06:38:47Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.rds"
-        },
-        {
-          "name": "play_by_play_2018.rds",
-          "size": 13480901,
-          "updated_at": "2025-04-30T06:39:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.rds"
-        },
-        {
           "name": "play_by_play_2018.qs",
           "size": 8394833,
           "updated_at": "2025-04-30T06:39:20Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.qs"
-        },
-        {
-          "name": "play_by_play_2018.parquet",
-          "size": 19072097,
-          "updated_at": "2025-04-30T06:39:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.parquet"
-        },
-        {
-          "name": "play_by_play_2018.csv",
-          "size": 93444627,
-          "updated_at": "2025-04-30T06:39:22Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.csv"
-        },
-        {
-          "name": "play_by_play_2018.csv.gz",
-          "size": 17920627,
-          "updated_at": "2025-04-30T06:39:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.csv.gz"
-        },
-        {
-          "name": "play_by_play_2007.csv",
-          "size": 91224069,
-          "updated_at": "2025-04-30T06:41:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.csv"
-        },
-        {
-          "name": "play_by_play_2007.parquet",
-          "size": 18716524,
-          "updated_at": "2025-04-30T06:41:08Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.parquet"
         },
         {
           "name": "play_by_play_2007.qs",
@@ -626,46 +278,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.qs"
         },
         {
-          "name": "play_by_play_2007.rds",
-          "size": 13166995,
-          "updated_at": "2025-04-30T06:41:07Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.rds"
-        },
-        {
-          "name": "play_by_play_2007.csv.gz",
-          "size": 17618113,
-          "updated_at": "2025-04-30T06:41:08Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.csv.gz"
-        },
-        {
-          "name": "play_by_play_2017.csv.gz",
-          "size": 17973428,
-          "updated_at": "2025-04-30T06:41:25Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.csv.gz"
-        },
-        {
-          "name": "play_by_play_2017.parquet",
-          "size": 19050401,
-          "updated_at": "2025-04-30T06:41:25Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.parquet"
-        },
-        {
           "name": "play_by_play_2017.qs",
           "size": 8382133,
           "updated_at": "2025-04-30T06:41:25Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.qs"
-        },
-        {
-          "name": "play_by_play_2017.rds",
-          "size": 13460885,
-          "updated_at": "2025-04-30T06:41:25Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.rds"
-        },
-        {
-          "name": "play_by_play_2017.csv",
-          "size": 93727060,
-          "updated_at": "2025-04-30T06:41:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.csv"
         },
         {
           "name": "play_by_play_2020.qs",
@@ -704,30 +320,6 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2000.csv"
         },
         {
-          "name": "play_by_play_2019.parquet",
-          "size": 19119729,
-          "updated_at": "2025-07-31T18:17:19Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.parquet"
-        },
-        {
-          "name": "play_by_play_2019.rds",
-          "size": 13509603,
-          "updated_at": "2025-07-31T18:17:15Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.rds"
-        },
-        {
-          "name": "play_by_play_2019.csv.gz",
-          "size": 17992849,
-          "updated_at": "2025-07-31T18:17:18Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.csv.gz"
-        },
-        {
-          "name": "play_by_play_2019.csv",
-          "size": 93850458,
-          "updated_at": "2025-07-31T18:17:42Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.csv"
-        },
-        {
           "name": "play_by_play_2019.qs",
           "size": 8415337,
           "updated_at": "2025-07-31T18:17:10Z",
@@ -740,34 +332,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.qs"
         },
         {
-          "name": "play_by_play_2021.rds",
-          "size": 14321160,
-          "updated_at": "2026-01-08T13:13:13Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.rds"
-        },
-        {
-          "name": "play_by_play_2021.csv.gz",
-          "size": 19022201,
-          "updated_at": "2026-01-08T13:13:13Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.csv.gz"
-        },
-        {
-          "name": "play_by_play_2021.csv",
-          "size": 99167760,
-          "updated_at": "2026-01-08T13:13:15Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.csv"
-        },
-        {
           "name": "play_by_play_2021.qs",
           "size": 8884055,
           "updated_at": "2026-01-08T13:13:13Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.qs"
-        },
-        {
-          "name": "play_by_play_2021.parquet",
-          "size": 20249925,
-          "updated_at": "2026-01-08T13:13:13Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.parquet"
         },
         {
           "name": "play_by_play_2025.qs",
@@ -776,58 +344,10 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.qs"
         },
         {
-          "name": "play_by_play_2023.rds",
-          "size": 14481390,
-          "updated_at": "2026-02-12T10:24:52Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.rds"
-        },
-        {
           "name": "play_by_play_2023.qs",
           "size": 9078418,
           "updated_at": "2026-02-12T10:24:52Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.qs"
-        },
-        {
-          "name": "play_by_play_2023.parquet",
-          "size": 20534088,
-          "updated_at": "2026-02-12T10:24:52Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.parquet"
-        },
-        {
-          "name": "play_by_play_2023.csv",
-          "size": 99720211,
-          "updated_at": "2026-02-12T10:24:55Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.csv"
-        },
-        {
-          "name": "play_by_play_2023.csv.gz",
-          "size": 19169807,
-          "updated_at": "2026-02-12T10:24:52Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.csv.gz"
-        },
-        {
-          "name": "play_by_play_2022.parquet",
-          "size": 20426548,
-          "updated_at": "2026-02-12T10:25:24Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.parquet"
-        },
-        {
-          "name": "play_by_play_2022.csv.gz",
-          "size": 19093961,
-          "updated_at": "2026-02-12T10:25:24Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.csv.gz"
-        },
-        {
-          "name": "play_by_play_2022.rds",
-          "size": 14430736,
-          "updated_at": "2026-02-12T10:25:24Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.rds"
-        },
-        {
-          "name": "play_by_play_2022.csv",
-          "size": 99104593,
-          "updated_at": "2026-02-12T10:25:26Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.csv"
         },
         {
           "name": "play_by_play_2022.qs",
@@ -836,159 +356,639 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.qs"
         },
         {
-          "name": "play_by_play_2025.csv.gz",
-          "size": 19105296,
-          "updated_at": "2026-08-13T12:26:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.csv.gz"
-        },
-        {
-          "name": "play_by_play_2025.rds",
-          "size": 14361275,
-          "updated_at": "2026-08-13T12:26:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.rds"
-        },
-        {
-          "name": "play_by_play_2025.parquet",
-          "size": 20337029,
-          "updated_at": "2026-08-13T12:26:09Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.parquet"
-        },
-        {
-          "name": "play_by_play_2025.csv",
-          "size": 97951481,
-          "updated_at": "2026-08-13T12:26:11Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.csv"
-        },
-        {
-          "name": "play_by_play_2024.rds",
-          "size": 14507404,
-          "updated_at": "2026-08-13T12:26:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.rds"
-        },
-        {
-          "name": "play_by_play_2024.csv",
-          "size": 99483794,
-          "updated_at": "2026-08-13T12:26:29Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.csv"
-        },
-        {
-          "name": "play_by_play_2024.csv.gz",
-          "size": 19362351,
-          "updated_at": "2026-08-13T12:26:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.csv.gz"
-        },
-        {
-          "name": "play_by_play_2024.parquet",
-          "size": 20597560,
-          "updated_at": "2026-08-13T12:26:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.parquet"
-        },
-        {
           "name": "play_by_play_2001.csv.gz",
-          "size": 13890995,
-          "updated_at": "2026-08-13T12:38:45Z",
+          "size": 13885987,
+          "updated_at": "2026-11-17T19:24:12Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2001.csv.gz"
         },
         {
-          "name": "play_by_play_2001.csv",
-          "size": 70856959,
-          "updated_at": "2026-08-13T12:38:47Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2001.csv"
-        },
-        {
           "name": "play_by_play_2001.rds",
-          "size": 10240367,
-          "updated_at": "2026-08-13T12:38:45Z",
+          "size": 11173007,
+          "updated_at": "2026-11-17T19:24:10Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2001.rds"
         },
         {
+          "name": "play_by_play_2001.csv",
+          "size": 70819525,
+          "updated_at": "2026-11-17T19:24:24Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2001.csv"
+        },
+        {
           "name": "play_by_play_2001.parquet",
-          "size": 14007738,
-          "updated_at": "2026-08-13T12:38:45Z",
+          "size": 14536758,
+          "updated_at": "2026-11-17T19:24:12Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2001.parquet"
         },
         {
           "name": "play_by_play_2002.csv.gz",
-          "size": 14608544,
-          "updated_at": "2026-08-13T12:39:26Z",
+          "size": 14624572,
+          "updated_at": "2026-11-17T19:24:57Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2002.csv.gz"
         },
         {
           "name": "play_by_play_2002.rds",
-          "size": 10778988,
-          "updated_at": "2026-08-13T12:39:26Z",
+          "size": 11767726,
+          "updated_at": "2026-11-17T19:24:55Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2002.rds"
         },
         {
           "name": "play_by_play_2002.parquet",
-          "size": 14742308,
-          "updated_at": "2026-08-13T12:39:26Z",
+          "size": 15297641,
+          "updated_at": "2026-11-17T19:24:57Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2002.parquet"
         },
         {
           "name": "play_by_play_2002.csv",
-          "size": 74645096,
-          "updated_at": "2026-08-13T12:39:29Z",
+          "size": 74617334,
+          "updated_at": "2026-11-17T19:25:13Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2002.csv"
         },
         {
-          "name": "play_by_play_2020.rds",
-          "size": 13628119,
-          "updated_at": "2026-08-26T07:33:10Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.rds"
+          "name": "play_by_play_2003.rds",
+          "size": 11514925,
+          "updated_at": "2026-11-17T19:25:45Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.rds"
         },
         {
-          "name": "play_by_play_2020.csv",
-          "size": 94680927,
-          "updated_at": "2026-08-26T07:33:12Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.csv"
+          "name": "play_by_play_2003.csv.gz",
+          "size": 14476873,
+          "updated_at": "2026-11-17T19:25:47Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.csv.gz"
+        },
+        {
+          "name": "play_by_play_2003.parquet",
+          "size": 15250851,
+          "updated_at": "2026-11-17T19:25:47Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.parquet"
+        },
+        {
+          "name": "play_by_play_2003.csv",
+          "size": 75305840,
+          "updated_at": "2026-11-17T19:26:02Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2003.csv"
+        },
+        {
+          "name": "play_by_play_2004.csv",
+          "size": 75195571,
+          "updated_at": "2026-11-17T19:26:55Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.csv"
+        },
+        {
+          "name": "play_by_play_2004.csv.gz",
+          "size": 14445705,
+          "updated_at": "2026-11-17T19:26:34Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.csv.gz"
+        },
+        {
+          "name": "play_by_play_2004.parquet",
+          "size": 15192168,
+          "updated_at": "2026-11-17T19:26:35Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.parquet"
+        },
+        {
+          "name": "play_by_play_2004.rds",
+          "size": 11486455,
+          "updated_at": "2026-11-17T19:26:32Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2004.rds"
+        },
+        {
+          "name": "play_by_play_2005.rds",
+          "size": 11478588,
+          "updated_at": "2026-11-17T19:27:27Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.rds"
+        },
+        {
+          "name": "play_by_play_2005.parquet",
+          "size": 15201700,
+          "updated_at": "2026-11-17T19:27:29Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.parquet"
+        },
+        {
+          "name": "play_by_play_2005.csv.gz",
+          "size": 14391788,
+          "updated_at": "2026-11-17T19:27:22Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.csv.gz"
+        },
+        {
+          "name": "play_by_play_2005.csv",
+          "size": 75074522,
+          "updated_at": "2026-11-17T19:27:43Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2005.csv"
+        },
+        {
+          "name": "play_by_play_2006.parquet",
+          "size": 19751289,
+          "updated_at": "2026-11-17T19:28:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.parquet"
+        },
+        {
+          "name": "play_by_play_2006.rds",
+          "size": 14574870,
+          "updated_at": "2026-11-17T19:28:45Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.rds"
+        },
+        {
+          "name": "play_by_play_2006.csv",
+          "size": 91569682,
+          "updated_at": "2026-11-17T19:28:56Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.csv"
+        },
+        {
+          "name": "play_by_play_2006.csv.gz",
+          "size": 17962953,
+          "updated_at": "2026-11-17T19:28:35Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2006.csv.gz"
+        },
+        {
+          "name": "play_by_play_2007.rds",
+          "size": 14704844,
+          "updated_at": "2026-11-17T19:29:51Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.rds"
+        },
+        {
+          "name": "play_by_play_2007.csv.gz",
+          "size": 18113813,
+          "updated_at": "2026-11-17T19:29:52Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.csv.gz"
+        },
+        {
+          "name": "play_by_play_2007.csv",
+          "size": 91804672,
+          "updated_at": "2026-11-17T19:30:11Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.csv"
+        },
+        {
+          "name": "play_by_play_2007.parquet",
+          "size": 19950718,
+          "updated_at": "2026-11-17T19:29:46Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2007.parquet"
+        },
+        {
+          "name": "play_by_play_2008.parquet",
+          "size": 19778126,
+          "updated_at": "2026-11-17T19:31:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.parquet"
+        },
+        {
+          "name": "play_by_play_2008.rds",
+          "size": 14609716,
+          "updated_at": "2026-11-17T19:31:04Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.rds"
+        },
+        {
+          "name": "play_by_play_2008.csv",
+          "size": 91220085,
+          "updated_at": "2026-11-17T19:31:29Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.csv"
+        },
+        {
+          "name": "play_by_play_2008.csv.gz",
+          "size": 17974416,
+          "updated_at": "2026-11-17T19:31:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2008.csv.gz"
+        },
+        {
+          "name": "play_by_play_2009.parquet",
+          "size": 20169111,
+          "updated_at": "2026-11-17T19:32:37Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.parquet"
+        },
+        {
+          "name": "play_by_play_2009.csv",
+          "size": 92763928,
+          "updated_at": "2026-11-17T19:33:00Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.csv"
+        },
+        {
+          "name": "play_by_play_2009.rds",
+          "size": 14918690,
+          "updated_at": "2026-11-17T19:32:35Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.rds"
+        },
+        {
+          "name": "play_by_play_2009.csv.gz",
+          "size": 18341252,
+          "updated_at": "2026-11-17T19:32:24Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2009.csv.gz"
+        },
+        {
+          "name": "play_by_play_2010.parquet",
+          "size": 20352790,
+          "updated_at": "2026-11-17T19:34:05Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.parquet"
+        },
+        {
+          "name": "play_by_play_2010.rds",
+          "size": 15047971,
+          "updated_at": "2026-11-17T19:33:52Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.rds"
+        },
+        {
+          "name": "play_by_play_2010.csv.gz",
+          "size": 18488128,
+          "updated_at": "2026-11-17T19:33:53Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.csv.gz"
+        },
+        {
+          "name": "play_by_play_2010.csv",
+          "size": 93434523,
+          "updated_at": "2026-11-17T19:34:16Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.csv"
+        },
+        {
+          "name": "play_by_play_2011.rds",
+          "size": 15137729,
+          "updated_at": "2026-11-17T19:35:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.rds"
+        },
+        {
+          "name": "play_by_play_2011.csv.gz",
+          "size": 18666950,
+          "updated_at": "2026-11-17T19:35:22Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.csv.gz"
+        },
+        {
+          "name": "play_by_play_2011.csv",
+          "size": 94409329,
+          "updated_at": "2026-11-17T19:35:48Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.csv"
+        },
+        {
+          "name": "play_by_play_2011.parquet",
+          "size": 20469258,
+          "updated_at": "2026-11-17T19:35:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.parquet"
+        },
+        {
+          "name": "play_by_play_2012.csv",
+          "size": 95402862,
+          "updated_at": "2026-11-17T19:37:20Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv"
+        },
+        {
+          "name": "play_by_play_2012.parquet",
+          "size": 20700098,
+          "updated_at": "2026-11-17T19:36:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.parquet"
+        },
+        {
+          "name": "play_by_play_2012.csv.gz",
+          "size": 18855893,
+          "updated_at": "2026-11-17T19:36:52Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv.gz"
+        },
+        {
+          "name": "play_by_play_2012.rds",
+          "size": 15278171,
+          "updated_at": "2026-11-17T19:36:49Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.rds"
+        },
+        {
+          "name": "play_by_play_2013.parquet",
+          "size": 20910695,
+          "updated_at": "2026-11-17T19:38:26Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.parquet"
+        },
+        {
+          "name": "play_by_play_2013.csv.gz",
+          "size": 19033222,
+          "updated_at": "2026-11-17T19:38:25Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.csv.gz"
+        },
+        {
+          "name": "play_by_play_2013.csv",
+          "size": 96105923,
+          "updated_at": "2026-11-17T19:38:58Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.csv"
+        },
+        {
+          "name": "play_by_play_2013.rds",
+          "size": 15445800,
+          "updated_at": "2026-11-17T19:38:21Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.rds"
+        },
+        {
+          "name": "play_by_play_2014.csv.gz",
+          "size": 18890804,
+          "updated_at": "2026-11-17T19:39:57Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.csv.gz"
+        },
+        {
+          "name": "play_by_play_2014.csv",
+          "size": 95137951,
+          "updated_at": "2026-11-17T19:40:19Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.csv"
+        },
+        {
+          "name": "play_by_play_2014.parquet",
+          "size": 20751523,
+          "updated_at": "2026-11-17T19:39:58Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.parquet"
+        },
+        {
+          "name": "play_by_play_2014.rds",
+          "size": 15294009,
+          "updated_at": "2026-11-17T19:39:55Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.rds"
+        },
+        {
+          "name": "play_by_play_2015.csv.gz",
+          "size": 19123346,
+          "updated_at": "2026-11-17T19:41:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.csv.gz"
+        },
+        {
+          "name": "play_by_play_2015.rds",
+          "size": 15503532,
+          "updated_at": "2026-11-17T19:41:18Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.rds"
+        },
+        {
+          "name": "play_by_play_2015.csv",
+          "size": 96295877,
+          "updated_at": "2026-11-17T19:41:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.csv"
+        },
+        {
+          "name": "play_by_play_2015.parquet",
+          "size": 20978312,
+          "updated_at": "2026-11-17T19:41:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.parquet"
+        },
+        {
+          "name": "play_by_play_2016.csv",
+          "size": 95193933,
+          "updated_at": "2026-11-17T19:43:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.csv"
+        },
+        {
+          "name": "play_by_play_2016.parquet",
+          "size": 20586714,
+          "updated_at": "2026-11-17T19:42:47Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.parquet"
+        },
+        {
+          "name": "play_by_play_2016.csv.gz",
+          "size": 18718996,
+          "updated_at": "2026-11-17T19:42:45Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.csv.gz"
+        },
+        {
+          "name": "play_by_play_2016.rds",
+          "size": 15214417,
+          "updated_at": "2026-11-17T19:42:43Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.rds"
+        },
+        {
+          "name": "play_by_play_2017.csv.gz",
+          "size": 18449860,
+          "updated_at": "2026-11-17T19:44:05Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.csv.gz"
+        },
+        {
+          "name": "play_by_play_2017.rds",
+          "size": 14991962,
+          "updated_at": "2026-11-17T19:44:04Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.rds"
+        },
+        {
+          "name": "play_by_play_2017.parquet",
+          "size": 20268931,
+          "updated_at": "2026-11-17T19:43:57Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.parquet"
+        },
+        {
+          "name": "play_by_play_2017.csv",
+          "size": 94305415,
+          "updated_at": "2026-11-17T19:44:24Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.csv"
+        },
+        {
+          "name": "play_by_play_2018.parquet",
+          "size": 20269122,
+          "updated_at": "2026-11-17T19:45:28Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.parquet"
+        },
+        {
+          "name": "play_by_play_2018.csv.gz",
+          "size": 18406938,
+          "updated_at": "2026-11-17T19:45:14Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.csv.gz"
+        },
+        {
+          "name": "play_by_play_2018.rds",
+          "size": 15012267,
+          "updated_at": "2026-11-17T19:45:23Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.rds"
+        },
+        {
+          "name": "play_by_play_2018.csv",
+          "size": 94033638,
+          "updated_at": "2026-11-17T19:45:53Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2018.csv"
+        },
+        {
+          "name": "play_by_play_2019.csv",
+          "size": 94399893,
+          "updated_at": "2026-11-17T19:47:15Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.csv"
+        },
+        {
+          "name": "play_by_play_2019.parquet",
+          "size": 20363228,
+          "updated_at": "2026-11-17T19:46:55Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.parquet"
+        },
+        {
+          "name": "play_by_play_2019.rds",
+          "size": 15016083,
+          "updated_at": "2026-11-17T19:46:51Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.rds"
+        },
+        {
+          "name": "play_by_play_2019.csv.gz",
+          "size": 18471747,
+          "updated_at": "2026-11-17T19:46:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2019.csv.gz"
         },
         {
           "name": "play_by_play_2020.csv.gz",
-          "size": 18143553,
-          "updated_at": "2026-08-26T07:33:10Z",
+          "size": 18638492,
+          "updated_at": "2026-11-17T19:48:14Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.csv.gz"
         },
         {
+          "name": "play_by_play_2020.csv",
+          "size": 95257806,
+          "updated_at": "2026-11-17T19:48:37Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.csv"
+        },
+        {
+          "name": "play_by_play_2020.rds",
+          "size": 15186270,
+          "updated_at": "2026-11-17T19:48:12Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.rds"
+        },
+        {
           "name": "play_by_play_2020.parquet",
-          "size": 19286459,
-          "updated_at": "2026-08-26T07:33:10Z",
+          "size": 20511734,
+          "updated_at": "2026-11-17T19:48:16Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2020.parquet"
         },
         {
-          "name": "timestamp.txt",
-          "size": 24,
-          "updated_at": "2026-10-22T15:03:33Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/timestamp.txt"
+          "name": "play_by_play_2021.rds",
+          "size": 15932672,
+          "updated_at": "2026-11-17T19:49:41Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.rds"
         },
         {
-          "name": "play_by_play_2026.rds",
-          "size": 4924624,
-          "updated_at": "2026-10-22T15:03:34Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.rds"
+          "name": "play_by_play_2021.csv",
+          "size": 99760019,
+          "updated_at": "2026-11-17T19:50:08Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.csv"
         },
         {
-          "name": "play_by_play_2026.csv.gz",
-          "size": 6436940,
-          "updated_at": "2026-10-22T15:03:34Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv.gz"
+          "name": "play_by_play_2021.parquet",
+          "size": 21543859,
+          "updated_at": "2026-11-17T19:49:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.parquet"
+        },
+        {
+          "name": "play_by_play_2021.csv.gz",
+          "size": 19537756,
+          "updated_at": "2026-11-17T19:49:45Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.csv.gz"
+        },
+        {
+          "name": "play_by_play_2022.csv.gz",
+          "size": 19589505,
+          "updated_at": "2026-11-17T19:51:08Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.csv.gz"
+        },
+        {
+          "name": "play_by_play_2022.parquet",
+          "size": 21678701,
+          "updated_at": "2026-11-17T19:51:10Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.parquet"
+        },
+        {
+          "name": "play_by_play_2022.rds",
+          "size": 16009970,
+          "updated_at": "2026-11-17T19:51:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.rds"
+        },
+        {
+          "name": "play_by_play_2022.csv",
+          "size": 99683805,
+          "updated_at": "2026-11-17T19:51:31Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.csv"
+        },
+        {
+          "name": "play_by_play_2023.rds",
+          "size": 16070393,
+          "updated_at": "2026-11-17T19:52:33Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.rds"
+        },
+        {
+          "name": "play_by_play_2023.csv",
+          "size": 100266592,
+          "updated_at": "2026-11-17T19:53:03Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.csv"
+        },
+        {
+          "name": "play_by_play_2023.csv.gz",
+          "size": 19668734,
+          "updated_at": "2026-11-17T19:52:36Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.csv.gz"
+        },
+        {
+          "name": "play_by_play_2023.parquet",
+          "size": 21818016,
+          "updated_at": "2026-11-17T19:52:26Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.parquet"
+        },
+        {
+          "name": "play_by_play_2024.parquet",
+          "size": 21665399,
+          "updated_at": "2026-11-17T19:54:13Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.parquet"
+        },
+        {
+          "name": "play_by_play_2024.csv",
+          "size": 99871657,
+          "updated_at": "2026-11-17T19:54:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.csv"
+        },
+        {
+          "name": "play_by_play_2024.csv.gz",
+          "size": 19570836,
+          "updated_at": "2026-11-17T19:54:12Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.csv.gz"
+        },
+        {
+          "name": "play_by_play_2024.rds",
+          "size": 15977275,
+          "updated_at": "2026-11-17T19:54:07Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.rds"
+        },
+        {
+          "name": "play_by_play_2025.csv",
+          "size": 98488368,
+          "updated_at": "2026-11-17T19:56:30Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.csv"
+        },
+        {
+          "name": "play_by_play_2025.rds",
+          "size": 15939909,
+          "updated_at": "2026-11-17T19:55:47Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.rds"
+        },
+        {
+          "name": "play_by_play_2025.parquet",
+          "size": 21583710,
+          "updated_at": "2026-11-17T19:55:51Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.parquet"
+        },
+        {
+          "name": "play_by_play_2025.csv.gz",
+          "size": 19580656,
+          "updated_at": "2026-11-17T19:55:38Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.csv.gz"
         },
         {
           "name": "play_by_play_2026.parquet",
-          "size": 6998248,
-          "updated_at": "2026-10-22T15:03:34Z",
+          "size": 11776333,
+          "updated_at": "2026-11-19T10:03:07Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet"
         },
         {
           "name": "play_by_play_2026.csv",
-          "size": 32880264,
-          "updated_at": "2026-10-22T15:03:35Z",
+          "size": 52870697,
+          "updated_at": "2026-11-19T10:03:08Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv"
+        },
+        {
+          "name": "play_by_play_2026.csv.gz",
+          "size": 10547358,
+          "updated_at": "2026-11-19T10:03:07Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv.gz"
+        },
+        {
+          "name": "timestamp.txt",
+          "size": 24,
+          "updated_at": "2026-11-19T10:03:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/timestamp.txt"
+        },
+        {
+          "name": "play_by_play_2026.rds",
+          "size": 8666882,
+          "updated_at": "2026-11-19T10:03:07Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.rds"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T15:03:35Z",
+          "updated_at": "2026-11-19T10:03:08Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/timestamp.json"
         }
       ]
@@ -4239,87 +4239,87 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2020.rds"
         },
         {
-          "name": "stats_team_week_2026.csv.gz",
-          "size": 25999,
-          "updated_at": "2026-10-22T15:29:45Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv.gz"
-        },
-        {
-          "name": "stats_team_week_2026.parquet",
-          "size": 82683,
-          "updated_at": "2026-10-22T15:29:45Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.parquet"
-        },
-        {
           "name": "stats_team_week_2026.rds",
-          "size": 23893,
-          "updated_at": "2026-10-22T15:29:45Z",
+          "size": 40086,
+          "updated_at": "2026-11-19T10:04:48Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.rds"
         },
         {
           "name": "stats_team_week_2026.csv",
-          "size": 76492,
-          "updated_at": "2026-10-22T15:29:45Z",
+          "size": 122105,
+          "updated_at": "2026-11-19T10:04:48Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv"
         },
         {
-          "name": "stats_team_reg_2026.rds",
-          "size": 7440,
-          "updated_at": "2026-10-22T15:30:08Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.rds"
+          "name": "stats_team_week_2026.csv.gz",
+          "size": 41094,
+          "updated_at": "2026-11-19T10:04:48Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv.gz"
         },
         {
-          "name": "stats_team_reg_2026.parquet",
-          "size": 61697,
-          "updated_at": "2026-10-22T15:30:08Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.parquet"
+          "name": "stats_team_week_2026.parquet",
+          "size": 96941,
+          "updated_at": "2026-11-19T10:04:48Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.parquet"
         },
         {
           "name": "stats_team_reg_2026.csv",
-          "size": 16965,
-          "updated_at": "2026-10-22T15:30:08Z",
+          "size": 18265,
+          "updated_at": "2026-11-19T10:05:03Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.csv"
         },
         {
+          "name": "stats_team_reg_2026.rds",
+          "size": 8236,
+          "updated_at": "2026-11-19T10:05:03Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.rds"
+        },
+        {
           "name": "stats_team_reg_2026.csv.gz",
-          "size": 6837,
-          "updated_at": "2026-10-22T15:30:08Z",
+          "size": 7577,
+          "updated_at": "2026-11-19T10:05:03Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.csv.gz"
+        },
+        {
+          "name": "stats_team_reg_2026.parquet",
+          "size": 63359,
+          "updated_at": "2026-11-19T10:05:03Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_reg_2026.parquet"
+        },
+        {
+          "name": "stats_team_regpost_2026.rds",
+          "size": 8240,
+          "updated_at": "2026-11-19T10:05:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.rds"
+        },
+        {
+          "name": "stats_team_regpost_2026.csv.gz",
+          "size": 7577,
+          "updated_at": "2026-11-19T10:05:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.csv.gz"
         },
         {
           "name": "timestamp.txt",
           "size": 24,
-          "updated_at": "2026-10-22T15:30:12Z",
+          "updated_at": "2026-11-19T10:05:06Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/timestamp.txt"
         },
         {
-          "name": "stats_team_regpost_2026.csv.gz",
-          "size": 6837,
-          "updated_at": "2026-10-22T15:30:12Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.csv.gz"
-        },
-        {
-          "name": "stats_team_regpost_2026.csv",
-          "size": 16965,
-          "updated_at": "2026-10-22T15:30:12Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.csv"
-        },
-        {
           "name": "stats_team_regpost_2026.parquet",
-          "size": 61715,
-          "updated_at": "2026-10-22T15:30:12Z",
+          "size": 63389,
+          "updated_at": "2026-11-19T10:05:06Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.parquet"
         },
         {
-          "name": "stats_team_regpost_2026.rds",
-          "size": 7445,
-          "updated_at": "2026-10-22T15:30:12Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.rds"
+          "name": "stats_team_regpost_2026.csv",
+          "size": 18265,
+          "updated_at": "2026-11-19T10:05:06Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_regpost_2026.csv"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T15:30:14Z",
+          "updated_at": "2026-11-19T10:05:08Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/timestamp.json"
         }
       ]
@@ -7570,87 +7570,87 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2020.csv.gz"
         },
         {
-          "name": "stats_player_week_2026.parquet",
-          "size": 386908,
-          "updated_at": "2026-10-22T15:29:41Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.parquet"
-        },
-        {
-          "name": "stats_player_week_2026.rds",
-          "size": 346404,
-          "updated_at": "2026-10-22T15:29:40Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.rds"
-        },
-        {
           "name": "stats_player_week_2026.csv.gz",
-          "size": 423040,
-          "updated_at": "2026-10-22T15:29:40Z",
+          "size": 677494,
+          "updated_at": "2026-11-19T10:04:44Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv.gz"
         },
         {
+          "name": "stats_player_week_2026.rds",
+          "size": 554647,
+          "updated_at": "2026-11-19T10:04:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.rds"
+        },
+        {
           "name": "stats_player_week_2026.csv",
-          "size": 2888891,
-          "updated_at": "2026-10-22T15:29:41Z",
+          "size": 4648928,
+          "updated_at": "2026-11-19T10:04:44Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv"
         },
         {
-          "name": "stats_player_reg_2026.csv",
-          "size": 712467,
-          "updated_at": "2026-10-22T15:29:56Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.csv"
+          "name": "stats_player_week_2026.parquet",
+          "size": 534861,
+          "updated_at": "2026-11-19T10:04:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.parquet"
+        },
+        {
+          "name": "stats_player_reg_2026.rds",
+          "size": 142970,
+          "updated_at": "2026-11-19T10:04:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.rds"
         },
         {
           "name": "stats_player_reg_2026.csv.gz",
-          "size": 120539,
-          "updated_at": "2026-10-22T15:29:56Z",
+          "size": 138716,
+          "updated_at": "2026-11-19T10:04:54Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.csv.gz"
         },
         {
           "name": "stats_player_reg_2026.parquet",
-          "size": 229175,
-          "updated_at": "2026-10-22T15:29:56Z",
+          "size": 254765,
+          "updated_at": "2026-11-19T10:04:54Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.parquet"
         },
         {
-          "name": "stats_player_reg_2026.rds",
-          "size": 123732,
-          "updated_at": "2026-10-22T15:29:56Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.rds"
+          "name": "stats_player_reg_2026.csv",
+          "size": 784959,
+          "updated_at": "2026-11-19T10:04:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2026.csv"
         },
         {
-          "name": "stats_player_regpost_2026.csv",
-          "size": 712467,
-          "updated_at": "2026-10-22T15:30:00Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.csv"
+          "name": "stats_player_regpost_2026.rds",
+          "size": 142975,
+          "updated_at": "2026-11-19T10:04:58Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.rds"
         },
         {
           "name": "stats_player_regpost_2026.parquet",
-          "size": 229209,
-          "updated_at": "2026-10-22T15:30:00Z",
+          "size": 254787,
+          "updated_at": "2026-11-19T10:04:58Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.parquet"
+        },
+        {
+          "name": "stats_player_regpost_2026.csv",
+          "size": 784959,
+          "updated_at": "2026-11-19T10:04:58Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.csv"
+        },
+        {
+          "name": "stats_player_regpost_2026.csv.gz",
+          "size": 138716,
+          "updated_at": "2026-11-19T10:04:58Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.csv.gz"
         },
         {
           "name": "timestamp.txt",
           "size": 24,
-          "updated_at": "2026-10-22T15:30:00Z",
+          "updated_at": "2026-11-19T10:04:58Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/timestamp.txt"
-        },
-        {
-          "name": "stats_player_regpost_2026.csv.gz",
-          "size": 120539,
-          "updated_at": "2026-10-22T15:30:00Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.csv.gz"
-        },
-        {
-          "name": "stats_player_regpost_2026.rds",
-          "size": 123736,
-          "updated_at": "2026-10-22T15:30:00Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_regpost_2026.rds"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T15:30:01Z",
+          "updated_at": "2026-11-19T10:04:59Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/timestamp.json"
         }
       ]
@@ -7661,39 +7661,39 @@
       "asset_count_total": 6,
       "assets": [
         {
-          "name": "games.csv.gz",
-          "size": 515567,
-          "updated_at": "2026-10-22T18:46:39Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv.gz"
-        },
-        {
-          "name": "games.parquet",
-          "size": 522569,
-          "updated_at": "2026-10-22T18:46:39Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.parquet"
+          "name": "games.csv",
+          "size": 2190568,
+          "updated_at": "2026-11-19T11:46:40Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
         },
         {
           "name": "games.rds",
-          "size": 429228,
-          "updated_at": "2026-10-22T18:46:39Z",
+          "size": 430599,
+          "updated_at": "2026-11-19T11:46:40Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.rds"
         },
         {
           "name": "timestamp.txt",
           "size": 24,
-          "updated_at": "2026-10-22T18:46:39Z",
+          "updated_at": "2026-11-19T11:46:40Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/timestamp.txt"
         },
         {
-          "name": "games.csv",
-          "size": 2186338,
-          "updated_at": "2026-10-22T18:46:39Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+          "name": "games.csv.gz",
+          "size": 517148,
+          "updated_at": "2026-11-19T11:46:40Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv.gz"
+        },
+        {
+          "name": "games.parquet",
+          "size": 524027,
+          "updated_at": "2026-11-19T11:46:41Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.parquet"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T18:46:41Z",
+          "updated_at": "2026-11-19T11:46:42Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/timestamp.json"
         }
       ]
@@ -7710,39 +7710,39 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.qs"
         },
         {
-          "name": "timestamp.txt",
-          "size": 24,
-          "updated_at": "2026-10-22T14:25:32Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/timestamp.txt"
-        },
-        {
-          "name": "players.csv.gz",
-          "size": 2502618,
-          "updated_at": "2026-10-22T14:25:33Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv.gz"
-        },
-        {
           "name": "players.parquet",
-          "size": 3394728,
-          "updated_at": "2026-10-22T14:25:33Z",
+          "size": 3396509,
+          "updated_at": "2026-11-18T17:12:35Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.parquet"
         },
         {
-          "name": "players.rds",
-          "size": 2315490,
-          "updated_at": "2026-10-22T14:25:33Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.rds"
+          "name": "players.csv",
+          "size": 7309602,
+          "updated_at": "2026-11-18T17:12:36Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv"
         },
         {
-          "name": "players.csv",
-          "size": 7305662,
-          "updated_at": "2026-10-22T14:25:33Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv"
+          "name": "players.csv.gz",
+          "size": 2504416,
+          "updated_at": "2026-11-18T17:12:36Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv.gz"
+        },
+        {
+          "name": "timestamp.txt",
+          "size": 24,
+          "updated_at": "2026-11-18T17:12:35Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/timestamp.txt"
+        },
+        {
+          "name": "players.rds",
+          "size": 2317040,
+          "updated_at": "2026-11-18T17:12:36Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.rds"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T14:25:34Z",
+          "updated_at": "2026-11-18T17:12:37Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/players/timestamp.json"
         }
       ]
@@ -8803,207 +8803,207 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def_2026.rds"
         },
         {
+          "name": "advstats_week_pass_2026.csv",
+          "size": 36552,
+          "updated_at": "2026-11-18T12:18:51Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.csv"
+        },
+        {
           "name": "advstats_week_pass_2026.rds",
-          "size": 7697,
-          "updated_at": "2026-10-22T11:03:17Z",
+          "size": 11285,
+          "updated_at": "2026-11-18T12:18:51Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.rds"
         },
         {
           "name": "advstats_week_pass_2026.csv.gz",
-          "size": 5889,
-          "updated_at": "2026-10-22T11:03:17Z",
+          "size": 8951,
+          "updated_at": "2026-11-18T12:18:51Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.csv.gz"
         },
         {
-          "name": "advstats_week_pass_2026.csv",
-          "size": 22570,
-          "updated_at": "2026-10-22T11:03:17Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.csv"
-        },
-        {
           "name": "advstats_week_pass_2026.parquet",
-          "size": 18264,
-          "updated_at": "2026-10-22T11:03:17Z",
+          "size": 21647,
+          "updated_at": "2026-11-18T12:18:51Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.parquet"
         },
         {
-          "name": "advstats_week_rush_2026.csv",
-          "size": 64051,
-          "updated_at": "2026-10-22T11:03:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.csv"
-        },
-        {
-          "name": "advstats_week_rush_2026.csv.gz",
-          "size": 12257,
-          "updated_at": "2026-10-22T11:03:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.csv.gz"
-        },
-        {
-          "name": "advstats_week_rush_2026.rds",
-          "size": 14184,
-          "updated_at": "2026-10-22T11:03:20Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.rds"
-        },
-        {
           "name": "advstats_week_rush_2026.parquet",
-          "size": 22538,
-          "updated_at": "2026-10-22T11:03:20Z",
+          "size": 28640,
+          "updated_at": "2026-11-18T12:18:55Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.parquet"
         },
         {
-          "name": "advstats_week_rec_2026.csv.gz",
-          "size": 20342,
-          "updated_at": "2026-10-22T11:03:23Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.csv.gz"
+          "name": "advstats_week_rush_2026.csv.gz",
+          "size": 18969,
+          "updated_at": "2026-11-18T12:18:55Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.csv.gz"
+        },
+        {
+          "name": "advstats_week_rush_2026.csv",
+          "size": 103820,
+          "updated_at": "2026-11-18T12:18:55Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.csv"
+        },
+        {
+          "name": "advstats_week_rush_2026.rds",
+          "size": 21063,
+          "updated_at": "2026-11-18T12:18:55Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.rds"
         },
         {
           "name": "advstats_week_rec_2026.csv",
-          "size": 130490,
-          "updated_at": "2026-10-22T11:03:23Z",
+          "size": 206928,
+          "updated_at": "2026-11-18T12:18:58Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.csv"
         },
         {
+          "name": "advstats_week_rec_2026.csv.gz",
+          "size": 31262,
+          "updated_at": "2026-11-18T12:18:58Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.csv.gz"
+        },
+        {
           "name": "advstats_week_rec_2026.parquet",
-          "size": 28183,
-          "updated_at": "2026-10-22T11:03:23Z",
+          "size": 35346,
+          "updated_at": "2026-11-18T12:18:58Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.parquet"
         },
         {
           "name": "advstats_week_rec_2026.rds",
-          "size": 19626,
-          "updated_at": "2026-10-22T11:03:23Z",
+          "size": 28294,
+          "updated_at": "2026-11-18T12:18:58Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.rds"
         },
         {
           "name": "advstats_week_def_2026.rds",
-          "size": 67591,
-          "updated_at": "2026-10-22T11:03:27Z",
+          "size": 103152,
+          "updated_at": "2026-11-18T12:19:01Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.rds"
         },
         {
+          "name": "advstats_week_def_2026.parquet",
+          "size": 99451,
+          "updated_at": "2026-11-18T12:19:01Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.parquet"
+        },
+        {
           "name": "advstats_week_def_2026.csv",
-          "size": 308580,
-          "updated_at": "2026-10-22T11:03:27Z",
+          "size": 495611,
+          "updated_at": "2026-11-18T12:19:01Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.csv"
         },
         {
           "name": "advstats_week_def_2026.csv.gz",
-          "size": 69387,
-          "updated_at": "2026-10-22T11:03:27Z",
+          "size": 109585,
+          "updated_at": "2026-11-18T12:19:01Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.csv.gz"
-        },
-        {
-          "name": "advstats_week_def_2026.parquet",
-          "size": 73740,
-          "updated_at": "2026-10-22T11:03:27Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.parquet"
-        },
-        {
-          "name": "advstats_season_rush.rds",
-          "size": 75952,
-          "updated_at": "2026-10-22T17:29:53Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rush.rds"
         },
         {
           "name": "advstats_season_rush.csv",
           "size": 239567,
-          "updated_at": "2026-10-22T17:29:52Z",
+          "updated_at": "2026-11-19T06:47:24Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rush.csv"
-        },
-        {
-          "name": "advstats_season_rush.parquet",
-          "size": 81700,
-          "updated_at": "2026-10-22T17:29:53Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rush.parquet"
         },
         {
           "name": "advstats_season_rush.csv.gz",
           "size": 70113,
-          "updated_at": "2026-10-22T17:29:53Z",
+          "updated_at": "2026-11-19T06:47:24Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rush.csv.gz"
         },
         {
-          "name": "advstats_season_rec.rds",
-          "size": 147501,
-          "updated_at": "2026-10-22T17:30:02Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rec.rds"
+          "name": "advstats_season_rush.rds",
+          "size": 75946,
+          "updated_at": "2026-11-19T06:47:24Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rush.rds"
         },
         {
-          "name": "advstats_season_rec.csv.gz",
-          "size": 162466,
-          "updated_at": "2026-10-22T17:30:02Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rec.csv.gz"
+          "name": "advstats_season_rush.parquet",
+          "size": 81700,
+          "updated_at": "2026-11-19T06:47:24Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rush.parquet"
         },
         {
           "name": "advstats_season_rec.csv",
           "size": 452621,
-          "updated_at": "2026-10-22T17:30:02Z",
+          "updated_at": "2026-11-19T06:47:30Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rec.csv"
+        },
+        {
+          "name": "advstats_season_rec.rds",
+          "size": 147501,
+          "updated_at": "2026-11-19T06:47:30Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rec.rds"
         },
         {
           "name": "advstats_season_rec.parquet",
           "size": 144136,
-          "updated_at": "2026-10-22T17:30:02Z",
+          "updated_at": "2026-11-19T06:47:31Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rec.parquet"
         },
         {
-          "name": "advstats_season_def.parquet",
-          "size": 268744,
-          "updated_at": "2026-10-22T17:30:12Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def.parquet"
-        },
-        {
-          "name": "advstats_season_def.rds",
-          "size": 297721,
-          "updated_at": "2026-10-22T17:30:12Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def.rds"
+          "name": "advstats_season_rec.csv.gz",
+          "size": 162466,
+          "updated_at": "2026-11-19T06:47:31Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_rec.csv.gz"
         },
         {
           "name": "advstats_season_def.csv.gz",
           "size": 302456,
-          "updated_at": "2026-10-22T17:30:12Z",
+          "updated_at": "2026-11-19T06:47:37Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def.csv.gz"
+        },
+        {
+          "name": "advstats_season_def.rds",
+          "size": 297725,
+          "updated_at": "2026-11-19T06:47:37Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def.rds"
+        },
+        {
+          "name": "advstats_season_def.parquet",
+          "size": 268744,
+          "updated_at": "2026-11-19T06:47:37Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def.parquet"
         },
         {
           "name": "advstats_season_def.csv",
           "size": 905623,
-          "updated_at": "2026-10-22T17:30:13Z",
+          "updated_at": "2026-11-19T06:47:37Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_def.csv"
+        },
+        {
+          "name": "advstats_season_pass.csv.gz",
+          "size": 32209,
+          "updated_at": "2026-11-19T06:47:43Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_pass.csv.gz"
+        },
+        {
+          "name": "advstats_season_pass.rds",
+          "size": 37543,
+          "updated_at": "2026-11-19T06:47:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_pass.rds"
+        },
+        {
+          "name": "timestamp.txt",
+          "size": 24,
+          "updated_at": "2026-11-19T06:47:44Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/timestamp.txt"
         },
         {
           "name": "advstats_season_pass.csv",
           "size": 93431,
-          "updated_at": "2026-10-22T17:30:21Z",
+          "updated_at": "2026-11-19T06:47:44Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_pass.csv"
         },
         {
           "name": "advstats_season_pass.parquet",
           "size": 60454,
-          "updated_at": "2026-10-22T17:30:21Z",
+          "updated_at": "2026-11-19T06:47:44Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_pass.parquet"
-        },
-        {
-          "name": "advstats_season_pass.csv.gz",
-          "size": 32209,
-          "updated_at": "2026-10-22T17:30:21Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_pass.csv.gz"
-        },
-        {
-          "name": "timestamp.txt",
-          "size": 24,
-          "updated_at": "2026-10-22T17:30:21Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/timestamp.txt"
-        },
-        {
-          "name": "advstats_season_pass.rds",
-          "size": 37542,
-          "updated_at": "2026-10-22T17:30:21Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_season_pass.rds"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T17:30:23Z",
+          "updated_at": "2026-11-19T06:47:45Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/timestamp.json"
         }
       ]
@@ -9518,70 +9518,70 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.qs"
         },
         {
-          "name": "ngs_passing.rds",
-          "size": 590352,
-          "updated_at": "2026-10-22T13:47:13Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_passing.rds"
-        },
-        {
           "name": "ngs_passing.parquet",
-          "size": 750781,
-          "updated_at": "2026-10-22T13:47:13Z",
+          "size": 764419,
+          "updated_at": "2026-11-19T07:24:37Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_passing.parquet"
         },
         {
           "name": "ngs_passing.csv.gz",
-          "size": 605433,
-          "updated_at": "2026-10-22T13:47:14Z",
+          "size": 615890,
+          "updated_at": "2026-11-19T07:24:37Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_passing.csv.gz"
         },
         {
-          "name": "ngs_rushing.parquet",
-          "size": 397000,
-          "updated_at": "2026-10-22T13:47:23Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_rushing.parquet"
+          "name": "ngs_passing.rds",
+          "size": 599822,
+          "updated_at": "2026-11-19T07:24:37Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_passing.rds"
         },
         {
           "name": "ngs_rushing.rds",
-          "size": 352745,
-          "updated_at": "2026-10-22T13:47:23Z",
+          "size": 359427,
+          "updated_at": "2026-11-19T07:24:45Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_rushing.rds"
         },
         {
+          "name": "ngs_rushing.parquet",
+          "size": 404459,
+          "updated_at": "2026-11-19T07:24:45Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_rushing.parquet"
+        },
+        {
           "name": "ngs_rushing.csv.gz",
-          "size": 337307,
-          "updated_at": "2026-10-22T13:47:23Z",
+          "size": 344277,
+          "updated_at": "2026-11-19T07:24:45Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_rushing.csv.gz"
+        },
+        {
+          "name": "ngs_receiving.parquet",
+          "size": 1176547,
+          "updated_at": "2026-11-19T07:24:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.parquet"
         },
         {
           "name": "timestamp.json",
           "size": 43,
-          "updated_at": "2026-10-22T13:47:31Z",
+          "updated_at": "2026-11-19T07:24:54Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/timestamp.json"
         },
         {
-          "name": "ngs_receiving.parquet",
-          "size": 1159058,
-          "updated_at": "2026-10-22T13:47:32Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.parquet"
+          "name": "ngs_receiving.rds",
+          "size": 972803,
+          "updated_at": "2026-11-19T07:24:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.rds"
         },
         {
-          "name": "ngs_receiving.rds",
-          "size": 960037,
-          "updated_at": "2026-10-22T13:47:32Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.rds"
+          "name": "ngs_receiving.csv.gz",
+          "size": 1035454,
+          "updated_at": "2026-11-19T07:24:54Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.csv.gz"
         },
         {
           "name": "timestamp.txt",
           "size": 24,
-          "updated_at": "2026-10-22T13:47:32Z",
+          "updated_at": "2026-11-19T07:24:54Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/timestamp.txt"
-        },
-        {
-          "name": "ngs_receiving.csv.gz",
-          "size": 1019146,
-          "updated_at": "2026-10-22T13:47:32Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.csv.gz"
         }
       ]
     },
@@ -9970,34 +9970,34 @@
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2025.rds"
         },
         {
-          "name": "timestamp.json",
-          "size": 43,
-          "updated_at": "2026-10-22T03:12:36Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/timestamp.json"
+          "name": "ftn_charting_2026.parquet",
+          "size": 313292,
+          "updated_at": "2026-11-18T18:01:42Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.parquet"
         },
         {
-          "name": "ftn_charting_2026.parquet",
-          "size": 203337,
-          "updated_at": "2026-10-22T03:12:36Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.parquet"
+          "name": "ftn_charting_2026.csv",
+          "size": 4367505,
+          "updated_at": "2026-11-18T18:01:42Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.csv"
+        },
+        {
+          "name": "ftn_charting_2026.rds",
+          "size": 226865,
+          "updated_at": "2026-11-18T18:01:42Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.rds"
+        },
+        {
+          "name": "timestamp.json",
+          "size": 43,
+          "updated_at": "2026-11-18T18:01:42Z",
+          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/timestamp.json"
         },
         {
           "name": "timestamp.txt",
           "size": 24,
-          "updated_at": "2026-10-22T03:12:36Z",
+          "updated_at": "2026-11-18T18:01:42Z",
           "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/timestamp.txt"
-        },
-        {
-          "name": "ftn_charting_2026.rds",
-          "size": 143927,
-          "updated_at": "2026-10-22T03:12:36Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.rds"
-        },
-        {
-          "name": "ftn_charting_2026.csv",
-          "size": 2724638,
-          "updated_at": "2026-10-22T03:12:36Z",
-          "download_url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.csv"
         }
       ]
     }

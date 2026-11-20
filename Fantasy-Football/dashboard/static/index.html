@@ -74,57 +74,84 @@
     </section>
 
     <section class="panel panel-dfs" id="panel-dfs">
-      <h2>DFS Entries</h2>
-      <div class="note">You enter lineups on DraftKings by hand. This panel only records them. Saved to <span id="dfs-path" class="path">tracker\dfs_tracker.csv</span> with a backup first.</div>
-      <label class="slate-pick">Slate date <select id="dfs-date"></select></label>
-      <div id="dfs-summary" class="dfs-summary">Loading entries</div>
-      <div class="dfs-scroll">
-        <table id="dfs-table" class="dfs-table">
-          <thead><tr><th>Slate</th><th>Line</th><th>Contest</th><th class="num">Fee</th><th>Status</th><th>Lineup</th><th class="num">Points</th><th class="num">Rank</th><th class="num">P/L</th><th><span class="sr-only">Action</span></th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <details id="dfs-form-wrap">
-        <summary>Add or edit an entry</summary>
-        <form id="dfs-form" class="dfs-form" autocomplete="off">
-          <input type="hidden" name="lineup_id">
-          <div class="wide form-group">Entry</div>
-          <label>Date <input name="date" placeholder="2026-11-15" required></label>
-          <label>Slate <input name="slate" placeholder="NFL Early 2026-11-15"></label>
-          <label>Line
-            <select name="line_label">
-              <option value="A">Our A</option><option value="B">Our B</option><option value="C">Our C</option>
-              <option value="F1">Friend 1</option><option value="F2">Friend 2</option><option value="F3">Friend 3</option>
-              <option value="own">Own lineup</option>
-            </select>
-          </label>
-          <label>Contest name or id <input name="contest"></label>
-          <label>Entry fee ($) <input name="entry_fee" inputmode="decimal" placeholder="1.00"></label>
-          <label>Status
-            <select name="status"><option value="not entered">not entered</option><option value="entered">entered</option></select>
-          </label>
-          <label class="wide">Lineup, 9 names, one per line <span class="hint">QB, RB, RB, WR, WR, WR, TE, FLEX, DST</span>
-            <textarea name="lineup_players" rows="9"></textarea>
-          </label>
-          <div class="wide form-group">Results, after the slate</div>
-          <label>Actual points <input name="actual_score" inputmode="decimal"></label>
-          <label>Rank <input name="finish" inputmode="numeric"></label>
-          <label>Cash line <input name="cash_line" inputmode="decimal"></label>
-          <label>Profit or loss ($) <input name="profit_loss" inputmode="decimal"></label>
+      <h2>DFS (DraftKings)</h2>
+      <div class="note">Read from your week folders in <span id="dfsw-root" class="path">D:\Draft Kings</span>. Nothing here connects to DraftKings, enters a lineup or spends. A lineup counts as in the contest only when a standings export from DraftKings, or points and place you typed, show it.</div>
+      <label class="slate-pick">Week <select id="dfsw-week"></select></label>
+      <div id="dfsw-files" class="dfsw-files"></div>
+      <div id="dfsw-notes" class="dfsw-notes"></div>
+      <div id="dfsw-entries" class="dfsw-entries">Loading week</div>
+      <details id="dfsw-manual-wrap">
+        <summary>Type points and place by hand (from the DraftKings page or a screenshot)</summary>
+        <form id="dfsw-form" class="dfs-form" autocomplete="off">
+          <label>Entry <select name="entry_id" id="dfsw-entry"></select></label>
+          <label>Points <input name="points" inputmode="decimal"></label>
+          <label>Place (rank) <input name="rank" inputmode="numeric"></label>
+          <label>Total entries in contest <input name="total_entries" inputmode="numeric"></label>
+          <label>Time left (as DraftKings shows it) <input name="time_remaining"></label>
+          <label>Typed by <select name="source"><option value="Zac">Zac</option><option value="Jarvis from screenshot">Jarvis from screenshot</option></select></label>
           <label class="wide">Notes <input name="notes"></label>
           <div class="wide dfs-buttons">
-            <button type="submit" class="btn-primary">Save entry</button>
-            <button type="button" id="dfs-fill" class="btn-secondary">Fill names from the chosen line</button>
-            <button type="button" id="dfs-clear" class="btn-quiet">Clear form</button>
+            <button type="submit" class="btn-primary">Save points and place</button>
+            <button type="button" id="dfsw-clear" class="btn-quiet">Remove typed result for this entry</button>
           </div>
-          <div id="dfs-msg" class="dfs-msg"></div>
+          <div id="dfsw-msg" class="dfs-msg"></div>
         </form>
+      </details>
+      <details id="dfs-archive" class="dfs-archive">
+        <summary>Old tracker (before week folders, archive only)</summary>
+        <div class="note">The old hand tracker and the friend and A/B/C lines from 11/13 and 11/15. Kept, not deleted. Not part of the week view above.</div>
+        <div class="note">You enter lineups on DraftKings by hand. This panel only records them. Saved to <span id="dfs-path" class="path">tracker\dfs_tracker.csv</span> with a backup first.</div>
+        <label class="slate-pick">Slate date <select id="dfs-date"></select></label>
+        <div id="dfs-summary" class="dfs-summary">Loading entries</div>
+        <div class="dfs-scroll">
+          <table id="dfs-table" class="dfs-table">
+            <thead><tr><th>Slate</th><th>Line</th><th>Contest</th><th class="num">Fee</th><th>Status</th><th>Lineup</th><th class="num">Points</th><th class="num">Rank</th><th class="num">P/L</th><th><span class="sr-only">Action</span></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <details id="dfs-form-wrap">
+          <summary>Add or edit an entry</summary>
+          <form id="dfs-form" class="dfs-form" autocomplete="off">
+            <input type="hidden" name="lineup_id">
+            <div class="wide form-group">Entry</div>
+            <label>Date <input name="date" placeholder="2026-11-15" required></label>
+            <label>Slate <input name="slate" placeholder="NFL Early 2026-11-15"></label>
+            <label>Line
+              <select name="line_label">
+                <option value="A">Our A</option><option value="B">Our B</option><option value="C">Our C</option>
+                <option value="F1">Friend 1</option><option value="F2">Friend 2</option><option value="F3">Friend 3</option>
+                <option value="own">Own lineup</option>
+              </select>
+            </label>
+            <label>Contest name or id <input name="contest"></label>
+            <label>Entry fee ($) <input name="entry_fee" inputmode="decimal" placeholder="1.00"></label>
+            <label>Status
+              <select name="status"><option value="not entered">not entered</option><option value="entered">entered</option></select>
+            </label>
+            <label class="wide">Lineup, 9 names, one per line <span class="hint">QB, RB, RB, WR, WR, WR, TE, FLEX, DST</span>
+              <textarea name="lineup_players" rows="9"></textarea>
+            </label>
+            <div class="wide form-group">Results, after the slate</div>
+            <label>Actual points <input name="actual_score" inputmode="decimal"></label>
+            <label>Rank <input name="finish" inputmode="numeric"></label>
+            <label>Cash line <input name="cash_line" inputmode="decimal"></label>
+            <label>Profit or loss ($) <input name="profit_loss" inputmode="decimal"></label>
+            <label class="wide">Notes <input name="notes"></label>
+            <div class="wide dfs-buttons">
+              <button type="submit" class="btn-primary">Save entry</button>
+              <button type="button" id="dfs-fill" class="btn-secondary">Fill names from the chosen line</button>
+              <button type="button" id="dfs-clear" class="btn-quiet">Clear form</button>
+            </div>
+            <div id="dfs-msg" class="dfs-msg"></div>
+          </form>
+        </details>
       </details>
     </section>
   </main>
 
   <script src="app.js"></script>
   <script src="dfs.js"></script>
+  <script src="dfs_week.js"></script>
   <script src="header.js"></script>
 </body>
 </html>

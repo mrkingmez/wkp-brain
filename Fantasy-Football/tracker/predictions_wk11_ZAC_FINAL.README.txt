@@ -1,0 +1,1 @@
+source: Sanders_Week 11 Entry.xls, read from cell shading (no X marks), Zac 2026-11-19. Original 20 rows in predictions.csv untouched.

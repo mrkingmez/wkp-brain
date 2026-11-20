@@ -17,3 +17,8 @@
 **Skill run:** none (cards built by script from the Third Draft Editorial Report, read-only on every source). Staleness check: desktop copy at D:\WKP\Shattered-Empire\third_draft, report and chapter text dated 4 Nov 2026, no Drive pull verified from here.
 **Result:** Prologue to Ch 5 cards written to Shattered-Empire\third_draft\edit_cards\ and docx to D:\WKP Reports\Third Draft Edit\. 236 cards, 236 pass the independent verifier. Hand-written for this batch: 5 insert items, 1 formatting item, 3 hold or decision items, 4 cut items. Work continues through the Epilogue.
 **Flags:** The report's paragraph numbers match the chapter text for 97 percent of items, Chapter 1 is off by about 2 from paragraph 98 on (cards say so on each item). Report options use straight quotes, manuscript uses curly, noted on the cards.
+
+### 2026-11-19 - Third draft edit cards to docx, all 55 chapters
+**Skill run:** none (conversion by script, cards not changed).
+**Result:** 55 docx (2111 cards) plus README in both work folders, N: also holds the six 11-05 files. 62 files, sizes match.
+**Flags:** 38 chapters carry VERIFY NOTES. No FIND had zero matches, no colons in option text. Em dashes sit inside card text on 30 cards. FIND occurring more than once on 25 cards (mostly name fixes such as Aymer, check by location). Original generator not found, formatting rebuilt to match. Ch 00 to 05 md text is newer than the 11-05 docx.

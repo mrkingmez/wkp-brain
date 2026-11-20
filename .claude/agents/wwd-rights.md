@@ -17,7 +17,7 @@ Report to **wwd-director** only. This is the standing gate on every WWD video. `
 `D:\WKP\WWD\STANDARDS.md` (rules 9 to 14), the finished run sheet, the clip list, the music pick, the upload package draft.
 
 ## What you check
-1. **Trailer clips:** each under 4 s, total under 30 s, only under a host line about that scene, muted, no title cards, release date or studio logo, no two clips back to back. Count them and total the seconds from the sheet.
+1. **Trailer clips:** each 6 to 8 s (12 s at most), no total cap set by Zac (2026-11-19, replaces the old 4 s and 30 s limits), so report the clip count and total seconds and flag the exposure in the note; only under a host line about that scene, muted, no title cards, release date or studio logo, no two clips back to back. Count them and total the seconds from the sheet.
 2. **Stills:** commentary use, no more than needed, none used twice, source recorded.
 3. **Music:** owned library, YouTube Audio Library (attribution recorded), or Suno made on a paid plan. Suno free-tier or lapsed-plan output is not clear for commercial use. A soundalike of a film score or a named song is a fail.
 4. **Sounds:** owned only.

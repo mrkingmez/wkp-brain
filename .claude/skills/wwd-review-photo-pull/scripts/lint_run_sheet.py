@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Lint an Edit Run Sheet (.md) against Zac's locked WWD rules. Exit 1 if any FAIL.
 Checks: stops in time order, cross dissolve limit, repeated neighbor transitions,
-pictures longer than 7 s, a PNG placed twice, trailer clips over 4 s or total over 30 s,
+pictures longer than 7 s, a PNG placed twice, trailer clips over 12 s (warn under 6 s, no total cap, Zac 2026-11-19),
 missing USE VIDEO files, em dashes, designed-transition share.
 Usage: python lint_run_sheet.py <Run-Sheet.md> [--max-cross 3]"""
 import re, sys
@@ -44,7 +44,8 @@ for s in stops:
         def tc(x):
             h, mi, se, fr = [int(z) for z in x.split(":")]; return h * 3600 + mi * 60 + se + fr / 24.0
         L = tc(v.group(3)) - tc(v.group(2)); clip_lens.append((num, L))
-        if L > 4.05: fails.append(f"stop {num}: trailer clip {L:.1f}s, limit is 4s")
+        if L > 12.05: fails.append(f"stop {num}: trailer clip {L:.1f}s, limit is 12s (Zac 2026-11-19)")
+        elif L < 5.9: warns.append(f"stop {num}: trailer clip {L:.1f}s, target is 6 to 8s (up to 12s when the shot needs it)")
     sc = s.replace("**", "")
     def kind(label):
         m = re.search(label + r": ((?:hard cut|[A-Za-z]+(?: [A-Za-z]+){0,3}?))(?= \d+f|[.,(]|\n|$)", sc)
@@ -69,7 +70,6 @@ for n, where in pngs.items():
     real = [w for w in where]
     if len(real) > 1: fails.append(f"PNG {n} is used in stops {', '.join(real)}")
 if cross > MAX_CROSS: fails.append(f"Cross Dissolve appears {cross} times, limit is {MAX_CROSS}")
-if sum(l for _, l in clip_lens) > 30: fails.append(f"trailer clips total {sum(l for _, l in clip_lens):.0f}s, limit is 30s")
 if "—" in text: fails.append("em dash found in the document")
 if "Transition map" not in text: warns.append("no Transition map table at the end")
 tot = stop_total

@@ -218,9 +218,20 @@ class TeamModel:
                 fgm=(float((g.fg_made.fillna(0).values * ws).sum()) + 5 * 1.7) / (wsum + 5),
                 xpm=rate("pat_made"), att=rate("attempts"),
                 att_total=float(g.attempts.fillna(0).sum()),
+                # 2026-11-19: attempts in the team's most recent game, so the default QB order follows the last
+                # starter, not the most attempts across 14 games (that picked Wentz, Winston, McKee in Week 11)
+                last_att=float(g[g.order == self.orders[-1]].attempts.fillna(0).sum()) if self.orders else 0.0,
                 qb_share=share("attempts", "att"),
             )
         self.players = players
+
+
+def qb_order(pl):
+    """Default QB order when no starter is named in the overrides file (2026-11-19 fix).
+    First the QB who threw 10+ passes in the team's most recent game (the last starter), then the rest by window attempts.
+    Injured or released QBs are already removed by drop() before this runs."""
+    q = [k for k, v in pl.items() if v["group"] == "QB" and (v["att_total"] > 15 or v.get("last_att", 0) >= 10)]
+    return sorted(q, key=lambda k: (-(pl[k].get("last_att", 0) >= 10), -pl[k].get("last_att", 0), -pl[k]["att_total"]))[:3]
 
 
 def kick_pts_per_make(pw, team_orders=None) -> float:
@@ -335,8 +346,7 @@ def simulate_game(home: TeamModel, away: TeamModel, spread_home: float, total: f
         # QB passing credit: split among passers by attempt share
         # QBs play in order of workload in the window. The first one plays unless he sits
         # that sim (his availability), then the next in line takes the whole game.
-        qbs = sorted([k for k in skill if pl[k]["group"] == "QB" and pl[k]["att_total"] > 15],
-                     key=lambda k: -pl[k]["att_total"])[:3]
+        qbs = qb_order(pl)
         if getattr(off, "qb1", None) in pl:              # the named starter goes first, the rest are his backups
             qbs = [off.qb1] + [k for k in qbs if k != off.qb1][:2]
         if qbs:

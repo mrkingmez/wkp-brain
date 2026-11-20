@@ -603,3 +603,23 @@ C. Zac extends the deadline.
 **Recommendation:** A by default, since nothing on file shows the rule was met, but this is Zac's rule to enforce or waive, not an agent's call — flagging rather than assuming either way.
 
 **Status:** OPEN
+
+## [WWD-2026-11-18-01] 2026-11-18 | Nightly rollup (from wwd-director log) | FrostCast EP 121 transcript not yet delivered to Matt
+
+**Blocked:** Step 6 of the FrostCast Transcription Workflow (send the full transcript .txt to Matt over Facebook Messenger) was NOT done. The wwd-director run had no claude-in-chrome tools, so it could not use Zac's logged-in Facebook session. The Composio Facebook API route is a known dead end (public URL only). Transcript path: `L:\Winter Wolfs Den review show\Frost-Cast\EP 121\The name_s Edwa-- er Bond _ Snyderverse 2_0 _ FrostCast Episode _121_transcript.txt`. Only the log was read, delivery to Matt not confirmed either way.
+**Options:** A. Main session (Jarvis) runs the Messenger send next session where the Chrome tool is available, screenshots "Sent" with the filename before reporting done. B. Zac sends it himself. C. Gmail attachment as a one-off (email is retired for this step, so needs Zac's yes).
+**Recommendation:** A.
+
+**Status:** OPEN
+
+## WWD-2026-11-19-01 - Attorney question: blacked-out Movieclips logo bar (A Knight's Tale)
+**Raised by:** wwd-rights, 2026-11-19
+**Question for an attorney (not a guess):** For the A Knight's Tale review, five muted clips of 6.4 to 8.0 s each (35.08 s total, re-cut 2026-11-19 under Zac's new rule; first cut was under 4 s each, 19.14 s) come from Movieclips YouTube uploads. The uploader logo sits in the letterbox bar under the picture and was blacked out in our copies; the picture is untouched. Does covering an uploader's channel logo on short commentary clips raise any copyright-management-information risk, and does it matter for a fair use position?
+**Cost to ask:** unknown. **Blocks:** nothing, edit can proceed. Risk read in `WWD\reports\A-Knights-Tale-Rights-Note.md`.
+**Status:** OPEN
+
+## WWD-2026-11-19-02 - ElevenLabs Music generation for A Knight's Tale intro and outro (spend)
+**Raised by:** music, 2026-11-19
+**Question:** May the A Knight's Tale intro (12 s) and outro (18 s) be generated in ElevenLabs Music (music_v2_5), and which ElevenLabs plan is Zac on? Free plan cannot download and needs attribution; Starter and up can download, no attribution. Prompts ready in `reports\music-stomp-clap-prompt-2026-11-19.md`.
+**Cost:** credits per generation, exact figure not retrieved. **Blocks:** the new intro and outro only. Owned fallback named in the same file.
+**Status:** OPEN

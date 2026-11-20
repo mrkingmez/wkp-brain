@@ -15,6 +15,7 @@ from pathlib import Path
 
 import config
 import dfs_entries
+import dfs_week
 
 STATIC_DIR = config.DASHBOARD_DIR / "static"
 
@@ -85,10 +86,31 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             q = parse_qs(urlparse(self.path).query)
             self._json(200, dfs_entries.entries((q.get("date") or [None])[0]))
             return
+        if self.path.split("?")[0] == "/api/dfs/weeks":
+            self._json(200, self._weeks())
+            return
+        if self.path.split("?")[0] == "/api/dfs/week":
+            from urllib.parse import urlparse, parse_qs
+            q = parse_qs(urlparse(self.path).query)
+            try:
+                n = int((q.get("n") or [""])[0] or (self._weeks()["default"] or 0))
+                self._json(200, dfs_week.week_view(n))
+            except ValueError as e:
+                self._json(400, {"error": str(e)})
+            return
         if self.path == "/api/dfs/lines":
             self._json(200, dfs_entries.lines())
             return
         super().do_GET()
+
+    def _weeks(self):
+        """Week folders on disk, newest first. Default = the latest existing Week N folder."""
+        ws = dfs_week.weeks()
+        try:
+            sw = json.loads(config.STATE_PATH.read_text(encoding="utf-8")).get("week")
+        except (OSError, ValueError):
+            sw = None
+        return {"weeks": ws, "default": ws[0] if ws else None, "state_week": sw, "root": str(dfs_week.DK_ROOT)}
 
     def _json(self, code, obj):
         body = json.dumps(obj).encode("utf-8")
@@ -102,7 +124,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         # Only the DFS entry form writes anything, and only to the local tracker csv (backup first).
         ctype = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
-        if self.path != "/api/dfs" or not self._host_ok() or not self._origin_ok():
+        if self.path not in ("/api/dfs", "/api/dfs/manual") or not self._host_ok() or not self._origin_ok():
             self._json(403, {"error": "not allowed"})
             return
         if ctype != "application/json":
@@ -114,7 +136,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         except (ValueError, UnicodeDecodeError):
             self._json(400, {"error": "bad request body"})
             return
-        res, err = dfs_entries.save_entry(data)
+        if self.path == "/api/dfs/manual":
+            res, err = dfs_week.save_manual(data)
+        else:
+            res, err = dfs_entries.save_entry(data)
         if err:
             self._json(400, {"error": err})
         else:

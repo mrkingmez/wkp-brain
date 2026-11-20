@@ -96,7 +96,35 @@ SKILL.md. Never written into any file here, never into `state.json`
   not header-based) but never blocks `curl`. `espn_client.news_headlines()`
   shells out to `curl` for this one call.
 
-## DFS Entries panel (added 2026-11-13)
+## DFS week view (added 2026-11-19)
+
+The DFS panel now reads Zac's DraftKings week folders, `D:\Draft Kings\Week N\` (set `DFS_DK_ROOT` to point it somewhere else for testing). It never connects to DraftKings, never logs in, never enters a lineup or spends. It moves, renames and deletes nothing in `D:\Draft Kings`. Code: `dfs_week.py`, `static\dfs_week.js`. Endpoints: `GET /api/dfs/weeks`, `GET /api/dfs/week?n=11`, `POST /api/dfs/manual`.
+
+**Which week:** the dropdown lists every `Week N` folder, newest first, and opens on the latest one. The week in `state.json` is marked "(this week)", older weeks "(archive)".
+
+**Files it looks for inside the week folder (top level and one subfolder down):**
+
+| What | Pattern | Notes |
+|---|---|---|
+| Lineups (entries) | any `.csv` whose first column header is `Entry ID` and that has a `Contest ID` column, e.g. `DKEntries_week11_template - FILLED.csv` | Pick order: a name with `FINAL` in it, then a name with `FILLED`, then any other (the blank template). Newest wins inside a tier. The panel shows which file it used and lists the others. To lock the final set, save it as e.g. `DKEntries_week11 FINAL.csv`. |
+| Player names, teams, salary | `DKSalaries*.csv` | Then any csv with `Name` plus `DFS ID` (or `ID` plus `Salary`) as a backup, then the salary block DraftKings prints on the right of the entries file. |
+| Score and place | `contest-standings-*.csv` or `contest-standings-*.zip`, or any csv/zip with `standings` in the name | DraftKings GameCenter "Export Lineups to CSV". Columns used: `Rank, EntryId, EntryName, TimeRemaining, Points, Lineup` plus the right-side block `Player, Roster Position, %Drafted, FPTS`. A zip is read in place, not unpacked. Several contest files can sit side by side. |
+| Typed results | `manual-results.json` | The only file the dashboard writes in the week folder. Previous copy kept as `manual-results.json.bak`. |
+
+Skipped everywhere: any file or subfolder with `FAKE`, `MOCK`, `dryrun`, `smoketest` or `NEGATIVE_TEST` in its name.
+
+**Status per entry:** `BUILT, NOT CONFIRMED ENTERED` until proof shows up. `IN CONTEST (standings file)` when the entry's Entry ID is in a standings export. `IN CONTEST (typed by hand)` when points and place were typed. If the standings file lineup is not the same nine players as the built file, the card says so and shows the lineup that is actually in the contest.
+
+**Score and place shown:** points, place out of total entries (total = rows with an EntryId in that export), top x percent (place divided by total), time left as DraftKings gives it, and per player points and percent drafted when the export has them. A live export is unofficial live scoring at the moment it was downloaded.
+
+**How Zac gets the standings file (from DraftKings help pages, checked 2026-11-19, not tested by us):** on a computer or mobile web browser, not the DraftKings app. Open the contest in GameCenter, then click **Export Lineups to CSV** under Standings. Available once the contest locks, also while it is live. Save the download into that week's folder. Leave the name DraftKings gives it if it starts with `contest-standings`; otherwise add the word `standings` to the name.
+
+**Typed fallback:** "Type points and place by hand" under the entries. Pick the entry, type points, place, total entries, time left, who typed it (Zac, or Jarvis from a screenshot Zac sends). The Entry ID must be in that week's entries file. A standings file, when present, wins over a typed result.
+
+## DFS Entries panel (added 2026-11-13, now the archive)
+
+Moved under "Old tracker (before week folders, archive only)" at the bottom of the DFS panel, collapsed. Nothing deleted. The friend and A/B/C lines from 11/13 and 11/15 only show there.
+
 
 A panel at the bottom of the page records Zac's DraftKings entries. The dashboard never enters a lineup, never spends, never contacts DraftKings. It reads and writes `..\tracker\dfs_tracker.csv` through `dfs_entries.py`.
 

@@ -78,7 +78,7 @@ every FAIL. Then your own proof pass: read the sheet top to bottom as Zac would 
 - Stops in time order, numbers unbroken, search words unique and real in the transcript.
 - No picture over 7 s, none twice, every path exists on disk.
 - Cross Dissolve count within limit, no repeated neighbor transitions, tone matches.
-- Trailer clips: each 4 s or less, total under 30 s, muted, only on a spoken line, no title cards.
+- Trailer clips: each 6 to 8 s (12 s at most, Zac 2026-11-19, replaces the old 4 s and 30 s limits), list the total seconds, muted, only on a spoken line, no title cards.
 - No em dashes, handles only (Winter Wolf, KingZ), no verdicts or scores.
 - The .docx opens and matches the .md.
 Hand-back states the lint result line and what you changed. Never say "passed" without running it.

@@ -48,3 +48,6 @@ learnings go here.
 - [Household money reports](feedback-household-money-reports.md) — wife reads them; forward-looking only, no blame or history (Zac 2026-11-17)
 - [2027 debt payoff](project-2027-debt-payoff.md) — all-in on debt in 2027, new loan 11/18, cut courses/games/apps, small fun allowance (Zac 2026-11-17)
 - [Ian trailer settled](project-ian-trailer-settled.md) — Polaroid is past Brandon + dad, fence is present-day child only, Adobe SFX free, ElevenLabs for missing sounds, no credits, cover is its own story piece, V4 cut (Zac 2026-11-17)
+- [Refresh before sims](feedback-refresh-before-sims.md) — refresh stats, odds, MFL, injuries and confirm starting QBs before every fantasy or DFS sim (Zac 2026-11-19)
+- [Clip length](feedback-clip-length.md) — WWD clips 6 to 8 s, up to 12, old 4 s and 30 s limits retired; no total cap set (Zac 2026-11-19)
+- [Intro length](feedback-intro-length.md) — WWD review intro stomp-and-clap sting must be 6 s or less, 11 to 12 s was way too long; one generation cut into intro and outro to save credits (Zac 2026-11-19)

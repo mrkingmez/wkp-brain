@@ -1,0 +1,20 @@
+{
+ "week": 11,
+ "note": "Built 2026-11-19 (Thursday 3 AM job, first run after Wednesday practice reports). qbs: this week's starting quarterback by team, from dated web sources, because the sims picked the wrong QB for MIN, NYG and PHI.",
+ "players": [
+  {
+   "name": "Aidan Hutchinson",
+   "team": "DET",
+   "category": "IR",
+   "play_prob": 0.0,
+   "source": "NFL Network via newstribune.com 2026-11-17: torn right ACL, out for season. nflverse roster RES 2026-11-19T07:09Z.",
+   "note": "Already removed by the merged table; recorded for the record."
+  }
+ ],
+ "qbs": {
+  "MIN": {"gsis_id": "00-0029604", "name": "Kirk Cousins", "source": "Yahoo/DAZN 2026-11-18: Cousins makes second straight start Sunday vs SF in Mexico City; Kyler Murray DNP Wed (hamstring, grade 2)."},
+  "NYG": {"gsis_id": "00-0039923", "name": "J.J. McCarthy", "source": "si.com Giants Week 11 injury report 2026-11-18: McCarthy starter, hip off the report; Dart out for season."},
+  "PHI": {"gsis_id": "00-0039398", "name": "Joe Milton III", "source": "Sirianni announced Wed 2026-11-18 (profootballrumors, Yahoo): Milton starts vs PIT. Hurts out for season."},
+  "BAL": {"gsis_id": "00-0033119", "name": "Jacoby Brissett", "source": "NBC Sports 2026-11-13: Minter confirms Jackson (thumb) out 6 to 10 weeks; Brissett starts at CAR."}
+ }
+}

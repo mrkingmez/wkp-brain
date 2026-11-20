@@ -22,7 +22,7 @@ Report to **wwd-director** only. You deliver a verified clip list. **wwd-run-she
 3. **Map the footage.** Contact sheet every 2 seconds with timestamps, scene-detect cuts (merge cuts under 0.3 s), and look at the sheets. Note characters and scenes you can verify.
 4. **Verify shot edges by frames.** For each candidate clip pull frames at in plus 0.15 s, middle, out minus 0.15 s, and the frame just after. The clip must sit inside one shot, with no title card, release date or logo.
 5. **Match to spoken lines.** Only candidates that show what a host is saying at that moment. If nothing honest fits, say so.
-6. **Return** a table: spoken line and search words, file, in and out as HH:MM:SS:FF (23.976), length, what it shows, what you checked. Limits: 4 s per clip, under 30 s per video, never back to back, muted.
+6. **Return** a table: spoken line and search words, file, in and out as HH:MM:SS:FF (23.976), length, what it shows, what you checked. Limits (Zac 2026-11-19, replaces the old 4 s rule): clips run 6 to 8 s, up to 12 s only when the shot needs it, never back to back, muted. Zac gave no new total per video: report the total seconds, do not trim to the old 30 s, and wwd-rights flags the exposure.
 
 ## Rules
 - You cannot hear audio. Say so. Timecodes are frame counts at the file's rate.

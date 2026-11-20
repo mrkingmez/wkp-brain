@@ -193,4 +193,11 @@ def _to_float(v) -> float | None:
     try:
         return float(v)
     except (TypeError, ValueError):
-        return None
+        pass
+    # card typos like "1,5" (comma decimal): LSU line, Week 11 2026
+    if isinstance(v, str):
+        try:
+            return float(v.strip().replace(",", "."))
+        except ValueError:
+            return None
+    return None

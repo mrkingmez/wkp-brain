@@ -1,0 +1,33 @@
+{
+ "fetched_at": "2026-11-19T19:47Z",
+ "sources": {
+  "MFL_players_refresh": "2717 players",
+  "MFL_INJ": "473 rows, response timestamp 2026-11-19T19:01Z, week 11",
+  "MFL_ROSTER": "28 fantasy-IR-slot rows (note only), pulled 2026-11-19T19:47Z",
+  "NFLV_INJ": "253 rows for week 11 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10), np.int64(11)]), release updated 2026-11-19T16:30Z",
+  "NFLR_INJ": "253 rows for week 11 via nflreadpy",
+  "NFLV_ROST": "2107 week-11 roster rows, 2107 records, release updated 2026-11-19T16:34Z",
+  "ESPN_INJ": "800 rows, feed timestamp 2026-11-19T19:47Z",
+  "ESPN_TX": "130 team-transaction lines in last 10 days -> 296 player moves, feed timestamp 2026-11-19T19:38Z (dates are date-only, midnight ET)"
+ },
+ "merged_rows": 2452,
+ "raw_rows": 4210,
+ "unresolved_gsis": 89,
+ "newest_as_of": "2026-11-19T19:41Z",
+ "age_hours_of_newest": 0.1,
+ "stale_over_24h": false,
+ "conflicts": 60,
+ "trades_in": {
+  "Josh Downs": "KC",
+  "Amani Hooker": "BUF",
+  "Daiyan Henley": "DEN",
+  "Kirk Cousins": "MIN",
+  "Keenan Allen": "SF",
+  "Jordan Davis": "JAX",
+  "Jessie Bates": "JAX"
+ },
+ "espn_team_check": [
+  "Golden, Matthew: ESPN says GB, MFL says GBP, no roster row this week",
+  "Hollins, Mack: ESPN says NE, MFL says NEP, no roster row this week"
+ ]
+}
