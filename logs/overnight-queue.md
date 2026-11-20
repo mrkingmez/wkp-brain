@@ -1,6 +1,6 @@
 # Overnight queue (set 2026-11-19, Zac go). Run in order after tokens return. No money, no public posting, no push, never touch E: (read only), never replace Zac's cut.
 
-1. EP 121 transcript to Matt on Messenger (claude-in-chrome, screenshot "Sent" with filename).
+1. DONE, REMOVED: EP 121 transcript was already sent to Matt last night (Zac 2026-11-19). Do not resend.
 2. Vision Quest EP 8 Shorts copy through script-room, marketing-director, no-ai-slop. DRY-RUN Opus plan only.
 3. EDITOR STUDY PHASE (studio-director appoints head-editor lead, media-manager supplies paths, assistant-editor supports; Zac's job order 2026-11-19):
    a. Pro editing study: free route only (yt-dlp captions, last30days, local transcriber). Space pulls out (YouTube 429s). Version-tag every source. No VidIQ credits.

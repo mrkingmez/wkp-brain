@@ -12,3 +12,4 @@ metadata:
 
 **Why:** the reset report listed these as "not verified"; Zac answered them.
 **How to apply:** treat as settled. Do not re-ask. Spend on ElevenLabs still needs his yes. See [[feedback-intro-length]].
+- EP 121 transcript was already sent to Matt the night of 2026-11-18. Zac corrected this; the queue had it as pending. Check Messenger or ask before re-sending any "pending" send.
