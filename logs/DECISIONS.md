@@ -663,3 +663,21 @@ Rule used: only money, public posting or a preference only Zac holds goes to Zac
 - WWD-2026-11-19-02: still OPEN as a spend ask, now with the plan facts. ElevenLabs has a free tier, but downloading the music likely needs the $11 package (Starter) (Zac). Not approved. Owned fallback stays in use until Zac says buy.
 - Percy Jackson confirmed as the next Next Up card.
 - Vision Quest EP 8 is live. Shorts and social posts not done yet.
+
+---
+
+## [ETSY-2026-11-23-01] 2026-11-23 | Nightly rollup | Should the weekly Etsy scheduled task keep firing while both shops are paused, and what to do with the dead Friday manual data pull?
+
+**Blocked:** `ETSY/weekly-prep/2026-11-22.md` (committed `e4eca59`, 2026-11-22) is the first weekly-prep cycle to run since WarriorKingDesigns went on hold and Kingdom Planners moved to the back burner (both Zac, 2026-11-12). It correctly proposed no listings, but flagged two open questions it has no authority to answer itself: (1) whether this weekly scheduled task should keep running against two paused/parked shops, or be paused itself until one of them restarts; (2) whether to revive, retire, or replace the Friday manual Etsy data-pull, which has been dead since 2026-08-20 (94 days as of this pull, confirmed again in `data/weekly-2026-11-20.md`) and is the only source for Etsy's Closed-loop numbers. Neither question has reached this queue before.
+**Options:** A. Pause the weekly Etsy routine until Zac un-pauses WKD or lifts KP's back burner, and decide the manual-pull question separately (revive, retire, or replace it). B. Leave the routine running weekly as a cheap holding check (it cost little and caught the Cyber Sale timing note this cycle). C. Leave both as is.
+**Recommendation:** A for the routine, with one exception: keep it live through BFCM/Cyber Sale week (11/24-12/2) in case Zac lifts the pause mid-window, since the 11/22 prep doc notes the listing-refresh window is closing in real time. For the manual pull, recommend formally retiring it rather than leaving it indefinitely lapsed, since both shops are inactive; revive it only when a shop goes live again.
+**Status:** OPEN
+
+---
+
+## [INFRA-2026-11-23-01] 2026-11-23 | Nightly rollup | The fix for INFRA-2026-11-18-01 was marked DECIDED but was never actually applied - tonight's rollup fired on the identical stale prompt
+
+**Blocked:** `INFRA-2026-11-18-01` (2026-11-18) flagged that this scheduled task's own stored prompt hardcodes a stale venture list ("MAIN EFFORT is Kingdom Planners; ACTIVE ventures are WWD/FrostCast, Shattered Empire, Cyber Security, WarriorKingDesigns") that contradicts root CLAUDE.md. It was marked "DECIDED A (Jarvis)" in the 2026-11-19 readiness pass, with chief-of-staff to change the prompt to "read venture status fresh from root CLAUDE.md each run" at the next session start. Tonight's rollup (2026-11-23, four days later) was fired by the scheduler with that exact same stale text, word for word - the fix was never actually made. This run has no tool to edit a scheduled task's stored prompt, and per its own instructions should touch nothing outside this file, so it again worked around the drift by hand (reading venture status fresh from the live root CLAUDE.md instead of the stale prompt) rather than fixing the source. No harm to tonight's output, but the underlying prompt is still wrong for next time.
+**Options:** A. Zac or chief-of-staff actually edits the scheduled task's stored prompt this time (e.g. via `update_trigger`), not just logs the decision again. B. Leave it - every rollup so far has caught and worked around the drift by hand, so it is self-correcting even though it is not fixed.
+**Recommendation:** A. This is the second rollup in a row to flag the identical gap between a "DECIDED" note and an actually-executed fix; a third recurrence without action would suggest the chief-of-staff handoff step itself isn't landing.
+**Status:** OPEN
