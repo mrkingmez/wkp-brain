@@ -681,3 +681,21 @@ Rule used: only money, public posting or a preference only Zac holds goes to Zac
 **Options:** A. Zac or chief-of-staff actually edits the scheduled task's stored prompt this time (e.g. via `update_trigger`), not just logs the decision again. B. Leave it - every rollup so far has caught and worked around the drift by hand, so it is self-correcting even though it is not fixed.
 **Recommendation:** A. This is the second rollup in a row to flag the identical gap between a "DECIDED" note and an actually-executed fix; a third recurrence without action would suggest the chief-of-staff handoff step itself isn't landing.
 **Status:** OPEN
+
+---
+
+## [INFRA-2026-11-24-01] 2026-11-24 | Nightly rollup | Scheduled task prompt drift is now a THIRD consecutive night unfixed (INFRA-2026-11-18-01, INFRA-2026-11-23-01)
+
+**Blocked:** Tonight's fired prompt again states step 5 as "MAIN EFFORT is Kingdom Planners; ACTIVE ventures are WWD/FrostCast, Shattered Empire, Cyber Security, WarriorKingDesigns" — identical, word for word, to the text flagged on 2026-11-18 and 2026-11-23. Root CLAUDE.md still says the opposite (no MAIN EFFORT set; ACTIVE is WWD/FrostCast, Shattered Empire, WarriorKingDesigns; Cyber Security is ACTIVE-UNSCHEDULED, CySA+ punted). INFRA-2026-11-23-01 already predicted this exact recurrence and recommended Zac or chief-of-staff actually call update_trigger on the scheduled task itself, not just log the decision again — that still has not happened three cycles in. This run again worked around it by hand (read CLAUDE.md fresh, ignored the stale embedded list) rather than touching the stored prompt, consistent with its own read-only scope.
+**Options:** A. Zac or chief-of-staff edits the trigger's stored prompt directly this cycle, replacing the hardcoded venture list with "read venture status fresh from root CLAUDE.md each run." B. Leave it — the rollup keeps self-correcting by hand, so there is no actual misreporting risk, just repeated identical noise in this log.
+**Recommendation:** A. Three identical flags without the one-line fix landing points at the chief-of-staff handoff step itself not executing, not at the fix being hard — worth Zac's or Jarvis's direct attention rather than a fourth log entry tomorrow night.
+**Status:** OPEN
+
+---
+
+## [WWD-2026-11-24-01] 2026-11-24 | Nightly rollup | TASKS.md unchanged since 2026-11-19; several dated items in that window have no record either way
+
+**Blocked:** TASKS.md's last commit is 2026-11-19 (`git log -- TASKS.md`), and the repo had zero commits in the 24 hours before this rollup beyond last night's own rollup entry (`f44fb5a`, 2026-11-23 03:11 UTC). Several TASKS.md rows carry target dates that have since passed with nothing on record to say what happened: Den Files EP1 (Fire in the Sky) recording was targeted Sun 2026-11-22 about 7:30 PM, still marked "Not Started" as of the 11-19 snapshot with script gate 2 (two logged writing-room passes) not seen in logs; Percy Jackson S3 Ep1 watch/record was targeted Fri-Sun 11/20 to 11/22, same "Not Started" status; DraftKings Week 11 lineups were targeted Sat/Sun 11/21 to 11/22 and TASKS.md itself already notes "finish status not verified." Per the Honesty rule, reporting this as genuinely unknown rather than assuming either way — no commit or log entry confirms completion, slippage, or cancellation for any of the three.
+**Options:** A. Chief-of-staff or Jarvis checks with Zac directly on these three dated items next session and updates TASKS.md accordingly. B. Leave it — Zac mentions it unprompted if something slipped, same as other personal/schedule items. C. Treat the Den Files recording specifically as still blocked until the two logged writing-room passes exist, regardless of what actually happened Sunday.
+**Recommendation:** A — cheap, and the fastest way to get TASKS.md current again now that it is 5 days stale with multiple expired target dates still sitting on it unresolved.
+**Status:** OPEN
