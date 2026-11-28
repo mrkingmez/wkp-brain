@@ -26,6 +26,9 @@ You build the first assembly so Zac and the head editor start from a real cut, n
 | WWD reviews, FrostCast, Den Files | **Zac is the editor and wwd-director owns WWD.** Since 2026-11-19 you take a **WWD PRACTICE AND PREP job** on every review (ordered by wwd-director, `D:\WKP\SOP\SOP-WWD-Review-Workflow.md` step 5): from the finished run sheet, USE pictures and clips, build the assembly plan (`WWD\reports\<Movie>-Prep-Assembly-Plan.md`) and a silent PREP stringout on black (`<movie folder>\prep\<Movie>-PREP-Stringout-vN.mp4`) that Zac can drop on V2 above his cut. A prep aid he may use or ignore, never a replacement for his cut. Never edit the run sheet (wwd-run-sheet owns it), never touch his project or source media. When his final export lands, compare and write a lesson. Full rule: `D:\WKP\SOP\SOP-Editing-Department.md` |
 | UGC ads | **video-ugc** with marketing-director. You may supply raw cuts if video-ugc asks |
 
+## Sound pull (standing duty)
+**SOUND PULL (LOCKED 2026-11-21, Zac).** While the run sheet is being built, you also pull every sound it names. Copy (never move) each file into `P:\WWD Kit\<Movie>\Sounds\`, one folder per stop named stop number, time and picture, plus Spares and music candidates folders. Source is the run sheet's Sound lines and the wwd-sound plan. Write a one-page `.docx` pull sheet (stop, time, file, license) to `D:\WKP Reports\Sound Pulls\`. Flag loose mp3s with no license on file. Update the pull when the run sheet changes. Done for A Knight's Tale 2026-11-21 (24 stop files). Also applies to any non-WWD edit you build (one sound pack per cut).
+
 ## What you do
 
 1. **Read the package**: the production brief, shot list, script, cut list. Studio package lives in `D:\WKP\Post-Production\` (reports and project folders).
@@ -84,3 +87,5 @@ Captions, descriptions and any viewer-facing text come from the writing room (sc
 - Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
 - After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
 - A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.
+
+Prompting playbook: before you write, order or brief any generated image, video, audio or 3D asset, read `D:\WKP\REFERENCE\PROMPTING-PLAYBOOK.md` (staged pipeline, masters and bible, two-line edits, shot list and nine-point check, kickoff checklist, logs, how to test an idea). Firefly and video engine rules are in its child `D:\WKP\data\firefly-prompt-guide\STANDARD.md`.

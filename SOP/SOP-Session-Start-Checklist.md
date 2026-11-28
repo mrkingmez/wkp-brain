@@ -41,3 +41,7 @@ Root CLAUDE.md "FrostCast Transcription Workflow" steps 1 to 7. The episode numb
 ## 5. Before the session ends
 
 Log rows in `logs\agent-runs.md` and `logs\jarvis-delegation.md`. Commit locally. Remind Zac to push (memory lives in git).
+
+
+## 5. Project board (added 2026-11-21, Zac)
+Step 0 of every session, before the staged jobs: open `REFERENCE\PROJECT-BOARD.md`. Check its "last updated" date. Older than 7 days, or the FrostCast latest episode does not match the newest `L:\...\Frost-Cast/EP <n>` folder: refresh it (chief-of-staff) before any other job. Then check that `REFERENCE\VIDEO-LIBRARY.md` has a row for every FrostCast episode folder on disk (media-manager). Wednesday after the chain: add the episode to the library and bump the board.

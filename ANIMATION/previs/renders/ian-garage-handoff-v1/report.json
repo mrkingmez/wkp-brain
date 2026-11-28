@@ -1,0 +1,198 @@
+{
+ "id": "ian-garage-handoff-v1",
+ "title": "Ian trailer: garage wrench hand-off (R3b geometry, previs)",
+ "ratio": "9:16",
+ "res": [
+  720,
+  1280
+ ],
+ "camera": {
+  "loc": [
+   0.0,
+   -2.0,
+   1.25
+  ],
+  "height_m": 1.25,
+  "lens_mm": 40.0,
+  "sensor_width_mm": 36.0,
+  "hfov_deg": 28.4,
+  "vfov_deg": 48.5,
+  "target": [
+   0.0,
+   0.0,
+   1.1
+  ]
+ },
+ "light": {
+  "from_azimuth_deg": 300,
+  "elevation_deg": 35
+ },
+ "characters": {
+  "Brandon": {
+   "height_m": 1.8,
+   "facing_deg": 90.0,
+   "pose": "stand",
+   "dist_to_camera_m": 2.05,
+   "head_top_screen": [
+    0.176,
+    0.892
+   ],
+   "feet_screen": [
+    0.197,
+    -0.084
+   ],
+   "body_height_pct_of_frame": 97.6,
+   "head_in_frame": true,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.297,
+      0.414
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 53,
+     "occluded_by": {
+      "PV_Brandon_torso": 6,
+      "PV_Brandon_pelvis": 3
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.498,
+      0.494
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 68,
+     "occluded_by": {
+      "PV_Brandon_farmR": 5,
+      "PV_prop_wrench": 1
+     },
+     "holds": "wrench:shaft",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.16,
+   "view_of_character": "side/three-quarter"
+  },
+  "Father": {
+   "height_m": 1.74,
+   "facing_deg": 270.0,
+   "pose": "stand",
+   "dist_to_camera_m": 2.05,
+   "head_top_screen": [
+    0.823,
+    0.857
+   ],
+   "feet_screen": [
+    0.803,
+    -0.084
+   ],
+   "body_height_pct_of_frame": 94.1,
+   "head_in_frame": true,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.765,
+      0.346
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 100,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.525,
+      0.581
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 100,
+     "occluded_by": {},
+     "holds": "wrench:top",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.16,
+   "view_of_character": "side/three-quarter"
+  }
+ },
+ "props": {
+  "wrench": {
+   "grips_world": {
+    "top": [
+     0.0,
+     0.0,
+     1.18
+    ],
+    "shaft": [
+     0.0,
+     0.0,
+     1.04
+    ],
+    "center": [
+     0.0,
+     0.0,
+     1.1
+    ]
+   }
+  }
+ },
+ "warnings": [],
+ "hand_gaps_m": [
+  {
+   "between": "Brandon.R / Father.R",
+   "m": 0.174
+  },
+  {
+   "between": "Brandon.R / Father.L",
+   "m": 0.446
+  },
+  {
+   "between": "Brandon.L / Father.R",
+   "m": 0.494
+  },
+  {
+   "between": "Brandon.L / Father.L",
+   "m": 0.689
+  }
+ ],
+ "expect_results": [
+  {
+   "pass": true,
+   "expect": "older hand at the TOP, from the right",
+   "measured": "visible 100% (need 60); on screen-right (need screen-right); holds wrench:top (need wrench:top)"
+  },
+  {
+   "pass": true,
+   "expect": "young hand at the shaft, from the left",
+   "measured": "visible 68% (need 60); on screen-left (need screen-left); holds wrench:shaft (need wrench:shaft)"
+  },
+  {
+   "pass": false,
+   "expect": "R3b is hands only, the card's negative field says 'face': no head in frame",
+   "measured": "head in frame True (need False)"
+  },
+  {
+   "pass": false,
+   "expect": "R3b is hands only: no head in frame",
+   "measured": "head in frame True (need False)"
+  }
+ ]
+}

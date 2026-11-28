@@ -1,0 +1,47 @@
+SETTINGS FOR ONE ATTEMPT (attempt 1 prepared 2026-11-22, converted to SETTINGS-TEMPLATE.txt format; NOT RUN)
+Agent fills AGENT block. Zac fills PANEL and RESULT. Write NOT SHOWN if the panel does not show a field. Do not delete fields.
+Standard: D:\WKP\data\firefly-prompt-guide\STANDARD.md
+
+--- AGENT BLOCK ---
+SHOT: R3-16x9 (horizontal original, memory hand-off, before)
+ATTEMPT: 1
+DATE: 2026-11-25 (prepared), run date: ______
+ENGINE (exact menu name): Nano Banana (Google partner image model inside Firefly, NOT an Adobe model; Zac 2026-11-25). Write the exact menu name as shown in PANEL block
+TIER (Fast / Lite / Standard / n.a.): n.a.
+RESOLUTION: panel default
+ASPECT RATIO: 16:9
+FPS: n.a. (still)
+DURATION: n.a. (still)
+AUDIO (on / off): n.a.
+PANEL MODE (text / frames / reference): reference (up to 3 images, role stated in the prompt) or text only for R3-16x9. Never mix with first/last frame
+START FRAME FILE: n.a. (image)
+START FRAME HOW MADE (prompt id or Photoshop steps): n.a.
+END FRAME FILE (or none): none
+REFERENCE FILES (file, role, strength) (or none): none (OPTIONAL: old vertical R3.png as reference 1 for grade and grain only; use prompt-with-R3png-reference.txt)
+CAMERA PRESETS TO SET IN PANEL (shot size, angle, motion) (or none): none
+NEGATIVE FIELD TEXT (only if the panel has the box) (or none): none. Zac 2026-11-25: the panel has NO negative or exclude box. Prompt works alone.
+PROMPT FILE: prompt.txt
+WORD COUNT: see lint
+LINT (PASS / WARN with reason): run before clicking (main prompt only)
+PREFLIGHT (13 of 13 or list the open item): run 2026-11-25 on the v3 prompt: see chain doc and sitting sheet v2
+ONE CHANGE FROM LAST ATTEMPT (or "first attempt"): first attempt
+REDESIGN AFTER ATTEMPT 3 (one line): see the card in Ian-Trailer-Continuity-Chain-Prompts-2026-11-21.md
+PANEL FACTS ZAC CHECKS (end slot, reference slot, seed, negative box): none left to check except: prompt length (paste it; if the panel cuts it, report where it stopped). Seed field exists (never used): write the seed of every attempt in SEED SHOWN, and for a one-change redo keep the same seed if the panel shows it (UNTESTED whether it helps with Nano Banana)
+
+--- PANEL BLOCK (Zac, at the screen) ---
+ENGINE AS SHOWN: ______
+TIER AS SHOWN: ______
+SEED SHOWN: ______   (a Seed field exists in the panel; write the number here)
+CREDIT READOUT BEFORE CLICK (copy the number exactly as shown on the Generate button, never estimate): ______
+END SLOT PRESENT (yes / no): not used (a first and last frame cannot be used together with references)
+REFERENCE SLOT PRESENT (yes / no): yes, up to 3 images, no strength slider (Zac 2026-11-25)
+NEGATIVE BOX PRESENT (yes / no): no (Zac 2026-11-25)
+
+--- RESULT BLOCK (Zac, after) ---
+RESULT (kept / failed): ______
+FAILURE CODES (F or D codes from LESSONS and AUDIT, or a plain sentence): ______
+OUTPUT FILE NAME: ______
+CREDITS AFTER (account page, optional): ______
+AI-GENERATED LABEL NEEDED (yes for anything public): yes
+
+2026-11-25 v3: panel facts from Zac applied (no negative box, no strength slider, up to 3 references, model Nano Banana, seed field exists). Commercial-safety and indemnity of the Nano Banana partner model NOT VERIFIED. Free favor for Ian, AI label on.

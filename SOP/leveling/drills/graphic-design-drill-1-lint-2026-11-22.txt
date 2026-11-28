@@ -1,0 +1,6 @@
+[PASS] D1-garage4 (veo, 78 words)
+[PASS] D1-garage7 (veo, 58 words)
+[PASS] D1-garage11 (veo, 73 words)
+[PASS] D1-B1-etsy (firefly, 61 words)
+[PASS] D1-B2-social (firefly, 81 words)
+[PASS] D1-B3-thumb (firefly, 61 words)

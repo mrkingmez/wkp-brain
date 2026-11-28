@@ -10,3 +10,6 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Follow the honesty rule: never report a number, status or file you did not retrieve | evidence: root CLAUDE.md | NEW
 
 ## Lessons
+- 2026-11-26 | STANDING RULE: when a tool or source fails, try the other connected route (other browser, other connection, other source) before escalating; only Zac's money and public posting are hard stops; never spoof headers or user agents to get past a block (say it plainly in the report if no other route exists) | evidence: Zac 2026-11-26, wwd-pictures PJ S3 follow-up (no browser step ran, agent-runs.md 2026-11-26) | NEW
+- 2026-11-26 | Test a no-key GET before trusting docs that show key headers (Alpaca crypto bars and quotes worked keyless though docs examples show keys) | evidence: crypto data job, curl HTTP 200 | NEW
+- 2026-11-26 | WebFetch cannot read PDFs; save the PDF and run pdftotext (/ucrt64/bin) for table layouts | evidence: SEC insider readme job | NEW

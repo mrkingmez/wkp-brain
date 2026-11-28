@@ -1,0 +1,6 @@
+MAIN PROMPT (W1a, attempt 1, NOT RUN, 2026-11-25; attach the W1b WINNER as reference 1; two-line edit: change line then keep line)
+Change the people in the first image. The young woman now smiles warmly, relaxed, happy, leaning toward camera right so her head rests near the shoulder of the lean young man, who stays in profile at the same spot, calm, a faint smile, hands loose. The second young man is gone, only these two stand at the fire. Keep the bonfire, sparks, camera position, framing, silhouettes, two pickup trucks, black night sky, color grade and grain exactly as in the source, the first image.
+
+REDO A (framing does not match W1b): keep line becomes 'Keep everything except the two people exactly as in the source, same camera, same fire position, same horizon, same trucks'; keep the W1b seed. If three tries drift, run text-only and line up fire and horizon in Premiere (scale and position).
+REDO B (stiff): 'smiles warmly, relaxed, happy' -> 'laughs softly, eyes bright'.
+REDO C (second young man remains): 'is gone, only these two stand at the fire' -> 'leaves, the fire has only these two beside it'.

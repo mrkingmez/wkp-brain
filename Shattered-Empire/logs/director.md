@@ -22,3 +22,9 @@
 **Skill run:** none (conversion by script, cards not changed).
 **Result:** 55 docx (2111 cards) plus README in both work folders, N: also holds the six 11-05 files. 62 files, sizes match.
 **Flags:** 38 chapters carry VERIFY NOTES. No FIND had zero matches, no colons in option text. Em dashes sit inside card text on 30 cards. FIND occurring more than once on 25 cards (mostly name fixes such as Aymer, check by location). Original generator not found, formatting rebuilt to match. Ch 00 to 05 md text is newer than the 11-05 docx.
+
+### 2026-11-21 - Story Bible Answer Sheet (Zac's order)
+**Skill run:** fiction-editing and fiction-alpha-feedback rules applied (no prose written). fact-research for length norms.
+**Result:** One master answer sheet, S1 to S207 plus 197 tick rows in 6 batch tables, docx `D:\WKP Reports\Story Bible Answer Sheet\2026-11-21 - Shattered Empire Story Bible Answer Sheet.docx` (104 pages), md in `third_draft\`. Merged the 11-20 Update Sheet (28 story-level plus 338 chapter questions, every one covered or closed, checked by script), Garkins note, 33 pitches plus 2 wild cards, OD-1 to OD-7, Story Guide v2 and Draft 3, master prompt locks, Zac's first pass notes. 59 already-locked items listed with sources, 8 guide-only answers, 14 old questions closed by locks. Section 5 sample lines all verified word for word against chapter text by script. Build scripts saved in `third_draft\answer_sheet_build\`.
+**Locked:** THE TEAMS ARE NOT BEING MADE SMALLER (Zac 2026-11-21). Pitch 5 recruit-roll cut and Q6 trim marked RULED NO. Recorded in canon_ledger.md, REFERENCE\LOCKS.md, memory.
+**Flags:** Two Story Guides exist (v2 Oct 5, Draft 3 Nov 4); asked as the master-guide question. Drive copies not checked. Length 235k vs stated debut epic norm 120k to 150k (two confirmed sources only).

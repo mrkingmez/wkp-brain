@@ -1,0 +1,4 @@
+R3b: not run yet. One line per attempt: what went wrong or "kept". Redo A, B, C are on the card in the report. Add a row to firefly-prompt-guide\LESSONS.md the same turn after any result.
+Attempt 1: ______
+
+2026-11-25: prompt.txt trimmed to v2 (v1 in prompt-v1-before-trim.txt). Credits 8,295 on 2026-11-25, cost per click unknown, read at Generate button. Panel facts to check first: negative box, seed, 750 limit, reference strength, End slot (not used).

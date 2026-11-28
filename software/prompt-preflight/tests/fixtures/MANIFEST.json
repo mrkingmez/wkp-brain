@@ -1,0 +1,520 @@
+{
+ "failed": [
+  {
+   "id": "G1",
+   "source": "data/firefly-prompt-log/Video one/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. A lean man in his 40s with short dark hair, plain black t-shirt and worn blue jeans lies on his back on a red creeper under the middle of a mid-1960s Ford Mustang coupe in glossy red paint, long hood and short rear deck, his head nearest the camera and his face hidden by his raised arm. The car is seen in side view from floor level, nose pointing toward the RIGHT edge of the frame, tail toward the LEFT edge of the frame, with the roll-up door behind and just beyond the nose at the right side of the frame. His forearms work a steel wrench back and forth on the underside of the car in a steady rhythm for three seconds. Then his hands stop completely and stay still, as if he heard something, until the end of the clip. He and the wrench stay in the center of the frame. Dust drifts in the warm light. Photoreal, natural motion.",
+   "zac_note": "Hold Wrench in one hand and his other hand was doing the work, and it suppose be to using a socket wrench instead of an open ended one.",
+   "must_flag": [
+    "PF02",
+    "R1"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G2",
+   "source": "data/firefly-prompt-log/Video 2/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. A lean man in his 40s with short dark hair, plain black t-shirt and worn blue jeans lies on his back on a red creeper under the middle of a mid-1960s Ford Mustang coupe in glossy red paint, long hood and short rear deck. The car is seen in side view from floor level, nose pointing toward the RIGHT edge of the frame, tail toward the LEFT edge of the frame, with the roll-up door behind and just beyond the nose at the right side of the frame. His right hand grips the handle of a steel ratchet wrench and turns it back and forth on a bolt under the car, and his left hand holds the head of the wrench steady. Both hands stay on the wrench, and he never touches the bolt with a bare hand. He works for two seconds. Then both hands stop completely, as if he heard something. He lies still for one second. Then he turns his head toward the open doorway at the right and pushes with his heels, the creeper rolls him out from under the car, and he sits up with his back to the camera, looking at the doorway. He and the car stay in the center of the frame. Dust drifts in the warm light. Photoreal, natural motion.",
+   "zac_note": "Used a wrench to turn a wrench then started rolling around on the board.",
+   "must_flag": [
+    "PF11"
+   ],
+   "must_fail": [
+    "PF11"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G3",
+   "source": "data/firefly-prompt-log/Video 3/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. A lean man in his 40s with short dark hair, plain black t-shirt and worn blue jeans lies on his back on a red creeper under the middle of a mid-1960s Ford Mustang coupe in glossy red paint, long hood and short rear deck. The car is seen in side view from floor level, nose pointing toward the RIGHT edge of the frame, tail toward the LEFT edge of the frame, with the roll-up door behind and just beyond the nose at the right side of the frame. His right hand grips the handle of a steel ratchet wrench and turns it back and forth on a bolt under the car, and his left hand holds the head of the wrench steady. Both hands stay on the wrench, and he never touches the bolt with a bare hand. He works for two seconds. Then both hands stop completely, as if he heard something. He lies still for one second. Then he turns his head toward the open doorway at the right and pushes with his heels, the creeper rolls him out from under the car, and he sits up with his back to the camera, looking at the doorway. He and the car stay in the center of the frame. Dust drifts in the warm light. Photoreal, natural motion.",
+   "zac_note": "Working on a area of the car that you would work on, almost like working in a no where place then running around again",
+   "must_flag": [
+    "PF11"
+   ],
+   "must_fail": [
+    "PF11"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G4",
+   "source": "data/firefly-prompt-log/Video 4/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. The man lies on his back on the red creeper under the front of the red Mustang, exactly as in the first frame, holding a flat open-end combination wrench up against a bolt under the car. The car's nose points toward the RIGHT edge of the frame, and the open garage door with bright daylight is in the background at the LEFT of the frame. He turns the open-end wrench with small back-and-forth motions for three seconds. Then both hands stop, still holding the wrench up against the bolt. He pauses. Slowly he turns his head and looks back toward the open garage door in the background at the left, listening, as if he heard someone walking up. He holds that look, still, until the end of the clip. He does not get up and does not slide out. Dust drifts in the warm light. Photoreal, natural motion.",
+   "zac_note": "Holding the socket wrench or something with one hand on the wrench, then it disappears das he sits up",
+   "must_flag": [
+    "R1"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G5",
+   "source": "data/firefly-prompt-log/Video 5/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. The man lies flat on his back on the red creeper under the front of the red Mustang for the entire clip, his back and shoulders resting on the creeper, his arms raised to the bolt above him. The car's nose points toward the RIGHT edge of the frame, and the open garage door with bright daylight is in the background at the LEFT of the frame.\n0.0 to 3.0 seconds: he turns a flat open-end combination wrench back and forth on the bolt with small motions, one hand on the wrench and the other hand steadying the underside of the car.\n3.0 to 4.0 seconds: both hands stop and hold the wrench perfectly still against the bolt.\n4.0 to 6.0 seconds: only his head moves, turning slowly to the left toward the garage door in the background.\n6.0 to 8.0 seconds: he holds that look toward the garage door, his body and hands completely still, lying flat on the creeper.\nDust drifts in the warm light. Photoreal, natural motion.",
+   "zac_note": "Closes to being right and kind of believe able.",
+   "must_flag": [
+    "R1"
+   ],
+   "must_fail": [],
+   "set": "known_conflict"
+  },
+  {
+   "id": "G6",
+   "source": "data/firefly-prompt-log/Video 6/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. An older man in a faded blue work shirt with the sleeves rolled up lies on his back on a red creeper under the raised front of a mid-1960s Ford Mustang coupe in glossy red paint, his face out of frame. A caged work lamp glows warm beside him. The car's nose points toward the right of the frame, and the open garage door with daylight is in the background at the left. From 0 to 3 seconds, his thick weathered hands, gray hair on the forearms, grease in the knuckles, turn a flat open-end wrench on a bolt. From 3 to 5 seconds, he stops and lowers the wrench, then holds it out toward the lower left of the frame, handle first, as if offering it to someone shorter beside him. From 5 to 8 seconds, his hand waits with the wrench held out, then slowly draws it back toward his chest. Only his hands, forearms and the car are visible. Warm golden light, soft film grain, dust in the air.",
+   "zac_note": "IT was looking good until both the dad and the person handing him a wrench both had the same wrench in there hands and did like a wrench five touching them not handing him a wrench, the dad is suppose to be reaching out and he is hand a wrench.",
+   "must_flag": [
+    "PF04",
+    "PF05",
+    "PF06"
+   ],
+   "must_fail": [
+    "PF04",
+    "PF05"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G7",
+   "source": "data/firefly-prompt-log/video 7/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. An older man in a faded blue work shirt with the sleeves rolled up lies on his back on a red creeper under the raised front of a mid-1960s Ford Mustang coupe in glossy red paint, his face out of frame. NOTHING IN HIS HAND!!!!!!!!  A caged work lamp glows warm beside him. The car's nose points toward the right of the frame, and the open garage door with daylight is in the background at the left. From 0 to 3 seconds, his thick weathered hands, gray hair on the forearms, grease in the knuckles, turn a flat open-end wrench on a bolt. From 3 to 5 seconds, he stops and lowers the wrench, then holds it out toward the lower left of the frame, handle first, as if offering it to someone shorter beside him. From 5 to 8 seconds, his hand waits with the wrench held out, then slowly draws it back toward his chest. Only his hands, forearms and the car are visible. Warm golden light, soft film grain, dust in the air.",
+   "zac_note": "The dad is working with two wrenches and then reaches out with one, to someone who is handing him the exact same wrench again, and then the one in his hand disappears into thin air.",
+   "must_flag": [
+    "R1",
+    "R2"
+   ],
+   "must_fail": [
+    "R1",
+    "R2"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G8",
+   "source": "data/firefly-prompt-log/video 8/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. An older man in a faded blue work shirt with the sleeves rolled up lies on his back on a red creeper under the raised front of a mid-1960s Ford Mustang coupe in glossy red paint, his face out of frame. NOTHING IN HIS HAND!!!!!!!!  WHAT PART ABOUT NOTHIING IN HIS HAND DO YOU NOT UNDERSTAND!  A caged work lamp glows warm beside him. The car's nose points toward the right of the frame, and the open garage door with daylight is in the background at the left. From 0 to 3 seconds, his thick weathered hands, gray hair on the forearms, grease in the knuckles, turn a flat open-end wrench on a bolt. From 3 to 5 seconds, he stops and lowers the wrench, then holds it out toward the lower left of the frame, handle first, as if offering it to someone shorter beside him. From 5 to 8 seconds, his hand waits with the wrench held out, then slowly draws it back toward his chest. Only his hands, forearms and the car are visible. Warm golden light, soft film grain, dust in the air.",
+   "zac_note": "He is working with one hand the other resting on his lap way to far down on his legs, then he is hand a wrench the one in his hand disappears into thin air and then the wrench offered is withdrawn.",
+   "must_flag": [
+    "R1",
+    "R2"
+   ],
+   "must_fail": [
+    "R1",
+    "R2"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G9",
+   "source": "data/firefly-prompt-log/video 9/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. An older man in a faded blue work shirt lies on his back on a red creeper under the raised front of a mid-1960s Ford Mustang coupe in glossy red paint, his face in shadow under the car. A caged work lamp glows warm beside him. The car's nose points toward the right of the frame, and the open garage door with daylight is in the background at the left. From 0 to 3 seconds, his weathered hand holds a flat open-end wrench on a bolt under the car. From 3 to 5 seconds, a second man about the same age, gray-haired, in a work shirt and jeans, crouches into the frame from the left, seen from the chest down with his face out of frame, and holds out a different wrench, handle first. From 5 to 8 seconds, the man under the car takes the new wrench with one hand and passes his first wrench back to the crouching man, who takes it with one hand. Only hands, arms and torsos are visible. Warm golden light, soft film grain, dust in the air.",
+   "zac_note": "HE is working with his hands holding the wrench still and not using it. Then it all disappears as he is handed a socket",
+   "must_flag": [
+    "PF04"
+   ],
+   "must_fail": [
+    "PF04"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G10",
+   "source": "data/firefly-prompt-log/video 10/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. An older man in a faded blue work shirt lies on his back on a red creeper under the raised front of a mid-1960s Ford Mustang coupe in glossy red paint, his face in shadow under the car. A caged work lamp glows warm beside him. The car's nose points toward the right of the frame, and the open garage door with daylight is in the background at the left. From 0 to 2 seconds, his weathered hand turns a socket ratchet on a bolt under the car. From 2 to 4 seconds, a second man about the same age, gray-haired, in a work shirt and jeans, crouches into the frame from the left, seen from the chest down with his face out of frame, and hands in a flat open-end wrench, taking the ratchet in exchange. From 4 to 6 seconds, the man under the car turns the bolt with the open-end wrench. From 6 to 8 seconds, the crouching man hands the ratchet back in and takes the open-end wrench. Each swap is one hand to one hand. Only hands, arms and torsos are visible. Warm golden light, soft film grain, dust in the air.",
+   "zac_note": "I do not even know where to begin with this one, it is all over the place and looks so bad.  First there is a docket wrench attached to the car with no hands on it then it as he grabs it is changes into a open end wrench then he put is back on as he is hand a wrench and then the guy handing him a wrench taps the inside of his car with it.  So much, worst result by far",
+   "must_flag": [
+    "PF04"
+   ],
+   "must_fail": [
+    "PF04"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G11",
+   "source": "data/firefly-prompt-log/video 11/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera at floor level, wide horizontal frame, no camera movement. The worn white leather baseball rests on the concrete floor in the foreground, exactly as in the first frame. From 0 to 2 seconds, nothing moves except drifting dust in the warm light. From 2 to 5 seconds, a man's grease-marked hand and forearm in a plain black t-shirt sleeve reaches slowly in from the left side of the frame and closes around the baseball. From 5 to 8 seconds, the hand holds the baseball still, fingers closed around it. Shallow depth of field, warm low light. Behind it, out of focus, is the red 1960s Mustang with its nose toward the right and the open garage door with daylight at the left. Nobody is in the doorway.",
+   "zac_note": "Though we used this one it was because we were running out of credits, but there is so much wrong with this one.  First why did he drop down to his hands and kness to pick up the ball?  Then the dirt flys off the ball and then back on to it.  This should have been him reaching down and just picking up the ball.",
+   "must_flag": [
+    "PF12"
+   ],
+   "must_fail": [],
+   "set": "failed"
+  },
+  {
+   "id": "G12",
+   "source": "data/firefly-prompt-log/video 12/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "Locked camera on a concrete garage floor, wide horizontal frame, no camera movement. Warm golden late-afternoon light, soft film grain, the look of old home movie film. An older broad-shouldered man in a faded blue work shirt and brown leather work boots lies on his back under the raised front of a mid-1960s Ford Mustang coupe in glossy red paint, only his legs and boots sticking out toward the camera. The car's nose points toward the right of the frame, and the open garage door with bright daylight is in the background at the left. From 0 to 2 seconds, nothing moves except drifting dust. From 2 to 6 seconds, a worn white leather baseball with red stitching, scuffed and grass-stained, rolls in slowly from the open doorway at the left, along the floor past the side of the car, and gently bumps against his boot and stops. From 6 to 8 seconds, the boot shifts slightly and everything else is still. Nobody else is in the frame. A pegboard tool wall and a wooden workbench are in the background.",
+   "zac_note": "This was one good until it touched his boot, then it some how rolled up on to his tow then rolled away again, I could use up to where it touched his boot then cut out the part that didn't fit but still, that is adding more work and doing this is suppose to change that.",
+   "must_flag": [
+    "R9",
+    "PF03"
+   ],
+   "must_fail": [
+    "R9"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "G13",
+   "source": "data/firefly-prompt-log/Video 13/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": false,
+   "text": "A dim two-car garage, seen from floor level, a mid-1960s Ford Mustang coupe completely covered by a gray canvas dust cover, the shape of the long hood and short rear deck clear under the cloth, a thin layer of dust on the cover. The car's front points toward the right of the picture. A strip of chrome bumper and one tire show below the hem of the cover. The open garage door is at the left of the picture, letting in a bar of soft daylight that catches floating dust. A pegboard tool wall and a wooden workbench stand in the background at the right, the tools hung neatly and untouched. Quiet, abandoned mood, no people. Photoreal, natural light, soft film grain.",
+   "zac_note": "This one is good, only thing really no one open the door or no automatic garage door opener.  Someone should have been standing there.",
+   "must_flag": [
+    "R7",
+    "PF13"
+   ],
+   "must_fail": [
+    "R7"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "J2",
+   "source": "data/firefly-prompt-log/Joust opener/Video 2/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view, locked camera at eye level, looking over the rim of a large battered wooden knight's shield that fills the lower center of frame. The emblem painted on the shield stays centered and clearly readable. Far down the dirt lane, an armored knight on a black warhorse charges straight at the camera like a beast, head low, dust and clods of dirt thrown up behind the hooves. The horse grows larger every second. The knight levels a long wooden lance and drives the tip into the shield, striking the center of the emblem at full speed. The shield takes the blow with a heavy shudder, the camera jolts once and holds. The lance tip stays pressed against the emblem. Jagged cracks split outward across the shield and through the emblem from the point of impact, splinters and paint flakes fly toward the lens. Slow-motion beat at the moment of impact, then the shield holds on screen, cracked, with dust drifting. Practical film look, warm low sun, shallow depth of field. No music, no dialogue.",
+   "zac_note": "This one had a knight riding up behind it and then it popping up then him stabbing from behind with a spear not a lance, you never use a proper lance in any of these videos",
+   "must_flag": [
+    "PF10",
+    "PF14",
+    "R1"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "J3",
+   "source": "data/firefly-prompt-log/Joust opener/Video 3/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "A large battered wooden knight's shield propped upright and perfectly still on packed dirt, the emblem painted on its face centered and clearly readable. The camera sits at eye level directly in front of it and performs a slow, smooth, steady dolly-in toward the shield, with no shake and no handheld movement. Warm low sun, drifting dust, shallow depth of field. Partway through the move, a long wooden jousting lance streaks in fast from off-screen right, no knight visible, and the tip strikes the exact center of the emblem with a violent impact. The shield shudders but stays in place. The lance tip stays pressed against the emblem. Jagged cracks split outward across the shield and through the emblem from the point of impact, splinters and paint flakes fly toward the camera. A brief slow-motion beat at the hit, then the dolly-in keeps creeping closer on the cracked shield as dust settles. Practical film look. No music, no dialogue.",
+   "zac_note": "The logo shield was on the ground then spear, not a lance, comes in set on the middle then stabs it cause it to break up.  No Joust another that is complete wrong.",
+   "must_flag": [
+    "PF10",
+    "PF14",
+    "R1"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "J4",
+   "source": "data/firefly-prompt-log/Joust opener/Video 4/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "A large battered wooden knight's shield propped upright and perfectly still on packed dirt, the emblem painted on its face centered and clearly readable. The camera sits at eye level directly in front of it and performs a slow, smooth, steady dolly-in toward the shield, no shake, no handheld movement. Warm low sun, drifting dust. A long wooden jousting lance with a blunt three-pronged coronal tip, painted with stripes, shoots in from off-screen right at full charging speed and slams into the exact center of the emblem in one continuous motion, with no slowing, no pause, no hesitation, no wobble before contact. It is a blunt tournament lance, not a spear and not a sharp point. The instant of impact is violent. The shield shudders but stays in place and the lance stays pressed to the emblem. Jagged cracks split outward across the shield and through the emblem immediately, splinters and paint flakes fly toward the camera. The dolly-in keeps creeping closer on the cracked shield as dust settles. Practical film look. No music, no dialogue.",
+   "zac_note": "This one is more of the same but for some reason it went to a triple headed spear still not a lance.  This is where I start to believe that you did no research in to what I wanted this project to be and just keep giving me crap hoping something stuck.  This is the picture of shit I do not want to happen.  Get your head out of your ass and fix the issue.  Once again are you a teenager or a advance AI? If you not a teenager then you should be able to fix the problem and if you don't knows something go fucking learn it.  Stop being a user depend prompt buddy and be an AI.  Remember the I stands for intelligence.",
+   "must_flag": [
+    "PF10",
+    "PF14",
+    "R1"
+   ],
+   "must_fail": [
+    "R1",
+    "PF10"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "J5",
+   "source": "data/firefly-prompt-log/Joust opener/Video 5/prompt and notes.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback, riding at a tournament training target. The camera is the rider's eyes, level and steady, moving forward in one smooth continuous approach. The camera never cuts away. In the lower foreground a long wooden jousting lance, held in an armored gauntlet, points across the horse's neck toward the left, its blunt three-pronged tournament tip clearly visible in frame the whole time. Ahead and slightly to the left, a large battered wooden shield stands stationary on a post at the edge of the tilt lane, the emblem painted on its face centered and readable. The shield stays perfectly still. The camera closes the distance smoothly, steadily and fast, the shield growing larger as the rider charges. The lance tip settles dead center on the emblem and then strikes it in one continuous motion, with no slowing, no pause and no hesitation, as the rider rides past. The blunt lance hits the emblem violently, the lance shatters into long splinters, and jagged cracks split outward across the shield through the emblem. Wood splinters and paint flakes fly. The shield stays on its post, cracked. Dust kicks up, warm low sun, practical film look, motion in the dirt. No music, no dialogue.",
+   "zac_note": "Ok atleast we are back on the horse again but we are riding straight down the middle of the jousting yard.  Stright at the shield with la wolf on it, you dropped the logo all together for some reason I do not know.  Again a spear, do you even know what a lance is?  and then it hits from the top down after a complete stop, that was not suppose to happen, what is wrong with your prompts.",
+   "must_flag": [
+    "PF10",
+    "PF14",
+    "R1"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS1",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback, riding at a tournament training target. The camera is the rider's eyes, level and steady, moving forward in one smooth continuous approach. The camera never cuts away. In the lower foreground a long wooden jousting lance, held in an armored gauntlet, points across the horse's neck toward the left, its blunt three-pronged tournament tip clearly visible in frame the whole time. Ahead and slightly to the left, a large battered wooden shield stands stationary on a post at the edge of the tilt lane, the emblem painted on its face centered and readable. The shield stays perfectly still. The camera closes the distance smoothly, steadily and fast, the shield growing larger as the rider charges. The lance tip settles dead center on the emblem and then strikes it in one continuous motion, with no slowing, no pause and no hesitation, as the rider rides past. The blunt lance hits the emblem violently, the lance shatters into long splinters, and jagged cracks split outward across the shield through the emblem. Wood splinters and paint flakes fly. The shield stays on its post, cracked. Dust kicks up, warm low sun, practical film look, motion in the dirt. No music, no dialogue.",
+   "zac_note": "Ok atleast we are back on the horse again but we are riding straight down the middle of the jousting yard.  Stright at the shield with la wolf on it, you dropped the logo all together for some reason I do not know.  Again a spear, do you even know what a lance is?  and then it hits from the top down after a complete stop, that was not suppose to happen, what is wrong with your prompts.\n\nI am not going to do the rest so here are the prompts none were right I just went with one because I was using up so  many credits, 2000 because your incompetence.",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS2",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "Animate the start frame exactly as composed. First-person point of view from a jousting knight on horseback, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the emblem stays in the left third of the frame, stationary on its post, and the emblem stays identical to the start frame. The jousting lance, with its blunt three-pronged tip, is already aimed at the center of the emblem and stays in frame from the first frame to the strike. 0 to 2 seconds: the shield grows larger as the rider charges at full gallop, no slowing at any point. At 2 seconds the lance tip hits the exact center of the emblem in one continuous motion, with no pause, no hesitation, and no ease before contact. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem. Paint flakes and wood splinters fly. The camera keeps riding past the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS3",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback on right side of frame, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the emblem from the start frame, on the left  of the frame,  remains stationary on its post in the distance. The jousting lance,  is already aimed the shield, the horse starts in a full gallop, the shield grows larger as the rider charges  stright. . At 4 seconds the lance tip hits the exact center of the emblem in one continuous motion, with no pause, no hesitation, and no ease before contact. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem.  the camera Paint flakes and wood splinters fly. The camera stays on the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "This one for some reason put a target at the dead center of the shield, all of these except one had the person stopping and attacking very, very slowly.",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS4",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback on right side of frame, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the exact  logo painted on it from the start frame, on the left  of the frame,  remains stationary on its post in the distance. The jousting lance,  is already aimed the shield, the horse starts in a full gallop, the shield grows larger as the rider charges  stright. . At 4 seconds the lance tip hits the exact center of the emblem in one continuous motion, stircking it hard, no slowing down, just one fluid motion. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem.  the camera Paint flakes and wood splinters fly. The camera stays on the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "This one add another person on my side of the joust, why?",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS5",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback on right side of frame NO ONE else, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the exact  logo painted on it from the start frame, on the left  of the frame,  remains stationary on its post in the distance. The jousting lance,  is already aimed the shield, the horse starts in a full gallop, the shield grows larger as the rider charges  stright. . At 4 seconds the lance tip hits the exact center of the emblem in one continuous motion, stircking it hard, no slowing down, just one fluid motion. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem.  the camera Paint flakes and wood splinters fly. The camera stays on the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "I final just went with this one even though it was still wrong. SO wrong, you were never even close to getting what I wanted.",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS6",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback on right side of frame NO ONE else, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the exact  logo painted on it from the start frame, on the left  of the frame,  remains stationary on its post in the distance. The jousting lance,  is already aimed the shield, the horse starts in a full gallop, the shield grows larger as the rider charges  stright. . At 4 seconds the lance tip hits the exact center of the emblem in one continuous motion, stircking it hard, no slowing down, just one fluid motion. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem.  the camera Paint flakes and wood splinters fly. The camera stays on the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "So wrong, I am getting so upset now on how stupid these all looked.",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS7",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "yes",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "First-person point of view from a jousting knight on horseback on right side of frame NO ONE else, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the exact  logo painted on it from the start frame, on the left  of the frame,  remains stationary on its post in the distance. The jousting lance,  is already aimed the shield, the horse starts in a full gallop, the shield grows larger as the rider charges  stright. . At 4 seconds the lance tip hits the exact center of the emblem in one continuous motion, stircking it hard, no slowing down, just one fluid motion. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem.  the camera Paint flakes and wood splinters fly. The camera stays on the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "",
+   "must_flag": [
+    "R1",
+    "PF10",
+    "PF14"
+   ],
+   "must_fail": [
+    "R1"
+   ],
+   "set": "failed"
+  },
+  {
+   "id": "JS2-nostart",
+   "source": "data/firefly-prompt-log/Joust opener/prompt and notes for all the rest this was very time consuming.txt",
+   "kind": "video",
+   "engine": "veo",
+   "start_frame": "no",
+   "end_frame": "no",
+   "allow_impact": true,
+   "text": "Animate the start frame exactly as composed. First-person point of view from a jousting knight on horseback, the camera level and moving forward at constant, accelerating speed down a tilt lane. The shield with the emblem stays in the left third of the frame, stationary on its post, and the emblem stays identical to the start frame. The jousting lance, with its blunt three-pronged tip, is already aimed at the center of the emblem and stays in frame from the first frame to the strike. 0 to 2 seconds: the shield grows larger as the rider charges at full gallop, no slowing at any point. At 2 seconds the lance tip hits the exact center of the emblem in one continuous motion, with no pause, no hesitation, and no ease before contact. The lance shatters into long splinters and jagged cracks split outward across the shield and through the emblem. Paint flakes and wood splinters fly. The camera keeps riding past the shield. Practical film look, dust kicking up, warm low sun. No music, no dialogue.",
+   "zac_note": "(synthetic: JS2 text with START_FRAME no, to exercise PF09)",
+   "must_flag": [
+    "PF09"
+   ],
+   "must_fail": [
+    "PF09"
+   ],
+   "set": "failed"
+  }
+ ],
+ "good": [
+  {
+   "file": "good/rebuilt-prompts.md",
+   "source": "data/firefly-prompt-guide/REBUILT-PROMPTS-2026-11-22.md",
+   "format": "blocks"
+  },
+  {
+   "file": "good/pj-intro-prompts.md",
+   "source": "WWD/reports/PJ-Intro-Firefly-Prompts-2026-11-23.md",
+   "format": "blocks"
+  },
+  {
+   "file": "good/ian-R3b-prompt.txt",
+   "source": "data/firefly-prompt-log/ian-R3b/prompt.txt",
+   "format": "ian"
+  },
+  {
+   "file": "good/ian-H1-prompt.txt",
+   "source": "data/firefly-prompt-log/ian-H1/prompt.txt",
+   "format": "ian"
+  },
+  {
+   "file": "good/ian-B1-prompt.txt",
+   "source": "data/firefly-prompt-log/ian-B1/prompt.txt",
+   "format": "ian"
+  },
+  {
+   "file": "good/ian-W1-prompt.txt",
+   "source": "data/firefly-prompt-log/ian-W1/prompt.txt",
+   "format": "ian"
+  },
+  {
+   "file": "good/playbook-PB-edit-pose.md",
+   "source": "REFERENCE/PROMPTING-PLAYBOOK.md",
+   "format": "blocks"
+  }
+ ]
+}

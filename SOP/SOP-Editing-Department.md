@@ -47,3 +47,7 @@ No credits or money, no posting, no Adobe settings, never modify or move source 
 - WWD prep: assistant-editor 30 min (parse plus render), head-editor notes 10 min. Over 50 percent: stop, report the partial and what is left.
 - When a WWD prep job and a studio job collide, the studio job keeps priority unless Jarvis says otherwise.
 - Channel episodes (documentary-editor): creative calls go to **wkp-channel-director** first (it owns the episode list, research and script order, and approves before studio-director gates). Only what it cannot settle goes to Zac.
+
+
+## Sound pull (LOCKED 2026-11-21, Zac)
+**SOUND PULL (LOCKED 2026-11-21, Zac).** While the run sheet is being built, you also pull every sound it names. Copy (never move) each file into `P:\WWD Kit\<Movie>\Sounds\`, one folder per stop named stop number, time and picture, plus Spares and music candidates folders. Source is the run sheet's Sound lines and the wwd-sound plan. Write a one-page `.docx` pull sheet (stop, time, file, license) to `D:\WKP Reports\Sound Pulls\`. Flag loose mp3s with no license on file. Update the pull when the run sheet changes. Done for A Knight's Tale 2026-11-21 (24 stop files). Also applies to any non-WWD edit you build (one sound pack per cut).

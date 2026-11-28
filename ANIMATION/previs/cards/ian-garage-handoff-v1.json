@@ -1,0 +1,161 @@
+{
+ "id": "ian-garage-handoff-v1",
+ "title": "Ian trailer: garage wrench hand-off (R3b geometry, previs)",
+ "ratio": "9:16",
+ "res_long": 1280,
+ "action": "The older man (father) lets go of the wrench at the TOP with his RIGHT hand. The young man (Brandon) takes it at the SHAFT BELOW with his RIGHT hand. A clear gap of air between the hands. Wrench vertical, jaw at the bottom.",
+ "location": {
+  "size": [
+   6,
+   5,
+   2.6
+  ],
+  "center": [
+   0,
+   1
+  ],
+  "walls": [
+   "back",
+   "left"
+  ],
+  "blocks": [
+   {
+    "name": "workbench",
+    "loc": [
+     1.6,
+     2.0,
+     0
+    ],
+    "size": [
+     2.0,
+     0.7,
+     0.9
+    ]
+   },
+   {
+    "name": "pegboard",
+    "loc": [
+     -1.0,
+     3.45,
+     1.45
+    ],
+    "size": [
+     2.4,
+     0.05,
+     1.0
+    ],
+    "on_ground": false
+   }
+  ]
+ },
+ "props": [
+  {
+   "name": "wrench",
+   "type": "box",
+   "size": [
+    0.035,
+    0.012,
+    0.22
+   ],
+   "loc": [
+    0,
+    0,
+    1.1
+   ],
+   "grips": {
+    "top": [
+     0,
+     0,
+     0.08
+    ],
+    "shaft": [
+     0,
+     0,
+     -0.06
+    ]
+   },
+   "end_marker": [
+    0,
+    0,
+    -0.12
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Brandon",
+   "height": 1.8,
+   "build": "lean",
+   "pos": [
+    -0.32,
+    0
+   ],
+   "facing_deg": 90,
+   "right_hand": {
+    "holds": {
+     "prop": "wrench",
+     "at": "shaft"
+    }
+   }
+  },
+  {
+   "name": "Father",
+   "height": 1.74,
+   "build": "stocky",
+   "pos": [
+    0.32,
+    0
+   ],
+   "facing_deg": 270,
+   "right_hand": {
+    "holds": {
+     "prop": "wrench",
+     "at": "top"
+    }
+   }
+  }
+ ],
+ "light": {
+  "azimuth_deg": 300,
+  "elevation_deg": 35
+ },
+ "camera": {
+  "azimuth_deg": 0,
+  "distance": 2.0,
+  "height": 1.25,
+  "target": [
+   0,
+   0,
+   1.1
+  ],
+  "lens_mm": 40
+ },
+ "expect": [
+  {
+   "char": "Father",
+   "hand": "R",
+   "holds": "wrench:top",
+   "visible_min": 60,
+   "screen_side": "screen-right",
+   "note": "older hand at the TOP, from the right"
+  },
+  {
+   "char": "Brandon",
+   "hand": "R",
+   "holds": "wrench:shaft",
+   "visible_min": 60,
+   "screen_side": "screen-left",
+   "note": "young hand at the shaft, from the left"
+  },
+  {
+   "char": "Father",
+   "head_in_frame": false,
+   "note": "R3b is hands only, the card's negative field says 'face': no head in frame"
+  },
+  {
+   "char": "Brandon",
+   "head_in_frame": false,
+   "note": "R3b is hands only: no head in frame"
+  }
+ ]
+}

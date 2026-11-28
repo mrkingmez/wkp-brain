@@ -131,3 +131,7 @@ Expect trouble: the SFX are sparse and the open and the brotherhood beat are nea
 
 ## Not verified
 Nothing heard, played or watched. Every level, fade and timing is a starting value. Not probed: `Ambience Wind Blowing Through Trees 01.wav` (index only). Not checked by ear: whether `wrench_on_tray_take1.mp3` is a single clink, whether the boots, cloth and fire stand-ins read right, whether any Made take sounds right, whether any file hides a voice or a child. Beat 7 depends on Ian's yes. `2026-11-20-music.md` did not exist yet, so music placement is a lane only. No platform loudness guidance re-read. ElevenLabs credit balance not read, cost not retrieved.
+
+
+## Update 2026-11-25 (assistant-editor, notes only, nothing heard or made): W1 rip at beat 8
+F1 stays 24.80 to 28.00 under the whole rip. Add R-TEAR at about 26.20 (one paper tear, about 0.3 s, about -18) and R-THUMP at 26.30 to 26.50 (about -22) for the shake. Fire only after that, no voices. Detail in `Post-Productioneports\Ian-Trailer-45s-v7-W1-Rip-Plan-2026-11-25.md`. Tear time comes from the rip README default, confirm in the clip.

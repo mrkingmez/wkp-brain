@@ -1,0 +1,8 @@
+MAIN PROMPT (W1b, attempt 1, NOT RUN, v6 2026-11-25: red-haired sweetheart caught at the bonfire, Brandon furious; v3 turning-away kept as prompt-v3-turning-away.txt; Nano Banana, no negative box, reference = B1 winner for grade and grain only)
+Use the first image only for color grade and grain, the scene is new. Photograph at night, a bonfire at a pasture party in the late 1990s. In the middle third, a single young woman about twenty with red hair, the only woman in the frame, faces the camera in three-quarter view, eyes wide, mouth open, shocked, staring at a lean young man in a plain work jacket at the edge on camera right. He is in profile, rigid, fists clenched, jaw set, face hard with fury in the firelight. Beside her, a young man cropped at the shoulder by the frame, hands apart and visible. Sparks rise ahead. Far behind, soft and blurred, tall male silhouettes by two old dark pickup trucks. Black night, shallow depth of field, 35mm, widescreen.
+
+REDO A (second woman): delete the sparks sentence, replace 'tall male silhouettes' with 'only tall men in work jackets'.
+REDO B (hair not red): 'with red hair' -> 'with vivid red hair'.
+REDO C (anger too mild): delete the sparks sentence, 'jaw set, face' -> 'jaw set, teeth bared, face'.
+REDO D (anger cartoonish): 'face hard with fury in the firelight' -> 'face cold and still with fury'.
+REDO E (third man or crowd): 'Sparks rise ahead.' -> 'Only these three stand near the fire.' and 'plain work jacket' -> 'work jacket'.

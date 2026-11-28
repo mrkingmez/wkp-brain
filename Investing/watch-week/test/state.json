@@ -1,0 +1,166 @@
+{
+ "cash": 100000.0,
+ "closed_stats": [],
+ "config_hash": "7a0c25c7a871b79b",
+ "day": {
+  "date": "2026-11-27",
+  "killed": false,
+  "start_equity": 100000.0
+ },
+ "day_trades": [],
+ "ended": false,
+ "episodes": {
+  "AAPL": null,
+  "AMD": null,
+  "AMZN": null,
+  "COST": null,
+  "DIA": null,
+  "GOOGL": null,
+  "IWM": null,
+  "JPM": null,
+  "META": null,
+  "MSFT": null,
+  "NVDA": null,
+  "QQQ": null,
+  "SPY": null,
+  "TSLA": null,
+  "UNH": null,
+  "XLE": null,
+  "XLF": null,
+  "XLK": null,
+  "XLV": "trend_pullback",
+  "XOM": null
+ },
+ "evaluated": {
+  "AAPL": "2026-11-27T16:00:00Z",
+  "AMD": "2026-11-27T16:00:00Z",
+  "AMZN": "2026-11-27T16:00:00Z",
+  "COST": "2026-11-27T16:00:00Z",
+  "DIA": "2026-11-27T16:00:00Z",
+  "GOOGL": "2026-11-27T16:00:00Z",
+  "IWM": "2026-11-27T16:00:00Z",
+  "JPM": "2026-11-27T16:00:00Z",
+  "META": "2026-11-27T16:00:00Z",
+  "MSFT": "2026-11-27T16:00:00Z",
+  "NVDA": "2026-11-27T16:00:00Z",
+  "QQQ": "2026-11-27T16:00:00Z",
+  "SPY": "2026-11-27T16:00:00Z",
+  "TSLA": "2026-11-27T16:00:00Z",
+  "UNH": "2026-11-27T16:00:00Z",
+  "XLE": "2026-11-27T16:00:00Z",
+  "XLF": "2026-11-27T16:00:00Z",
+  "XLK": "2026-11-27T16:00:00Z",
+  "XLV": "2026-11-27T16:00:00Z",
+  "XOM": "2026-11-27T16:00:00Z"
+ },
+ "journal": null,
+ "last_equity": 100000.0,
+ "last_kill_date": null,
+ "marks": {
+  "AAPL": 357.96,
+  "AMD": 418.38,
+  "AMZN": 254.75,
+  "COST": 1098.3,
+  "DIA": 507.08,
+  "GOOGL": 273.72,
+  "IWM": 273.03,
+  "JPM": 324.02,
+  "META": 629.64,
+  "MSFT": 491.56,
+  "NVDA": 149.365,
+  "QQQ": 646.99,
+  "SPY": 726.87,
+  "TSLA": 399.13,
+  "UNH": 352.13,
+  "XLE": 61.745,
+  "XLF": 57.255,
+  "XLK": 158.93,
+  "XLV": 184.24,
+  "XOM": 160.62
+ },
+ "next_decision": 102,
+ "next_trade": 0,
+ "pending": {
+  "XLV": {
+   "atr": 1.145976613858046,
+   "config_hash": "7a0c25c7a871b79b",
+   "decision_id": "D000090",
+   "entry_ref": 184.2,
+   "parts": {
+    "base": 55,
+    "market_mood": 3.2,
+    "momentum_turn": 8,
+    "rsi_reset": 10,
+    "trend_strength": 0,
+    "volume": -5
+   },
+   "regime": "RANGE",
+   "score": 71.2,
+   "setup": "trend_pullback",
+   "signal_bar_t": "2026-11-27T16:00:00Z"
+  }
+ },
+ "positions": {},
+ "regime": {
+  "date": "2026-11-27",
+  "detail": {
+   "atr_pct": 2.139,
+   "atr_pct_median": 0.8833,
+   "breadth": 0.25,
+   "breadth_symbols": 20,
+   "close": 716.735,
+   "daily_bars": 274,
+   "last_daily_bar_date": "2026-11-25",
+   "slope_up": false,
+   "sma_fast": 757.9327,
+   "sma_slow": 733.1436
+  },
+  "tag": "RANGE"
+ },
+ "starting_equity": 100000.0,
+ "week": {
+  "blocked": false,
+  "start": "2026-11-23",
+  "start_equity": 100000.0
+ },
+ "zac": {
+  "cash": 100000.0,
+  "closed_stats": [],
+  "day": {
+   "date": "2026-11-27",
+   "killed": false,
+   "start_equity": 100000.0
+  },
+  "day_trades": [],
+  "last_equity": 100000.0,
+  "last_kill_date": null,
+  "next_trade": 0,
+  "pending": {
+   "XLV": {
+    "atr": 1.145976613858046,
+    "config_hash": "7a0c25c7a871b79b",
+    "decision_id": "D000090",
+    "entry_ref": 184.2,
+    "parts": {
+     "base": 55,
+     "market_mood": 3.2,
+     "momentum_turn": 8,
+     "rsi_reset": 10,
+     "trend_strength": 0,
+     "volume": -5
+    },
+    "regime": "RANGE",
+    "score": 71.2,
+    "setup": "trend_pullback",
+    "signal_bar_t": "2026-11-27T16:00:00Z"
+   }
+  },
+  "positions": {},
+  "starting_equity": 100000.0,
+  "week": {
+   "blocked": false,
+   "start": "2026-11-23",
+   "start_equity": 100000.0
+  }
+ }
+}

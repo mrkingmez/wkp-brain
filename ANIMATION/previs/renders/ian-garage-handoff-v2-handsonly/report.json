@@ -1,0 +1,208 @@
+{
+ "id": "ian-garage-handoff-v2-handsonly",
+ "title": "Ian trailer: garage wrench hand-off, hands-only close (R3b framing)",
+ "ratio": "9:16",
+ "res": [
+  720,
+  1280
+ ],
+ "camera": {
+  "loc": [
+   0.0,
+   -0.7,
+   1.15
+  ],
+  "height_m": 1.15,
+  "lens_mm": 35.0,
+  "sensor_width_mm": 36.0,
+  "hfov_deg": 32.3,
+  "vfov_deg": 54.4,
+  "target": [
+   0.0,
+   0.0,
+   0.98
+  ]
+ },
+ "light": {
+  "from_azimuth_deg": 300,
+  "elevation_deg": 35
+ },
+ "characters": {
+  "Brandon": {
+   "height_m": 1.8,
+   "facing_deg": 90.0,
+   "pose": "stand",
+   "dist_to_camera_m": 0.8,
+   "head_top_screen": [
+    -0.546,
+    1.949
+   ],
+   "feet_screen": [
+    -0.081,
+    -0.473
+   ],
+   "body_height_pct_of_frame": 242.1,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      -0.399,
+      0.419
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": false,
+     "visible_pct": 0,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.02
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.495,
+      0.649
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 74,
+     "occluded_by": {
+      "PV_Brandon_farmR": 5
+     },
+     "holds": "wrench:shaft",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.42,
+   "view_of_character": "side/three-quarter"
+  },
+  "Father": {
+   "height_m": 1.74,
+   "facing_deg": 270.0,
+   "pose": "stand",
+   "dist_to_camera_m": 0.81,
+   "head_top_screen": [
+    1.518,
+    1.807
+   ],
+   "feet_screen": [
+    1.081,
+    -0.473
+   ],
+   "body_height_pct_of_frame": 228.0,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      1.354,
+      0.164
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": false,
+     "visible_pct": 0,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.569,
+      0.888
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 100,
+     "occluded_by": {},
+     "holds": "wrench:top",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.42,
+   "view_of_character": "side/three-quarter"
+  }
+ },
+ "props": {
+  "wrench": {
+   "grips_world": {
+    "top": [
+     0.0,
+     0.0,
+     1.18
+    ],
+    "shaft": [
+     0.0,
+     0.0,
+     1.04
+    ],
+    "center": [
+     0.0,
+     0.0,
+     1.1
+    ]
+   }
+  }
+ },
+ "warnings": [
+  "Brandon L arm falls short of its target by 0.02 m (previs shows a straight arm)",
+  "Brandon head is outside the frame",
+  "Father head is outside the frame"
+ ],
+ "hand_gaps_m": [
+  {
+   "between": "Brandon.R / Father.R",
+   "m": 0.174
+  },
+  {
+   "between": "Brandon.R / Father.L",
+   "m": 0.446
+  },
+  {
+   "between": "Brandon.L / Father.R",
+   "m": 0.781
+  },
+  {
+   "between": "Brandon.L / Father.L",
+   "m": 0.968
+  }
+ ],
+ "expect_results": [
+  {
+   "pass": true,
+   "expect": "older hand at the TOP, from the right",
+   "measured": "visible 100% (need 60); on screen-right (need screen-right); holds wrench:top (need wrench:top)"
+  },
+  {
+   "pass": true,
+   "expect": "young hand at the shaft, from the left",
+   "measured": "visible 74% (need 60); on screen-left (need screen-left); holds wrench:shaft (need wrench:shaft)"
+  },
+  {
+   "pass": true,
+   "expect": "R3b is hands only, the card's negative field says 'face': no head in frame",
+   "measured": "head in frame False (need False)"
+  },
+  {
+   "pass": true,
+   "expect": "R3b is hands only: no head in frame",
+   "measured": "head in frame False (need False)"
+  },
+  {
+   "pass": true,
+   "expect": "R3b shows TWO hands only: Brandon's free LEFT hand must not be in frame",
+   "measured": "visible 0% (allowed up to 10)"
+  },
+  {
+   "pass": true,
+   "expect": "R3b shows TWO hands only: the father's free LEFT hand must not be in frame",
+   "measured": "visible 0% (allowed up to 10)"
+  }
+ ]
+}

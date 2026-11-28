@@ -1,0 +1,72 @@
+{
+ "MIA": {
+  "name": "Kyle McCord",
+  "date": "2026-11-16",
+  "source": "RotoBaller 2026-11-16 and SI starting-QB page (modified 2026-11-11): Willis on IR (groin), McCord expected to start at least four weeks. No team statement for Week 11 found."
+ },
+ "BUF": {
+  "name": "Josh Allen",
+  "date": "2026-11-11",
+  "source": "SI every starting QB page modified 2026-11-11; no injury tag in our merged injury file 2026-11-19 07:11Z."
+ },
+ "NO": {
+  "name": "Tyler Shough",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; no injury tag 2026-11-19."
+ },
+ "CHI": {
+  "name": "Caleb Williams",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; no injury tag 2026-11-19."
+ },
+ "TEN": {
+  "name": "Cam Ward",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; no injury tag 2026-11-19."
+ },
+ "DAL": {
+  "name": "Dak Prescott",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; no injury tag 2026-11-19."
+ },
+ "DET": {
+  "name": "Jared Goff",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; Fox Sports Week 11 box page lists Goff; no injury tag 2026-11-19."
+ },
+ "ARI": {
+  "name": "Josh Johnson",
+  "date": "2026-11-22",
+  "source": "ESPN_INJ feed 2026-11-22T15:11Z (Darren Urban, Cardinals official site): Johnson starts vs KC, Beck (back spasms) ruled out for Week 11 (first reported 2026-11-21T19:25Z)."
+ },
+ "KC": {
+  "name": "Patrick Mahomes",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11 lists Mahomes, no injury tag 2026-11-19. One SI snippet mentions ACL surgery recovery (likely an older page): treat as confirmed but recheck Sunday."
+ },
+ "PIT": {
+  "name": "Aaron Rodgers",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; no injury tag 2026-11-19."
+ },
+ "PHI": {
+  "name": "Joe Milton III",
+  "date": "2026-11-18",
+  "source": "overrides_2026_wk11.json: Sirianni announced Wed 2026-11-18 (profootballrumors, Yahoo). Hurts out for season."
+ },
+ "BAL": {
+  "name": "Jacoby Brissett",
+  "date": "2026-11-13",
+  "source": "overrides_2026_wk11.json: NBC Sports 2026-11-13, Jackson (thumb) out 6 to 10 weeks."
+ },
+ "CAR": {
+  "name": "Bryce Young",
+  "date": "2026-11-11",
+  "source": "SI starting-QB page 2026-11-11; no injury tag 2026-11-19."
+ },
+ "TB": {
+  "name": "Baker Mayfield",
+  "date": "2026-11-22",
+  "source": "ESPN_INJ feed 2026-11-22T16:36Z (Scott Smith, Buccaneers official site): Mayfield (foot/thumb) listed ACTIVE Sunday at Detroit. Jalon Daniels also active (backup)."
+ }
+}

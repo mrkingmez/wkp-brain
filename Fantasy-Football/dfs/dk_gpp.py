@@ -34,7 +34,9 @@ Method (plain words in the explainer doc)
      A win is worth 1 / (1 + expected duplicates in the field), so chalky lineups that win alongside many copies count less.
      Lineups are picked one at a time to cover the most new winning sims, with caps: a player in at most 4 of 7, a QB in at
      most 2, any two lineups share at most 5 players.
-  5. Fill the template rows in order, write a plain upload file too, then run dk_validate.py on what was written.
+  4b. OPTIONAL (flag --rotowire CSV, default OFF, added 2026-11-22): lineups from a RotoWire upload csv (DK IDs, 9 per row) are added as extra
+     candidates, same rules, same sim, source label 'rotowire'. With the flag absent the run is identical to before.
+5. Fill the template rows in order, write a plain upload file too, then run dk_validate.py on what was written.
 """
 import argparse, csv, json, math
 from pathlib import Path
@@ -297,6 +299,8 @@ def main():
     ap.add_argument("--out", default="", help="names to remove, separated by ;  (Sunday inactives)")
     ap.add_argument("--drop-q", action="store_true"); ap.add_argument("--field", type=int, default=17800, help="contest size for the duplicate estimate")
     ap.add_argument("--name-id", action="store_true", help="write 'Name (ID)' instead of the bare ID")
+    ap.add_argument("--rotowire", default=None, help="OPT-IN: RotoWire upload csv (DK IDs per row) added as extra candidates, label rotowire. Default off.")
+    ap.add_argument("--patched", default="", help="lineup numbers (comma separated) a person hand-edited after the build; labelled patched in lineup_sources.csv")
     a = ap.parse_args()
     out = Path(a.outdir); out.mkdir(parents=True, exist_ok=True)
     log = []
@@ -339,6 +343,17 @@ def main():
             if lu and lu not in cands:
                 cands[lu] = name; found += 1
         log.append(f"candidates {name}: {found} unique legal lineups from {a.tries} solves")
+    if a.rotowire:
+        idx_by_id = {int(r): i for i, r in enumerate(p["DFS ID"])}
+        added_rw = 0
+        with open(a.rotowire, encoding="utf-8-sig", newline="") as f:
+            for row in list(csv.reader(f))[1:]:
+                ids = [int(v) for v in row if v.strip().isdigit()]
+                if len(ids) == 9 and len(set(ids)) == 9 and all(i in idx_by_id for i in ids):
+                    lu = tuple(sorted(idx_by_id[i] for i in ids))
+                    if lu not in cands and int(p.Salary[list(lu)].sum()) <= CAP:
+                        cands[lu] = "rotowire"; added_rw += 1
+        log.append(f"RotoWire lineups added as extra candidates (same rules, same sim): {added_rw} usable from {Path(a.rotowire).name}")
     keys = list(cands)
     if not keys:
         raise SystemExit("no legal lineups: check the slate and filters")
@@ -357,7 +372,7 @@ def main():
     def best_of(tiers):
         pick, gain = None, -1
         for j, k in enumerate(keys):
-            if j in chosen or cands[k] not in tiers or not fits(k):
+            if j in chosen or (cands[k] not in tiers and cands[k] != "rotowire") or not fits(k):
                 continue
             g = np.maximum(best, V[j]).sum() - best.sum() + 1e-6 * S[j].mean()
             if g > gain:
@@ -428,6 +443,12 @@ def main():
     lines.append("EXPOSURE (lineups out of %d):" % len(chosen))
     lines += [f"   {nm:<24} {tm:3} {c}" for (nm, tm), c in ex.items()]
     pd.DataFrame(detail).to_csv(out / "lineups_detail.csv", index=False)
+    patched = {int(x) for x in a.patched.split(",") if x.strip().isdigit()}
+    with open(out / "lineup_sources.csv", "w", newline="", encoding="utf-8") as f:   # 2026-11-22: source label per lineup
+        w = csv.writer(f); w.writerow(["lineup", "source", "tier", "dfs_ids"])
+        for n, j in enumerate(chosen, start=1):
+            src = "patched" if n in patched else ("rotowire" if cands[keys[j]] == "rotowire" else "own")
+            w.writerow([n, src, cands[keys[j]], " ".join(str(int(p["DFS ID"][i])) for i in order_slots(p, keys[j]))])
     # fill template
     rows = read_rows(a.template)
     hdr, entries = lineup_rows(rows)
@@ -446,6 +467,9 @@ def main():
     with open(out / "upload_new_lineups.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(SLOTS); w.writerows([[cell(i) for i in s] for s in ordered])
     log.append(f"template: {len(entries)} entry rows; filled {filled_n}; lineups built {len(ordered)}")
+    import shutil, datetime as _dt
+    arch = out / "entered_archive"; arch.mkdir(exist_ok=True)   # 2026-11-22: exact built file kept in the week folder before lock
+    shutil.copy2(filled, arch / f"{_dt.datetime.now():%Y%m%d-%H%M%S}_{filled.name}")
     if len(entries) < len(ordered):
         log.append(f"WARNING: template has only {len(entries)} entries. Lineups {len(entries) + 1}-{len(ordered)} are in upload_new_lineups.csv only.")
     if len(entries) > len(ordered):

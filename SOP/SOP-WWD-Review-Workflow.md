@@ -48,3 +48,7 @@ Fixes in this SOP: start at intake, pull in parallel, music and kit ordered on d
 - Run sheet: one timeline-order list, revise in place, LIKE AND SUBSCRIBE stop, no new Spoiler Alert build.
 - Logs: `logs\wwd-director.md` entry plus one `logs\agent-runs.md` row per bench, plus one lesson per bench in `memory\agents\`.
 - Money (ElevenLabs, Firefly, VidIQ credits) and posting: Zac only, with the exact cost or post.
+
+
+## Sound pull alongside the run sheet (LOCKED 2026-11-21, Zac)
+When wwd-run-sheet builds the run sheet, assistant-editor pulls every sound it names into `P:\WWD Kit\<Movie>\Sounds\` at the same time (see SOP-Editing-Department.md). Zac imports from that one place. If Zac changes the run sheet, the pull is updated.

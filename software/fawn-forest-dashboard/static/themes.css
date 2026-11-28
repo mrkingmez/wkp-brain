@@ -1,0 +1,26 @@
+/* THEME TOKENS. To restyle (reference screenshots, picture repository), change values here only.
+   Two skins on one dashboard: JARVIS (calm) and ARES (war-hardened). Same numbers in both. */
+:root,[data-theme="jarvis"]{
+  --bg:#050b1a; --panel:#08142b; --panel2:#0b1b38; --line:#12315f;
+  --text:#d6ecff; --dim:#7f9bbd; --mute:#56718f;
+  --up:#2de2a0; --down:#ff6b86; --warn:#ffc24a; --accent:#27d8ff; --blue:#6fb8ff;
+  --c-main:#6fb8ff; --c-zac:#2de2a0; --c-spy:#9fb8d6;
+  --bg-grad:radial-gradient(1100px 520px at 85% -10%, #0e2a52 0%, transparent 60%), radial-gradient(800px 400px at 0% 100%, #06314a55 0%, transparent 60%);
+  --mark:conic-gradient(from 210deg,#27d8ff,#2de2a0,#27d8ff);
+  --card-bg:linear-gradient(180deg,var(--panel2),var(--panel));
+  --card-radius:16px; --card-clip:none; --card-edge:1px solid var(--line);
+  --glow:0 0 28px #27d8ff1a; --head-weight:600; --head-track:.16em; --big-weight:600;
+  --motion:0s; --sans:"Segoe UI Variable","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+[data-theme="ares"]{
+  --bg:#0a0606; --panel:#150c0b; --panel2:#1d100e; --line:#4a1d17;
+  --text:#f1e6dc; --dim:#a98f80; --mute:#6f5a4f;
+  --up:#6bd66b; --down:#ff3b30; --warn:#ffa31a; --accent:#ff4a2e; --blue:#d4893a;
+  --c-main:#d4893a; --c-zac:#6bd66b; --c-spy:#a98f80;
+  --bg-grad:repeating-linear-gradient(0deg,#ffffff05 0 1px,transparent 1px 4px), radial-gradient(1000px 500px at 85% -10%, #3a0f0a 0%, transparent 60%);
+  --mark:conic-gradient(from 45deg,#ff3b30,#ffa31a,#ff3b30);
+  --card-bg:linear-gradient(180deg,var(--panel2),var(--panel));
+  --card-radius:2px; --card-clip:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px)); --card-edge:1px solid var(--line);
+  --glow:0 0 22px #ff3b3022; --head-weight:800; --head-track:.22em; --big-weight:800;
+  --motion:1.6s; --sans:"Bahnschrift","Arial Narrow","Segoe UI",system-ui,sans-serif;
+}

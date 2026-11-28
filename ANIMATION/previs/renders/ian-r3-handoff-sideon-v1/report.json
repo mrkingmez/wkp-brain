@@ -1,0 +1,211 @@
+{
+ "id": "ian-r3-handoff-sideon-v1",
+ "title": "Ian trailer R3 v3: wrench hand-off, side-on, two forearms, one wrench horizontal, gap between",
+ "ratio": "16:9",
+ "res": [
+  1280,
+  720
+ ],
+ "camera": {
+  "loc": [
+   0.0,
+   -0.75,
+   1.0
+  ],
+  "height_m": 1.0,
+  "lens_mm": 35.0,
+  "sensor_width_mm": 36.0,
+  "hfov_deg": 54.4,
+  "vfov_deg": 32.3,
+  "target": [
+   0.0,
+   0.0,
+   1.0
+  ]
+ },
+ "light": {
+  "from_azimuth_deg": 40,
+  "elevation_deg": 70
+ },
+ "characters": {
+  "Older": {
+   "height_m": 1.74,
+   "facing_deg": 90.0,
+   "pose": "stand",
+   "dist_to_camera_m": 1.02,
+   "head_top_screen": [
+    -0.129,
+    1.987
+   ],
+   "feet_screen": [
+    -0.129,
+    -1.533
+   ],
+   "body_height_pct_of_frame": 352.0,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.1,
+      0.315
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 63,
+     "occluded_by": {
+      "PV_Older_pelvis": 4,
+      "PV_Older_torso": 3
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.414,
+      0.546
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 84,
+     "occluded_by": {
+      "PV_Older_farmR": 1,
+      "PV_prop_wrench": 2
+     },
+     "holds": "wrench:handle",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.54,
+   "view_of_character": "side/three-quarter"
+  },
+  "Boy": {
+   "height_m": 1.75,
+   "facing_deg": 270.0,
+   "pose": "stand",
+   "dist_to_camera_m": 1.02,
+   "head_top_screen": [
+    1.129,
+    2.007
+   ],
+   "feet_screen": [
+    1.129,
+    -1.533
+   ],
+   "body_height_pct_of_frame": 354.1,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.783,
+      0.596
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 89,
+     "occluded_by": {
+      "PV_Boy_farmL": 2
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.92,
+      0.313
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 79,
+     "occluded_by": {
+      "PV_Boy_pelvis": 2,
+      "PV_Boy_torso": 2
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.54,
+   "view_of_character": "side/three-quarter"
+  }
+ },
+ "props": {
+  "wrench": {
+   "grips_world": {
+    "handle": [
+     -0.069,
+     0.0,
+     1.01
+    ],
+    "center": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  }
+ },
+ "warnings": [
+  "Older head is outside the frame",
+  "Boy head is outside the frame"
+ ],
+ "hand_gaps_m": [
+  {
+   "between": "Older.R / Boy.L",
+   "m": 0.294
+  },
+  {
+   "between": "Older.R / Boy.R",
+   "m": 0.63
+  },
+  {
+   "between": "Older.L / Boy.L",
+   "m": 0.792
+  },
+  {
+   "between": "Older.L / Boy.R",
+   "m": 0.93
+  }
+ ],
+ "expect_results": [
+  {
+   "pass": true,
+   "expect": "older hand holds the wrench, enters from camera left",
+   "measured": "visible 84% (need 60); on screen-left (need screen-left); holds wrench:handle (need wrench:handle)"
+  },
+  {
+   "pass": true,
+   "expect": "receiving open palm enters from camera right",
+   "measured": "visible 89% (need 60); on screen-right (need screen-right)"
+  },
+  {
+   "pass": false,
+   "expect": "only two hands: older man's free hand out of frame",
+   "measured": "visible 63% (allowed up to 10)"
+  },
+  {
+   "pass": false,
+   "expect": "only two hands: boy's free hand out of frame",
+   "measured": "visible 79% (allowed up to 10)"
+  },
+  {
+   "pass": true,
+   "expect": "no faces",
+   "measured": "head in frame False (need False)"
+  },
+  {
+   "pass": true,
+   "expect": "no faces",
+   "measured": "head in frame False (need False)"
+  }
+ ]
+}

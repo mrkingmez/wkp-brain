@@ -44,6 +44,9 @@ Venture directors send finished packages to `qa-director` before returning them 
 - NEED BACK: what you want returned and in what form
 - RULES THAT APPLY: book, venture, mode (GENERATE or SCRUB), anything locked
 
+## Agent leveling (added 2026-11-22, Zac)
+Lessons files record mistakes, they do not make an agent expert. Standard: `SOP\SOP-Agent-Leveling.md` (Craft Brief from retrieved sources, gap audit, graded drill before real work, pre-flight checklists, failure root-cause loop, no self-rating, PROVEN/SOURCED/PROPOSED on every instruction). Ratings: `memory\agents\LEVELS.md`. Wave 1 launch files: `SOP\leveling\<agent>.md`.
+
 ## Self-improvement loop (LIVE 2026-11-19, system reset; full rule `SOP\SOP-Agent-Memory-and-Learning.md`, which wins where this section differs)
 
 Changes 2026-11-19: lessons live in `memory\agents\<agent-name>.md` (one file per agent, all seeded; the old `memory\topics\lessons\` path never existed). Every agent reads `memory\MEMORY.md` plus its own lessons file before a job. Same mistake twice: the director makes a small spec edit the same day and logs it in `logs\jarvis-delegation.md` (Zac 2026-11-19: do not bring this to him). Changes to a Zac-locked rule still go to DECISIONS.md.
@@ -155,3 +158,7 @@ Department bosses may bounce ideas back and forth directly. For example, graphic
 - The caller puts one line in its own report: who it asked, what came back, and the file path.
 - A handoff that fails or can't be reached is reported plainly. Do not fake it, and do not do the other desk's job yourself.
 - Anything a subagent can't do (ask Zac a question, use a browser) goes up to Jarvis as a flag.
+
+
+## Project board and reference library (added 2026-11-21, Zac)
+All directors and departments read `REFERENCE\PROJECT-BOARD.md` and `REFERENCE\NAMES-AND-SPELLING.md` before a job, check `REFERENCE\LOCKS.md` for format locks, and ask the board before asking Zac. Owners: chief-of-staff (board, locks, names, glossary), media-manager (VIDEO-LIBRARY). Every director updates its board row on job start and finish. Stale after 7 days. See root CLAUDE.md "Project Board" and `REFERENCE\README.md`.

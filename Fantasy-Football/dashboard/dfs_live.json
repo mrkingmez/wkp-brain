@@ -1,0 +1,808 @@
+{
+ "generated_at": "2026-11-27T22:54:15.515727+00:00",
+ "week": 11,
+ "games_live": false,
+ "notes": [
+  "Projected remaining is rough: the sim's DK mean times the share of the game clock left. DST has no projection.",
+  "DST fumble recoveries are the opponent's fumbles lost, and points allowed drops the opposing defense and special teams scores. Two-point conversions come from play text."
+ ],
+ "entries": [
+  {
+   "entry_id": "5344796338",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 96.42,
+   "proj_remaining": 25.3,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Jared Goff",
+     "team": "DET",
+     "pts": 19.82,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "James Cook III",
+     "team": "BUF",
+     "pts": 22.5,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Bucky Irving",
+     "team": "TB",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 16.7
+    },
+    {
+     "slot": "WR",
+     "name": "Amon-Ra St. Brown",
+     "team": "DET",
+     "pts": 24.6,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Jameson Williams",
+     "team": "DET",
+     "pts": 14.0,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Chris Godwin Jr.",
+     "team": "TB",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 8.6
+    },
+    {
+     "slot": "TE",
+     "name": "Sam LaPorta",
+     "team": "DET",
+     "pts": 14.4,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "FLEX",
+     "name": "Pat Freiermuth",
+     "team": "PIT",
+     "pts": 1.1,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "DST",
+     "name": "Titans",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 3
+  },
+  {
+   "entry_id": "5344796823",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 73.26,
+   "proj_remaining": 28.1,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Patrick Mahomes",
+     "team": "KC",
+     "pts": 7.16,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Emmett Johnson",
+     "team": "KC",
+     "pts": 19.6,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Tyler Allgeier",
+     "team": "ARI",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 4:25 PM EST",
+     "flag": "not started",
+     "proj_remaining": 13.9
+    },
+    {
+     "slot": "WR",
+     "name": "Luther Burden III",
+     "team": "CHI",
+     "pts": 7.5,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Rashee Rice",
+     "team": "KC",
+     "pts": 3.9,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Jameson Williams",
+     "team": "DET",
+     "pts": 14.0,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "TE",
+     "name": "Travis Kelce",
+     "team": "KC",
+     "pts": 11.1,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "FLEX",
+     "name": "Carnell Tate",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 14.2
+    },
+    {
+     "slot": "DST",
+     "name": "Chiefs",
+     "team": "KC",
+     "pts": 10.0,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 2
+  },
+  {
+   "entry_id": "5344796345",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 70.64,
+   "proj_remaining": 52.2,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Josh Allen",
+     "team": "BUF",
+     "pts": 5.54,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "James Cook III",
+     "team": "BUF",
+     "pts": 22.5,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Javonte Williams",
+     "team": "DAL",
+     "pts": 36.3,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Carnell Tate",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 14.2
+    },
+    {
+     "slot": "WR",
+     "name": "Khalil Shakir",
+     "team": "BUF",
+     "pts": 6.3,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Caleb Douglas",
+     "team": "MIA",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 9.6
+    },
+    {
+     "slot": "TE",
+     "name": "Gunnar Helm",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 6.9
+    },
+    {
+     "slot": "FLEX",
+     "name": "Tony Pollard",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 21.5
+    },
+    {
+     "slot": "DST",
+     "name": "Saints",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 5
+  },
+  {
+   "entry_id": "5344796776",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 70.4,
+   "proj_remaining": 60.8,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Baker Mayfield",
+     "team": "TB",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 14.3
+    },
+    {
+     "slot": "RB",
+     "name": "Jahmyr Gibbs",
+     "team": "DET",
+     "pts": 51.2,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Bucky Irving",
+     "team": "TB",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 16.7
+    },
+    {
+     "slot": "WR",
+     "name": "George Pickens",
+     "team": "DAL",
+     "pts": 11.7,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Luther Burden III",
+     "team": "CHI",
+     "pts": 7.5,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Chris Godwin Jr.",
+     "team": "TB",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 8.6
+    },
+    {
+     "slot": "TE",
+     "name": "Cade Otton",
+     "team": "TB",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 7.3
+    },
+    {
+     "slot": "FLEX",
+     "name": "Tyler Allgeier",
+     "team": "ARI",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 4:25 PM EST",
+     "flag": "not started",
+     "proj_remaining": 13.9
+    },
+    {
+     "slot": "DST",
+     "name": "Cardinals",
+     "team": "ARI",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 4:25 PM EST",
+     "flag": "not started",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 6
+  },
+  {
+   "entry_id": "5344796795",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 64.14,
+   "proj_remaining": 55.9,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Dak Prescott",
+     "team": "DAL",
+     "pts": 26.54,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Derrick Henry",
+     "team": "BAL",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 14.9
+    },
+    {
+     "slot": "RB",
+     "name": "Tony Pollard",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 21.5
+    },
+    {
+     "slot": "WR",
+     "name": "CeeDee Lamb",
+     "team": "DAL",
+     "pts": 23.4,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "George Pickens",
+     "team": "DAL",
+     "pts": 11.7,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Jordyn Tyson",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 12.6
+    },
+    {
+     "slot": "TE",
+     "name": "Gunnar Helm",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 6.9
+    },
+    {
+     "slot": "FLEX",
+     "name": "Brevyn Spann-Ford",
+     "team": "DAL",
+     "pts": 2.5,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "DST",
+     "name": "Saints",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 5
+  },
+  {
+   "entry_id": "5344786514",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 58.2,
+   "proj_remaining": 57.9,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Tyler Shough",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 18.7
+    },
+    {
+     "slot": "RB",
+     "name": "D'Andre Swift",
+     "team": "CHI",
+     "pts": 29.2,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Jaylen Warren",
+     "team": "PIT",
+     "pts": 5.6,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "CeeDee Lamb",
+     "team": "DAL",
+     "pts": 23.4,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Chris Olave",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 12.6
+    },
+    {
+     "slot": "WR",
+     "name": "Jordyn Tyson",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 12.6
+    },
+    {
+     "slot": "TE",
+     "name": "Juwan Johnson",
+     "team": "NO",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 6.4
+    },
+    {
+     "slot": "FLEX",
+     "name": "Darren Waller",
+     "team": "CAR",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 7.6
+    },
+    {
+     "slot": "DST",
+     "name": "Titans",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 6
+  },
+  {
+   "entry_id": "5344796753",
+   "contest_name": "NFL $15K First Down [20 Entry Max] (Early Only)",
+   "entry_fee": "$1",
+   "total": 53.86,
+   "proj_remaining": 27.4,
+   "players": [
+    {
+     "slot": "QB",
+     "name": "Patrick Mahomes",
+     "team": "KC",
+     "pts": 7.16,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Jaylen Warren",
+     "team": "PIT",
+     "pts": 5.6,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "RB",
+     "name": "Tony Pollard",
+     "team": "TEN",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 1:00 PM EST",
+     "flag": "not started",
+     "proj_remaining": 21.5
+    },
+    {
+     "slot": "WR",
+     "name": "George Pickens",
+     "team": "DAL",
+     "pts": 11.7,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Luther Burden III",
+     "team": "CHI",
+     "pts": 7.5,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "WR",
+     "name": "Josh Downs",
+     "team": "KC",
+     "pts": 2.3,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "TE",
+     "name": "Elijah Higgins",
+     "team": "ARI",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Sun, November 29th at 4:25 PM EST",
+     "flag": "not started",
+     "proj_remaining": 5.9
+    },
+    {
+     "slot": "FLEX",
+     "name": "Emmett Johnson",
+     "team": "KC",
+     "pts": 19.6,
+     "game_state": "final",
+     "game": "Final",
+     "flag": "",
+     "proj_remaining": 0.0
+    },
+    {
+     "slot": "DST",
+     "name": "Panthers",
+     "team": "CAR",
+     "pts": 0.0,
+     "game_state": "not started",
+     "game": "Mon, November 30th at 8:15 PM EST",
+     "flag": "not started",
+     "proj_remaining": 0.0
+    }
+   ],
+   "all_final": false,
+   "live_count": 0,
+   "not_started": 3
+  }
+ ],
+ "games": [
+  {
+   "teams": "PIT@DEN",
+   "state": "post",
+   "detail": "Final"
+  },
+  {
+   "teams": "LAR@GB",
+   "state": "post",
+   "detail": "Final"
+  },
+  {
+   "teams": "DET@CHI",
+   "state": "post",
+   "detail": "Final"
+  },
+  {
+   "teams": "DAL@PHI",
+   "state": "post",
+   "detail": "Final"
+  },
+  {
+   "teams": "BUF@KC",
+   "state": "post",
+   "detail": "Final"
+  },
+  {
+   "teams": "CIN@NO",
+   "state": "pre",
+   "detail": "Sun, November 29th at 1:00 PM EST"
+  },
+  {
+   "teams": "IND@NYG",
+   "state": "pre",
+   "detail": "Sun, November 29th at 1:00 PM EST"
+  },
+  {
+   "teams": "MIA@NYJ",
+   "state": "pre",
+   "detail": "Sun, November 29th at 1:00 PM EST"
+  },
+  {
+   "teams": "MIN@ATL",
+   "state": "pre",
+   "detail": "Sun, November 29th at 1:00 PM EST"
+  },
+  {
+   "teams": "JAX@TEN",
+   "state": "pre",
+   "detail": "Sun, November 29th at 1:00 PM EST"
+  },
+  {
+   "teams": "HOU@BAL",
+   "state": "pre",
+   "detail": "Sun, November 29th at 1:00 PM EST"
+  },
+  {
+   "teams": "LAC@NE",
+   "state": "pre",
+   "detail": "Sun, November 29th at 4:05 PM EST"
+  },
+  {
+   "teams": "ARI@WSH",
+   "state": "pre",
+   "detail": "Sun, November 29th at 4:25 PM EST"
+  },
+  {
+   "teams": "SF@SEA",
+   "state": "pre",
+   "detail": "Sun, November 29th at 4:25 PM EST"
+  },
+  {
+   "teams": "CLE@LV",
+   "state": "pre",
+   "detail": "Sun, November 29th at 8:20 PM EST"
+  },
+  {
+   "teams": "TB@CAR",
+   "state": "pre",
+   "detail": "Mon, November 30th at 8:15 PM EST"
+  }
+ ],
+ "entries_file": "DKEntries_week11_template - FILLED.csv"
+}

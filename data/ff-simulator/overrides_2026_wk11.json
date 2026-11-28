@@ -12,9 +12,30 @@
   }
  ],
  "qbs": {
-  "MIN": {"gsis_id": "00-0029604", "name": "Kirk Cousins", "source": "Yahoo/DAZN 2026-11-18: Cousins makes second straight start Sunday vs SF in Mexico City; Kyler Murray DNP Wed (hamstring, grade 2)."},
-  "NYG": {"gsis_id": "00-0039923", "name": "J.J. McCarthy", "source": "si.com Giants Week 11 injury report 2026-11-18: McCarthy starter, hip off the report; Dart out for season."},
-  "PHI": {"gsis_id": "00-0039398", "name": "Joe Milton III", "source": "Sirianni announced Wed 2026-11-18 (profootballrumors, Yahoo): Milton starts vs PIT. Hurts out for season."},
-  "BAL": {"gsis_id": "00-0033119", "name": "Jacoby Brissett", "source": "NBC Sports 2026-11-13: Minter confirms Jackson (thumb) out 6 to 10 weeks; Brissett starts at CAR."}
+  "MIN": {
+   "gsis_id": "00-0029604",
+   "name": "Kirk Cousins",
+   "source": "Yahoo/DAZN 2026-11-18: Cousins makes second straight start Sunday vs SF in Mexico City; Kyler Murray DNP Wed (hamstring, grade 2)."
+  },
+  "NYG": {
+   "gsis_id": "00-0039923",
+   "name": "J.J. McCarthy",
+   "source": "si.com Giants Week 11 injury report 2026-11-18: McCarthy starter, hip off the report; Dart out for season."
+  },
+  "PHI": {
+   "gsis_id": "00-0039398",
+   "name": "Joe Milton III",
+   "source": "Sirianni announced Wed 2026-11-18 (profootballrumors, Yahoo): Milton starts vs PIT. Hurts out for season."
+  },
+  "BAL": {
+   "gsis_id": "00-0033119",
+   "name": "Jacoby Brissett",
+   "source": "NBC Sports 2026-11-13: Minter confirms Jackson (thumb) out 6 to 10 weeks; Brissett starts at CAR."
+  },
+  "ARI": {
+   "gsis_id": "00-0026300",
+   "name": "Josh Johnson",
+   "source": "Cardinals official site (Darren Urban) via ESPN feed 2026-11-22T15:11Z: Johnson starts vs KC, Beck out (back)."
+  }
  }
 }

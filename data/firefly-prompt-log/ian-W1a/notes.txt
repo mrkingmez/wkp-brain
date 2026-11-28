@@ -1,0 +1,2 @@
+W1a: not run yet. Make after the W1b winner exists. One line per attempt: what went wrong or 'kept'. Add a row to firefly-prompt-guide\LESSONS.md the same turn after any result.
+Attempt 1: ______

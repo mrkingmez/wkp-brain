@@ -1,0 +1,4 @@
+GO-COUNTED created by trading-director 2026-11-27 for a counted paper watch week starting Mon 2026-11-30, end rule last_day 2026-12-24.
+Config hash b559c847b5717f4a. Code SHA-256 list: D:\WKP\software\wkt-alpaca-watcher\CODE-SHA256.txt (20 files, rechecked by trading-director, 0 mismatches).
+Checks: software-tester pass 4 PASS WITH NOTES, qa-director pass 4 PASS WITH NOTES, no blockers (D:\WKP\logs\qa\2026-11-27-wkt-alpaca-watcher-*-pass4.md). Smoke passed 2026-11-27 12:30 ET (before changes 4 to 8); Monday pre-open smoke: smoke-2026-11-30-checklist.md.
+Zac's yes on paper: 2026-11-27 (TRADING-2026-11-26-02 closed). Paper only. Any code or config change restarts the counts. Delete this file to stop counting.

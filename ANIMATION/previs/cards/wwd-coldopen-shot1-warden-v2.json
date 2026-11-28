@@ -1,0 +1,176 @@
+{
+ "id": "wwd-coldopen-shot1-warden-v2",
+ "title": "WWD cold open shot 1: Warden at his post, radio voice (TEST BLOCKING, not approved)",
+ "ratio": "16:9",
+ "res_long": 1280,
+ "action": "Shot 1 of Cold-Open-Shot-List.md: WARDEN at his post, radio voice reaching out. Blocking is a previs test written by animation, not Zac's approved design. The Warden's look is still a blocker, so this tests layout only: seated at a desk, LEFT hand holds a handheld mic near his mouth, RIGHT hand rests on the radio dial, he looks toward the lens.",
+ "location": {
+  "size": [
+   5,
+   4,
+   2.8
+  ],
+  "center": [
+   0,
+   0.5
+  ],
+  "walls": [
+   "back",
+   "right"
+  ],
+  "blocks": [
+   {
+    "name": "desk",
+    "loc": [
+     0,
+     -0.62,
+     0
+    ],
+    "size": [
+     1.5,
+     0.7,
+     0.75
+    ]
+   },
+   {
+    "name": "radio",
+    "loc": [
+     -0.28,
+     -0.4,
+     0.75
+    ],
+    "size": [
+     0.3,
+     0.18,
+     0.2
+    ]
+   },
+   {
+    "name": "shelf",
+    "loc": [
+     0.6,
+     1.45,
+     1.6
+    ],
+    "size": [
+     1.4,
+     0.3,
+     0.05
+    ],
+    "on_ground": false
+   }
+  ]
+ },
+ "props": [
+  {
+   "name": "mic",
+   "type": "cylinder",
+   "size": [
+    0.045,
+    0.045,
+    0.18
+   ],
+   "loc": [
+    0.24,
+    -0.22,
+    1.08
+   ],
+   "grips": {}
+  },
+  {
+   "name": "dial",
+   "type": "sphere",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "loc": [
+    -0.28,
+    -0.5,
+    0.87
+   ],
+   "grips": {}
+  }
+ ],
+ "characters": [
+  {
+   "name": "Warden",
+   "height": 1.78,
+   "build": "average",
+   "pos": [
+    0,
+    0
+   ],
+   "facing_deg": 180,
+   "pose": "sit",
+   "seat_height": 0.45,
+   "look_at": [
+    -0.5,
+    -2.2,
+    1.32
+   ],
+   "left_hand": {
+    "holds": {
+     "prop": "mic",
+     "at": "center"
+    }
+   },
+   "right_hand": {
+    "holds": {
+     "prop": "dial",
+     "at": "center"
+    }
+   }
+  }
+ ],
+ "light": {
+  "azimuth_deg": 90,
+  "elevation_deg": 30
+ },
+ "camera": {
+  "azimuth_deg": -12,
+  "distance": 2.3,
+  "height": 1.3,
+  "target": [
+   0,
+   0,
+   1.15
+  ],
+  "lens_mm": 50
+ },
+ "expect": [
+  {
+   "char": "Warden",
+   "head_in_frame": true,
+   "facing_dot_min": 0.6,
+   "note": "face is in frame and turned to the lens"
+  },
+  {
+   "char": "Warden",
+   "hand": "L",
+   "holds": "mic:center",
+   "visible_min": 70,
+   "note": "LEFT hand holds the mic and we can see it"
+  },
+  {
+   "char": "Warden",
+   "hand": "R",
+   "holds": "dial:center",
+   "visible_min": 50,
+   "note": "RIGHT hand on the radio dial and we can see it"
+  },
+  {
+   "char": "Warden",
+   "hand": "L",
+   "screen_side": "screen-right",
+   "note": "mic hand reads on the right of frame (his left, seen from the front)"
+  },
+  {
+   "char": "Warden",
+   "hand": "L",
+   "over_face": false,
+   "note": "no hand drawn over the face"
+  }
+ ]
+}

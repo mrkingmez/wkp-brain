@@ -1,7 +1,7 @@
 ---
 name: wwd-pictures
 description: "WWD picture bench under wwd-director. Pulls and verifies the picture set for a review: standard 18 plus transcript-driven extras, tags every picture with who and what scene it shows, removes duplicates and near-twins, and checks each picture against the transcript line it is placed on before anything reaches the run sheet. Reports to wwd-director only. Use for any WWD review picture pull, picture add, or picture audit. NOT for transitions, kit pieces, or run sheet layout."
-tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch
+tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, mcp__claude-in-chrome__tabs_context_mcp, mcp__claude-in-chrome__tabs_create_mcp, mcp__claude-in-chrome__navigate, mcp__claude-in-chrome__computer, mcp__claude-in-chrome__read_page, mcp__claude-in-chrome__get_page_text, mcp__claude-in-chrome__javascript_tool, mcp__claude-in-chrome__find, mcp__claude-in-chrome__list_connected_browsers
 model: sonnet
 color: orange
 ---

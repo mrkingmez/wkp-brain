@@ -28,6 +28,8 @@ import pickem_card
 import player_bridge
 import scoring
 import sleeper_client
+import dfs_live
+import scoreboard_day
 from team_match import match_nfl_team, match_cfb_team
 
 
@@ -810,11 +812,35 @@ def run_cycle(week: int, players: dict, sources: dict, force: bool) -> dict:
         week, raw.get("espn_scoreboard", {"events": []}), cfb, raw.get("nfl_teams", [])
     )
 
+    try:
+        card_abbrs = set()
+        for nm in _card_team_names(week):
+            t = match_nfl_team(nm, raw.get("nfl_teams", []))
+            if t:
+                card_abbrs.add(t["abbreviation"])
+        scoreboard_day.update_games(raw.get("espn_scoreboard", {"events": []}), card_abbrs)
+    except Exception as e:
+        log(f"scoreboard_day games failed (other panels unaffected): {e}")
+
     panels["news"] = build_news_panel(
         raw.get("espn_news", []), players, raw.get("mfl_live_scoring", {"liveScoring": {"matchup": []}})
     )
 
     atomic_write_json(config.RAW_CACHE_PATH, raw)
+
+    # Live DFS points (2026-11-22). Own try so a DFS problem never breaks the IRFL panels.
+    try:
+        live = dfs_live.compute(week, force=force)
+        if live is not None:
+            dfs_live.write(live)
+            log(f"dfs_live.json written ({len(live.get('entries', []))} entries)")
+            scoreboard_day.update_dfs(live)
+    except Exception as e:
+        log(f"dfs_live failed (IRFL panels unaffected): {e}")
+    try:
+        panels["day_scoreboard"] = scoreboard_day.panel()
+    except Exception as e:
+        log(f"scoreboard_day panel failed: {e}")
 
     state_out = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

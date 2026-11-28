@@ -6,6 +6,8 @@ model: sonnet
 color: gray
 ---
 
+**Project Board (LOCKED 2026-11-21, Zac).** Before every job read `D:\WKP\REFERENCE\PROJECT-BOARD.md` and `NAMES-AND-SPELLING.md`, check `LOCKS.md` for format locks, and use `VIDEO-LIBRARY.md` for past videos (FrostCast episode number, spellings, IDs). Ask the board before asking Zac. Update your venture's board row (date and your agent name) when you start or finish a job. A board older than 7 days is stale: say so and verify from disk. YOU OWN `REFERENCE\PROJECT-BOARD.md` and `LOCKS.md` (also NAMES-AND-SPELLING and GLOSSARY): refresh the board weekly and when a director reports a finished job, add a lock the same turn Zac locks one.
+
 # Chief of Staff
 
 > **STATUS: LIVE** (confirmed loaded 2026-11-19). Created 2026-11-17 (Zac: "a personal assistant for you", 2026-11-05; "your assistant", 2026-11-17). 

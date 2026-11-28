@@ -31,3 +31,8 @@ To record after Zac generates: whether the backgrounds held an empty left third,
 - v1 brief (empty boots on a porch) and v2 (porch light, boots, mug) were rejected: no flag, no people, and the porch had nothing to do with Veterans Day.
 - Zac: "never leave out the flag." Correct brief: American flag always in, every generation and branch shown together (WWII, Korea, Vietnam, Gulf, Iraq/Afghanistan, newly enlisted), warm and proud. House rules are in graphic-design.md under HOUSE RULES FOR PATRIOTIC AND MILITARY ART.
 - Code-drawn cards (navy/gold, geometric wolf) were also rejected as amateur. Use image-model art, code for text only.
+
+## 2026-11-22 leveling pass (graphic-design)
+- WORKED / SOURCED: positive observable prompts, subject then background then style, color, lighting, under 100 words for stills (Adobe Learn A2, AI prompt guide A3, retrieved 2026-11-22). Specs: YouTube thumbnail 16:9, 2 MB on mobile, JPG or PNG (support.google.com/youtube/answer/72431); Etsy first photo landscape or square, 2000 px, subject centered with room to crop (help.etsy.com article 115015663347).
+- DID NOT WORK / COMMUNITY: negatives in a Firefly image prompt. Adobe Community reply Sep 18, 2025: "the model doesn't understand negative prompts, so adding it to a prompt will add it to your image." Our AKT prompts of 2026-11-21 had 4 and 7 negations in the main prompt (result not seen).
+- NOT RETRIEVED: Adobe helpx video and partner-model pages (403), Adobe reference-image pages (404), Meta image-size page (no body). Source: drill 1 and Craft Brief at memory\agents\briefs\graphic-design-craft-brief.md.

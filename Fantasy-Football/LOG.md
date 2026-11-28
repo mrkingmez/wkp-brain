@@ -1,4 +1,4 @@
-﻿# Fantasy Football â€” Activity Log
+# Fantasy Football â€” Activity Log
 
 Append-only. One entry per session where the director actually did
 something â€” a data pull, a lineup call, a pick'em recommendation, a
@@ -10,6 +10,10 @@ in D:\WKP\logs\.
 
 Format per entry:
 `YYYY-MM-DD | WEEK N | action | result/pointer`
+
+2026-11-25 | WEEK 12 | Rebuild and trade deadline plan | Deadline Thu 12/3 8:15 PM ET; counter 1305 cap-invalid (Calvariam -305), replace with Jefferson-for-Nacua; reports\Rebuild-Trade-Deadline-Plan-2026-11-25.md
+2026-11-25 | WEEK 12 | Golden trade offers and Jefferson trade (Zac order) | Fantasy-Football/reports/Golden-Offers-and-Jefferson-Trade-2026-11-25.md, docx in D:\WKP Reports\Fantasy Football\n
+2026-11-21 | WEEK 11 | Lineup + DFS rerun (Sat 1:35 PM ET): full refresh, IRFL sim v3, DK own-numbers build, 7 lineups, card is locked (record only) | reports\Week11-Picks-and-Lineup-2026-11-21-sat-v3.md; DFS files in D:\Draft Kings\Week 11\sat\; noon rerun script dfs\dk_noon_rerun_wk11.bat
 
 2026-11-19 | WEEK 11 | Dashboard DFS panel made week-aware (no DraftKings connection, nothing entered) | New dashboard\dfs_week.py + static\dfs_week.js: reads D:\Draft Kings\Week N\ (entries csv, DKSalaries, contest-standings export csv or zip, typed manual-results.json), week dropdown, status BUILT, NOT CONFIRMED ENTERED until a standings file or typed result shows the entry. Old tracker and friend lines moved to a collapsed archive. Tested on FAKE data in scratch\dfs-week-test-FAKE; real Week 11 shows 7 entries, 0 unmapped players. README updated.
 2026-11-19 | WEEK 11 | Card Mode v2, second look ATS (no blanket underdog rule), lineup untouched | Refresh 2:38 PM ET (Odds API, injury file, CFBD ratings); play-sim team margins rerun 3,000 per game. 1 flip: game 15 BAL +2.5 to CAR -2.5 (market moved to -3). 18 dogs, 2 favs; 9 LEAN, 11 COIN FLIP. Tiebreaker CIN 29 WAS 23 unchanged. Original 20 tracker rows kept; revisions in tracker\predictions_wk11_REVISED.csv. Doc reports\Week11-Picks-and-Lineup-2026-11-19-thu-v2.md, docx D:\WKP Reports\Fantasy Football6-11-19 - Week 11 Picks and Lineup v2.docx.
@@ -106,3 +110,11 @@ eports\Week7-Lineup-2026-10-21.md
 ## Week 7 (2026-10-25 slate, card locks Thu 10/22)
 
 2026-10-21 | WEEK 7 | Lineup + Card rerun on new multi-source injury layer (MFL, nflverse, ESPN, transactions; build_injuries.py, overrides file for Branch/Mays/White). Lineup v2 supersedes the 3 PM one (Golden Q and T. Robinson Q found, Allen and Sanker start). No pick flips; CIN@BAL line moved 3.5 (now CIN -1.0, total 48.5), CIN +3.5 cover prob 63 pct; tiebreaker stays 44. OL layer built and backtested, context only, off | Fantasy-Football\reports\Week7-Lineup-2026-10-21.md
+2026-11-22 | WEEK 11 | Sunday noon check | Beck OUT (Johnson starts ARI), Mayfield/Tate/Waller/Tremble active, Singleton out, Spears IR. DK rebuilt, both checks PASS, sun file placed as upload, Sat file kept as _SAT_BACKUP. IRFL: no change to v3 (Hockenson no designation). | Fantasy-Football\reports\Week11-DK-Noon-Rerun-2026-11-22-sun.md
+
+## 2026-11-22 Week 11 DFS after-action seed (Jarvis, from Zac's screenshot of the winning lineup, 205.6)
+Winner: Prescott 38.9, E. Johnson 27.3, Pollard 14, Bateman 14.7, Pickens 26.8, Shakir 18.3, Kelce 25.4, Lamb (FLEX) 33.2, Saints 7. Our pieces were all in the pool: Prescott+Lamb+Pickens+Pollard+Saints sat together in ONE of our 7 entries; Johnson and Kelce in another. We did not have Bateman or Shakir at all. Our best live total at 4 PM was 153.9.
+Lessons to test (one change at a time): (1) the exposure cap of 3 and QB cap kept the Prescott/Lamb/Pickens core in few entries; check if chalk-core exposure should rise when the sim says the stack is top-ranked. (2) value WRs (Bateman, Shakir) were missing from the candidate pool or ranked low: check why. (3) Compare sim mean vs actual for each of the 9 winner players. FF director runs the full after-action once the slate is final. Fun money, no QA needed.
+2026-11-24 | WEEK 12 | Card Mode (Tuesday night first run, pre Wed reports) | 20 ATS picks, no 2+ pt moves, 6 HOOK, 0 LEAN, tiebreaker TB 23 CAR 20 (43), 16 NFL rows logged to predictions.csv; lock Wed 8 PM ET (GB at LAR). Rerun Wed noon and 6 PM ET | Fantasy-Football\reports\Week12-Picks-2026-11-24-tue.md
+2026-11-25 | WEEK 12 | Card Mode (Wednesday noon rerun) | 20 picks unchanged, #5 HOOK to NO EDGE (Rudolph starts for PIT), tiebreaker TB 23 CAR 20 unchanged | Fantasy-Football/reports/Week12-Picks-2026-11-25-wed.md
+2026-11-25 | WEEK 12 | Card Mode REVISED after Zac complaint (too many underdogs) + history review | 800 graded NFL picks 2022-2026: 48.9% ATS, dog 48.2 vs fav 49.4, line value 1+ better 55.1 vs 1+ worse 37.3; card is ATS. 9 picks flipped (3,5,6,8,10,12,15,17,19), now 11 fav 9 dog; tiebreaker TB 23 CAR 20 unchanged. Proposed standing pick rule awaiting Zac | Fantasy-Football\reports\Week12-Picks-REVISED-2026-11-25-wed.md

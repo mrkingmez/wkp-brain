@@ -1,0 +1,2 @@
+PyYAML>=6.0   # only third-party package (same as the watcher). Everything else is the Python standard library.
+tzdata

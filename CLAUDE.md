@@ -151,7 +151,15 @@ skipping the transcript delivery.
    OPUS_API_KEY in the user environment. Do not use the Opus connector to
    schedule (it needs an approval click per post).
 
+8. **Library and board (added 2026-11-21, Zac).** After the chain, add the episode to `REFERENCE\VIDEO-LIBRARY.md` and `.csv` (media-manager; YouTube ID NOT KNOWN until Zac pastes the link) and bump `REFERENCE\PROJECT-BOARD.md` (FrostCast latest episode and next recording date). The episode number agents use anywhere comes from the board, not from an old inventory.
+
 **Voiceprints ENROLLED 2026-11-11.** `D:\WKP\voiceprints\` (gitignored, local only) holds zac.npy, matt.npy and gabby.npy, built from the solo StreamYard cams and labeled episodes. Always pass `--num-speakers` to transcribe.py: 2 for a Zac and Matt review, 2 for Zac and Gabby, 3 for a full FrostCast. Held-out tests named all speakers correctly (line accuracy about 92 to 95 percent; Gabby's print is thin, 147 s, from one test episode, so glance at the confidence lines on a Gabby episode). A guest voice stays Guest/Unknown. How-to: `.claude\skills\wwd-video-transcriber\references\voiceprints-howto.md`, report `research\voiceprints\2026-11-11-voiceprints.md`. Older transcripts (EP106 and earlier) still show Guest/Unknown.
+
+## Project Board (LOCKED 2026-11-21, Zac)
+`D:\WKP\REFERENCE\` is the enterprise reference library (trigger: an upload package called FrostCast EP 118 "newest" when EP 121 was recorded, because the video inventory was a one-time pull nobody updated). Every agent reads `REFERENCE\PROJECT-BOARD.md` (current FrostCast episode and next recording date, what is in production, owners) and `NAMES-AND-SPELLING.md` before a job, and checks `LOCKS.md` for format locks (also `GLOSSARY.md` for terms, `VIDEO-LIBRARY.md` and `.csv` for every past video, ID, path and package). Workers ask their director, directors ask the board, then chief-of-staff, before asking Zac. Owners: chief-of-staff (PROJECT-BOARD, LOCKS, NAMES, GLOSSARY), media-manager (VIDEO-LIBRARY, add a row when a video goes live or is finalized and every Wednesday after the FrostCast chain). Every director updates its board row when it starts or finishes a job. A board or library older than 7 days is stale: say so and verify from disk. Never guess a YouTube ID, write NOT KNOWN. Rules and ownership: `REFERENCE\README.md`.
+
+## Prompting playbook (added 2026-11-24, Zac)
+`D:\WKP\REFERENCE\PROMPTING-PLAYBOOK.md` is the one prompting method for every venture and every generator (image, video, audio, 3D): staged pipeline, character and place masters with a bible, two-line edit prompts, shot list and nine-point continuity check, project kickoff checklist, log format, and how to test an idea before it becomes a rule. Read it before ordering or writing any generated asset. Firefly and video engine rules: `data\firefly-prompt-guide\STANDARD.md` (child of the playbook). Owner: graphic-design.
 
 ## Escalation rule â€” applies to every agent
 You cannot ask Zac a question directly. The tool does not exist

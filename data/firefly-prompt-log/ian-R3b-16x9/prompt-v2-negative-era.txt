@@ -1,0 +1,5 @@
+MAIN PROMPT
+Photograph looking up from beneath an old car, oily underside filling the frame, one caged work lamp glowing amber at the upper right of the frame. One steel combination wrench stands vertical at frame center, open jaw at the bottom. Exactly two hands are in frame, cropped at the forearm. The older man's hand nearest the camera is at the top of the frame, thick, creased, gray forearm hair, rolled faded blue denim sleeve, fingertips lifting off the top of the handle. The young man's hand nearest the camera enters from lower camera left, lean, adult-sized, grease on the knuckles, closing around the shaft, a gap of dark air between the hands. Warm amber grade, heavy film grain, shallow depth of field, 35mm, widescreen.
+
+NEGATIVE FIELD (OPTIONAL paste, only if the panel has the box; the main prompt must work without it)
+text, letters, logo, watermark, face, second wrench, extra fingers, fused fingers, deformed hands, third hand, hands clasping each other, ring, watch, tattoo, child hand, cartoon, illustration, 3D render look, lens flare, plastic skin, cool blue grade, bright daylight

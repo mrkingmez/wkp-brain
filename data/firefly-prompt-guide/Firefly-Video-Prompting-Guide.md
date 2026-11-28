@@ -1,5 +1,7 @@
 # Firefly Video Prompting Guide
 
+> **2026-11-22: SUPERSEDED in part.** The working standard is now `STANDARD.md` (rules R1 to R17, per-engine templates, pre-flight checklist, settings.txt format) with sources in `SOURCES-2026-11-22.md` and the audit in `AUDIT-2026-11-22.md`. This file is kept for its engine notes and the Ian worked examples, but where it disagrees with STANDARD.md, STANDARD.md wins. Known stale lines here: the Ian "V" prompts in section 5 were never run and contain wording the lint rejects (for example "does not hit"); "Seedance" has since been read from ByteDance's own guide; the pre-flight list in section 6 is replaced by the 13-point list in STANDARD.md.
+
 Built 2026-11-18 by graphic-design. Read-only research, nothing generated, no credits spent. Audience: Jarvis, graphic-design, wwd-vfx, any agent writing a Firefly or video-model prompt for Zac. Companion files: `QUICK-CARD.md` (one page, read it before every prompt) and `LESSONS.md` (what actually happened on Zac's clips, read it second).
 
 ## How to read the tags

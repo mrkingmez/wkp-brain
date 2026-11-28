@@ -1,0 +1,5 @@
+Drop screenshots of trading dashboards you like into this folder (PNG or JPG).
+Name them anything, for example "grok-bot-1.png".
+Then tell Jarvis "match the dashboard to the reference folder" and the software
+team will restyle D:\WKP\software\fawn-forest-dashboard to match.
+Nothing in this folder is read by the dashboard itself.

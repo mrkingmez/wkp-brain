@@ -1,0 +1,203 @@
+{
+ "id": "ian-r3-handoff-sideon-v4",
+ "title": "Ian trailer R3 v3: wrench hand-off, side-on, two forearms, one wrench horizontal, gap between",
+ "ratio": "16:9",
+ "res": [
+  1280,
+  720
+ ],
+ "camera": {
+  "loc": [
+   0.0,
+   -1.5,
+   1.0
+  ],
+  "height_m": 1.0,
+  "lens_mm": 85.0,
+  "sensor_width_mm": 36.0,
+  "hfov_deg": 23.9,
+  "vfov_deg": 13.6,
+  "target": [
+   0.0,
+   0.0,
+   1.0
+  ]
+ },
+ "light": {
+  "from_azimuth_deg": 40,
+  "elevation_deg": 70
+ },
+ "characters": {
+  "Older": {
+   "height_m": 1.74,
+   "facing_deg": 90.0,
+   "pose": "stand",
+   "dist_to_camera_m": 1.69,
+   "head_top_screen": [
+    -0.312,
+    2.419
+   ],
+   "feet_screen": [
+    -0.312,
+    -2.123
+   ],
+   "body_height_pct_of_frame": 454.2,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      -0.084,
+      0.229
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": false,
+     "visible_pct": 5,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.395,
+      0.557
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 68,
+     "occluded_by": {
+      "PV_Older_farmR": 3,
+      "PV_prop_wrench": 3
+     },
+     "holds": "wrench:handle",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.33,
+   "view_of_character": "side/three-quarter"
+  },
+  "Boy": {
+   "height_m": 1.75,
+   "facing_deg": 270.0,
+   "pose": "stand",
+   "dist_to_camera_m": 1.69,
+   "head_top_screen": [
+    1.312,
+    2.445
+   ],
+   "feet_screen": [
+    1.312,
+    -2.123
+   ],
+   "body_height_pct_of_frame": 456.8,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.943,
+      0.702
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 79,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      1.101,
+      0.233
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": false,
+     "visible_pct": 0,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.33,
+   "view_of_character": "side/three-quarter"
+  }
+ },
+ "props": {
+  "wrench": {
+   "grips_world": {
+    "handle": [
+     -0.069,
+     0.0,
+     1.01
+    ],
+    "center": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  }
+ },
+ "warnings": [
+  "Older head is outside the frame",
+  "Boy head is outside the frame"
+ ],
+ "hand_gaps_m": [
+  {
+   "between": "Older.R / Boy.L",
+   "m": 0.359
+  },
+  {
+   "between": "Older.R / Boy.R",
+   "m": 0.63
+  },
+  {
+   "between": "Older.L / Boy.L",
+   "m": 0.85
+  },
+  {
+   "between": "Older.L / Boy.R",
+   "m": 0.93
+  }
+ ],
+ "expect_results": [
+  {
+   "pass": true,
+   "expect": "older hand holds the wrench, enters from camera left",
+   "measured": "visible 68% (need 60); on screen-left (need screen-left); holds wrench:handle (need wrench:handle)"
+  },
+  {
+   "pass": true,
+   "expect": "receiving open palm enters from camera right",
+   "measured": "visible 79% (need 60); on screen-right (need screen-right)"
+  },
+  {
+   "pass": true,
+   "expect": "only two hands: older man's free hand out of frame",
+   "measured": "visible 5% (allowed up to 10)"
+  },
+  {
+   "pass": true,
+   "expect": "only two hands: boy's free hand out of frame",
+   "measured": "visible 0% (allowed up to 10)"
+  },
+  {
+   "pass": true,
+   "expect": "no faces",
+   "measured": "head in frame False (need False)"
+  },
+  {
+   "pass": true,
+   "expect": "no faces",
+   "measured": "head in frame False (need False)"
+  }
+ ]
+}

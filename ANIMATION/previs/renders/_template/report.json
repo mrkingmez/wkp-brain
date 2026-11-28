@@ -1,0 +1,185 @@
+{
+ "id": "previs-template",
+ "title": "Template shot, two people and a prop",
+ "ratio": "16:9",
+ "res": [
+  1280,
+  720
+ ],
+ "camera": {
+  "loc": [
+   0.0,
+   -4.0,
+   1.5
+  ],
+  "height_m": 1.5,
+  "lens_mm": 35.0,
+  "sensor_width_mm": 36.0,
+  "hfov_deg": 54.4,
+  "vfov_deg": 32.3,
+  "target": [
+   0.0,
+   0.0,
+   0.876
+  ]
+ },
+ "light": {
+  "from_azimuth_deg": 60,
+  "elevation_deg": 40
+ },
+ "characters": {
+  "A": {
+   "height_m": 1.75,
+   "facing_deg": 90.0,
+   "pose": "stand",
+   "dist_to_camera_m": 4.07,
+   "head_top_screen": [
+    0.376,
+    0.877
+   ],
+   "feet_screen": [
+    0.384,
+    0.142
+   ],
+   "body_height_pct_of_frame": 73.5,
+   "head_in_frame": true,
+   "feet_in_frame": true,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.406,
+      0.518
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 47,
+     "occluded_by": {
+      "PV_A_torso": 6,
+      "PV_A_pelvis": 4
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.45,
+      0.597
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 47,
+     "occluded_by": {
+      "PV_A_farmR": 6,
+      "PV_prop_cup": 4
+     },
+     "holds": "cup:center",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.12,
+   "view_of_character": "side/three-quarter"
+  },
+  "B": {
+   "height_m": 1.62,
+   "facing_deg": 270.0,
+   "pose": "stand",
+   "dist_to_camera_m": 4.08,
+   "head_top_screen": [
+    0.624,
+    0.819
+   ],
+   "feet_screen": [
+    0.616,
+    0.142
+   ],
+   "body_height_pct_of_frame": 67.7,
+   "head_in_frame": true,
+   "feet_in_frame": true,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.579,
+      0.631
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 84,
+     "occluded_by": {
+      "PV_B_farmL": 3
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      0.596,
+      0.49
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 53,
+     "occluded_by": {
+      "PV_B_torso": 6,
+      "PV_B_pelvis": 3
+     },
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": 0.12,
+   "view_of_character": "side/three-quarter"
+  }
+ },
+ "props": {
+  "cup": {
+   "grips_world": {
+    "center": [
+     -0.2,
+     -0.05,
+     1.05
+    ]
+   }
+  }
+ },
+ "warnings": [
+  "A R hand (RED) holds cup:center but only 47% of it is visible to this camera, hidden by PV_A_farmR, PV_prop_cup"
+ ],
+ "hand_gaps_m": [
+  {
+   "between": "A.R / B.L",
+   "m": 0.538
+  },
+  {
+   "between": "A.R / B.R",
+   "m": 0.721
+  },
+  {
+   "between": "A.L / B.L",
+   "m": 0.828
+  },
+  {
+   "between": "A.L / B.R",
+   "m": 0.838
+  }
+ ],
+ "expect_results": [
+  {
+   "pass": true,
+   "expect": "both full-length in frame",
+   "measured": "head in frame True (need True); feet in frame True (need True)"
+  },
+  {
+   "pass": true,
+   "expect": "A's RIGHT hand holds the cup and it is visible",
+   "measured": "visible 47% (need 40); holds cup:center (need cup:center)"
+  }
+ ]
+}

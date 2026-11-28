@@ -59,6 +59,9 @@
       <h2>Live scoreboard</h2>
       <div class="note">Every game in progress, pro and college. Games on your card are tinted blue.</div>
       <div id="scoreboard-games"></div>
+      <h3 class="day-h" id="day-h">Today's scores (kept until the next game day)</h3>
+      <div id="day-games"></div>
+      <div id="day-dfs" class="note"></div>
       <div class="panel-age" data-source="espn_scoreboard"></div>
     </section>
 
@@ -71,6 +74,14 @@
         <ul id="news-other"></ul>
       </details>
       <div class="panel-age" data-source="espn_news"></div>
+    </section>
+
+    <section class="panel panel-dfs" id="panel-dfslive">
+      <h2>LIVE DFS points</h2>
+      <div class="note">Our own scoring from ESPN box scores under DraftKings rules, refreshed by the poller about once a minute while games are live. Not DraftKings' number. When DraftKings' standings export is in the week folder, its official points show next to ours.</div>
+      <div id="dfslive-meta" class="note"></div>
+      <div id="dfslive-entries">Loading</div>
+      <div id="dfslive-notes" class="dfsw-notes"></div>
     </section>
 
     <section class="panel panel-dfs" id="panel-dfs">
@@ -151,6 +162,8 @@
 
   <script src="app.js"></script>
   <script src="dfs.js"></script>
+  <script src="dfs_live.js"></script>
+  <script src="scoreboard_day.js"></script>
   <script src="dfs_week.js"></script>
   <script src="header.js"></script>
 </body>

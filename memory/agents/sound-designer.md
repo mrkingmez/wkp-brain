@@ -12,3 +12,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 
 ## Lessons
 - 2026-11-20 | Check a Made take prompt for words that break the fence (the garage room tone prompt says "distant dog") before putting it in a cue sheet, and give every ratchet cue a stop point before each dissolve | evidence: Post-Production\projects\ian-trailer\2026-11-20-sfx-cue-sheet.md | NEW
+- 2026-11-26 | STANDING RULE: when a tool or source fails, try the other connected route (other browser, other connection, other source) before escalating; only Zac's money and public posting are hard stops; never spoof headers or user agents to get past a block (say it plainly in the report if no other route exists) | evidence: Zac 2026-11-26, wwd-pictures PJ S3 follow-up (no browser step ran, agent-runs.md 2026-11-26) | NEW

@@ -4,6 +4,10 @@
 
 Revised in place 2026-11-19 for Zac's new clip rule (6 to 8 s, 12 s at most, no total cap) and the clip scout's re-cut (35.08 s). Added: clip exposure, RT copyright lines.
 
+**REVISED IN PLACE 2026-11-21 for the FINAL cut** (Zac's change: a video package plays over the intro and hook, then a new joust logo sting). New sections at the end of the verdicts: "FINAL CUT 2026-11-21" (sounds, music, AI-made assets, cards, disclosure, description lines). Where the older text below says 36:37, 5 clips or 31 stills, those figures come from the FIRST cut and are marked "verify against the export" until the render exists.
+
+Read for this revision: the final transcript `A knights Tale final.txt` (last block ends 36:29:09; first block 00:00 to 00:24, then "Let's get into it" 00:24:11 to 00:33:18, which leaves a 9 s stretch with almost no speech, consistent with the logo sting), the run sheet banner, the cue sheets folder listing, `D:\WKP\data\assets\music-catalog.md` and `media-map.md`, `D:\WKP\logs\DECISIONS.md`, the Vision Quest 8 note. Probed or viewed by me today: ffprobe on the two loose package files, the Main Channel Theme, the two cards; one frame of the POV video (4 s), the end card PNG, one frame of the Next Up card (3 s). NOT touched: `A knights Tale A one for the ages.mp4` (still rendering, per instruction). NOT opened: the two .docx cue sheets (not read, I used the folder listings), the logo sting file itself (no file for it found in the folder, it may not be rendered yet).
+
 Read: STANDARDS.md rules 9 to 14, `clips\clip-list.md`, `USE\pictures-tags.md` (32 rows), `USE\timeline-placements.md` (32 placements), `D:\WKP\scratch\a-knights-tale_urls.txt`, the Vision Quest 8 rights note (model). Counted or probed by me: 32 PNGs in USE (ls), 5 cut clips and 6 Premiere Ready files (ffprobe: video stream only, no audio stream in any), clip durations summed from ffprobe (re-probed today after the re-cut: 35.08 s). Not read: the sheet or edit itself (no run sheet exists yet for this video), the video as played, the upload package (not written yet), sounds and music (none placed in these files).
 
 ## Verdicts
@@ -21,8 +25,10 @@ Read: STANDARDS.md rules 9 to 14, `clips\clip-list.md`, `USE\pictures-tags.md` (
 | Stills: other titles (#10, 11, 12, 27) | MEDIUM | Each sits on a line where a host names that title. #12 is only a partial fit. |
 | Still #29 (CC BY 2.0) | LOW if credited, MEDIUM if not | License confirmed on the Commons page today. Credit is mandatory. |
 | Stills with no recorded source page | LOW | None. All 32 rows carry a source URL (see caveat on #2). |
-| Sounds and music | N/A | None placed in the files I was given. Rules 9 and 10 still apply when the run sheet is built. |
-| AI-made assets | Not applicable on what I saw | No Firefly, Suno or generated asset in the clips or pictures. The series opener question does not apply (this is not a Vision Quest review). If the edit adds an AI-made sticker or sting, say so and I will flag it. |
+| Sounds (final cut) | MEDIUM | SUPERSEDES the old "N/A" line. The sound pack now holds Adobe files (covered by Zac's settled call), loose mp3s with no license record, and audioblocks files with no plan proof. See "FINAL CUT 2026-11-21". Check against the export. |
+| Music (final cut) | MEDIUM | Main Channel Theme has no license record on disk (Zac's own channel theme, provenance not recorded). Rock candidates are "unknown" and not auditioned. ElevenLabs intro and outro spend still open. See below. |
+| AI-made assets (final cut) | FLAG | SUPERSEDES the old "Not applicable" line. Firefly logo sting (per Zac), a probable Veo POV video, a probable ElevenLabs audio file. Disclosure decision for Zac below. |
+| Cards (end card, Next Up) | PASS (low) | Viewed: no studio logo, rating or release date. See below. |
 
 ## Clip limits check (rules 11 to 13, rule as edited by Zac 2026-11-19)
 
@@ -91,15 +97,79 @@ I opened every RT-sourced picture in `USE\` (sources in `USE\pictures-tags.md`):
   The Commons page has no ready-made credit field, so this line is built from its Author field and license. The title in the line is taken from the file name; confirm the exact photo title on the page when pasting. CC BY has no share-alike term, so the open question from Vision Quest 8 does not arise here.
 - **Thumbnail and shorts:** thumbnails are Matt's. Any still on a thumbnail or short needs its own check; this note covers the full video.
 
+## FINAL CUT 2026-11-21 (new section)
+
+**What changed:** a video package plays over the intro and hook (transcript 00:00 to 00:24), a joust logo sting follows (9 s stretch 00:24 to 00:33 holds only "Let's get into it"), the poster moves to after the logo. Final transcript runs 36:29 (first cut 36:37). The final mp4 (`A knights Tale A one for the ages.mp4`) was not touched by me. Everything below that depends on what is in the export says "check against the export".
+
+### 1. Loose package files in the movie folder (provenance NOT confirmed, treated as AI-made)
+
+| File | What I measured | What I know | What I do not know |
+|---|---|---|---|
+| `First-person point of view from  495438 aif.mp4` | 8.000 s, 1920x1080, 24 fps, h264, tag encoder=Google, no other tags | I viewed one frame (4 s): a first-person jousting view, wooden shield with a grey wolf head with glowing blue eyes, lance tip in the wolf's mouth, horse and dusty lane. It is the WWD wolf mark, not a film image. Looks like a generated video. | Tool and model (Google tag fits Veo, which Zac's Firefly offers; also fits a Gemini or Flow export), which account and plan, whether it is the logo sting itself or the package's picture, whether it is in the cut, whether it has an audio stream (I did not check audio). |
+| `Arena_Triumph_2026-11-21T153821.wav` | 60.000 s WAV | Name pattern looks like an ElevenLabs generation. Length matches the 60 s "Long build" stomp and clap prompt in `reports\music-stomp-clap-prompt-2026-11-19.md`, which suggests it is the ElevenLabs Music generation. I cannot hear it. | Whether it is ElevenLabs at all, which plan it was made on (the free tier cannot download and needs attribution per the music note; Starter and up can download, no attribution; DECISIONS WWD-2026-11-19-02 is still OPEN as a spend ask), whether the ElevenLabs terms cover commercial YouTube use on that plan (the 2026-11-20 plan file raised an "Individual Use" question that I did not see settled), whether it is in the cut. A soundalike check was not run (I cannot listen): the prompt's own warning about sounding like the original film's music applies, Zac or music should ear-check against the film's "We Will Rock You" scene. |
+
+Verdict: **FLAG (medium)** until Zac confirms tool, plan and use. If the file is ElevenLabs music, it needs the AI disclosure and the plan proof in item 5.
+
+### 2. Joust logo sting and its sound pack
+
+The sting is Firefly-made per Zac (not seen by me, no sting file found in the folder). Sound pack at `P:\WWD Kit\Joust Logo Sting Sounds\` (7 numbered folders plus the cue sheet docx) and the show sounds at `P:\WWD Kit\A Knights Tale\Sounds\`. I listed every .wav and .mp3 in both (unique names: 52 Adobe-named wavs, 17 not Adobe) and matched the names against `data\assets\p-drive-index.csv`.
+
+| Source family | Files (unique) | License record found | Risk |
+|---|---|---|---|
+| Adobe-library wavs (descriptive names such as `Animal Horse Canters By 01.wav`, `Impact Sword Impact On Metal Armor 01.wav`, `Crash Wood Break 02.wav`, `Module Production Element Title Imaging ...`, `Weapon Armor Hit 01.wav`, `Human Crowd Stomping Feet 02.wav`, `Rimshot03.wav`, the `ST2 stomp layer` files) | 52, all found in the index under an `Adobe` path | Adobe LICENSE.pdf files sit in the Adobe pack folders (seen in a file search; I did not open one). Zac's settled call of 2026-11-17: Adobe library is free to use with the subscription. | PASS on Zac's call. Not independently verified from Adobe's terms. |
+| Loose mp3s, hash-style names | 14: `deep-fast-whoosh_GyZDnHNu`, `fast-passing-swoosh_f1UwwHVO`, `sword-whoosh-in-hall_GyaJhr4_`, `hit-thud-dark_GkAfpDV_`, `strong-cinematic-hit_MJkpvSVu`, `electric-sizzle_zyuNWG4u`, `glass-window-shatter_My6RHjVO`, `crowd-cheers-and-whistles_MyWbxfVu`, `hollow-strong-open-air-wind-looping_MkF8wrNu`, `low-long-background-rumble_fJ0TNBVO`, `fast-strong-wind-whooshes_fyhBVHEu`, `church-bell-multiple_zymjaZ4_`, `jump-into-water-splashes_MyjdEHNd`, `sword-pull-from-sheathe_zyjdbqEu` | None. `media-map.md` lists loose mp3s as "unknown"; `music-catalog.md` labels the ID-suffix pattern "Storyblocks-style, plan proof not on disk". No license file beside them. | FLAG (medium). Same handling as Vision Quest 8. |
+| `audioblocks-*` | 2: `audioblocks-fast-start-whoosh_BKITlG8RwU.mp3`, `audioblocks-frost-low-whoosh_BWSg1QdQKvL.mp3` (the first is also a spare) | None. Name says Audioblocks. File dates in the catalog are 2020-08-20, which is consistent with a subscription download then, but no receipt or plan proof is on disk. | FLAG (medium). Zac must confirm the plan was paid. |
+| Loose wav | 1: `0026_sweeping slam 4.wav` (in `P:\Sounds\Sound FX` root, not an Adobe path) | None, origin unknown. | FLAG (low to medium). |
+
+I searched `P:\Sounds\` for license, terms or receipt files: only the PremiumBeat free-pack terms and the Adobe LICENSE.pdf folders turned up; nothing covers the loose mp3s or audioblocks files. Which of these are in the export is unknown until the render exists. **Check against the export:** a file only matters if it is audible in the final mp4. Cleanest fix with no cost: replace each flagged sound with an Adobe-library equivalent already in the pack (the pack has Adobe wavs for horse, hit, splinter, rubble, glass, crowd and bell-like sounds), or keep them if Zac confirms a paid Audioblocks/Storyblocks plan.
+
+### 3. Intro and outro music
+
+| Item | License record | Risk |
+|---|---|---|
+| `L:\Winter Wolfs Den review show\Audio\Main Channel Theme.mp3` (117.2 s, 2022-03-24) | None on disk. It is the show's own channel theme (listed in `music-catalog.md` under WWD audio), but how it was made or licensed is not recorded. | FLAG (low). Zac to say where it came from (his own, Suno, library). If Suno, plan status on the creation date matters (Suno plan lapsed as of 2026-10-26; the 2022 file date predates Suno, so a Suno origin is unlikely, but unverified). |
+| `rock-the-crowd.mp3` (175.8 s) and `rock-guitar_f1HxpNS_.mp3` (6.1 s), candidates, not auditioned | `music-catalog.md`: "unknown". The first name matches a stock-site title and a famous song family; origin not recorded. | FLAG (medium) if used. Do not use unless Zac proves the source. Both are in a folder labelled "not auditioned", so I assume unused; confirm against the export. |
+| Stomp and clap intro and outro (ElevenLabs plan) | Spend WWD-2026-11-19-02 is still OPEN in DECISIONS as of today. | If `Arena_Triumph` is that music, the plan and terms question above applies. A stomp-and-clap anthem is the film's own famous scene, so an ear check against the film's version is mandatory (soundalike of a film score or named song is a FAIL under the spec). |
+
+Intro length: Zac's rule is 6 s or less for the intro sting. Not a rights point, noted only for the edit.
+
+### 4. Cards (viewed today)
+
+- `End Card - A Knights Tale.png` (and the 12.0 s MP4, probed): "THE LISTS ARE CLOSED / THANKS FOR WATCHING / LATEST UPLOAD, BEST FOR YOU, SUBSCRIBE / NEXT: FROSTCAST, EVERY WEDNESDAY 9 PM ET / THE WINTER WOLF'S DEN". Checkerboard border. No studio logo, rating, release date or film image. PASS. (A score or verdict: none.)
+- `Next Up - Percy Jackson Season 3 (MP4).mp4` (6.0 s, probed, frame at 3 s viewed): "NEXT UP / PERCY JACKSON / SEASON 3 EPISODE 1 / THE WINTER WOLF'S DEN". Text only. No Disney+ or Disney mark, rating or release date. PASS. Title confirmed by Zac 2026-11-19 per TASKS. I did not view the first or last frame of either MP4, only the one frame each; wwd-vfx built them, no audio check by me.
+- Both cards are built free in-house; no AI generation recorded.
+
+### 5. AI disclosure list (for the YouTube "altered or synthetic content" box)
+
+| Asset | AI-made? | Basis |
+|---|---|---|
+| Joust logo sting (Firefly) | Yes, per Zac | His statement, via the handoff. Not seen. Shows a realistic joust, so the realistic-synthetic-footage question applies. |
+| POV package video (8 s, encoder Google) | Probably | Tag plus look. Unconfirmed tool. Shows a realistic jousting scene with the wolf shield. |
+| `Arena_Triumph` WAV (60 s) | Probably, ElevenLabs music | Name pattern and 60 s length. Unconfirmed. Audio synthetic content. |
+| Cards, pictures, clips | No | Pictures are stills and a museum photo, clips are Movieclips cuts, cards built in code or design tools (not confirmed beyond the wwd-vfx record). |
+| Sound pack | No AI recorded | Library sounds. (Unless any ElevenLabs sound effects were made for this job: the sound pull docx was not opened, not available to me.) |
+
+My read for Zac, not a rule: YouTube's box is about realistic content that could be mistaken for real. A joust POV shot that looks like footage meets that test, so ticking the box is the safe choice. Synthetic music alone does not usually need the box by YouTube's description, but I did not re-fetch YouTube's current wording today, so confirm it in the upload form. Zac decides after viewing the export. The upload form's own text wins over my read.
+
+### 6. Counts to carry into the package (verify against the export)
+
+- Clips: 5, muted, 6.38 to 8.01 s, 35.08 s total, from the file probes made 2026-11-19. The final video may have changed which clips stayed. **Verify against the export.**
+- Stills: 31 placed on the run sheet, 32 in the folder, none twice, none over 7 s per the sheet. The poster moved to after the logo, and times shifted. **Verify against the export.** Still must not be held over 7 s; check the poster hold in particular.
+- Video length 36:29 (final transcript), not 36:37. Chapter times and any "36:37" in the package must follow the final.
+- First-cut run sheet times are stale (the sheet itself says the docx is not updated).
+
 ## Credit lines for the description (exact wording)
 
 1. Picture 29 credit, as above.
 2. Film material line (stills and clips, commentary use), place it above the disclaimer: `Film stills and short clips from A Knight's Tale (2001, Columbia Pictures), and brief stills from other titles named in the discussion, are used for commentary and criticism. All rights belong to their owners.`
 3. No credit line is required for the Rotten Tomatoes and TMDb stills. Optional courtesy is up to Zac.
+4. NEW 2026-11-21, AI-made assets line (use only for items Zac confirms are AI-made; edit the list to match): `The intro video and the logo sting were made with AI tools (Adobe Firefly and Google Veo). The intro music was made with ElevenLabs Music.` Delete any tool Zac did not use. If he confirms none of these, drop the line.
+5. NEW, sound credit line: none required for the Adobe library or owned sounds. No credit line is possible for the loose mp3s and Audioblocks files because no license terms are on file. Do not invent one. If Zac proves a paid plan, no credit is usually needed, but that rests on the plan terms, which I have not read.
+6. NEW, ElevenLabs attribution: required only if the music was made on the free tier. If it was made on a paid plan, no line. Zac states the plan, I do not guess. If free tier, the line is whatever ElevenLabs' current terms say, to be read from the terms at that time.
 
 ## Upload package
 
-Not written yet. When it is: fair use disclaimer is the last section and must say the video contains 5 muted film clips of about 6 to 8 seconds each (35 s total) and the stills actually placed (31 on the run sheet, 32 in the folder), not "no clips" and not "under 4 seconds". Keep it matched to the final edit, not this note. Any other wording in the package or run sheet that says 4 seconds or 19 s must change to match (run sheet lines 13 and 20 and clip stops 20, 24, 28, 36, 43 do today).
+Not written yet. When it is: fair use disclaimer is the last section and must say the video contains 5 muted film clips of about 6 to 8 seconds each (35 s total) and the stills actually placed (31 on the run sheet, 32 in the folder), not "no clips" and not "under 4 seconds". Both counts are first-cut figures: verify against the export before the package is final. The disclaimer wording itself is never reworded by me. Keep it matched to the final edit, not this note. Any other wording in the package or run sheet that says 4 seconds or 19 s must change to match (run sheet lines 13 and 20 and clip stops 20, 24, 28, 36, 43 do today).
 
 ## What Zac must do
 
@@ -112,6 +182,22 @@ Not written yet. When it is: fair use disclaimer is the last section and must sa
 5. Rerun this count after the final cut: clip total and seconds, any picture held over 7 s, no picture twice.
 6. Attorney question (queued, not guessed): does covering an uploader's logo bar on a short fan-commentary clip raise any copyright-management-information risk.
 
+## What Zac must do (added 2026-11-21, final cut)
+
+7. Say what the POV video is (tool, plan, is it the sting or the package picture) and what `Arena_Triumph` is (ElevenLabs? which plan?). Say whether each is in the export.
+8. Confirm the flagged sounds (14 loose mp3s, 2 audioblocks, 1 loose wav) were downloaded on a paid plan, or swap them for Adobe wavs, or confirm they are not audible in the export. I need only a yes or no per family.
+9. Say where `Main Channel Theme.mp3` came from. Do not use the two rock candidates unless the source is proven.
+10. Ear-check the stomp and clap music against the film's version before it ships.
+11. Decide the YouTube altered or synthetic content box after viewing the export (my read: tick it).
+12. After the render exists, send me the export for a re-check: clip count and seconds, stills, any held over 7 s, the sting's audible sounds, the music actually used, and the first and last frame of the five clips.
+
 ## Flag counts
 
+**Updated 2026-11-21 for the final cut (supersedes the 2026-11-19 line below, which is kept for history).** HIGH 0. MEDIUM 6 (clips at the upper end, TMDb stills, other-title stills, loose mp3s and audioblocks files with no plan proof, unconfirmed ElevenLabs music and plan, probable-Veo POV video provenance). LOW to MEDIUM 3 (logo bar, RT stills with copyright lines, loose wav and Main Channel Theme origin, counted together as one item for music and sound origin). LOW 4 (spoiler clips, trailer, run sheet stale, rock candidates if unused). PASS 3 (clip lengths, cards, Adobe library sounds on Zac's settled call). FLAG items needing action for Zac 12 (items 1 to 6 earlier, 7 to 12 above, with #29 credit and #12 fit still open). Attorney question 1 still queued (WWD-2026-11-19-01), no new legal question; the ElevenLabs commercial-use and CC-style terms question is for Zac to confirm from the plan terms, not a legal guess. This note is a risk flag, not legal advice, and a Content ID claim can still happen on any item.
+
+Old line (2026-11-19):
+
 Updated 2026-11-19 for the new clip rule. HIGH 0. MEDIUM 4 (clips at the upper end, TMDb stills, other-title stills, #29 if uncredited). LOW to MEDIUM 2 (logo bar, RT stills with copyright lines). LOW 4 (spoiler clips, trailer, run sheet stale, no-source stills). PASS 1 (clip lengths). FLAG items needing action 5 (#29 credit, #12 fit, #2 URL typo, run sheet rebuild and clip 5 timing, do not crop the Columbia lines). Clip 1 margin flag removed (old cap gone). Queued attorney question 1 (WWD-2026-11-19-01, wording updated to 35.08 s).
+
+## EXPORT RE-CHECK 2026-11-21 (wwd-director, after Zac said the video is live)
+Probed by me: `A knights Tale A one for the ages.mp4` is 1920x1080, 30 fps, h264 plus aac, 36:36.7 (2196.67 s). Transcript last block ends 36:29, so the export carries about 7 s of end card after the last spoken line. Loudness integrated -21.9 LUFS, true peak +0.1 dBFS (target -14 LUFS and -1 dBTP missed, video already live, recorded only). No black frames or freezes in the last 15 s. Black runs only in the first 12 s (the intro and joust sting area), not viewed. Verdicts above are unchanged by the export: nothing new added. Still open and not decidable from the file: the 14 loose mp3s, 2 audioblocks files and the wav (cannot tell which are audible), Main Channel Theme provenance, AI-made asset disclosure (Zac says live, whether the YouTube box was ticked is NOT KNOWN), attorney question WWD-2026-11-19-01. The 5 Shorts are cut from this export and use only the hosts' own on-air footage (some show stills and a subscribe sticker); by the run sheet stop times (first-cut timeline, about 10 s later than the final transcript) none of the five trailer clips falls inside the five Short windows, and the 15 frames I viewed show none. Not every second was viewed.

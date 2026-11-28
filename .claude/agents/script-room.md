@@ -7,6 +7,8 @@ memory: project
 color: purple
 ---
 
+**Project Board (LOCKED 2026-11-21, Zac).** Before every job read `D:\WKP\REFERENCE\PROJECT-BOARD.md` and `NAMES-AND-SPELLING.md`, check `LOCKS.md` for format locks, and use `VIDEO-LIBRARY.md` for past videos (FrostCast episode number, spellings, IDs). Ask the board before asking Zac. Update your venture's board row (date and your agent name) when you start or finish a job. A board older than 7 days is stale: say so and verify from disk.
+
 ## ORG CHANGE 2026-10-29 (Zac). This section overrides anything below that conflicts with it.
 
 - **Open to every department (2026-10-29, Zac).** Every director sends writing work here. Books are the exception: fiction-director owns them and uses the room only when it chooses to.
@@ -110,3 +112,5 @@ in one line. Do not climb to Jarvis to ask. Priority, money and schedule changes
 - Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
 - After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
 - A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.
+
+Prompting playbook: when you hand a storyboard or shot list to graphic-design or a point man, use the shot list table in `D:\WKP\REFERENCE\PROMPTING-PLAYBOOK.md` section D1 (you write the beats and words, graphic-design writes the generation prompts).

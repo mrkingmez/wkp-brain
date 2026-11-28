@@ -1,0 +1,269 @@
+
+How Content ID works - YouTube Help
+Skip to main content
+YouTube Help
+Sign in
+Google Help
+Help Center
+Fix a problem
+Watch videos
+Manage your account & settings
+Supervised experiences on YouTube
+YouTube Premium
+Create & grow your channel
+Monetize your content
+Policy, safety, & copyright
+Community
+YouTube
+Privacy Policy
+YouTube Terms of Service
+Submit feedback
+Send feedback on...
+This help content & information
+General Help Center experience
+Close
+Next
+Help Center
+Community
+Creator Tips
+YouTube
+Fix a problem
+Troubleshoot problems playing videos
+Troubleshoot account issues
+Fix upload problems
+Get help with the YouTube Partner Program
+Learn about recent updates on YouTube
+Get help with YouTube
+Watch videos
+Find videos to watch
+Change video settings
+Watch videos on different devices
+Comment, subscribe, & connect with creators
+Save or share videos & playlists
+Troubleshoot problems playing videos
+Purchase & manage movies, TV shows & products on YouTube
+Manage your account & settings
+Sign up and manage your account
+Manage account settings
+Manage privacy settings
+Manage ad settings
+Manage accessibility settings
+Troubleshoot account issues
+YouTube updates
+Supervised experiences on YouTube
+Supervised accounts for kids
+Supervised accounts for teens
+YouTube Premium
+Join YouTube Premium
+YouTube Premium benefits
+Manage your Premium membership
+Manage Premium billing & payments
+Fix YouTube Premium issues
+Create & grow your channel
+Upload videos
+Edit videos & video settings
+Create Shorts
+Edit videos with YouTube Create
+Customize & manage your channel
+Analyze performance with analytics
+Translate videos, subtitles, & captions
+Manage your posts & comments
+Live stream on YouTube
+YouTube Creator Community
+Become a podcast creator on YouTube
+Creator and Studio App updates
+Monetize your content
+YouTube Partner Program
+Make money on YouTube
+Get paid
+Understand ads and related policies
+Get help with the YouTube Partner Program
+YouTube for Content Managers
+Policy, safety, & copyright
+YouTube policies
+Reporting and enforcement
+Privacy and safety center
+Copyright and rights management
+Copyright and rights management
+Copyright management tools
+How Content ID works
+How Content ID works
+Some copyright owners use Content ID, YouTube's automated content identification system, to easily identify and manage their copyright-protected content on YouTube.
+YouTube Content ID
+Subscribe to the 
+YouTube Creators channel
+ for the latest news, updates, and tips.
+What does Content ID do?
+Using a database of audio and visual files submitted by 
+copyright
+ owners, Content ID identifies matches of copyright-protected content. When a video is uploaded to YouTube, it's automatically scanned by Content ID.
+If Content ID finds a match, the matching video will get a 
+Content ID claim
+. Depending on the copyright owner's Content ID settings, a Content ID claim results in one of the following actions:
+Blocks
+ a video from being viewed
+Monetizes
+ the video by running ads against it and sometimes sharing revenue with the uploader
+Tracks
+ the video’s viewership statistics
+Keep in mind that any of these actions can be geography-specific. For example, a video can be monetized in one country/region and blocked or tracked in a different country/region.
+Who uses Content ID?
+Content ID is available to copyright owners who meet 
+specific criteria
+. To be approved, they must own exclusive rights to a substantial body of original material that is frequently uploaded to YouTube.
+YouTube also sets explicit guidelines on how Content ID can be used. Content ID use and 
+disputes
+ ;are monitored on an ongoing basis to make sure these guidelines are followed.
+Copyright claimants who repeatedly make erroneous Content ID claims can have their Content ID access disabled and their partnership with YouTube terminated.
+If you're a copyright owner and believe your content meets the 
+criteria
+ for Content ID, you can fill out 
+this form
+ to let us know more about your copyright management needs.
+Related topics
+What is a Content ID claim?
+Who claimed my video?
+Dispute a Content ID claim
+Monetization during copyright claim disputes
+Copyright issues with live streams
+Was this helpful?
+How can we improve it?
+Yes
+No
+Submit
+Need more help?
+Try these next steps:
+ Post to the help community 
+ Get answers from community members 
+true
+Copyright management tools
+1 of 8
+About YouTube’s copyright management tools
+2 of 8
+Learn about the Copyright Match Tool
+3 of 8
+Use the Copyright Match Tool
+4 of 8
+Use the Enterprise Copyright Match Tool
+5 of 8
+Enterprise Copyright Match Tool
+6 of 8
+How Content ID works
+7 of 8
+Qualify for Content ID
+8 of 8
+License your content & rights to YouTube
+ ©2026 Google 
+Privacy Policy
+YouTube Terms of Service
+ Language 
+Afrikaans‎
+azərbaycan‎
+bosanski‎
+català‎
+dansk‎
+Deutsch‎
+eesti‎
+English (United Kingdom)‎
+español‎
+español (Latinoamérica)‎
+euskara‎
+Filipino‎
+français‎
+français (Canada)‎
+Gaeilge‎
+galego‎
+hrvatski‎
+Indonesia‎
+isiZulu‎
+italiano‎
+Kiswahili‎
+latviešu‎
+lietuvių‎
+magyar‎
+Malti‎
+Melayu‎
+Nederlands‎
+norsk‎
+o‘zbek‎
+polski‎
+português‎
+português (Brasil)‎
+română‎
+shqip‎
+slovenčina‎
+slovenščina‎
+suomi‎
+svenska‎
+Tiếng Việt‎
+Türkçe‎
+íslenska‎
+čeština‎
+Ελληνικά‎
+беларуская‎
+български‎
+кыргызча‎
+македонски‎
+монгол‎
+русский‎
+српски‎
+українська‎
+қазақ тілі‎
+հայերեն‎
+‏
+עברית
+‏
+اردو
+‏
+العربية
+‏
+فارسی
+नेपाली‎
+मराठी‎
+हिन्दी‎
+অসমীয়া‎
+বাংলা‎
+ਪੰਜਾਬੀ‎
+ગુજરાતી‎
+ଓଡ଼ିଆ‎
+தமிழ்‎
+తెలుగు‎
+ಕನ್ನಡ‎
+മലയാളം‎
+සිංහල‎
+ไทย‎
+ລາວ‎
+မြန်မာ‎
+ქართული‎
+አማርኛ‎
+ខ្មែរ‎
+中文（简体）‎
+中文（繁體）‎
+中文（香港）‎
+日本語‎
+한국어‎
+English‎
+Enable Dark Mode
+Send feedback on...
+This help content & information
+General Help Center experience
+Search
+Clear search
+Close search
+Google apps
+Main menu
+947013607357356986
+true
+Search Help Center
+false
+true
+true
+true
+true
+true
+59
+false
+false
+false
+false
+false

@@ -1,0 +1,7 @@
+B1: not run yet. One line per attempt: what went wrong or "kept". Redo A, B, C are on the card in the report. Add a row to firefly-prompt-guide\LESSONS.md the same turn after any result.
+Attempt 1: ______
+
+2026-11-25: prompt.txt trimmed to v2 (v1 in prompt-v1-before-trim.txt). Credits 8,295 on 2026-11-25, cost per click unknown, read at Generate button. Panel facts to check first: negative box, seed, 750 limit, reference strength, End slot (not used).
+2026-11-25: 16:9 confirmed (settings ASPECT RATIO 16:9). Style reference chain now starts at R3b-16x9.
+
+2026-11-25 v3: Zac's panel answers applied. No negative box, no strength slider, up to 3 references, model Nano Banana (partner, commercial safety NOT VERIFIED), Seed field exists (write the seed per attempt, keep it on a one-change redo, UNTESTED). prompt.txt is v3, v2 kept as prompt-v2-negative-era.txt. Not run, no credits spent.

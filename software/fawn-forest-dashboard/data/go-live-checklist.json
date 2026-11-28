@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-27",
+  "maintained_by": "trading-director (edit this file by hand when an item changes; the dashboard only reads it)",
+  "source_plan": "D:\\WKP\\Investing\\watch-week\\WATCH-WEEK-PLAN.md, Go-live checklist status 2026-11-26. Zac's count: 0 of 7.",
+  "items": [
+    {
+      "n": 1,
+      "title": "Watch week with a real log: 50 decisions and 20 trades, scorecard",
+      "state": "FAIL",
+      "note": "Not started (0 of 50, 0 of 20 on 2026-11-26)."
+    },
+    {
+      "n": 2,
+      "title": "QA PASS on the scorecard",
+      "state": "FAIL",
+      "note": "No scorecard yet."
+    },
+    {
+      "n": 3,
+      "title": "Haircut applied and still positive (Zac-can-act ledger positive at 30 bps)",
+      "state": "FAIL",
+      "note": "Nothing to test yet."
+    },
+    {
+      "n": 4,
+      "title": "Watcher software-tester security pass",
+      "state": "FAIL",
+      "note": "2026-11-27 trading-director: software-tester pass 4 and qa-director pass 4 on the changed watcher (hash b559c847b5717f4a) are PASS WITH NOTES, no blockers. Kill switch and 25 percent cap tests pass in demo (112 tests). Item stays FAIL for go-live: the checklist wants the security pass on the version that finishes the watch week; re-sign after the week. Reports in logs\\qa\\."
+    },
+    {
+      "n": 5,
+      "title": "Kill switch and 25 percent cap proven in demo mode",
+      "state": "FAIL",
+      "note": "2026-11-27 trading-director: software-tester pass 4 and qa-director pass 4 on the changed watcher (hash b559c847b5717f4a) are PASS WITH NOTES, no blockers. Kill switch and 25 percent cap tests pass in demo (112 tests). Item stays FAIL for go-live: the checklist wants the security pass on the version that finishes the watch week; re-sign after the week. Reports in logs\\qa\\."
+    },
+    {
+      "n": 6,
+      "title": "Devils-advocate ruling on file",
+      "state": "PASS",
+      "note": "Signed by trading-director 2026-11-27: rulings on file in Investing\\watch-week (stock plan 2026-11-26 GO WITH CHANGES, crypto design GO WITH CHANGES, insider scanner GO WITH CHANGES). Re-rule before any phase gate."
+    },
+    {
+      "n": 7,
+      "title": "Zac's own words on account size and what he can afford to lose",
+      "state": "PASS",
+      "note": "Signed by trading-director 2026-11-27 on Zac's words of 2026-11-26 (memory project-fawn-forest-investments): his Robinhood accounts are very small, he can lose them and earn it back, but wants capital preserved if possible. No dollar figure stated (balance not checked). Risk tolerance only; it does not allow any agent to place an order."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+WWD logo sting, lance hits logo on a shield (A Knight's Tale). Model: Veo 3.1 Fast via Firefly. Logged 2026-11-21 from the session, from memory of the runs (no clips saved here yet: Zac, drop the failed mp4s and exact prompts in this folder).
+Run 1: lance came from off-screen, not first person. Failed.
+Run 2: knight in frame when Zac wanted only the shield and a dolly-in. Failed.
+Run 3: hesitation before the hit. Failed.
+Run 4: a new logo appeared and the shield sat dead center instead of left. Failed.
+Run 5: still no (shield position, hesitation).
+Run 6: TWO spears drawn, one vanished; rider and shield centered instead of shield left and lance right. Cause: I named "spear" in the prompt, which makes the model draw it. Failed.
+LESSONS: never name an unwanted object in the main prompt; negative text only in the separate negative field; one action and one camera move per clip; text cannot control left/right or timing, so use a composed start frame; paste the real logo in Photoshop, models cannot redraw it; two shots (ride-in, strike) cut in Premiere with the crack sound on the cut.
+Next: Stills 1 and 2, then Shot 1 and Shot 2 prompts (in the session, 2026-11-21). Log results here.

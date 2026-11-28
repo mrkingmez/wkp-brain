@@ -1,0 +1,45 @@
+SETTINGS FOR ONE ATTEMPT (copy to the log folder as settings-1.txt, settings-2.txt ...)
+Agent fills AGENT block. Zac fills PANEL and RESULT. Write NOT SHOWN if the panel does not show a field. Do not delete fields.
+Standard: D:\WKP\data\firefly-prompt-guide\STANDARD.md
+
+--- AGENT BLOCK ---
+SHOT:
+ATTEMPT:
+DATE:
+ENGINE (exact menu name):
+TIER (Fast / Lite / Standard / n.a.):
+RESOLUTION:
+ASPECT RATIO:
+FPS:
+DURATION:
+AUDIO (on / off):
+PANEL MODE (text / frames / reference):
+START FRAME FILE:
+START FRAME HOW MADE (prompt id or Photoshop steps):
+END FRAME FILE (or none):
+REFERENCE FILES (file, role, strength) (or none):
+CAMERA PRESETS TO SET IN PANEL (shot size, angle, motion) (or none):
+NEGATIVE FIELD TEXT (only if the panel has the box) (or none):
+PROMPT FILE:
+WORD COUNT:
+LINT (PASS / WARN with reason):
+PREFLIGHT (13 of 13 or list the open item):
+ONE CHANGE FROM LAST ATTEMPT (or "first attempt"):
+REDESIGN AFTER ATTEMPT 3 (one line):
+PANEL FACTS ZAC CHECKS (end slot, reference slot, seed, negative box):
+
+--- PANEL BLOCK (Zac, at the screen) ---
+ENGINE AS SHOWN:
+TIER AS SHOWN:
+SEED SHOWN:
+CREDIT READOUT BEFORE CLICK (copy the number exactly as shown on the Generate button, never estimate):
+END SLOT PRESENT (yes / no):
+REFERENCE SLOT PRESENT (yes / no):
+NEGATIVE BOX PRESENT (yes / no):
+
+--- RESULT BLOCK (Zac, after) ---
+RESULT (kept / failed):
+FAILURE CODES (F or D codes from LESSONS and AUDIT, or a plain sentence):
+OUTPUT FILE NAME:
+CREDITS AFTER (account page, optional):
+AI-GENERATED LABEL NEEDED (yes for anything public): yes

@@ -3,6 +3,7 @@
 Checks: stops in time order, cross dissolve limit, repeated neighbor transitions,
 pictures longer than 7 s, a PNG placed twice, trailer clips over 12 s (warn under 6 s, no total cap, Zac 2026-11-19),
 missing USE VIDEO files, em dashes, designed-transition share.
+(2026-11-23: picture file names no longer need a leading number, so the 7 s check works for named files.)
 Usage: python lint_run_sheet.py <Run-Sheet.md> [--max-cross 3]"""
 import re, sys
 
@@ -32,11 +33,11 @@ for s in stops:
     num, t = m.group(1), secs(m.group(2)); times.append((num, t))
     for n in re.findall(r"PNG (\d+)", head):
         pngs.setdefault(n, []).append(num)
-    pic = re.search(r"Picture `USE\\(\d+)(?: [^`]*)?\.png` (?:from \d{1,2}:\d{2} )?to (\d{1,2}:\d{2})", s)
+    pic = re.search(r"Picture `USE\\([^`]+?)\.png` (?:from \d{1,2}:\d{2} )?to (\d{1,2}:\d{2})", s)
     if pic:
         end = secs(pic.group(2))
         start = t
-        frm = re.search(r"Picture `USE\\\d+(?: [^`]*)?\.png` from (\d{1,2}:\d{2})", s)
+        frm = re.search(r"Picture `USE\\[^`]+?\.png` from (\d{1,2}:\d{2})", s)
         if frm: start = secs(frm.group(1))
         if end - start > 7:
             fails.append(f"stop {num}: picture on screen {end - start}s, limit is 7s")

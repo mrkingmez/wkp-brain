@@ -1,0 +1,210 @@
+{
+ "id": "ian-r3-handoff-sideon-v5",
+ "title": "Ian trailer R3 v4: BOY hands wrench to OLDER MAN lying on a creeper under a low car; floor-level side-on camera",
+ "ratio": "16:9",
+ "res": [
+  1280,
+  720
+ ],
+ "camera": {
+  "loc": [
+   0.18,
+   -0.1,
+   0.12
+  ],
+  "height_m": 0.12,
+  "lens_mm": 85.0,
+  "sensor_width_mm": 36.0,
+  "hfov_deg": 23.9,
+  "vfov_deg": 13.6,
+  "target": [
+   0.18,
+   2.5,
+   0.14
+  ]
+ },
+ "light": {
+  "from_azimuth_deg": 40,
+  "elevation_deg": 70
+ },
+ "characters": {
+  "Older": {
+   "height_m": 1.74,
+   "facing_deg": 0.0,
+   "pose": "lie",
+   "dist_to_camera_m": 2.32,
+   "head_top_screen": [
+    -0.316,
+    2.854
+   ],
+   "feet_screen": [
+    -0.602,
+    0.228
+   ],
+   "body_height_pct_of_frame": 262.6,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "head_visible_pct": 0,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.427,
+      0.467
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": true,
+     "visible_pct": 100,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      -0.854,
+      0.419
+     ],
+     "side_on_screen": "screen-left",
+     "in_frame": false,
+     "visible_pct": 0,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    }
+   },
+   "faces_camera_dot": -0.91,
+   "view_of_character": "back"
+  },
+  "Boy": {
+   "height_m": 1.3,
+   "facing_deg": 270.0,
+   "pose": "sit",
+   "dist_to_camera_m": 2.84,
+   "head_top_screen": [
+    1.071,
+    2.247
+   ],
+   "feet_screen": [
+    1.073,
+    0.285
+   ],
+   "body_height_pct_of_frame": 196.2,
+   "head_in_frame": false,
+   "feet_in_frame": false,
+   "head_visible_pct": 0,
+   "hands": {
+    "L": {
+     "colour": "BLUE",
+     "screen_xy": [
+      0.809,
+      0.523
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": true,
+     "visible_pct": 84,
+     "occluded_by": {
+      "PV_prop_wrench": 3
+     },
+     "holds": "wrench:handle",
+     "over_face": false,
+     "reach_shortfall_m": 0.0
+    },
+    "R": {
+     "colour": "RED",
+     "screen_xy": [
+      1.239,
+      0.421
+     ],
+     "side_on_screen": "screen-right",
+     "in_frame": false,
+     "visible_pct": 0,
+     "occluded_by": {},
+     "holds": null,
+     "over_face": false,
+     "reach_shortfall_m": 0.034
+    }
+   },
+   "faces_camera_dot": 0.24,
+   "view_of_character": "side/three-quarter"
+  }
+ },
+ "props": {
+  "wrench": {
+   "grips_world": {
+    "handle": [
+     0.53,
+     2.5,
+     0.14
+    ],
+    "center": [
+     0.46,
+     2.5,
+     0.14
+    ]
+   }
+  }
+ },
+ "warnings": [
+  "Boy R arm falls short of its target by 0.03 m (previs shows a straight arm)",
+  "Older head is outside the frame",
+  "Boy head is outside the frame"
+ ],
+ "hand_gaps_m": [
+  {
+   "between": "Older.L / Boy.L",
+   "m": 0.425
+  },
+  {
+   "between": "Older.L / Boy.R",
+   "m": 1.122
+  },
+  {
+   "between": "Older.R / Boy.L",
+   "m": 1.635
+  },
+  {
+   "between": "Older.R / Boy.R",
+   "m": 2.352
+  }
+ ],
+ "expect_results": [
+  {
+   "pass": true,
+   "expect": "older man's open palm enters from camera left",
+   "measured": "visible 100% (need 60); on screen-left (need screen-left)"
+  },
+  {
+   "pass": true,
+   "expect": "boy's hand carries the wrench from camera right",
+   "measured": "visible 84% (need 50); on screen-right (need screen-right); holds wrench:handle (need wrench:handle)"
+  },
+  {
+   "pass": true,
+   "expect": "only two hands: older man's free hand out of frame",
+   "measured": "visible 0% (allowed up to 10)"
+  },
+  {
+   "pass": true,
+   "expect": "only two hands: boy's free hand out of frame",
+   "measured": "visible 0% (allowed up to 10)"
+  },
+  {
+   "pass": true,
+   "expect": "man's face not in frame",
+   "measured": "head in frame False (need False)"
+  },
+  {
+   "pass": true,
+   "expect": "man's face not seen through the gap under the car",
+   "measured": "head visible 0% (allowed up to 0)"
+  },
+  {
+   "pass": true,
+   "expect": "boy's face not in frame",
+   "measured": "head in frame False (need False)"
+  }
+ ]
+}

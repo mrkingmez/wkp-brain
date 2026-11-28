@@ -1,0 +1,113 @@
+# WKT Alpaca paper watcher: rule and score thresholds live here. Indicator periods (EMA 20/50, Bollinger 20, MACD 12/26/9, stochastic 14/3, ADX 14) and market-mood weights are fixed in code.
+# Session window is 9:30 to 16:00 ET from /v2/clock (the locked 5 PM window is outside the regular session and is not scanned).
+# The hash of this file's parsed values goes on every log line. Change any value and the counts restart under the new hash (comment edits do not count as changes).
+# Rules source: D:\WKP\Investing\wkt-locked-rules.md (locked 2026-10-19). Paper only.
+# Changing a rule during the watch week breaks the experiment: one rule at a time, after 50 to 100 trades.
+
+feed: iex                      # SIP is denied on this free paper account (retrieved 2026-11-26)
+timeframe: 1Hour
+scan_interval_seconds: 60      # locked rules say 1-minute checks during the session
+bars_lookback_days: 30       # was 20. Raised 2026-11-26: with extended-hours bars dropped, thin symbols had too little margin over the 60-bar minimum
+symbols:                       # starting list: liquid large caps and ETFs. SPY is also the market gauge.
+  [SPY, QQQ, IWM, DIA, XLK, XLF, XLE, XLV, AAPL, MSFT, NVDA, AMZN, GOOGL, META, TSLA, JPM, XOM, UNH, COST, AMD]
+market_gauge: SPY
+
+session_bars:                  # Alpaca IEX hourly bars start at 08:00 ET and run to 16:00 ET (retrieved 2026-11-26). Only the regular-hours bars are used.
+  regular_hours_only: true
+  first_bar_start_hour_et: 9   # the 09:00 bar holds 09:00 to 10:00, so it includes about 30 minutes of pre-open trades before the 09:30 open
+  last_bar_start_hour_et: 15   # the 15:00 bar closes at 16:00
+
+fills:                         # Jarvis decision 2026-11-26 (reversible): where session-open fills happen. Scoring bars are NOT affected (session_bars above still keeps the 09:00 bar).
+  session_open_fill_hour_et: 10  # Zac-ledger entries and time-stop exits fill at the open of the first bar starting at or after this ET hour on the fill day (the 10:00 bar open, not the 09:00 bar that holds pre-open prints)
+
+paper_book:
+  starting_equity: 100000.0    # simulated book size. Placeholder; the Alpaca paper account itself read equity 100000 in the 2026-11-26 smoke run. Results are judged in percent.
+  haircut_bps_each_side: 5     # ASSUMPTION, placeholder, not measured: slippage per side
+  fee_bps_each_side: 0         # ASSUMPTION: Robinhood stock commission is $0
+  sell_reg_fee_bps: 0.0        # ASSUMPTION placeholder for regulatory fees on sells, set from a real source later
+  max_gap_atr: 1.0             # cancel a signal if the next bar opens more than this many ATR from the signal close
+
+rules:
+  min_score_to_trade: 70
+  risk_per_trade_pct: {70: 0.5, 80: 1.0, 90: 2.0}
+  max_position_pct: 25
+  atr_stop_multiple: 2.0
+  atr_period: 14
+  reward_multiple: 2.5
+  time_stop_sessions: 5        # stocks: exit at the open of the 5th session after the entry session
+  daily_kill_switch_pct: 5     # -5 percent of start-of-day book equity: no new trades that day
+  watch_days: [Mon]            # ET weekday abbreviations
+  hot_score: 90                # watch days trade only at this score or higher
+  max_open_positions: 4
+
+filters:                       # hard filters, cheap, run before scoring
+  min_bars: 60
+  min_price: 10.0
+  min_avg_dollar_volume_1h: 250000   # IEX volume only (thin tape), placeholder
+  max_stale_days: 4
+
+counting:                      # devils-advocate amendment 2
+  min_score: 70                # a decision counts only at this score or higher, once per setup (same setup on consecutive bars = one decision). Per-minute skips are still logged, never counted.
+
+zac_ledger:                    # amendment 6: second ledger, "Zac can act". Fills only at the open of the NEXT trading session.
+  enabled: true
+  max_gap_atr: null            # no gap cancel on this ledger (an overnight gap is normal for it); the gap is logged on the FILL line
+  max_pending_sessions: 2      # change 6: a waiting signal expires when more than this many weekdays have passed since its signal date (Fri to Mon is 1, a one day data gap or a holiday is 2). Holidays are not modeled.
+
+scorecard:
+  haircut_views_bps: [5, 15, 30]   # amendment 10. 15 and 30 are stress levels, not measured.
+  pass_haircut_bps: 30             # the Zac-can-act ledger must be positive at this level
+  sizing_view_equity: 60           # amendment 5: small-account view, fractional shares
+
+end_rule:                      # amendment 4: set in advance. Changing this changes the config hash and restarts the counts.
+  last_day: "2026-12-24"       # four trading weeks from Mon 2026-11-30 (Zac: paper runs for four weeks). Fri 12-25 is an NYSE holiday, Thu 12-24 closes early at 1:00 PM ET, so 12-24 is the last regular day of week 4. Verified on nyse.com/trade/hours-calendars 2026-11-27.
+  close_open_at_last_close: true
+
+pdt:                           # amendment 8: conservative guard. Rule text NOT confirmed (FINRA Notice 26-10 phase-in, Robinhood behavior unverified).
+  enforce: true
+  max_day_trades_rolling: 3
+  window_trading_days: 5
+  max_day_trades_per_month: 3
+
+regime:                        # learning loop item 2. Thresholds are placeholders, frozen with the score.
+  daily_lookback_days: 400
+  sma_fast: 50
+  sma_slow: 200
+  slope_days: 10
+  atr_period: 14
+  vol_median_days: 60
+  vol_ratio_volatile: 1.0      # volatile when daily ATR percent is above this multiple of its 60-day median
+  breadth_min_up: 0.5          # uptrend needs at least this share of the watch list above its 50-day average (downtrend: at most 1 minus this)
+  min_breadth_symbols: 10
+
+sizing:
+  max_loss_per_trade_pct: 3    # hard cap on the risk percent of any single trade
+  max_loss_per_week_pct: 6     # a loss this size from Monday's starting equity blocks new trades until next Monday
+  step_up:                     # OFF during the first counted week and until every condition below is true
+    enabled: false
+    risk_pct: 3.0
+    min_score: 90
+    regime: UPTREND_CALM
+    min_counted_trades: 20
+    expectancy_haircut_bps: 30
+    no_kill_trading_days: 5
+    max_open_positions_below: 2
+
+scoring:                       # ported idea from the old WKT scoring.py, UNVERIFIED, tune only by the one-rule policy
+  base: 55
+  adx_trending: 25
+  adx_range: 20
+  mood_weight: 8
+  volume_good_ratio: 1.2
+  volume_good_pts: 5
+  volume_bad_ratio: 0.6
+  volume_bad_pts: -5
+  stretch_far: 3
+  stretch_far_pts: -20
+  stretch_mid: 2
+  stretch_mid_pts: -8
+  too_volatile_stop_pct: 12
+  too_volatile_pts: -10
+  pullback: {atr_touch: 0.5, rsi_lo: 40, rsi_hi: 60, rsi_pts: 10, macd_pts: 8, trend_pts: 7}
+  mean_reversion: {prev_rsi_max: 35, deep_rsi: 28, deep_pts: 6, range_pts: 12, semi_range_pts: 5, trend_penalty: -10, stoch_low: 20, stoch_pts: 5, knife_pts: -15}
+  breakout: {vol_ratio_min: 1.5, vol_ratio_big: 2.5, vol_big_pts: 12, vol_pts: 6, trend_pts: 6, near_high_frac: 0.25, near_high_pts: 5}

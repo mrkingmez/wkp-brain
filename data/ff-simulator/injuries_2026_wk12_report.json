@@ -1,0 +1,22 @@
+{
+ "fetched_at": "2026-11-25T18:11Z",
+ "sources": {
+  "MFL_players_refresh": "2723 players",
+  "MFL_INJ": "435 rows, response timestamp 2026-11-25T17:01Z, week 12",
+  "MFL_ROSTER": "28 fantasy-IR-slot rows (note only), pulled 2026-11-25T18:11Z",
+  "NFLV_INJ": "104 rows for week 12 (weeks present: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10), np.int64(11), np.int64(12)]), release updated 2026-11-25T17:59Z",
+  "NFLR_INJ": "104 rows for week 12 via nflreadpy",
+  "NFLV_ROST": "2592 week-12 roster rows, 2590 records, release updated 2026-11-25T17:59Z",
+  "ESPN_INJ": "800 rows, feed timestamp 2026-11-25T18:11Z",
+  "ESPN_TX": "126 team-transaction lines in last 10 days -> 269 player moves, feed timestamp 2026-11-25T18:06Z (dates are date-only, midnight ET)"
+ },
+ "merged_rows": 2695,
+ "raw_rows": 4330,
+ "unresolved_gsis": 44,
+ "newest_as_of": "2026-11-25T17:59Z",
+ "age_hours_of_newest": 0.2,
+ "stale_over_24h": false,
+ "conflicts": 63,
+ "trades_in": {},
+ "espn_team_check": []
+}

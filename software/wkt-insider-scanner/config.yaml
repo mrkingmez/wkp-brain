@@ -1,0 +1,104 @@
+# WKT insider scanner: every rule and threshold lives here, not in code.
+# The hash of the PARSED values goes on every output line. Change any value and the counts restart under the new hash
+# (comment edits do not count). One change per run (the tool refuses a multi-value change without a written reason).
+# Paper research only. This signal has NO sizing and NO trade authority: it is an input column.
+
+cluster:
+  min_insiders: 3              # distinct reporting-owner CIKs with code P at one issuer = COUNTED cluster
+  watch_min_insiders: 2        # 2 distinct insiders = WATCH tier, recorded, never counted, never scored
+  window_days: 10              # calendar days of TRANSACTION dates, inclusive count: last date minus first date must be at most window_days - 1
+  count_roles: [officer, director]     # RULING 3: only owners ticking Officer or Director count toward the minimum. 10 percent owner only and Other only do not
+  exclude_entity_owners: true          # RULING 3: entity filers (LLC, LP, fund, trust names; a NAME HEURISTIC) do not count. Logged with the reason
+  exclude_fund_issuers: true           # RULING 3: closed-end funds, BDCs, ETFs, trusts as issuer are excluded whole and logged (SIC or name HEURISTIC)
+  max_filing_lag_business_days: 5      # RULING 1: a purchase reported later than this (weekdays, no holiday calendar) is dropped and counted ("dropped, late")
+
+timing:                        # RULING 1: when a cluster exists and when it can first be bought
+  accepted_tz: America/New_York        # NOT VERIFIED: the zone of the EDGAR acceptance time. If it is wrong, change this one value
+  premarket_entry_cutoff_et: "09:00"   # accepted at or before this (ET) on a trading day = enter that day's open. Later = next trading day's open
+
+filing:
+  transaction_codes_kept: [P]  # open-market purchase only. S, A, M, F, G and every derivative row are dropped and counted in the skip log
+  exclude_10b5_1: true         # RULING 4: purchases made under a 10b5-1 plan are excluded and logged. A missing flag (older filings) is recorded as unknown, not excluded
+  offering_min_owners: 2       # RULING 4: this many distinct counting owners buying the same issuer, same trade date, same price = offering-style group
+  offering_keywords: [offering, placement, ipo, "initial public", rights, subscription, underwritten, underwriter]   # matched in the filing footnotes of such a group. A hit excludes the group. Unreadable footnotes = UNKNOWN = the cluster FAILS
+
+classify:                      # HEURISTICS. Labeled as heuristics in every output line.
+  entity_words: [inc, llc, lp, l.p., ltd, limited, corp, corporation, co, company, fund, funds, trust, partners, partnership, holdings, capital, management, group, investments, investment, ventures, associates, foundation, bancorp, sponsor, advisors, advisers, equity]
+  fund_issuer_words: [fund, trust, etf, closed-end, interval, bdc]
+  fund_issuer_phrases: ["business development", "closed end"]   # phrase match on the issuer name
+  fund_sic_codes: ["6726"]     # SIC 6726 = closed-end management investment offices and similar. Used only if the source gives a SIC.
+  ceo_regex: "(chief executive|\\bceo\\b|principal executive)"
+  cfo_regex: "(chief financial|\\bcfo\\b|principal financial)"
+  tiny_base_usd: 100000        # PLACEHOLDER: a holding before the buy worth less than this makes a percent change over the limit uninformative
+  pct_change_uninformative_over: 100
+
+sec:
+  allowed_hosts: [www.sec.gov, data.sec.gov]   # can only narrow the in-code allowlist, never widen it
+  max_requests_per_second: 2   # SEC fair access page says 10 per second max (data-sourcing 2026-11-26). Code caps this at 2 whatever is written here
+  retries: 3
+  backoff_seconds: 2
+  timeout_seconds: 30
+  max_response_bytes: 60000000
+  max_filings_per_run: 300     # request budget for the filing-by-filing route
+  lookback_days: 30
+  user_agent_env: SEC_USER_AGENT   # NAME of the environment variable. The value is never printed, logged or stored.
+
+forward:
+  benchmark: SPY               # the calendar and the market-regime gauge
+  benchmarks: [SPY, IWM]       # RULING 6: excess is measured against BOTH (small caps are not the average SPY company). The primary pass needs both positive
+  feed: iex                    # Alpaca free account, IEX daily bars only (volume is thin, so dollar volume is an under-count)
+  horizons: [1, 5, 20]         # trading days held. Entry open of day E, exit close of day E + h - 1
+  haircut_bps: [5, 15, 30]     # same ladder as the watcher. 5 is the placeholder assumption, 15 and 30 are stress levels. Not measured.
+  pass_haircut_bps: 30
+  cost_floor_bps: 30           # RULING 5: cost each side = the larger of this and half the MEASURED spread. No spread measured = this floor, tagged spread_unmeasured
+  fill_window_minutes: 30      # RULING 5: no IEX print within this many minutes of the 09:30 open on the entry day = UNFILLED
+  zac_extra_trading_days: 1    # ASSUMPTION: Zac sees the list the evening after the filing day and acts at the following open
+  min_price: 2.0               # under this at entry open = tagged illiquid_price
+  min_avg_dollar_volume: 100000   # PLACEHOLDER IEX-volume floor. Under it = tagged illiquid_volume
+  liquidity_lookback_days: 20
+  missing_best_case_over_pct: 5   # RULING 2: more than this percent of scored clusters MISSING = results labeled best case, survivor-biased
+  min_listing_age_trading_days: 90   # RULING 4: issuer within this many trading days of its first bar (a HEURISTIC for its first listed trade) is excluded. Not enough history to tell = UNKNOWN = FAIL
+  listing_history_calendar_days: 200 # how far before the first signal the scorer fetches bars so listing age can be measured
+  position_usd: 15             # RULING 9: dollar figures in the scorecard are shown next to every percent at this position size (25 percent of the $60 account)
+  min_counted_for_verdict: 30  # fewer counted clusters than this is no verdict
+  watcher_dir: D:\WKP\software\wkt-alpaca-watcher   # regime tags come from the watcher's regime module, read only
+
+primary_test:                  # RULING 7: the ONE main test, written before the first counted cluster. Every other slice is EXPLORATORY and cannot change a rule
+  registered_on: "2026-11-27"
+  population: officer_and_director_clusters      # the cluster rule (3 distinct officers or directors in 10 days) after every exclusion in the cluster and filing blocks
+  ledger: zac                                    # the Zac-can-act ledger (one trading day after the first possible entry)
+  horizon_trading_days: 5                        # PICK: 5 fits the locked 5-day time stop of the stock rules. 20 matches the literature but would need a locked-rule change from Zac
+  cost: larger_of_floor_and_measured_half_spread_each_side   # forward.cost_floor_bps and the logged bid and ask
+  metric: mean_excess_net_of_cost
+  benchmarks: both_spy_and_iwm                   # pass condition: the mean excess is positive against SPY AND against IWM
+  adoption: a_pass_is_a_request_to_zac_never_automatic
+
+isolation:                     # RULING 8: this scanner has its own ledger folder, its own config and its own hash. It is an input COLUMN for nobody
+  writes_to_watcher: false     # must stay false. The code refuses any write into the stock watcher folder or onto its output file names
+  feeds_watcher_score: false   # must stay false. The insider flag never enters the stock watcher 0 to 100 score, config, decisions or counts
+  adoption: a_pass_is_a_request_to_zac_for_a_locked_rule_change_never_automatic
+
+kill_criteria:                 # RULING 10: K1 to K7 from the devils-advocate ruling, as values the scorecard checks. Any one ends the forward test.
+  K1:                          # (no edge) at 30 counted clusters, the primary metric is zero or negative AND the median is zero or negative. Stop.
+    at_counted: 30
+    mean_at_or_below: 0.0      # read on the BINDING benchmark (the smaller of the mean excess against SPY and against IWM). Interpretation, see CHANGES file
+    median_at_or_below: 0.0
+  K2:                          # (untradable) at 30 qualifying clusters, more than 40 percent are UNFILLED on the Zac-can-act ledger. Stop: it cannot be traded at this account size.
+    at_qualifying: 30
+    unfilled_share_over: 0.40
+  K3:                          # (too expensive) at 30 filled clusters, median measured round-trip cost (spread plus haircut) is above 1 percent. Stop.
+    at_filled: 30
+    median_round_trip_cost_over: 0.01
+  K4:                          # (too rare) fewer than 30 counted clusters six months after the first counted day. Stop: too rare for this account to learn from.
+    months_after_first_counted_day: 6
+    counted_under: 30
+  K5:                          # (backfill fails) if the backfill is run and the primary metric is zero or negative net of costs under the point-in-time rules, no forward run starts. If the backfill is survivor-biased and still only marginal, same result.
+    backfill_run: false        # no backfill has been run: design stub only
+  K6:                          # (look-ahead found) qa-claims finds any counted entry before its signal time, or any cluster that used an amendment row before its acceptance. All counts void, fix, restart from zero.
+    automated_check: true
+  K7:                          # (tuning) the config is reset twice before 30 counted clusters. Stop and bring the list of resets to trading-director; that is tuning, not testing.
+    resets_at_or_over: 2
+    before_counted: 30
+
+freeze:                        # RULING 11: only clusters whose SIGNAL TIME is after this count. Earlier ones are recorded as PRE_FREEZE and never counted or scored.
+  counted_signals_from_et: "2026-11-28T00:00:00"   # nothing from the 2026-10-26 to 2026-11-26 OpenInsider pull can count. trading-director confirms or moves this at LIVE-OK (one value, counts restart)

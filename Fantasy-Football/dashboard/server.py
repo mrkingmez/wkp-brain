@@ -16,6 +16,7 @@ from pathlib import Path
 import config
 import dfs_entries
 import dfs_week
+import dfs_live
 
 STATIC_DIR = config.DASHBOARD_DIR / "static"
 
@@ -98,6 +99,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             except ValueError as e:
                 self._json(400, {"error": str(e)})
             return
+        if self.path.split("?")[0] == "/api/dfs/live":
+            self._json(200, self._live())
+            return
+        if self.path.split("?")[0] == "/api/scoreboard/day":
+            import scoreboard_day
+            self._json(200, scoreboard_day.panel())
+            return
         if self.path == "/api/dfs/lines":
             self._json(200, dfs_entries.lines())
             return
@@ -111,6 +119,26 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         except (OSError, ValueError):
             sw = None
         return {"weeks": ws, "default": ws[0] if ws else None, "state_week": sw, "root": str(dfs_week.DK_ROOT)}
+
+    def _live(self):
+        """dfs_live.json (written by poller.py) plus DK's official points from a standings export, if one is in the week folder."""
+        try:
+            d = json.loads(dfs_live.LIVE_PATH.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return {"error": "no dfs_live.json yet (the poller writes it while games are live)", "entries": []}
+        try:
+            wv = dfs_week.week_view(d.get("week"))
+            off = {e["entry_id"]: e.get("result") for e in wv.get("entries", [])}
+            for e in d.get("entries", []):
+                r = off.get(e["entry_id"])
+                if r:
+                    e["dk_points"], e["dk_rank"], e["dk_total"] = r.get("points"), r.get("rank"), r.get("total")
+                    e["dk_file"] = r.get("file")
+                    if r.get("points") is not None:
+                        e["diff"] = round(e["total"] - r["points"], 2)
+        except Exception as ex:
+            d.setdefault("notes", []).append(f"DK standings not merged: {ex}")
+        return d
 
     def _json(self, code, obj):
         body = json.dumps(obj).encode("utf-8")

@@ -42,7 +42,7 @@ kill. Launch detached, and treat a silent death with no error as memory pressure
 rather than a script bug.
 
 ## Voiceprints ENROLLED [2026-11-11] (the section below is history, 2026-08-06)
-Zac, Matt and Gabby enrolled in D:\WKPoiceprints\ from solo cams and labeled episodes (see CLAUDE.md and researchoiceprints6-11-11-voiceprints.md). Always pass --num-speakers. Match floor now 0.50, --map-seconds 60.
+Zac, Matt and Gabby enrolled in D:\WKP\voiceprints\ from solo cams and labeled episodes (see CLAUDE.md and research\voiceprints\2026-11-11-voiceprints.md). Always pass --num-speakers. Match floor now 0.50, --map-seconds 60.
 
 ## (old) Voiceprints not yet enrolled [2026-08-06]
 `voiceprints/` is empty, so every speaker returns as `Guest/Unknown [n]`.

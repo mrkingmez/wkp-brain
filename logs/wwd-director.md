@@ -459,3 +459,102 @@ Opus Clip shorts for EP 120 are scheduled on Zac's go (59 posts, log `WWD\opuscl
 **Actions taken:** Built tournament herald board look (cyan/white/gold check strips, banner tiles) with script make_akt_cards.py; end card matches VQ tile and ring layout; Next Up built for Percy Jackson S3 E1 (low confidence, hosts name no next title) and a generic version.
 **Deliverables:** P:\WWD Kit\Cards\End Card - A Knights Tale (.mov, (MP4).mp4, .png); Next Up - Percy Jackson Season 3 and Next Up - Next Review (.mov and (MP4).mp4)
 **Flags for Zac:** next title not confirmed; audio not heard; tile alignment needs a check in YouTube Studio.
+
+### 2026-11-21 13:40 - A Knight's Tale upload package from the FINAL transcript (mp4 staged)
+**Status:** DONE for the package, QUEUED for everything that needs the mp4 (no spend, no post, no git push, no Drive copy)
+**Trigger:** Zac via Jarvis: build the upload document set from `A knights Tale final.txt` now, wait on the render for the rest
+**Classification:** Review (first watch), final transcript supplied
+**Elapsed:** about 17 min wall (13:23 to 13:40 clock)
+**Actions taken:** read SOP-WWD-Review-Workflow, lessons, WWD CLAUDE.md, STANDARDS, final transcript (816 lines, 204 blocks), run sheet header, rights note, facts, Godzilla package (model). marketing-director ran the copy gates (copywriting, social-media, graphic-design, slop_check exit 0 on all, one hedge fixed). wwd-rights revised the rights note for the final cut (HIGH 0, MEDIUM 6). fact-research added final-cut claims to facts.md. I built chapters (14, each start checked against a transcript block by script), tags (460 chars, Python len), cards (3, all in inventory, all before 3:00), end screen, post sequence with 3 time options, shorts shortlist, flags. slop_check on the package exit 0 after one hedge fix, zero em or en dashes, docx rebuilt and read back. mp4: watcher saw size static from 13:31, ffprobe returned Permission denied (Premiere lock), so not probed or copied, shorts and audio NOT run.
+**Deliverables:** D:\WKP\WWD\reports\A-Knights-Tale-Upload-Package.md; D:\WKP Reports\WWD Upload Packages\A Knights Tale Upload Package\2026-11-21 - A Knights Tale Upload Package.docx; copy in L:\Winter Wolfs Den review show\Raw Footage\A Knights tale\; D:\WKP\WWD\reports\A-Knights-Tale-Copy-Final.md; A-Knights-Tale-Rights-Note.md (revised); D:\WKP\scratch\akt\facts.md
+**Flags for Zac:** say when the export finishes (steps staged in package Section 8); chapters and cards are transcript-based, recheck against the export; confirm intro video and sting tools (Veo, Firefly, ElevenLabs) and plan; 14 loose mp3s, 2 audioblocks files, 1 loose wav, Main Channel Theme have no license record; release date; inventory is stale (swap card 3 to newest FrostCast, verify tiles); on-air errors and the 00:29:46 patch (decide leave, trim or pin a correction, writing room first); pin and posting are Zac's. devils-advocate not run (standard format).
+
+### 2026-11-21 15:30 - A Knight's Tale post-export steps (AUDIO, 5 Shorts, loudness, rights, board)
+**Status:** DONE (Shorts copy doc: see agent-runs row, built by marketing-director)
+**Trigger:** Zac said A Knight's Tale is live and posts scheduled, export finished
+**Classification:** Review
+**Elapsed:** about 25 min
+**Actions taken:** ffprobe opens (1920x1080 30 fps h264/aac, 36:36.7). AUDIO mp3 192k 2196.67 s. ebur128 -21.9 LUFS, true peak +0.1 dBFS, no black or freeze at tail. build_short analyze (639 gaps) and word_times; 5 shorts rendered (31, 47.5, 49, 69.5, 28.7 s), head silence 0.05 to 0.11, first and last words checked with check_clip, 15 frames and 5 covers viewed. Rights re-check appended to the rights note. VIDEO-LIBRARY md and csv and PROJECT-BOARD updated. Nothing scheduled, posted, spent, pushed or copied to Drive.
+**Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\A Knights tale\AUDIO\A Knights Tale.mp3; ...\shorts\clip1 to clip5 (.mp4 plus _cover.png); WWD\reports\A-Knights-Tale-Shorts-Copy.md; rights note appended
+**Flags for Zac:** loudness is 7.9 LU under -14 and peaks over 0 dBFS (live already); ear-check clip 5 caption "RE-BARE ASS" (Whisper reading, Premiere says "rebirth"); clip 1 hook uses "legit" and covers use Columbia stills with baked-in copyright lines (clip 1 and 4); YouTube altered-content box state NOT KNOWN; YouTube ID NOT KNOWN; Shorts scheduling plan still needs Zac's go.
+
+### 2026-11-22 20:30 - [wwd-vfx] Leveling job
+**Status:** DONE
+**Trigger:** SOP-Agent-Leveling wave 1 launch (SOP\leveling\wwd-vfx.md)
+**Actions taken:** craft brief (6 retrieved sources), gap audit, drill 1 built and graded PASS 6 of 7 (qa-director), 4 pre-flight checklists, failure entries opened. $0, 0 credits.
+**Deliverables:** D:\WKP\memory\agents\briefs\wwd-vfx-craft-brief.md and wwd-vfx-gap-audit.md; D:\WKP\SOP\leveling\drills\wwd-vfx-drill-1*.md; D:\WKP\SOP\leveling\preflight\wwd-vfx-*.md; D:\WKP\memory\agents\failures\wwd-vfx.md
+**Flags for Zac:** Vision Quest finale end card has a title on a zone label (v2 offered, not built); audio never heard.
+
+### 2026-11-23 07:30 - [wwd-pictures] Percy Jackson S3 eps 1 and 2 initial picture pull
+**Status:** DONE for the pull, Step 8 placement PENDING (no transcript)
+**Trigger:** wwd-director handoff, SOP-WWD-Review-Workflow steps 0 and 2b
+**Actions taken:** Disney+ press kit pull (captioned), TMDb S3 stills cross-check, dup check, 19 PNGs to USE, tags, urls, report. No spend, no post, no push.
+**Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\Percey Jackson Season 3\EP 1 and 2\USE\ (19 PNG plus pictures-tags.md); D:\WKP\WWD\reports\Percy-Jackson-S3-E1-2-Picture-Pull.md; D:\WKP\scratch\percy-s3-e1-2_urls.txt; picture_dup_check.py in the photo-pull skill scripts
+**Flags:** title is The Titan's Curse not Sea of Monsters; IMDb blocked; no Atlas, Chiron, Clarisse, Mr. D, Young Annabeth pictures; Luke still has no confirmed episode; scratch originals in D:\WKP\scratch\percy-s3\ not deleted because the delete was denied by the permission system (Jarvis may clear that folder).
+
+### 2026-11-23 - Percy Jackson S3 Eps 1 and 2 initial pull
+**Status:** DONE (initial pull; transcript steps QUEUED)
+**Trigger:** Zac: initial pull of stills and clips before the transcript
+**Classification:** Review (intake pull)
+**Actions taken:** wwd-pictures: 19 PNG in USE (1 poster, 18 stills), check line passed. wwd-clip-scout: 4 official Disney+ videos, 5 clips 36.59 s, frame-verified. Title corrected: S3 is The Titan's Curse, not Sea of Monsters.
+**Deliverables:** WWD\reports\Percy-Jackson-S3-E1-2-Initial-Pull-Report.md, D:\WKP Reports\WWD Pull Reports\2026-11-23 - Percy Jackson S3 Eps 1 and 2 Initial Pull Report.docx
+**Flags for Zac:** BLOCKED: IMDb/TMDb API/Fandom/TV Insider walls; scratch delete denied (D:\WKP\scratch\percy-s3\). Disney+ corner marks on all clips (wwd-rights). Transcript needed for the rest. No calendar events requested. fact-research to confirm the title before the package.
+
+### 2026-11-23 - Percy Jackson S3 Eps 1 and 2 picture fit and timeline placements (step 4)
+**Status:** DONE (placements built; Atlas, S3 Oracle, sea cow, Young Annabeth still missing)
+**Trigger:** wwd-director handoff after Zac's edited-cut transcript (31:58)
+**Actions taken:** wwd-pictures read all 972 lines, pulled 10 gap fills from the Disney press kit (S1 guest-star gallery for Chiron, Clarisse, Mr. D, Hermes, Hades, Ares, Zeus, Poseidon, Luke; S3 Artemis portrait), converted to 1920x1080 RGBA, tags extended, dup check 406 pairs no twins, built 29 placements plus 5 CAM stops. No spend, no post, no push.
+**Deliverables:** L:\Winter Wolfs Den review show\Raw Footage\Percey Jackson\Season 3\EP 1 and 2\USE\ (29 PNG, pictures-tags.md, timeline-placements.md); D:\WKP\WWD\reports\Percy-Jackson-S3-E1-2-Picture-Fit.md
+**Flags:** S1 stills stand in for S3 characters (director may strike); poster held 7 s of a 14 s intro; in-times are estimates; JARVIS BROWSER PULL LIST at the end of the report (Atlas, Oracle, sea cow, Young Annabeth, S3 frames); delete of 10 raw jpgs in D:\WKP\scratch\percy-s3b\raw\ was denied by the permission layer, Jarvis may clear it; wwd-rights to log Disney press-kit images.
+
+### 2026-11-23 - Percy Jackson S3 Eps 1 and 2 Edit Run Sheet v1 (step 4, wwd-run-sheet)
+**Status:** DONE, lint PASS, waiting on wwd-director proofread
+**Trigger:** wwd-director handoff, Zac's edited-cut transcript (ends 00:31:58:05)
+**Actions taken:** built the sheet from the transcript stamps (30 fps, all search phrases counted once), kept the one clip and spared the dance-floor still on its line, trimmed holds before flagged claims, 13 of 28 picture stops designed with paired Adobe sounds, one gag cue, spoiler and like-and-subscribe markers, generic Next Up card, end card flagged NEEDS WWD-VFX. Patched lint_run_sheet.py so named picture files get the 7 s check.
+**Deliverables:** D:\WKP\WWD\reports\Percy-Jackson-S3-E1-2-Edit-Run-Sheet.md, D:\WKP Reports\Asset Placement Run Sheets\2026-11-23 - Percy Jackson S3 Eps 1 and 2 Edit Run Sheet.docx
+**Flags:** end card for this show missing (WWD-VFX); intro and outro music not chosen (music); facts file Hades and SEALs timecodes start earlier than it says (22:20:16 and 26:41:12); 20 gaps over 25 s, fills need Jarvis's browser pull; cam sync not confirmed, KingZ cam has a hole at raw 05:40 to 13:33; no rights note found; stray .claude folder in the movie folder.
+
+### 2026-11-23 20:45 - Percy Jackson S3 Eps 1 and 2 post-transcript chain
+**Status:** DONE (prep). Waits on Zac's edit and export.
+**Trigger:** Zac via Jarvis: edited-cut transcript in (31:58), folder moved to L:\...\Raw Footage\Percey Jackson\Season 3\EP 1 and 2\
+**Classification:** Review (transcript supplied)
+**Elapsed:** about 55 min wall
+**Actions taken:** paths updated in 3 reports, board, TASKS. Speakers decided from the text (Speaker 1 = Winter Wolf: "The King and I", addresses "King"; Speaker 2 = KingZ; Speakers 3 and 4 are one-word glitches). The .mp4 in the folder is 48:25 raw, not the cut, never used for timing. wwd-pictures: 29 pictures, 5 cam stops. wwd-clip-scout: 1 clip 7.00 s (not enough usable shots). fact-research: 69 rows. wwd-run-sheet: 40 stops, lint PASS (lint script edited to check named files, reviewed by me, backward compatible). assistant-editor: 17 sounds pulled. wwd-rights: HIGH 0, MEDIUM 3. wwd-vfx: end card built free. Next Up = generic card.
+**Deliverables:** WWD\reports\Percy-Jackson-S3-E1-2-{Edit-Run-Sheet,Picture-Fit,Clip-Placements,Facts,Sound-Pull,Rights-Note}.md; docx in D:\WKP Reports\Asset Placement Run Sheets\, WWD Fact Checks\, WWD Rights Notes\; P:\WWD Kit\Percy Jackson S3 (The Titan's Curse)\Sounds\; P:\WWD Kit\Cards\End Card - Percy Jackson S3 (MP4).mp4
+**Flags for Zac:** see hand-back. Blocked: Atlas, Oracle, sea cow, Chiron/Clarisse/Mr D S3 pictures (Jarvis browser pull list in Picture-Fit report); scratch deletes denied (D:\WKP\scratch\percy-s3 and percy-s3b\raw). Devils-advocate step not run (prep job, no public copy).
+
+### 2026-11-23 21:15 - [wwd-vfx] Percy Jackson intro redesign "Trident Tide"
+**Status:** DONE (free build), awaiting Zac's eyes and ears
+**Trigger:** Zac: recreate the Season 1 PJ intro, much better; named Final\Percy Jackson Ep 4 recap and review.mp4 as the source.
+**Actions taken:** Analyzed Ep 4 intro (frames, ffprobe, loudness -19.6 LUFS first 12 s, speech only, no sound design); checked Ep 1&2 and Ep 3 finals (logo burn sting 0 to 3.4 s, same underwater title); found Seabed UnderWater template .aep (license NOT KNOWN, not opened). Built 6.0 s 1920x1080 30 fps intro in code, mixed owned Adobe sounds, frame-checked the mp4, fixed a blown impact flash and re-rendered. Wrote AE build guide, Firefly cards (lint PASS), docx.
+**Deliverables:** P:\WWD Kit\Percy Jackson Intro\ (mp4, mov, plate png, trident png, sound mix wav); D:\WKP\WWD\reports\PJ-Intro-Redesign-2026-11-23.md; D:\WKP\WWD\reports\PJ-Intro-Firefly-Prompts-2026-11-23.md; D:\WKP Reports\WWD Intro Redesign\2026-11-23 - WWD Intro Redesign.docx; script make_pj_intro_new.py
+**Flags for Zac:** audio not heard by anyone; AE guide not run in AE; Seabed template license unknown; 30 fps vs the 59.94 finals; Firefly credit cost NOT RETRIEVED; no qa-director pass yet.
+
+### 2026-11-24 - FrostCast Tuesday Intel (window Nov 19-24)
+**Status:** DONE
+**Trigger:** Zac: run Tuesday Intel by hand from the jsx tool, cross-check last 30 days, PDF.
+**Classification:** Status/prep (internal show prep)
+**Actions taken:** stage 1 news (15 stories, 15 candidates dropped), stage 2 pulse (6 clusters, RSS views), stage 3 sparks (7, random draw, recent topics avoided), last30days cross-check, fact-research check; fixed Stewart death date, Carroll cause, Hunger Games record claim, Rings renewal, Godzilla gross; reranked by tier.
+**Deliverables:** D:\WKP Reports\FrostCast Tuesday Intel\2026-11-24 - FrostCast Tuesday Intel.pdf; D:\WKP\WWD\reports\FrostCast-Tuesday-Intel-2026-11-24.md
+**Flags for Zac:** nothing sent or posted; Bond-girl, Red Dead and Doctor Who items are labeled rumor; Harry Potter Christmas Day 2026 confirmed (old 2027 claim stale).
+
+### 2026-11-25 23:10 - FrostCast EP 122 chain (steps 1-5 minus Messenger and Opus, plus library and board)
+**Status:** DONE (Messenger send and Opus shorts left to main session by order)
+**Trigger:** Zac says EP 122 is downloaded, run chain steps 1 to 5 and 8
+**Classification:** FrostCast
+**Elapsed:** about 25 min (transcription about 5 min on GPU)
+**Actions taken:** found mp4 (74:08, export stable, h264 plus aac); extracted wav in scratch\ep122; transcribe.py --num-speakers 3 detached on GPU; result is Zac and Matt only (Gabby absent, 4 stray Guest/Unknown lines); chapters (14); audio cut doc md plus docx; VIDEO-LIBRARY csv and md row 122; PROJECT-BOARD FrostCast table.
+**Deliverables:** L:\Winter Wolfs Den review show\Frost-Cast\EP 122\ (transcript .txt, EP122-chapters.txt); L:\Winter Wolfs Den review show\Audio\podcast Frostcast audio files\FrostCast ep 122 2026-11-25.md and .docx; D:\WKP Reports\FrostCast\2026-11-25 - FrostCast EP122 Audio Cut.docx
+**Flags for Zac:** DELIVER TRANSCRIPT TO MATT VIA MESSENGER (main session); Opus shorts manual; on-air numbers unverified (cut doc Flag 6); YouTube ID NOT KNOWN; Zac said on air the next 30 days scale back, EP 123 date not confirmed.
+
+### 2026-11-27 - [wwd-rights] Percy Jackson S3 E1-2 rights refresh (v7)
+Note revised in place: WWD\reports\Percy-Jackson-S3-E1-2-Rights-Note.md. HIGH 0, MEDIUM 5, LOW-MEDIUM 3, LOW 1, FLAG 3, PASS 4. Top flags: Tide of Heroes origin NOT KNOWN (blocks upload), Veo intro needs AI box and plan check, subscribe overlay needs CC BY 3.0 credit lines. Attorney question WWD-2026-11-27-01 queued.
+
+### 2026-11-27 17:00 - Percy Jackson S3 Eps 1 and 2 upload package
+**Status:** DONE (package built, qa-director ordered; upload blocked on Zac's music source answer)
+**Trigger:** Zac: "I need the upload package for Percy Jackson."
+**Classification:** Review (edited-cut transcript supplied)
+**Elapsed:** about 70 min wall
+**Actions taken:** found the video is the team-built Assembly (v7, then v8 after a 1.000 s trim of a leftover wrong-claim echo); raw 48:25 mp4 unused; mapped transcript chapters to the assembly plan and audio-checked 13 of 14 on v7 with faster-whisper; marketing-director (copywriting, social-media, graphic-design) wrote copy, slop_check exit 0; fact-research refresh (3 sources for episode titles, cast pairs, Episodes 3 and 4 titles); wwd-rights refresh on v7 (HIGH 0, MEDIUM 5); assistant-editor v8 render; marketing-director pinned correction draft; I assembled the package, tags 454 chars by len(), 5 hashtags, slop_check exit 0, docx built and copied.
+**Deliverables:** WWDeports\Percy-Jackson-S3-E1-2-Upload-Package.md, Copy-Final.md, Facts-Refresh-2026-11-27.md, Pinned-Correction-DRAFT.md, Assembly-v8-Cut-List.md; D:\WKP Reports\WWD Upload Packages\Percy Jackson S3 E1 and 2 Upload Package6-11-27 - Percy Jackson S3 E1 and 2 Upload Package.docx; copy in the movie folder.
+**Flags for Zac:** Tide of Heroes source NOT KNOWN (blocks upload); AI box and Adobe plan for the Veo intro; CC BY credit block for the subscribe overlay; clip C01 corner mark (attorney question WWD-2026-11-27-01); release date; Next Up title unknown (generic card in cut); card and end-tile IDs NOT KNOWN; shorts and AUDIO not built. devils-advocate not run (standard format). No Drive copy, nothing posted or spent.

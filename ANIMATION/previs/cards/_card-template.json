@@ -1,0 +1,25 @@
+{
+ "_help": "Copy this file, rename to <project>-<shot>-v1.json. Metres. +Y is away from the front camera, +X is to the right of it. Compass facing: 0 faces +Y, 90 faces +X, 180 faces -Y, 270 faces -X. Hands are the CHARACTER'S own: BLUE left, RED right. Delete this _help key if you like, it is ignored.",
+ "id": "previs-template",
+ "title": "Template shot, two people and a prop",
+ "ratio": "16:9",
+ "res_long": 1280,
+ "action": "One sentence. One body, one object, one action.",
+ "location": {
+   "size": [6, 5, 2.8], "center": [0, 1],
+   "walls": ["back", "left"],
+   "blocks": [{"name": "table", "loc": [1.5, 2.0, 0], "size": [1.2, 0.7, 0.8], "rot_z_deg": 0, "on_ground": true}]},
+ "props": [
+   {"name": "cup", "type": "cylinder", "size": [0.08, 0.08, 0.10], "loc": [-0.2, -0.05, 1.05],
+    "grips": {"center": [0, 0, 0]}}],
+ "characters": [
+   {"name": "A", "height": 1.75, "build": "average", "pos": [-0.5, 0], "facing_to": "B", "pose": "stand",
+    "right_hand": {"holds": {"prop": "cup", "at": "center"}}},
+   {"name": "B", "height": 1.62, "build": "lean", "pos": [0.5, 0.0], "facing_deg": 270, "pose": "stand",
+    "left_hand": {"reach": [0.3, 0.0, 1.1]}}],
+ "light": {"azimuth_deg": 60, "elevation_deg": 40},
+ "camera": {"azimuth_deg": 0, "distance": 4.0, "height": 1.5, "target": "centroid", "lens_mm": 35},
+ "expect": [
+   {"char": "A", "head_in_frame": true, "feet_in_frame": true, "note": "both full-length in frame"},
+   {"char": "A", "hand": "R", "holds": "cup:center", "visible_min": 40, "note": "A's RIGHT hand holds the cup and it is visible"}]
+}

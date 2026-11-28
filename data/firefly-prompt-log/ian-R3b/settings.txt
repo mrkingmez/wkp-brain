@@ -1,0 +1,45 @@
+SETTINGS FOR ONE ATTEMPT (attempt 1 prepared 2026-11-22, converted to SETTINGS-TEMPLATE.txt format; NOT RUN)
+Agent fills AGENT block. Zac fills PANEL and RESULT. Write NOT SHOWN if the panel does not show a field. Do not delete fields.
+Standard: D:\WKP\data\firefly-prompt-guide\STANDARD.md
+
+--- AGENT BLOCK ---
+SHOT: R3b (hand-off still, 9:16)
+ATTEMPT: 1
+DATE: 2026-11-22 (prepared), run date: ______
+ENGINE (exact menu name): Firefly Image, newest Adobe model the menu calls commercially safe (name NOT VERIFIED, write it in the PANEL block)
+TIER (Fast / Lite / Standard / n.a.): n.a.
+RESOLUTION: panel default
+ASPECT RATIO: 9:16
+FPS: n.a. (still)
+DURATION: n.a. (still)
+AUDIO (on / off): n.a.
+PANEL MODE (text / frames / reference): reference (Composition)
+START FRAME FILE: n.a. (image)
+START FRAME HOW MADE (prompt id or Photoshop steps): n.a.
+END FRAME FILE (or none): none
+REFERENCE FILES (file, role, strength) (or none): R3.png, role Composition, strength mid about 50 percent (UNTESTED)
+CAMERA PRESETS TO SET IN PANEL (shot size, angle, motion) (or none): none
+NEGATIVE FIELD TEXT (only if the panel has the box) (or none): see prompt.txt NEGATIVE FIELD, only if the box exists
+PROMPT FILE: prompt.txt
+WORD COUNT: see lint
+LINT (PASS / WARN with reason): run prompt_lint.py before clicking (main prompt only)
+PREFLIGHT (13 of 13 or list the open item): open item: panel facts below
+ONE CHANGE FROM LAST ATTEMPT (or "first attempt"): first attempt
+REDESIGN AFTER ATTEMPT 3 (one line): see the card in Ian-Trailer-Continuity-Chain-Prompts-2026-11-21.md
+PANEL FACTS ZAC CHECKS (end slot, reference slot, seed, negative box): reference slot and strength slider (Adobe's tutorial says they exist), negative box, seed
+
+--- PANEL BLOCK (Zac, at the screen) ---
+ENGINE AS SHOWN: ______
+TIER AS SHOWN: ______
+SEED SHOWN: ______
+CREDIT READOUT BEFORE CLICK (copy the number exactly as shown on the Generate button, never estimate): ______
+END SLOT PRESENT (yes / no): n.a.
+REFERENCE SLOT PRESENT (yes / no): ______
+NEGATIVE BOX PRESENT (yes / no): ______
+
+--- RESULT BLOCK (Zac, after) ---
+RESULT (kept / failed): ______
+FAILURE CODES (F or D codes from LESSONS and AUDIT, or a plain sentence): ______
+OUTPUT FILE NAME: ______
+CREDITS AFTER (account page, optional): ______
+AI-GENERATED LABEL NEEDED (yes for anything public): yes

@@ -1,0 +1,37 @@
+{
+ "id": "ian-r3-handoff-sideon-v5",
+ "title": "Ian trailer R3 v4: BOY hands wrench to OLDER MAN lying on a creeper under a low car; floor-level side-on camera",
+ "ratio": "16:9",
+ "res_long": 1280,
+ "action": "The older man lies on his back on a creeper under a low car. Only his open left hand and forearm reach out from beneath the rocker panel, palm up, from camera left. The boy sits on the floor at camera right and his one hand holds the wrench by the handle, jaw first toward the palm. A clear gap of floor-level air between jaw and palm. The car sits on the ground, nobody stands.",
+ "location": {
+  "size": [5, 5.5, 2.2], "center": [0, 2.4],
+  "walls": ["back"],
+  "blocks": [
+   {"name": "rocker_sill", "loc": [-0.20, 2.6, 0.17], "size": [0.20, 4.4, 0.33], "on_ground": true},
+   {"name": "underbody_floor", "loc": [-1.30, 2.6, 0.36], "size": [2.0, 4.4, 1.0], "on_ground": true},
+   {"name": "front_wheel_tire", "loc": [-0.02, 1.0, 0.30], "size": [0.60, 0.60, 0.22], "on_ground": false}
+  ]
+ },
+ "props": [
+  {"name": "wrench", "type": "box", "size": [0.26, 0.012, 0.035], "loc": [0.46, 2.50, 0.14],
+   "grips": {"handle": [0.07, 0, 0]}, "end_marker": [-0.13, 0, 0]}
+ ],
+ "characters": [
+  {"name": "Older", "height": 1.74, "build": "stocky", "pose": "lie", "pos": [-0.80, 2.0], "head_dir_deg": 0, "pelvis_z": 0.12,
+   "left_hand": {"reach": [0.10, 2.50, 0.13]}},
+  {"name": "Boy", "height": 1.30, "build": "lean", "pose": "sit", "seat_height": 0.0, "pos": [0.85, 2.66], "facing_deg": 270,
+   "left_hand": {"holds": {"prop": "wrench", "at": "handle"}}, "right_hand": {"on": [1.15, 2.95, 0.06]}}
+ ],
+ "light": {"azimuth_deg": 40, "elevation_deg": 70},
+ "camera": {"azimuth_deg": 0, "distance": 2.6, "height": 0.12, "target": [0.18, 2.5, 0.14], "lens_mm": 85},
+ "expect": [
+  {"char": "Older", "hand": "L", "visible_min": 60, "screen_side": "screen-left", "note": "older man's open palm enters from camera left"},
+  {"char": "Boy", "hand": "L", "holds": "wrench:handle", "visible_min": 50, "screen_side": "screen-right", "note": "boy's hand carries the wrench from camera right"},
+  {"char": "Older", "hand": "R", "visible_max": 10, "note": "only two hands: older man's free hand out of frame"},
+  {"char": "Boy", "hand": "R", "visible_max": 10, "note": "only two hands: boy's free hand out of frame"},
+  {"char": "Older", "head_in_frame": false, "note": "man's face not in frame"},
+  {"char": "Older", "head_visible_max": 0, "note": "man's face not seen through the gap under the car"},
+  {"char": "Boy", "head_in_frame": false, "note": "boy's face not in frame"}
+ ]
+}

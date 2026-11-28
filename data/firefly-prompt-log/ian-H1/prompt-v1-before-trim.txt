@@ -1,0 +1,5 @@
+MAIN PROMPT (attempt 1, NOT RUN)
+Photograph at golden hour, a low sun behind three people on a front walk. A young soldier in a plain tan desert camouflage uniform with a clean chest, seen from behind in three-quarter back view, short dark hair, an olive duffel bag at his feet. His mother, late forties, in a floral blouse, holds him close, eyes closed, face in profile. His father, in his fifties, in a faded blue denim shirt with rolled sleeves, rests a hand on the back of the soldier's head. Behind them a small white one-story house with a covered porch, a mailbox, and a small American flag with thirteen stripes and a blue canton of stars hanging from a porch post. The three people fill the middle third of the frame. Warm amber grade, fine film grain, shallow depth of field, 35mm, widescreen.
+
+NEGATIVE FIELD (separate box, never in the main prompt)
+text, letters, signage, name tape, unit patch, rank insignia, medals, weapon, rifle, helmet, children, kids, baby, toys, bicycle, extra people, crowd, young woman, extra fingers, deformed hands, extra limbs, cartoon, illustration, 3D render look, lens flare, plastic skin, modern cars, smartphones

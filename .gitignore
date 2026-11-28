@@ -48,3 +48,9 @@ research/animation/transcripts/
 
 # friend DFS projections (not ours to publish)
 data/dfs-friend/
+
+# added 2026-11-27: never commit installed packages or runtime logs
+**/node_modules/
+Fantasy-Football/dashboard/*.err
+Fantasy-Football/dashboard/*.out
+Fantasy-Football/dashboard/poller.pid

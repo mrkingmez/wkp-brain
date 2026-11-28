@@ -11,3 +11,4 @@ Format: `- YYYY-MM-DD | lesson, one imperative sentence | evidence: file, log li
 - 2026-11-19 | Promo copy leads with the hook and never gives the verdict the video exists to give | evidence: root CLAUDE.md review gate 3 | NEW
 
 ## Lessons
+- 2026-11-26 | STANDING RULE: when a tool or source fails, try the other connected route (other browser, other connection, other source) before escalating; only Zac's money and public posting are hard stops; never spoof headers or user agents to get past a block (say it plainly in the report if no other route exists) | evidence: Zac 2026-11-26, wwd-pictures PJ S3 follow-up (no browser step ran, agent-runs.md 2026-11-26) | NEW

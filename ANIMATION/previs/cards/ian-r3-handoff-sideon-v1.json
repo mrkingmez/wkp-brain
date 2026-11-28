@@ -1,0 +1,32 @@
+{
+ "id": "ian-r3-handoff-sideon-v1",
+ "title": "Ian trailer R3 v3: wrench hand-off, side-on, two forearms, one wrench horizontal, gap between",
+ "ratio": "16:9",
+ "res_long": 1280,
+ "action": "The older man's right hand, from camera left, holds one wrench roughly horizontal by the handle with the open jaw pointing at an open palm that reaches in from camera right. A clear gap of air between wrench jaw and palm.",
+ "location": {
+  "size": [4, 3, 2.2], "center": [0, 0.8],
+  "walls": ["back"],
+  "blocks": [{"name": "car_underside", "loc": [0, 0.9, 1.45], "size": [3.6, 2.0, 0.25], "on_ground": false}]
+ },
+ "props": [
+  {"name": "wrench", "type": "box", "size": [0.26, 0.012, 0.035], "loc": [0, 0, 1.0], "tilt_deg": [0, 8, 0],
+   "grips": {"handle": [-0.07, 0, 0]}, "end_marker": [0.13, 0, 0]}
+ ],
+ "characters": [
+  {"name": "Older", "height": 1.74, "build": "stocky", "pos": [-0.55, 0.1], "facing_deg": 90,
+   "right_hand": {"holds": {"prop": "wrench", "at": "handle"}}},
+  {"name": "Boy", "height": 1.75, "build": "lean", "pos": [0.55, 0.1], "facing_deg": 270,
+   "left_hand": {"reach": [0.23, -0.02, 1.0]}}
+ ],
+ "light": {"azimuth_deg": 40, "elevation_deg": 70},
+ "camera": {"azimuth_deg": 0, "distance": 0.75, "height": 1.0, "target": [0, 0, 1.0], "lens_mm": 35},
+ "expect": [
+  {"char": "Older", "hand": "R", "holds": "wrench:handle", "visible_min": 60, "screen_side": "screen-left", "note": "older hand holds the wrench, enters from camera left"},
+  {"char": "Boy", "hand": "L", "visible_min": 60, "screen_side": "screen-right", "note": "receiving open palm enters from camera right"},
+  {"char": "Older", "hand": "L", "visible_max": 10, "note": "only two hands: older man's free hand out of frame"},
+  {"char": "Boy", "hand": "R", "visible_max": 10, "note": "only two hands: boy's free hand out of frame"},
+  {"char": "Older", "head_in_frame": false, "note": "no faces"},
+  {"char": "Boy", "head_in_frame": false, "note": "no faces"}
+ ]
+}

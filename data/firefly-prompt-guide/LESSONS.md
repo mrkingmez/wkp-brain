@@ -2,34 +2,138 @@
 
 Started 2026-11-18. Rule: before writing any Firefly or video-model prompt, read `QUICK-CARD.md` and this file. After any generation Zac reports, add a row. A lesson that repeats three times moves into the guide as a maker or community tip with its date. A lesson that contradicts a [U] tip in the guide strikes that tip.
 
-How to fill a row: one row per fix attempt that taught something, including the ones that failed. Link the folder in `D:\WKP\data\firefly-prompt-log\` (one subfolder per clip, see its README).
+Rewritten 2026-11-22 by graphic-design after reading all 18 clips and notes Zac dropped in `D:\WKP\data\firefly-prompt-log\` (5 joust clips, 13 garage clips, plus the four Ian still folders, which were NOT RUN). I pulled contact sheets with ffmpeg (1 frame per second, scratch copies in `D:\WKP\scratch\ffl\`) and looked at every clip. Zac's notes are data. Where the frames and the note disagree I say so.
 
-Columns: Date | Project | Shot | Engine and settings | What went wrong | Fix that worked | Source attempt folder (in firefly-prompt-log)
+Tags: PROVEN = seen on the clips at least twice in this log. PROPOSED = my fix, not yet tested. MAKER, COMMUNITY, UNTESTED as in the guide.
+
+## What the evidence is, and what it is not
+
+- Every clip is 8.0 s, 24 fps. The joust clips are 1280x720, the garage clips 1920x1080. ffprobe tags every file `encoder=Google`, so all 18 are the Veo family. The tier (3.1, Fast, Lite) is NOT recorded for the garage clips. Zac's joust notes say Veo 3.1 Fast.
+- No settings.txt exists for any of the 18 clips: no model tier, no seed, no credit readout, no start-frame flag. Prompts for garage clips 4 and 5 say "exactly as in the first frame", so a start frame was used there. For the rest it is NOT KNOWN. This is the biggest gap: without it a lesson cannot say whether the start frame or the words caused a miss.
+- The folder `Joust opener\Video 1` is mislabeled. Its notes text and prompt are the dust-covered garage prompt, but the mp4 is a colosseum joust clip (Zac's note about the knight riding backward and slow strike matches a joust clip). I treat the mp4 as joust attempt 1 and the text as misfiled.
+- The big joust text file holds six later prompts with Zac's notes under them. No mp4s were saved for those six (only 5 joust clips exist, all from the earlier prompts). Which note belongs to which prompt is partly ambiguous. Zac says he spent about 2,000 credits on this one sting (his figure, not retrieved from the account).
+- The joust prompts after the first used a start frame (the text says "from the start frame"). The first frame of joust clips 1 and 5 is the flat logo on a black background.
+
+## Failure patterns (the ledger)
+
+| # | Failure | Where seen (clip) | Engine and settings | Likely cause in the prompt | Fix | Status |
+|---|---|---|---|---|---|---|
+| F1 | A thing named in the prompt gets drawn, even when the prompt says it is unwanted. "Spear" drawn after the word "spear" (joust run 6, Zac's own note). "Not a spear and not a sharp point" in joust 4 still produced a spear-type tip. "He does not get up and does not slide out" (garage 4): he sat up. "NOTHING IN HIS HAND" (garage 7, 8): wrench in hand anyway | Joust 4, joust run 6, garage 4, 7, 8 | Veo family, 8 s | The model primes on the noun or the action, the negation is weak. Matches Google's own "avoid no and don't" guidance [MAKER S1] | Write only the picture you want. Never name the unwanted object or the unwanted action in the main prompt. Say "his arms rest flat on the creeper" instead of "does not get up". Negative field only for global things (subtitles, music) | PROVEN (5 clips). Promoted to QUICK-CARD 2026-11-22 |
+| F2 | A lance renders as a spear, a trident, or a striped hook. Joust 2 and 3 show a leaf-shaped steel blade, joust 4 a curled striped hoop, joust 5 a pointed spearhead | Joust 2, 3, 4, 5 | Veo family, 720p | The word "lance" and "three-pronged coronal tip" are weak visual anchors. "Coronal" is a rare word and read as a loop | PROPOSED: describe only the visible shape: "a long wooden pole as thick as a forearm, painted red and white in spiral stripes, ending in a wide round wooden cap the size of a dinner plate". Better still PROPOSED: make the start frame (image model) with the correct lance already in the gauntlet and animate that | UNTESTED fix |
+| F3 | A flat logo on a black background as the start frame is shown as a title card for about one second, then the model cuts to a new scene and redraws the logo (new wolf, different lettering, "W INTER" spacing, stone relief) | Joust 1, joust 5 (first frame on black) | Veo family, start frame | The start frame is treated as a literal first frame. A logo with no scene around it gives the model nothing to animate, so it invents the world and the emblem | PROPOSED: composite the real logo onto the shield in Photoshop first and use that as the start frame. Joust 2, 3, 4 kept the logo recognizable because it already sat on the shield. Never rely on the model to redraw a logo. Final logo can be pasted over the clip in Premiere | Partly PROVEN (3 clips with logo on shield kept it, 2 with logo on black lost it) |
+| F4 | The logo shield becomes a flat sticker. In joust 3 and 4 the shield took the logo's outline and broke into jigsaw pieces | Joust 3, 4 | Veo family | Logo with a cutout edge reads as the object itself | PROPOSED: start frame shield is a rectangular heraldic wooden shield with the logo painted inside it | UNTESTED fix |
+| F5 | Camera direction and geometry ignored. Asked for a first-person ride, got a knight charging from behind the shield (joust 2), a third-person rider (joust 1), a rider riding straight down the middle instead of at a left-third shield (joust run 5) | Joust 1, 2, run 5 | Veo family | Left third and right third are not obeyed from text. Zac's joust note already says: text cannot control left and right. Confirmed again | Put the composition in the start frame (shield in the left third, lance tip already aimed). Keep prompt to the motion only | PROVEN |
+| F6 | Timing ignored or bent. Hit "at 4 seconds" came out as a slow stop then a slow strike. "No pause, no hesitation, constant accelerating speed" did not hold. Zac: "the person stopping and attacking very, very slowly" | Joust runs 1 to 6 (clips not saved) | Veo family | A fixed impact time inside an 8 s clip plus "accelerating" gives the model two goals. It also never saw a fast jousting hit as a normal event | PROPOSED: two short shots cut in Premiere, ride-in and strike, with the crack sound on the cut (already in Zac's notes). Strike shot starts with the shield large in frame so the model only has to show the impact | UNTESTED fix |
+| F7 | Unwanted extras appear and vanish: a second spear, a target at the shield center, another rider "on my side", a blank white license plate on the Mustang | Joust runs 4 to 6, garage 12 | Veo family | Adding "NO ONE else" in caps names the extra rider. The model reads the noun | Same as F1. Describe the empty lane as a lane: "a clear dirt lane, one rider" | PROVEN |
+| F8 | The object in the hand vanishes or turns into a different tool when the hand moves or another hand enters | Garage 1 (wrench to hands on stomach), 4, 7, 8, 9, 10 | Veo family, 1080p | Object permanence is weak in Veo. Several moves plus a second object makes it worse | One object in the clip. Never hand an object to another person in one generation. Make two clips: hand reaches out holding it, then a cut, then a hand takes it. Or use a still pair with a cross dissolve | PROVEN (6 clips) |
+| F9 | An implied second person triggers a person AND a duplicate object. "As if offering it to someone shorter beside him" produced a visible hand offering the same wrench (garage 6, then 7, 8) | Garage 6, 7, 8, 9, 10 | Veo family | "As if ... someone" asks for the someone. Both hands then hold identical wrenches and "touch" instead of hand over | Do not imply a person who should not be in frame. If a handoff is needed, make the receiving object a different color or shape (red-handled screwdriver, not a second wrench) | PROVEN |
+| F10 | Two near-identical objects swapped between two people: the objects morph into each other, one hand taps the car with a tool, a socket sits on the car with no hands (garage 10, "worst result by far") | Garage 9, 10 | Veo family | Swapping two similar tools in 8 s is a multi-contact chain, the weak area for every engine (benchmark paper, COMMUNITY, search summary only) | Five misses on the handoff shot, so by the rule the shot is redesigned: no swap in one clip. Cut it into hand-out and hand-in shots, or show the exchange as a still dissolve (the R3 to R3b morph already does this) | PROVEN, redesign required |
+| F11 | "Locked camera, no camera movement" is not honored when the subject travels. In garage 2 and 3 the framing jumps to a front-of-car view when he rolls out and sits up. Garage 6 to 10 change to a very low wide angle with the car nose turned toward the camera or left, not the right as written | Garage 2, 3, 4, 6, 7, 9, 10 | Veo family | The prompt asks for a large body move (roll out, sit up, crouch in). The model re-frames to follow it, and "nose toward the RIGHT edge" is dropped. Clips 4 and 5, which keep him lying down, hold the original geometry | Keep the subject in one place for the whole clip. A body that must move needs a cut, not a bigger prompt | PROVEN |
+| F12 | The ball bounces up onto the toe and rolls away after contact (garage 12). The first 3 s are good, the contact fails | Garage 12 | Veo family | Contact physics, already predicted in the guide. A rolling object that stops against a soft boot gets a rebound | The usable part exists: cut at the touch (Zac's own idea, correct). PROPOSED for a new run: end frame with the ball resting against the boot, if the panel offers one for Veo | PROVEN (same failure as the old V4 row) |
+| F13 | Reaching down from a floor-level camera makes the person drop to the floor. In garage 11 the arm comes in along the floor, the dirt jumps off the ball and back on. Zac wanted a standing man bending to pick up the ball | Garage 11 | Veo family | Camera at ball height plus "hand reaches in" shows only an arm on the floor, so the model lays the body down | PROPOSED: raise the camera to hip height looking slightly down, or keep the camera low and have the hand lower from above frame: "a hand lowers from the top of the frame and lifts the ball straight up". Say the hand comes from above, positive only | UNTESTED fix |
+| F14 | A still-scene prompt with no action makes the model invent one. Garage 13 starts with a closed door that rises by itself, with dust, to justify the light bar | Garage 13 | Veo family | "Open garage door" was described as a light source, not as an already-open state. With nothing to do, the model animates the door | State the state: "the sectional garage door is fully raised and rests overhead. A man stands in the doorway as a dark silhouette, one hand on the raised door". Put the man in the start frame. A silent 8 s is fine | PROPOSED, UNTESTED. Zac's wish (a person standing there) is the fix |
+| F15 | "His face is out of frame" is ignored. Faces show in garage 6 to 10 | Garage 6 to 10 | Veo family | A negative framing instruction. The face is part of a man lying under a car | Frame the shot positively: "tight close-up of two forearms and hands, the car underside above them", so the face is outside the shot by composition | PROPOSED, UNTESTED |
+| F16 | Tool type drifts: socket wrench vs open-end vs ratchet, one hand holding the wrench head with the other. Garage 1 gave a socket or ratchet, the prompt said "steel wrench" only. Garage 2 and 3: "ratchet wrench ... left hand holds the head" produced a wrench turning a wrench | Garage 1, 2, 3 | Veo family | Underspecified tool, plus a second hand steadying the tool invites a second tool | Name one tool by shape in positive words once ("a flat open-end combination wrench, a straight steel bar with a U-shaped jaw"), one hand on it, the other hand empty and resting on the car. Clip 5 did this and is the best result | PROVEN (3 clips) |
+| F17 | Shouting does not help. CAPS and exclamation marks (garage 7, 8) had no effect, and the prompt also still said "turn a flat open-end wrench" so it contradicted itself | Garage 7, 8 | Veo family | Contradiction: "NOTHING IN HIS HAND" next to "turns a wrench" and "holds it out". The model follows the verbs | Remove the object from the whole prompt if it must not be in the hand. Describe empty hands: "bare grease-marked hands" | PROVEN (2 clips) |
+| F18 | Many things changed per retry. The joust prompts changed shot, camera, speed, and wording at once. The final three were three runs of the same text. Garage 3 and 4 are one batch of the same generation (same id in the file name) | Joust runs 1 to 6 | Veo family | Breaks the one-change rule, so no run taught a clean lesson. The three-failed-tries redesign rule was not applied for the handoff (5 tries) or the joust (6 plus) | Change one thing per try. After three tries, redesign. Write the settings line every run | PROVEN |
+
+## What worked (keep)
+
+| Clip | What worked | Why we think so |
+|---|---|---|
+| Garage 5 (closest, "believable") | Timestamped beats ("0.0 to 3.0 s ... 3.0 to 4.0 s ... 4.0 to 6.0 s only his head moves"), a positive hold ("lies flat on his back for the entire clip"), one tool named by shape, one visible action at a time, a start frame referenced as "the first frame" | Veo supports timestamp prompting [MAKER S2]. First and only success of the 13 |
+| Garage 13 (good except the door) | A pure still scene with strong set dressing, photoreal wording, no person to mess up | A scene with no body motion cannot fail on anatomy. The only miss is the invented door motion (F14) |
+| Garage 12 first 3 s | A plain object roll with a named direction, one subject in motion | Cut at the touch |
+| Joust 2, 3, 4 logo on shield | Logo kept because it was already on the shield in the start frame | F3 |
+
+## Engine-specific prompting rules
+
+Tags: M maker-documented (read on the maker page), C community or host page, U untested. These are for Zac's Firefly panel. Which models take an end frame or reference images in Firefly is NOT VERIFIED, the panel decides.
+
+**Veo 3.1, Fast, Lite (the only engine Zac has actually run, 18 clips).** Structure Cinematography, Subject, Action, Context, Style, audio in separate sentences [M S2]. Timestamped beats worked in garage 5 [PROVEN here]. Keep one action. Never name an unwanted thing (F1). The 720p joust clips and the 1080p garage clips are both 8 s, 24 fps. Seed and settings were not recorded.
+
+**Kling 4.0 (new, unevaluated).** Read on 2026-11-22: kling.ai "Kling 4.0 Release Overview" (maker page, I read the first 100,000 of 125,082 characters). Facts from it [M]: write explicit visual detail, avoid abstract terms; "Negative prompts can increase the likelihood of errors", only use them for things like subtitles and background music; give each reference its own role (@Image1 is the character); structure is overall setting, timed beats ("0 to X s"), camera, closing shot, audio; multi-shot is on by default, so for one clean action say so and keep one shot [U on how to switch it off, check the panel]; keyframes up to 10 images; First and Last Frame wording "Use @Image1 as the first frame and @Image2 as the last frame" then describe the process between; physics: describe how materials and bodies respond; duration 3 to 30 s; Kling 4.0 Flash is 720p and 3 to 20 s with no keyframe or first/last-frame support listed. Not retrieved: the last 25,082 characters of that page, and whether Firefly exposes the Omni Reference, keyframe or first/last-frame inputs. Third-party guides exist (Krea, Morphic, Nemo Video) and one reports access to the full model as unconfirmed as of 2026-10-16. Treat those [C].
+
+**Seedance 2.5 (new, unevaluated).** I did NOT retrieve ByteDance's own guide (the Luma guide URL returned 404, the maker page was not found). What I read is Runware's host page [C]: five layers shot, subject, action, light, audio; name the shot first; one dominant action arc per clip; separate camera motion from subject motion into different clauses; time range tags like [0-3s] at about one second granularity, continuous, not for micro-control; direct exclusions work, "No subtitles" and "No BGM" at the end of the prompt; audio on by default; 4 to 30 s, 720p maximum, up to 10,000 characters on the API (Firefly panel may differ). Contact and physics: that page says nothing. Treat all as COMMUNITY and UNTESTED. Note it contradicts the Kling and Veo advice on negatives (host says direct exclusions work, Kling and Google say avoid them for objects). Keep negatives for global things only and test.
+
+**Flux 3 Video (new, unevaluated).** Black Forest Labs docs page "prompting video overview" (maker, read 2026-11-22, only the overview): five-part checklist, subject and action first ("Who or what is moving, and what exactly happens"), then camera direction, scene and atmosphere, motion qualities, and continuity constraints (what must stay stable). Image-to-video: "The source image sets the first frame; the prompt drives the motion" [M]. Keyframes: several ordered stills, interpolated into one shot [M]. The overview says nothing about negatives, left and right, contact, one action or duration. Third parties (fal, Morphic, Runware, PixVerse) report 5 to 20 s, 720p or 1080p, audio on by default, and disagree on prompt order [C]. Practical rule from the maker's own checklist, applied: write what must stay fixed as its own sentence ("the shield, its logo and the lane stay exactly as in the first frame") [U for how well it holds].
+
+**Gemini Omni Flash, Runway Gen-4.5, Luma Ray, Firefly Video:** no new evidence from Zac's clips. Keep the rules in the guide and the QUICK-CARD. None of these were run in the log.
+
+## Rules to carry into every prompt (top five)
+
+1. Say only what you see. Never name the thing you do not want (F1, F7, F17).
+2. One body, one object, one action per clip. No handoffs, no swaps (F8, F9, F10).
+3. The picture decides geometry. Left and right, car direction and where a logo sits belong in the start frame, not in text (F3, F5, F11).
+4. A subject that must travel needs a cut. Do not ask for a locked camera and a large move together (F11).
+5. After three misses, redesign the shot. Write model tier, start frame, seed and credit readout into settings.txt every time (F18).
+
+## Row log (one row per attempt that taught something; add Zac's next reports here)
 
 | Date | Project | Shot | Engine and settings | What went wrong | Fix that worked | Source attempt folder |
 |---|---|---|---|---|---|---|
 | 2026-11-18 (PRE-FILLED, from Zac's report, not yet tested) | Ian Wrench Turner | V1 man under Mustang | Veo 3.1 (settings not supplied) | Wrong hand held the wrench | OPEN, untested hypothesis: build a start still with right hand on the wrench, name the hand camera-relative in the prompt | firefly-prompt-log\ian-V1-hand (Zac to drop) |
 | 2026-11-18 (PRE-FILLED, from Zac's report, not yet tested) | Ian Wrench Turner | V4 ball and boot | Veo 3.1 (settings not supplied) | Rolling ball hit the toe instead of resting against the foot | OPEN, untested hypothesis: start and end stills, positive end state in the prompt, or cut on the contact | firefly-prompt-log\ian-V4-ball-boot (Zac to drop) |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
+| 2026-11-21 | WWD joust logo sting | Lance hits logo shield | Veo 3.1 Fast via Firefly, 720p, 8 s (Zac's notes, clips not saved) | Runs 1 to 6: not first person, knight in frame, hesitation before the hit, new logo drawn, shield centered not left, two spears (word "spear" in prompt) | None worked. PROPOSED: two shots, composed start frame with logo on the shield, positive lance description (F2, F3, F6) | firefly-prompt-log\wwd-joust-logo-sting and "Joust opener" |
+| 2026-11-22 | WWD joust logo sting | Joust opener 1 to 5 (mp4s) | Veo family (encoder Google), 1280x720, 24 fps, 8 s | Logo redrawn after a title-card first frame (1, 5); spear and striped hook instead of lance (2 to 5); knight comes from behind the shield (2); shield turns into a logo sticker (3, 4) | None kept. See F2 to F6 | firefly-prompt-log\Joust opener\Video 1 to 5 |
+| 2026-11-22 | WWD joust logo sting | Later prompts (6 prompts, no clips saved) | Veo 3.1 Fast (Zac's notes) | Slow strike, target drawn on shield, extra rider, "NO ONE else" caps ignored; Zac used one of them at about 2,000 credits (his figure) | None. Redesign per F6 | firefly-prompt-log\Joust opener\prompt and notes for all the rest... |
+| 2026-11-22 | Ian trailer | Garage 1, man under Mustang, wrench | Veo family, 1080p, 8 s, start frame not recorded | Wrench in one hand, other hand idle on his stomach, socket instead of open-end | Name tool shape (F16) | firefly-prompt-log\Video one |
+| 2026-11-22 | Ian trailer | Garage 2 and 3, roll out and sit up | Veo family, 1080p | Wrench turning a wrench, camera not locked, jumps to a front view | Keep him lying, cut for the roll (F11, F16) | firefly-prompt-log\Video 2, Video 3 |
+| 2026-11-22 | Ian trailer | Garage 4, look at door | Veo family, 1080p, start frame used | Told he "does not get up", he sat up and reached out | Positive hold (F1) | firefly-prompt-log\Video 4 |
+| 2026-11-22 | Ian trailer | Garage 5, timestamped beats | Veo family, 1080p, start frame used | Closest: hands drop to the chest at 4 s (minor) | KEPT as the template: timestamps plus positive hold | firefly-prompt-log\Video 5 |
+| 2026-11-22 | Ian trailer | Garage 6 to 10, handoff of a wrench | Veo family, 1080p | Duplicate wrench, invented second person, wrench vanishes, tools morph, face shown, car nose flips, camera changes | None in five tries. REDESIGN: no handoff in one clip (F8 to F11, F15, F17) | firefly-prompt-log\Video 6 to video 10 |
+| 2026-11-22 | Ian trailer | Garage 11, pick up the ball | Veo family, 1080p | Man drops to the floor, dirt flicks off and on the ball. Used anyway, low on credits | Raise camera or lower the hand from above (F13) | firefly-prompt-log\video 11 |
+| 2026-11-22 | Ian trailer | Garage 12, ball rolls to boot | Veo family, 1080p | Ball bounces onto the toe and rolls off after contact. Plate added | Cut at the contact (works), end frame (F12) | firefly-prompt-log\video 12 |
+| 2026-11-22 | Ian trailer | Garage 13, dust-covered Mustang | Veo family, 1080p | Good. Door opens by itself, nobody stands there | Put a silhouette in the doorway, state the door is already raised (F14) | firefly-prompt-log\Video 13 |
 
-## Zac's nine re-renders (fill when the log folder arrives)
-Zac said one video was re-rendered nine times. When he drops the old prompts, settings and clips, add one row per attempt that changed something: attempt number, the one thing changed, what the clip did. The pattern across the nine rows is the lesson.
+## Zac's re-renders (the pattern across attempts)
 
-| Attempt | One thing changed from the last try | What the clip did | Kept or failed |
-|---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+Joust: at least six prompt rewrites and 5 saved clips. Each rewrite stacked new wording on the last (added "NO ONE else", added a start frame, changed 2 s to 4 s) so no single cause could be found. Handoff: five consecutive clips (6 to 10) with the same shot. The failure was the same in all five (F8 to F10), the response each time was a stronger instruction instead of a redesigned shot. That is the pattern: more words, same shot. The fix in both cases is a different shot, not a different sentence.
 
 ## Promoted to the guide
-(none yet)
+2026-11-22: F1 (named or negated thing gets drawn), F8 to F10 (object vanishes, duplicates, swaps), F11 (locked camera not honored with a traveling body) and F12 (contact bounce) each reached three or more clips. Added to `QUICK-CARD.md` under "Seen on Zac's clips".
 
 ## Struck from the guide
-(none yet)
+(none). The guide's [U] tip "name the hand camera-relative" was not tested by these clips (no prompt used it), so it stays [U]. The tip "describe an object end state" is unproven here too.
+
+## Still open
+- A start-frame test: same garage 5 prompt with and without a start frame, settings recorded.
+- Does the Veo end frame (if the panel offers one) fix the ball bounce (F12)?
+- F2 positive lance description, one run.
+- Which Firefly models take an end frame: not verified.
+
+## Update 2026-11-22 (Zac): tier evidence
+All clips Veo 3.1 family. Joust clips except the final three: Veo 3.1 Fast. Garage clips and the final three joust: Veo 3.1 (not Fast). Final three joust clips were never downloaded and will not be. Other settings as suggested in the guide. Treat the tier gap above as closed.
+
+## Audit 2026-11-22 (graphic-design, after Zac said the prompts were beginner level)
+Full audit: `AUDIT-2026-11-22.md`. New standard: `STANDARD.md`. Sources: `SOURCES-2026-11-22.md`. Rebuilt prompts: `REBUILT-PROMPTS-2026-11-22.md`. Lint: `prompt_lint.py`. The lint failed all 24 old video prompts (every one has a negation).
+
+Corrections to rows above (the earlier pass blamed the model for things our words asked for):
+- F6 (timing): the "fixed impact time plus accelerating" cause stands, and there are two more in our own prompts. Joust 2 and 3 asked for a "slow-motion beat" and a "creeping" dolly. Joust 5 and run 1 wrote that the tip "settles dead center on the emblem and then strikes", which describes a pause. Zac's complaint was a slow strike and a stop before the hit.
+- F12 (ball bounces on the toe): the prompt said the ball "gently bumps against his boot". "Bumps" is an impact verb. No end frame was used although Veo 3.1 and Fast take one (SOURCES G3, G4).
+- F9 (second person): the prompt said "as if offering it to someone shorter beside him".
+- F5 (geometry): joust runs 3 to 6 wrote "First-person point of view from a jousting knight ... on right side of frame". A first-person view has no knight in frame, so the words invited a second rider, and "NO ONE else" named him.
+- The garbled prompts (joust runs 3 to 6: "stircking", "stright", "the camera Paint flakes", "lance, is already aimed the shield") break Runway's "reducing ambiguity" and Seedance's "avoid inconsistencies".
+
+New failure codes (our wording, maker-sourced, PROPOSED until a clip tests the fix):
+| # | Failure | Where | Fix | Status |
+|---|---|---|---|---|
+| F19 | An impact verb ("bumps", "slams", "taps") asks for the impact. We wanted rest | Garage 12, joust 4 | Write the resting end picture. Use an end frame. Lint R9 | PROPOSED |
+| F20 | We asked for slowness or a pause ("slow-motion beat", "creeping", "settles ... and then strikes") and got it | Joust 2, 3, 5, run 1 | Speed is a verb (gallops, drives). Do not ask for slow motion unless wanted. Lint R4 catches "hesitat" | PROPOSED |
+| F21 | No camera sentence: the model invents motion (the door raised itself) | Garage 13 | One camera sentence, state the door is already raised, put the person in the start frame | PROPOSED |
+| F22 | Start frame plus a full re-description of the scene. The words and the picture can disagree | Garage 4, 5, 11, joust runs 1 to 6 | With a start frame the prompt is motion only. Lint R11 warns | PROPOSED (maker-sourced: Runway, BFL, Kling) |
+| F23 | Garbled or contradictory grammar | Joust runs 3 to 6, garage 7, 8 | Read the prompt aloud. Lint R5 R6 | PROVEN-ish (no clean control run) |
+| F24 | Audio never specified, or negated. All 18 clips have 0 audio streams | All | Write SFX and Ambient lines or turn Audio off and write nothing | PROVEN (ffprobe) |
+| F25 | End frames and reference images never used for contact and identity shots | Garage 12, joust, wrench | Cards in the rebuilt file use first and last frame | PROPOSED |
+| F26 | A Composition reference carries the arrangement including an unwanted hand size | Ian R3b (R3 has a child's hand where an adult arm is wanted) | Put the correction in attempt 1, use mid strength | PROPOSED |
+
+Struck or changed in the guide: the old QUICK-CARD rule "4 to 5 seconds, under 100 words" is replaced by the engine rules in `STANDARD.md` (garage 5, the best clip, was 189 words, so length is a risk, not a proven cause). The LESSONS "Seedance not retrieved" note is out of date: ByteDance's own Seedance 2.5 guide was read 2026-11-22 (SOURCES B1). The old guide's "no maker guidance on seeds" still stands.
+
+Row log additions (no new generations, audit only):
+| Date | Project | Shot | Engine and settings | What went wrong | Fix that worked | Source attempt folder |
+|---|---|---|---|---|---|---|
+| 2026-11-22 | All logged clips | Audit | n.a. | 24 of 24 video prompts fail the lint, 4 of 4 Ian still prompts pass with warnings | Standard and rebuilt prompts written, none run | firefly-prompt-guide AUDIT, STANDARD, REBUILT-PROMPTS |
+
+Still open (tests that would settle the PROPOSED rows, one per clip): (1) garage A with and without the start frame. (2) garage D with first and last frame. (3) joust shot 2 on Veo 3.1 versus the Kling 4.0 version. (4) whether Firefly exposes an End slot on Veo 3.1 Fast and a Negative box in Generate image.
+| 2026-11-25 | Ian trailer 16:9 stills (R3-16x9, R3b-16x9, H1, B1, W1) | Panel facts read by Zac | Firefly Generate image, Nano Banana (partner model) | No negative box, no strength slider, up to 3 references or first and last frame (not both), Seed field exists, prompt limit unknown | Prompts rewritten box-free and slider-free, references named in plain words, R3b as two-line edit; all under 730 chars; preflight PASS or WARN R3 only. NOT RUN yet, nothing generated. PROVEN: panel facts (Zac read them). UNTESTED: Nano Banana reference-by-role, edit wording, seed on redo, partner-model commercial safety NOT VERIFIED | firefly-prompt-log\ian-R3-16x9, ian-R3b-16x9, ian-H1, ian-B1, ian-W1 |
+| 2026-11-25 | Ian trailer W1 (v6 rewrite, no result yet) | Zac story correction: red hair, caught-cheating bonfire, plus a happy W1a that wipes into W1b | Nano Banana, W1b reference B1 winner, W1a edit of W1b winner | Design note only, NOTHING GENERATED: UNTESTED whether hair color, a furious profile plus a shocked face, and an edit that holds the framing work on Nano Banana | Plan: W1a as two-line edit of the W1b winner, keep the W1b seed, redo line for framing drift | datairefly-prompt-log\ian-W1, ian-W1a |

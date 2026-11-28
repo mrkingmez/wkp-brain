@@ -1,0 +1,172 @@
+{
+ "ts_utc": "2026-11-27T17:30:23.879601+00:00",
+ "calls": {
+  "account": [
+   200,
+   "b7a9d86c3051bc964f2d77f406e7c33e"
+  ],
+  "positions": [
+   200,
+   "9cd7ee5d3f77841ae07a23ca54724fab"
+  ]
+ },
+ "clock": {
+  "is_open": true,
+  "next_open": "2026-11-30T09:30:00-05:00",
+  "next_close": "2026-11-27T13:00:00-05:00"
+ },
+ "scan": {
+  "decisions": 20,
+  "trades_opened": 0,
+  "trades_closed": 0,
+  "zac_trades_opened": 0,
+  "zac_trades_closed": 0
+ },
+ "config_hash": "7a0c25c7a871b79b",
+ "facts": {
+  "account_fields_seen": [
+   "account_blocked",
+   "account_number",
+   "accrued_fees",
+   "admin_configurations",
+   "balance_asof",
+   "buying_power",
+   "cash",
+   "created_at",
+   "crypto_status",
+   "crypto_tier",
+   "currency",
+   "effective_buying_power",
+   "equity",
+   "id",
+   "initial_margin",
+   "intraday_adjustments",
+   "last_equity",
+   "last_maintenance_margin",
+   "long_market_value",
+   "maintenance_margin",
+   "multiplier",
+   "non_marginable_buying_power",
+   "options_approved_level",
+   "options_buying_power",
+   "options_trading_level",
+   "pending_reg_taf_fees",
+   "portfolio_value",
+   "position_market_value",
+   "regt_buying_power",
+   "short_market_value",
+   "shorting_enabled",
+   "sma",
+   "status",
+   "trade_suspended_by_user",
+   "trading_blocked",
+   "transfers_blocked",
+   "user_configurations"
+  ],
+  "account_safe_values": {
+   "status": "ACTIVE",
+   "trading_blocked": false,
+   "currency": "USD",
+   "equity": "100000",
+   "multiplier": "2"
+  },
+  "positions_count": 0,
+  "clock_fields_seen": [
+   "is_open",
+   "next_close",
+   "next_open",
+   "timestamp"
+  ]
+ },
+ "info": {
+  "extended_hours_bars_dropped": 417,
+  "hourly_rows_per_symbol": {
+   "SPY": 185,
+   "QQQ": 182,
+   "IWM": 172,
+   "DIA": 158,
+   "XLK": 151,
+   "XLF": 152,
+   "XLE": 158,
+   "XLV": 149,
+   "AAPL": 179,
+   "MSFT": 168,
+   "NVDA": 185,
+   "AMZN": 179,
+   "GOOGL": 178,
+   "META": 177,
+   "TSLA": 180,
+   "JPM": 152,
+   "XOM": 148,
+   "UNH": 155,
+   "COST": 148,
+   "AMD": 181
+  },
+  "hourly_closed_bars_min_median_max": [
+   145,
+   145.0,
+   145
+  ],
+  "min_bars_filter": 60,
+  "symbols_under_min_bars_now": [],
+  "gauge_first_bar_utc": "2026-10-28T18:00:00Z",
+  "gauge_last_bar_utc": "2026-11-27T17:00:00Z",
+  "gauge_bar_start_times_et": [
+   "09:00",
+   "10:00",
+   "11:00",
+   "12:00",
+   "13:00",
+   "14:00",
+   "15:00"
+  ],
+  "projected_next_open_min_median_max": [
+   129,
+   129.0,
+   129
+  ],
+  "projected_next_open_symbols_under_min_bars": [],
+  "projected_next_open_plus_3_days_min_median_max": [
+   121,
+   121.0,
+   121
+  ],
+  "projected_next_open_plus_3_days_symbols_under_min_bars": [],
+  "response_shapes": {
+   "1Hour": {
+    "top_level_keys": [
+     "bars",
+     "next_page_token"
+    ],
+    "bars_container": "dict",
+    "bar_keys": [
+     "c",
+     "h",
+     "l",
+     "n",
+     "o",
+     "t",
+     "v",
+     "vw"
+    ],
+    "symbols_returned": 2
+   }
+  }
+ },
+ "regime": {
+  "date": "2026-11-27",
+  "detail": {
+   "atr_pct": 2.139,
+   "atr_pct_median": 0.8833,
+   "breadth": 0.25,
+   "breadth_symbols": 20,
+   "close": 716.735,
+   "daily_bars": 274,
+   "last_daily_bar_date": "2026-11-25",
+   "slope_up": false,
+   "sma_fast": 757.9327,
+   "sma_slow": 733.1436
+  },
+  "tag": "RANGE"
+ }
+}

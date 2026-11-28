@@ -1,0 +1,213 @@
+[FAIL] G1 (173 words) fails=5 warns=0
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. A lean man i
+   FAIL R2 shouting caps 'RIGHT'
+   FAIL R2 shouting caps 'LEFT'
+   FAIL R3 length 173 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+[FAIL] G2 (230 words) fails=6 warns=2
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. A lean man i
+   FAIL R1 negation word 'never' ... ay on the wrench, and he never touches the bolt with a bare 
+   FAIL R2 shouting caps 'RIGHT'
+   FAIL R2 shouting caps 'LEFT'
+   FAIL R3 length 230 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+   WARN R8 locked camera with travelling body: sits up
+   WARN R13 12 sentences, one action per clip? check
+[FAIL] G3 (230 words) fails=6 warns=2
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. A lean man i
+   FAIL R1 negation word 'never' ... ay on the wrench, and he never touches the bolt with a bare 
+   FAIL R2 shouting caps 'RIGHT'
+   FAIL R2 shouting caps 'LEFT'
+   FAIL R3 length 230 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+   WARN R8 locked camera with travelling body: sits up
+   WARN R13 12 sentences, one action per clip? check
+[FAIL] G4 (159 words) fails=7 warns=2
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. The man lies
+   FAIL R1 negation word 'does not' ...  the end of the clip. He does not get up and does not slide out
+   FAIL R1 negation word 'does not' ... . He does not get up and does not slide out. Dust drifts in the
+   FAIL R2 shouting caps 'RIGHT'
+   FAIL R2 shouting caps 'LEFT'
+   FAIL R3 length 159 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+   WARN R11 start frame set but geometry also written in text; remove, the picture decides
+   WARN R13 11 sentences, one action per clip? check
+[FAIL] G5 (189 words) fails=4 warns=1
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. The man lies
+   FAIL R2 shouting caps 'RIGHT'
+   FAIL R2 shouting caps 'LEFT'
+   FAIL R3 length 189 words, limit 150
+   WARN R11 start frame set but geometry also written in text; remove, the picture decides
+[FAIL] G6 (183 words) fails=3 warns=0
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. An older man
+   FAIL R3 length 183 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+[FAIL] G7 (187 words) fails=8 warns=1
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. An older man
+   FAIL R1 negation word 'NOTHING' ... , his face out of frame. NOTHING IN HIS HAND!!!!!!!!  A caged 
+   FAIL R2 shouting caps 'NOTHING'
+   FAIL R2 shouting caps 'HIS'
+   FAIL R2 shouting caps 'HAND'
+   FAIL R2 exclamation mark
+   FAIL R3 length 187 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+   WARN R6 double space
+[FAIL] G8 (198 words) fails=18 warns=1
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. An older man
+   FAIL R1 negation word 'NOTHING' ... , his face out of frame. NOTHING IN HIS HAND!!!!!!!!  WHAT PAR
+   FAIL R1 negation word 'NOT' ... HIING IN HIS HAND DO YOU NOT UNDERSTAND!  A caged work lam
+   FAIL R2 shouting caps 'NOTHING'
+   FAIL R2 shouting caps 'HIS'
+   FAIL R2 shouting caps 'HAND'
+   FAIL R2 shouting caps 'WHAT'
+   FAIL R2 shouting caps 'PART'
+   FAIL R2 shouting caps 'ABOUT'
+   FAIL R2 shouting caps 'NOTHIING'
+   FAIL R2 shouting caps 'HIS'
+   FAIL R2 shouting caps 'HAND'
+   FAIL R2 shouting caps 'YOU'
+   FAIL R2 shouting caps 'NOT'
+   FAIL R2 shouting caps 'UNDERSTAND'
+   FAIL R2 exclamation mark
+   FAIL R3 length 198 words, limit 150
+   FAIL R4 abstract or banned word 'as if'
+   WARN R6 double space
+[FAIL] G9 (195 words) fails=2 warns=1
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. An older man
+   FAIL R3 length 195 words, limit 150
+   WARN R8 locked camera with travelling body: crouches
+[FAIL] G10 (208 words) fails=2 warns=2
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. An older man
+   FAIL R3 length 208 words, limit 150
+   WARN R8 locked camera with travelling body: crouches
+   WARN R13 11 sentences, one action per clip? check
+[FAIL] G11 (129 words) fails=3 warns=1
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. The worn whi
+   FAIL R1 negation word 'nothing' ... me. From 0 to 2 seconds, nothing moves except drifting dust in
+   FAIL R1 negation word 'Nobody' ... th daylight at the left. Nobody is in the doorway.
+   WARN R3 length 129 words, over the 100 word target
+[FAIL] G12 (180 words) fails=5 warns=0
+   FAIL R1 negation word 'no' ... , wide horizontal frame, no camera movement. Warm golden 
+   FAIL R1 negation word 'nothing' ... ft. From 0 to 2 seconds, nothing moves except drifting dust. F
+   FAIL R1 negation word 'Nobody' ... verything else is still. Nobody else is in the frame. A pegbo
+   FAIL R3 length 180 words, limit 150
+   FAIL R9 impact verb 'bumps' (write a resting end state instead)
+[FAIL] G13 (122 words) fails=3 warns=1
+   FAIL R1 negation word 'no' ... . Quiet, abandoned mood, no people. Photoreal, natural li
+   FAIL R4 abstract or banned word 'mood'
+   FAIL R7 no camera sentence
+   WARN R3 length 122 words, over the 100 word target
+[FAIL] J2 (177 words) fails=3 warns=1
+   FAIL R1 negation word 'No' ...  shallow depth of field. No music, no dialogue.
+   FAIL R1 negation word 'no' ... epth of field. No music, no dialogue.
+   FAIL R3 length 177 words, limit 150
+   WARN R13 11 sentences, one action per clip? check
+[FAIL] J3 (159 words) fails=6 warns=1
+   FAIL R1 negation word 'no' ...  toward the shield, with no shake and no handheld movemen
+   FAIL R1 negation word 'no' ... hield, with no shake and no handheld movement. Warm low s
+   FAIL R1 negation word 'no' ... t from off-screen right, no knight visible, and the tip s
+   FAIL R1 negation word 'No' ... es. Practical film look. No music, no dialogue.
+   FAIL R1 negation word 'no' ... cal film look. No music, no dialogue.
+   FAIL R3 length 159 words, limit 150
+   WARN R13 10 sentences, one action per clip? check
+[FAIL] J4 (176 words) fails=12 warns=1
+   FAIL R1 negation word 'no' ... ly-in toward the shield, no shake, no handheld movement. 
+   FAIL R1 negation word 'no' ... rd the shield, no shake, no handheld movement. Warm low s
+   FAIL R1 negation word 'no' ...  continuous motion, with no slowing, no pause, no hesitat
+   FAIL R1 negation word 'no' ... motion, with no slowing, no pause, no hesitation, no wobb
+   FAIL R1 negation word 'no' ... th no slowing, no pause, no hesitation, no wobble before 
+   FAIL R1 negation word 'no' ... no pause, no hesitation, no wobble before contact. It is 
+   FAIL R1 negation word 'not' ...  blunt tournament lance, not a spear and not a sharp point
+   FAIL R1 negation word 'not' ... t lance, not a spear and not a sharp point. The instant of
+   FAIL R1 negation word 'No' ... es. Practical film look. No music, no dialogue.
+   FAIL R1 negation word 'no' ... cal film look. No music, no dialogue.
+   FAIL R3 length 176 words, limit 150
+   FAIL R4 abstract or banned word 'hesitation'
+   WARN R13 11 sentences, one action per clip? check
+[FAIL] J5 (209 words) fails=8 warns=1
+   FAIL R1 negation word 'never' ... ous approach. The camera never cuts away. In the lower foreg
+   FAIL R1 negation word 'no' ...  continuous motion, with no slowing, no pause and no hesi
+   FAIL R1 negation word 'no' ... motion, with no slowing, no pause and no hesitation, as t
+   FAIL R1 negation word 'no' ... no slowing, no pause and no hesitation, as the rider ride
+   FAIL R1 negation word 'No' ... ook, motion in the dirt. No music, no dialogue.
+   FAIL R1 negation word 'no' ... n in the dirt. No music, no dialogue.
+   FAIL R3 length 209 words, limit 150
+   FAIL R4 abstract or banned word 'hesitation'
+   WARN R13 13 sentences, one action per clip? check
+[FAIL] JS1 (209 words) fails=8 warns=1
+   FAIL R1 negation word 'never' ... ous approach. The camera never cuts away. In the lower foreg
+   FAIL R1 negation word 'no' ...  continuous motion, with no slowing, no pause and no hesi
+   FAIL R1 negation word 'no' ... motion, with no slowing, no pause and no hesitation, as t
+   FAIL R1 negation word 'no' ... no slowing, no pause and no hesitation, as the rider ride
+   FAIL R1 negation word 'No' ... ook, motion in the dirt. No music, no dialogue.
+   FAIL R1 negation word 'no' ... n in the dirt. No music, no dialogue.
+   FAIL R3 length 209 words, limit 150
+   FAIL R4 abstract or banned word 'hesitation'
+   WARN R13 13 sentences, one action per clip? check
+[FAIL] JS2 (176 words) fails=8 warns=2
+   FAIL R1 negation word 'no' ...  charges at full gallop, no slowing at any point. At 2 se
+   FAIL R1 negation word 'no' ...  continuous motion, with no pause, no hesitation, and no 
+   FAIL R1 negation word 'no' ... s motion, with no pause, no hesitation, and no ease befor
+   FAIL R1 negation word 'no' ... ause, no hesitation, and no ease before contact. The lanc
+   FAIL R1 negation word 'No' ... icking up, warm low sun. No music, no dialogue.
+   FAIL R1 negation word 'no' ...  warm low sun. No music, no dialogue.
+   FAIL R3 length 176 words, limit 150
+   FAIL R4 abstract or banned word 'hesitation'
+   WARN R11 start frame set but geometry also written in text; remove, the picture decides
+   WARN R13 11 sentences, one action per clip? check
+[FAIL] JS3 (148 words) fails=7 warns=3
+   FAIL R1 negation word 'no' ...  continuous motion, with no pause, no hesitation, and no 
+   FAIL R1 negation word 'no' ... s motion, with no pause, no hesitation, and no ease befor
+   FAIL R1 negation word 'no' ... ause, no hesitation, and no ease before contact. The lanc
+   FAIL R1 negation word 'No' ... icking up, warm low sun. No music, no dialogue.
+   FAIL R1 negation word 'no' ...  warm low sun. No music, no dialogue.
+   FAIL R4 abstract or banned word 'hesitation'
+   FAIL R6 stray punctuation
+   WARN R3 length 148 words, over the 100 word target
+   WARN R6 double space
+   WARN R13 10 sentences, one action per clip? check
+[FAIL] JS4 (152 words) fails=5 warns=2
+   FAIL R1 negation word 'no' ... tion, stircking it hard, no slowing down, just one fluid 
+   FAIL R1 negation word 'No' ... icking up, warm low sun. No music, no dialogue.
+   FAIL R1 negation word 'no' ...  warm low sun. No music, no dialogue.
+   FAIL R3 length 152 words, limit 150
+   FAIL R6 stray punctuation
+   WARN R6 double space
+   WARN R13 10 sentences, one action per clip? check
+[FAIL] JS5 (155 words) fails=7 warns=2
+   FAIL R1 negation word 'NO' ... k on right side of frame NO ONE else, the camera level an
+   FAIL R1 negation word 'no' ... tion, stircking it hard, no slowing down, just one fluid 
+   FAIL R1 negation word 'No' ... icking up, warm low sun. No music, no dialogue.
+   FAIL R1 negation word 'no' ...  warm low sun. No music, no dialogue.
+   FAIL R2 shouting caps 'ONE'
+   FAIL R3 length 155 words, limit 150
+   FAIL R6 stray punctuation
+   WARN R6 double space
+   WARN R13 10 sentences, one action per clip? check
+[FAIL] JS6 (155 words) fails=7 warns=2
+   FAIL R1 negation word 'NO' ... k on right side of frame NO ONE else, the camera level an
+   FAIL R1 negation word 'no' ... tion, stircking it hard, no slowing down, just one fluid 
+   FAIL R1 negation word 'No' ... icking up, warm low sun. No music, no dialogue.
+   FAIL R1 negation word 'no' ...  warm low sun. No music, no dialogue.
+   FAIL R2 shouting caps 'ONE'
+   FAIL R3 length 155 words, limit 150
+   FAIL R6 stray punctuation
+   WARN R6 double space
+   WARN R13 10 sentences, one action per clip? check
+[FAIL] JS7 (155 words) fails=7 warns=2
+   FAIL R1 negation word 'NO' ... k on right side of frame NO ONE else, the camera level an
+   FAIL R1 negation word 'no' ... tion, stircking it hard, no slowing down, just one fluid 
+   FAIL R1 negation word 'No' ... icking up, warm low sun. No music, no dialogue.
+   FAIL R1 negation word 'no' ...  warm low sun. No music, no dialogue.
+   FAIL R2 shouting caps 'ONE'
+   FAIL R3 length 155 words, limit 150
+   FAIL R6 stray punctuation
+   WARN R6 double space
+   WARN R13 10 sentences, one action per clip? check
+[WARN] STILL-R3b (138 words) fails=0 warns=1
+   WARN R3 length 138 words, over the 125 word target
+[WARN] STILL-H1 (139 words) fails=0 warns=1
+   WARN R3 length 139 words, over the 125 word target
+[WARN] STILL-B1 (139 words) fails=0 warns=1
+   WARN R3 length 139 words, over the 125 word target
+[PASS] STILL-W1 (101 words) fails=0 warns=0

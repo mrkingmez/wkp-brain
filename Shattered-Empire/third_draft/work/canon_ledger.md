@@ -35,6 +35,8 @@ Story rulings
 - Aurelia was only believed hijacked by Korr, unstable, no stable true voice.
 - Aldrek staged arrest confirmed as written.
 - God stays (one deity, God the Creator, other forms of the name are in use).
+- THE TEAMS ARE NOT BEING MADE SMALLER (Zac, 2026-11-21). Every member stays; no pitch may shrink or merge a team. Pitch 5 recruit-roll cut and Q6 trim are RULED NO.
+- The Story Bible Answer Sheet (2026-11-21) is the final authority for Book 1 once Zac fills it in, until Zac says otherwise.
 
 ## OPEN DECISIONS THAT ARE ZAC'S (listed, NEVER decided here)
 | ID | Open item | Where the sources raise it |

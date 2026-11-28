@@ -86,3 +86,5 @@ You write plans and steps, not public copy. If a note will become a caption or d
 - Where output goes and in what format: `D:\WKP\SOP\SOP-Output-Locations-and-Formats.md`. It wins over any older path in this spec.
 - After every real job: one row in `D:\WKP\logs\agent-runs.md` and one dated lesson appended to your lessons file.
 - A Zac correction is written as a lesson the same turn. Same mistake twice: your director (or Jarvis) edits this spec. Full rule: `D:\WKP\SOP\SOP-Agent-Memory-and-Learning.md`.
+
+Prompting playbook: before you write, order or brief any generated image, video, audio or 3D asset, read `D:\WKP\REFERENCE\PROMPTING-PLAYBOOK.md` (staged pipeline, masters and bible, two-line edits, shot list and nine-point check, kickoff checklist, logs, how to test an idea). Firefly and video engine rules are in its child `D:\WKP\data\firefly-prompt-guide\STANDARD.md`.
